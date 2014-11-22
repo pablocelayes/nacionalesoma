@@ -1,0 +1,582 @@
+Nivel,Apellido,Nombres,Localidad,Provincia
+1,Abdallah,Lucas Miguel,San Luis,San Luis
+1,Acosta,Mario Emir,Formosa,Formosa
+1,Almarza,Javier Ignacio,Capital Federal,
+1,Álvarez,Julieta Melina,Pilar,Buenos Aires
+1,Álvarez,Julio César,Córdoba,Córdoba
+1,Álvarez Juliá,Anabel,Capital Federal,
+1,Andisco,Lucas Martín,Mar del Plata,Buenos Aires
+1,Aramburu Merlos,Fernando,Olavarría,Buenos Aires
+1,Armando,Santiago,Capital Federal,
+1,Atala,Marcos Exequiel,Córdoba,Córdoba
+1,Barca,Yamile Andrea,San Luis,San Luis
+1,Baschiera,Federico,Coronel Pringles,Buenos Aires
+1,Basualdo,Facundo,San Miguel del Monte,Buenos Aires
+1,Benegas,Matías Oscar,Longchamps,Buenos Aires
+1,Beretta,Guido,Mar del Plata,Buenos Aires
+1,Biagioli,Lila,Casilda,Santa Fe
+1,Billordo,Paolo Fernando,Salta,Salta
+1,Biruk,Lucía Nadia,Caseros,Buenos Aires
+1,Bolognini,Federico,La Plata,Buenos Aires
+1,Bolognini,Marcelo,La Plata,Buenos Aires
+1,Bonifazzi,Franca Esperanza,Sanford,Santa Fe
+1,Bordenabe,Nicolás Emilio,Córdoba,Córdoba
+1,Borrello,Máximo,Vicente López,Buenos Aires
+1,Brussa,Gabriel Walter,Córdoba,Córdoba
+1,Caminiti,Miguel Ángel,Merlo,Buenos Aires
+1,Camporino,Maximiliano,San Andrés,Buenos Aires
+1,Campos,Germán,Longchamps,Buenos Aires
+1,Cañonero,Juan Manuel,Capital Federal,
+1,Capelli,Sonia,Martínez,Buenos Aires
+1,Caram,Bruno Federico,La Plata,Buenos Aires
+1,Carballo,Martín,Comodoro Rivadavia,Chubut
+1,Carmona,Facundo Martín,San José,Mendoza
+1,Caro,Germán Eduardo,Morón,Buenos Aires
+1,Carvajal,Gabriel,Zárate,Buenos Aires
+1,Castañeda,María Teresita,Gualeguaychú,Entre Ríos
+1,Ceneri,María Celeste,Córdoba,Córdoba
+1,Chalup,Ana Alejandra,Formosa,Formosa
+1,Cicconi,Luciano Adhemar,La Rioja,La Rioja
+1,Cohen Salama,Sergio Mauricio,Capital Federal,
+1,Colpachy,Yamila Soledad,Ituzaingó,Buenos Aires
+1,Comandú,Josué Ignacio,San Francisco,Córdoba
+1,Conde,Juan Manuel,Capital Federal,
+1,Copes,Damián Elías,San Jerónimo Sud,Santa Fe
+1,Corti,Cintia Ángela,Alcorta,Santa Fe
+1,Cossarini,Marcos,Victoria,Buenos Aires
+1,Coturel,Adelina Edith,Remedios de Escalada,Buenos Aires
+1,Cruz Escobar,Yamile Aneley,Santa Fe,Santa Fe
+1,Curetti,María,Neuquén,Neuquén
+1,Czemerinski,Lucía,Capital Federal,
+1,Daga,Gisele Elizabeth,San Francisco,Córdoba
+1,Dávalos,Sergio,San Miguel de Tucumán,Tucumán
+1,de Alvear,Jorge Emilio,San Martín de los Andes,Neuquén
+1,De Benito,Ivana Maia,Capital Federal,
+1,De Biase,Roberta Josefina,Pilar,Buenos Aires
+1,de Ezcurra,Ana,San Martín de los Andes,Neuquén
+1,De Luca,Mateo,Gualeguaychú,Entre Ríos
+1,De Torres,Agustín,Gualeguaychú,Entre Ríos
+1,Delgado,Carlos Horacio,Río Grande,Tierra del Fuego
+1,Delgado,Juan Manuel,Rosario,Santa Fe
+1,Delgado,Manuel Hernán,Ranelagh,Buenos Aires
+1,Di Piazza,Valeria Alejandra,Munro,Buenos Aires
+1,Díaz,Ignacio,Capital Federal,
+1,Dupouy,Diego Gabriel,Ceres,Santa Fe
+1,Echevarría,Daniela,Neuquén,Neuquén
+1,Echeveste,Rodrigo Sebastián,Rosario,Santa Fe
+1,Elías,Sofía Soledad,San Miguel de Tucumán,Tucumán
+1,Escudero Leoz,María Ignacia,Mar del Plata,Buenos Aires
+1,Farina,Fernando Pablo,Rosario,Santa Fe
+1,Felguer,Federico,Vicente López,Buenos Aires
+1,Fernández,Matías Daniel,Mendoza,Mendoza
+1,Fidanza Romani,Nerina Andrea,Ramos Mejía,Buenos Aires
+1,Flores,José Alejandro,Nogoyá,Entre Ríos
+1,Fournier,Gisele María,Bragado,Buenos Aires
+1,Franco,Julián,Resistencia,Chaco
+1,Frías,María Cecilia,Campana,Buenos Aires
+1,Fumagalli,Juan Ignacio,Capital Federal,
+1,Galante,Damián Andrés,Capital Federal,
+1,Galtieri,Francisco José,Florida,Buenos Aires
+1,García,Gonzalo Daniel,Capital Federal,
+1,García,Sebastián Gonzalo,Capital Federal,
+1,García Payer,Jonás,Villa Allende,Córdoba
+1,Gargiulo,Julián,Ituzaingó,Buenos Aires
+1,Gaska,María Frances,Vicente López,Buenos Aires
+1,Gauna Páez,Ludmila,Santa Fe,Santa Fe
+1,Gelman,Christian Alexis,Ituzaingó,Buenos Aires
+1,Giandinoto,Ginesa Virginia,Santa Rosa,La Pampa
+1,Gil,Natalia Soledad,Capital Federal,
+1,González,Magalí Estefanía,Río Gallegos,Santa Cruz
+1,González,Norberto Alexis,Merlo,Buenos Aires
+1,González Castañón,Federico,Capital Federal,
+1,González Osler,Federico,Vicente López,Buenos Aires
+1,Graizaro,Alexiana,General Ramírez,Entre Ríos
+1,Grodsinsky,Sebastián Augusto,La Reja,Buenos Aires
+1,Grohar,Alexander Ignacio,San Carlos de Bariloche,Río Negro
+1,Guaia,María Inés,Las Flores,Buenos Aires
+1,Guardarucci,Isidro,La Plata,Buenos Aires
+1,Guerra,Nicolás,San Juan,San Juan
+1,Gutiérrez,Gastón Gerardo,Córdoba,Córdoba
+1,Heuguerot,María Natalia,Trenque Lauquen,Buenos Aires
+1,Hümöller,Germán Andrés,Villa Carlos Paz,Córdoba
+1,Idiart,Julián Francisco,Venado Tuerto,Santa Fe
+1,Iguchi,Nicolás Tetsuya,Lomas de Zamora,Buenos Aires
+1,Irazuzta,Verónica Laura,Neuquén,Neuquén
+1,Jorrin,David Gustavo,Burzaco,Buenos Aires
+1,Kaplan Krep,Christian Lionel,Capital Federal,
+1,Katz,Sebastián Pablo,Capital Federal,
+1,Krasny,Gastón Uriel,Capital Federal,
+1,Krawczyk,Carolina,Avellaneda,Buenos Aires
+1,Lafuente,Ramiro,La Plata,Buenos Aires
+1,Lage,María Jimena,Campana,Buenos Aires
+1,Laikan,Pablo Martín,Escobar,Buenos Aires
+1,Ledesma,Lucila María,Colón,Buenos Aires
+1,López Meyer,Lucilo Fernando,Concepción del Uruguay,Entre Ríos
+1,Loustaunau,Dolores,Mar del Plata,Buenos Aires
+1,Lugones,Rodrigo,La Plata,Buenos Aires
+1,Maceira,Pablo Martín,Villa Mercedes,San Luis
+1,Manoni,María Victoria,Olivos,Buenos Aires
+1,Marcos,Miguel Andrés,Santa Fe,Santa Fe
+1,Marengo,Lucas Alberto,Villa Martelli,Buenos Aires
+1,Mariné,María Clara,Capital Federal,
+1,Márquez,José Fernando,San Andrés,Buenos Aires
+1,Martelletti,Ezequiel Pablo,Rosario,Santa Fe
+1,Marziali,Mariano,Capital Federal,
+1,Massola,Facundo Martín,Pehuajó,Buenos Aires
+1,Mataitis,Iván Leonel,Pilar,Buenos Aires
+1,Mejuto,Lucía Balbina,Olivos,Buenos Aires
+1,Méndez Porras,Martha Astrid,Capital Federal,
+1,Menéndez Portela,Pablo Darío,Capital Federal,
+1,Mercado,Nicolás Fernando,Lanús,Buenos Aires
+1,Merli,Marcelo Luciano,Rosario,Santa Fe
+1,Molero Miranda,Alejandra,La Plata,Buenos Aires
+1,Mondino,Carmela María,Olivos,Buenos Aires
+1,Morales,Juan Ignacio,General Acha,La Pampa
+1,Morandi,Nicolás Andrés,Río Grande,Tierra del Fuego
+1,Morero,Matías,San Francisco,Córdoba
+1,Moreschi,Alejandro Carlo,Alta Gracia,Córdoba
+1,Mosquera,Franco David,Alberti,Buenos Aires
+1,Mouzo,Pablo,Quilmes,Buenos Aires
+1,Moyano,Gabriel Eduardo,Córdoba,Córdoba
+1,Moyano,Verónica Andrea,San Salvador de Jujuy,Jujuy
+1,Murdoch,César Sebastián,Clorinda,Formosa
+1,Narbona,Brenda Anahí,Suardi,Santa Fe
+1,Nasso,Patricio José,Beccar,Buenos Aires
+1,Nery,Jean Paul,Boulogne,Buenos Aires
+1,Nibeyro,Guadalupe,Córdoba,Córdoba
+1,Núñez,Alejandro Martín,Capital Federal,
+1,Osorio,Gabriel,Florida,Buenos Aires
+1,Padilla López,Pedro Manuel,Capital Federal,
+1,Panichelli,Patricio Eugenio,Capital Federal,
+1,Pego,Gabriel Martín,Avellaneda,Buenos Aires
+1,Pellegrino,Esteban Luis,Clorinda,Formosa
+1,Peña,Horacio José,Capital Federal,
+1,Peralta Reyes,María Eugenia,Azul,Buenos Aires
+1,Pérez,Sebastián Hugo,Bragado,Buenos Aires
+1,Perrone,Juan Marcos,Pilar,Buenos Aires
+1,Pezuk,María Belén,Posadas,Misiones
+1,Piantino,Milagros,Jesús María,Córdoba
+1,Pisoni Deriu,Ana Lucía,Valle Hermoso,Córdoba
+1,Pobbio Venegas,Franco Daniel,Tres Arroyos,Buenos Aires
+1,Poblete,María Dolores,Rosario,Santa Fe
+1,Pochiero,Pablo Gabriel,Rosario,Santa Fe
+1,Podestá,Emiliano,Rosario,Santa Fe
+1,Pousa,Federico Javier,Haedo,Buenos Aires
+1,Poussif,Gabriel Adrián,Rosario,Santa Fe
+1,Primo,Marianela Rocío,Dalmacio Vélez,Córdoba
+1,Rendón,Dámaris Anahí,Plaza Huincul,Neuquén
+1,Rodríguez,Juan Manuel,Avellaneda,Buenos Aires
+1,Rodríguez Cartabia,Mauro,Lanús,Buenos Aires
+1,Romano,Sergio Gastón,Ramos Mejía,Buenos Aires
+1,Romero,Antonio Nicolás,Posadas,Misiones
+1,Ronchetti,Franco,La Plata,Buenos Aires
+1,Rostagno,Mayra,Capital Federal,
+1,Roveri,Eriberto Antonio,Rosario,Santa Fe
+1,Rozen Tejeira,María Serena,Merlo,Buenos Aires
+1,Russo,Leonardo José,Isidro Casanova,Buenos Aires
+1,Santarosa,Juan Ignacio,Villa Adelina,Buenos Aires
+1,Sarrasin,Gonzalo Daniel,Los Antiguos,Santa Cruz
+1,Sasso,Luciano Ricardo,Rosario,Santa Fe
+1,Schifman,Marcos,San Isidro,Buenos Aires
+1,Schiumerini,Patricio Luis,Capital Federal,
+1,Sellarés,Avelino Juan,Goya,Corrientes
+1,Servente,Javier Marcelo,Benavidez,Buenos Aires
+1,Sessarego,Jéssica Laura,Merlo,Buenos Aires
+1,Sivieri,Christian Roberto,Carapachay,Buenos Aires
+1,Slavik,Felipe Miguel,Río Grande,Tierra del Fuego
+1,Sobral Rozada,Agustín,Olivos,Buenos Aires
+1,Soricetti,Leandro Matías,J.Posse,Córdoba
+1,Spadavecchia,Nicolás,Florida,Buenos Aires
+1,Stegmann,Fernando Mariano,Pilar,Buenos Aires
+1,Suárez Alais,Mariana Angélica,Capital Federal,
+1,Sulca,Diego Armando,San Salvador de Jujuy,Jujuy
+1,Teijeiro,Paula,Olivos,Buenos Aires
+1,Tejo Rodríguez,Julia Muriel,Bahía Blanca,Buenos Aires
+1,Torres Vieira Fernandes,María Noelia,Florencio Varela,Buenos Aires
+1,Trupp,Leandro,Capital Federal,
+1,Ulrich,Nicolás Emanuel,Crespo,Entre Ríos
+1,Urbina,Emmanuel,9 de Julio,Buenos Aires
+1,Vacatello,Pablo Daniel,Capital Federal,
+1,Veronesse,Érica Andrea,Villa Carlos Paz,Córdoba
+1,Vicente Figueiras,Martín Ezequiel,Huanguelén,Buenos Aires
+1,Wagner,Lucila Alejandra,Olivos,Buenos Aires
+1,Wendler,Gustavo Carlos,Paraná,Entre Ríos
+1,Zago,Ignacio Ticiano,La Plata,Buenos Aires
+1,Zalba,Josefina María,Rosario,Santa Fe
+1,Zapata,Ramiro Maximiliano,La Plata,Buenos Aires
+1,Zárate,Lucila,Capital Federal,
+2,Abachian Álvarez,Ezequiel,Mar del Plata,Buenos Aires
+2,Aberbuj,Pablo Daniel,Capital Federal,
+2,Acuña,Walter Hernán,Haedo,Buenos Aires
+2,Adorni,Angélica,Rafaela,Santa Fe
+2,Alanda,Luciana María,San Vicente,Santa Fe
+2,Alarcón,Luciana Marilin,Reconquista,Santa Fe
+2,Albinoli,Romina Carla,Casilda,Santa Fe
+2,Albiol,Mariana Noelia,Lanús,Buenos Aires
+2,Alfaro Gimeno,Nicolás,Tortugüitas,Buenos Aires
+2,Algán,María Emilia,Rufino,Santa Fe
+2,Almacio,Andrés Pablo,Rosario,Santa Fe
+2,Álvarez,Nicolás Alejandro,Bahía Blanca,Buenos Aires
+2,Alvisio,Marcelo Julio,Capital Federal,
+2,Andrada,Emanuel,Hurlingham,Buenos Aires
+2,Anido,José Agustín,Trenque Lauquen,Buenos Aires
+2,Antonioli,Maximiliano,San Antonio de Areco,Buenos Aires
+2,Araki Miyazono,Ariel Martín,Capital Federal,
+2,Aramburú,Rodrigo Agustín,Banfield,Buenos Aires
+2,Arrieta,Agustín Nicolás,Chacabuco,Buenos Aires
+2,Ascanio,Julián Ignacio,Bernal,Buenos Aires
+2,Babich,Ignacio Martín,Lobería,Buenos Aires
+2,Baratelli,Nicolás,Capital Federal,
+2,Barberis,Sergio Daniel,Banfield,Buenos Aires
+2,Bargalló,Marcos Emanuel,Pilar,Buenos Aires
+2,Barichello,Federico Jesuán,Casilda,Santa Fe
+2,Beguy,Juan Ignacio,Pergamino,Buenos Aires
+2,Bellezze,Lourdes Marcela,Córdoba,Córdoba
+2,Bellora,Mariela Alejandra,Neuquén,Neuquén
+2,Bengualid,Mateo Nicolás,Ushuaia,Tierra del Fuego
+2,Berger,Carlos Enrique,Coronel Dorrego,Buenos Aires
+2,Bernardini,Alejandra Leticia,Mar del Plata,Buenos Aires
+2,Bertellotti,Ariel Arnaldo,Paraná,Entre Ríos
+2,Biscione,Natalia Vanina,Capital Federal,
+2,Biurrún,Anahí,Berazategui,Buenos Aires
+2,Braun,Matías Nicolás,Villa La Angostura,Neuquén
+2,Bravo,María Sol,Quilmes,Buenos Aires
+2,Bruno,Cristian Gabriel,San Martín de los Andes,Neuquén
+2,Busico,Marcelo Nicolás,Villa Mercedes,San Luis
+2,Butler,Matías Nicolás,Capital Federal,
+2,Cabello,Javier Martín,Villa Gdor. Gálvez,Santa Fe
+2,Campisi,Martín,Capital Federal,
+2,Camueira,Matías José,Morón,Buenos Aires
+2,Canosa Fano,Ignacio,Río Cuarto,Córdoba
+2,Cardarelli,Gabriel Norberto,Capital Federal,
+2,Carella,Alfredo Raúl,Mar del Plata,Buenos Aires
+2,Carisio,Guillermo Andrés,San Francisco,Córdoba
+2,Carlini,Natalia Fiorella,Capital Federal,
+2,Carlucci,Bruno Luciano,Capital Federal,
+2,Castets,Pablo Joaquín,Río Gallegos,Santa Cruz
+2,Cavalieri,Paolo,Cañada de Gómez,Santa Fe
+2,Celis,Melina,Rafaela,Santa Fe
+2,Chao,Tzu,Chi,Capital Federal
+2,Chapino,Victorio Francisco,Paraná,Entre Ríos
+2,Chehem,Marianela,Rosario,Santa Fe
+2,Chiapella,Marina Silvia,Rufino,Santa Fe
+2,Cirocco,Laura Alejandra,Monte Grande,Buenos Aires
+2,Completa,Martín Daniel,Ing. Maschwitz,Buenos Aires
+2,Conde,Paula Carolina,Ramos Mejía,Buenos Aires
+2,Contarino,Anabella Lorena,San Antonio de Padua,Buenos Aires
+2,Cortés,Emiliano,Benito Juárez,Buenos Aires
+2,Crespo Thomas,Eugenio,San Carlos de Bariloche,Río Negro
+2,Cuervo Parrino,Bruno Esteban,Capital Federal,
+2,Curetti,José,Neuquén,Neuquén
+2,Curzi,Denise Ariadna,Escobar,Buenos Aires
+2,Dal Lago,Pablo,Córdoba,Córdoba
+2,de Cabrera,Agustín,Boulogne,Buenos Aires
+2,de Cabrera,Pedro,Boulogne,Buenos Aires
+2,De Mare,Francisco Roy,Banfield,Buenos Aires
+2,Delhor,Rubén Armando,Victoria,Buenos Aires
+2,Della Corte,Carolina,Pilar,Buenos Aires
+2,Descotte,María Emilia,Burzaco,Buenos Aires
+2,Deymonnaz,Alejandro Martín,Olivos,Buenos Aires
+2,di Fiore,Carlos Ignacio,Parada Robles,Buenos Aires
+2,Díaz,Julieta,Necochea,Buenos Aires
+2,Díaz,Martín Gustavo,Banfield,Buenos Aires
+2,Díaz,Sebastián Martín,Ensenada,Buenos Aires
+2,Domínguez Prost,Micaela Belén,Bahía Blanca,Buenos Aires
+2,Dvoskin,Nicolás,Capital Federal,
+2,Elizalde,Andrés,Rauch,Buenos Aires
+2,Espina,Emmanuel Eduardo,Azul,Buenos Aires
+2,Etchegaray,Juan Manuel,San Cayetano,Buenos Aires
+2,Farina Remetich,Guillermo Horacio,Mar del Plata,Buenos Aires
+2,Fernández,Ximena Laura,Caseros,Buenos Aires
+2,Fernández,Daniel Gonzalo,Capital Federal,
+2,Fernández Leyes,Esteban Gabriel,Punta Alta,Buenos Aires
+2,Ferrero,Nazareno Joaquín,Suardi,Santa Fe
+2,Fornero,Gerardo José,Ceres,Santa Fe
+2,Forte,Renán Augusto,Realicó,La Pampa
+2,Fraga,Ignacio,Los Polvorines,Buenos Aires
+2,Frickel,Brian,Crespo,Entre Ríos
+2,Fuentes Ríos,Javier Ezequiel,San Clemente del Tuyú,Buenos Aires
+2,García,Federico,Rama Caída,Mendoza
+2,García Pérez,Jorge Luis,Banfield,Buenos Aires
+2,Gargiulo,Ignacio,Mar del Plata,Buenos Aires
+2,Garobbio,Omar Ezequiel,La Plata,Buenos Aires
+2,Gavinowich,Diego Alejandro,Capital Federal,
+2,Gentile,Ariel Osvaldo,Morón,Buenos Aires
+2,Giampieri,Martín Hernán,Pergamino,Buenos Aires
+2,Giménez,Diego Andrés,Paraná,Entre Ríos
+2,Giménez,Tamara Marián,Ranelagh,Buenos Aires
+2,Giménez,Yanina,Villa Ballester,Buenos Aires
+2,Giménez Romero,Javier Alejandro,Rawson,San Juan
+2,Giorgi,Darío,Las Parejas,Santa Fe
+2,Goldín,Matías Alejandro,Capital Federal,
+2,Gómez,Nicolás Ezequiel,Tandil,Buenos Aires
+2,Gonano,Luis Facundo,Apóstoles,Misiones
+2,González,Laura Jimena,Lanús,Buenos Aires
+2,González,Tomás Agustín,Ciudadela,Buenos Aires
+2,González de Paz,Laura Verónica,Bahía Blanca,Buenos Aires
+2,González Santos,Javier Horacio,Capital Federal,
+2,González Zerbo,Santiago,José Mármol,Buenos Aires
+2,Grande,Alejandra Cecilia,Villa Trinidad,Santa Fe
+2,Greppi,Marianela,San Salvador de Jujuy,Jujuy
+2,Grunbaum,Florencia,Pehuajó,Buenos Aires
+2,Guarino,María Gabriela,Aguilares,Tucumán
+2,Guaycochea,Lucas Enrique,Bella Vista,Buenos Aires
+2,Guazzaroni,Martín Jesús,Villa Huidobro,Córdoba
+2,Hardoy,Pedro,Lincoln,Buenos Aires
+2,Hernández Orgeira,Gisela Marisol,Virreyes,Buenos Aires
+2,Herz,Gerardo,Capital Federal,
+2,Hirschowitz,Alan Eloy,Capital Federal,
+2,Hnatiuk,Ala,Capital Federal,
+2,Huang,Fernando,Capital Federal,
+2,Huck,Gerardo,Rosario,Santa Fe
+2,Iezzi,Juan Carlos,Capital Federal,
+2,Irazábal,Sebastián Maximiliano,Rosario,Santa Fe
+2,Iriarte Muñoz,José Miguel,Tartagal,Salta
+2,Ithuralde,Raúl Esteban,Quilmes,Buenos Aires
+2,Japas,Nicolás Martín,Lomas de Zamora,Buenos Aires
+2,Josebachuili,Mariela Gisele,Burzaco,Buenos Aires
+2,Keller,Christian,Bahía Blanca,Buenos Aires
+2,Kina,Mauro Javier,Capital Federal,
+2,Kliger,Rafi,Capital Federal,
+2,Lauro Quiroga,Juan Manuel,Villa Celina,Buenos Aires
+2,Lazo,Juan Manuel,3 de Febrero,Buenos Aires
+2,Legeren,Pablo,San Isidro,Buenos Aires
+2,Lehrke,Christian Alexander,Quilmes,Buenos Aires
+2,Lixklett,Alejandro Federico,Capital Federal,
+2,López,Jorge,Capital Federal,
+2,López,María Cecilia,Zárate,Buenos Aires
+2,López,María Lucrecia,Zárate,Buenos Aires
+2,López Cristeche,Juan Mario,Benito Juárez,Buenos Aires
+2,López Franco,María Celia,Puerto Belgrano,Buenos Aires
+2,Losada,Marcelo Adrián,Capital Federal,
+2,Lucas,Matías Rodrigo,Villa Martelli,Buenos Aires
+2,Luda,Marcelo Alejandro,Castelar,Buenos Aires
+2,Lúquez,Mauricio Nicolás,Necochea,Buenos Aires
+2,Luzzi,Gustavo Marcelo,Armstrong,Santa Fe
+2,Mac,Adolfo Miguel,Rosario,Santa Fe
+2,Magni,María Celeste,Capital Federal,
+2,Maiterth,Gerardo Martín,Carapachay,Buenos Aires
+2,Malano,Ignacio,Quilmes,Buenos Aires
+2,Mangiarotti,Franco Julio,San Justo,Buenos Aires
+2,Marbán,Leandro Martín,Bahía Blanca,Buenos Aires
+2,Marolla,Ignacio Miguel,Avellaneda,Buenos Aires
+2,Martelletti,Mariano Gabriel,Rosario,Santa Fe
+2,Mártin,Daniel Alejandro,Mar del Plata,Buenos Aires
+2,Martínez,Jorge Alberto,Luján,Buenos Aires
+2,Martínez,Walter Oscar,Pilar,Buenos Aires
+2,Mascialino,Diego,Capital Federal,
+2,Mattes,Addy,Capital Federal,
+2,Médica,Eric David,Salliqueló,Buenos Aires
+2,Melgarejo,Christian Adrián,Isidro Casanova,Buenos Aires
+2,Mezza,Gabriela Natalia,Villa Cañás,Santa Fe
+2,Michel,Pablo Nicolás,Yerba Buena,Tucumán
+2,Migoya Cantora,Valeria Marta,Burzaco,Buenos Aires
+2,Minestrelli,Mariano,Pilar,Buenos Aires
+2,Molero Miranda,Leopoldo Enrique,La Plata,Buenos Aires
+2,Morelli,Juan Esteban,Rosario,Santa Fe
+2,Morini,Nicolás Mariano,Ceres,Santa Fe
+2,Moser,Sonia,San Isidro,Buenos Aires
+2,Moya Giusti,Matías Víctor,Villa María,Córdoba
+2,Mulet,Alexis Emmanuel,San Nicolás,Buenos Aires
+2,Munafó,Fernando,Mar del Plata,Buenos Aires
+2,Murmis,Diego Andrés,Beccar,Buenos Aires
+2,Murmis,Hernán Alejandro,Beccar,Buenos Aires
+2,Nadef,Federico José,Yerba Buena,Tucumán
+2,Navarro,Federico Manuel,Ushuaia,Tierra del Fuego
+2,Novara,Pablo José,San Francisco,Córdoba
+2,Núñez Gélvez,Marcela Alejandra,Merlo,Buenos Aires
+2,Ogando,María,Gdor. Virasoro,Corrientes
+2,Orrum,Brian Erik,San Carlos de Bariloche,Río Negro
+2,Orti,Hernán,La Lucila,Buenos Aires
+2,Ortin,Gonzalo,Rosario,Santa Fe
+2,Ortiz,Flavio Leandro,San Nicolás,Buenos Aires
+2,Pacio,Julio César,Capital Federal,
+2,Pagani,Santiago José,Capital Federal,
+2,Palmieri,Maximiliano Agustín,Luján,Buenos Aires
+2,Panebianco,Ezequiel Lionel,Quilmes,Buenos Aires
+2,Pardo,Julia Elena,Olivos,Buenos Aires
+2,Parodi,Marianela,San Nicolás,Buenos Aires
+2,Pena,Cristian,Martínez,Buenos Aires
+2,Pérez Cutugno,Julián Manuel,Saldungara,Buenos Aires
+2,Perrone,Lucas Mateo,Pilar,Buenos Aires
+2,Petroni,Reggina,San Nicolás,Buenos Aires
+2,Pezza,Alejandro,Villa Eloísa,Santa Fe
+2,Picard,Daniela Luján,Rafaela,Santa Fe
+2,Pierella,Juan José,Cafferata,Santa Fe
+2,Pinazo,Guadalupe Rocío,Capital Federal,
+2,Piovan,María Julia,Bahía Blanca,Buenos Aires
+2,Pistoia,Pablo,Formosa,Formosa
+2,Plavnik,Julia Yael,Villa Carlos Paz,Córdoba
+2,Prieto,Ricardo José,Junín,Buenos Aires
+2,Quinodoz,Elina,Venado Tuerto,Santa Fe
+2,Quiroga,Javier Antonio,Cerrito,Entre Ríos
+2,Rabinovich,Pablo,Mar del Plata,Buenos Aires
+2,Ramírez,Marcos Ariel,Salta,Salta
+2,Ramos,Ricardo Luis,Las Rosas,Santa Fe
+2,Rasmussen,Julián Manuel,Bahía Blanca,Buenos Aires
+2,Ratti,Misael,Córdoba,Córdoba
+2,Ravenna,Gabriela Susana,Quilmes,Buenos Aires
+2,Raymundi,Lionel Ricardo,Castelar,Buenos Aires
+2,Rearte,Lucas Agustín,Córdoba,Córdoba
+2,Reinhold,Patricio,Luján,Buenos Aires
+2,Ríos Melgarejo,Pablo,Monte Grande,Buenos Aires
+2,Ritiro,Emiliano José,Mar del Plata,Buenos Aires
+2,Roca,Maximiliano Daniel,Beccar,Buenos Aires
+2,Rodríguez,Jorge Sebastián,San Nicolás,Buenos Aires
+2,Rodríguez Belardinelli,Martina,Roque Pérez,Buenos Aires
+2,Rodríguez Nieva,Joaquín Francisco,Capital Federal,
+2,Rosito,María Sol,Mar del Plata,Buenos Aires
+2,Rossi,Pablo Ezequiel,Córdoba,Córdoba
+2,Rubelt,Guillermo Miguel,Salta,Salta
+2,Rubin,Daniel Alejandro,San Cristóbal,Santa Fe
+2,Ruiz,Silvio René,Pergamino,Buenos Aires
+2,Russo,Luis Ignacio,Las Flores,Buenos Aires
+2,Sainz,Ana Belén,Río Tercero,Córdoba
+2,Salaya,Juan Guido,Capital Federal,
+2,Sánchez,Francisco Adrián,Daireaux,Buenos Aires
+2,Sánchez,Valeria,Salazar,Buenos Aires
+2,Sato,Javier Ignacio,Tortuguitas,Buenos Aires
+2,Sbrancia,María Belén,Capital Federal,
+2,Scapellato,Ivana Daniela,Comodoro Rivadavia,Chubut
+2,Schlesinger,Federico,San Luis,San Luis
+2,Schreiber,María del Mar,Malabrigo,Santa Fe
+2,Serruto,Víctor Alejandro,Hipólito Yrigoyen,Salta
+2,Siber,Pablo,Capital Federal,
+2,Sidenko,Alexey,San Carlos de Bariloche,Río Negro
+2,Soprano Loto,Nahuel,La Plata,Buenos Aires
+2,Sorondo Ovando,María Pía,San Martín de los Andes,Neuquén
+2,Sosa,Martín Daniel,Vicuña Mackena,Córdoba
+2,Soto,César Manuel,Salta,Salta
+2,Spessot,Flavia Luisina,Avellaneda,Santa Fe
+2,Steffanowski,Marina Eliana,Carapachay,Buenos Aires
+2,Subils,Mauro,Rosario,Santa Fe
+2,Testa,Sabrina Flavia,Villa Trinidad,Santa Fe
+2,Tkaczek Delgado,Iván Alejandro,Mendoza,Mendoza
+2,Tomasoni,Virginia María,San Miguel,Buenos Aires
+2,Torti,Emiliano Paulo,Rosario,Santa Fe
+2,Toso,María Victoria,Rafaela,Santa Fe
+2,Totorica,Ruth María,Ramallo,Buenos Aires
+2,Tozzi,Leandro Germán,Capital Federal,
+2,Uicich,Federico,Castelar,Buenos Aires
+2,Valdes de León,Martín,Capital Federal,
+2,Valfredo,Esteban Javier,Río Tercero,Córdoba
+2,Van Avermaete,Ivonne,Batan,Buenos Aires
+2,Veigas,María Belén,Ituzaingó,Buenos Aires
+2,Verrecchia,Carlos Francisco,Necochea,Buenos Aires
+2,Vignart,Juan Martín,Capital Federal,
+2,Villalba,José Martín,Rauch,Buenos Aires
+2,Villani,Daniela Verónica,Berazategui,Buenos Aires
+2,Vitale,Germán Alejandro,Posadas,Misiones
+2,Vivas,Quimey,Ituzaingó,Buenos Aires
+2,Weibel,Mario Ignacio,Santa Fe,Santa Fe
+2,Weisburd,Alexis Marcos,Córdoba,Córdoba
+2,Weitz,Gabriel Gerardo,Rosario,Santa Fe
+2,Yang,Yue,Capital Federal,
+2,Yu,Fernando,Capital Federal,
+2,Zago,Mariana,La Plata,Buenos Aires
+2,Zanenga,Heliana Paola,Formosa,Formosa
+2,Zoffoli,Verónica Andrea,Capital Federal,
+3,Alfonso Oderigo,Diego,Sáenz Peña,Buenos Aires
+3,Algorry,Nicolás,Río Gallegos,Santa Cruz
+3,Alonso,Dionisio Enrique,Córdoba,Córdoba
+3,Angiono,Iván Ezequiel,Trenel,La Pampa
+3,Arce,Agustín Lucas,Santa Fe,Santa Fe
+3,Archilla,Cristian Alejandro,Pergamino,Buenos Aires
+3,Aronna,María Soledad,Rosario,Santa Fe
+3,Arrieta,Leandro Ezequiel,Lomas de Zamora,Buenos Aires
+3,Avendaño Dupont,Juan Lucas,Federación,Entre Ríos
+3,Ballesteros,Pablo Marco,Bahía Blanca,Buenos Aires
+3,Balzarotti,Francisco,Capital Federal,
+3,Bandura,Hernán Daniel,Capital Federal,
+3,Biagioli,Eric Javier,Casilda,Santa Fe
+3,Billiani,Leonardo Oscar,San Fernando,Buenos Aires
+3,Blanco,Santiago,Capital Federal,
+3,Bolognini,Laura,La Plata,Buenos Aires
+3,Braun,Alejandro,Chajarí,Entre Ríos
+3,Britos,Pablo Sebastián,Capital Federal,
+3,Calle,Eduardo Agustín,Pergamino,Buenos Aires
+3,Cánepa,Pablo Martín,Castelar,Buenos Aires
+3,Caruso,Nahuel Domingo,Rosario,Santa Fe
+3,Castillo,María Jimena,Caleta Olivia,Santa Cruz
+3,Cianci,Nicolás Emanuel,Bernal,Buenos Aires
+3,Cristal,Yann,Capital Federal,
+3,Cuenze,Mariano,Capital Federal,
+3,De Barbieri,Natalia Soledad,Villa Ballester,Buenos Aires
+3,De Cañas,Lorena Solange,Quilmes,Buenos Aires
+3,De La Cruz,Carlos Alberto,Neuquén,Neuquén
+3,De la Cruz Thea,Jeremías Pablo,Villa Mercedes,San Luis
+3,de la Riva,Tomás David,Mar del Plata,Buenos Aires
+3,Distéfano,Nicolás Emmanuel,San Nicolás,Buenos Aires
+3,Ducos,David,Necochea,Buenos Aires
+3,Dupuy,Pablo Matías,San Carlos de Bariloche,Río Negro
+3,Fadul,Fernando Nahuel,San Martín,Buenos Aires
+3,Folco,Juan Pablo,Santa Rosa,La Pampa
+3,Frojan,Guillermina,Villa Domínico,Buenos Aires
+3,Galano,Fernando Horacio,Olivos,Buenos Aires
+3,Galíndez,Gustavo Javier,San Salvador de Jujuy,Jujuy
+3,Gerez Cuevas,José Nicolás,Córdoba,Córdoba
+3,González,Nahuel,Capital Federal,
+3,González Marquez,David Alejandro,Lomas de Zamora,Buenos Aires
+3,Groisman,Leandro Manuel,Capital Federal,
+3,Gutiérrez Corral,Gabriel Nicolás,San Nicolás,Buenos Aires
+3,Haberkorn,Ricardo Atilio,Villa Clara,Entre Ríos
+3,Hagedorn,Christian Karl,Vicente López,Buenos Aires
+3,Halsband,Melisa Coral,Capital Federal,
+3,Heiber,Pablo Ariel,Capital Federal,
+3,Herrera,Lucas Augusto,San Nicolás,Buenos Aires
+3,Ibáñez,Marina,Mar del Plata,Buenos Aires
+3,Izraelevich,Federico Hernán,Capital Federal,
+3,Kranz,Fernando Martín,Capital Federal,
+3,Kreiner,Javier Alejandro,Martín Coronado,Buenos Aires
+3,Kuzmuk,Mauricio Antonio,Capital Federal,
+3,Lavista,Matías,Capital Federal,
+3,Lis,Diego Alejandro,Córdoba,Córdoba
+3,Loewy,Irene,Darragueira,Buenos Aires
+3,López,Alberto Manuel,Mar del Plata,Buenos Aires
+3,López,Carlos Alberto,Tafí Viejo,Tucumán
+3,López y Rosenfeld,Matías,Luján,Buenos Aires
+3,Lorenzino,Pablo,Mar del Plata,Buenos Aires
+3,Lynch,Benito Miguel,Cipolletti,Buenos Aires
+3,Magliola,Nicolás,Florida,Buenos Aires
+3,Marchiori,Eugenio Jorge,Capital Federal,
+3,Martínez,Omar Eduardo,Corrientes,Corrientes
+3,Materyn,Diego Ariel,Capital Federal,
+3,Melero,Ricardo Javier,Santa Fe,Santa Fe
+3,Miranda,Martín Santiago,Capital Federal,
+3,Montalvo Bressi,Juan,Capital Federal,
+3,Nieto Degliuomini,Lucas,Venado Tuerto,Santa Fe
+3,Oberti,Gonzalo Fabián,Punta Alta,Buenos Aires
+3,Ordóñez,Mariano,Monte Grande,Buenos Aires
+3,Osorio,Orlando Darío,Granadero Baigorria,Santa Fe
+3,Peresón,Onofre Mauro,Avellaneda,Santa Fe
+3,Pérez González,Santiago Nicolás,Capital Federal,
+3,Pérez Príncipi,Ricardo Darío,Santa Teresita,Buenos Aires
+3,Pérez Truglia,Ricardo Nicolás,Ciudadela,Buenos Aires
+3,Peyré,Tomás Hernán,Las Flores,Buenos Aires
+3,Pezzatti,Patricio Agustín,San Nicolás,Buenos Aires
+3,Picasso,Pablo Alejandro,Rufino,Santa Fe
+3,Plaza,María Marta,Campana,Buenos Aires
+3,Pokorski,Diego Sebastián,Capital Federal,
+3,Porta,Exequiel Oscar Jesús,Venado Tuerto,Santa Fe
+3,Prado,Emiliano Ariel,Paso del Rey,Buenos Aires
+3,Quirce,Nicolás Matías,Monte Grande,Buenos Aires
+3,Ramírez,María Luz,Capital Federal,
+3,Renna,Lucas Manuel,Rosario,Santa Fe
+3,Roncoroni,Matías Javier,Quilmes,Buenos Aires
+3,Roslan,Francisco,Capital Federal,
+3,Sardón,Juan Manuel,C.Spegazzini,Buenos Aires
+3,Segarra,Roberto Eduardo,Florencio Varela,Buenos Aires
+3,Seluy,Lisandro Gabriel,Gálvez,Santa Fe
+3,Spetich,Marcos Iván,Casilda,Santa Fe
+3,Stricker,Walter Matías,Temperley,Buenos Aires
+3,Szyld,Martín,Capital Federal,
+3,Tacchini,Pablo,Capital Federal,
+3,Theler,Germán Guillermo,Rafaela,Santa Fe
+3,Torrico,Érica Natalia,Caleta Olivia,Santa Cruz
+3,Valdez,Lucas Daniel,Zárate,Buenos Aires
+3,Valentini,Leonardo,Rosario,Santa Fe
+3,Vecchietti,Daniel Ricardo,Formosa,Formosa
+3,Velázquez,Hernán Alfredo,Gualeguaychú,Entre Ríos
+3,Weitz,Nurit Roxana,Rosario,Santa Fe
+3,Yuhjtman,Sergio Andrés,Capital Federal,
+3,Zaballa,María Eugenia,Pergamino,Buenos Aires
