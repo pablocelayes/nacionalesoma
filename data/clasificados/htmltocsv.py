@@ -10,6 +10,15 @@ def limpiar(campo):
     campo = ' '.join([p for p in campo.split(' ') if p])
     return campo
 
+def arreglar_fila(fila):
+    fila = [limpiar(campo) for campo in fila]
+    if fila[-2] == "Capital Federal" or fila[-1] == "Capital Federal":
+        fila[-1] = "Ciudad Autónoma de Buenos Aires"
+    if fila[-1] == "":
+        print("Arreglar localidad: ", fila[-2])
+
+    return fila                   
+
 
 def procesar_html(filename):
     htmlparser = etree.HTMLParser()
@@ -31,18 +40,14 @@ def procesar_html(filename):
                 filas = [f for f in filas if f] #  removemos filas vacías
                 filas = filas[1:] # removemos encabezado
 
-                if i == 0:
-                    for f in filas:
-                        fila = [i + 1] + [s.strip() for s in [f[:20], f[20:44], f[44:68], f[68:]]]
-                        writer.writerow(fila)
-                elif i == 1:
-                    for f in filas:
-                        fila = [i + 1] + [s.strip() for s in [f[:20], f[20:42], f[42:68], f[68:]]]
-                        writer.writerow(fila)
-                else:
-                    for f in filas:
-                        fila = [i + 1] + [s.strip() for s in [f[:20], f[20:39], f[39:65], f[65:]]]
-                        writer.writerow(fila)
+                for f in filas:
+                    if i == 0:
+                        fila = [str(i + 1)] + [s.strip() for s in [f[:20], f[20:44], f[44:68], f[68:]]]
+                    elif i == 1:
+                        fila = [str(i + 1)] + [s.strip() for s in [f[:20], f[20:42], f[42:68], f[68:]]]
+                    else:
+                        fila = [str(i + 1)] + [s.strip() for s in [f[:20], f[20:39], f[39:65], f[65:]]]
+                    writer.writerow(arreglar_fila(fila))
         elif año < 2002:
             dataniveles = rootnode.xpath('//ul')
             if not dataniveles:
@@ -56,12 +61,9 @@ def procesar_html(filename):
                     ayn = parts[0]
                     localidad = parts[1] if len(parts) > 1 else ""
                     provincia = parts[2] if len(parts) > 2 else ""
-                    if len(ayn.split(",")) < 2:
-                        import ipdb; ipdb.set_trace()
                     apellido, nombres = [p.strip() for p in ayn.split(",")]
                     fila = (str(i+1), apellido, nombres, localidad, provincia)
-                    fila = [limpiar(campo) for campo in fila]
-                    writer.writerow(fila)
+                    writer.writerow(arreglar_fila(fila))
         else:
             pass
 
