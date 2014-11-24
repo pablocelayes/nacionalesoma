@@ -3,6 +3,7 @@
 from lxml import etree
 import csv
 import sys
+import lxml.html as lh
 
 def limpiar(campo):
     campo = campo.replace('\n', '')
@@ -68,19 +69,40 @@ def procesar_html(filename):
                     apellido, nombres = [p.strip() for p in ayn.split(",")]
                     fila = (str(i+1), apellido, nombres, localidad, provincia)
                     writer.writerow(arreglar_fila(fila))
-        else:
+        elif año < 2004:
+            content = open(filename, 'r', encoding='iso-8859-1').read()
+            tree = lh.fromstring(content)
+            rootnode = tree.getroottree()
             dataniveles = rootnode.xpath('//table')[:3]
             for i, data in enumerate(dataniveles):
                 filas = data.xpath('.//tr')
-                filas = [[n.text for n in f.xpath('./td//p')] for f in filas]
+                filas = [[n.text_content().strip() for n in f.xpath('./td')] for f in filas]
                 filas = [f for f in filas if f]
                 fila = filas[1:]
                 for f in filas:
-                    if len(f) == 3 and f[2] in ['Buenos Aires - Ciudad Autónoma', 'Capital Federal']:
+                    if len(f) == 3:
+                        f.append("")
+                    if f[2] in ['Buenos Aires - Ciudad Autónoma', 'Capital Federal', 'Ciudad Autónoma de Buenos Aires']:
                         f[2] = 'Buenos Aires'
-                        f.append('Ciudad Autónoma de Buenos Aires')
+                        f[3] = 'Ciudad Autónoma de Buenos Aires'
                     fila = [str(i+1)] + f
                     writer.writerow(arreglar_fila(fila))
+        else:
+            content = open(filename, 'r', encoding='iso-8859-1').read()
+            tree = lh.fromstring(content)
+            rootnode = tree.getroottree()
+            dataniveles = rootnode.xpath('//table')[:3]
+            filas = rootnode.xpath('.//tr')
+            filas = [[n.text_content().strip() for n in f.xpath('./td')] for f in filas]
+            filas = [f for f in filas if f]
+            for f in filas[1:]:
+                if len(f) == 3:
+                    f.append("")
+                if f[2] in ['Buenos Aires - Ciudad Autónoma', 'Capital Federal', 'Ciudad Autónoma de Buenos Aires']:
+                    f[2] = 'Buenos Aires'
+                    f[3] = 'Ciudad Autónoma de Buenos Aires'
+                writer.writerow(arreglar_fila(f))
+
 
 
 if __name__ == '__main__':
