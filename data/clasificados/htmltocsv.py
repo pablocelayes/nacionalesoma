@@ -11,10 +11,14 @@ def limpiar(campo):
     return campo
 
 def arreglar_fila(fila):
+    nivel, apellido, nombres, localidad, provincia = fila
     fila = [limpiar(campo) for campo in fila]
-    if fila[-2] == "Capital Federal" or fila[-1] == "Capital Federal":
+    if localidad == "Capital Federal" or provincia == "Capital Federal":
         fila[-1] = "Ciudad Autónoma de Buenos Aires"
-    if fila[-1] == "":
+    elif provincia == "Rosario":
+        fila[-1] = "Santa Fe"
+    elif fila[-1] == "":
+        # import ipdb; ipdb.set_trace()
         print("Arreglar localidad: ", fila[-2])
 
     return fila                   
@@ -65,9 +69,18 @@ def procesar_html(filename):
                     fila = (str(i+1), apellido, nombres, localidad, provincia)
                     writer.writerow(arreglar_fila(fila))
         else:
-            pass
-
-
+            dataniveles = rootnode.xpath('//table')[:3]
+            for i, data in enumerate(dataniveles):
+                filas = data.xpath('.//tr')
+                filas = [[n.text for n in f.xpath('./td//p')] for f in filas]
+                filas = [f for f in filas if f]
+                fila = filas[1:]
+                for f in filas:
+                    if len(f) == 3 and f[2] in ['Buenos Aires - Ciudad Autónoma', 'Capital Federal']:
+                        f[2] = 'Buenos Aires'
+                        f.append('Ciudad Autónoma de Buenos Aires')
+                    fila = [str(i+1)] + f
+                    writer.writerow(arreglar_fila(fila))
 
 
 if __name__ == '__main__':
