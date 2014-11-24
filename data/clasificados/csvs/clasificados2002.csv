@@ -1,5 +1,4 @@
 Nivel,Apellido,Nombres,Localidad,Provincia
-1,APELLIDO,NOMBRES,LOCALIDAD,PROVINCIA
 1,Abad Vázquez,Agustín Nicolás,Temperley,Buenos Aires
 1,Aguirre,Emilio Andrés,Orán,Salta
 1,Álvarez Juliá,Anabel,Buenos Aires,Ciudad Autónoma de Buenos Aires
@@ -165,7 +164,6 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Wainstock,Alejandro,Buenos Aires,Ciudad Autónoma de Buenos Aires
 1,Yamauchi,Nicolás,Zárate,Buenos Aires
 1,Zaourak,Javier Ignacio,Quilmes,Buenos Aires
-2,APELLIDO,NOMBRES,LOCALIDAD,PROVINCIA
 2,Abachian Álvarez,Ezequiel,Mar del Plata,Buenos Aires
 2,Acosta,Mario Emir,Formosa,Formosa
 2,Acosta,Reinaldo Emir,Formosa,Formosa
@@ -317,7 +315,6 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Yu,Fernando,Buenos Aires,Ciudad Autónoma de Buenos Aires
 2,Zalduendo,Tomás Eduardo,Campana,Buenos Aires
 2,Zanenga,Heliana Paola,Formosa,Formosa
-3,APELLIDO,NOMBRES,LOCALIDAD,PROVINCIA
 3,Alarcón,Luciana Marilín,Reconquista,Santa Fe
 3,Albiol,Mariana Noelia,Lanús,Buenos Aires
 3,Álvarez,Nicolás Alejandro,Bahía Blanca,Buenos Aires

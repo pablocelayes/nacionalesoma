@@ -12,9 +12,12 @@ def limpiar(campo):
     return campo
 
 def arreglar_fila(fila):
-    nivel, apellido, nombres, localidad, provincia = fila
     fila = [limpiar(campo) for campo in fila]
-    if localidad == "Capital Federal" or provincia == "Capital Federal":
+    nivel, apellido, nombres, localidad, provincia = fila
+    if (localidad.lower() in ["capital federal", "caba"]
+        or localidad.lower().endswith("de buenos aires")
+        or localidad.lower().endswith("de bs as")
+        or provincia == "Capital Federal"):
         fila[-1] = "Ciudad Autónoma de Buenos Aires"
     elif provincia == "Rosario":
         fila[-1] = "Santa Fe"
@@ -69,16 +72,21 @@ def procesar_html(filename):
                     apellido, nombres = [p.strip() for p in ayn.split(",")]
                     fila = (str(i+1), apellido, nombres, localidad, provincia)
                     writer.writerow(arreglar_fila(fila))
-        elif año < 2004:
+        elif año != 2004:
             content = open(filename, 'r', encoding='iso-8859-1').read()
             tree = lh.fromstring(content)
             rootnode = tree.getroottree()
-            dataniveles = rootnode.xpath('//table')[:3]
+            tables = rootnode.xpath('//table')
+            if año >= 2005:
+                dataniveles = [tables[i] for i in [1, 3, 5]]
+            else:
+                dataniveles = tables[:3]
+
             for i, data in enumerate(dataniveles):
                 filas = data.xpath('.//tr')
                 filas = [[n.text_content().strip() for n in f.xpath('./td')] for f in filas]
                 filas = [f for f in filas if f]
-                fila = filas[1:]
+                filas = filas[1:]
                 for f in filas:
                     if len(f) == 3:
                         f.append("")
@@ -86,16 +94,21 @@ def procesar_html(filename):
                         f[2] = 'Buenos Aires'
                         f[3] = 'Ciudad Autónoma de Buenos Aires'
                     fila = [str(i+1)] + f
+                    if len(fila) > 5: # Borrar escuela
+                        if año < 2009:
+                            del fila[-3] 
+                        else:
+                            fila = fila[:-1]
+
                     writer.writerow(arreglar_fila(fila))
         else:
             content = open(filename, 'r', encoding='iso-8859-1').read()
             tree = lh.fromstring(content)
             rootnode = tree.getroottree()
-            dataniveles = rootnode.xpath('//table')[:3]
             filas = rootnode.xpath('.//tr')
             filas = [[n.text_content().strip() for n in f.xpath('./td')] for f in filas]
             filas = [f for f in filas if f]
-            for f in filas[1:]:
+            for f in filas[1:-2]:
                 if len(f) == 3:
                     f.append("")
                 if f[2] in ['Buenos Aires - Ciudad Autónoma', 'Capital Federal', 'Ciudad Autónoma de Buenos Aires']:
