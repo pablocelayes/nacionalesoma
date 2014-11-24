@@ -9,10 +9,11 @@
 import csv
 import pandas as pd
 from lxml import etree
+import math
 
 MAPA_BASE = "Blank_Argentina_Map.svg"
 
-COLORES = ["#F1EEF6", "#D4B9DA", "#C994C7", "#DF65B0", "#DD1C77", "#980043"]
+COLORES = ["#edf8e9", "#c7e9c0", "#a1d99b", "#74c476", "#41ab5d", "#238b45", "#005a32"]
 
 PATH_STYLE = ";fill-opacity:1;stroke:#ffffff;stroke-width:1.40563393;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
 
@@ -40,22 +41,23 @@ def generar_mapas(reporte):
         for provid, provincia in datos_año["Provincia"].items():
             temp_dict[provincia] = datos_año["Cantidad"][provid]
         datos_año = temp_dict
+        for provincia in PROV_CODES:
+            if not provincia in datos_año:
+                datos_año[provincia] = 0
 
-        cantidades = sorted(datos_año.values())
-        umbrales = []
-        for i in range(5):
-            n = (len(cantidades) // 6) * (i + 1)
-            umbrales.append((cantidades[n] + cantidades[n + 1]) / 2)
-        # generar sextiles
-        def sextil(valor):
-            i = 0
-            while i < 5 and valor > umbrales[i]:
-                i += 1
-            return i
+        cantidades = datos_año.values()
+        cantidades = [math.log(c + 1) for c in cantidades]
+        max_value = max(cantidades)
+        min_value = min(cantidades)
+
+        def color(valor):
+            i = math.floor((len(COLORES)-1) * (math.log(valor + 1) - min_value) / (max_value - min_value))
+            return COLORES[i]
 
         for provincia, valor in datos_año.items():
             pathid = PROV_CODES[provincia]
-            style = 'fill:' + COLORES[sextil(valor)] + PATH_STYLE
+            # TODO: color palido sólo para el 0
+            style = 'fill:' + color(valor) + PATH_STYLE
             path = [p for p in paths if p.get('id') == pathid][0]
             path.set('style', style)
 
