@@ -7,7 +7,7 @@ from datetime import date
     y generación de conteos por año y provincia
 """
 
-años = range(1998, 2002)
+años = range(1998, 2015)
 
 csvfile = 'csvs/clasificados%d.csv'
 df = pd.read_csv(csvfile % años[0], parse_dates=True)

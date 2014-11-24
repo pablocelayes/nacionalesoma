@@ -21,6 +21,15 @@ def arreglar_fila(fila):
         fila[-1] = "Ciudad Autónoma de Buenos Aires"
     elif provincia == "Rosario":
         fila[-1] = "Santa Fe"
+    renombresprovincias = {"CHUBUT": "Chubut",
+        "Yerba Buena": "Tucumán",
+        "Sgo del Estero": "Santiago del Estero",
+        "Santa Fé": "Santa Fe",
+        "Capital": "Ciudad Autónoma de Buenos Aires",
+    }
+    if provincia in renombresprovincias:
+        fila[-1] = renombresprovincias[provincia]
+                
     elif fila[-1] == "":
         # import ipdb; ipdb.set_trace()
         print("Arreglar localidad: ", fila[-2])
