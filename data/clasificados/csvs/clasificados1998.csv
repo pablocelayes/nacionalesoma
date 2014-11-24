@@ -18,7 +18,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Biagioli,Eric Javier,Casilda,Santa Fe
 1,Biglia,Cristian Hernán,Mercedes,Buenos Aires
 1,Billiani,Leonardo Oscar,San Fernando,Buenos Aires
-1,Blanco,Santiago,Capital Federal,
+1,Blanco,Santiago,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Bolo,Raúl Oscar,Coronel Dorrego,Buenos Aires
 1,Bolognini,Laura,La Plata,Buenos Aires
 1,Bonomo,Daniela,Bariloche,Río Negro
@@ -26,14 +26,14 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Bosso,Agustín Gabriel,Mar del Plata,Buenos Aires
 1,Bournissent,Martín Alejandro,Malabrigo,Santa Fe
 1,Breitman,Florencia María,Viedma,Río Negro
-1,Brichetti,Valeria Melisa,Capital Federal,
-1,Brisco,María Agustina,Capital Federal,
-1,Britos,Pablo Sebastián,Capital Federal,
-1,Brown Bustos,Nicolás Daniel,Capital Federal,
+1,Brichetti,Valeria Melisa,Capital Federal,Ciudad Autónoma de Buenos Aires
+1,Brisco,María Agustina,Capital Federal,Ciudad Autónoma de Buenos Aires
+1,Britos,Pablo Sebastián,Capital Federal,Ciudad Autónoma de Buenos Aires
+1,Brown Bustos,Nicolás Daniel,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Buscalia,Alberto Matías,Campana,Buenos Aires
 1,Cardozo,César Luis,Río Turbio,Santa Cruz
 1,Carlini,Luciano Gabriel,Mar del Plata,Buenos Aires
-1,Carlucci,Bruno Luciano,Capital Federal,
+1,Carlucci,Bruno Luciano,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Carluccio,José María,Bariloche,Río Negro
 1,Caruso,Nahuel Domingo,Rosario,Santa Fe
 1,Castro,Mauro Andrés,Solano,Buenos Aires
@@ -43,17 +43,17 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Cervellini,María Liz,Santa Rosa,La Pampa
 1,Chasco,Mariano Ariel,Rufino,Santa Fe
 1,Chen,Yu Sung,Rosario,Santa Fe
-1,Chern,Kuo-Chao,Capital Federal,
+1,Chern,Kuo-Chao,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Chiaradía,Juan Martín,Necochea,Buenos Aires
 1,Chillo,Nicolás Agustín,Tigre,Buenos Aires
-1,Choi,Cristian Emmanuel,Capital Federal,
+1,Choi,Cristian Emmanuel,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Cianci,Nicolás Emanuel,Bernal,Buenos Aires
 1,Colombo Berra,Juan José,Rosario,Santa Fe
 1,Conti,Juan José,Carlos Pellegrini,Santa Fe
 1,Cortadi,Gerardo Andrés,Tres Arroyos,Buenos Aires
 1,Cortez Quiroga,Ana Belén,Campana,Buenos Aires
 1,Coturel,Daniel Federico,Remedios de Escalada,Buenos Aires
-1,Cristal,Yann,Capital Federal,
+1,Cristal,Yann,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Cuello,Nicolás,Chascomús,Buenos Aires
 1,Cuezzo,Mario Gastón,San Miguel de Tucumán,Tucumán
 1,Curetti,José,Comodoro Rivadavia,Chubut
@@ -79,10 +79,10 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Etchegaray,Juan Manuel,San Cayetano,Buenos Aires
 1,Facio,Lucas Apolo,Olivos,Buenos Aires
 1,Fernández Canevari,María Cecilia,Hurlingham,Buenos Aires
-1,Fernández Núñez,Santiago Tomás,Capital Federal,
+1,Fernández Núñez,Santiago Tomás,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Fernández Vidal,Silvina,Florida,Buenos Aires
 1,Ferrari,Santiago Alejandro,City Bell,Buenos Aires
-1,Ferreyra,Lucila Soledad,Capital Federal,
+1,Ferreyra,Lucila Soledad,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Figueroa,José Ignacio,San Salvador de Jujuy,Jujuy
 1,Freije,María Luján,Bahía Blanca,Buenos Aires
 1,Frojan,Guillermina,Villa Domínico,Buenos Aires
@@ -90,19 +90,19 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Galíndez,Gustavo Javier,San Salvador de Jujuy,Jujuy
 1,Gallardo,Marcelo Andrés,Banfield,Buenos Aires
 1,Gálvez,Juan Manuel,Córdoba,Córdoba
-1,Garziglia,Leticia Paola,Capital Federal,
-1,Geffner,Diego Mario,Capital Federal,
+1,Garziglia,Leticia Paola,Capital Federal,Ciudad Autónoma de Buenos Aires
+1,Geffner,Diego Mario,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Gil Navarro,Juan Miguel,Eldorado,Misiones
 1,Giorgi,Darío Alberto,Las Parejas,Santa Fe
-1,Goldín,Matías Alejandro,Capital Federal,
+1,Goldín,Matías Alejandro,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Gómez,Roberto Alfredo,Burzaco,Buenos Aires
-1,Gómez,Ernesto Raúl,Capital Federal,
+1,Gómez,Ernesto Raúl,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Gómez,Juan Manuel,Azul,Buenos Aires
 1,González,Mariano,,
 1,González Larrea,Gustavo,Bariloche,Río Negro
 1,Gregorio,Carlos Alberto,Bolívar,Buenos Aires
 1,Grela,Laura Carolina,Lanús,Buenos Aires
-1,Groisman,Leandro,Capital Federal,
+1,Groisman,Leandro,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Guajardo Herrera,Nicolás Alfredo,Plaza Huincul,Neuquén
 1,Guaycochea,Lucas Enrique,Bella Vista,Buenos Aires
 1,Guelbert,Valeria Patricia,Córdoba,Córdoba
@@ -121,14 +121,14 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Jorquera,Eliana,Villa Carlos Paz,Córdoba
 1,Josebachuili,Mariela Gisele,Burzaco,Buenos Aires
 1,Kogan Moyano,Julieta,Mendoza,Mendoza
-1,Kranz,Fernando Martín,Capital Federal,
+1,Kranz,Fernando Martín,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Krenz,Carlos Darío,Paraná,Entre Ríos
-1,Kuzmuk,Mauricio Antonio,Capital Federal,
+1,Kuzmuk,Mauricio Antonio,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Ladeveze,Emilio Raúl,San Nicolás,Buenos Aires
-1,Lerman,Celia,Capital Federal,
+1,Lerman,Celia,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Lertora,Matías Nicolás,Paraná,Entre Ríos
 1,Lescano,Carlos Ulises,La Plata,Buenos Aires
-1,Lippi,Adriana,Capital Federal,
+1,Lippi,Adriana,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Lisandrón,Pablo Enrique,Justiniano Posse,Córdoba
 1,Loewy,Irene,Darregueira,Buenos Aires
 1,López,Laureano Ariel,Córdoba,Córdoba
@@ -136,7 +136,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,López,Diego Fernando,San Nicolás,Buenos Aires
 1,López,Alberto Manuel,Mar del Plata,Buenos Aires
 1,López y Rosenfeld,Matías,Luján,Buenos Aires
-1,Lores,Nicolás Homero,Capital Federal,
+1,Lores,Nicolás Homero,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Lucchesi,Romina Natalia,Arroyo Seco,Santa Fe
 1,Luchechen,Natalia Gianina,San José,Misiones
 1,Lynch,Benito Miguel,Cipolletti,Río Negro
@@ -146,27 +146,27 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Malano,Ignacio,Quilmes,Buenos Aires
 1,Mandagarán,Virginia,Brandsen,Buenos Aires
 1,Manfredi,Ramiro,Virginia Mackenna,Córdoba
-1,Mannara,Juan Ignacio,Capital Federal,
+1,Mannara,Juan Ignacio,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Marc,Ángel Emanuel,Alberti,Buenos Aires
-1,Marchiori,Eugenio Jorge,Capital Federal,
+1,Marchiori,Eugenio Jorge,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Mariscal,Lautaro Patricio,San Miguel de Tucumán,Tucumán
 1,Martelletti,Mariano Gabriel,Rosario,Santa Fe
 1,Martínez,Nancy Carolina,Lanús,Buenos Aires
-1,Mattes,Addy,Capital Federal,
+1,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Mazzola,Gerardo,Villa Ramallo,Buenos Aires
 1,Melero,Ricardo Javier,Santa Fe,Santa Fe
 1,Mereb,Juan Francisco,El Bolsón,Río Negro
 1,Mesas,Mauricio Cristian,Villa Mercedes,San Luis
 1,Migliavacca,Javier Isauro,San Miguel de Tucumán,Tucumán
 1,Miranda,Emanuel Alejandro,Puan,Buenos Aires
-1,Miranda,Martín Santiago,Capital Federal,
+1,Miranda,Martín Santiago,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Molero Miranda,Leopoldo Enrique,La Plata,Buenos Aires
 1,Molina,Osvaldo Ezequiel,Zapala,Neuquén
 1,Montero,Leandro Pedro,Florida,Buenos Aires
 1,Monterrubio,Ignacio,San Miguel de Tucumán,Tucumán
 1,Montes,Igancio Manuel,San Juan,San Juan
 1,Morana,Federico Maximiliano,Santa Fe,Santa Fe
-1,Morbelli,Guillermo Raúl,Capital Federal,
+1,Morbelli,Guillermo Raúl,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Morea,José Luis,Miramar,Buenos Aires
 1,Morelli,Juan Esteban,Rosario,Santa Fe
 1,Mosquera,Magdalena María,San Isidro,Buenos Aires
@@ -174,13 +174,13 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Muzaber,Lisandro,Nogoyá,Entre Ríos
 1,Novelli,Marcelo Emmanuel,San Nicolás,Buenos Aires
 1,Oberti,Gonzalo,Punta Alta,Buenos Aires
-1,Ontiveros,Francisco Javier,Capital Federal,
+1,Ontiveros,Francisco Javier,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Ortega Castelán,Gerardo,Rosario,Santa Fe
 1,Parodi,Marianela,San Nicolás,Buenos Aires
 1,Pedetta,Andrea,Mar del Plata,Buenos Aires
 1,Peñaranda,Ramiro Andrés,Rosario,Santa Fe
 1,Pérez,Javier Luis,Rosario,Santa Fe
-1,Pérez González,Santiago Nicolás,Capital Federal,
+1,Pérez González,Santiago Nicolás,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Pérez Mora,Mariana,Mendoza,Mendoza
 1,Pérez Truglia,Ricardo Nicolás,Ciudadela,Buenos Aires
 1,Perlo,Paula Silvina,Rosario,Santa Fe
@@ -191,17 +191,17 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Pinto,Natalia Lucía,Claypole,Buenos Aires
 1,Plavnik,Julia Yael,Villa Carlos Paz,Córdoba
 1,Poehls,Sofía,Bonifacio,Buenos Aires
-1,Pokorski,Diego Sebastián,Capital Federal,
+1,Pokorski,Diego Sebastián,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Porta,Exequiel Oscar Jesús,Venado Tuerto,Santa Fe
 1,Prestifilippo,Cristian Daniel,Rosario,Santa Fe
 1,Privitera,Maximiliano Alejandro,Martín Coronado,Buenos Aires
 1,Querini,Mauricio,Santa Fe,Santa Fe
 1,Quinteros,Martín Miguel,Ballesteros,Córdoba
 1,Raminger,Pablo Germán,Bernal,Buenos Aires
-1,Raskovsky,Rodrigo Manuel,Capital Federal,
+1,Raskovsky,Rodrigo Manuel,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Recio,Juan Pablo,Don Torcuato,Buenos Aires
 1,Remorini,Leandro Daniel,La Plata,Buenos Aires
-1,Rey Bulen,Marisa,Capital Federal,
+1,Rey Bulen,Marisa,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Ricotta,Rodrigo Javier,Neuquén,Neuquén
 1,Robles Luna,Esteban,América,Buenos Aires
 1,Rocha,Leonardo Manuel,Córdoba,Córdoba
@@ -210,10 +210,10 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Rodríguez,Jorge David,General Alvear,Mendoza
 1,Rodríguez Falcón,Ana,Acassuso,Buenos Aires
 1,Rodríguez Prieto,María Sofía,Trenque Lauquen,Buenos Aires
-1,Roslan,Cecilia,Capital Federal,
-1,Rotella,Maximiliano,Capital Federal,
+1,Roslan,Cecilia,Capital Federal,Ciudad Autónoma de Buenos Aires
+1,Rotella,Maximiliano,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Rotman,Juan Facundo,Quilmes,Buenos Aires
-1,Royo,Francisco,Capital Federal,
+1,Royo,Francisco,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Salamida,Paola,Bariloche,Río Negro
 1,Salinas,Silvina Rosa,Florencio Varela,Buenos Aires
 1,Santángelo,María,San Isidro,Buenos Aires
@@ -226,8 +226,8 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Shade,Ariel Mauricio,Venado Tuerto,Santa Fe
 1,Solanes,Jorge Pablo,Godoy Cruz,Mendoza
 1,Sueyro,Andrea Soledad,Coronel Vidal,Buenos Aires
-1,Szyld,Martín,Capital Federal,
-1,Tacchini,Pablo,Capital Federal,
+1,Szyld,Martín,Capital Federal,Ciudad Autónoma de Buenos Aires
+1,Tacchini,Pablo,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Tardella,Nicolás Adriel,Mar del Plata,Buenos Aires
 1,Taverna,Franco Nicolás,Mechita,Buenos Aires
 1,Tuñón,Guadalupe,San Isidro,Buenos Aires
@@ -235,23 +235,23 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Varela,Federico,Villa Gesell,Buenos Aires
 1,Vecchietti,Daniel Ricardo,Formosa,Formosa
 1,Velázquez,Hernán Alfredo,Gualeguaychú,Entre Ríos
-1,Venuti,María Victoria,Capital Federal,Buenos Aires
+1,Venuti,María Victoria,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Vergara,Javier Andrés,Gobernador Virasoro,Corrientes
 1,Vila,Fernando Lucas,Victoria,Buenos Aires
 1,Villani,Tomás,Ushuaia,Tierra del Fuego
-1,Visacovsky,Maira Denise,Capital Federal,
+1,Visacovsky,Maira Denise,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Visotsky,Gastón,Córdoba,Córdoba
 1,Volzone,Darío,Bariloche,Río Negro
 1,Wainer,Nadia,Bahía Blanca,Buenos Aires
 1,Weitz,Nurit Roxana,Rosario,Santa Fe
-1,Yuhjtman,Sergio Andrés,Capital Federal,
+1,Yuhjtman,Sergio Andrés,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Zafran,Daiana Pamela,Avellaneda,Buenos Aires
 1,Ziella,Adriana,Lomas de Zamora,Buenos Aires
 2,Abal,Daniel Eduardo,Berazategui,Buenos Aires
 2,Aceña,Andrés Esteban,Villa Nueva,Mendoza
 2,Alassia,Leonardo Javier,Rafaela,Santa Fe
-2,Alfonso Gobbi,Carlos Oscar,Capital Federal,
-2,Altamira,Pablo Gonzalo,Capital Federal,
+2,Alfonso Gobbi,Carlos Oscar,Capital Federal,Ciudad Autónoma de Buenos Aires
+2,Altamira,Pablo Gonzalo,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Álvarez,Emanuel Andrés,Rosario,Santa Fe
 2,Amato,Ignacio,Florida,Buenos Aires
 2,Amoroso,Matías Damián,San Antonio de Areco,Buenos Aires
@@ -265,22 +265,22 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Baeza,Emmanuel,Bahía Blanca,Buenos Aires
 2,Baldo,Maximiliano José,Junín,Buenos Aires
 2,Ballesteros,Pablo Marco,Bahía Blanca,Buenos Aires
-2,Banfi,Alejandra,Capital Federal,
-2,Barrios,Ezequiel,Capital Federal,
+2,Banfi,Alejandra,Capital Federal,Ciudad Autónoma de Buenos Aires
+2,Barrios,Ezequiel,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Basaldella,Franco,Rosario,Santa Fe
 2,Basualdo Perello,Joaquín Rubén,Metán,Salta
 2,Becerra,Federico,Mar del Plata,Buenos Aires
 2,Belardinelli,Juan Manuel,Rosario,Santa Fe
-2,Bello,Ignacio Alberto,Capital Federal,
+2,Bello,Ignacio Alberto,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Belzunce,Martín Alberto,Martínez,Buenos Aires
-2,Bercellini,Pablo Nicolás,Capital Federal,
+2,Bercellini,Pablo Nicolás,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Berdión,Valeria Gisele,Daireaux,Buenos Aires
-2,Blanco,Eugenio,Capital Federal,
+2,Blanco,Eugenio,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Bonomo,Luciana,San Carlos de Bariloche,Río Negro
 2,Borderes,Ignacio,Curuzú Cuatiá,Corrientes
 2,Borquez,Maximiliano Gabriel,Villa Domínico,Buenos Aires
 2,Braconi,Candela,Coronel Granada,Buenos Aires
-2,Brandi,Martín Federico,Capital Federal,
+2,Brandi,Martín Federico,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Briggiler,Ezequiel Daniel,Olivos,Buenos Aires
 2,Brindza,Gladys Haydeé,Merlo,Buenos Aires
 2,Bruno,Nicolás Horacio,Sunchales,Santa Fe
@@ -301,9 +301,9 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Celani,Matías,Martínez,Buenos Aires
 2,Celayes,Pablo Gabriel,Córdoba,Córdoba
 2,Chilotegui,María Silvina,Gobernador Virasoro,Corrientes
-2,Chiora,Leandro Esteban,Capital Federal,
+2,Chiora,Leandro Esteban,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Cipolla,Federico Andrés,Bell Ville,Córdoba
-2,Clavijo,Bernardo José,Capital Federal,
+2,Clavijo,Bernardo José,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Condéranne,Juan,Baradero,Buenos Aires
 2,Conti,Javier Ernesto,Gobernador Virasoro,Corrientes
 2,Converti,Luciano,San Carlos de Bariloche,Río Negro
@@ -322,24 +322,24 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,De Marco,Martín Gabriel,San Justo,Buenos Aires
 2,Del Blanco,Gabriel Sebastián,Córdoba,Córdoba
 2,Del Hoyo,Matías Luis,Necochea,Buenos Aires
-2,Del Rosal,Mariana,Capital Federal,
+2,Del Rosal,Mariana,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Distéfano,Nicolás Emmanuel,San Nicolás,Buenos Aires
-2,Dragovits,Mercedes Laura,Capital Federal,
+2,Dragovits,Mercedes Laura,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Duarte López,Fernando Manuel,Godoy Cruz,Mendoza
 2,Ducos,David,Necochea,Buenos Aires
 2,Esperón,Omar Daniel,Morón,Buenos Aires
 2,Estrany,Gabriel Leandro,Lanús,Buenos Aires
-2,Fajgelbaum,Pablo David,Capital Federal,
+2,Fajgelbaum,Pablo David,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Farías,Gerónimo Martín,San Miguel de Tucumán,Tucumán
 2,Feal Zubimendi,María Soledad,Bahía Blanca,Buenos Aires
-2,Fernández,Carlos Agustín,Capital Federal,
+2,Fernández,Carlos Agustín,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Folco,Juan Pablo,Santa Rosa,La Pampa
-2,Formigoni,María Belén,Capital Federal,
+2,Formigoni,María Belén,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Fortunato,Claudio Esteban,Quilmes,Buenos Aires
 2,Franco,Carlos,San Nicolás,Buenos Aires
 2,Galilea,Paula Verónica,Necochea,Buenos Aires
 2,Gallardo,Lucas Natanael,Coronel Suárez,Buenos Aires
-2,Ganc,Esteban Andrés,Capital Federal,
+2,Ganc,Esteban Andrés,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Gandi,Silvana,Guatrache,La Pampa
 2,García,Juan Matías,San Miguel de Tucumán,Tucumán
 2,García Dubiski,Damián Ariel,3 de Febrero,Buenos Aires
@@ -349,13 +349,13 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Giorgetti,Orlando Bruno,Zárate,Buenos Aires
 2,Gismondi,Milagros,Mar del Plata,Buenos Aires
 2,Goñi,Sebastián Néstor,Berisso,Buenos Aires
-2,González,Nahuel,Capital Federal,
-2,Greco,Enrique Guillermo,Capital Federal,
+2,González,Nahuel,Capital Federal,Ciudad Autónoma de Buenos Aires
+2,Greco,Enrique Guillermo,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Guillén,Diego,San Miguel de Tucumán,Tucumán
-2,Halsband,Melisa Coral,Capital Federal,
+2,Halsband,Melisa Coral,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Hansen,Juan de Dios,San Clemente del Tuyú,Buenos Aires
 2,Hilding Ohlsson,Nicolás,Boulogne,Buenos Aires
-2,Horovitz,Camilo,Capital Federal,
+2,Horovitz,Camilo,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Insúa,Martín Julián,Merlo,Buenos Aires
 2,Iribarne,Martín Alberto,Azul,Buenos Aires
 2,Irrazábal,Emanuel Agustín,Goya,Corrientes
@@ -368,16 +368,16 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Lafon,Martín Ezequiel,Lomas de Zamora,Buenos Aires
 2,Lantschner,Andrés Federico,San Carlos de Bariloche,Río Negro
 2,Larivei,Giuliana Rita,Villa Carlos Paz,Córdoba
-2,Lerea,Guido Alberto,Capital Federal,
+2,Lerea,Guido Alberto,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Leszczynski,Agustín Sebastián,San Carlos de Bariloche,Río Negro
 2,Lis,Diego Alejandro,Córdoba,Córdoba
 2,Lizasoain,María Paula,Villaguay,Entre Ríos
-2,Lombardi,Leandro Ezequiel,Capital Federal,
+2,Lombardi,Leandro Ezequiel,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,López,Andrés,Béccar,Buenos Aires
-2,Lowenthal Quastler,Laura Carolina,Capital Federal,
+2,Lowenthal Quastler,Laura Carolina,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Loze,Valeria Carolina,General Galarza,Entre Ríos
 2,Luque,Pablo Andrés,Córdoba,Córdoba
-2,Mansilla,Lucio Vicente,Capital Federal,
+2,Mansilla,Lucio Vicente,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Manzato,Marina,Béccar,Buenos Aires
 2,Maro,Mariano Abel,Resistencia,Chaco
 2,Martínez,Verónica Natalia,Boulogne,Buenos Aires
@@ -387,7 +387,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Meneses,Víctor Hugo,San Martín de los Andes,Neuquén
 2,Miretti,Gabriel,Córdoba,Córdoba
 2,Mobilia,Leticia,General Levalle,Córdoba
-2,Molinaro,Gabriel Leonardo,Capital Federal,
+2,Molinaro,Gabriel Leonardo,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Moltun,Diego Martín,Lomas de Zamora,Buenos Aires
 2,Moreira,Mariano,Arroyo Seco,Santa Fe
 2,Moreira Varanese,Ileana Cristina,Campana,Buenos Aires
@@ -412,7 +412,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Perrone,Facundo Martín,Florida,Buenos Aires
 2,Peruzzo,Eduardo Manuel,Gualeguaychú,Entre Ríos
 2,Pezzuto,Gastón Ezequiel,Lanús,Buenos Aires
-2,Piñeiro,Matías Gustavo,Capital Federal,
+2,Piñeiro,Matías Gustavo,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Pomba,Valeria Alejandra,General Levalle,Córdoba
 2,Pomies,Andrea Paola,San Cristóbal,Santa Fe
 2,Quiroga,Lisandro Mariano,Temperley,Buenos Aires
@@ -424,11 +424,11 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Rivas,Víctor Hugo,Olavarría,Buenos Aires
 2,Rodríguez,Juan Sebastián,Córdoba,Córdoba
 2,Rohdenburg,Sebastián Leonardo,Quilmes,Buenos Aires
-2,Rojt,Josefina Enriqueta,Capital Federal,
+2,Rojt,Josefina Enriqueta,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Romero,Javier Osvaldo,Wilde,Buenos Aires
-2,Roslan,Francisco,Capital Federal,
-2,Rossi,María Magdalena,Capital Federal,
-2,Rossi,Eduardo,Capital Federal,
+2,Roslan,Francisco,Capital Federal,Ciudad Autónoma de Buenos Aires
+2,Rossi,María Magdalena,Capital Federal,Ciudad Autónoma de Buenos Aires
+2,Rossi,Eduardo,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Rozas,Guillermo,Cañada de Gómez,Santa Fe
 2,Ruyú,Bruno Alejandro,Rosario,Santa Fe
 2,Sáenz,Mariano Néstor,Rosario,Santa Fe
@@ -437,55 +437,55 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Santillán,Nadia Carolina,Luján,Buenos Aires
 2,Sario,Luis Nicolás,Mercedes,Buenos Aires
 2,Scaserra,Fernando Adrián,Villa Martelli,Buenos Aires
-2,Sciola,Ana Verónica,Capital Federal,
+2,Sciola,Ana Verónica,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Serralunga,Fernán José,Santa Fe,Santa Fe
 2,Shelton,Joshua Thomas,Guaymallén,Mendoza
-2,Socoloff,Ivana Claudia,Capital Federal,
+2,Socoloff,Ivana Claudia,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Sola,Pablo,Crespo,Entre Ríos
 2,Somaini,Paulo José,Alta Gracia,Córdoba
 2,Szabady,Esteban Huberto,San Isidro,Buenos Aires
 2,Tarrio,Fernando Martín,Comodoro Rivadavia,Chubut
 2,Testa,Federico,Alta Gracia,Córdoba
 2,Theler,Germán Guillermo,Rafaela,Santa Fe
-2,Thierer,Sebastián,Capital Federal,
+2,Thierer,Sebastián,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Tiberti,Fernando Daniel,Santiago del Estero,Santiago del Estero
 2,Tripicchio,Agustín Bernardo,Villa Cañás,Santa Fe
 2,Trivella,Pablo Gabriel,Guaymallén,Mendoza
-2,Tsai,Teng-Han,Capital Federal,
+2,Tsai,Teng-Han,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Vázquez Novoa,Nadia Evangelina,Córdoba,Córdoba
 2,Vega,Carolina,Junín,Buenos Aires
-2,Villafañe,Gabriela Lorena,Capital Federal,
+2,Villafañe,Gabriela Lorena,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Villar,Damián Ángel,Rosario,Santa Fe
 2,Vinzón,Sabrina Eugenia,San Miguel,Buenos Aires
-2,Voegeli,María,Capital Federal,
+2,Voegeli,María,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Wada,Leonardo,Eldorado,Misiones
 2,Walicki,Gillaume Daniel,Eldorado,Misiones
 2,Yané,Darian,Olivos,Buenos Aires
 2,Yunes,Javier,Rosario,Santa Fe
 2,Zorba,Bárbara Elizabeth,La Plata,Buenos Aires
-2,Zurita,José Francisco,Capital Federal,
+2,Zurita,José Francisco,Capital Federal,Ciudad Autónoma de Buenos Aires
 2,Zwick,Analía Elizabeth,Guatrache,La Pampa
 3,Acosta,Araceli Natalia,Jesús María,Córdoba
-3,Aiello,Andrés Martín,Capital Federal,
+3,Aiello,Andrés Martín,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Albanesi,Matías Carlos,Berazategui,Buenos Aires
 3,Aliaga,María Laura,Villa Mercedes,San Luis
 3,Álvarez,María Alejandra,Salta,Salta
 3,Andino,Diego Leonardo,Caleta Olivia,Santa Cruz
 3,Anton,Lisandro Raúl,San Isidro,Buenos Aires
 3,Barceló,Alfonso,Bariloche,Río Negro
-3,Barmak,Jonathan Ariel,Capital Federal,
+3,Barmak,Jonathan Ariel,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Barraza,Jessica Vanesa,San Antonio de Padua,Buenos Aires
 3,Barrea,Leonardo Damián,Rosario,Santa Fe
-3,Barreiro,Ariel Sebastián,Capital Federal,
+3,Barreiro,Ariel Sebastián,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Basaldúa,Mariano Gastón,Gualeguaychú,Entre Ríos
 3,Bastidas Villar,Cristian Andrés,Neuquén,Neuquén
 3,Batistelli,Mariano Orlando,Tortugas,Santa Fe
-3,Bendersky,Ariel Martín,Capital Federal,
+3,Bendersky,Ariel Martín,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Bueno,Nicolás Eduardo,Junín,Buenos Aires
 3,Bulacio Huespe,Rodrigo Sebastián,Córdoba,Córdoba
 3,Bustos,Emilio Nicolás,Necochea,Buenos Aires
 3,Cabeza,Hugo Daniel,Metán,Salta
-3,Cacherosky,José Fernando,Capital Federal,
+3,Cacherosky,José Fernando,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Campelo,Adrián Esteban,Bahía Blanca,Buenos Aires
 3,Cámpora,Nuria Élide,Villa Ramallo,Buenos Aires
 3,Cañibano,Nicolás,City Bell,Buenos Aires
@@ -504,8 +504,8 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 3,Gaitán,Christian Ariel,Ramos Mejía,Buenos Aires
 3,García,Diego Sebastián,Munro,Buenos Aires
 3,García,Julia Inés,Argüello,Córdoba
-3,García Rosa,Nicolás,Capital Federal,
-3,Garelik,Edgardo Fabián,Capital Federal,
+3,García Rosa,Nicolás,Capital Federal,Ciudad Autónoma de Buenos Aires
+3,Garelik,Edgardo Fabián,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Gil,Santiago,Rosario,Santa Fe
 3,Hauret,Diego Hernán,Rosario,Santa Fe
 3,Iglesias Coqueti,Antonio,Tandil,Buenos Aires
@@ -513,23 +513,23 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 3,Kler,Pablo Alejandro,Las Toscas,Santa Fe
 3,Lago,Adrián Gustavo,Remedios de Escalada,Buenos Aires
 3,Lanzillotti,Norberto Daniel,Isidro Casanova,Buenos Aires
-3,Lee,Ki Doo,Capital Federal,
+3,Lee,Ki Doo,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Lempel,Ariel Abraham,Ezeiza,Buenos Aires
 3,Lenton,Antonio Andrés,Córdoba,Córdoba
 3,Luccas,Roberto Fabián,Plottier,Neuquén
 3,Mallía,Ezequiel José,Lomas de Zamora,Buenos Aires
 3,Matijacevich,Mauricio Javier,San Lorenzo,Santa Fe
 3,McCabe,Sofía Inés,San Martín de los Andes,Neuquén
-3,Meléndez,Andrés,Capital Federal,
-3,Meninato,Martín,Capital Federal,
-3,Mereb,Martín,Capital Federal,
+3,Meléndez,Andrés,Capital Federal,Ciudad Autónoma de Buenos Aires
+3,Meninato,Martín,Capital Federal,Ciudad Autónoma de Buenos Aires
+3,Mereb,Martín,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Michalowski,Juan Alberto,Merlo,Buenos Aires
 3,Miller,Sergio Andrés,San Nicolás,Buenos Aires
 3,Miotti,Héctor Pablo Juan,General Roca,Córdoba
 3,Moisset de Espanes,Daniel fernando,Córdoba,Córdoba
 3,Molina,Gabriel,Rosario,Santa Fe
 3,Naguil,Jorge Luis,Río Gallegos,Santa Cruz
-3,Nappe,Nicolás Orlando,Capital Federal,
+3,Nappe,Nicolás Orlando,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Novotny Mendoza,Carlos Roberto,Córdoba,Córdoba
 3,Ottina,Enzo Miguel,Valentín Alsina,Buenos Aires
 3,Pacheco,Claudio Andrés,San Nicolás,Buenos Aires
@@ -540,7 +540,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 3,Rodríguez Molinari,Pablo Hernán,Lomas de Zamora,Buenos Aires
 3,Romero,Daniel Emilio,Quilmes,Buenos Aires
 3,Roth,Federico Augusto,Bahía Blanca,Buenos Aires
-3,Rychter,Ariel,Capital Federal,
+3,Rychter,Ariel,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Sabbione,Juan Ignacio,La Plata,Buenos Aires
 3,Sacchini,Jorge Luis,Rosario,Santa Fe
 3,Safe,Martín Darío,Bahía Blanca,Buenos Aires
@@ -549,8 +549,8 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 3,Soul,Hugo Ramón,Bell Ville,Córdoba
 3,Tarsetti,Gabriel Alejandro,Mar del Plata,Buenos Aires
 3,Tassara,Manuel,Rosario,Santa Fe
-3,Tilli,Leonardo Miguel,Capital Federal,
-3,Tonello,Juan Manuel,Capital Federal,
+3,Tilli,Leonardo Miguel,Capital Federal,Ciudad Autónoma de Buenos Aires
+3,Tonello,Juan Manuel,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Travis,Daniel Ryan,City Bell,Buenos Aires
 3,Vásquez,Miguel Darío,Comodoro Rivadavia,Chubut
 3,Veiras,Joaquín Esteban,Martínez,Buenos Aires

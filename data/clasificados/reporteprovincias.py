@@ -11,12 +11,14 @@ años = range(1998, 2002)
 
 csvfile = 'csvs/clasificados%d.csv'
 df = pd.read_csv(csvfile % años[0], parse_dates=True)
-df['Año'] = date(años[0], 11, 15)
+df['Año'] = años[0]
 
 for año in años[1:]:
     newdf = pd.read_csv(csvfile % año, parse_dates=True)
-    newdf['Año'] = date(año, 11, 15)
+    newdf['Año'] = año
     df = df.append(newdf)
 
-provcounts = df.groupby(['Provincia','Año']).aggregate(sum)
+provcounts = df.groupby(['Provincia','Año']).size()
 provcounts.to_csv('provcounts.csv')
+
+# TODO: Rosario no es provincia!
