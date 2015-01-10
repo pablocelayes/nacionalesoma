@@ -5,6 +5,11 @@ import csv
 import sys
 import lxml.html as lh
 
+#Capitalizar Strings Compuestos
+def capitalize_cstrings(provincia):
+    lista = [s.capitalize() for s in provincia.split(" ")]
+    return " ".join(lista)
+
 def limpiar(campo):
     campo = campo.replace('\n', '')
     campo = campo.replace('"', '')
@@ -14,26 +19,17 @@ def limpiar(campo):
 def arreglar_fila(fila):
     fila = [limpiar(campo) for campo in fila]
     nivel, apellido, nombres, localidad, provincia = fila
-    if (localidad.lower() in ["capital federal", "caba"]
-        or localidad.lower().endswith("de buenos aires")
-        or localidad.lower().endswith("de bs as")
-        or provincia == "Capital Federal"):
-        fila[-1] = "Ciudad Autónoma de Buenos Aires"
-    elif provincia == "Rosario":
-        fila[-1] = "Santa Fe"
-    renombresprovincias = {"CHUBUT": "Chubut",
-        "Yerba Buena": "Tucumán",
-        "Sgo del Estero": "Santiago del Estero",
-        "Santa Fé": "Santa Fe",
-        "Capital": "Ciudad Autónoma de Buenos Aires",
-    }
+    renombresprovincias = {"Cordoba":"Córdoba"
+    , "Tucuman":"Tucumán",
+    "Rio Negro":"Río Negro",
+    "Rio Gallegos":"Río Gallegos",
+    "":"Ciudad Autónoma de Buenos Aires"}
     if provincia in renombresprovincias:
         fila[-1] = renombresprovincias[provincia]
 
     elif fila[-1] == "":
         # import ipdb; ipdb.set_trace()
         print("Arreglar localidad: ", fila[-2])
-
     return fila          
 
 
@@ -43,29 +39,60 @@ def procesar_html(filename):
     rootnode = tree.getroot()
     basefilename = filename.split('.')[0]
     
-    with open('csvs/' + basefilename + '.csv', 'w', newline='') as csvfile:
+    with open('csvs/' + basefilename + '.csv', 'w') as csvfile:
         writer = csv.writer(csvfile)
         header = 'Nivel Apellido Nombres Localidad Provincia'.split()
         writer.writerow(header)
 
         año = int(basefilename[-4:])
 
-        if año == 1998:
+        if año <= 1999:
             dataniveles = rootnode.xpath('//pre')
             for i, data in enumerate(dataniveles):
                 filas = data.text.split('\n')
                 filas = [f for f in filas if f] #  removemos filas vacías
-                filas = filas[1:] # removemos encabezado
+                if año == 1997:
+                    filas = filas[2:] # removemos encabezado
+                if len(filas) > 3:
+                    if año == 1997:
+                        for f in filas:
+                            if i == 0:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:18], f[18:41], "Localidad Desconocida", f[51:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            elif i == 1:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:18], f[18:41], "Localidad Desconocida", f[51:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            else:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:18], f[18:41], "Localidad Desconocida", f[51:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            writer.writerow(arreglar_fila(fila))
+                    elif año == 1998:
+                        for f in filas:
+                            if i == 0:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:21], f[21:45], f[45:71], f[71:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            elif i == 1:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:21], f[21:45], f[45:71], f[71:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            else:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:21], f[21:45], f[45:71], f[71:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            writer.writerow(arreglar_fila(fila))   
+                    elif año == 1999:
+                        for f in filas:
+                            if i == 0:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:22], f[22:42], f[42:68], f[68:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            elif i == 1:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:22], f[22:42], f[42:68], f[68:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            else:
+                                fila_aux = [str(i + 1)] + [s.strip() for s in [f[:22], f[22:42], f[42:68], f[68:]]]
+                                fila = [capitalize_cstrings(elem) for elem in fila_aux]
+                            writer.writerow(arreglar_fila(fila))
 
-                for f in filas:
-                    if i == 0:
-                        fila = [str(i + 1)] + [s.strip() for s in [f[:20], f[20:44], f[44:68], f[68:]]]
-                    elif i == 1:
-                        fila = [str(i + 1)] + [s.strip() for s in [f[:20], f[20:42], f[42:68], f[68:]]]
-                    else:
-                        fila = [str(i + 1)] + [s.strip() for s in [f[:20], f[20:39], f[39:65], f[65:]]]
-                    writer.writerow(arreglar_fila(fila))
-        elif año < 2002:
+"""
+
             dataniveles = rootnode.xpath('//ul')
             if not dataniveles:
                 dataniveles = rootnode.xpath('//ol')
@@ -126,10 +153,6 @@ def procesar_html(filename):
                 writer.writerow(arreglar_fila(f))
 
 
-
+"""
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        procesar_html(sys.argv[1])
-    else:
-        for año in range(1998, 2015):
-            procesar_html('clasificados%d.html' % año)
+    procesar_html('aprobados1998.html')
