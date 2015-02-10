@@ -1,15 +1,15 @@
-Premio,Nivel,Apellido,Nombres,Localidad,Provincia
+Premio,Nivel,NombresApellidos,Colegio,Localidad,Provincia
 Campeón,1,Campeón:      Hernán Gabriel Rocha,Escuela Modelo Argentina,Necochea,Buenos Aires
 Campeón,2,Campeón:   MauroSchilman,Inst. Secundario Israelita Gral. San Martín,Córdoba
-Campeón,3,Campeón:      EEMPI Nº 3004  Villa Cañas Santa FeFernando Vidal
+Campeón,3,Campeón:,EEMPI Nº 3004,Villa Cañas,Santa FeFernando Vidal
 Primer Subcampeón,1,Primer Subcampeón:   CarolinaLucía González,Instituto Politécnico Superior,Rosario,Santa Fe
-Primer Subcampeón,2,Primer Subcampeón:  NicolásAgustín Rodriguez Castro,"Beccar, San Isidro",Buenos Aires,E E.M.Nº 13
-Primer Subcampeón,3,Primer Subcampeón:     Escuela Técnica ORT I  Cdadde Bs AsJulián Eisenschlos
+Primer Subcampeón,2,Primer Subcampeón:  NicolásAgustín Rodriguez Castro,Beccar,San Isidro,Buenos Aires,E E.M.Nº 13
+Primer Subcampeón,3,Primer Subcampeón:,Escuela Técnica ORT I,Cdadde Bs AsJulián Eisenschlos
 Segundo Subcampeón,1,Segundo Subcampeón:    Alfredo Raúl Umfurer,Inst. de Enseñanza Agropecuaria,25 de Mayo,Misiones
 Segundo Subcampeón compartido,2,,Colegio Nacional de Buenos Aires,C. A. De Buenos AiresIvánSadofschi Costa
-Segundo Subcampeón compartido,2, Colegio Nacional de San Isidro Buenos AiresGermán      Ezequiel Stefanich
+Segundo Subcampeón compartido,2,,Colegio Nacional de San Isidro,Buenos AiresGermán      Ezequiel Stefanich
 Segundo Subcampeón compartido,3,Segundo Subcampeón Compartido:
-Segundo Subcampeón compartido,3, EET Nº 1,Concordia  Entre Ríos                                            Pablo Blanc
+Segundo Subcampeón compartido,3,,EET Nº 1,Concordia,Entre Ríos                                            Pablo Blanc
 Mención,1,Sebastián    Aller,Colegio José Manuel Estrada,Coronel Suárez,Buenos Aires
 Mención,1,Agustín    Nicolás    Arroyo,Centro de Matemática Pierre Fermat,Ramos Mejía,Buenos Aires
 Mención,1,Joaquín    Bengochea,Inmaculada Concepción,Rauch,Buenos Aires
@@ -58,14 +58,14 @@ Mención,2,Matías    Daniel    Di Gugliermo,Inst. La Salle de Florida,Buenos Ai
 Mención,2,Federico    Mario    do Pino,Carlos Pellegrini,C.A. de Buenos Aires
 Mención,2,Alberto    Jose    Ferrari,Instituto Politécnico Superior,Rosario Santa Fe
 Mención,2,Candice    Frances,Goethe,Rosario,Santa Fe
-Mención,2,Gastón    Nicolás    Franco Castillo  Colegio La Salle,Florida  Buenos Aires
+Mención,2,Gastón    Nicolás    Franco Castillo,Colegio La Salle,Florida  Buenos Aires
 Mención,2,Alan    Matías    Givré Colegio Nacional de Buenos Aires,C. A. de Buenos Aires
 Mención,2,Matías    Fernando    Irusta,Escuela Normal Mixta Juan Pascual Pringles,San Luis
 Mención,2,Mariano    Alejandro    Juncal,Ort II,C. A. de Buenos Aires
-Mención,2,Daniel    Kohen  Escuela Normal Nº 4,Cdad de Buenos Aires
+Mención,2,Daniel    Kohen,Escuela Normal Nº 4,Cdad de Buenos Aires
 Mención,2,Yair    Ezequiel    Litman Técnica ORT,Avellaneda,Buenos Aires
 Mención,2,Alejandro    Marino,Escuela Técnica Raggio,Cdad de,Buenos Aires
-Mención,2,Leandro    Emanuel    Nardi  Colegio San Francisco Solano,Rosario,Santa Fe
+Mención,2,Leandro    Emanuel    Nardi,Colegio San Francisco Solano,Rosario,Santa Fe
 Mención,2,Lucía    Inés    Pedraza,Carlos Pellegrini,C. A. De Buenos Aires
 Mención,2,Alejandro    Pedrozo,Inst. San Alberto Magno,Posadas,Misiones
 Mención,2,Nicolás    Bruno    Ponieman,ORT II,San Isidro,Buenos Aires
@@ -75,11 +75,11 @@ Mención,2,Santiago    Salas E.E.T.  Nº 1  Gral. Savio,Saladillo,Buenos    Ai
 Mención,2,Lisandro    Manuel    Sánchez Gómez,Escuela Normal,Pehuajó,Buenos Aires
 Mención,2,Matías    Saucedo,Escuela Normal Manuel Florencio Mantilla Mercedes,Corrientes
 Mención,2,Fernando    Gabriel    Sorzana,Instituto del Rosario,Villa María,Córdoba
-Mención,2,Axel    Emanuel    Varanese  Instituto San Pablo,Wilde,Buenos Aires
-Mención,3,Eduardo    Andrés Barseghian,Colegio Nacional de Monserrat  Córdoba
+Mención,2,Axel    Emanuel    Varanese,Instituto San Pablo,Wilde,Buenos Aires
+Mención,3,Eduardo    Andrés Barseghian,Colegio Nacional de Monserrat,Córdoba
 Mención,3,Rodrigo    Ezequiel Belfiore,Inst. D. F. Sarmiento (Padua),Paso del Rey,Buenos    Aires
 Mención,3,Lucio    Campoy Morist,Colegio San José de los Hnos. Maristas,Mendoza
-Mención,3,Javier    Martín Corti,Normal SuperiorNº37  Alcorta,Santa Fe
+Mención,3,Javier    Martín Corti,Normal SuperiorNº37,Alcorta,Santa Fe
 Mención,3,Khalil    Omar Figueroa,E.E.M.     Nº    16,San Antonio de Padua,Buenos Aires
 Mención,3,Agustín    Santiago Gutiérrez,Inst. de Educación Integral de Munro,Vicente López    Buenos Aires
 Mención,3,José    Ignacio Heredia,Santa María de la Asunción,San Antonio de Areco,Buenos Aires

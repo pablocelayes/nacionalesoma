@@ -1,13 +1,13 @@
-Premio,Nivel,Apellido,Nombres,Localidad,Provincia
-Campeón,1,Gianni Georg Weinand,Instituto Politécnico Superior Gral. San Martín  Rosario,Santa FeCAMPEÓN:
+Premio,Nivel,NombresApellidos,Colegio,Localidad,Provincia
+Campeón,1,Gianni Georg Weinand,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa FeCAMPEÓN:
 Campeón,2,Gastón Salgado,ORTII,Ciudad de Buenos Aires CAMPEÓN:
 Campeón compartido,3,Melanie Sclar,Escuela Superior de Comercio Carlos Pellegrini,Ciudad de Buenos Aires
 Campeón compartido,3,Ariel Zylber,ORT,Ciudad de Buenos Aires
-Primer Subcampeón,1,Lisandro Filloy,Colegio Sagrado Corazón de Jesús,"Bernal, Buenos Aires 1°   SUBCAMPEÓN:"
+Primer Subcampeón,1,Lisandro Filloy,Colegio Sagrado Corazón de Jesús,Bernal,Buenos Aires 1°   SUBCAMPEÓN:
 Primer Subcampeón,2,Alejandro Candioti,José Manuel Estrada,Posadas,Misiones 1°   SUBCAMPEÓN:
-Segundo Subcampeón,1,Agustín Mazzocato,Colegio Padre Castañeda,"La Plata, Buenos Aires      2° SUBCAMPEÓN:"
+Segundo Subcampeón,1,Agustín Mazzocato,Colegio Padre Castañeda,La Plata,Buenos Aires      2° SUBCAMPEÓN:
 Segundo Subcampeón,2,Mariano Bonifacio,Escuela Superior de Comercio,Leones,Córdoba   2° SUBCAMPEÓN:
-Segundo Subcampeón compartido,3,Nicolás Cogorno,Instituto San José de Flores  Ciudad de Buenos Aires
+Segundo Subcampeón compartido,3,Nicolás Cogorno,Instituto San José de Flores,Ciudad de Buenos Aires
 Segundo Subcampeón compartido,3,Franco Assenza,E.E.M. Nº 381 Almirante G. Brown,Santa Fe
 Mención,1,Santiago Abdala,John F. Kennedy,Victoria,Entre Ríos
 Mención,1,Manuela Ainchil,Colegio Nacional Dr. Arturo Illia,Mar del Plata,Buenos Aires
@@ -24,7 +24,7 @@ Mención,1,Nicolás de Cristóbal,Holy Cross,Tigre,Buenos Aires
 Mención,1,Julia de Ípola,Jean Mermoz,Ciudad de Buenos Aires
 Mención,1,Juan Ignacio Díaz Schneider,La Salle Jobson,Santo Tomé,Santa Fe
 Mención,1,Tomás Dirazar,Colegio Nacional Rafael Hernández,La Plata,Buenos Aires
-Mención,1,Andrés Ghini,Instituto Gabriel D'Annunzio,Pilar,Buenos Aires
+Mención,1,Andrés Ghini,Instituto Gabriel DAnnunzio,Pilar,Buenos Aires
 Mención,1,Franco Golfieri,Industrial D. F. Sarmiento,Rawson,San Juan
 Mención,1,Eric Ierullo López,San Diego,Wilde,Buenos Aires
 Mención,1,Tomás Karaman,Colegio Nacional de Buenos Aires,Ciudad de Buenos Aires
@@ -49,7 +49,7 @@ Mención,2,Julián Ballejos,Instituto San Martín,Goya,Corrientes
 Mención,2,Rocío Belfiore,ITI San Judas Tadeo,Paso del Rey,Buenos Aires
 Mención,2,Ignacio Bombau,Palermo Chico,Ciudad de Buenos Aires,
 Mención,2,Iara Cantore Pasero,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
-Mención,2,Mathias Caramutti  Confluencia  Neuquén
+Mención,2,Mathias Caramutti,Confluencia,Neuquén
 Mención,2,Sebastián Cherny,ORT II,Ciudad de Buenos Aires
 Mención,2,Ignacio Darago,Colegio Nacional de Buenos Aires,Ciudad de Buenos Aires
 Mención,2,Sheila de Diego Saadia,Instituto de Vanguardia,Lima,Buenos Aires
@@ -67,18 +67,18 @@ Mención,2,Santiago Ramírez,Colegio Nacional de Buenos Aires,Ciudad de Buenos A
 Mención,2,Lucía Rossi,Colegio Nacional Arturo Illia,Mar del Plata,Buenos Aires
 Mención,2,Lina Sacchi,San Pablo Apóstol,San Martín de los Andes,Neuquén
 Mención,2,Alejo Salvador,Albert Einstein,Mar del Plata,Buenos Aires
-Mención,2,Juan Ignacio Segura,Instituto Politécnico Superior Gral. San Martín  Rosario,Santa Fe
-Mención,2,Leonel Sidabra,Centro Educativo Loreto Avellaneda,Buenos Aires
+Mención,2,Juan Ignacio Segura,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
+Mención,2,Leonel Sidabra,Centro Educativo Loreto,Avellaneda,Buenos Aires
 Mención,2,Bruno Staffa,Escuela Superior de Comercio,Bahía Blanca,Buenos Aires
 Mención,2,Lucas Travers,Instituto Huergo,Ciudad de Buenos Aires
 Mención,3,Emiliano Campagnolo,Santo Tomás,Córdoba
 Mención,3,Margarita Capretto,EEM Nº 2,Colón,Buenos Aires
 Mención,3,Alejandro Curci,Colegio Universitario Central,Mendoza
 Mención,3,Luis Ferroni,Tulio García Fernández,San Miguel de Tucumán
-Mención,3,Pablo Kalaizich,EET Nº 275  Alcorta,Santa Fe
-Mención,3,Carolina Lang,Colegio Nacional de Buenos Aires  Ciudad de Buenos Aires
-Mención,3,Agustín Maestre,EEM Nº 206  Pehuajó,Buenos Aires
+Mención,3,Pablo Kalaizich,EET Nº 275,Alcorta,Santa Fe
+Mención,3,Carolina Lang,Colegio Nacional de Buenos Aires,Ciudad de Buenos Aires
+Mención,3,Agustín Maestre,EEM Nº 206,Pehuajó,Buenos Aires
 Mención,3,Federico Meier,Escuela Superior de Comercio Nº 6,Posadas,Misiones
-Mención,3,Iván Polasek,Colegio Nacional de Buenos Aires  Ciudad de Buenos Aires
+Mención,3,Iván Polasek,Colegio Nacional de Buenos Aires,Ciudad de Buenos Aires
 Mención,3,Daniel Pomo,Comercio Nº 1 Gral Belgrano,San Miguel de Tucumán
-Mención,3,Facundo Sapienza  Colegio Nacional de San Isidro Buenos Aires
+Mención,3,Facundo Sapienza,Colegio Nacional de San Isidro Buenos Aires

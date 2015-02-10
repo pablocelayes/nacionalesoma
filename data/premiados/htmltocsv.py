@@ -5,7 +5,7 @@ import csv
 import sys
 import lxml.html as lh
 
-# Scheme .csv files = 'Premio Nivel Apellido Nombres Localidad Provincia'
+# Scheme .csv files = 'Premio Nivel NombreApellidos Colegio Localidad Provincia'
 range_init = 2006
 range_end = 2014
 
@@ -13,7 +13,7 @@ def process_html(filename):
 	"""
 	Generar .csv file  
 	"""
-	scheme = 'Premio Nivel Apellido Nombres Localidad Provincia'
+	scheme = 'Premio Nivel NombresApellidos Colegio Localidad Provincia'
 	htmlparser = etree.HTMLParser()
 	tree = etree.parse(filename, htmlparser)
 	rootnode = tree.getroot()
@@ -59,14 +59,18 @@ def process_html(filename):
 			field = field.replace(i,'')
 		return field
 	
+	def replacer(field,*args):
+		for i in args:
+			field = field.replace(i,'-')
+		return field
+	
 	def format_data(string):
 		"""
 		Convierte texto plano en data lista para
 		guardar en csv.
 		"""
-		return [i.strip() for i in clean(string,'\n','·','"').split('-')] #ver este caracter –
-	
-	
+		string = replacer(string,',','–','\x96')
+		return [i.strip() for i in clean(string,"[\'\\x95\\xa0",'\n','·','"',']',"'").split('-')]
 	
 	def get_text(node):				#recursivo para andar rapido...
 		if node.xpath("*") == []:
