@@ -4,6 +4,7 @@ from lxml import etree
 import csv
 import sys
 import lxml.html as lh
+import re
 
 # Scheme .csv files = 'Premio Nivel NombreApellidos Colegio Localidad Provincia'
 range_init = 2006
@@ -28,7 +29,7 @@ def process_html(filename):
 	2006:["//p[%d]"%i for i in [2,3,4,6,7,8,10,11,12]],
 	2007:{0:["/html/body/p[%d]"%i for i in [2,6,9]],
 		  1:["//p[%d]"%i for i in [3,7,10]],
-          2:["//p[4]"]+[["//blockquote/p[%i]"%i for i in [1,2]]]+[["//p[%d]"%i for i in [11,12]]]}, 			
+          2:["//p[4]"]+[["//blockquote/p[%i]"%i for i in [1,2]]]+[["//p[%d]"%i for i in [12,13]]]}, 			
 	2008:["//blockquote[%d]"%i for i in range(1,10)],
 	2009:["//ul[{0}]/li[{1}]".format(i,j) for i in [1,2,3] for j in [1,2,3]],
 	2010:{0:["//ul[%d]/li[1]"%i for i in [1,2]]+[["//ul[3]/li[1]/text()"]],
@@ -69,12 +70,20 @@ def process_html(filename):
 		Convierte texto plano en data lista para
 		guardar en csv.
 		"""
-		string = replacer(string,',','–','\x96')
-		return [i.strip() for i in clean(string,"[\'\\x95\\xa0",'\n','·','"',']',"'").split('-')]
+		
+		string = replacer(string,',','–','\x96')		
+		res = [i.strip() for i in clean(string,'\x95\xa0','\xa0','°','\n','·','"',"'").split('-')]
+		
+		dot_champions = re.compile(r'^.*:') # para eliminar "1 Campeón:" like entries...
+		res[2] = dot_champions.sub('',res[2])
+		
+		if year == 2012:
+			res[-1],res[-2] = res[-2],res[-1]
+		return res
 	
-	
-	def get_text(node):				#recursivo para andar rapido...
-		return "".join(node.xpath(".//text()"))
+	def get_text(node):				
+		res = node.xpath(".//text()")
+		return "".join(res)
 			
 	def process_mentions(year):
 		values = [[] for i in range(3)]  
