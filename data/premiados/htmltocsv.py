@@ -72,13 +72,9 @@ def process_html(filename):
 		string = replacer(string,',','–','\x96')
 		return [i.strip() for i in clean(string,"[\'\\x95\\xa0",'\n','·','"',']',"'").split('-')]
 	
+	
 	def get_text(node):				#recursivo para andar rapido...
-		if node.xpath("*") == []:
-			return node.xpath("./text()") 
-		result = node.xpath("./text()")
-		for i in node.xpath("*"):
-			result += get_text(i)
-		return "".join(result)
+		return "".join(node.xpath(".//text()"))
 			
 	def process_mentions(year):
 		values = [[] for i in range(3)]  

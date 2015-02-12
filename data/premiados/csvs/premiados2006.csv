@@ -1,20 +1,20 @@
 Premio,Nivel,NombresApellidos,Colegio,Localidad,Provincia
-Campeón,1,Campeón:,InsFranco Martineltituto Politécnico,Rosario Santa Fe
-Primer Subcampeón,1,Primer Subcampeón:,Escuela Goethe,Rosario,Santa Fe   Candice Frances
-Segundo Subcampeón,1,Segundo Subcampeón:,Colegio San José de Flores,Cdad de Bs. As.    Federico Cogorno
-Campeón,2,Campeón:,Escuela Técnica ORT I,Cdadde Bs AsJulián Eisenschlos
-Primer Subcampeón,2,Primer Subcampeón:,EEMPI Nº 3004,Villa Cañas,Santa Fe   Fernando Vidal
-Segundo Subcampeón,2,Segundo Subcampeón:,Instituto Politécnico,Rosario Santa Fe    Pablo Zimmermann
-Campeón,3,Campeón:,EET Nº 1,Concordia,Entre Ríos   Pablo Blanc
-Primer Subcampeón,3,Primer Subcampeón:,EEMPI Nº 8092,Carmen,Santa Fe     Magali Giaroli
-Segundo Subcampeón,3,Segundo Subcampeón:,Escuela San Vicente de Paul,Escobar,Buenos AiresIgnacio Rossi
-Mención,1,MarinaAguirre,E.S.B. Nº3,Coronel Suarez,Bs As
+Campeón,1,Campeón:    Franco Martinel,Instituto Politécnico,Rosario Santa Fe
+Primer Subcampeón,1,Primer Subcampeón:   Candice Frances,Escuela Goethe,Rosario,Santa Fe
+Segundo Subcampeón,1,Segundo Subcampeón:    Federico Cogorno,Colegio San José de Flores,Cdad de Bs. As.
+Campeón,2,Campeón:   Julián Eisenschlos,Escuela Técnica ORT I,Cdadde Bs As
+Primer Subcampeón,2,Primer Subcampeón:   Fernando Vidal,EEMPI Nº 3004,Villa Cañas,Santa Fe
+Segundo Subcampeón,2,Segundo Subcampeón:    Pablo Zimmermann,Instituto Politécnico,Rosario Santa Fe
+Campeón,3,Campeón:      Pablo Blanc,EET Nº 1,Concordia,Entre Ríos
+Primer Subcampeón,3,Primer Subcampeón:    Magali Giaroli,EEMPI Nº 8092,Carmen,Santa Fe
+Segundo Subcampeón,3,Segundo Subcampeón:   Ignacio Rossi,Escuela San Vicente de Paul,Escobar,Buenos Aires
+Mención,1,Marina Aguirre,E.S.B. Nº3,Coronel Suarez,Bs As
 Mención,1,JuanTomas Amondarain,Colegio San Jorge,Quilmes,Bs As
 Mención,1,MaríaArtola,Colegio Sagrado Corazón,Coronel Pringles,Buenos Aires
 Mención,1,JuanPablo Begue Pons,Esc. Secundaria Basica Nº4,La Plata,Buenos Aires
-Mención,1,MaríaLourdesBellini,Colegio SanRafael,Cdad de Bs As
+Mención,1,MaríaLourdes  Bellini,Colegio SanRafael,Cdad de Bs As
 Mención,1,Enrique Benedetto,St. George´s CollegeQuilmes,Bs As
-Mención,1,FrancoBiancotti,Inst. Politecnico Superior,Rosario,Sta Fe
+Mención,1,Franco Biancotti,Inst. Politecnico Superior,Rosario,Sta Fe
 Mención,1,MartínCaruso Bloeck,E.L. Holmberg,Quilmes Oeste,Bs As
 Mención,1,FranciscoConci,Colegio Carlos Pellegrini,Cdad de Bs As
 Mención,1,JuanManuel Cufré,Colegio San Antonio,San Antonio de Areco,Buenos Aires
@@ -29,8 +29,8 @@ Mención,1,MarianoJuncal,Ort II,Cdad de Bs As
 Mención,1,LucasKaragozian,Colegio San Andrés,La Lucila Bs As
 Mención,1,ValeriaLauriente,Comercial Nº15,Cdad de Bs As
 Mención,1,EmmanuelMaggiori,Colegio de la Sierra,Tandil,Bs As
-Mención,1,MathíasMartinez,E.S.B.Nº 4,Olivos,Bs As
-Mención,1,MiguelMauricio,Escuela TécnicaNº 8,Morón,Bs As
+Mención,1,MathíasMartinez,E.S.B.  Nº 4,Olivos,Bs As
+Mención,1,MiguelMauricio,Escuela Técnica  Nº 8,Morón,Bs As
 Mención,1,LucíaPedraza,Colegio Carlos Pellegrini,Cdad de Bs As
 Mención,1,AlejandroPedroso,Inst. San Alberto Magno,Posadas Misiones
 Mención,1,MatíasPelayo,Unidad Educativa Nº 21,Guatrache,La Pampa
@@ -41,10 +41,10 @@ Mención,1,IvánSadofschi Costa,Colegio Nacional de Buenos Aires,Cdad de Bs As
 Mención,1,LisandroSánchez Gomez,Colegio San José,Pehuajó,Buenos Aires
 Mención,1,EstebanTacca,Escuela Industrial Superior,Santa Fe
 Mención,1,AxelVaranese,Inst. San Pablo,Wilde,Buenos Aires
-Mención,1,AndrésVidaurreta,E.E.M.P.I.Nº 8019Sagrado Corazón Venado Tuerto,Santa Fe
+Mención,1,AndrésVidaurreta,E.E.M.P.I.  Nº 8019 Sagrado Corazón Venado Tuerto,Santa Fe
 Mención,1,NicolásVillagran Dos Santos,Instituto Ballester,Ballester,Bs.As.
 Mención,1,Facundo Yánez,,Colegio San José,Rojas,Bs As
-Mención,1,JuanPatricio Zalduendo,ColegioSanta María,Pilar,Buenos Aires
+Mención,1,JuanPatricio Zalduendo,Colegio Santa María,Pilar,Buenos Aires
 Mención,2,GonzaloAguirre,Escuela Media Nº 4,Coronel Suarez,Buenos Aires
 Mención,2,EduardoBarseghian,Colegio Nacional de Monserrat,Córdoba
 Mención,2,RodrigoBelfiore,Inst. D. F. Sarmiento,Padua,Buenos Aires
@@ -80,4 +80,4 @@ Mención,3,PabloJeger,Colegio San Juan el Precursor,San Miguel de Tucumán
 Mención,3,Nicolás Komanski,Escuela Superior de Comercio de Bahía Blanca,Buenos Aires
 Mención,3,MarcoMiotto,Inst. Politécnico de Rosario,Santa Fe
 Mención,3,EzequielPiragine,E.E.M. Nº 13 Dr. Manuel Obarrio,San Fernando,BuenosAires
-Mención,3,[Ulises\nSerio,Escuela Martín Zapata de Guaymallén Mendoza
+Mención,3,UlisesSerio,Escuela Martín Zapata de Guaymallén Mendoza
