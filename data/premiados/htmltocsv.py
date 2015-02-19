@@ -106,12 +106,13 @@ def process_html(filename):
 			res[-1] = "Ciudad Autónoma de Buenos Aires"
 		
 		## ---Para ver filas no homogéneas:
-		# len_res = len(res)    
-		# if len_res < 6:
+		len_res = len(res)    
+		if len_res < 6:
+			res = ['<short row>'] + res
 			# short_rows_report.append(res)
-		# elif len_res > 6:
+		elif len_res > 6:
+			res = ['<big row>'] + res
 			# bigger_rows_report.append(res)
-			
 		return res
 
 	def get_text(node):				

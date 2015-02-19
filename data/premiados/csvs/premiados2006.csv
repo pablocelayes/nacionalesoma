@@ -1,10 +1,10 @@
 Premio,Nivel,NombresApellidos,Colegio,Localidad,Provincia
-Campeón,1, Franco Martinel,Instituto Politécnico,Rosario Santa Fe
+<short row>,Campeón,1, Franco Martinel,Instituto Politécnico,Rosario Santa Fe
 Primer Subcampeón,1, Candice Frances,Escuela Goethe,Rosario,Santa Fe
-Segundo Subcampeón,1, Federico Cogorno,Colegio San José de Flores,Ciudad Autónoma de Buenos Aires
-Campeón,2,Julián Eisenschlos,Escuela Técnica ORT I,Ciudad Autónoma de Buenos Aires
+<short row>,Segundo Subcampeón,1, Federico Cogorno,Colegio San José de Flores,Ciudad Autónoma de Buenos Aires
+<short row>,Campeón,2,Julián Eisenschlos,Escuela Técnica ORT I,Ciudad Autónoma de Buenos Aires
 Primer Subcampeón,2, Fernando Vidal,EEMPI Nº 3004,Villa Cañas,Santa Fe
-Segundo Subcampeón,2, Pablo Zimmermann,Instituto Politécnico,Rosario Santa Fe
+<short row>,Segundo Subcampeón,2, Pablo Zimmermann,Instituto Politécnico,Rosario Santa Fe
 Campeón,3, Pablo Blanc,EET Nº 1,Concordia,Entre Ríos
 Primer Subcampeón,3, Magali Giaroli,EEMPI Nº 8092,Carmen,Santa Fe
 Segundo Subcampeón,3,Ignacio Rossi,Escuela San Vicente de Paul,Escobar,Ciudad Autónoma de Buenos Aires
@@ -12,72 +12,72 @@ Mención,1,MarinaAguirre,E.S.B. Nº3,Coronel Suarez,Ciudad Autónoma de Buenos A
 Mención,1,JuanTomas Amondarain,Colegio San Jorge,Quilmes,Ciudad Autónoma de Buenos Aires
 Mención,1,MaríaArtola,Colegio Sagrado Corazón,Coronel Pringles,Ciudad Autónoma de Buenos Aires
 Mención,1,JuanPablo Begue Pons,Esc. Secundaria Basica Nº4,La Plata,Ciudad Autónoma de Buenos Aires
-Mención,1,MaríaLourdes Bellini,Colegio SanRafael,Ciudad Autónoma de Buenos Aires
-Mención,1,Enrique Benedetto,St. George´s CollegeQuilmes,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,MaríaLourdes Bellini,Colegio SanRafael,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,Enrique Benedetto,St. George´s CollegeQuilmes,Ciudad Autónoma de Buenos Aires
 Mención,1,FrancoBiancotti,Inst. Politecnico Superior,Rosario,Sta Fe
 Mención,1,MartínCaruso Bloeck,E.L. Holmberg,Quilmes Oeste,Ciudad Autónoma de Buenos Aires
-Mención,1,FranciscoConci,Colegio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,FranciscoConci,Colegio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
 Mención,1,JuanManuel Cufré,Colegio San Antonio,San Antonio de Areco,Ciudad Autónoma de Buenos Aires
 Mención,1,Ana LauraDaglio,E.S.B. Nº3,Olavarria,Ciudad Autónoma de Buenos Aires
-Mención,1,JuanEscolar,Colegio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
-Mención,1,Alan Givré,Colegio Nacional de Bs As,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,JuanEscolar,Colegio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,Alan Givré,Colegio Nacional de Bs As,Ciudad Autónoma de Buenos Aires
 Mención,1,CarolinaGonzález,Inst. Politecnico Superior,Rosario,Santa Fe
 Mención,1,ChristianHalter,Escuela Agrotécnica,Coronel Pringles,Ciudad Autónoma de Buenos Aires
-Mención,1,PabloHessel,Colegio Arquidiocesano San José,Sta Fe
+<short row>,Mención,1,PabloHessel,Colegio Arquidiocesano San José,Sta Fe
 Mención,1,SantiagoIglesias Paiz,Inst. Don Emilio Frey,San Carlos de Bariloche,Río Negro
-Mención,1,MarianoJuncal,Ort II,Ciudad Autónoma de Buenos Aires
-Mención,1,LucasKaragozian,Colegio San Andrés,Ciudad Autónoma de Buenos Aires
-Mención,1,ValeriaLauriente,Comercial Nº15,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,MarianoJuncal,Ort II,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,LucasKaragozian,Colegio San Andrés,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,ValeriaLauriente,Comercial Nº15,Ciudad Autónoma de Buenos Aires
 Mención,1,EmmanuelMaggiori,Colegio de la Sierra,Tandil,Ciudad Autónoma de Buenos Aires
 Mención,1,MathíasMartinez,E.S.B. Nº 4,Olivos,Ciudad Autónoma de Buenos Aires
 Mención,1,MiguelMauricio,Escuela Técnica Nº 8,Morón,Ciudad Autónoma de Buenos Aires
-Mención,1,LucíaPedraza,Colegio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
-Mención,1,AlejandroPedroso,Inst. San Alberto Magno,Posadas Misiones
+<short row>,Mención,1,LucíaPedraza,Colegio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,AlejandroPedroso,Inst. San Alberto Magno,Posadas Misiones
 Mención,1,MatíasPelayo,Unidad Educativa Nº 21,Guatrache,La Pampa
 Mención,1,SebastiánPrillo,Colegio San Juan,Martinez,Ciudad Autónoma de Buenos Aires
-Mención,1,Gabriel Ré,Escuela Privada Ranelagh,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,Gabriel Ré,Escuela Privada Ranelagh,Ciudad Autónoma de Buenos Aires
 Mención,1,HernánRocha,Esc. Modelo Argentina,Necochea,Ciudad Autónoma de Buenos Aires
-Mención,1,IvánSadofschi Costa,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,1,IvánSadofschi Costa,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires
 Mención,1,LisandroSánchez Gomez,Colegio San José,Pehuajó,Ciudad Autónoma de Buenos Aires
-Mención,1,EstebanTacca,Escuela Industrial Superior,Santa Fe
+<short row>,Mención,1,EstebanTacca,Escuela Industrial Superior,Santa Fe
 Mención,1,AxelVaranese,Inst. San Pablo,Wilde,Ciudad Autónoma de Buenos Aires
-Mención,1,AndrésVidaurreta,E.E.M.P.I. Nº 8019Sagrado Corazón Venado Tuerto,Santa Fe
+<short row>,Mención,1,AndrésVidaurreta,E.E.M.P.I. Nº 8019Sagrado Corazón Venado Tuerto,Santa Fe
 Mención,1,NicolásVillagran Dos Santos,Instituto Ballester,Ballester,Ciudad Autónoma de Buenos Aires
 Mención,1,Facundo Yánez,Colegio San José,Rojas,Ciudad Autónoma de Buenos Aires
 Mención,1,JuanPatricio Zalduendo,Colegio Santa María,Pilar,Ciudad Autónoma de Buenos Aires
 Mención,2,GonzaloAguirre,Escuela Media Nº 4,Coronel Suarez,Ciudad Autónoma de Buenos Aires
-Mención,2,EduardoBarseghian,Colegio Nacional de Monserrat,Córdoba
+<short row>,Mención,2,EduardoBarseghian,Colegio Nacional de Monserrat,Córdoba
 Mención,2,RodrigoBelfiore,Inst. D. F. Sarmiento,Padua,Ciudad Autónoma de Buenos Aires
 Mención,2,AlejandroBrondino,Colegio San José,Carlos Paz,Córdoba
-Mención,2,JavierCorti,Escuela Normal Superior Nº37,Alcorta Sta Fe
+<short row>,Mención,2,JavierCorti,Escuela Normal Superior Nº37,Alcorta Sta Fe
 Mención,2,Tomás DeVillafañe,Inst. Austral,ComodoroRivadavia,Chubut
 Mención,2,MarcosDelmastro,Colegio San Patricio,San Carlos de Bariloche,Río Negro
-Mención,2,FedericoDo Pino,Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,2,FedericoDo Pino,Carlos Pellegrini,Ciudad Autónoma de Buenos Aires
 Mención,2,Juan AndrésDodyk,E.E.M. Nº 18 ENSPA,Avellaneda,Ciudad Autónoma de Buenos Aires
-Mención,2,SantiagoDurán,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,2,SantiagoDurán,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires
 Mención,2,JoaquínEzpeleta,Colegio San Bartolomé,Rosario,Sta Fe
 Mención,2,NicolásFochesatto,Escuela Superior de Comercio,Bahía Blanca,Ciudad Autónoma de Buenos Aires
 Mención,2,FranciscoFunes,Escuela ALFA,Adrogué,Ciudad Autónoma de Buenos Aires
 Mención,2,AgustinaGomez,Colegio Jacarandá,Lanús,Ciudad Autónoma de Buenos Aires
 Mención,2,AgustínGutiérrez,Inst. de Educación Integral de Munro,Vicente López,Ciudad Autónoma de Buenos Aires
-Mención,2,RobertoMorales,Colegio Nacional Rafael Hernándezde La Plata,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,2,RobertoMorales,Colegio Nacional Rafael Hernándezde La Plata,Ciudad Autónoma de Buenos Aires
 Mención,2,LeandroNardi,Escuela San Francisco Solano,Rosario,Santa Fe
 Mención,2,JuanPissinis,Escuela Normal de Bragado,E.E.M. Nº 4 Bragado,Ciudad Autónoma de Buenos Aires
-Mención,2,NicolásPonieman,ORT II,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,2,NicolásPonieman,ORT II,Ciudad Autónoma de Buenos Aires
 Mención,2,SebastiánRetamozo,Inst. Santa Teresita,Paraná,Entre Ríos
 Mención,2,NicolásRodríguez Castro,Escuela de Educación Media Nº 13,San Isidro,Ciudad Autónoma de Buenos Aires
 Mención,2,SantiagoSalas,E.E.T. Nº 1,Saladillo,Ciudad Autónoma de Buenos Aires
 Mención,2,Matías Saucedo,Escuela Normal,Mercedes,Corrientes
-Mención,2,Mauro Schilman,Inst. SecundarioGral. San Martín,Córdoba
-Mención,2,LucianoVistos,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires
-Mención,2,Federico Waisberg,ORT I,Ciudad Autónoma de Buenos Aires
-Mención,3,DanielAzar,ORT II,Ciudad Autónoma de Buenos Aires
-Mención,3,FedericoBonifacich,Instituto Politécnico de Rosario,Santa Fe
-Mención,3,Marco Bustamante,Instituto Secundario Carlos María de Alvear ,Córdoba
+<short row>,Mención,2,Mauro Schilman,Inst. SecundarioGral. San Martín,Córdoba
+<short row>,Mención,2,LucianoVistos,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,2,Federico Waisberg,ORT I,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,3,DanielAzar,ORT II,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,3,FedericoBonifacich,Instituto Politécnico de Rosario,Santa Fe
+<short row>,Mención,3,Marco Bustamante,Instituto Secundario Carlos María de Alvear ,Córdoba
 Mención,3,MaximilianoAndrés Codigone,Ntra. Sra. de Fátima,del Viso,Ciudad Autónoma de Buenos Aires
-Mención,3,NicolásJares,Colegio de la UTN,La Rioja
-Mención,3,PabloJeger,Colegio San Juan el Precursor,San Miguel de Tucumán
-Mención,3,Nicolás Komanski,Escuela Superior de Comercio de Bahía Blanca,Ciudad Autónoma de Buenos Aires
-Mención,3,MarcoMiotto,Inst. Politécnico de Rosario,Santa Fe
+<short row>,Mención,3,NicolásJares,Colegio de la UTN,La Rioja
+<short row>,Mención,3,PabloJeger,Colegio San Juan el Precursor,San Miguel de Tucumán
+<short row>,Mención,3,Nicolás Komanski,Escuela Superior de Comercio de Bahía Blanca,Ciudad Autónoma de Buenos Aires
+<short row>,Mención,3,MarcoMiotto,Inst. Politécnico de Rosario,Santa Fe
 Mención,3,EzequielPiragine,E.E.M. Nº 13 Dr. Manuel Obarrio,San Fernando,Ciudad Autónoma de Buenos Aires
-Mención,3,UlisesSerio,Escuela Martín Zapata de Guaymallén Mendoza
+<short row>,Mención,3,UlisesSerio,Escuela Martín Zapata de Guaymallén Mendoza
