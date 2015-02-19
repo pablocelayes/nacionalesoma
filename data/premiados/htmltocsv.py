@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 
 #TODOs: 
-#0-normalizar CABA
-#1-ordenar últimos dos campos en 2012
-#2-manejar lineas que no se separan bien o tienen campos que faltan...(a priori dejarlas intactas)
+#1-manejar fila con número de campos no homogéneos
+#2-normalizar 'Sta. Fe' 
 
 from lxml import etree
 import csv
@@ -68,6 +67,10 @@ def process_html(filename):
 		caba = re.compile(r'Buenos[ ]*Aires|[Bb]s[ .]+[Aa]s')
 		return caba.search(string)
 		
+	def normalize_spaces(string):
+		spaces = re.compile(r'[ ]{2,}')
+		return spaces.sub(' ',string)
+		
 	def clean(field,*args):
 		for i in args:
 			field = field.replace(i,'')
@@ -84,22 +87,31 @@ def process_html(filename):
 		guardar en csv.
 		"""
 		string = replacer(string,',','–','\x96')		
-		res = [i.strip() for i in clean(string,'\x95\xa0','\xa0','°','\n','·','"',"'").split('-')]
+		res = [normalize_spaces(i.strip()) for i in clean(string,'\x95\xa0','\xa0','°','\n','·','"',"'").split('-') if i]
 		
+		#para entradas finales "vacías"
+		if not res[-1]:
+			del res[-1]
+			
 		dot_champions = re.compile(r'^.*:') # para eliminar "1 Campeón:" like entries...
-		res[2] = dot_champions.sub('',res[2])
-		
+		try:
+			res[2] = dot_champions.sub('',res[2])
+		except IndexError:
+			pass
 		if year == 2012 and res[0]!= 'Mención':
 			res[-1],res[-2] = res[-2],res[-1]
 		
 		#lidiando con la normalización de los campos
 		if is_CABA(res[-1]):
 			res[-1] = "Ciudad Autónoma de Buenos Aires"
-		len_res = len(res)
-		if len_res < 6:
-			short_rows_report.append(res)
-		elif len_res > 6:
-			bigger_rows_report.append(res)
+		
+		## ---Para ver filas no homogéneas:
+		# len_res = len(res)    
+		# if len_res < 6:
+			# short_rows_report.append(res)
+		# elif len_res > 6:
+			# bigger_rows_report.append(res)
+			
 		return res
 
 	def get_text(node):				
