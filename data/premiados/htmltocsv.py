@@ -1,5 +1,10 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+#TODOs: 
+#1-manejar fila con número de campos no homogéneos
+#2-normalizar 'Sta. Fe' 
+
 from lxml import etree
 import csv
 import sys
@@ -10,6 +15,7 @@ import re
 range_init = 2006
 range_end = 2014
 
+
 def process_html(filename):
 	"""
 	Generar .csv file  
@@ -19,6 +25,8 @@ def process_html(filename):
 	tree = etree.parse(filename, htmlparser)
 	rootnode = tree.getroot()
 	basefilename = filename.split('.')[0]
+	short_rows_report = []
+	bigger_rows_report = []
 	
 	#roots_xpaths:
 	#Lugares compartidos: (2,2,2) significa en el nivel 2
@@ -55,6 +63,14 @@ def process_html(filename):
 	2014:["//ul[{0}]/li/{1}text()".format(i,"span/" if i == 5 else "") for i in [4,5,6]],
 	}
 	
+	def is_CABA(string):
+		caba = re.compile(r'Buenos[ ]*Aires|[Bb]s[ .]+[Aa]s')
+		return caba.search(string)
+		
+	def normalize_spaces(string):
+		spaces = re.compile(r'[ ]{2,}')
+		return spaces.sub(' ',string)
+		
 	def clean(field,*args):
 		for i in args:
 			field = field.replace(i,'')
@@ -70,17 +86,35 @@ def process_html(filename):
 		Convierte texto plano en data lista para
 		guardar en csv.
 		"""
-		
 		string = replacer(string,',','–','\x96')		
-		res = [i.strip() for i in clean(string,'\x95\xa0','\xa0','°','\n','·','"',"'").split('-')]
+		res = [normalize_spaces(i.strip()) for i in clean(string,'\x95\xa0','\xa0','°','\n','·','"',"'").split('-') if i]
 		
+		#para entradas finales "vacías"
+		if not res[-1]:
+			del res[-1]
+			
 		dot_champions = re.compile(r'^.*:') # para eliminar "1 Campeón:" like entries...
-		res[2] = dot_champions.sub('',res[2])
-		
-		if year == 2012:
+		try:
+			res[2] = dot_champions.sub('',res[2])
+		except IndexError:
+			pass
+		if year == 2012 and res[0]!= 'Mención':
 			res[-1],res[-2] = res[-2],res[-1]
+		
+		#lidiando con la normalización de los campos
+		if is_CABA(res[-1]):
+			res[-1] = "Ciudad Autónoma de Buenos Aires"
+		
+		## ---Para ver filas no homogéneas:
+		len_res = len(res)    
+		if len_res < 6:
+			res = ['<short row>'] + res
+			# short_rows_report.append(res)
+		elif len_res > 6:
+			res = ['<big row>'] + res
+			# bigger_rows_report.append(res)
 		return res
-	
+
 	def get_text(node):				
 		res = node.xpath(".//text()")
 		return "".join(res)
@@ -129,8 +163,17 @@ def process_html(filename):
 			writer.writerow(header)
 			for i in process_year(year):
 				writer.writerow(format_data(i))
-				
+	
+	def save_reports(year,data,filename):
+		with open('csvs/{0}-rows-{1}.csv'.format(filename,year), 'w',encoding='utf-8',newline='') as csvfile:
+			for i in data:
+				writer = csv.writer(csvfile)
+				writer.writerow(i)
+
+	
 	save_csvs(year)
+	# save_reports(year,bigger_rows_report,'big')
+	# save_reports(year,short_rows_report,'short')
 
 if __name__ == '__main__':
 	if len(sys.argv) > 1:

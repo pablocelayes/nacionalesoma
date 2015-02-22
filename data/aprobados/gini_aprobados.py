@@ -15,11 +15,7 @@ def gini(values):
 
     return (uneven - even) / even
 
-
 años = list(range(1998, 2015))
-
-años.remove(2010)
-# TODO: arreglar 2010
 
 csvfile = 'csvs/aprobados%d.csv'
 
