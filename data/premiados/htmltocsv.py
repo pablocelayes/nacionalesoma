@@ -1,8 +1,8 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 #TODOs: 
-#1-manejar fila con número de campos no homogéneos
+#1-manejar filas con número de campos no homogéneos
 #2-normalizar 'Sta. Fe' 
 
 from lxml import etree
@@ -63,10 +63,14 @@ def process_html(filename):
 	2014:["//ul[{0}]/li/{1}text()".format(i,"span/" if i == 5 else "") for i in [4,5,6]],
 	}
 	
+	def is_BsAs(string):
+		ba = re.compile(r'^Buenos[ ]*Aires|^[Bb]s[ .]+[Aa]s')
+		return ba.search(string)
+	
 	def is_CABA(string):
-		caba = re.compile(r'Buenos[ ]*Aires|[Bb]s[ .]+[Aa]s')
+		caba = re.compile(r'^.*[D( ){,1}d]e[ ]+Buenos[ ]*Aires|^.*[D( ){,1}d]e[ ]+[Bb]s[ .]+[Aa]s|Capital Federal')
 		return caba.search(string)
-		
+
 	def normalize_spaces(string):
 		spaces = re.compile(r'[ ]{2,}')
 		return spaces.sub(' ',string)
@@ -80,7 +84,7 @@ def process_html(filename):
 		for i in args:
 			field = field.replace(i,'-')
 		return field
-	
+
 	def format_data(string):
 		"""
 		Convierte texto plano en data lista para
@@ -100,13 +104,17 @@ def process_html(filename):
 			pass
 		if year == 2012 and res[0]!= 'Mención':
 			res[-1],res[-2] = res[-2],res[-1]
+		    		
 		
 		#lidiando con la normalización de los campos
 		if is_CABA(res[-1]):
 			res[-1] = "Ciudad Autónoma de Buenos Aires"
+			res.insert(-1,"Capital Federal")
+		elif is_BsAs(res[-1]):
+			res[-1] = "Buenos Aires"
 		
+		len_res = len(res)    		
 		## ---Para ver filas no homogéneas:
-		len_res = len(res)    
 		if len_res < 6:
 			res = ['<short row>'] + res
 			# short_rows_report.append(res)
