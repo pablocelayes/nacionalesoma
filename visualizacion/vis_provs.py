@@ -28,10 +28,7 @@ aprobados_prov,clasificados_prov = map(pd.read_csv,files)
 
 #getting values 
 def get_data(year,label="Aprobados"):
-	if label == "Aprobados":
-		filas_year = aprobados_prov[aprobados_prov['Año'] == year]
-	else:
-		filas_year = clasificados_prov[clasificados_prov['Año'] == year]
+	exec("filas_year = {0}_prov[{1}_prov['Año'] == year]".format(label.lower(),label.lower()))
 	filas_year_provs = filas_year['Provincia'].drop_duplicates()
 	filas_year_porciento = (filas_year['Cantidad']/filas_year['Cantidad'].sum())*100
 	
@@ -44,14 +41,15 @@ def vis_prov(year,provincias,porcientos,label = "Aprobados"):
 	porcientos = porcientos.tolist()
 	donut = Donut(porcientos, provincias)
 	# show(donut)
+
+def save(label = "Aprobados"):
+	provincias,porcientos = get_data(i,label)
+	output_file("vis_{0}_{1}.html".format(i,label))
+	vis_prov(i,provincias,porcientos)
 	
 if __name__ == '__main__':
 	for i in range(init_year,end_year+1):
 		#aprobados
-		provincias,porcientos = get_data(i)
-		output_file("vis_{0}_{1}.html".format(i,"Aprobados"))
-		vis_prov(i,provincias,porcientos)		
+		save("Aprobados")		
 		#clasificados
-		provincias,porcientos = get_data(i,label = "Clasificados")
-		output_file("vis_{0}_{1}.html".format(i,"Clasificados"))
-		vis_prov(i,provincias,porcientos,label = "Clasificados")
+		save("Clasificados")
