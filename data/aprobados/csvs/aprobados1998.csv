@@ -1,5 +1,4 @@
 Nivel,Apellido,Nombres,Localidad,Provincia
-1,Apellido,Nombres,Localidad,Provincia
 1,Álvarez,Nicolás Alejandro,Bahía Blanca,Buenos Aires
 1,Andrada,Emanuel,Hurlingham,Buenos Aires
 1,Angiono,Iván,Trenel,La Pampa
@@ -100,7 +99,6 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 1,Weitz,Nurit Roxana,Rosario,Santa Fe
 1,Yuhjtman,Sergio Andrés,Capital Federal,Ciudad Autónoma de Buenos Aires
 1,Zafran,Daiana Pamela,Avellaneda,Buenos Aires
-2,Apellido,Nombres,Localidad,Provincia
 2,Abal,Daniel Eduardo,Berazategui,Buenos Aires
 2,Alassia,Leonardo Javier,Rafaela,Santa Fe
 2,Amato,Ignacio,Florida,Buenos Aires
@@ -203,7 +201,6 @@ Nivel,Apellido,Nombres,Localidad,Provincia
 2,Yunes,Javier,Rosario,Santa Fe
 2,Zorba,Bárbara Elizabeth,La Plata,Buenos Aires
 2,Zurita,José Francisco,Capital Federal,Ciudad Autónoma de Buenos Aires
-3,Apellido,Nombres,Localidad,Provincia
 3,Acosta,Araceli Natalia,Jesús María,Córdoba
 3,Aiello,Andrés Martín,Capital Federal,Ciudad Autónoma de Buenos Aires
 3,Albanesi,Matías Carlos,Berazategui,Buenos Aires

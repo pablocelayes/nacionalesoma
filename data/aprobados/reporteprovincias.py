@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import pandas as pd
 from datetime import date
@@ -9,7 +9,7 @@ from datetime import date
 
 años = range(1998, 2015)
 
-csvfile = 'csvs/clasificados%d.csv'
+csvfile = 'csvs/aprobados%d.csv'
 df = pd.read_csv(csvfile % años[0], parse_dates=True)
 df['Año'] = años[0]
 

@@ -6,15 +6,21 @@ import pandas as pd
 from bokeh.plotting import *
 from bokeh.models import HoverTool
 
+from collections import OrderedDict
+
 init_year  = 1998
 end_year   = 2014
 
 N = end_year - init_year + 1
 
-files = ["gini_aprobados.csv","gini_clasificados.csv"]
+files = ["../data/aprobados/gini_aprobados.csv",
+		 "../data/clasificados/gini_clasificados.csv",]
+		 
 aprobados,clasificados = map(pd.read_csv,files)
+
 title_val = "Análisis de los resultados de la OMA en los años {0}-{1}".format(init_year,end_year).decode('utf-8')
 output_file("gini.html", title=title_val)
+
 
 TOOLS="pan,wheel_zoom,box_zoom,reset,hover"
 	
@@ -30,6 +36,15 @@ p.line(aprobados['Año'],aprobados['Gini'], size=12, color="red", alpha=0.5,lege
 p.title = "Evolución índice de Gini en aprobados y clasificados.".decode('utf-8')
 p.xaxis.axis_label = 'Años'.decode('utf-8')
 p.yaxis.axis_label = 'Gini'
+
+
+hover = p.select(dict(type=HoverTool))
+
+
+hover.tooltips = OrderedDict([
+    ("Año", "@x"),
+    ("Gini", "@y"),
+])
 
 
 show(p)

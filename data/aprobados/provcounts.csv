@@ -1,0 +1,339 @@
+Provincia,Año,Cantidad
+Buenos Aires,1998,111
+Buenos Aires,1999,43
+Buenos Aires,2000,144
+Buenos Aires,2001,120
+Buenos Aires,2002,121
+Buenos Aires,2003,150
+Buenos Aires,2004,165
+Buenos Aires,2005,145
+Buenos Aires,2006,143
+Buenos Aires,2007,138
+Buenos Aires,2008,134
+Buenos Aires,2009,134
+Buenos Aires,2010,108
+Buenos Aires,2011,110
+Buenos Aires,2012,112
+Buenos Aires,2013,99
+Buenos Aires,2014,146
+CHUBUT,2014,1
+Capital,2014,1
+Capital Federal,2000,1
+Capital Federal,2001,1
+Catamarca,1998,1
+Catamarca,2000,1
+Chaco,2000,1
+Chaco,2003,2
+Chaco,2004,2
+Chaco,2005,1
+Chaco,2006,2
+Chaco,2008,2
+Chaco,2009,1
+Chaco,2010,3
+Chaco,2011,5
+Chaco,2012,3
+Chaco,2013,2
+Chaco,2014,2
+Chubut,1998,3
+Chubut,2000,1
+Chubut,2003,1
+Chubut,2004,1
+Chubut,2006,3
+Chubut,2008,1
+Chubut,2009,1
+Chubut,2010,1
+Chubut,2011,4
+Chubut,2012,4
+Chubut,2013,2
+Chubut,2014,3
+Ciudad Autónoma de Buenos Aires,1998,55
+Ciudad Autónoma de Buenos Aires,1999,13
+Ciudad Autónoma de Buenos Aires,2000,69
+Ciudad Autónoma de Buenos Aires,2001,58
+Ciudad Autónoma de Buenos Aires,2002,50
+Ciudad Autónoma de Buenos Aires,2003,70
+Ciudad Autónoma de Buenos Aires,2004,57
+Ciudad Autónoma de Buenos Aires,2005,54
+Ciudad Autónoma de Buenos Aires,2006,47
+Ciudad Autónoma de Buenos Aires,2007,43
+Ciudad Autónoma de Buenos Aires,2008,44
+Ciudad Autónoma de Buenos Aires,2009,51
+Ciudad Autónoma de Buenos Aires,2010,46
+Ciudad Autónoma de Buenos Aires,2011,68
+Ciudad Autónoma de Buenos Aires,2012,61
+Ciudad Autónoma de Buenos Aires,2013,57
+Ciudad Autónoma de Buenos Aires,2014,48
+Corrientes,1998,5
+Corrientes,2001,2
+Corrientes,2002,1
+Corrientes,2003,2
+Corrientes,2004,4
+Corrientes,2005,3
+Corrientes,2006,6
+Corrientes,2007,3
+Corrientes,2008,2
+Corrientes,2009,1
+Corrientes,2010,2
+Corrientes,2011,2
+Corrientes,2012,1
+Corrientes,2013,1
+Corrientes,2014,3
+Córdoba,1999,10
+Córdoba,1998,25
+Córdoba,2000,18
+Córdoba,2001,22
+Córdoba,2002,13
+Córdoba,2003,39
+Córdoba,2004,25
+Córdoba,2005,15
+Córdoba,2006,22
+Córdoba,2007,22
+Córdoba,2008,24
+Córdoba,2009,14
+Córdoba,2010,25
+Córdoba,2011,24
+Córdoba,2012,19
+Córdoba,2013,22
+Córdoba,2014,26
+Entre Ríos,1999,1
+Entre Ríos,1998,3
+Entre Ríos,2000,6
+Entre Ríos,2001,10
+Entre Ríos,2002,5
+Entre Ríos,2003,8
+Entre Ríos,2004,3
+Entre Ríos,2005,6
+Entre Ríos,2006,8
+Entre Ríos,2007,12
+Entre Ríos,2008,11
+Entre Ríos,2009,9
+Entre Ríos,2010,11
+Entre Ríos,2011,16
+Entre Ríos,2012,10
+Entre Ríos,2013,5
+Entre Ríos,2014,10
+Formosa,1998,1
+Formosa,1999,1
+Formosa,2000,6
+Formosa,2001,7
+Formosa,2002,5
+Formosa,2003,8
+Formosa,2004,7
+Formosa,2005,2
+Formosa,2006,1
+Formosa,2007,1
+Formosa,2008,3
+Formosa,2010,2
+Formosa,2011,3
+Formosa,2012,1
+Formosa,2013,2
+Formosa,2014,4
+Jujuy,1998,1
+Jujuy,2000,3
+Jujuy,2001,3
+Jujuy,2002,5
+Jujuy,2003,7
+Jujuy,2004,4
+Jujuy,2005,1
+Jujuy,2007,1
+Jujuy,2008,1
+Jujuy,2009,2
+Jujuy,2010,2
+Jujuy,2011,4
+Jujuy,2012,3
+Jujuy,2013,2
+Jujuy,2014,3
+La Pampa,1998,2
+La Pampa,2000,2
+La Pampa,2001,4
+La Pampa,2002,4
+La Pampa,2003,2
+La Pampa,2004,2
+La Pampa,2005,2
+La Pampa,2006,3
+La Pampa,2007,1
+La Pampa,2009,2
+La Pampa,2010,2
+La Pampa,2011,3
+La Pampa,2012,2
+La Pampa,2013,2
+La Pampa,2014,4
+La Rioja,2001,1
+La Rioja,2004,2
+La Rioja,2005,2
+La Rioja,2006,1
+La Rioja,2007,1
+La Rioja,2010,1
+La Rioja,2011,1
+La Rioja,2013,1
+Mendoza,1998,5
+Mendoza,1999,4
+Mendoza,2000,3
+Mendoza,2001,2
+Mendoza,2002,6
+Mendoza,2003,5
+Mendoza,2004,6
+Mendoza,2005,8
+Mendoza,2006,7
+Mendoza,2007,3
+Mendoza,2008,3
+Mendoza,2009,5
+Mendoza,2010,9
+Mendoza,2011,7
+Mendoza,2012,6
+Mendoza,2013,8
+Mendoza,2014,8
+Misiones,1998,4
+Misiones,1999,1
+Misiones,2001,2
+Misiones,2002,3
+Misiones,2003,1
+Misiones,2004,5
+Misiones,2005,5
+Misiones,2006,5
+Misiones,2007,4
+Misiones,2008,8
+Misiones,2009,5
+Misiones,2010,5
+Misiones,2011,5
+Misiones,2012,4
+Misiones,2013,3
+Misiones,2014,5
+Neuquén,1999,1
+Neuquén,1998,4
+Neuquén,2000,5
+Neuquén,2001,4
+Neuquén,2002,7
+Neuquén,2003,7
+Neuquén,2004,3
+Neuquén,2005,5
+Neuquén,2006,3
+Neuquén,2007,3
+Neuquén,2008,2
+Neuquén,2009,2
+Neuquén,2010,1
+Neuquén,2011,3
+Neuquén,2012,4
+Neuquén,2013,3
+Neuquén,2014,5
+Río Negro,1998,8
+Río Negro,2000,4
+Río Negro,2001,2
+Río Negro,2002,3
+Río Negro,2003,9
+Río Negro,2004,4
+Río Negro,2005,4
+Río Negro,2006,8
+Río Negro,2007,11
+Río Negro,2008,11
+Río Negro,2009,3
+Río Negro,2010,3
+Río Negro,2011,5
+Río Negro,2012,5
+Río Negro,2013,2
+Río Negro,2014,4
+Salta,1998,5
+Salta,1999,2
+Salta,2000,2
+Salta,2001,4
+Salta,2002,5
+Salta,2003,5
+Salta,2004,5
+Salta,2005,4
+Salta,2006,1
+Salta,2007,5
+Salta,2008,6
+Salta,2009,3
+Salta,2010,2
+Salta,2012,3
+Salta,2013,2
+Salta,2014,2
+San Juan,1998,1
+San Juan,1999,1
+San Juan,2000,2
+San Juan,2001,2
+San Juan,2002,2
+San Juan,2003,1
+San Juan,2004,1
+San Juan,2005,1
+San Juan,2006,1
+San Juan,2007,2
+San Juan,2008,1
+San Juan,2011,1
+San Juan,2013,2
+San Juan,2014,2
+San Luis,1998,3
+San Luis,1999,1
+San Luis,2000,2
+San Luis,2001,3
+San Luis,2002,2
+San Luis,2003,2
+San Luis,2004,1
+San Luis,2005,1
+San Luis,2006,2
+San Luis,2007,1
+San Luis,2008,2
+San Luis,2009,2
+San Luis,2010,1
+San Luis,2011,1
+San Luis,2012,1
+San Luis,2013,2
+San Luis,2014,2
+Santa Cruz,1998,3
+Santa Cruz,2000,3
+Santa Cruz,2001,4
+Santa Cruz,2004,4
+Santa Cruz,2005,2
+Santa Cruz,2006,3
+Santa Cruz,2007,4
+Santa Cruz,2008,3
+Santa Cruz,2009,3
+Santa Cruz,2010,2
+Santa Cruz,2011,4
+Santa Cruz,2012,2
+Santa Cruz,2013,3
+Santa Cruz,2014,3
+Santa Fe,1998,46
+Santa Fe,1999,16
+Santa Fe,2000,40
+Santa Fe,2001,44
+Santa Fe,2002,40
+Santa Fe,2003,56
+Santa Fe,2004,47
+Santa Fe,2006,51
+Santa Fe,2007,49
+Santa Fe,2008,48
+Santa Fe,2009,49
+Santa Fe,2010,38
+Santa Fe,2011,37
+Santa Fe,2012,35
+Santa Fe,2013,38
+Santa Fe,2014,63
+Santa Fé,2005,46
+Santiago del Estero,2013,1
+Santiago del Estero,2014,2
+Santiago Del Estero,1998,1
+Santiago del Estero,2010,1
+Tierra Del Fuego,1998,1
+Tierra del Fuego,2001,1
+Tierra del Fuego,2002,1
+Tierra del Fuego,2003,1
+Tierra del Fuego,2004,1
+Tierra del Fuego,2012,1
+Tucumán,1998,7
+Tucumán,2000,6
+Tucumán,2001,4
+Tucumán,2002,5
+Tucumán,2003,7
+Tucumán,2004,11
+Tucumán,2005,7
+Tucumán,2006,8
+Tucumán,2007,6
+Tucumán,2008,9
+Tucumán,2009,12
+Tucumán,2010,8
+Tucumán,2011,11
+Tucumán,2012,8
+Tucumán,2013,4
+Tucumán,2014,8
+Tucumán,1999,3
