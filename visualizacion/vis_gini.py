@@ -39,15 +39,13 @@ p.title = "Evolución índice de Gini en aprobados y clasificados.".decode('utf-
 p.xaxis.axis_label = 'Años'.decode('utf-8')
 p.yaxis.axis_label = 'Gini'
 
-
 hover = p.select(dict(type=HoverTool))
-
 
 hover.tooltips = OrderedDict([
     ("Año", "@x"),
     ("Gini", "@y"),
 ])
 
-script, div = components(p, CDN)
+# script, div = components(p, CDN)
 
-# show(p)
+show(p)
