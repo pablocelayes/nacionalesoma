@@ -6,8 +6,35 @@ import pandas as pd
 from bokeh.plotting import *
 from bokeh.models import HoverTool
 from bokeh.charts import Donut
+# from bokeh.resources import CDN
+# from bokeh.embed import components
 
 from collections import OrderedDict
+
+# Buenos Aires BUE
+# Catamarca CAT
+# Chaco CHA
+# Chubut CHU
+# Córdoba CBA
+# Corrientes CRR
+# Entre Ríos ERS
+# Formosa FOR
+# Jujuy JUJ
+# La Pampa LPA
+# La Rioja LAR
+# Mendoza DOZ
+# Misiones MIS
+# Neuquén NEU
+# Río Negro RNG
+# Salta SAL
+# San Juan JUA
+# San Luis UIS
+# Santa Cruz SCZ
+# Santa Fé SFE
+# Santiago del Estero SDE
+# Tierra del Fuego TDF
+# Tucumán TUC
+
 
 files = ["../data/aprobados/provcounts.csv",
 		 "../data/clasificados/provcounts.csv",]
@@ -17,7 +44,7 @@ end_year   = 2014
 
 N = end_year - init_year + 1		 
 
-TOOLS = "pan,wheel_zoom,box_zoom,reset"		 
+TOOLS = "pan,wheel_zoom,box_zoom,reset,hover"		 
 		 
 aprobados_prov,clasificados_prov = map(pd.read_csv,files)
 # ------------------------------------------------------------

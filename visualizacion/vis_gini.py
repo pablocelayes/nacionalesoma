@@ -5,6 +5,8 @@ import pandas as pd
 
 from bokeh.plotting import *
 from bokeh.models import HoverTool
+from bokeh.resources import CDN
+from bokeh.embed import components
 
 from collections import OrderedDict
 
@@ -46,5 +48,6 @@ hover.tooltips = OrderedDict([
     ("Gini", "@y"),
 ])
 
+script, div = components(p, CDN)
 
-show(p)
+# show(p)
