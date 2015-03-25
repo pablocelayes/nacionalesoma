@@ -2,7 +2,6 @@ Análisis y Visualización de datos sobre participación en Nacionales OMA
 
 =============
 
- de datos de participantes, aprobados y premiados de Certámenes Nacionales de la Olimpiada Matemática Argentina entre 1997 y 2014.
 
 El presente estudio se basa en la información publicada en la web sobre clasificad@s, aprobad@s y premiad@s de los certámenes nacionales de la Olimpíada Matemática Argentina.
 
