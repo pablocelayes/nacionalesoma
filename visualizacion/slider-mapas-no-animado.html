@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Clasificados a través de los años</title>
+  
+<p>
+  <label for="year" 
+         style="display: inline-block; width: 240px; text-align: right">
+         Año = <span id="year-value"><id></span>
+  </label>
+  <input type="range" min="1998" max="2014" id="year">
+</p>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+d3.select("#year").on("input", function() {
+
+d3.select("svg")
+       .remove();
+  update(+this.value);
+});
+
+
+function update(year) {
+
+  d3.select("svg")
+       .remove();
+  d3.select("#year-value").text(year);
+  d3.select("#year").property("year", year);
+
+// es importante que los archivos se mantengan con ese nombre y en esa ruta :)
+var aux1 = "clasificados/mapa"
+var aux2 = ".svg"
+var res = aux1.concat(year)
+var res1 = res.concat(aux2)
+d3.xml(res1, "image/svg+xml", function(xml) {
+  document.body.appendChild(xml.documentElement);
+});
+
+}
+</script>
+
