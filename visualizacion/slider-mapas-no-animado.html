@@ -1,42 +1,79 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Clasificados a través de los años</title>
-  
+
 <p>
-  <label for="year" 
-         style="display: inline-block; width: 240px; text-align: right">
-         Año = <span id="year-value"><id></span>
-  </label>
-  <input type="range" min="1998" max="2014" id="year">
+<label for="year" 
+		style="display: inline-block; width: 240px; text-align: right">
+		Año = <span id="year-value">1998</span>
+</label>
+<input type="range" min="1998" max="2014" id="year">
 </p>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.v3.min.js"></script>
 <script>
 
-d3.select("#year").on("input", function() {
+//cargando el svg en blanco...
+var svg_file = "Blank_Argentina_Map_color.svg";
+var svg_style = ";fill-opacity:1;stroke:#000000;stroke-width:1.40563393;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none";
 
-d3.select("svg")
-       .remove();
-  update(+this.value);
+d3.xml(svg_file, "image/svg+xml", function(xml)
+{
+	document.body.appendChild(xml.documentElement);	
 });
 
-
-function update(year) {
-
-  d3.select("svg")
-       .remove();
-  d3.select("#year-value").text(year);
-  d3.select("#year").property("year", year);
-
-// es importante que los archivos se mantengan con ese nombre y en esa ruta :)
-var aux1 = "clasificados/mapa"
-var aux2 = ".svg"
-var res = aux1.concat(year)
-var res1 = res.concat(aux2)
-d3.xml(res1, "image/svg+xml", function(xml) {
-  document.body.appendChild(xml.documentElement);
+//asociando el slider al mapa...
+d3.select("#year").on("input", function()
+{
+	update_svg(+this.value);
 });
 
+//para setear el color de cada provincia
+function set_color(svg_path,color){svg_path.style = "fill:#"+color+svg_style;}
+
+//incrementando el color...
+function normalize_color(n){return (16777215 - n).toString(16);}
+
+
+function refresh_colors(node,province,year)
+{
+
+	d3.csv("clasificados/provcounts.csv",function(rows)
+	{
+		rows.map(function(d)
+		{
+			if(+d.Año === year && d.Provincia === province){
+				
+				set_color(node,normalize_color(+d.Cantidad));
+			}
+		});
+	});
+}
+
+function update_svg(year)
+{
+	//actualizando slider
+	d3.select("#year-value").text(year);
+	d3.select("#year").property("year", year);
+	
+	//leyendo provcodes.cvs
+	
+	d3.csv("provcodes.csv",function(rows)
+		{
+			data = rows.map(function(d)
+			{
+				// console.log("d", d);
+				//buscar la cantidad de cada año en 'provcounts'
+				refresh_colors(document.getElementById(d.Path),d.Provincia,year); 
+				// return d.value;
+			});
+			//alert(typeof(data));
+			// alert(data[0]);
+			// for (var name in data)
+			// {
+				// alert(name);
+			// }
+		});
 }
 </script>
 
