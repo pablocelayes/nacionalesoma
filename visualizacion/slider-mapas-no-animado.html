@@ -16,6 +16,7 @@
 //cargando el svg en blanco...
 var svg_file = "Blank_Argentina_Map_color.svg";
 var svg_style = ";fill-opacity:1;stroke:#000000;stroke-width:1.40563393;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none";
+var n_provinces = 44;
 
 d3.xml(svg_file, "image/svg+xml", function(xml)
 {
@@ -23,10 +24,7 @@ d3.xml(svg_file, "image/svg+xml", function(xml)
 });
 
 //asociando el slider al mapa...
-d3.select("#year").on("input", function()
-{
-	update_svg(+this.value);
-});
+d3.select("#year").on("input", function(){update_svg(+this.value);});
 
 //para setear el color de cada provincia
 function set_color(svg_path,color){svg_path.style = "fill:#"+color+svg_style;}
@@ -56,23 +54,15 @@ function update_svg(year)
 	d3.select("#year-value").text(year);
 	d3.select("#year").property("year", year);
 	
-	//leyendo provcodes.cvs
+	//leyendo archivo svg correspondiente al año
+	var svg = "clasificados/mapa"+year+".svg";
 	
-	d3.csv("provcodes.csv",function(rows)
+	d3.xml(svg,"image/svg+xml", function(xml)
 		{
-			data = rows.map(function(d)
-			{
-				// console.log("d", d);
-				//buscar la cantidad de cada año en 'provcounts'
-				refresh_colors(document.getElementById(d.Path),d.Provincia,year); 
-				// return d.value;
-			});
-			//alert(typeof(data));
-			// alert(data[0]);
-			// for (var name in data)
-			// {
-				// alert(name);
-			// }
+			for(var i = 0; i < n_provinces; i++){
+				path = d3.selectAll("path")[0][i];
+				path.style.fill = xml.documentElement.getElementById(path.id).style.fill;	
+			} 
 		});
 }
 </script>
