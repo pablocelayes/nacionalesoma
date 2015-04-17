@@ -113,7 +113,7 @@ function tooltip(year,id,x,y)
 			// alert(path_to_provs[id]);
 			// d3.select("div").html(d.Provincia)
 			div.html("<p><b>Año:</b> "+d.Año+"</p>"+
-					  "<p><b>Provincia:</b>"+d.Provincia+"</p>"+
+					  "<p><b>Provincia:</b> "+d.Provincia+"</p>"+
 					  "<p>"+d.Cantidad+" clasificados</p>")
 				.style('top',  y + 'px')
 				.style('left', x + 'px')
@@ -138,20 +138,20 @@ function update_svg(year)
 		{
 			
 			for(i = 0; i < n_provinces; i++){
+				
 				//actualizando los colores
 				path = d3.selectAll("path")[0][i];
+				
 				// alert(path.id);
 				path.style.fill = xml.documentElement.getElementById(path.id).style.fill;
+				
 				//asociando el tooltip por provincia y año
-				path.addEventListener('mousemove',function(event)
+				d3.select(path).on('mousemove',function(event)
 				{
 					// alert(path_to_provs[this.id]);
-					tooltip(year,this.id,event.pageX,event.pageY);
+					// alert(d3.event);
+					tooltip(year,this.id,d3.event.pageX,d3.event.pageY);
 				});
-				// path.addEventListener('mouseout', function()
-				// {
-					// d3.select("div").style('display', 'none');
-				// });	
 			} 
 		});
 }
