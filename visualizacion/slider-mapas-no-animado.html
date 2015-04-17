@@ -19,7 +19,7 @@
 }
 
 .tooltip2 {   
-  position: absolute;           
+  position: relative;           
   text-align: center;           
   width: 60px;                  
   height: 28px;
@@ -31,6 +31,20 @@
   border-radius: 8px;           
   pointer-events: none;         
 }
+
+.tooltip3 {
+	position: absolute;
+    text-align: left;
+    width: 200px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: Helvetica,sans-serif;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    pointer-events: none;
+    display: none;
+    border: 1px solid #CCC;
+}
+
 </style>
 <p>
 <label for="year" 
@@ -49,7 +63,7 @@ var svg_file = "Blank_Argentina_Map_color.svg";
 var n_provinces = 44;
 
 var div = d3.select("body").append("div")   
-			.attr("class", "tooltip1");
+			.attr("class", "tooltip3");
 
 var path_to_provs = 
 {
@@ -88,7 +102,7 @@ d3.xml(svg_file, "image/svg+xml", function(xml)
 //asociando el slider al mapa...
 d3.select("#year").on("input", function(){update_svg(+this.value);});
 
-function tooltip(year,id)
+function tooltip(year,id,x,y)
 {
 	d3.csv("clasificados/provcounts.csv",function(rows)
 	{
@@ -97,9 +111,12 @@ function tooltip(year,id)
 			if(d.Año == year && d.Provincia == path_to_provs[id]){
 			// alert("Entering...");
 			// alert(path_to_provs[id]);
-			d3.select("div").html(d.Provincia)
-				.html(d.Año)
-				.html(d.Cantidad+" clasificados")
+			// d3.select("div").html(d.Provincia)
+			div.html("<p><b>Año:</b> "+d.Año+"</p>"+
+					  "<p><b>Provincia:</b>"+d.Provincia+"</p>"+
+					  "<p>"+d.Cantidad+" clasificados</p>")
+				.style('top',  y + 'px')
+				.style('left', x + 'px')
 				.style('display', 'block');
 			}
 		});
@@ -125,11 +142,15 @@ function update_svg(year)
 				// alert(path.id);
 				path.style.fill = xml.documentElement.getElementById(path.id).style.fill;
 				//asociando el tooltip por provincia y año
-				path.addEventListener('mouseover',function()
+				path.addEventListener('mousemove',function(event)
 				{
 					// alert(path_to_provs[this.id]);
-					tooltip(year,this.id);
+					tooltip(year,this.id,event.pageX,event.pageY);
 				});
+				// path.addEventListener('mouseout', function()
+				// {
+					// d3.select("div").style('display', 'none');
+				// });	
 			} 
 		});
 }
