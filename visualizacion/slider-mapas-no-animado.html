@@ -3,6 +3,14 @@
 <title>Clasificados a través de los años</title>
 <style>
 
+.hover{
+  border: 1px solid #CCC;
+}
+
+.normal{
+  borde: 0px; 	
+}  
+
 .tooltip1 {
   background: #eee;
   box-shadow: 0 0 5px #999999;
@@ -104,6 +112,8 @@ d3.select("#year").on("input", function(){update_svg(+this.value);});
 
 function tooltip(year,id,x,y)
 {
+	d3.select("#"+id).style('stroke-width', 1)
+					 .style('stroke', 'steelblue');
 	d3.csv("clasificados/provcounts.csv",function(rows)
 	{
 		rows.map(function(d)
