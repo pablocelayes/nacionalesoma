@@ -35,7 +35,7 @@
 .tooltip3 {
 	position: absolute;
     text-align: left;
-    width: 200px;
+    width: 160px;
     padding: 10px;
     font-size: 10px;
     font-family: Helvetica,sans-serif;
@@ -129,6 +129,7 @@ function update_svg(year)
 	//actualizando slider
 	d3.select("#year-value").text(year);
 	d3.select("#year").property("year", year);
+	d3.select("div").style('display', 'none');
 	
 	//leyendo archivo svg correspondiente al año
 	var svg = "clasificados/mapa"+year+".svg";
