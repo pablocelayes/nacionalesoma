@@ -2,6 +2,36 @@
 <meta charset="utf-8">
 <title>Clasificados a través de los años</title>
 <style>
+.title{
+  font-size: 18px;
+  font-family: Helvetica,sans-serif;
+  display: inline-block;
+}
+
+.square{
+  background:green;
+  height: 10px;
+  width: 10px;
+}
+
+
+.legend{
+  width: 150px;
+  height: 170px;
+  position: absolute;
+  padding: 10px;
+  top: 200px;
+  left: 600px;
+  border: 1px solid #00F500;
+  font-size: 12px;
+  font-family: Helvetica,sans-serif;
+}
+
+.map{
+  top: 400px;
+  left: 400px;
+  // border: 2px solid #00F500;   
+}
 
 .hover{
   border: 1px solid #CCC;
@@ -43,7 +73,7 @@
 .tooltip3 {
 	position: absolute;
     text-align: left;
-    width: 160px;
+    width: 140px;
     padding: 10px;
     font-size: 10px;
     font-family: Helvetica,sans-serif;
@@ -54,12 +84,13 @@
 }
 
 </style>
-<p>
-<label for="year" 
+<p class="title">
+<label 	for="year" 
 		style="display: inline-block; width: 240px; text-align: right">
 		Año = <span id="year-value">1998</span>
 </label>
 <input type="range" min="1998" max="2014" id="year">
+<button>Play</button>
 </p>
 
 <script src="d3.v3.min.js"></script>
@@ -70,9 +101,20 @@ var svg_file = "Blank_Argentina_Map_color.svg";
 
 var n_provinces = 44;
 
-var div = d3.select("body").append("div")   
+var div1 = d3.select("body")
+			.attr("class","map")
+			.append("div")   
 			.attr("class", "tooltip3");
 
+var div2 = d3.select("body").append("div")
+			 .html("<h4><u>Leyenda</u></h4>"+
+				   "<p><div class='square'></div>más de x clasificados</p>"+
+				   "<p>entre x e y clasificados</p>"+
+				   "<p>entre x e y clasificados</p>"+
+				   "<p>menos de z clasificados</p>")
+			 .attr("class","legend"); //cambiar a lista
+			   
+		
 var path_to_provs = 
 {
 	path2413:"Buenos Aires",
@@ -110,23 +152,20 @@ d3.xml(svg_file, "image/svg+xml", function(xml)
 //asociando el slider al mapa...
 d3.select("#year").on("input", function(){update_svg(+this.value);});
 
-function tooltip(year,id,x,y)
+function tooltip(year,id,event)
 {
-	d3.select("#"+id).style('stroke-width', 1)
+	d3.select("#"+id).style('stroke-width', 2)
 					 .style('stroke', 'steelblue');
 	d3.csv("clasificados/provcounts.csv",function(rows)
 	{
 		rows.map(function(d)
 		{
 			if(d.Año == year && d.Provincia == path_to_provs[id]){
-			// alert("Entering...");
-			// alert(path_to_provs[id]);
-			// d3.select("div").html(d.Provincia)
-			div.html("<p><b>Año:</b> "+d.Año+"</p>"+
+			div1.html("<p><b>Año:</b> "+d.Año+"</p>"+
 					  "<p><b>Provincia:</b> "+d.Provincia+"</p>"+
 					  "<p>"+d.Cantidad+" clasificados</p>")
-				.style('top',  y + 'px')
-				.style('left', x + 'px')
+				.style('top',  event.pageY + 'px')
+				.style('left', event.pageX + 'px')
 				.style('display', 'block');
 			}
 		});
@@ -139,7 +178,7 @@ function update_svg(year)
 	//actualizando slider
 	d3.select("#year-value").text(year);
 	d3.select("#year").property("year", year);
-	d3.select("div").style('display', 'none');
+	d3.select("div1").style('display', 'none');
 	
 	//leyendo archivo svg correspondiente al año
 	var svg = "clasificados/mapa"+year+".svg";
@@ -156,11 +195,13 @@ function update_svg(year)
 				path.style.fill = xml.documentElement.getElementById(path.id).style.fill;
 				
 				//asociando el tooltip por provincia y año
-				d3.select(path).on('mousemove',function(event)
+				d3.select(path).on('mouseenter',function(event)
 				{
-					// alert(path_to_provs[this.id]);
-					// alert(d3.event);
-					tooltip(year,this.id,d3.event.pageX,d3.event.pageY);
+					tooltip(year,this.id,d3.event);
+				}).on('mouseout',function(event)
+				{
+					d3.select("#"+this.id).style('stroke-width', 1)
+										  .style('stroke', 'white');
 				});
 			} 
 		});
