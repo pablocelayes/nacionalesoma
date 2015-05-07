@@ -1,0 +1,100 @@
+	input{
+	border-right: #a9a9a9 1px solid;
+	padding-right: 10px;
+	border-top: #a9a9a9 1px solid;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-left: #a9a9a9 1px solid;
+	padding-top: 10px;
+	border-bottom: #a9a9a9 1px solid;
+	}
+	
+	.title{
+	font-size: 18px;
+	font-family: Helvetica,sans-serif;
+	display: inline-block;
+    }
+
+    .square{
+	background:green;
+	height: 12px;
+	width: 12px;
+    }
+
+    .legend1{
+	width: 150px;
+	height: 170px;
+	align:left;
+	position: absolute;
+	padding: 10px;
+	top: 200px;
+	left: 600px;
+	border: 1px solid #00F500;
+	font-size: 10px;
+	font-family: Helvetica,sans-serif;
+    }
+
+    .map{
+	top: 400px;
+	left: 400px;
+	border: 2px solid #00A400;   
+    }
+
+    .hover{
+	border: 1px solid #CCC;
+    }
+
+    .normal{
+	borde: 0px; 	
+    }  
+
+    .tooltip1 {
+	background: #eee;
+	box-shadow: 0 0 5px #999999;
+	color: #333;
+	display: none;
+	font-size: 12px;
+	left: 130px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	top: 95px;
+	width: 80px;
+	z-index: 10;
+    }
+
+    .tooltip2 {   
+	position: relative;           
+	text-align: center;           
+	width: 60px;                  
+	height: 28px;
+	display: none;  
+	padding: 2px;             
+	font: 12px sans-serif;        
+	background: lightsteelblue;   
+	border: 0px;      
+	border-radius: 8px;           
+	pointer-events: none;         
+    }
+
+    .tooltip3 {
+	position: absolute;
+	text-align: left;
+	width: 140px;
+	padding: 10px;
+	font-size: 10px;
+	font-family: Helvetica,sans-serif;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	pointer-events: none;
+	display: none;
+	border: 1px solid #CCC;
+    }
+	
+	.datamaps-legend {
+	padding-bottom: 20px;
+    z-index: 1001; 
+    position: absolute;
+    left: 4px;
+    font-size: 12px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
