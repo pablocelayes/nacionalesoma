@@ -5,12 +5,10 @@ d3.xml(svg_file1, "image/svg+xml", function(xml)
        {
 	   document.body.appendChild(xml.documentElement);	
        });
-
-var svg_node = d3.select("svg");
-
-var button_node = d3.select("button");
+	   
 
 var input_node = d3.select("input"); 
+	input_node.property	("value",1998); 
 
 var n_provinces = 44;
 
@@ -18,18 +16,26 @@ var div1 = d3.select("body")
     .attr("class","map")
     .append("div")   
     .attr("class", "tooltip3");
+	
+var div2 = d3.select("#chart");
  
-var xml_array = [];	
+var svg_array = [];
+// var csv_array = [];
+
+function fill_svg_array(){
+	var svg = "clasificados/mapa"
+	for (var i = 1998; i < 2015; i++) 
+	{
+		d3.xml(svg+i+".svg","image/svg+xml", function(xml)
+		{
+			svg_array.push(xml);
+		})
+	}	
+}
+
+fill_svg_array()
 	
 var play_label = "Animar";
-
-button_node.on('click',function()
-	{
-		for(var j=1998;j<2015;j++)
-		{
-			update_svg(j,"button");
-		}
-	});
 	
 var path_to_provs = 
     {
@@ -70,7 +76,8 @@ function tooltip(year,id,event)
 	   {
 	       rows.map(function(d)
 			{
-			    if(d.Año == year && d.Provincia == path_to_provs[id]){
+			    // div2.html("Progressión of province of "+ d.Provincia+":"+rows);
+				if(d.Año == year && d.Provincia == path_to_provs[id]){
 				div1.html("<p><b>Año:</b> "+d.Año+"</p>"+
 					  "<p><b>Provincia:</b> "+d.Provincia+"</p>"+
 					  "<p>"+d.Cantidad+" clasificados</p>")
@@ -83,44 +90,42 @@ function tooltip(year,id,event)
     
 }
 
-function update_svg(year,caller)
+function update_svg(año,caller)
 {
-    //actualizando label
-    d3.select("#year-value").text(year);
-    d3.select("#year").property("year", year);
+	// "use strict";
+	// alert(typeof año);
+	// alert(year);
+	//actualizando label
+	// input_node.property	("value",año);  
+	d3.select("#year-value").text(año);
+    d3.select("#year").property("year", año);
     div1.style('display', 'none');
     
-    //leyendo archivo svg correspondiente al año
-    var svg = "clasificados/mapa"+year+".svg";
-	    
-	d3.xml(svg,"image/svg+xml", function(xml)
-	   {
-			if (caller == "button")
+	//leyendo archivo svg correspondiente al año desde svg_array
+	var paths = d3.selectAll("path");
+	
+	for(var i = 0; i < n_provinces; i++){
+		
+		var path = paths[0][i];
+		// alert(año - 1998);
+		d3.select(path)
+		  .transition()
+		  .style('fill',svg_array[año - 1998].documentElement.getElementById(path.id).style.fill);
+		
+		if (caller == "input")
+		{
+		  // alert(path);
+		  d3.select(path).on('mouseenter',function(event)
+		  {
+		  tooltip(año,this.id,d3.event);
+		  }).on('mouseout',function(event)
 			{
-				// alert("entering");
-				input_node.transition().delay(1000).duration(200).attr("class","inputt");
-				// alert("after styling");
-			}   
-			
-			for(i = 0; i < n_provinces; i++){
-		   
-			//actualizando los colores
-			path = d3.selectAll("path")[0][i];
-		   
-			d3.select(path).transition().style('fill',xml.documentElement.getElementById(path.id).style.fill);
-		   
-			//asociando el tooltip por provincia y año
-			d3.select(path).on('mouseenter',function(event)
-				      {
-					  tooltip(year,this.id,d3.event);
-				      }).on('mouseout',function(event)
-					    {
-						d3.select("#"+this.id).style('stroke-width', 1)
-						    .style('stroke', 'white');
-					    });
-			}
-			xml_array.push(xml);
-			//actualizando slider "input"
-			input_node.property	("value",year);
-	   });
+			d3.select("#"+this.id).style('stroke-width', 1)
+				.style('stroke', 'white');
+			})
+			.on('click',function(){window.open("bokeh/gini.html");})
+		}
+		
+
+	}
 }

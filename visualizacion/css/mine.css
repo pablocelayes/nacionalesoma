@@ -9,6 +9,23 @@
 	border-bottom: #a9a9a9 1px solid;
 	}
 	
+	.anim {
+	  animation-duration: 1s;
+	  animation-name: slidein;
+	}
+
+/* 	@keyframes slidein {
+	  from {
+		margin-left: 100%;
+		width: 300%
+	  }
+
+	  to {
+		margin-left: 0%;
+		width: 100%;
+	  }
+	} */
+	
 	.title{
 	font-size: 18px;
 	font-family: Helvetica,sans-serif;
@@ -45,7 +62,7 @@
     }
 
     .normal{
-	borde: 0px; 	
+	border: 0px; 	
     }  
 
     .tooltip1 {
