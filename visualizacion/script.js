@@ -78,9 +78,12 @@ function tooltip(year,id,event)
 			{
 			    // div2.html("Progressión of province of "+ d.Provincia+":"+rows);
 				if(d.Año == year && d.Provincia == path_to_provs[id]){
+				var prov = d.Provincia.replace(/\s/g, '_');
 				div1.html("<p><b>Año:</b> "+d.Año+"</p>"+
-					  "<p><b>Provincia:</b> "+d.Provincia+"</p>"+
-					  "<p>"+d.Cantidad+" clasificados</p>")
+						  "<p><b>Provincia:</b> "+d.Provincia+"</p>"+
+						  "<p>"+d.Cantidad+" clasificados</p>"+
+						  "<p>Progresión:"+
+						  "<img align='left' height='100' src="+'./plots/'+prov+".svg></img></p>")
 				    .style('top',  event.pageY + 'px')
 				    .style('left', event.pageX + 'px')
 				    .style('display', 'block');
