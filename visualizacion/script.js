@@ -1,5 +1,5 @@
 ﻿//cargando el svg inicial
-var svg_file1 = "Blank_Argentina_Map_color.svg";
+var svg_file1 = "Blank_Argentina_Map.svg";
 
 d3.xml(svg_file1, "image/svg+xml", function(xml)
        {
