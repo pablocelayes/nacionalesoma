@@ -1,5 +1,5 @@
 ﻿//cargando el svg inicial
-var svg_file1 = "Blank_Argentina_Map.svg";
+var svg_file1 = "clasificados/mapa1998.svg";
 
 d3.xml(svg_file1, "image/svg+xml", function(xml)
        {
@@ -19,7 +19,6 @@ var div1 = d3.select("body")
 var div2 = d3.select("#chart");
  
 var svg_array = [];
-// var csv_array = [];
 
 function fill_svg_array(){
 	var svg = "clasificados/mapa"
@@ -33,8 +32,6 @@ function fill_svg_array(){
 }
 
 fill_svg_array()
-	
-var play_label = "Animar";
 	
 var path_to_provs = 
     {
@@ -63,7 +60,7 @@ var path_to_provs =
 	path2384:"Tierra del Fuego",
 	path3187:"Tucumán",
     };			
-	   
+	
 //asociando el slider al mapa...
 d3.select("#year").on("input", function(){update_svg(+this.value,"input");});
 
@@ -109,7 +106,7 @@ function update_svg(año,caller)
 	for(var i = 0; i < n_provinces; i++){
 		
 		var path = paths[0][i];
-		// alert(año - 1998);
+		// alert(año);
 		d3.select(path)
 		  .transition()
 		  .style('fill',svg_array[año - 1998].documentElement.getElementById(path.id).style.fill);
@@ -131,3 +128,5 @@ function update_svg(año,caller)
 
 	}
 }
+
+// update_svg(1998,"input");	
