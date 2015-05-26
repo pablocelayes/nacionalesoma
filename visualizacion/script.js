@@ -5,6 +5,7 @@ d3.xml(svg_file1, "image/svg+xml", function(xml)
        {
 	   document.body.appendChild(xml.documentElement);	
        });
+
 	   
 var input_node = d3.select("input"); 
 	input_node.property	("value",1998); 
@@ -72,7 +73,6 @@ function tooltip(year,id,event)
 	   {
 	       rows.map(function(d)
 			{
-			    // div2.html("Progressión of province of "+ d.Provincia+":"+rows);
 				if(d.Año == year && d.Provincia == path_to_provs[id]){
 				var prov = d.Provincia.replace(/\s/g, '_');
 				div1.html("<p><b>Año:</b> "+d.Año+"</p>"+
@@ -93,7 +93,7 @@ function update_svg(año,caller)
 {
 	// "use strict";
 	// alert(typeof año);
-	// alert(year);
+	// alert(año);
 	//actualizando label
 	// input_node.property	("value",año);  
 	d3.select("#year-value").text(año);
@@ -102,6 +102,7 @@ function update_svg(año,caller)
     
 	//leyendo archivo svg correspondiente al año desde svg_array
 	var paths = d3.selectAll("path");
+	// alert(paths);
 	
 	for(var i = 0; i < n_provinces; i++){
 		
