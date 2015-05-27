@@ -1,20 +1,36 @@
 ﻿# -*- coding: utf-8 -*-
 
 import pandas as pd
-# import matplotlib.patches as mpatches
+import numpy as np
+import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 
+aprobados_patch = mpatches.Patch(color='#3F7F7F', label='Aprobados')
+
+files = ["../data/aprobados/provcounts.csv",
+		 "../data/clasificados/provcounts.csv",]
+	 
+		 
+aprobados_prov,clasificados_prov = map(pd.read_csv,files)
+
+x = np.arange(1998,2015)
 
 
-data = pd.read_csv("./clasificados/provcounts.csv")
+provincias = set(aprobados_prov['Provincia'])
 
-provincias = set(data['Provincia'])
 for i in provincias:
-	provincia_rows = data[data['Provincia'] == i]		  
+	aprobados_rows = aprobados_prov[aprobados_prov['Provincia'] == i]
+	clasificados_rows = clasificados_prov[clasificados_prov['Provincia'] == i]
 	fig = plt.figure()
-	# fig.suptitle('Progresión de '+i, fontsize=22)
-	plt.bar(provincia_rows['Año'],provincia_rows['Cantidad'],color='green')	
-	plt.savefig("./plots/"+i+".svg")
+	print(i)
+	# #3F7F7F
+	plt.bar(aprobados_rows['Año'],aprobados_rows['Cantidad'],color='blue',alpha=0.5)
+	graph2 = plt.bar(clasificados_rows['Año'],clasificados_rows['Cantidad'],label='Clasificados',color='green',alpha=0.5)
+	plt.title('Progresión provincia de '+i)
+	plt.ylabel('Cantidad')
+	plt.legend(handles=[aprobados_patch, graph2])
+	plt.savefig("./plots/"+i+"-completo.svg")
+	# plt.show()
 	plt.close(fig)
 
 # Pendientes: 

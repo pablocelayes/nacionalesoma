@@ -1,0 +1,1334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" href="http://yacf-llc.wikispaces.com/space/opensearch" type="application/opensearchdescription+xml" title="Búsqueda de Wikispaces (accULL Wiki)">
+<link rel="alternate" type="application/x-wiki" title="Edit This Page" href="http://yacf-llc.wikispaces.com/page/edit/Hacer+gr%C3%A1ficas+con+matplotlib">
+<link rel="alternate" title="accULL - All Changes" href="http://yacf-llc.wikispaces.com/wiki/xmla?v=rss_2_0" type="application/rss+xml">
+<link rel="alternate" title="yacf-llc : Hacer gráficas con matplotlib - Discussion" href="http://yacf-llc.wikispaces.com/message/xml/Hacer+gr%C3%A1ficas+con+matplotlib?v=rss_2_0" type="application/rss+xml">
+<link rel="alternate" title="yacf-llc : Hacer gráficas con matplotlib - Edits" href="http://yacf-llc.wikispaces.com/page/xml/Hacer+gr%C3%A1ficas+con+matplotlib?v=rss_2_0" type="application/rss+xml">
+<link rel="microsummary" href="http://yacf-llc.wikispaces.com/page/microsummary/Hacer+gr%C3%A1ficas+con+matplotlib/edits">
+<link rel="microsummary" href="http://yacf-llc.wikispaces.com/page/microsummary/Hacer+gr%C3%A1ficas+con+matplotlib/messages">
+<script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+  
+if (typeof ws === 'undefined') ws = {};
+ws.context = {
+  instance: {
+    id: '1',
+    url: 'wikispaces.com',
+    isMain: true,
+    supportsGoogleDocs: false,
+    isTesClassroom: false,
+  },
+  user: {
+    id: '',
+    username: '',
+    status: '',
+    locale: 'es_ES',
+    imageUrlPrefix: 'http://www.wikispaces.com/i/user_none_',
+    isTeacher: false,
+    canAdministerWiki: false,
+  },
+  wiki: {
+    id: '6068820',
+    name: 'yacf-llc',
+    text: 'accULL',
+    module: 'B',
+    isClassroom: false,
+    isTesClassroom: false
+    ,defaultSpaceId: 6068820
+    ,isWwwWiki: false
+  },
+  project: {
+    id: '6068820',
+    name: ''
+  },
+  space: {
+    id: '6068820',
+    name: 'yacf-llc',
+    isDefaultSpace: true,
+    isDefaultTemplate: false
+  },
+
+  environment_name: 'prod',
+
+  path: {
+    object: 'page',
+    method: 'view',
+    page: 'Hacer gráficas con matplotlib',
+    id: ''
+  },
+
+  settings: {
+    main_domain: 'wikispaces.com',
+    session_url: 'https://session.wikispaces.com/1/',
+    asset_url_prefix: 'http://www.wikispaces.com',
+    beta_features: false,
+    isMobileSite: false,
+    isUploadCapable: true,
+    can_discuss: false,
+    has_gdocs: false,
+    isDialog: false,
+    pwin: ''
+  },
+  clockSkewMillis: 1432666516443 - ((window.performance && window.performance.timing.responseStart > 0) ? window.performance.timing.responseStart : (new Date()).getTime())
+}
+
+
+// legacy javascript API variables, use the above instead
+var wikispaces_isUserLoggedIn = !!ws.context.user.id;
+var wikispaces_isMain = ws.context.instance.isMain;
+var wikispaces_username = ws.context.user.username;
+var wikispaces_spaceName = ws.context.space.name;
+var wikispaces_projectName = ws.context.project.name;
+var wikispaces_wikiName = ws.context.wiki.name;
+var wikispaces_wikiText = ws.context.wiki.text;
+var wikispaces_isDefaultSpace = ws.context.space.isDefaultSpace;
+var wikispaces_method = ws.context.path.method;
+var wikispaces_object = ws.context.path.object;
+var wikispaces_page = ws.context.path.page;
+var wikispaces_id = ws.context.path.id;
+var wikispaces_domain = ws.context.instance.url;
+var wikispaces_isUserOrganizer = false;
+var wikispaces_main_domain = ws.context.settings.asset_url_prefix;
+var wikispaces_asset_url_prefix = ws.context.settings.asset_url_prefix;
+var wikispaces_beta_features = ws.context.settings.beta_features;
+var wikispaces_isMobileSite = ws.context.settings.isMobileSite;
+var wikispaces_isUploadCapable = ws.context.settings.isUploadCapable;
+var wikispaces_can_discuss = ws.context.settings.can_discuss;
+var wikispaces_has_gdocs = ws.context.settings.has_gdocs;
+
+</script><title>accULL - Hacer gráficas con matplotlib</title>
+<meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.wikispaces.com/_/z6371z4x/i/logo-144.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.wikispaces.com/_/j5j77xz3/i/logo-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.wikispaces.com/_/vq8j5432/i/logo-72.png">
+<link rel="apple-touch-icon" href="http://www.wikispaces.com/_/38515190/i/logo-57.png">
+<link rel="shortcut icon" href="http://www.wikispaces.com/_/55v9k02z/i/logo-16.png">
+<style type="text/css">
+/* Standard theme styles */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+.ws-theme-header-inner,
+.ws-theme-body-inner,
+.ws-theme-footer-inner,
+.ws-theme-content-inner,
+.ws-theme-sidebar-inner {
+  position: relative;
+}
+.ws-theme-header-inner:after,
+.ws-theme-body-inner:after,
+.ws-theme-footer-inner:after,
+.ws-theme-content-inner:after,
+.ws-theme-sidebar-inner:after,
+.ws-theme-menu-inner:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.ws-theme-content, .ws-theme-sidebar {
+  overflow-x: auto;
+}
+.ws-theme-footer {
+  text-align: right;
+}
+.ws-theme-footer a, .ws-theme-footer a:hover {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .ws-theme-container {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ws-theme-content {
+    width: 550px;
+    min-height: 384px;
+    float: right;
+  }
+  .ws-theme-sidebar {
+    width: 200px;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .ws-theme-container {
+    width: 970px;
+  }
+  .ws-theme-content {
+    width: 770px;
+    min-height: 496px;
+  }
+}
+@media (min-width: 1200px) {
+  .ws-theme-container {
+    width: 1170px;
+  }
+  .ws-theme-content {
+    width: 970px;
+    min-height: 600px;
+  }
+}
+/* End standard theme styles */
+</style>
+<style type="text/css">
+/* Theme-specific styles */
+body {
+  background-color: #AAA;
+}
+
+.ws-theme-container {
+  margin: 0 5px;
+}
+
+.ws-theme-header .WikiSearch .WikiSearchInput,
+.ws-theme-sidebar .WikiSearch .WikiSearchInput,
+.ws-theme-footer .WikiSearch .WikiSearchInput {
+  width: 100%;
+}
+
+.ws-theme-header,
+.ws-theme-footer {
+  color: #FFFFFF;
+}
+.ws-theme-header a,
+.ws-theme-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ws-theme-sidebar {
+  color: #000;
+}
+.ws-theme-sidebar a {
+  color: #4A3477;
+  text-decoration: none;
+}
+
+.ws-theme-header a:hover,
+.ws-theme-sidebar a:hover,
+.ws-theme-footer a:hover {
+  text-decoration: underline;
+}
+.ws-theme-header img,
+.ws-theme-sidebar img,
+.ws-theme-footer img {
+  border: none;
+}
+
+.ws-theme-header,
+.ws-theme-sidebar {
+  display: none;
+}
+
+.ws-theme-content {
+  overflow-x: visible;
+}
+.ws-theme-content-inner {
+  background-color: #FFF;
+  padding: 20px;
+}
+
+.ws-theme-footer {
+  text-align: center;
+}
+.ws-theme-footer-inner {
+  background: #683BC4 url('http://www.wikispaces.com/_/3k3q06qz/i/theme_glass.png');
+  padding: 15px;
+}
+.ws-theme-footer .WikiLicense img {
+  vertical-align: text-bottom;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #d4e0eb;
+  }
+
+  .ws-theme-container {
+    position: relative;
+    margin: 0 auto;
+    border: none;
+  }
+  .ws-theme-container:before {
+    box-shadow: -15px 0 15px -15px rgba(0,0,0,.625) inset;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 15px;
+  }
+  .ws-theme-container:after {
+    box-shadow: 15px 0 15px -15px rgba(0,0,0,.625) inset;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 15px;
+  }
+
+  .ws-theme-header,
+  .ws-theme-sidebar {
+    display: block;
+  }
+
+  .ws-theme-header-inner {
+    background: #683BC4 url('http://www.wikispaces.com/_/3k3q06qz/i/theme_glass.png');
+    min-height: 150px;
+    padding: 30px 25px;
+  }
+
+  .ws-theme-body-inner {
+    background-color: #BFB5D4;
+  }
+  .ws-theme-body-inner:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 200px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+  }
+
+  .ws-theme-content {
+    float: left;
+  }
+
+  .ws-theme-sidebar {
+    float: right;
+  }
+  .ws-theme-sidebar-inner {
+    padding: 10px;
+  }
+  .ws-theme-sidebar .WikiActions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .ws-theme-sidebar .WikiActions > li {
+    padding: 2px;
+  }
+  .ws-theme-sidebar .WikiCustomNav ol {
+    padding-left: 16px;
+  }
+  .ws-theme-sidebar .WikiCustomNav ol.includePageList {
+    padding-left: 0;
+  }
+  .ws-theme-sidebar .WikispacesNavbar {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+  .ws-theme-sidebar .ws-theme-nav-edit {
+    color: #666;
+    text-align: center;
+  }
+  .ws-theme-sidebar .ws-theme-nav-edit a {
+    color: inherit;
+  }
+}
+/* End theme-specific styles */
+</style>
+<link rel="stylesheet" href="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/217420326D.css" type="text/css">
+<link rel="stylesheet" href="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/9q897620-internal-bootstrap.css" type="text/css">
+<link rel="stylesheet" href="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/vz033906-internal.css" type="text/css">
+<script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/j91xzz3x-top.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+
+  var wsGoogleAccount = 'UA-80504-1';
+  _gaq.push(['_setAccount', wsGoogleAccount]);
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_setDomainName', 'wikispaces.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_setCustomVar', 2, 'Authenticated', 'Guest', 2]);
+  _gaq.push(['_trackPageview']);
+</script><style id="js-fixed-header-a-style" type="text/css">.wiki a[name]:before { content: "\00A0"; display: inline-block; visibility: hidden; width: 0; padding-top: 29px; margin-top: -29px; }</style><script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/07z93j80.js" type="text/javascript"></script></head>
+<body><a href="#WikiContent" class="hidden sr-only sr-only-focusable">Skip to main content</a><div id="js-fixed-header-holder" class="fixed"><div class="WikispacesContent WikispacesBs3" role="banner">
+      <div style="" id="WikispacesBanner" class="BannerDisplayed"><script type="text/javascript">_gaq.push(["_trackEvent", "Marketing", "Banner", "classroom"]);function dismissMarketingBanner() {  var cookieDomain = ws.context.instance.url;  var hostname = window.location.hostname;  if (hostname.indexOf(cookieDomain, hostname.length - cookieDomain.length) === -1) {    cookieDomain = hostname;  }  ws.common.displayBanner(false);  ws.cookie.set("ws-banner-classroom", 1, {expires: 365 * 86400, domain: cookieDomain});   return false;}</script><i class="fa fa-times fa-fw ws-close" onclick="dismissMarketingBanner();"></i><a href="http://www.wikispaces.com/t/y/classroom-switch/banner/1/">Get your Wikispaces Classroom now:</a> the easiest way to manage your class.</div>
+    <div class="ws-main-top-nav visible-xs">
+    <div class="navbar navbar-static-top" style="margin-bottom: 0;">
+      <div class="container">
+                <div class="navbar-header">
+          <div class="visible-xs pull-left">
+            <a href="http://yacf-llc.wikispaces.com/space/menu" class="WikispacesDialogLink btn navbar-btn">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="visible-xs pull-right js-globalnav-popover-container">
+                        <a title="" data-original-title="" href="http://www.wikispaces.com/site/signin?goto=http%3A%2F%2Fyacf-llc.wikispaces.com%2FHacer%2Bgr%25C3%25A1ficas%2Bcon%2Bmatplotlib%3FresponseToken%3D05f7684abb48c88d9f4b93e2114ce1003" class="btn navbar-btn ws-mobile-guest-username js-globalnav-popover-trigger">
+              guest
+            </a>
+                        <div class="hidden js-globalnav-popover-content">
+              <div class="WikispacesContent WikispacesBs3">
+                <div class="WikiInternalHeaderNav noHide">
+  <div class="WikiInternalHeaderNavMenu">
+                          
+                  <span class="WikiInternalHeaderNavMenuArea"><a href="http://www.wikispaces.com/user/join?goto=http%3A%2F%2Fyacf-llc.wikispaces.com%2Fspace%2Fjoin" rel="nofollow" class="WikispacesXDomainDialogLink">Únete</a></span>
+
+          <span class="divider">|</span>
+        
+        <span class="WikiInternalHeaderNavMenuArea"><a class="js-help-trigger" rel="nofollow" href="http://help.wikispaces.com/">Ayuda</a></span>
+
+        <span class="divider">|</span>
+      
+      <span class="WikiInternalHeaderNavMenuArea"><a href="http://www.wikispaces.com/site/signin?goto=http%3A%2F%2Fyacf-llc.wikispaces.com%2FHacer%2Bgr%25C3%25A1ficas%2Bcon%2Bmatplotlib%3FresponseToken%3D05f7684abb48c88d9f4b93e2114ce1003" rel="nofollow" class="WikispacesXDomainDialogLink">Iniciar Sesión</a></span>
+      </div>
+<div style="display: none;" class="headerPanel hidden" id="NoticeTool"><div id="NoticeToolList"><ol style="display: block;" class="dropdown-menu dropdown-menu-right"><li class="js-last text-center"><a href="http://www.wikispaces.com/mail/list/?folder=Inbox">View All Messages</a></li></ol></div></div><div style="display: none;" class="headerPanel hidden" id="WikiTool"><div id="WikiToolList"><ol style="display: block;" class="dropdown-menu dropdown-menu-right"></ol></div></div><div style="display: none;" class="headerPanel hidden" id="HelpTool"><div id="HelpToolList"><ol style="display: block;" class="dropdown-menu dropdown-menu-right"><li class="js-last divider hidden"></li><li><a class="js-help-trigger" rel="nofollow" href="http://help.wikispaces.com/">Help Wiki</a></li></ol></div></div></div>              </div>
+            </div>
+          </div>
+          <div class="ws-navbar-middle-xs">
+            <div class="navbar-brand" role="navigation">
+              <a href="http://www.wikispaces.com/" class="ws-logo"></a>
+              <i class="fa fa-angle-right"></i>
+              <a href="http://yacf-llc.wikispaces.com/">accULL</a>
+                              <i class="fa fa-angle-right"></i> <a href="http://yacf-llc.wikispaces.com/home">Página de inicio</a>
+              
+            </div>
+          </div>
+                    <form action="/search/view" method="post" class="navbar-form ws-include-xs pull-left ws-navbar-search hidden-xs" role="search"><input name="wikispacesFormToken" value="511e7ff4e9e07e9fbc5940c8c3b870b39d634cfc" type="hidden"><input class="form-control search-query" name="q" placeholder="Búsqueda" type="text"> </form>
+                  </div>
+      </div>
+    </div>
+  </div>
+      <div class="hidden-xs"><div style="right: -198px;" class="WikiInternalHeaderNav WikiElement floating">
+  <div class="WikiInternalHeaderNavMenu">
+                                    <span class="WikiInternalHeaderNavMenuArea guestUserName">guest</span><span class="slideMarker divider">|</span>
+        
+                  <span class="WikiInternalHeaderNavMenuArea"><a href="http://www.wikispaces.com/user/join?goto=http%3A%2F%2Fyacf-llc.wikispaces.com%2Fspace%2Fjoin" rel="nofollow" class="WikispacesXDomainDialogLink">Únete</a></span>
+
+          <span class="divider">|</span>
+        
+        <span class="WikiInternalHeaderNavMenuArea"><a class="js-help-trigger" rel="nofollow" href="http://help.wikispaces.com/">Ayuda</a></span>
+
+        <span class="divider">|</span>
+      
+      <span class="WikiInternalHeaderNavMenuArea"><a href="http://www.wikispaces.com/site/signin?goto=http%3A%2F%2Fyacf-llc.wikispaces.com%2FHacer%2Bgr%25C3%25A1ficas%2Bcon%2Bmatplotlib%3FresponseToken%3D05f7684abb48c88d9f4b93e2114ce1003" rel="nofollow" class="WikispacesXDomainDialogLink">Iniciar Sesión</a></span>
+      </div>
+<div style="display: none;" class="headerPanel hidden" id="NoticeTool"><div id="NoticeToolList"><ol style="display: block;" class="dropdown-menu dropdown-menu-right"><li class="js-last text-center"><a href="http://www.wikispaces.com/mail/list/?folder=Inbox">View All Messages</a></li></ol></div></div><div style="display: none;" class="headerPanel hidden" id="WikiTool"><div id="WikiToolList"><ol style="display: block;" class="dropdown-menu dropdown-menu-right"></ol></div></div><div style="display: none;" class="headerPanel hidden" id="HelpTool"><div id="HelpToolList"><ol style="display: block;" class="dropdown-menu dropdown-menu-right"><li class="js-last divider hidden"></li><li><a class="js-help-trigger" rel="nofollow" href="http://help.wikispaces.com/">Help Wiki</a></li></ol></div></div></div></div>
+  </div></div><div style="margin-top: 29px;" id="js-fixed-header-offset">
+<header class="ws-theme-header" role="banner">
+  <div class="ws-theme-container">
+    <div class="ws-theme-header-inner">
+      <a href="http://yacf-llc.wikispaces.com/" class="WikiLogo WikiElement"><img src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/logo.png" alt="accULL"></a>    </div>
+  </div>
+</header>
+
+<div class="ws-theme-body">
+  <div class="ws-theme-container">
+    <div class="ws-theme-body-inner">
+      <nav class="ws-theme-sidebar" role="navigation">
+        <div class="ws-theme-sidebar-inner">
+          <div class="ws-theme-menu">
+            <div class="ws-theme-menu-inner">
+              <ul class="WikiActions WikiElement WikiControls">
+    <li id="WikiActionHome"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="http://yacf-llc.wikispaces.com/"><i class="fa fa-home fa-fw"></i></a><a href="http://yacf-llc.wikispaces.com/">Inicio del wiki</a></div></li>
+    <li id="WikiActionChanges"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="http://yacf-llc.wikispaces.com/wiki/changes"><i class="fa fa-clock-o fa-fw"></i></a><a href="http://yacf-llc.wikispaces.com/wiki/changes">Cambios Recientes</a></div></li>
+    <li id="WikiActionPagesAndFiles"><div><span class="WikiActionSupplemental" style="float: right;"></span><a href="http://yacf-llc.wikispaces.com/space/content"><i class="fa fa-file-text-o fa-fw"></i></a><a href="http://yacf-llc.wikispaces.com/space/content">Pages and Files</a></div></li>
+    <li id="WikiActionMembers"><div class="js-member-link"><span class="WikiActionSupplemental" style="float: right;"></span><a href="http://yacf-llc.wikispaces.com/wiki/members"><i class="fa fa-user fa-fw"></i></a><a href="http://yacf-llc.wikispaces.com/wiki/members">Miembros</a></div></li>
+</ul>
+              <form action="/search/view" method="post" class="WikiSearch WikiElement" role="search"><input class="form-control WikiSearchInput" name="q" placeholder="Búsqueda" type="text"> </form>              <div class="WikiCustomNav WikiElement wiki"><!-- ws:start:WikiTextIncludeRule:0:&lt;img src=&quot;http://www.wikispaces.com/site/embedthumbnail/include/navigation?w=200&amp;h=100&quot; class=&quot;WikiMedia WikiMediaInclude&quot; id=&quot;wikitext@@include@@component=&amp;quot;navigation&amp;quot;&quot; title=&quot;Include navigation: component=&amp;quot;navigation&amp;quot;&quot; /&gt; --><div class="WikispacesNavbar" data-spaceid="6068820" data-navbarurl="/navbar">
+  <div style="display: none;" id="WikispacesNavbarFavoritesEntry" data-entryid="309880" class="WikispacesNavbarEntry hidden">
+  <div class="WikispacesNavbarEntryHeader">
+        <span class="fa-fw"><i class="WikispacesNavbarToggle WikispacesNavbarPlus fa fa-caret-right"></i><i class="WikispacesNavbarToggle WikispacesNavbarMinus fa fa-caret-down"></i></span><span>Favorites&nbsp;<i class="fa fa-star"></i></span>
+  </div>
+  <div class="WikispacesNavbarEntryItems" id="WikispacesNavbarFavoritesEntryItems">
+    <span class="hidden WikispacesNavbarNum">20</span>
+<ol>
+</ol>
+  </div>
+</div>  <div id="WikispacesNavbarAllPagesEntry" data-entryid="309882" class="WikispacesNavbarEntry WikispacesNavbarSortableEntry WikispacesNavbarRemovableEntry">
+  <div class="WikispacesNavbarEntryHeader">
+        <i class="WikispacesNavbarSpinner fa fa-spinner fa-spin pull-right"></i><span class="WikispacesNavbarHeaderAction WikispacesNavbarRemoveEntry close"><i class="fa fa-times"></i></span><span class="fa-fw"><i class="WikispacesNavbarToggle WikispacesNavbarPlus fa fa-caret-right"></i><i class="WikispacesNavbarToggle WikispacesNavbarMinus fa fa-caret-down"></i></span><span>All Pages</span>
+  </div>
+  <div class="WikispacesNavbarEntryItems" id="WikispacesNavbarAllPagesEntryItems">
+    <span class="hidden WikispacesNavbarNum">20</span>
+<ol>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/home" data-uniqid="58098180">home</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Cetus" data-uniqid="89761928">Cetus</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Consejos" data-uniqid="120860704">Consejos</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/CUDA" data-uniqid="58124028">CUDA</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Descripci%C3%B3n+de+los+tests" data-uniqid="64195814">Descripción de los tests</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Descripci%C3%B3n+de+m%C3%A1quinas" data-uniqid="64173608">Descripción de máquinas</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Design" data-uniqid="58105724">Design</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Drago-nodo0-resultados" data-uniqid="96909020">Drago-nodo0-resultados</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/ejecuci%C3%B3n+de+experimentos" data-uniqid="117629540">ejecución de experimentos</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Ejecuciones+de+Rodinia" data-uniqid="60933202">Ejecuciones de Rodinia</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/figures" data-uniqid="111011812">figures</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Funding" data-uniqid="124771284">Funding</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/GMAC" data-uniqid="89763886">GMAC</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/graficas-definitivas" data-uniqid="67228952">graficas-definitivas</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Gu%C3%ADa+de+estilo" data-uniqid="96264156">Guía de estilo</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Hacer+gr%C3%A1ficas+con+matplotlib" data-uniqid="61560398">Hacer gráficas con matplotlib</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/hiCUDA" data-uniqid="89762606">hiCUDA</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/High+Performance+Computing" data-uniqid="58129056">High Performance Computing</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/HMPP" data-uniqid="89765406">HMPP</a>
+  </li>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/HMPP+CAPS+compiler" data-uniqid="117861492">HMPP CAPS compiler</a>
+  </li>
+</ol>
+  <div class="WikispacesNavbarSeeMoreDiv"><a href="#" class="WikispacesNavbarSeeMore">see more</a></div>
+  </div>
+</div>  <div id="WikispacesNavbarTags">
+      <div id="WikispacesNavbara33b7755e5f9b504d2d038eaca4ff28dEntry" data-entryid="4228748" class="WikispacesNavbarEntry WikispacesNavbarSortableEntry WikispacesNavbarRemovableEntry WikispacesNavbarDraggableEntry">
+  <div class="WikispacesNavbarEntryHeader">
+        <i class="WikispacesNavbarSpinner fa fa-spinner fa-spin pull-right"></i><span class="WikispacesNavbarHeaderAction WikispacesNavbarRemoveEntry close"><i class="fa fa-times"></i></span><span class="fa-fw"><i class="WikispacesNavbarToggle WikispacesNavbarPlus fa fa-caret-right"></i><i class="WikispacesNavbarToggle WikispacesNavbarMinus fa fa-caret-down"></i></span><span>CUDA</span>
+  </div>
+  <div class="WikispacesNavbarEntryItems" id="WikispacesNavbara33b7755e5f9b504d2d038eaca4ff28dEntryItems">
+    <span class="hidden WikispacesNavbarNum">20</span>
+<ol>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Instalaci%C3%B3n+de+CUDA+en+garoe+%28Centos6.0%29" data-uniqid="138973024">Instalación de CUDA en garoe (Centos6.0)</a>
+  </li>
+</ol>
+  </div>
+</div>      <div id="WikispacesNavbar1b2893de0d6de39c9455d943b0b2496eEntry" data-entryid="4228770" class="WikispacesNavbarEntry WikispacesNavbarSortableEntry WikispacesNavbarRemovableEntry WikispacesNavbarDraggableEntry">
+  <div class="WikispacesNavbarEntryHeader">
+        <i class="WikispacesNavbarSpinner fa fa-spinner fa-spin pull-right"></i><span class="WikispacesNavbarHeaderAction WikispacesNavbarRemoveEntry close"><i class="fa fa-times"></i></span><span class="fa-fw"><i class="WikispacesNavbarToggle WikispacesNavbarPlus fa fa-caret-right"></i><i class="WikispacesNavbarToggle WikispacesNavbarMinus fa fa-caret-down"></i></span><span>N-body</span>
+  </div>
+  <div class="WikispacesNavbarEntryItems" id="WikispacesNavbar1b2893de0d6de39c9455d943b0b2496eEntryItems">
+    <span class="hidden WikispacesNavbarNum">20</span>
+<ol>
+  <li>
+    <a href="http://yacf-llc.wikispaces.com/Drago-nodo0-resultados" data-uniqid="96909020">Drago-nodo0-resultados</a>
+  </li>
+</ol>
+  </div>
+</div>      <div id="WikispacesNavbar8cf04a9734132302f96da8e113e80ce5Entry" data-entryid="4228788" class="WikispacesNavbarEntry WikispacesNavbarSortableEntry WikispacesNavbarRemovableEntry WikispacesNavbarDraggableEntry">
+  <div class="WikispacesNavbarEntryHeader">
+        <i class="WikispacesNavbarSpinner fa fa-spinner fa-spin pull-right"></i><span class="WikispacesNavbarHeaderAction WikispacesNavbarRemoveEntry close"><i class="fa fa-times"></i></span><span class="fa-fw"><i class="WikispacesNavbarToggle WikispacesNavbarPlus fa fa-caret-right"></i><i class="WikispacesNavbarToggle WikispacesNavbarMinus fa fa-caret-down"></i></span><span>Home</span>
+  </div>
+  <div class="WikispacesNavbarEntryItems" id="WikispacesNavbar8cf04a9734132302f96da8e113e80ce5EntryItems">
+    <span class="hidden WikispacesNavbarNum">20</span>
+<ol>
+</ol>
+  </div>
+</div>      <div id="WikispacesNavbar8625e1de7be14c39b1d14dc03d822497Entry" data-entryid="4228798" class="WikispacesNavbarEntry WikispacesNavbarSortableEntry WikispacesNavbarRemovableEntry WikispacesNavbarDraggableEntry">
+  <div class="WikispacesNavbarEntryHeader">
+        <i class="WikispacesNavbarSpinner fa fa-spinner fa-spin pull-right"></i><span class="WikispacesNavbarHeaderAction WikispacesNavbarRemoveEntry close"><i class="fa fa-times"></i></span><span class="fa-fw"><i class="WikispacesNavbarToggle WikispacesNavbarPlus fa fa-caret-right"></i><i class="WikispacesNavbarToggle WikispacesNavbarMinus fa fa-caret-down"></i></span><span>Tools</span>
+  </div>
+  <div class="WikispacesNavbarEntryItems" id="WikispacesNavbar8625e1de7be14c39b1d14dc03d822497EntryItems">
+    <span class="hidden WikispacesNavbarNum">20</span>
+<ol>
+</ol>
+  </div>
+</div>    </div>
+  <div id="WikispacesNavbarOptions" class="WikispacesNavbarEntry WikispacesContent WikispacesBs3">
+    <div id="WikispacesNavbarOptionsEntryItems" class="WikispacesNavbarEntryItems">
+      <form class="WikispacesNavbarNewTagNavbarForm" action="/navbar/tag" method="post">
+        <div class="input-group">
+          <input name="tagName" placeholder="Etiqueta" class="form-control" style="width: 135px;" type="text">
+          <div class="input-group-btn">
+            <button type="submit" name="submitTag" value="1" class="btn btn-default ws-btn-spinner"><span>Añadir</span></button>
+          </div>
+        </div>
+      </form>
+      <form class="WikispacesNavbarShowAllPagesForm text-center" action="/navbar/update/309882" method="post">
+        <input name="status" value="A" type="hidden">
+        <button type="submit" class="btn btn-default WikispacesNavbarShowAllPages ws-btn-spinner hidden" name="go" value="1"><span>Add "All Pages"</span></button>
+        <button type="button" class="btn btn-primary WikispacesNavbarEditDone">Done</button>
+        <i class="fa fa-spinner fa-spin hidden"></i>
+      </form>
+    </div>
+  </div>
+</div><!-- ws:end:WikiTextIncludeRule:0 --></div>              <div class="ws-theme-nav-edit">
+                              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="ws-theme-content" role="main">
+        <div class="ws-theme-content-inner">
+          <div class="contentBox"><div class="innerContentBox" id="WikiContent">
+
+<script type="text/template" id="comment-footer-template">
+
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</script>
+
+<script type="text/template" id="comment-content-template">
+<div class="ws-box commentView">
+  <div class="comment-close">
+    <button type="button" class="closeme close" aria-hidden="true"><i class="fa fa-times"></i></button>
+  </div>
+  <div class="commentHeader">
+    <p class="ws-stream-meta command-context">
+      <a class="userLink userLinkPicture" href="<%= userCreated.url %>"><img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16"></a>
+      <a href="<%= userCreated.url %>"><%= userCreated.username %></a>
+      <% if (smartDate == '__live__') { %>
+      <abbr class="timeago" title="<%= (new Date(parseInt(dateCreated, 10) * 1000)).toISOString() %>">
+        <%= dateCreated %>
+      </abbr>
+      <% } else { %>
+        <%- smartDate %>
+      <% } %>
+      <% if (ws.context.user.canAdministerWiki && ws.comments.Manager.readOnly) { %>
+        <i class="fa fa-trash-o contextual-command delete ws-tip" title="Delete Comment"></i>
+      <% } %>
+    </p>
+  </div>
+
+  <div class="commentBody">
+    <div class="commentContent">
+      <%= description %>
+    </div>
+
+      <% for(i = 0; i < replyPages.length; i++) { %>
+        <% for(var j = 0; j < replyPages[i].digests.length; j++) { %>
+      <div class="commentReply" data-id="<%= replyPages[i].digests[j].id %>">
+        <p class="ws-stream-meta command-context">
+          <a class="userLink userLinkPicture" href="<%= replyPages[i].digests[j].userCreated.url %>"><img class="userPicture" src="<%= replyPages[i].digests[j].userCreated.imageUrl %>" width="16" height="16"></a>
+          <a href="<%= replyPages[i].digests[j].userCreated.url %>"><%= replyPages[i].digests[j].userCreated.username %></a>
+          <% if (smartDate == '__live__') { %>
+          <abbr class="timeago" title="<%= (new Date(parseInt(replyPages[i].digests[j].dateCreated, 10) * 1000)).toISOString() %>">
+            <%= new Date(parseInt(replyPages[i].digests[j].dateCreated, 10) * 1000).toLocaleString() %>
+          </abbr>
+          <% } else { %>
+            <%- smartDate %>
+          <% } %>
+          <% if (ws.context.user.canAdministerWiki) { %>
+          <i class="fa fa-trash-o contextual-command delete-reply ws-tip" title="Delete Reply"></i>
+          <% } %>
+          </p>
+        <div class="commentContent"><%= replyPages[i].digests[j].body %></div>
+      </div>
+        <% } %>
+      <% } %>
+
+      <form class="reply commentReply">
+        <div class="form-group">
+          <textarea name="reply" placeholder="Reply" class="form-control" /></textarea>
+        </div>
+        <div class="btn-toolbar">
+          <button type="submit" class="btn btn-primary btn-sm" name="go" value="1">Post</button>
+
+          <% if (ws.context.user.id) { %>
+            <% if (monitored) { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-monitor ws-tip active" title="You are monitoring replies."><i class="fa fa-eye"></i></button>
+            <% } else { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-monitor ws-tip" title="You are not monitoring replies."><i class="fa fa-eye"></i></button>
+            <% } %>
+          <% } %>
+          <% if (ws.context.user.canAdministerWiki) { %>
+            <% if (locked) { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-lock ws-tip active" title="Replies are not allowed."><i class="fa fa-lock"></i></button>
+            <% } else { %>
+            <button type="button" class="btn btn-default btn-sm pull-right toggle-lock ws-tip" title="Replies are allowed."><i class="fa fa-lock"></i></button>
+            <% } %>
+          <% } %>
+
+          <i class="fa fa-spinner fa-spin spinner pull-right hidden"></i>
+        </div>
+      </form>
+   </div>
+
+   
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</div>
+</script>
+
+<script type="text/template" id="comment-composer-template">
+<div class="ws-box commentView">
+  <div class="commentComposer">
+    <div class="comment-close">
+      &nbsp;<button type="button" class="close closeme" aria-hidden="true"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="commentHeader">
+      <p class="ws-stream-meta command-context">
+        <img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16">
+        <a href="#" onclick="return false;"><%= userCreated.username %></a>
+      </p>
+    </div>
+    <div class="commentBody">
+      <textarea name="comment" class="compose form-control" placeholder="Comment"/></textarea><br/>
+      <div class="btn-toolbar">
+        <button type="button" class="btn btn-default btn-sm monitored active pull-right" style="margin-left: 6px" onclick="jQuery(this).toggleClass('active')"><i class="fa fa-eye"></i></button>
+        <button type="button" class="btn btn-default btn-sm locked btn-toggle pull-right" onclick="jQuery(this).toggleClass('active')"><i class="fa fa-lock"></i></button>
+        <button type="button" class="btn btn-primary btn-sm closeme">Save</button>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="commentFooter modal-footer">
+  <div class="pull-left">
+    <button type="button" class="btn btn-default btn-sm previous"><i class="fa fa-arrow-left"></i></button>
+    <button type="button" class="btn btn-default btn-sm next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <% if (ws.context.user.canAdministerWiki && !ws.comments.Manager.readOnly) { %>
+  <div class="pull-right">
+    <button type="button" class="btn btn-default btn-sm remove">Remove</button>
+  </div>
+  <% } %>
+</div>
+
+</div>
+</script>
+
+<script type="text/template" id="comment-proxy-template">
+<div class="comment-proxy">
+  <span class="commentUser">
+  <% if (userCreated) { %>
+    <img class="userPicture" src="<%= userCreated.imageUrl %>" width="16" height="16">
+  <% } else { %>
+    <img class="userPicture" src="<%= ws.context.user.imageUrlPrefix %>sm.jpg" width="16" height="16">
+  <% } %>
+  </span>
+  <span class="commentReplies"><%= 1 + _(replyPages).reduce(function(memo, page){ return memo + page.digests.length; }, 0) %></span>
+</div>
+</script>
+
+<div class="ws-menu-bar WikiControls WikispacesContent WikispacesBs3">
+  
+    <h1 class="pageTitle"><a href="http://yacf-llc.wikispaces.com/Hacer+gr%C3%A1ficas+con+matplotlib">Hacer gráficas con matplotlib</a></h1>
+      <div class="btn-group pull-right">
+          <span data-original-title="you do not have permission to edit this page" class="btn btn-default disabled tipme" title=""><i class="fa fa-pencil fa-fw"></i> Editar</span>          <a data-original-title="no discussion posts" class="btn btn-default tipme" title="" href="http://yacf-llc.wikispaces.com/Hacer+gr%C3%A1ficas+con+matplotlib#discussion"><i class="fa fa-comments fa-fw"></i> 0</a>          <a data-original-title="view 8 revisions" class="btn btn-default tipme" title="" href="http://yacf-llc.wikispaces.com/page/history/Hacer+gr%C3%A1ficas+con+matplotlib"><i class="fa fa-clock-o fa-fw"></i> 8</a>          <a data-original-title="more options" class="btn btn-default ws-btn-more dropdown-toggle tipme" title="" href="http://yacf-llc.wikispaces.com/page/menu/Hacer+gr%C3%A1ficas+con+matplotlib"><i class="icon-height-only fa-fw"></i>…</a>        <ul class="ws-more-menu dropdown-menu dropdown-menu-right">
+              <li class=" dropdown"><a class=" ws-tag-dropdown-toggle" href="http://yacf-llc.wikispaces.com/page/tags/Hacer+gr%C3%A1ficas+con+matplotlib"><span class="pull-right">0</span> <i class="fa fa-tag fa-fw"></i> Etiquetas</a>
+          <div class="dropdown-menu dropdown-menu-right ws-tag-dropdown-menu">
+          
+
+
+
+<form action="#" name="WikiTagForm" class="WikiTagForm"><input name="wikispacesFormToken" value="806921cbbe8c768912fd8bb80382a5e5baa0c0c7" type="hidden"><input name="wikispacesFormToken" value="806921cbbe8c768912fd8bb80382a5e5baa0c0c7" type="hidden">
+  <div class="WikiTagList">
+    <i class="fa fa-tag ws-action"></i>
+        <ul class="list-unstyled">
+          <li>No tags</li>
+        </ul>
+      </div>
+  </form>      </div>
+    </li>
+              <li class="divider"></li>
+            <li class=""><a class=" WikispacesDialogLink" href="http://yacf-llc.wikispaces.com/wiki/addmonitor?monitorLink=page%3AHacer%20gr%C3%A1ficas%20con%20matplotlib"><i class="fa fa-eye fa-fw"></i> Notify</a>
+    </li>
+        <li class=""><a class=" WikispacesDialogLink" href="http://yacf-llc.wikispaces.com/page/rss/Hacer+gr%C3%A1ficas+con+matplotlib"><i class="fa fa-rss fa-fw"></i> RSS</a>
+    </li>
+        <li class=""><a class="" href="http://yacf-llc.wikispaces.com/page/links/Hacer+gr%C3%A1ficas+con+matplotlib"><i class="fa fa-link fa-fw"></i> Enlaces inversos</a>
+    </li>
+              <li class="divider"></li>
+            <li class=""><a class="" href="http://yacf-llc.wikispaces.com/page/code/Hacer+gr%C3%A1ficas+con+matplotlib"><i class="fa fa-code fa-fw"></i> Source</a>
+    </li>
+        <li class=""><a class="" href="http://yacf-llc.wikispaces.com/Hacer+gr%C3%A1ficas+con+matplotlib?f=print"><i class="fa fa-print fa-fw"></i> Print</a>
+    </li>
+        <li class=""><a class="" href="http://yacf-llc.wikispaces.com/page/pdf/Hacer+gr%C3%A1ficas+con+matplotlib"><i class="fa fa-cloud-download fa-fw"></i> Export (PDF)</a>
+    </li>
+      </ul>  </div>
+  </div>
+
+
+
+
+  <textarea class="form-control" id="autosaveContent" style="display:none;" rows="1" cols="1"></textarea>
+  <div id="autosavePrompt" style="display:none;"></div>
+
+<div class="commentContainer">
+  <div class="commentSubject">
+  <div class="wiki wikiPage" id="content_view">
+  Para generar gráficos usando matplotlib he elaborado esta página donde se puede ver fácilmente cómo hacerlo.<br>
+<br>
+He incluido también la opción de los patrones para que sean legibles en blanco y negro.<br>
+<br>
+Así es la imagen resultante:<br>
+<br>
+<!-- ws:start:WikiTextLocalImageRule:1:&lt;img src=&quot;/file/view/grafico.png/215420168/grafico.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt; --><img src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/grafico.png" alt="grafico.png" title="grafico.png"><!-- ws:end:WikiTextLocalImageRule:1 --><br>
+En B/N y escalada:<br>
+<br>
+<br>
+<!-- ws:start:WikiTextLocalImageRule:2:&lt;div style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/file/view/graficoBN.png/215773024/graficoBN.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/div&gt; --><div style="text-align: center"><img src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/graficoBN.png" alt="graficoBN.png" title="graficoBN.png"></div><!-- ws:end:WikiTextLocalImageRule:2 --><br>
+<br>
+El código:<br>
+<!-- ws:start:WikiTextCodeRule:0:
+&lt;pre class=&quot;python&quot;&gt;#!/usr/bin/env python&lt;br/&gt;# -*- coding: utf-8 -*-&lt;br/&gt;&lt;br/&gt;import numpy as np&lt;br/&gt;import matplotlib.pyplot as plt&lt;br/&gt;&lt;br/&gt;N = 5&lt;br/&gt;gcc_means = (35, 30, 28, 20, 15)&lt;br/&gt;&lt;br/&gt;ind = np.arange(N)  # the x locations for the groups&lt;br/&gt;width = 0.35       # the width of the bars&lt;br/&gt;&lt;br/&gt;# Los distintos patrones disponibles&lt;br/&gt;hatches = [ '/' , '\\' , '|' , '-' , '+' , 'x' , 'o' , 'O' , '.' ,'*' ]&lt;br/&gt;&lt;br/&gt;plt.subplot(111)&lt;br/&gt;rects1 = plt.bar(ind, gcc_means, width,&lt;br/&gt;                    color='r',&lt;br/&gt;                    hatch=hatches[8]&lt;br/&gt;                    )&lt;br/&gt;&lt;br/&gt;icc_means = (35, 25, 22, 15, 10)&lt;br/&gt;rects2 = plt.bar(ind+width, icc_means, width,&lt;br/&gt;                    color='y',&lt;br/&gt;                    hatch=hatches[0]&lt;br/&gt;                    )&lt;br/&gt;&lt;br/&gt;# Informacion de la grafica en general&lt;br/&gt;plt.ylabel('Time (s)')&lt;br/&gt;plt.title('Execution time by cores and compilator')&lt;br/&gt;plt.xticks(ind+width, ('2', '4', '8', '16', '32') )&lt;br/&gt;&lt;br/&gt;plt.legend( (rects1[0], rects2[0]), ('gcc', 'icc') )&lt;br/&gt;plt.axis(ymax = 40)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;# Se colocan los valores encima de cada barra (opcional)&lt;br/&gt;def autolabel(rects):&lt;br/&gt;    # attach some text labels&lt;br/&gt;    for rect in rects:&lt;br/&gt;        height = rect.get_height()&lt;br/&gt;        plt.text(rect.get_x()+rect.get_width()/2., 1.05*height, '%d'%int(height),&lt;br/&gt;                ha='center', va='bottom')&lt;br/&gt;&lt;br/&gt;autolabel(rects1)&lt;br/&gt;autolabel(rects2)&lt;br/&gt;# Se salva la grafica&lt;br/&gt;plt.savefig('graf.png')&lt;br/&gt;# Se dibuja la grafica&lt;br/&gt;plt.show()&lt;/pre&gt;
+ -->
+<style type="text/css"><!--
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.python  {font-family:monospace;}
+.python .imp {font-weight: bold; color: red;}
+.python .kw1 {color: #ff7700;font-weight:bold;}
+.python .kw2 {color: #008000;}
+.python .kw3 {color: #dc143c;}
+.python .kw4 {color: #0000cd;}
+.python .co1 {color: #808080; font-style: italic;}
+.python .coMULTI {color: #808080; font-style: italic;}
+.python .es0 {color: #000099; font-weight: bold;}
+.python .br0 {color: black;}
+.python .sy0 {color: #66cc66;}
+.python .st0 {color: #483d8b;}
+.python .nu0 {color: #ff4500;}
+.python .me1 {color: black;}
+.python span.xtra { display:block; }
+
+-->
+</style><pre class="python"><span class="co1">#!/usr/bin/env python</span>
+<span class="co1"># -*- coding: utf-8 -*-</span>
+&nbsp;
+<span class="kw1">import</span> numpy <span class="kw1">as</span> np
+<span class="kw1">import</span> matplotlib.<span class="me1">pyplot</span> <span class="kw1">as</span> plt
+&nbsp;
+N <span class="sy0">=</span> <span class="nu0">5</span>
+gcc_means <span class="sy0">=</span> <span class="br0">(</span><span class="nu0">35</span><span class="sy0">,</span> <span class="nu0">30</span><span class="sy0">,</span> <span class="nu0">28</span><span class="sy0">,</span> <span class="nu0">20</span><span class="sy0">,</span> <span class="nu0">15</span><span class="br0">)</span>
+&nbsp;
+ind <span class="sy0">=</span> np.<span class="me1">arange</span><span class="br0">(</span>N<span class="br0">)</span>  <span class="co1"># the x locations for the groups</span>
+width <span class="sy0">=</span> <span class="nu0">0.35</span>       <span class="co1"># the width of the bars</span>
+&nbsp;
+<span class="co1"># Los distintos patrones disponibles</span>
+hatches <span class="sy0">=</span> <span class="br0">[</span> <span class="st0">'/'</span> <span class="sy0">,</span> <span class="st0">'<span class="es0">\\</span>'</span> <span class="sy0">,</span> <span class="st0">'|'</span> <span class="sy0">,</span> <span class="st0">'-'</span> <span class="sy0">,</span> <span class="st0">'+'</span> <span class="sy0">,</span> <span class="st0">'x'</span> <span class="sy0">,</span> <span class="st0">'o'</span> <span class="sy0">,</span> <span class="st0">'O'</span> <span class="sy0">,</span> <span class="st0">'.'</span> <span class="sy0">,</span><span class="st0">'*'</span> <span class="br0">]</span>
+&nbsp;
+plt.<span class="me1">subplot</span><span class="br0">(</span><span class="nu0">111</span><span class="br0">)</span>
+rects1 <span class="sy0">=</span> plt.<span class="me1">bar</span><span class="br0">(</span>ind<span class="sy0">,</span> gcc_means<span class="sy0">,</span> width<span class="sy0">,</span>
+                    color<span class="sy0">=</span><span class="st0">'r'</span><span class="sy0">,</span>
+                    hatch<span class="sy0">=</span>hatches<span class="br0">[</span><span class="nu0">8</span><span class="br0">]</span>
+                    <span class="br0">)</span>
+&nbsp;
+icc_means <span class="sy0">=</span> <span class="br0">(</span><span class="nu0">35</span><span class="sy0">,</span> <span class="nu0">25</span><span class="sy0">,</span> <span class="nu0">22</span><span class="sy0">,</span> <span class="nu0">15</span><span class="sy0">,</span> <span class="nu0">10</span><span class="br0">)</span>
+rects2 <span class="sy0">=</span> plt.<span class="me1">bar</span><span class="br0">(</span>ind+width<span class="sy0">,</span> icc_means<span class="sy0">,</span> width<span class="sy0">,</span>
+                    color<span class="sy0">=</span><span class="st0">'y'</span><span class="sy0">,</span>
+                    hatch<span class="sy0">=</span>hatches<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>
+                    <span class="br0">)</span>
+&nbsp;
+<span class="co1"># Informacion de la grafica en general</span>
+plt.<span class="me1">ylabel</span><span class="br0">(</span><span class="st0">'Time (s)'</span><span class="br0">)</span>
+plt.<span class="me1">title</span><span class="br0">(</span><span class="st0">'Execution time by cores and compilator'</span><span class="br0">)</span>
+plt.<span class="me1">xticks</span><span class="br0">(</span>ind+width<span class="sy0">,</span> <span class="br0">(</span><span class="st0">'2'</span><span class="sy0">,</span> <span class="st0">'4'</span><span class="sy0">,</span> <span class="st0">'8'</span><span class="sy0">,</span> <span class="st0">'16'</span><span class="sy0">,</span> <span class="st0">'32'</span><span class="br0">)</span> <span class="br0">)</span>
+&nbsp;
+plt.<span class="me1">legend</span><span class="br0">(</span> <span class="br0">(</span>rects1<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy0">,</span> rects2<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="sy0">,</span> <span class="br0">(</span><span class="st0">'gcc'</span><span class="sy0">,</span> <span class="st0">'icc'</span><span class="br0">)</span> <span class="br0">)</span>
+plt.<span class="me1">axis</span><span class="br0">(</span>ymax <span class="sy0">=</span> <span class="nu0">40</span><span class="br0">)</span>
+&nbsp;
+&nbsp;
+<span class="co1"># Se colocan los valores encima de cada barra (opcional)</span>
+<span class="kw1">def</span> autolabel<span class="br0">(</span>rects<span class="br0">)</span>:
+    <span class="co1"># attach some text labels</span>
+    <span class="kw1">for</span> rect <span class="kw1">in</span> rects:
+        height <span class="sy0">=</span> rect.<span class="me1">get_height</span><span class="br0">(</span><span class="br0">)</span>
+        plt.<span class="me1">text</span><span class="br0">(</span>rect.<span class="me1">get_x</span><span class="br0">(</span><span class="br0">)</span>+rect.<span class="me1">get_width</span><span class="br0">(</span><span class="br0">)</span>/<span class="nu0">2</span>.<span class="sy0">,</span> <span class="nu0">1.05</span>*height<span class="sy0">,</span> <span class="st0">'%d'</span>%<span class="kw2">int</span><span class="br0">(</span>height<span class="br0">)</span><span class="sy0">,</span>
+                ha<span class="sy0">=</span><span class="st0">'center'</span><span class="sy0">,</span> va<span class="sy0">=</span><span class="st0">'bottom'</span><span class="br0">)</span>
+&nbsp;
+autolabel<span class="br0">(</span>rects1<span class="br0">)</span>
+autolabel<span class="br0">(</span>rects2<span class="br0">)</span>
+<span class="co1"># Se salva la grafica</span>
+plt.<span class="me1">savefig</span><span class="br0">(</span><span class="st0">'graf.png'</span><span class="br0">)</span>
+<span class="co1"># Se dibuja la grafica</span>
+plt.<span class="me1">show</span><span class="br0">(</span><span class="br0">)</span></pre>
+
+<!-- ws:end:WikiTextCodeRule:0 -->
+  </div>
+
+<div id="pageEditor" class="editorWrapper editorLayer">
+  <iframe id="target_editor" name="target_editor" src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/blank.htm" style="width:0px;height:0px;border:0"></iframe>
+    <form action="/page/edit/Hacer+gr%C3%A1ficas+con+matplotlib" method="post" class="editorForm" id="editorForm"><input name="wikispacesFormToken" value="4b0048dfec0bc33a97396d1a38d67bcab04e3e66" type="hidden"><div class="jovise"><input class="form-control" name="wikispaces_user_id" value="user-1432666516" type="text"></div><div class="movkp"><input class="form-control" name="goto" autocomplete="off" type="text"></div><div class="jovise"><input class="form-control" name="mode" autocomplete="off" type="text"></div><div class="jowic"><input class="form-control" name="version" autocomplete="off" type="text"></div><div class="wsh"><input class="form-control" name="pageComments" autocomplete="off" type="text"></div><div class="wsh"><input class="form-control" name="saveAndContinue" autocomplete="off" type="text"></div><div class="jowic"><input class="form-control" name="comment" autocomplete="off" type="text"></div><div class="movkp"><input class="form-control" name="commentsDisabled" autocomplete="off" type="text"></div><div class="jowic"><input class="form-control" name="contentPresent" autocomplete="off" type="text"></div><div class="jovise"><input class="form-control" name="editorCleanup" autocomplete="off" type="text"></div><div class="jovise"><input class="form-control" name="WikispacesEditorContent" autocomplete="off" type="text"></div><input name="wikispacesASFormToken" value="0e622e50f7e2df9d5ef842eba716b6a820e190ce" type="hidden">
+    <input title="goto" name="ef12d3f6207fe15e2c778d89c79f2b95f6c6edd2" value="" type="hidden">
+    <input title="mode" name="58a69677f1598149539695e69e476026c0e65bcd" autocomplete="off" value="visual" type="hidden">
+    <input title="version" name="e1d0734741e07abad6ebdbdfc7689b953df3eb12" autocomplete="off" value="215775602" type="hidden">
+    <input title="pageComments" name="b3c34fc6b102006e66b28a986a514ec1f64e6930" autocomplete="off" value="" type="hidden">
+    <input title="saveAndContinue" name="220a597ed53a5f112b22b4285e8bff6e451481ac" value="0" type="hidden">
+    <input title="comment" name="ec423d7d34749c336d450fe6932bc5a457c8e3d8" value="" type="hidden">
+    <input title="commentsDisabled" name="83cc42d1dce6ef18308e7ae6e813a84a944d7e1d" autocomplete="off" value="" type="hidden">
+    <input title="contentPresent" name="b92fc569e95943d9f7c66a910bdf74fd051627bb" autocomplete="off" value="" type="hidden">
+    <input title="editorCleanup" name="169958b736b4f129050e6534a6ea55c32c57ce6d" autocomplete="off" value="" type="hidden">
+
+    <textarea id="wsMainEditor" title="content" class="noContentHide" name="b6e3cc2613c097ffc75f674f029465d1c14cc0f5" style="width: 100%; position: absolute; top: -50000px; left: -50000px;" autocomplete="off"></textarea>
+
+  <noscript>
+    <h2>Javascript Required</h2>
+    <p>You need to enable Javascript in your browser to edit pages.</p>
+  </noscript>
+
+  </form>
+  
+  
+  <div id="plainTextEditor" style="position:relative;display:none" class="editorLayer">
+    <textarea style="height: 446px; overflow: hidden;" id="textEditor" class="autogrow"></textarea>
+    <p style="clear:both;" align="right"><a href="http://help.wikispaces.com/help.wikitext" class="js-help-link" data-help="help.wikitext">help on how to format text</a></p>
+  </div>
+</div>
+
+
+
+
+  </div>
+  <div class="commentColumn WikispacesStream"><div class="WikispacesContent WikispacesBs3"><div class="commentList"></div></div></div>
+</div>
+
+  
+
+
+
+
+<script type="text/template" id="js-event-template">
+  <small>
+    <%- startDateShortFormat %>
+    <a href="<%- ws.common.pathFor('event', 'view', id) %>" class="WikispacesDialogLink">
+      <%- ws.common.truncate(title, 15) %>
+    </a>
+  </small>
+</script>
+
+<script type="text/template" id="js-reply-template">
+  <div class="tc-timeline-comment media">
+
+    <a class="pull-left userLink" href="<%- userCreated.url %>">
+      <img src="<%- userCreated.imageUrl %>" width="30" height="30" class="author-avatar" alt="" />
+    </a>
+    <div class="media-body" data-id="<%= id %>">
+      <% if (ws.context.user.canAdministerWiki) { %>
+        <i class="tc-delete-comment fa fa-trash-o contextual-command destroy-message ws-tip" title="Delete reply"></i>
+      <% } %>
+      <div class="tc-box-name-date">
+        <span class="tc-commenter"><a href="<%- userCreated.url %>"><%- userCreated.username %></a></span>
+        <% if (smartDate == '__live__') { %>
+        <abbr style="border-bottom-style: none;" class="timeago tc-comment-date" title="<%- (new Date(parseInt(dateCreated) * 1000)).toISOString() %>">
+          <%- (new Date(parseInt(dateCreated) * 1000)).toDateString() %>
+        </abbr>
+        <% } else { %>
+          <abbr style="border-bottom-style: none;" class="tc-comment-date"><%- smartDate %></abbr>
+        <% } %>
+      </div>
+      <% if (body) { %>
+      <p>
+        <%= body %>
+      </p>
+      <% } %>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="js-share-template">
+  <div class="tc-timeline-block tc-<%= ws.stream.typeToBlockType(sharedType) %>-block" <%= (ws.stream.hideTimeline ? 'style="padding-left: 0px;"' : '') %>>
+
+    <% if (!ws.stream.hideTimeline) { %>
+      <div class="tc-timeline-icon">
+        <i class="fa fa-<%= ws.stream.typeToIcon(sharedType) %>"></i>
+      </div>
+      <div class="tc-timeline-triangle-man"></div>
+    <% } %>
+
+    <div class="tc-timeline-box" data-id="<%= id %>">
+      <div class="media">
+        <a class="pull-left userLink" href="<%- userCreated.url %>">
+          <img src="<%- userCreated.imageUrl %>" width="48" height="48" class="author-avatar media-object" alt="" />
+        </a>
+
+        <div class="media-body">
+
+          <div class="tc-stream-dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <% if (ws.context.user.id) { %>
+              <li>
+                <a class="js-toggle-monitor" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-eye"></i>
+                  <span><%= monitored ? 'Start Monitoring' : 'Stop Monitoring' %></span>
+                </a>
+              </li>
+              <% } %>
+
+              <% if (ws.context.user.canAdministerWiki) { %>
+              <li>
+                <a class="js-toggle-lock" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-lock"></i>
+                  <span><%= locked ? 'Unlock Replies' : 'Lock Replies' %></span>
+                </a>
+              </li>
+              <% if (sharedType == 'discussion' || sharedType == 'comment' || sharedType == 'event') { %>
+              <li>
+                <a class="js-destroy-share" tabindex="-1" href="#">
+                  <i class="fa-fw fa fa-trash-o"></i>
+                  Delete <%= ws.stream.typeToName(sharedType) %>
+                </a>
+              </li>
+              <% } %>
+              <% } %>
+            </ul>
+          </div>
+
+          <div class="tc-timeline-box-header ws-reveal media-heading">
+              <h3 class="tc-box-title">
+              <% if (typeof adminLink !== 'undefined' && adminLink && ws.context.user.canAdministerWiki) { %>
+                <a href="<%- adminLink %>"><%- title %></a>
+              <% } else { %>
+                <%- title %>
+              <% } %>
+              <% if (typeof startDate !== 'undefined' && startDate) { %> - <%= startDateShortFormat %> <%= ws.stream.getYearFromStartDate(startDate) %><% } %>
+              </h3>
+              <div class="tc-box-name-date">
+                <% if (ws.context.instance.isTesClassroom) { %>
+                  <%- userCreated.username %>
+                <% } else { %>
+                  <a class="author-name" href="<%- userCreated.url %>"><%- userCreated.username %></a>
+                <% } %>
+                <% if (typeof recipients !== 'undefined' && recipients) { %>
+                  <i class="fa fa-angle-right"></i>
+                  <% if (typeof recipientsLink !== 'undefined') { %>
+                    <a href="<%- recipientsLink %>"><%- recipients %></a>
+                  <% } else { %>
+                    <span class="recipients"><%- recipients %></span>
+                  <% } %>
+                <% } %>
+                <% if (smartDate == '__live__') { %>
+                  <abbr style="border-bottom-style: none;" class="timeago tc-block-date" title="<%= (new Date(parseInt(dateCreated) * 1000)).toISOString() %>">
+                    <%= (new Date(parseInt(dateCreated) * 1000)).toDateString() %>
+                  </abbr>
+                <% } else { %>
+                  <abbr style="border-bottom-style: none;" class="tc-block-date"><%- smartDate %></abbr>
+                <% } %>
+              </div>
+          </div>
+
+          <div class="<%= sharedType == 'comment' && !orphaned && !ws.stream.noCollapse ? 'hidden ' : '' %>tc-block-content">
+            <div class="clearfix">
+              <% if (typeof rangeActions !== 'undefined') { %>
+                <div class="tc-range-actions">
+                  <% for(var i = 0; i < rangeActions.length; i++) { %>
+                  <%= ws.stream.rangeActionTemplate(rangeActions[i]) %>
+                  <% } %>
+                </div>
+              <% } %>
+              <% if (description) { %>
+                <p><%= description %></p>
+              <% } %>
+            </div>
+          </div>
+
+          <% if (replyPages.length > 0 && !(replyPages.length === 1 && replyPages[0].digests.length === 0)) { %>
+            <div class="tc-timeline-comments">
+            <% for (var i = 0; i < replyPages.length; i++) { %>
+              <% if (i == 0 && replyPages[i].more) { %>
+                <a href="#" class="tc-show-more" onclick="ws.stream.pageReplies(<%= id %>, <%= replyPages[i].page + 1 %>); return false">Show more replies (<%= replyPages[i].more %> hidden) </a>
+              <% } else { %>
+                <div></div>
+              <% } %>
+              <% for (var j = 0; j < replyPages[i].digests.length; j++) { %>
+                <%= ws.stream.replyTemplate(replyPages[i].digests[j]) %>
+              <% } %>
+            <% } %>
+            </div>
+          <% } %>
+
+          <% if ((ws.stream.userCanPostMessage && !locked) || ws.context.user.canAdministerWiki) { %>
+          <div class="tc-add-comment media <%= ws.stream.noCollapse ? 'add-active' : ''%>">
+            <img src="<%- ws.context.user.imageUrlPrefix %>lg.jpg" width="30" height="30" class="pull-left author-avatar" alt="" />
+            <div class="media-body">
+              <textarea name="reply" placeholder="Comment" class="form-control form-control-tc ws-reveal <%= !ws.stream.noCollapse ? 'ws-unrevealed' : ''%> reply" /></textarea>
+              <button type="button" class="btn-tc btn-info-tc btn-sm-tc add-reply">Post</button>
+            </div>
+          </div>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="js-range-action-template">
+  <div>
+    <strong><%- name %></strong>
+    <% if (typeof(diffUrl) !== 'undefined') { %>
+      <a href="<%- diffUrl %>">
+    <% } %>
+    <%= new Date(dateCreated * 1000).toLocaleString() %>
+    <% if (typeof(diffUrl) !== 'undefined') { %>
+      </a>
+    <% } %>
+    <% if (typeof(rangeText) !== 'undefined') { %>
+      <div>
+        <span class="commentExtent">
+        <% if (typeof(diffUrl) !== 'undefined') { %>
+          <a href="<%- diffUrl %>">
+        <% } %>
+        <%= rangeText %>
+        <% if (typeof(diffUrl) !== 'undefined') { %>
+          </a>
+        <% } %>
+        </span>
+      </div>
+    <% } %>
+  </div>
+</script>
+
+<script type="text/template" id="js-stream-end-template">
+  <div class="tc-timeline-block tc-end-block">
+    <div class="tc-timeline-icon" style="margin-top: -10px;" />
+    <div class="tc-timeline-box" style="visibility: hidden;">
+      <p class="tc-box-title"></p>
+    </div>
+  </div>
+</script>
+
+<a name="discussion"></a>
+<div class="timeline WikispacesBs3 tc-timeline-embedded show-border">
+  <div class="timeline-line"></div>
+    <div id="js-share-list">
+    <div class="spinner hidden"><i class="fa fa-spinner fa-spin"></i></div>
+  </div>
+</div></div></div><div id="sentinel" style="clear:both"></div>        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<footer class="ws-theme-footer" role="contentinfo">
+  <div class="ws-theme-container">
+    <div class="ws-theme-footer-inner">
+      <div class="WikiFooterNav WikiElement">
+<a href="http://help.wikispaces.com/" rel="nofollow" class="js-help-trigger">Ayuda</a> ·
+<a href="http://www.wikispaces.com/about">Acerca de</a> ·
+<a href="http://blog.wikispaces.com/" target="_new">Blog</a> ·
+<a href="http://www.wikispaces.com/content/pricing" rel="nofollow">Precio</a> ·
+<a href="http://www.wikispaces.com/privacy" rel="nofollow">Privacidad</a> ·
+<a href="http://www.wikispaces.com/terms" rel="nofollow">Términos</a> ·
+<a href="http://www.wikispaces.com/site/help?url=http%3A%2F%2Fyacf-llc.wikispaces.com%2FHacer%2Bgr%25C3%25A1ficas%2Bcon%2Bmatplotlib%3FresponseToken%3D05f7684abb48c88d9f4b93e2114ce1003" rel="nofollow"><strong>Apoyo</strong></a> ·
+<a href="http://yacf-llc.wikispaces.com/space/subscribe/upgrade"><strong>Elevar de categoría</strong></a>
+</div>      <div class="WikiLicense WikiElement">Contributions to http://yacf-llc.wikispaces.com/ are licensed under a <a rel="license" href="http://www.creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution Share-Alike 3.0 License</a>. <a rel="license" href="http://www.creativecommons.org/licenses/by-sa/3.0"><img src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/by-sa_3.png" alt="Creative Commons Attribution Share-Alike 3.0 License" width="85" height="15"></a><br>Portions not contributed by visitors are Copyright 2015 Tangient LLC</div>    </div>
+  </div>
+</footer>
+
+
+<script type="text/template" id="dialog-template">
+<div class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title"><%= header %></h4>
+      </div>
+      <div class="modal-body">
+        <%= body %>
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+
+
+<div id="js-help-template" class="hidden">
+  <div class="ws-help">
+    <div class="js-help-controls WikispacesContent WikispacesBs3">
+      <a href="http://www.wikispaces.com/site/gettingstarted/off" class="btn btn-default hidden js-getting-started-off pull-right">Turn off "Getting Started"</a>
+      <ol class="breadcrumb">
+        <li class="js-special-breadcrumb active">
+          <a href="http://help.wikispaces.com/" data-breadcrumb="0">Página de inicio</a>
+        </li>
+        <li class="js-ellipsis hidden js-special-breadcrumb">
+          ...
+        </li>
+        <li class="js-spinner hidden js-special-breadcrumb"><i class="fa fa-spinner fa-spin"></i></li>
+      </ol>
+    </div>
+    <div class="ws-help-content wiki">Cargando...</div>
+  </div>
+</div>
+</div>
+<script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/95z4150v-common.js" type="text/javascript"></script>
+<script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/vkz515xz-editorc.js" type="text/javascript"></script>
+<script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/85k7018k-stream.js" type="text/javascript"></script>
+<script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/91k8z207-contentbar.js" type="text/javascript"></script>
+<script src="accULL%20-%20Hacer%20gr%C3%A1ficas%20con%20matplotlib_files/395j1vq7-component.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+ws.namespace('ws.attributes');
+ws.namespace('ws.stream');
+ws.attributes.DISCUSSION_COUNT = 0;
+ws.attributes.pageId = 61560398;
+ws.attributes.version = 215775602;
+ws.attributes.showEditor = true;
+ws.attributes.editUrl = "http:\/\/yacf-llc.wikispaces.com\/page\/edit\/Hacer+gr%C3%A1ficas+con+matplotlib?goto=http%3A%2F%2Fyacf-llc.wikispaces.com%2FHacer%2Bgr%25C3%25A1ficas%2Bcon%2Bmatplotlib";
+ws.attributes.userCanEdit = false;
+ws.stream.userCanPostMessage = false;
+ws.stream.hideTimeline = true;
+ws.stream.shareSource = "http:\/\/yacf-llc.wikispaces.com\/page\/shares\/Hacer+gr%C3%A1ficas+con+matplotlib";
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+jQuery(document).ready(function() {
+  ws.common.addJsonNotices({"warning":[],"error":[],"info":[],"success":[]});
+});
+
+jQuery(document).ready(function($) {
+  
+  function tipPlacement() {
+    return this.$element.closest('.ws-menu-bar .btn-group').is('.open') ? 'top' : 'bottom';
+  }
+
+  
+
+  $('.ws-menu-bar').each(function() {
+    var $menuBar = $(this);
+    var $tagDropdown = $menuBar.find('.ws-tag-dropdown-menu');
+    $menuBar.find('.tipme').tooltip({placement: tipPlacement, container: '.ws-menu-bar'});
+
+    
+    $menuBar.find('.ws-btn-more').click(ws.common.makeLinkClickFunction(function(e) {
+      if ($(this).closest('.ws-menu-bar .btn-group').is('.open')) {
+        ws.common.hideMorePageBar();
+      } else {
+        ws.common.showMorePageBar();
+      }
+    }));
+
+    $menuBar.on('click', '.ws-tag-dropdown-toggle', ws.common.makeLinkClickFunction(function(e) {
+      if ($(this).closest('.ws-menu-bar .dropdown').is('.open')) {
+        ws.common.hideTagDropdown();
+      } else {
+        ws.common.showTagDropdown();
+      }
+    }));
+
+    $(document.body).click(function(e) {
+      var $target = $(e.target);
+      if (!$target.closest('.ws-more-menu').closest('.ws-menu-bar').is($menuBar)
+          || $target.closest('a').is('.WikispacesDialogLink')) {
+        ws.common.hideMorePageBar();
+      }
+      if ($tagDropdown.length && !$target.closest('.ws-tag-dropdown-menu').is($tagDropdown)) {
+        ws.common.hideTagDropdown();
+      }
+    });
+    
+  });
+});
+
+
+jQuery(document).ready(function($) {
+  $('.ws-more-menu').on('click', 'a', function(e) {
+    if ($(this).is('.disabled')) {
+      e.preventDefault();
+    }
+  });
+});
+
+
+jQuery(document).ready(function() {
+  ws.editor.canEdit = false;
+  var editUrl = 'http://yacf-llc.wikispaces.com/page/edit/Hacer+gr%C3%A1ficas+con+matplotlib?goto=http%3A%2F%2Fyacf-llc.wikispaces.com%2FHacer%2Bgr%25C3%25A1ficas%2Bcon%2Bmatplotlib';
+
+  jQuery('#js-edit-from-template').change(function() {
+    window.location = ws.common.addUriParams(editUrl, [['template', jQuery(this).val()]]);
+  });
+});
+
+
+jQuery(document).ready(function() {
+  ws.editor.loadEditorLibs('http://www.wikispaces.com/site/editorlibs/es_ES/07z93j80.gz.js');
+});
+
+
+ws.editor.startEditor = function (moreCoreOptions, moreMainOptions) {
+  ws.editor.canEdit = true;
+
+  var coreOptions = {
+    'content_css': ['http://www.wikispaces.com/stylesheet/editori/217420326D.gz.css']
+  };
+
+  // The stylesheet is passed in as a string, turn it into an array
+  // Add bootstrap styles to the editor, if we are in a theme that has full screen bootstrap
+  if (jQuery('body').is('.WikispacesBs3')) {
+    coreOptions.content_css.push('http://www.wikispaces.com//s/internal-bootstrap-body.css');
+  }
+
+  var mainOptions = {
+    'wssave_cancel_url': '/Hacer+gr%C3%A1ficas+con+matplotlib',
+    'wsimage_upload_url': 'http://yacf-llc.wikispaces.com/file/multiupload',
+    'wsimage_max_file_size_mb': '50',
+    'wsimage_page_view_group': ''
+  };
+
+  ws.editor.loadEditor(jQuery.extend(coreOptions, moreCoreOptions), jQuery.extend(mainOptions, moreMainOptions));
+};
+
+  var wikispaces_page_version = '215775602';
+
+  jQuery(document).ready(function() {
+    ws.editor.enableButtons();
+  });
+
+
+
+--></script><!-- w2 330 tot:330:330(1) mog:78:78(1) mem:10:73(48) wki:39:55(3) dql:3:16(9) -->
+
+
+<div style="position: absolute; top: -10000px; left: -10000px; font-size: 14px; font-family: arial,helvetica,sans-serif; font-weight: 400; line-height: 20px; resize: none; width: 98px;" class="autogrow-shadow"></div></body></html>

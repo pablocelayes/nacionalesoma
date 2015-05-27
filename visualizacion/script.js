@@ -69,11 +69,12 @@ function tooltip(year,id,event)
 {
     d3.select("#"+id).style('stroke-width', 2)
 	.style('stroke', 'steelblue');
-    d3.csv("clasificados/provcounts.csv",function(rows)
+	d3.csv("clasificados/provcounts.csv",function(rows)
 	   {
 	       rows.map(function(d)
 			{
 				if(d.Año == year && d.Provincia == path_to_provs[id]){
+				div1.html("");				//para evitar que "crezca" el tooltip
 				var prov = d.Provincia.replace(/\s/g, '_');
 				div1.html("<p><b>Año:</b> "+d.Año+"</p>"+
 						  "<p><b>Provincia:</b> "+d.Provincia+"</p>"+
@@ -87,6 +88,7 @@ function tooltip(year,id,event)
 			});
 	   });
     
+	d3.csv
 }
 
 function update_svg(año,caller)
@@ -107,14 +109,18 @@ function update_svg(año,caller)
 	for(var i = 0; i < n_provinces; i++){
 		
 		var path = paths[0][i];
-		// alert(año);
+		var provincia = path_to_provs[path.id];
+		if(provincia != undefined){
+			provincia = provincia.replace(/\s/g, '_');
+		}
+		// alert(prov);
 		d3.select(path)
 		  .transition()
 		  .style('fill',svg_array[año - 1998].documentElement.getElementById(path.id).style.fill);
 		
 		if (caller == "input")
 		{
-		  // alert(path);
+		  alert(provincia);
 		  d3.select(path).on('mouseenter',function(event)
 		  {
 		  tooltip(año,this.id,d3.event);
@@ -123,11 +129,9 @@ function update_svg(año,caller)
 			d3.select("#"+this.id).style('stroke-width', 1)
 				.style('stroke', 'white');
 			})
-			.on('click',function(){window.open("bokeh/gini.html");})
+			.on('click',function(){window.open("plots/"+provincia+"-completo.svg");})
 		}
 		
 
 	}
 }
-
-// update_svg(1998,"input");	
