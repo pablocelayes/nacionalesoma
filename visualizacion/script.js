@@ -32,12 +32,7 @@ var path_to_provs =
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
 
-	document.body.appendChild(xml.documentElement);
-	//~ var path1 = d3.select("path");
-	//~ path1.append("svg:a")	
-		 //~ .attr("xlink:href", "http://en.wikipedia.org/wiki/")
-		 //~ .attr("target","_blank")
-		 //~ .text("asdsf");			  
+	document.body.appendChild(xml.documentElement);		  
 	});
 	
 				  
@@ -110,10 +105,6 @@ function update_svg(año,caller)
 	for(var i = 0; i < n_paths; i++){
 		
 		var path = paths[0][i];
-		var provincia = path_to_provs[path.id];
-		if(provincia != undefined){
-			provincia = provincia.replace(/\s/g, '_');
-		}
 		// alert(prov);
 		d3.select(path)
 		  .transition()
@@ -132,7 +123,11 @@ function update_svg(año,caller)
 			})
 			.on('click',function(event)
 			{
-			window.open("plots/"+path_to_provs[this.id]+".svg");	
+			var provincia = path_to_provs[this.id];
+			if(provincia != undefined){
+				provincia = provincia.replace(/\s/g, '_');
+			}
+			window.open("plots/"+provincia+"-completo.svg");	
 			});
 		}
 		
