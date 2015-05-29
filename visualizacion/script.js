@@ -69,38 +69,46 @@ function tooltip(year,id,event)				//TODO: poner la cantidad de aprobados
     d3.select("#"+id).style('stroke-width', 2)
 	.style('stroke', 'steelblue');
 	
-	var html_str = "";
+	var html_str = "<p><b>Año:</b> "+year+"</p>"+
+				   "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>";
 	
-	d3.csv("clasificados/provcounts.csv",function(rows)
-	   {
-	       rows.map(function(d)
-			{
-				if(d.Año == year && d.Provincia == path_to_provs[id]){
-					div1.html("");				//para evitar que "crezca" el tooltip
-					var prov = d.Provincia.replace(/\s/g, '_');
-					html_str += "<p><b>Año:</b> "+d.Año+"</p>"+
-								"<p><b>Provincia:</b> "+d.Provincia+"</p>"+
-								"<p>"+d.Cantidad+" clasificado(s)</p>";
-			    }
-			});
-	   });
-	d3.csv("aprobados/provcounts.csv",function(rows)
-	   {
-	       rows.map(function(d)
-			{
-				if(d.Año == year && d.Provincia == path_to_provs[id]){
-					var prov = d.Provincia.replace(/\s/g, '_');
-					// alert(prov);
-					div1.html(html_str+"<p>"+d.Cantidad+" aprobado(s)</p>"+
-							  "<p>Progresión:"+
-							  "<img align='left' height='100' src="+'./plots/'+prov+".svg></img></p>");
+	var prov = path_to_provs[id];
+	
+	if(prov != undefined){
+		prov = prov.replace(/\s/g, '_');
+		
+		div1.html("");				//para evitar que "crezca" el tooltip
+			
+		d3.csv("clasificados/provcounts.csv",function(rows)
+		   {
+			   rows.map(function(d)
+				{
+					if(d.Año == year && d.Provincia == path_to_provs[id]){
+						html_str += "<p>"+d.Cantidad+" clasificado(s)</p>";
+					}
+				});
+		   });
 
-				}
+		
+		d3.csv("aprobados/provcounts.csv",function(rows)
+		   {
+			   rows.map(function(d)
+				{
+					if(d.Año == year && d.Provincia == path_to_provs[id]){
+						// alert(d.Provincia);
+						html_str+="<p>"+d.Cantidad+" aprobado(s)</p>";	
+					}
+				});
+				
+				div1.html(html_str+	"<p>Progresión:"+
+								"<img align='left' height='100' src="+'./plots/'+prov+".svg></img></p>")
+					.style('top',  event.pageY + 'px')
+					.style('left', event.pageX + 'px')
+					.style('display', 'block');
 			});
-		});
-	div1.style('top',  event.pageY + 'px')
-		.style('left', event.pageX + 'px')
-		.style('display', 'block');
+	}	
+	
+	
 }
 
 function update_svg(año,caller)
