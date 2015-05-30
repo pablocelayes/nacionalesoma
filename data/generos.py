@@ -47,17 +47,22 @@ def find_gender(string):
 	# return string
 	return "UNKNOWN"
 
-# Procesando clasificados
-file_template = "./clasificados/csvs/clasificados" 
+# Procesando clasificados y aprobados
+clasificados = "./clasificados/csvs/clasificados" 
+aprobados = "./aprobados/csvs/aprobados" 
 
 def unknown_genders():	
 	 # for debugging: para ver los nombres que no están en 'generos.txt'
 	 print(df.iloc[gender_df[gender_df > 1].index])
 	
-for i in range(1998,2015):
-	file = "{0}{1}.csv".format(file_template,i)
-	df = pd.read_csv(file)
-	# gender_df = df['Nombres'].apply(find_gender)
-	df['Género'] = df['Nombres'].apply(find_gender)
-	# unknown_genders()
-	df.to_csv("{0}{1}.csv".format(file_template,i),encoding='utf-8',index=False)
+def gender_to_csvs(file_template):
+	for i in range(1998,2015):
+		file = "{0}{1}.csv".format(file_template,i)
+		df = pd.read_csv(file)
+		# gender_df = df['Nombres'].apply(find_gender)
+		df['Género'] = df['Nombres'].apply(find_gender)
+		# unknown_genders()
+		df.to_csv("{0}{1}.csv".format(file_template,i),encoding='utf-8',index=False)
+
+gender_to_csvs(clasificados)
+gender_to_csvs(aprobados)
