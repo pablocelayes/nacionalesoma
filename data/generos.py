@@ -58,6 +58,7 @@ for i in range(1998,2015):
 	file = "{0}{1}.csv".format(file_template,i)
 	df = pd.read_csv(file)
 	gender_df = df['Nombres'].apply(find_gender)
+	unknown_genders()
 	# hasta aquí va bien, sólo algunos nombres raros con problemas
 	# new_def = pd.concat([df,gender_df])
 	# new_def.to_csv("{0}_gender.csv".format(i))
