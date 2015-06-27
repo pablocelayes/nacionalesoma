@@ -13,6 +13,8 @@ import math
 
 MAPA_BASE = "Blank_Argentina_Map.svg"
 
+LEGEND = [10,25,50,75,100]
+
 COLORES = ["#edf8e9", "#c7e9c0", "#a1d99b", "#74c476", "#41ab5d", "#238b45", "#005a32"]
 
 PATH_STYLE = ";fill-opacity:1;stroke:#ffffff;stroke-width:1.40563393;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"

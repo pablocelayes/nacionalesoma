@@ -32,7 +32,8 @@ var path_to_provs =
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
 
-	document.body.appendChild(xml.documentElement);		  
+	document.getElementById("main").appendChild(xml.documentElement);		  
+	// document.body.appendChild(xml.documentElement);		  
 	});
 	
 				  

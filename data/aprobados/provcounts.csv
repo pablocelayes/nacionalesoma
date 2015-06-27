@@ -16,10 +16,6 @@ Buenos Aires,2011,110
 Buenos Aires,2012,112
 Buenos Aires,2013,99
 Buenos Aires,2014,146
-CHUBUT,2014,1
-Capital,2014,1
-Capital Federal,2000,1
-Capital Federal,2001,1
 Catamarca,1998,1
 Catamarca,2000,1
 Chaco,2000,1
@@ -45,11 +41,11 @@ Chubut,2010,1
 Chubut,2011,4
 Chubut,2012,4
 Chubut,2013,2
-Chubut,2014,3
+Chubut,2014,4
 Ciudad Autónoma de Buenos Aires,1998,55
 Ciudad Autónoma de Buenos Aires,1999,13
-Ciudad Autónoma de Buenos Aires,2000,69
-Ciudad Autónoma de Buenos Aires,2001,58
+Ciudad Autónoma de Buenos Aires,2000,70
+Ciudad Autónoma de Buenos Aires,2001,59
 Ciudad Autónoma de Buenos Aires,2002,50
 Ciudad Autónoma de Buenos Aires,2003,70
 Ciudad Autónoma de Buenos Aires,2004,57
@@ -62,7 +58,7 @@ Ciudad Autónoma de Buenos Aires,2010,46
 Ciudad Autónoma de Buenos Aires,2011,68
 Ciudad Autónoma de Buenos Aires,2012,61
 Ciudad Autónoma de Buenos Aires,2013,57
-Ciudad Autónoma de Buenos Aires,2014,48
+Ciudad Autónoma de Buenos Aires,2014,49
 Corrientes,1998,5
 Corrientes,2001,2
 Corrientes,2002,1
@@ -309,12 +305,12 @@ Santa Fe,2011,37
 Santa Fe,2012,35
 Santa Fe,2013,38
 Santa Fe,2014,63
-Santa Fé,2005,46
+Santa Fe,2005,46
 Santiago del Estero,2013,1
 Santiago del Estero,2014,2
-Santiago Del Estero,1998,1
+Santiago del Estero,1998,1
 Santiago del Estero,2010,1
-Tierra Del Fuego,1998,1
+Tierra del Fuego,1998,1
 Tierra del Fuego,2001,1
 Tierra del Fuego,2002,1
 Tierra del Fuego,2003,1
