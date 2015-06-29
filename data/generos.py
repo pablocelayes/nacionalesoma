@@ -5,8 +5,9 @@
 
 import pandas as pd
 
-# digit_to_gender = ["F","M"]
 gral_name_table = pd.read_table("generos.txt")
+
+# gender_list = {"0":"F","1":"M"}
 
 tildes = {"Á":"A",
 		  "É":"E",
@@ -35,20 +36,28 @@ def find_gender(string):
 	str_split = string.split()[0]
 	record1 = gral_name_table[gral_name_table['nombre'] == normalize_str(string)].male
 	if record1.any():
-		return record1.iloc[0]
+		return int(record1.iloc[0])
+		# return gender_list[record1.iloc[0]]
 	else:
+		#~ usando sólo el primer nombre, p.e de "Juan Carlos" -> "Juan"
 		record2 = gral_name_table[gral_name_table['nombre'] == normalize_str(str_split)].male
 		if record2.any():
-			return record2.iloc[0]
-	return string
+			return int(record2.iloc[0])
+			# return gender_list[record2.iloc[0]]
+	# return string
+	return 2
 
 # Procesando clasificados
 file_template = "./clasificados/csvs/clasificados" 
+
+def unknown_genders():	
+	 # for debugging: para ver los nombres que no están en 'generos.txt'
+	 print(df.iloc[gender_df[gender_df > 1].index])
 	
 for i in range(1998,2015):
 	file = "{0}{1}.csv".format(file_template,i)
 	df = pd.read_csv(file)
 	gender_df = df['Nombres'].apply(find_gender)
-	# hasta aquí va bien
-	new_def = pd.concat([df,gender_df])
-	new_def.to_csv("{0}_gender.csv".format(i))
+	# hasta aquí va bien, sólo algunos nombres raros con problemas
+	# new_def = pd.concat([df,gender_df])
+	# new_def.to_csv("{0}_gender.csv".format(i))
