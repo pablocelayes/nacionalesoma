@@ -15,6 +15,14 @@ tildes = {"Á":"A",
 		  "Ó":"O",
 		  "Ú":"U"}
 
+def extract_names(string,year):
+	"""
+	Para uso en los csv's de premiados: convierte el contenido del campo
+	'Nombres' a un formato similar a los de similar campo en los csv's de
+	clasificados y aprobados.
+	"""
+	pass
+
 def normalize_str(string):
 	""" Para que los nombres puedan ser encontrados en 'géneros.txt'
 	se requiere la cadena no tenga tildes y esté en mayúsculas.

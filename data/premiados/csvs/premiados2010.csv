@@ -13,7 +13,7 @@ Mención,1,Melanie Alberti,Instituto Hölters,San Martín,Buenos Aires
 Mención,1,Ezequiel Alix,Colegio Santísima Trinidad,Mar del Plata,Buenos Aires
 Mención,1,Julián Ballejos,Instituto San Martín,Goya,Corrientes
 Mención,1,Bruno Bortolatto,Colegio San Francisco de Asís,Río Cuarto,Córdoba
-<short row>,Mención,1,Federico Cappannari,Colegio San Ezequiel Moreno,Santa Fe
+Mención,1,Federico Cappannari,Colegio San Ezequiel Moreno,Santa Fe,Santa Fe
 Mención,1,Fernando Caprile,Instituto Huergo,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Agustín Chenna,Colegio Modelo Almafuerte,Merlo,Buenos Aires
 Mención,1,Sebastián Cherny,ORT II,Capital Federal,Ciudad Autónoma de Buenos Aires
@@ -37,34 +37,34 @@ Mención,1,Gianfranco Polinesi,EEM Nº 415 Juan Bautista Alberdi,Arroyo Seco,San
 Mención,1,Fernando Rodríguez,Colegio Pío IX,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Damián Rojas,Escuela Superior de Comercio Carlos Pellegrini,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Alejo Salvador,Instituto Albert Einstein,Mar del Plata,Buenos Aires
-<short row>,Mención,1,Norberto Schmidt,Colegio Dr. Esteban L. Maradona,Formosa
+Mención,1,Norberto Schmidt,Colegio Dr. Esteban L. Maradona,Formosa,Formosa
 Mención,1,Juan Segura,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
 Mención,1,Joel Spak,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
 Mención,1,Sebastián Taboh,Escuela Del Manantial,Del Viso,Buenos Aires
 Mención,1,Franco Trálice,Colegio San Juan el Precursor,Yerba Buena,Tucumán
 Mención,1,Lucio Wasserman,Tarbut,Olivos,Buenos Aires
 Mención,2,Martín Arjovsky,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,2,Franco Assenza,E.E.M. Nº 381,Santa Fe
+Mención,2,Franco Assenza,E.E.M. Nº 381,Santa Fe,Santa Fe
 Mención,2,Kevin Bongers,Instituto Educativo Los Lapachos,Puerto Esperanza,Misiones
 Mención,2,Mariano Bonifacio,ESCBA,Leones,Córdoba
 Mención,2,Lautaro Borrovinsky,Escuela Superior de Comercio Carlos Pellegrini,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Facundo Cabrera,Colegio Nacional de San Isidro,San Isidro,Buenos Aires
-<short row>,Mención,2,Emiliano Campagnolo,Colegio Santo Tomás,Córdoba
+Mención,2,Emiliano Campagnolo,Colegio Santo Tomás,Córdoba,Córdoba
 Mención,2,Alejandro Candioti,Instituto José Manuel Estrada,Posadas,Misiones
 Mención,2,Margarita Capretto,EEM Nº 2,Colón,Buenos Aires
 Mención,2,Pedro Yair Caram,Instituto Dante Alighieri,Bariloche,Río Negro
 Mención,2,Mariano Chehebar,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Nicolás Cogorno,Instituto San José de Flores,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,2,Alejandro Curci,Colegio Universitario Central,Mendoza
+Mención,2,Alejandro Curci,Colegio Universitario Central,Mendoza,Mendoza
 Mención,2,Ignacio Darago,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Gianfranco Feliziani,ISEP,Luján de Cuyo,Mendoza
-<short row>,Mención,2,Luis Ferroni,Instituto Tulio García Fernández,San Miguel de Tucumán
-<short row>,Mención,2,Matías Hünicken Berardo,Colegio Nacional de Monserrat,Córdoba
+Mención,2,Luis Ferroni,Instituto Tulio García Fernández,San Miguel de Tucumán,Tucumán
+Mención,2,Matías Hünicken Berardo,Colegio Nacional de Monserrat,Córdoba,Córdoba
 Mención,2,Gustavo Hurovich,Escuela Superior de Comercio Carlos Pellegrini,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Carolina Lang,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Tobías Liaudat,Colegio San Lucas,Olivos,Buenos Aires
 Mención,2,Federico Meier,Escuela Superior de Comercio Nº 6,Posadas,Misiones
-<short row>,Mención,2,Francisco Mir Vera,Instituto Técnico U.N.T.,San Miguel de Tucumán
+Mención,2,Francisco Mir Vera,Instituto Técnico U.N.T.,San Miguel de Tucumán,Tucumán
 Mención,2,Matías Molina,Instituto Inmaculada,Ituzaingó,Buenos Aires
 Mención,2,Sofía Nieva,Colegio San Patricio,Yerba Buena,Tucumán
 Mención,2,Santiago Orellano,Escuela Agrotécnica Nº 327,Bigand,Santa Fe
@@ -80,9 +80,9 @@ Mención,2,Jaime Zubieta Battista,Intituto José Manuel Estrada,Pellegrini,Bueno
 Mención,3,Gonzalo Benegas,Colegio San Antonio,San Antonio de Areco,Buenos Aires
 Mención,3,Mara Carloni,Colegio Los Arrayanes,Rosario,Santa Fe
 Mención,3,Federico Casella,EET Nº 8,Morón,Buenos Aires
-<short row>,Mención,3,Timoteo Herrera,Escuela Normal Juan Pascual Pringles,San Luis
-<big row>,Mención,3,Livio Leiva,Escuela Nº 4,117 Ejército de los Andes,San Rafael,Mendoza
-<big row>,Mención,3,Santiago Magariños Acosta,Escuela Nº 4,117 Ejército de los Andes,San Rafael,Mendoza
+Mención,3,Timoteo Herrera,Escuela Normal Juan Pascual Pringles,San Luis,San Luis
+Mención,3,Livio Leiva,Escuela Nº 4 #117 Ejército de los Andes,San Rafael,Mendoza
+Mención,3,Santiago Magariños Acosta,Escuela Nº 4 #117 Ejército de los Andes,San Rafael,Mendoza
 Mención,3,Martín Mongi Badía,Instituto Huergo,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,3,Juan Pablo Rebechi,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
 Mención,3,Jeremías Sever,Santa Lucía,Florencio Varela,Buenos Aires

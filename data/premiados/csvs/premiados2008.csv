@@ -5,7 +5,7 @@ Segundo Subcampeón,1,Nicolás Cogorno,Instituto San José de Flores,Capital Fed
 Campeón,2,Germán Ezequiel Stefanich,Escuela de Educación Media Nº 8,San Isidro,Buenos Aires
 Primer Subcampeón,2,Iván Sadofschi Costa,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
 Segundo Subcampeón,2,Axel Emmanuel Varanese,Colegio San Pablo,Wilde,Buenos Aires
-<short row>,Campeón,3,Mauro Schilman,Instituto Secundario Israelita Gral. San Martín,Córdoba
+Campeón,3,Mauro Schilman,Instituto Secundario Israelita Gral. San Martín,Córdoba,Córdoba
 Primer Subcampeón,3,Nicolás Agustín Rodriguez Castro,San Isidro,Buenos Aires,E E.M.Nº 13
 Segundo Subcampeón,3,Juan Andrés Dodyk,E.E.M. Nº 18 ENSPA,Avellaneda,Buenos Aires
 Mención,1,Violeta Alustiza,Instituto María Inmaculada,Gral. Villegas,Buenos Aires
@@ -13,19 +13,19 @@ Mención,1,María Anzuinelli,Esc. Evangelista Dr. F. J. Hotton,Zárate,Buenos Ai
 Mención,1,Martín Arjovsky,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Franco Assenza,E.E.M. Nº 381 Almirante G. Brown,Santa Fe,Santa Fe
 Mención,1,Rocío Milagros Belfiore,E.S.B. 30,Paso del Rey,Buenos Aires
-<short row>,Mención,1,Mariano Carlos Bonifacio,Escuela Superior de Comercio de Leones,Córdoba
+Mención,1,Mariano Carlos Bonifacio,Escuela Superior de Comercio de Leones,Córdoba,Córdoba
 Mención,1,Gastón Uriel Bugnar,Instituto José Manuel Estrada,Pellegrini,Buenos Aires
 Mención,1,Iara María Cantore Pasero,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
 Mención,1,Margarita Capretto,ESB Nº 4,Colón,Buenos Aires
 Mención,1,Pedro Caram,Dante Alighieri,Bariloche,Río Negro
 Mención,1,Luciano Carro Correa,ESB Nº 1,Lanús Este,Buenos Aires
 Mención,1,Adrian Colman,Colegio Don Tomás de Rocamora,Gualeguay,Entre Ríos
-<short row>,Mención,1,Alejandro Marcelo Curci,Departamento de Aplicación Docente,Mendoza
+Mención,1,Alejandro Marcelo Curci,Departamento de Aplicación Docente,Mendoza,Mendoza
 Mención,1,Marcos Dassen,Colegio San Andrés,San Isidro,Buenos Aires
 Mención,1,Francisco Demartino,Instituto Luis A. Huergo,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Federico Javier Font,E.E.T. Nº 455,Esperanza,Santa Fe
 Mención,1,Clara Lucía Galimberti,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
-<short row>,Mención,1,Matías José Hünicken Berardo,Colegio Nacional de Monserra,Córdoba
+Mención,1,Matías José Hünicken Berardo,Colegio Nacional de Monserra,Córdoba,Córdoba
 Mención,1,Gustavo Hurovich,Carlos Pellegrini,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Carolina Lang,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Federico Gustavo Mazzoni,San Cayetano,Boulogne,Buenos Aires
@@ -39,33 +39,33 @@ Mención,1,Federico Rapp,Colegio San Pablo Apostol,San Martín de los Andes,Neuq
 Mención,1,Martín Ezequiel Rodríguez,Escuela Municipal de Enseñanza Media Nº 1,San Clemente del Tuyú,Buenos Aires
 Mención,1,Rodrigo Rosales Cuello,Insituto San Alberto,Mar del Plata,Buenos Aires
 Mención,1,Cristian Gustavo Salas,ILSE,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,1,Facundo Fabián Sapienza,Nacional de San Isidro,Buenos Aires
+Mención,1,Facundo Fabián Sapienza,Nacional de San Isidro,San Isidro,Buenos Aires
 Mención,1,Magdalena Sella,Colegio Nacional de Monserrat,Córdoba,Córdoba
 Mención,1,Leonel Antonio Sidabra,Colegio Educativo Loreto,Avellaneda,Buenos Aires
 Mención,1,Ignacio Tomás Storni,Belgrano Uno,Vicente López,Buenos Aires
 Mención,1,Luciana Trabucco,Nacional Rafael Hernández,La Plata,Buenos Aires
 Mención,1,Pablo Andrés Viviani,Nuestra Señora del Milagro,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Daniel Ricardo Yang,Instituto San Alberto,Mar del Plata,Buenos Aires
-<short row>,Mención,2,Rodrigo Azziani,Colegio San Francisco Solano de Rosario,Santa Fe
-<short row>,Mención,2,Daniela Berardi Dichiara,E.E.M. Nº202 de Casilda,Santa Fe
-<short row>,Mención,2,Franco Biancotti,Inst. Politecnico Superior de Rosario,Santa Fe
-<short row>,Mención,2,Kevin Braten,Inst. Politécnico Superior de Rosario,Santa Fe
+Mención,2,Rodrigo Azziani,Colegio San Francisco Solano de Rosario,Rosario,Santa Fe
+Mención,2,Daniela Berardi Dichiara,E.E.M. Nº202 de Casilda,Santa Fe,Santa Fe
+Mención,2,Franco Biancotti,Inst. Politecnico Superior de Rosario,Rosario,Santa Fe
+Mención,2,Kevin Braten,Inst. Politécnico Superior de Rosario,Rosario,Santa Fe
 Mención,2,Federico Casella,EET Nro 8,Morón,Buenos Aires
 Mención,2,Federico Cogorno,San José de Flores,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,2,Juan Manuel Cufré,Colegio San Antonio de San Antonio de Areco,Buenos Aires
+Mención,2,Juan Manuel Cufré,Colegio San Antonio de Areco,Buenos Aires,Buenos Aires
 Mención,2,Juan Escolar,Colegio Carlos Pellegrini,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,2,María Florencia Dib Azur,Colegio de Jesús,Salta
+Mención,2,María Florencia Dib Azur,Colegio de Jesús,Salta,Salta
 Mención,2,Germán Fick,Colegio Santo Tomas de Aquino,Campana,Buenos Aires
 Mención,2,Alan Givré,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Mariano Juncal,ORT II,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,2,Sebastián Kontarovsky,San Andrés de Tigre,Buenos Aires
+Mención,2,Sebastián Kontarovsky,San Andrés de Tigre,Buenos Aires,Buenos Aires
 Mención,2,Betina Mamani,EET Nro 7,Quilmes,Buenos Aires
 Mención,2,María del Pilar Massanés Betelu,Colegio el Buen Ayre,San Isidro,Buenos Aires
 Mención,2,Miguel Sebastián Maurizio,EET Nro 8,Morón,Buenos Aires
 Mención,2,Joaquín Alejandro Montero,La Inmaculada,Bahía Blanca,Buenos Aires
 Mención,2,Lucía Inés Pedraza,Escuela Superior de Comercio Carlos Pellegrini,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Alejandro Pedrozo,ISAM,Posadas,Misiones
-<short row>,Mención,2,Juan Francisco Piombo,Instituto Norland de Lanús,Buenos Aires
+Mención,2,Juan Francisco Piombo,Instituto Norland de Lanús,Lanús,Buenos Aires
 Mención,2,Sebastián Prillo,San Juan,San Isidro,Buenos Aires
 Mención,2,Ignacio Esteban Rabsiun Aramburu,Colegio San Mateo Norte,Pilar,Buenos Aires
 Mención,2,Gabriel Horacio Ré,Escuela Privada Ranelagh,Villa Elisa,Buenos Aires
@@ -87,7 +87,7 @@ Mención,3,Federico Mario do Pino,Carlos Pellegrini,Capital Federal,Ciudad Autó
 Mención,3,Alberto Jose Ferrari,Instituto Politécnico Superior,Rosario,Santa Fe
 Mención,3,Gastón Nicolás Franco Castillo,La Salle,Florida,Buenos Aires
 Mención,3,Daniel Kohen,Normal 4,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,3,Yair Ezequiel Litman,Técnica ORT,Buenos Aires
+Mención,3,Yair Ezequiel Litman,Técnica ORT,Buenos Aires,Buenos Aires
 Mención,3,Emilio Manuel Martinez,ORT II,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,3,Leandro Emanuel Nardi,San Francisco Solano,Rosario,Santa Fe
 Mención,3,Fernando Ezequiel Oviedo,E. S. de Comercio Nº 6 Mariano Moreno,Posadas,Misiones
@@ -97,5 +97,3 @@ Mención,3,Sebastián Rovea,E.E.T. Nº 484 Prefectura Naval Argentina,Villa Cañ
 Mención,3,Matías Saucedo,Escuela Normal Manuel Florencio Mantilla,Mercedes,Corrientes
 Mención,3,Darío Sneidermanis,Instituto Albert Einstein,Mar del Plata,Buenos Aires
 Mención,3,Elvio Rafael Urbina,Colegio María del Rosario Nº 8064,Orán,Salta
-<short row>,Mención,3
-<short row>,Mención,3

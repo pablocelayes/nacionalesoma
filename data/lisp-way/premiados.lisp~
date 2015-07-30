@@ -1,0 +1,6 @@
+;;;; premiados.lisp
+
+(in-package #:premiados)
+
+;;; "premiados" goes here. Hacks and glory await!
+

@@ -4,14 +4,14 @@ Primer Subcampeón,1, Ramiro Hernández Maradona,Escuela Técnica ORT,Capital Fe
 Segundo Subcampeón,1, Lucas Brugevin,Colegio Industrial Superior,Colastiné,Santa Fe
 Campeón,2, Lucas Gabriel de Amorin,Centro Educativo Loreto,Avellaneda,Buenos Aires
 Primer Subcampeón,2, Lisandro Filloy,Sagrado Corazón de Jesús,Quilmes,Buenos Aires
-<short row>,Segundo Subcampeón,2, Ignacio Pérez Bedoya,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Campeón,3, Nahuel Nostrala Hatz,EET Nº 1 de Ituzaingó,Buenos Aires
+Segundo Subcampeón,2, Ignacio Pérez Bedoya,Colegio Nacional de Buenos Aires,Capital Federal,Ciudad Autónoma de Buenos Aires
+Campeón,3, Nahuel Nostrala Hatz,EET Nº 1 de Ituzaingó,Buenos Aires,Buenos Aires
 Primer Subcampeón,3, Lautaro Decara,Centro Educativo Loreto,Lanús,Buenos Aires
 Segundo Subcampeón,3,Brian Morris Esquivel,Instituto Politécnico Superior Gral. San Martín,Rosario,Santa Fe
 Mención,1,Clemente Antuña,Colegio Superior de Comercio,Rosario,Santa Fe
 Mención,1,Santiago Aranguri Díaz,ORT II,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Felipe Areces,Islands International School,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,1,Manuel Avellaneda Molina,Colegio San Javier,San Miguel de Tucumán
+Mención,1,Manuel Avellaneda Molina,Colegio San Javier,San Miguel de Tucumán,Tucumán
 Mención,1,Agustín Bazzi,Colegio La Salle Florida,Florida,Buenos Aires
 Mención,1,Gonzalo Becker,Colegio Balmoral,Banfield,Buenos Aires
 Mención,1,Ewan Begué,Instituto Politécnico Superior,Rosario,Santa Fe
@@ -20,13 +20,13 @@ Mención,1,Nahuel Cabrera,EETP Nº 292,San Vicente,Santa Fe
 Mención,1,Néstor Cairoli,Colegio Santa Teresa del Niño Jesús,Martínez,Buenos Aires
 Mención,1,Nicolás Cassia,Instituto Albert Einstein,Mar del Plata,Buenos Aires
 Mención,1,Tomás Caviezel,Colegio Santa Cruz,Beccar,Buenos Aires
-<short row>,Mención,1,Giuliano Ceccarossi,Colegio Industrial Superior,Santa Fe
+Mención,1,Giuliano Ceccarossi,Colegio Industrial Superior,Santa Fe,Santa Fe
 Mención,1,Iago Charón,Instituto Janssen,Posadas,Misiones
 Mención,1,Denis Abner Chungara,Colegio Monseñor Solari,Rafael Castillo,Buenos Aires
 Mención,1,Franco Compiano,Colegio Superior Nº 50,Rufino,Santa Fe
 Mención,1,Juan Cruz de La Torre,Colegio Los Arroyos,Rosario,Santa Fe
 Mención,1,Federico Della Rocca,Colegio Albert Schweitzer,Mar del Plata,Buenos Aires
-<short row>,Mención,1,Francisco Divi,Colegio Secundario de la UNL,Santa Fe
+Mención,1,Francisco Divi,Colegio Secundario de la UNL,Santa Fe,Santa Fe
 Mención,1,Gianfranco Elli,Colegio Nuestra Señora de las Mercedes,Montes de Oca,Santa Fe
 Mención,1,Matías Escudero,Colegio Pestalozzi,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Lara Fernández Brudny,Colegio Pestalozzi,Capital Federal,Ciudad Autónoma de Buenos Aires
@@ -35,35 +35,35 @@ Mención,1,Iñaki Gabilondo,Colegio Los Arroyos,Rosario,Santa Fe
 Mención,1,Facundo Garbino,Colegio Nuestra Señora de la Misericordia,La Plata,Buenos Aires
 Mención,1,Santiago García Sanchez,Colegio Provincial Nº 735,Esquel,CHUBUT
 Mención,1,Francisco Gerlero,EESOPI N 8091 José Manuel Estrada,Suardi,Santa Fe
-<big row>,Mención,1,Florencia Gettig,Instituto Comercial D,33,Crespo,Entre Ríos
+Mención,1,Florencia Gettig,Instituto Comercial D-33,Crespo,Entre Ríos
 Mención,1,Santiago Gómez Paz,Colegio La Salle Florida,Florida,Buenos Aires
 Mención,1,Matías González,Colegio San José Obrero,Caleta Olivia,Santa Cruz
-<short row>,Mención,1,Manuel Iparraguirre,Colegio San José,Córdoba
+Mención,1,Manuel Iparraguirre,Colegio San José,Córdoba,Córdoba
 Mención,1,Victoria Kaial,Colegio Goethe,Rosario,Santa Fe
 Mención,1,Lucas Luppi,Instituto Politécnico Superior,Rosario,Santa Fe
-<short row>,Mención,1,Eira Martínez,Colegio Dante Alighieri,Santa Fe
+Mención,1,Eira Martínez,Colegio Dante Alighieri,Santa Fe,Santa Fe
 Mención,1,Julián Masliah,Colegio Pestalozzi,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Martiniano Maureira,Instituto Federico Brandsen,Brandsen,Buenos Aires
 Mención,1,Duncan Mc Clymont,Colegio San Bartolomé,Rosario,Santa Fe
 Mención,1,Miguel Ángel Mercado Carabajal,Colegio Contardo Ferrini,Río Primero,Córdoba
-<short row>,Mención,1,Juan Martín Minen,IPEI Leonardo da Vinci,Santa Fe
-<short row>,Mención,1,Rocío Olivera,IFD Nº 6 Santa Genoveva,Neuquén
+Mención,1,Juan Martín Minen,IPEI Leonardo da Vinci,Santa Fe,Santa Fe
+Mención,1,Rocío Olivera,IFD Nº 6 Santa Genoveva,Neuquén,Neuquén
 Mención,1,Gianfranco Pavesi Díaz,IESS,Villa Carlos Paz,Córdoba
-<big row>,Mención,1,Dania Pérez Vosahlo,Colegio San José de Calasanz,Aguilares,Río Chico,Tucumán
+Mención,1,Dania Pérez Vosahlo,Colegio San José de Calasanz,Río Chico,Tucumán
 Mención,1,Carolina Ranfagni,Colegio Goethe,San Isidro,Buenos Aires
 Mención,1,Juan Recoaro,Instituto Politécnico Superior,Rosario,Santa Fe
 Mención,1,Genaro Risso,Escuela Nacional Adolfo Pérez Esquivel,Olavarría,Buenos Aires
 Mención,1,Lourdes Rizzuto,Colegio Campus Lincoln,Pilar,Buenos Aires
-<big row>,Mención,1,Nicolás Rooney,Escuela de los Padres,EESOPA Nº 3082,Venado Tuerto,Santa Fe
+Mención,1,Nicolás Rooney,Escuela de los Padres-EESOPA Nº 3082,Venado Tuerto,Santa Fe
 Mención,1,Luisina Rothstein,Colegio María Auxiliadora,Santa Rosa,La Pampa
-<short row>,Mención,1,Fabrizio Ruiz,Colegio Nuestra Señora de Fátima,San Miguel de Tucumán
+Mención,1,Fabrizio Ruiz,Colegio Nuestra Señora de Fátima,San Miguel de Tucumán,Tucumán
 Mención,1,Alejo Sánchez,Escuela Educación Técnica Fundación Fangio,González Catán,Buenos Aires
 Mención,1,Joel Sobol Mark,ORT II,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,1,Carlos Soto,Colegio Mecenas,Corrientes
+Mención,1,Carlos Soto,Colegio Mecenas,Corrientes,Corrientes
 Mención,1,Jesé Trulli,EETP Nº 460,Rafaela,Santa Fe
 Mención,1,Marcos Van Keulen,Colegio Marianista,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,1,Valentina Varetto,Colegio Villa Devoto School,Capital Federal,Ciudad Autónoma de Buenos Aires
-<short row>,Mención,1,Joaquín Villamayor,Escuela Industrial Superior,Santa Fe
+Mención,1,Joaquín Villamayor,Escuela Industrial Superior,Santa Fe,Santa Fe
 Mención,1,Luciano Zampella,Colegio San José Adoratrices,Concordia,Entre Ríos
 Mención,1,Bruno Zucchini,Colegio Inmaculada Concepción,Moreno,Buenos Aires
 Mención,2,Matías Bergerman,ORT,Capital Federal,Ciudad Autónoma de Buenos Aires
@@ -87,7 +87,7 @@ Mención,2,Santiago Kaplan,Colegio San Juan el Precursor,San Isidro,Buenos Aires
 Mención,2,Gregorio Keklikian,ILSE,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,2,Sofía Levin,Colegio Tarbut,Olivos,Buenos Aires
 Mención,2,Agustín Marchionna,Colegio St. Johns,San Isidro,Buenos Aires
-<short row>,Mención,2,Gabriel Martínez,EPES Nº 54,Formosa
+Mención,2,Gabriel Martínez,EPES Nº 54,Formosa,Formosa
 Mención,2,Tomás Moletta,Instituto Ballester,Villa Ballester,Buenos Aires
 Mención,2,Agustín Mosquera,Colegio San Juan el Precursor,San Isidro,Buenos Aires
 Mención,2,Alejo Navarro Goldaraz,Colegio San Andrés,Olivos,Buenos Aires
@@ -101,7 +101,7 @@ Mención,2,Agustín Tolaba,EESO Nº 244,María Teresa,Santa Fe
 Mención,2,Santiago Torchiaro,Escuela Privada Ranelagh,Ranelagh,Buenos Aires
 Mención,2,Francisco Trama,Colegio Nacional Dr. Arturo Illia,Mar del Plata,Buenos Aires
 Mención,2,Julián Zylber,Colegio Florida Day School,Florida,Buenos Aires
-<short row>,Mención,3,Natanael Abad .Colegio Manuel Belgrano de Córdoba
+Mención,3,Natanael Abad,Colegio Manuel Belgrano de Córdoba,Córdoba,Córdoba
 Mención,3,Eric Brandwein,ORT II,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,3,Fernando Caprile,Instituto Huergo,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,3,Román Castellarin,Instituto Politécnico Superior,Rosario,Santa Fe
@@ -109,11 +109,11 @@ Mención,3,Agustín Chenna,Instituto Modelo Almafuerte,Merlo,Buenos Aires
 Mención,3,Fernando Del Río,ILSE,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,3,Santiago Demartino,Instituto Huergo,Capital Federal,Ciudad Autónoma de Buenos Aires
 Mención,3,Lucas Florin,Goethe,Olivos,Buenos Aires
-<short row>,Mención,3,Francisco Galluccio,Colegio La Salle Jobson,Santa Fe
+Mención,3,Francisco Galluccio,Colegio La Salle Jobson,Santa Fe,Santa Fe
 Mención,3,Agustín Mazzocato,Colegio Padre Castañeda,La Plata,Buenos Aires
-<short row>,Mención,3,Juan Pablo Ocaranza,Colegio Sagrado Corazón,San Miguel de Tucumán
+Mención,3,Juan Pablo Ocaranza,Colegio Sagrado Corazón,San Miguel de Tucumán,Tucumán
 Mención,3,Martín Polakiewicz,ORT II,Capital Federal,Ciudad Autónoma de Buenos Aires
-<big row>,Mención,3,Luis Ré,Instituto D,170 del CAE,Paraná,Entre Ríos
+Mención,3,Luis Ré,Instituto D#170 del CAE,Paraná,Entre Ríos
 Mención,3,Luciano Scazzola,Colegio Padre Castañeda,La Plata,Buenos Aires
 Mención,3,Santiago Tanco,Colegio Nacional Rafael Hernández,La Plata,Buenos Aires
 Mención,3,Gianni Weinand,Instituto Politécnico Superior,Rosario,Santa Fe
