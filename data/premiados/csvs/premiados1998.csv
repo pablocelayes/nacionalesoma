@@ -1,37 +1,37 @@
-Nivel,Premio,Nombres,Localidad,Provincia
-1,Campeón,GROISMAN Leandro,Localidad Desconocida,Ciudad de BuenosAires
-1,Primer Subcampeón,BOLOGNINI Laura,La Plata,Buenos Aires
-1,Segundo Subcampeón,ANGIONO Ivan,Trelew,La Pampa
-1,Mencionado,ARONNAMaría Soledad,Localidad Desconocida,Santa Fe
-1,Mencionado,BIAGIOLIEric Javier,Casilda,Santa Fe
-1,Mencionado,CIANCINicolás Emanuel,Bernal,Buenos Aires
-1,Mencionado,DAL LAGOPablo,Localidad Desconocida,Córdoba
-1,Mencionado,DE LACRUZ THEA Jeremías Pablo,VillaMercedes,San Luis
-1,Mencionado,LYNCHBenito Miguel,Cipolletti,Río Negro
-1,Mencionado,MIRANDAMartín Santiago,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,PÉREZGONZALEZ Santiago Nicolás,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,PEZZATTIPatricio Agustín,San Nicolás,Buenos Aires
-1,Mencionado,ROYOFrancisco,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,SZYLDMartín,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,YUHJTMANSergio Andrés,Localidad Desconocida,Ciudad de Buenos Aires
-2,Campeón,PASTAWSKI Fernando,Localidad Desconocida,Córdoba
-2,Primer Subcampeón,RODRIGUEZ Juan Sebastián,Localidad Desconocida,Córdoba
-2,Segundo Subcampeón,DEL HOYO Matías,Necochea,Buenos Aires
-2,Mencionado,BASALDELLAFranco,Localidad Desconocida,Santa Fe
-2,Mencionado,BELARDINELLIJuan Manuel,Rosario,Sta. Fé
-2,Mencionado,BLANCOEugenio,Localidad Desconocida,Ciudad de Buenos Aires
-2,Mencionado,"CORRADI,Tadeo",Localidad Desconocida,Santa Fe
-2,Mencionado,DELBLANCO Gabriel Sebastián,Localidad Desconocida,Córdoba
-2,Mencionado,FEALZUBIMENDI María Soledad,Bahía Blanca,Buenos Aires
-2,Mencionado,LOWENTHALQUASTLER Laura Carolina,Localidad Desconocida,Ciudad de Buenos Aires
-2,Mencionado,MOREIRAVARANESE Iliana Cristina,Localidad Desconocida,Campana
-2,Mencionado,ROSLANFrancisco,Localidad Desconocida,Ciudad de Buenos Aires
-3,Campeón,MEREB Martín,Localidad Desconocida,Ciudad de Buenos Aires
-3,Primer Subcampeón,FUXMAN Juan Ignacio,Tortuguitas,Buenos Aires
-3,Segundo Subcampeón,"SACCHINI, Jorge",Localidad Desconocida,Santa Fe
-3,Mencionado,BARMAKJonathan Ariel,Localidad Desconocida,Ciudad de Buenos Aires
-3,Mencionado,MOISSETDE ESPANES Daniel Fernando,Localidad Desconocida,Córdoba
-3,Mencionado,NAGUILJorge Luis,Río Gallegos,Santa Cruz
-3,Mencionado,SAFEMartín Darío,Bahía Blanca,Buenos Aires
-3,Mencionado,TASSARAManuel,Localidad Desconocida,Santa Fe
-3,Mencionado,TONELLOJuan Manuel,Localidad Desconocida,Ciudad de Buenos Aires
+Nivel,Premio,Nombres,Localidad,Provincia,Género
+1,Campeón,GROISMAN Leandro,Localidad Desconocida,Ciudad de BuenosAires,M
+1,Primer Subcampeón,BOLOGNINI Laura,La Plata,Buenos Aires,F
+1,Segundo Subcampeón,ANGIONO Ivan,Trelew,La Pampa,M
+1,Mencionado,ARONNAMaría Soledad,Localidad Desconocida,Santa Fe,F
+1,Mencionado,BIAGIOLIEric Javier,Casilda,Santa Fe,M
+1,Mencionado,CIANCINicolás Emanuel,Bernal,Buenos Aires,M
+1,Mencionado,DAL LAGOPablo,Localidad Desconocida,Córdoba,M
+1,Mencionado,DE LACRUZ THEA Jeremías Pablo,VillaMercedes,San Luis,M
+1,Mencionado,LYNCHBenito Miguel,Cipolletti,Río Negro,M
+1,Mencionado,MIRANDAMartín Santiago,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,PÉREZGONZALEZ Santiago Nicolás,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,PEZZATTIPatricio Agustín,San Nicolás,Buenos Aires,M
+1,Mencionado,ROYOFrancisco,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,SZYLDMartín,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,YUHJTMANSergio Andrés,Localidad Desconocida,Ciudad de Buenos Aires,M
+2,Campeón,PASTAWSKI Fernando,Localidad Desconocida,Córdoba,M
+2,Primer Subcampeón,RODRIGUEZ Juan Sebastián,Localidad Desconocida,Córdoba,M
+2,Segundo Subcampeón,DEL HOYO Matías,Necochea,Buenos Aires,M
+2,Mencionado,BASALDELLAFranco,Localidad Desconocida,Santa Fe,M
+2,Mencionado,BELARDINELLIJuan Manuel,Rosario,Sta. Fé,M
+2,Mencionado,BLANCOEugenio,Localidad Desconocida,Ciudad de Buenos Aires,M
+2,Mencionado,"CORRADI,Tadeo",Localidad Desconocida,Santa Fe,M
+2,Mencionado,DELBLANCO Gabriel Sebastián,Localidad Desconocida,Córdoba,M
+2,Mencionado,FEALZUBIMENDI María Soledad,Bahía Blanca,Buenos Aires,F
+2,Mencionado,LOWENTHALQUASTLER Laura Carolina,Localidad Desconocida,Ciudad de Buenos Aires,F
+2,Mencionado,MOREIRAVARANESE Iliana Cristina,Localidad Desconocida,Campana,F
+2,Mencionado,ROSLANFrancisco,Localidad Desconocida,Ciudad de Buenos Aires,M
+3,Campeón,MEREB Martín,Localidad Desconocida,Ciudad de Buenos Aires,M
+3,Primer Subcampeón,FUXMAN Juan Ignacio,Tortuguitas,Buenos Aires,M
+3,Segundo Subcampeón,"SACCHINI, Jorge",Localidad Desconocida,Santa Fe,M
+3,Mencionado,BARMAKJonathan Ariel,Localidad Desconocida,Ciudad de Buenos Aires,M
+3,Mencionado,MOISSETDE ESPANES Daniel Fernando,Localidad Desconocida,Córdoba,M
+3,Mencionado,NAGUILJorge Luis,Río Gallegos,Santa Cruz,M
+3,Mencionado,SAFEMartín Darío,Bahía Blanca,Buenos Aires,M
+3,Mencionado,TASSARAManuel,Localidad Desconocida,Santa Fe,M
+3,Mencionado,TONELLOJuan Manuel,Localidad Desconocida,Ciudad de Buenos Aires,M

@@ -1,62 +1,62 @@
-Nivel,Premio,Nombres,Localidad,Provincia
-1,Campeón,CAMPEON: Nicolás Ponieman,Localidad Desconocida,Ciudad de Buenos Aires
-1,Primer Subcampeón,Gonzalo Barrera Borla ,Localidad Desconocida,Provincia Desconocida
-1,Segundo Subcampeón,Darío Jair Ajzensztad,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,Gonzalo Chebi ,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,Juan Manuel Cufre,San Antonio de Areco,Buenos Aires
-1,Mencionado,Sebastian Martin Curi,Victoria,Buenos Aires
-1,Mencionado,Federico Do Pino,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,Juan Andrés Dodyk ,Avellaneda,  Buenos Aires
-1,Mencionado,Alberto Jose Ferrari ,Rosario,Santa Fe
-1,Mencionado,Sara Fanny Figueroa,Localidad Desconocida,Buenos Aires
-1,Mencionado,Gastón Nicolás Franco Castillo ,Florida,Buenos Aires
-1,Mencionado,Damián Alan Gagliano,Localidad Desconocida,Neuquen
-1,Mencionado,Alan Matías Givre,Localidad Desconocida,  Ciudad de Buenos Aires
-1,Mencionado,Yair Ezequiel Litman,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,Emilio Manuel Martinez,Localidad Desconocida,Ciudad de Buenos Aires
-1,Mencionado,Fernando Ezequiel Oviedo,Posadas,Misiones
-1,Mencionado,Gabriel Horacio Ré,Ranelagh,Buenos Aires
-1,Mencionado,Nicolás Agustín Rodriguez Castro,San Isidro,  Buenos Aires
-1,Mencionado,Matias Saucedo,Mercedes,  Corrientes
-1,Mencionado,Nicolas Andres Villagran Dos Santos,Villa Ballester,  Buenos Aires
-1,Mencionado,Andres Osvaldo Zanotti E E M N° 214 Dr Mariano Moreno,Localidad Desconocida,  Santa Fe
-2,Campeón,Julián Martín Eisenschlos,Localidad Desconocida,Ciudad de Buenos Aires
-2,Primer Subcampeón,Javier Martín Corti,Alcorta,Santa Fe
-2,Segundo Subcampeón,Magali,Localidad Desconocida,Provincia Desconocida
-2,Mencionado,Pablo Blanc,Concordia,Entre Ríos
-2,Mencionado,Alejandro Brondino,Villa Carlos Paz,Córdoba
-2,Mencionado,Marco Antonio Bustamante,Localidad Desconocida,Córdoba
-2,Mencionado,Lucio Campoy Morist,Localidad Desconocida,Mendoza
-2,Mencionado,Fabio Ariel Drucker,Martínez,Buenos Aires
-2,Mencionado,Leonardo Ariel Elías,Guaymallen,Mendoza
-2,Mencionado,Eugenia Ruth Fernández,Localidad Desconocida,Córdoba
-2,Mencionado,Esteban Guillermo García,Pilar,Buenos Aires
-2,Mencionado,Agustín Santiago Gutiérrez,Munro,Buenos Aires
-2,Mencionado,Pablo Mauricio Jeger,San Miguel de Tucumán,Tucumán
-2,Mencionado,Nicolás Komanski,Bahía Blanca,Buenos Aires
-2,Mencionado,Pablo Andrés Mammi,Pilar,Buenos Aires
-2,Mencionado,Leandro Ismael Medina,Merlo,Buenos Aires
-2,Mencionado,Maria Paula Menchon,Tandil,Buenos Aires
-2,Mencionado,Mauro Leandro Milidoni,Morón,Buenos Aires
-2,Mencionado,Roberto Aníbal Morales,La Plata,Buenos Aires
-2,Mencionado,Esteban Ricardo Ortellado,Localidad Desconocida,Formosa
-2,Mencionado,Fernando Javier Pereyra,Localidad Desconocida,Corrientes
-2,Mencionado,Cynthia Soledad Recchi,Localidad Desconocida,Ciudad de Buenos Aires
-2,Mencionado,Juan Pablo Rinaldi,Rosario,Santa Fe
-2,Mencionado,Juan Manuel Ríos,San Salvador de Jujuy,Jujuy
-2,Mencionado,Gabriel Rodriquez,Localidad Desconocida,Córdoba
-2,Mencionado,Ignacio Agustín Rossi,Escobar,Buenos Aires
-2,Mencionado,Sebastián Rossi,Álvarez,Santa Fe
-2,Mencionado,Facundo Sánchez Porta,Localidad Desconocida,Córdoba
-2,Mencionado,Pablo Gastón Terrén,San Antonio de Areco,Buenos Aires
-2,Mencionado,Luciano Ezequiel Vistos,Localidad Desconocida,Ciudad de Buenos Aires
-2,Mencionado,Federico Daniel Waisberg,Localidad Desconocida,Ciudad de Buenos Aires
-2,Mencionado,Pablo Nicolás Zimmermann,Rosario,Santa Fe
-3,Campeón,Germán Sergio Gieczewski,Localidad Desconocida,Provincia Desconocida
-3,Primer Subcampeón,Maximiliano Javier Camporino,Localidad Desconocida,Provincia Desconocida
-3,Segundo Subcampeón,Gabriel Carvajal,Zárate,Buenos Aires
-3,Mencionado,Tomás Ibarlucía,Tandil,Buenos Aires
-3,Mencionado,Sebastián Katz,Localidad Desconocida,Ciudad de Buenos Aires
-3,Mencionado,Nicolás Romero,Posadas,Misiones
-3,Mencionado,Lucas Sánchez,San Miguel de Tucumán,Tucumán
-3,Mencionado,Leopoldo Taravilse,La Plata,Buenos Aires
+Nivel,Premio,Nombres,Localidad,Provincia,Género
+1,Campeón,Nicolás Ponieman,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Primer Subcampeón,Gonzalo Barrera Borla ,Localidad Desconocida,Provincia Desconocida,M
+1,Segundo Subcampeón,Darío Jair Ajzensztad,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,Gonzalo Chebi ,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,Juan Manuel Cufre,San Antonio de Areco,Buenos Aires,M
+1,Mencionado,Sebastian Martin Curi,Victoria,Buenos Aires,M
+1,Mencionado,Federico Do Pino,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,Juan Andrés Dodyk ,Avellaneda,  Buenos Aires,M
+1,Mencionado,Alberto Jose Ferrari ,Rosario,Santa Fe,M
+1,Mencionado,Sara Fanny Figueroa,Localidad Desconocida,Buenos Aires,F
+1,Mencionado,Gastón Nicolás Franco Castillo ,Florida,Buenos Aires,M
+1,Mencionado,Damián Alan Gagliano,Localidad Desconocida,Neuquen,M
+1,Mencionado,Alan Matías Givre,Localidad Desconocida,  Ciudad de Buenos Aires,M
+1,Mencionado,Yair Ezequiel Litman,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,Emilio Manuel Martinez,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Mencionado,Fernando Ezequiel Oviedo,Posadas,Misiones,M
+1,Mencionado,Gabriel Horacio Ré,Ranelagh,Buenos Aires,M
+1,Mencionado,Nicolás Agustín Rodriguez Castro,San Isidro,  Buenos Aires,M
+1,Mencionado,Matias Saucedo,Mercedes,  Corrientes,M
+1,Mencionado,Nicolas Andres Villagran Dos Santos,Villa Ballester,  Buenos Aires,M
+1,Mencionado,Andres Osvaldo Zanotti E E M N° 214 Dr Mariano Moreno,Localidad Desconocida,  Santa Fe,M
+2,Campeón,Julián Martín Eisenschlos,Localidad Desconocida,Ciudad de Buenos Aires,M
+2,Primer Subcampeón,Javier Martín Corti,Alcorta,Santa Fe,M
+2,Segundo Subcampeón,Magali,Localidad Desconocida,Provincia Desconocida,F
+2,Mencionado,Pablo Blanc,Concordia,Entre Ríos,M
+2,Mencionado,Alejandro Brondino,Villa Carlos Paz,Córdoba,M
+2,Mencionado,Marco Antonio Bustamante,Localidad Desconocida,Córdoba,M
+2,Mencionado,Lucio Campoy Morist,Localidad Desconocida,Mendoza,M
+2,Mencionado,Fabio Ariel Drucker,Martínez,Buenos Aires,M
+2,Mencionado,Leonardo Ariel Elías,Guaymallen,Mendoza,M
+2,Mencionado,Eugenia Ruth Fernández,Localidad Desconocida,Córdoba,F
+2,Mencionado,Esteban Guillermo García,Pilar,Buenos Aires,M
+2,Mencionado,Agustín Santiago Gutiérrez,Munro,Buenos Aires,M
+2,Mencionado,Pablo Mauricio Jeger,San Miguel de Tucumán,Tucumán,M
+2,Mencionado,Nicolás Komanski,Bahía Blanca,Buenos Aires,M
+2,Mencionado,Pablo Andrés Mammi,Pilar,Buenos Aires,M
+2,Mencionado,Leandro Ismael Medina,Merlo,Buenos Aires,M
+2,Mencionado,Maria Paula Menchon,Tandil,Buenos Aires,F
+2,Mencionado,Mauro Leandro Milidoni,Morón,Buenos Aires,M
+2,Mencionado,Roberto Aníbal Morales,La Plata,Buenos Aires,M
+2,Mencionado,Esteban Ricardo Ortellado,Localidad Desconocida,Formosa,M
+2,Mencionado,Fernando Javier Pereyra,Localidad Desconocida,Corrientes,M
+2,Mencionado,Cynthia Soledad Recchi,Localidad Desconocida,Ciudad de Buenos Aires,F
+2,Mencionado,Juan Pablo Rinaldi,Rosario,Santa Fe,M
+2,Mencionado,Juan Manuel Ríos,San Salvador de Jujuy,Jujuy,M
+2,Mencionado,Gabriel Rodriquez,Localidad Desconocida,Córdoba,M
+2,Mencionado,Ignacio Agustín Rossi,Escobar,Buenos Aires,M
+2,Mencionado,Sebastián Rossi,Álvarez,Santa Fe,M
+2,Mencionado,Facundo Sánchez Porta,Localidad Desconocida,Córdoba,M
+2,Mencionado,Pablo Gastón Terrén,San Antonio de Areco,Buenos Aires,M
+2,Mencionado,Luciano Ezequiel Vistos,Localidad Desconocida,Ciudad de Buenos Aires,M
+2,Mencionado,Federico Daniel Waisberg,Localidad Desconocida,Ciudad de Buenos Aires,M
+2,Mencionado,Pablo Nicolás Zimmermann,Rosario,Santa Fe,M
+3,Campeón,Germán Sergio Gieczewski,Localidad Desconocida,Provincia Desconocida,M
+3,Primer Subcampeón,Maximiliano Javier Camporino,Localidad Desconocida,Provincia Desconocida,M
+3,Segundo Subcampeón,Gabriel Carvajal,Zárate,Buenos Aires,M
+3,Mencionado,Tomás Ibarlucía,Tandil,Buenos Aires,M
+3,Mencionado,Sebastián Katz,Localidad Desconocida,Ciudad de Buenos Aires,M
+3,Mencionado,Nicolás Romero,Posadas,Misiones,M
+3,Mencionado,Lucas Sánchez,San Miguel de Tucumán,Tucumán,M
+3,Mencionado,Leopoldo Taravilse,La Plata,Buenos Aires,M

@@ -1,67 +1,67 @@
-Nivel,Premio,Nombres,Localidad,Provincia
-1,Campeón,ALVAREZ Nicolás Alejandro,Localidad Desconocida,Bahía Blanca
-1,Primer Subcampeón,REARTE Lucas Agustín,Localidad Desconocida,Córdoba
-1,Segundo Subcampeón,IRIARTE MUÑOZ José Miguel,Tartagal,Salta
-1,Mencionado,ALGÁNMaría Emilia,rufino,Santa Fe
-1,Mencionado,ANDRADAEmanuel,Hurlingham,Buenos Aires
-1,Mencionado,CARELLAAlfredo Raúl,Localidad Desconocida,Mar del Plata
-1,Mencionado,CURETTI José,Localidad Desconocida,Neuquén
-1,Mencionado,DAL LAGOPablo,Localidad Desconocida,Córdoba
-1,Mencionado,DEYMONNAZAlejandro,Localidad Desconocida,Córdoba
-1,Mencionado,DI FIORECarlos,Parada Robles,Buenos Aires
-1,Mencionado,FERNANDEZXimena,San José Obrero de Caseros,BuenosAires
-1,Mencionado,GARCÍAFederico,San Rafael,Mendoza
-1,Mencionado,GENAAnabella,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-1,Mencionado,GOLDINMatías,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-1,Mencionado,GOMEZNicolás,Tandil,Buenos Aires
-1,Mencionado,HUCKGerardo,Localidad Desconocida,Santa Fe
-1,Mencionado,ITHURALDE Raúl,Localidad Desconocida,Quilmes
-1,Mencionado,LIX-KLETT Alejandro,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-1,Mencionado,MANGIAROTTI Franco,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-1,Mencionado,MATTES Addy,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-1,Mencionado,ORTEGA CASTELANGerardo,Localidad Desconocida,Santa Fe
-1,Mencionado,PACIO Julio César,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-1,Mencionado,PALLADINO Santiago,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-1,Mencionado,PISTOIA Pablo,Localidad Desconocida,Formosa
-1,Mencionado,RITIRO Emilio,Localidad Desconocida,Mar del Plata
-2,Campeón,GROISMAN Leandro,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Primer Subcampeón,DEL HOYO Matías,Localidad Desconocida,Necochea
-2,Segundo Subcampeón,"BOLOGNINI, Laura",La Plata,Buenos Aires
-2,Mencionado,AMATOIgnacio,Florida,Buenos Aires
-2,Mencionado,ANGIONOIván Ezequiel,Trenel,La Pampa
-2,Mencionado,ARONNAMaría Soledad,Localidad Desconocida,Santa Fe
-2,Mencionado,BARRAL Pablo,Berazategui,Buenos Aires
-2,Mencionado,BELARDINELLI JuanManuel,Localidad Desconocida,Santa Fe
-2,Mencionado,BELLO Ignacio,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Mencionado,BIAGIOLI Eric,Localidad Desconocida,Santa Fe
-2,Mencionado,CELAYES Pablo,Localidad Desconocida,Córdoba
-2,Mencionado,"CHAMORRO, Juan Manuel",Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Mencionado,CIANCI NicolásEmanuel,Localidad Desconocida,Quilmes
-2,Mencionado,CORONADO Víctor Hugo,Orán,Salta
-2,Mencionado,CORRADITadeo,Localidad Desconocida,Santa Fe
-2,Mencionado,COSTANicolás Andrés,Florida,Buenos Aires
-2,Mencionado,CUNCIRomán,Beccar,Buenos Aires
-2,Mencionado,FEALZUBIMENDI María Soledad,Bahía Blanca,Buenos Aires
-2,Mencionado,GARCÍAESCARDÓ Fernando,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Mencionado,HALSBAND Melisa,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Mencionado,MATERYN Diego,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Mencionado,PEYRE Tomás,Las Flores,Buenos Aires
-2,Mencionado,POKORSKI Diego,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Mencionado,ROSLANFrancisco,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-2,Mencionado,YUHJTMANSergio Andrés,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-3,Campeón,MEREB Martín,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-3,Primer Subcampeón,PASTAWSKI Fernando,Localidad Desconocida,Córdoba
-3,Segundo Subcampeón,RODRÍGUEZ Juan Sebastián,Localidad Desconocida,Córdoba
-3,Mencionado,BARMAKJonathan Ariel,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-3,Mencionado,BONOMO Luciana,Localidad Desconocida,Bariloche
-3,Mencionado,DI TADA Nicolás,Localidad Desconocida,CapitalFederal
-3,Mencionado,HOROVITZ Camilo,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-3,Mencionado,LAURELLA Sergio,Localidad Desconocida,Quilmes
-3,Mencionado,MARINSEK Emiliano,Villa Bosch,Buenos Aires
-3,Mencionado,"MASSERA, Lisandro",Localidad Desconocida,Santa Fe
-3,Mencionado,MATERA Juan Mauricio,Localidad Desconocida,La Plata
-3,Mencionado,"MENODZA BATGORRIA,Carlos",Localidad Desconocida,Laferrere
-3,Mencionado,MOISSETDE ESPANES Daniel Fernando,Localidad Desconocida,Córdoba
-3,Mencionado,NAPPENicolás,Localidad Desconocida,Ciudad Autónoma de Buenos Aires
-3,Mencionado,VINZONSabrina,Localidad Desconocida,San Miguel
-3,Mencionado,YONAMINERicardo,Florencio Varela,Buenos Aires
+Nivel,Premio,Nombres,Localidad,Provincia,Género
+1,Campeón,ALVAREZ Nicolás Alejandro,Localidad Desconocida,Bahía Blanca,M
+1,Primer Subcampeón,REARTE Lucas Agustín,Localidad Desconocida,Córdoba,M
+1,Segundo Subcampeón,IRIARTE MUÑOZ José Miguel,Tartagal,Salta,M
+1,Mencionado,ALGÁNMaría Emilia,rufino,Santa Fe,F
+1,Mencionado,ANDRADAEmanuel,Hurlingham,Buenos Aires,M
+1,Mencionado,CARELLAAlfredo Raúl,Localidad Desconocida,Mar del Plata,M
+1,Mencionado,CURETTI José,Localidad Desconocida,Neuquén,M
+1,Mencionado,DAL LAGOPablo,Localidad Desconocida,Córdoba,M
+1,Mencionado,DEYMONNAZAlejandro,Localidad Desconocida,Córdoba,M
+1,Mencionado,DI FIORECarlos,Parada Robles,Buenos Aires,M
+1,Mencionado,FERNANDEZXimena,San José Obrero de Caseros,BuenosAires,F
+1,Mencionado,GARCÍAFederico,San Rafael,Mendoza,M
+1,Mencionado,GENAAnabella,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,F
+1,Mencionado,GOLDINMatías,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+1,Mencionado,GOMEZNicolás,Tandil,Buenos Aires,M
+1,Mencionado,HUCKGerardo,Localidad Desconocida,Santa Fe,M
+1,Mencionado,ITHURALDE Raúl,Localidad Desconocida,Quilmes,M
+1,Mencionado,LIX-KLETT Alejandro,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+1,Mencionado,MANGIAROTTI Franco,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+1,Mencionado,MATTES Addy,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,2
+1,Mencionado,ORTEGA CASTELANGerardo,Localidad Desconocida,Santa Fe,M
+1,Mencionado,PACIO Julio César,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+1,Mencionado,PALLADINO Santiago,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+1,Mencionado,PISTOIA Pablo,Localidad Desconocida,Formosa,M
+1,Mencionado,RITIRO Emilio,Localidad Desconocida,Mar del Plata,M
+2,Campeón,GROISMAN Leandro,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+2,Primer Subcampeón,DEL HOYO Matías,Localidad Desconocida,Necochea,M
+2,Segundo Subcampeón,"BOLOGNINI, Laura",La Plata,Buenos Aires,F
+2,Mencionado,AMATOIgnacio,Florida,Buenos Aires,M
+2,Mencionado,ANGIONOIván Ezequiel,Trenel,La Pampa,M
+2,Mencionado,ARONNAMaría Soledad,Localidad Desconocida,Santa Fe,F
+2,Mencionado,BARRAL Pablo,Berazategui,Buenos Aires,M
+2,Mencionado,BELARDINELLI JuanManuel,Localidad Desconocida,Santa Fe,2
+2,Mencionado,BELLO Ignacio,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,BIAGIOLI Eric,Localidad Desconocida,Santa Fe,M
+2,Mencionado,CELAYES Pablo,Localidad Desconocida,Córdoba,M
+2,Mencionado,"CHAMORRO, Juan Manuel",Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,CIANCI NicolásEmanuel,Localidad Desconocida,Quilmes,2
+2,Mencionado,CORONADO Víctor Hugo,Orán,Salta,M
+2,Mencionado,CORRADITadeo,Localidad Desconocida,Santa Fe,M
+2,Mencionado,COSTANicolás Andrés,Florida,Buenos Aires,M
+2,Mencionado,CUNCIRomán,Beccar,Buenos Aires,M
+2,Mencionado,FEALZUBIMENDI María Soledad,Bahía Blanca,Buenos Aires,F
+2,Mencionado,GARCÍAESCARDÓ Fernando,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,HALSBAND Melisa,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,F
+2,Mencionado,MATERYN Diego,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,PEYRE Tomás,Las Flores,Buenos Aires,M
+2,Mencionado,POKORSKI Diego,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,ROSLANFrancisco,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,YUHJTMANSergio Andrés,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+3,Campeón,MEREB Martín,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+3,Primer Subcampeón,PASTAWSKI Fernando,Localidad Desconocida,Córdoba,M
+3,Segundo Subcampeón,RODRÍGUEZ Juan Sebastián,Localidad Desconocida,Córdoba,M
+3,Mencionado,BARMAKJonathan Ariel,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+3,Mencionado,BONOMO Luciana,Localidad Desconocida,Bariloche,F
+3,Mencionado,DI TADA Nicolás,Localidad Desconocida,CapitalFederal,M
+3,Mencionado,HOROVITZ Camilo,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+3,Mencionado,LAURELLA Sergio,Localidad Desconocida,Quilmes,M
+3,Mencionado,MARINSEK Emiliano,Villa Bosch,Buenos Aires,M
+3,Mencionado,"MASSERA, Lisandro",Localidad Desconocida,Santa Fe,M
+3,Mencionado,MATERA Juan Mauricio,Localidad Desconocida,La Plata,M
+3,Mencionado,"MENODZA BATGORRIA,Carlos",Localidad Desconocida,Laferrere,M
+3,Mencionado,MOISSETDE ESPANES Daniel Fernando,Localidad Desconocida,Córdoba,M
+3,Mencionado,NAPPENicolás,Localidad Desconocida,Ciudad Autónoma de Buenos Aires,M
+3,Mencionado,VINZONSabrina,Localidad Desconocida,San Miguel,F
+3,Mencionado,YONAMINERicardo,Florencio Varela,Buenos Aires,M

@@ -9,7 +9,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Andrada,Emiliano,Olivia,Córdoba,M
 1,Angonoa,Vanesa Lucía,Hersilia,Santa Fe,F
 1,Antinaud,Christian Miguel,San Antonio de Areco,Buenos Aires,M
-1,Antonelli,Lihuen,Lobos,Buenos Aires,UNKNOWN
+1,Antonelli,Lihuen,Lobos,Buenos Aires,2
 1,Anzalaz Sigampa,Gonzalo Uriel,Chilecito,La Rioja,M
 1,Arañaráz,Mario Esteban,Santiago del Estero,Santiago del Estero,M
 1,Arias,Camila Aylén,Caleta Olivia,Santa Cruz,F
@@ -23,7 +23,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Baro,Gonzalo Adrián,Murphy,Santa Fe,M
 1,Barrio,Daniel,San Fernando,Buenos Aires,M
 1,Baschkier,Eliezer,San Miguel de Tucumán,Tucumán,M
-1,Belamendia,Azul María,Bragado,Buenos Aires,UNKNOWN
+1,Belamendia,Azul María,Bragado,Buenos Aires,2
 1,Beltrami,Annelise,Gualeguay,Entre Ríos,F
 1,Benedetto,Enrique José Emilio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Bengochea,Joaquín,Rauch,Buenos Aires,M
@@ -310,7 +310,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Ferrari,Alberto Jose,Rosario,Santa Fe,M
 2,Ferrer,Martín Ezequiel,Córdoba,Córdoba,M
 2,Fessia,Gabriel,Porteña,Córdoba,M
-2,Frances,Candice,Rosario,Santa Fe,UNKNOWN
+2,Frances,Candice,Rosario,Santa Fe,2
 2,Franco Castillo,Gastón Nicolás,Florida,Buenos Aires,M
 2,Furlong,Fiona Ina,Pilar,Buenos Aires,F
 2,Gagliano,Damian Alan,Neuquén,Neuquén,M
@@ -488,7 +488,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Ilardo,Juan Carlos,Caseros,Buenos Aires,M
 3,Irrera Condines,Pablo Martín,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Jenkins,Sergio Ariel,Santa Fe,Santa Fe,M
-3,Liang,Yueh-Wei,Rosario,Santa Fe,UNKNOWN
+3,Liang,Yueh-Wei,Rosario,Santa Fe,2
 3,Loglen,Juan Cruz,Bahía Blanca,Buenos Aires,M
 3,Luque,Juan Ignacio,Rosario de la Frontera,Salta,M
 3,Massilo,Sergio Maximiliano,N. de la Riestra,Buenos Aires,M

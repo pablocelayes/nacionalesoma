@@ -68,7 +68,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Cejas,Damián Fernando,San Martín,Buenos Aires,M
 1,Celayes,Pablo Gabriel,Córdoba,Córdoba,M
 1,Chasco,Mariano Ariel,Rufino,Santa Fe,M
-1,Cheng,Shih,Ho,Capital Federal,UNKNOWN
+1,Cheng,Shih,Ho,Capital Federal,2
 1,Chillo,Nicolás Agustín,Tigre,Buenos Aires,M
 1,Cianci,Nicolás Emanuel,Bernal,Buenos Aires,M
 1,Clavijo,Bernardo José,Capital Federal,Ciudad Autónoma de Buenos Aires,M
@@ -158,7 +158,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Halsband,Melisa Coral,Capital Federal,Ciudad Autónoma de Buenos Aires,F
 1,Hardoy,Pedro,Lincoln,Buenos Aires,M
 1,Herrada,Natalia Soledad,Necochea,Buenos Aires,F
-1,Hnatiuk,Ala,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+1,Hnatiuk,Ala,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 1,Hopenhayn,Pablo,Olivos,Buenos Aires,M
 1,Horovitz,Camilo Alejandro,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Iacobacci,Ignacio Javier,Capital Federal,Ciudad Autónoma de Buenos Aires,M
@@ -308,10 +308,10 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Verrecchia,Carlos Francisco,Necochea,Buenos Aires,M
 1,Viguié,Soledad Beatriz,Caseros,Buenos Aires,F
 1,Villalobo,Erika Luciana,San Miguel de Tucumán,Tucumán,F
-1,Vivas,Quimey,Ituzaingó,Buenos Aires,UNKNOWN
+1,Vivas,Quimey,Ituzaingó,Buenos Aires,2
 1,Weber,Fernando Oscar,La Plata,Buenos Aires,M
 1,Weisburd,Jonatan Brian,Córdoba,Córdoba,M
-1,Yang,Yue,Lomas de Zamora,Buenos Aires,UNKNOWN
+1,Yang,Yue,Lomas de Zamora,Buenos Aires,2
 1,Yu,Fernando,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Yuhjtman,Sergio Andrés,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Zalduendo,Tomás Eduardo,Campana,Buenos Aires,M

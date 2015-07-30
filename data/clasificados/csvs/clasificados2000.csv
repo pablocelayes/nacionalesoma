@@ -94,7 +94,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Guazzaroni,Martín Jesús,Villa Huidobro,Córdoba,M
 1,Hardoy,Pedro,Lincoln,Buenos Aires,M
 1,Herrada,Natalia Soledad,Necochea,Buenos Aires,F
-1,Hnatiuk,Ala,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+1,Hnatiuk,Ala,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 1,Hubner,Nicolás Martín,Junín,Buenos Aires,M
 1,Huck,Gerardo,Rosario,Santa Fe,M
 1,Iacusso,Alexis Gabriel,Junín,Buenos Aires,M
@@ -210,9 +210,9 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Vicich,Federico,Castelar,Buenos Aires,M
 1,Viegas,Diego Nicolás,Burzaco,Buenos Aires,M
 1,Villalobo,Erika Luciana,San Miguel de Tucumán,Tucumán,F
-1,Vivas,Quimey,Ituzaingó,Buenos Aires,UNKNOWN
+1,Vivas,Quimey,Ituzaingó,Buenos Aires,2
 1,Weisburd,Jonatan Brian,Córdoba,Córdoba,M
-1,Yang,Yue,Lomas de Zamora,Buenos Aires,UNKNOWN
+1,Yang,Yue,Lomas de Zamora,Buenos Aires,2
 1,Yim,Sebastián,La Matanza,Buenos Aires,M
 1,Yu,Fernando,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Zalazar,Lucía,Mar del Plata,Buenos Aires,F
@@ -344,7 +344,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Martínez,Nancy Carolina,Lanús,Buenos Aires,F
 2,Martínez,Walter Oscar,Pilar,Buenos Aires,M
 2,Materyn,Diego Ariel,Capital Federal,Ciudad Autónoma de Buenos Aires,M
-2,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 2,Melegatti,Gisela,Santa Isabel,Santa Fe,F
 2,Mezza,Gabriela Natalia,Villa Cañás,Santa Fe,F
 2,Mingorona,Ernesto,Capital Federal,Ciudad Autónoma de Buenos Aires,M
@@ -421,7 +421,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Weibel,Mario Ignacio,Santa Fe,Santa Fe,M
 2,Weiner,Jesica Mariel,Rafaela,Santa Fe,F
 2,Yepes,Mariano Luis,Merlo,Buenos Aires,M
-2,Yoo,Han Seok,Baradero,Buenos Aires,UNKNOWN
+2,Yoo,Han Seok,Baradero,Buenos Aires,2
 2,Yu,Gabriela,Capital Federal,Ciudad Autónoma de Buenos Aires,F
 2,Yuhjtman,Sergio Andrés,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 2,Zir,Sergio Javier,L.N.Alem,Misiones,M
@@ -444,7 +444,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Burgués,Hernán,Pergamino,Buenos Aires,M
 3,Calegari,Ricardo Nicolás,Neuquén,Neuquén,M
 3,Celayes,Pablo Gabriel,Córdoba,Córdoba,M
-3,Cheng,Shih Ho,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+3,Cheng,Shih Ho,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 3,Chiora,Leandro Esteban,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 3,Clavijo,Bernardo José,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 3,Colman,Cintia Verónica,Ezpeleta,Buenos Aires,F

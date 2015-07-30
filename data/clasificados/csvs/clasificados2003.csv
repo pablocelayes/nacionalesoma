@@ -195,7 +195,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Steimbreger,Ceferino,Plottier,Neuquén,M
 1,Subils,Lucía Ana,Rosario,Santa Fe,F
 1,Szittyay,Iván,Rosario,Santa Fe,M
-1,Tang,Shuyong,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+1,Tang,Shuyong,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 1,Tassara,Federico Martín,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Terrén,Pablo Gastón,San Antonio de Areco,Buenos Aires,M
 1,Thibaud,Iván,San Isidro,Buenos Aires,M
@@ -233,7 +233,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Acosta,Reinaldo Emir,Formosa,Formosa,M
 2,Aguirre,Emilio Andrés,Orán,Salta,M
 2,Aguirre,Melisa Inés,Villa Ramallo,Buenos Aires,F
-2,Albertinazzi,Wanda,Suardi,Santa Fe,UNKNOWN
+2,Albertinazzi,Wanda,Suardi,Santa Fe,2
 2,Almarza,Javier Ignacio,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Amura,Pablo Ariel,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Anaya,Daniel Carlos,Lomas de Zamora,Buenos Aires,M
@@ -342,7 +342,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Kligman,Julio Roberto,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Lafuente,Ramiro,La Plata,Buenos Aires,M
 2,Ledesma,Lucila María,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Lin,Miao Chan,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Lin,Miao Chan,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 2,López Sáez,José Ignacio,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Lozano Elías,Juan Carlos,Temperley,Buenos Aires,M
 2,Lugones,Rodrigo,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
@@ -503,7 +503,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Iezzi,Juan Carlos,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Josebachuili Ogando,Mariela Gisele,Burzaco,Buenos Aires,F
 3,Kina,Mauro Javier,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Kliger,Rafi,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+3,Kliger,Rafi,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 3,Lauro Quiroga,Juan Manuel,Villa Celina,Buenos Aires,M
 3,Lisi,Carla,San Nicolás,Buenos Aires,F
 3,López,Emiliano Federico,Hudson,Buenos Aires,M
@@ -557,8 +557,8 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Vallejos,Santiago,Derqui,Buenos Aires,M
 3,Velázquez,Juan Pablo,Córdoba,Córdoba,M
 3,Uicich,Federico Daniel,Castelar,Buenos Aires,M
-3,Vivas,Quimey,Ituzaingó,Buenos Aires,UNKNOWN
+3,Vivas,Quimey,Ituzaingó,Buenos Aires,2
 3,Weitz,Gabriel Gerardo,Rosario,Santa Fe,M
-3,Yang,Yue,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+3,Yang,Yue,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 3,Yu,Fernando,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Zalduendo,Tomás Eduardo,Campana,Buenos Aires,M

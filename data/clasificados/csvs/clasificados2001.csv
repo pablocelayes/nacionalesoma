@@ -256,7 +256,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Castets,Pablo Joaquín,Río Gallegos,Santa Cruz,M
 2,Cavalieri,Paolo,Cañada de Gómez,Santa Fe,M
 2,Celis,Melina,Rafaela,Santa Fe,F
-2,Chao,Tzu,Chi,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Chao,Tzu,Chi,Ciudad Autónoma de Buenos Aires,2
 2,Chapino,Victorio Francisco,Paraná,Entre Ríos,M
 2,Chehem,Marianela,Rosario,Santa Fe,F
 2,Chiapella,Marina Silvia,Rufino,Santa Fe,F
@@ -326,7 +326,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Hernández Orgeira,Gisela Marisol,Virreyes,Buenos Aires,F
 2,Herz,Gerardo,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 2,Hirschowitz,Alan Eloy,Capital Federal,Ciudad Autónoma de Buenos Aires,M
-2,Hnatiuk,Ala,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Hnatiuk,Ala,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 2,Huang,Fernando,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 2,Huck,Gerardo,Rosario,Santa Fe,M
 2,Iezzi,Juan Carlos,Capital Federal,Ciudad Autónoma de Buenos Aires,M
@@ -337,7 +337,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Josebachuili,Mariela Gisele,Burzaco,Buenos Aires,F
 2,Keller,Christian,Bahía Blanca,Buenos Aires,M
 2,Kina,Mauro Javier,Capital Federal,Ciudad Autónoma de Buenos Aires,M
-2,Kliger,Rafi,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Kliger,Rafi,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 2,Lauro Quiroga,Juan Manuel,Villa Celina,Buenos Aires,M
 2,Lazo,Juan Manuel,3 de Febrero,Buenos Aires,M
 2,Legeren,Pablo,San Isidro,Buenos Aires,M
@@ -365,7 +365,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Martínez,Jorge Alberto,Luján,Buenos Aires,M
 2,Martínez,Walter Oscar,Pilar,Buenos Aires,M
 2,Mascialino,Diego,Capital Federal,Ciudad Autónoma de Buenos Aires,M
-2,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 2,Médica,Eric David,Salliqueló,Buenos Aires,M
 2,Melgarejo,Christian Adrián,Isidro Casanova,Buenos Aires,M
 2,Mezza,Gabriela Natalia,Villa Cañás,Santa Fe,F
@@ -467,11 +467,11 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Villalba,José Martín,Rauch,Buenos Aires,M
 2,Villani,Daniela Verónica,Berazategui,Buenos Aires,F
 2,Vitale,Germán Alejandro,Posadas,Misiones,M
-2,Vivas,Quimey,Ituzaingó,Buenos Aires,UNKNOWN
+2,Vivas,Quimey,Ituzaingó,Buenos Aires,2
 2,Weibel,Mario Ignacio,Santa Fe,Santa Fe,M
 2,Weisburd,Alexis Marcos,Córdoba,Córdoba,M
 2,Weitz,Gabriel Gerardo,Rosario,Santa Fe,M
-2,Yang,Yue,Capital Federal,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Yang,Yue,Capital Federal,Ciudad Autónoma de Buenos Aires,2
 2,Yu,Fernando,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 2,Zago,Mariana,La Plata,Buenos Aires,F
 2,Zanenga,Heliana Paola,Formosa,Formosa,F

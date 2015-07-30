@@ -1,55 +1,55 @@
-Nivel,Premio,Nombres,Localidad,Provincia
-1,Campeón,Veronica Moyano,Localidad Desconocida,San Salvador de Jujuy
-1,Primer Subcampeón,Pedro Padilla ,Localidad Desconocida,Ciudad de Buenos Aires
-1,Segundo Subcampeón,Gabriel Carvajal ,Localidad Desconocida,Buenos Aires
-1,Mencionado,Mario Acosta,Formosa,Provincia No Conocida
-1,Mencionado,Lucas Andisco,Mar del Plata,Provincia No Conocida
-1,Mencionado,Marcelo Bolognini,La Plata,Provincia No Conocida
-1,Mencionado,Maximo Borrello,Vicente López,Provincia No Conocida
-1,Mencionado,Maximiliano Camporino,Buenos Aires,Provincia No Conocida
-1,Mencionado,Damián Copes,Santa Fe,Provincia No Conocida
-1,Mencionado,Cintia Corti,Santa Fe,Provincia No Conocida
-1,Mencionado,Maria Curetti,Escuela Provincial Nro. 2,Neuquén
-1,Mencionado,Ivanna de Benito,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
-1,Mencionado,Sebastián García,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
-1,Mencionado,Julián Gargiulo,Buenos Aires,Provincia No Conocida
-1,Mencionado,Ramiro Lafuente,La Plata,Provincia No Conocida
-1,Mencionado,Lucila Ledesma,Buenos Aires,Provincia No Conocida
-1,Mencionado,Alejandro Nuñez,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
-1,Mencionado,Esteban Pellegrino,Formosa,Provincia No Conocida
-1,Mencionado,Eriberto Roveri,Santa Fe,Provincia No Conocida
-1,Mencionado,Marcos Schifman,Buenos Aires,Provincia No Conocida
-2,Campeón,Carlos Di Fiore ,Buenos Aires,Buenos Aires
-2,Primer Subcampeón,Nicolás Gómez,Buenos Aires,Buenos Aires
-2,Segundo Subcampeón,Alejandro Deymonnaz,Buenos Aires,BuenosAires
-2,Mencionado,Luciana Alarcón,SantaFe,Provincia No Conocida
-2,Mencionado,Nicolás Álvarez,BuenosAires,Provincia No Conocida
-2,Mencionado,Marcelo Alvisio,Instituto Libre de Segunda Enseñanza,Ciudad deBuenos Aires
-2,Mencionado,Matías Butler,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
-2,Mencionado,Javier Cabello,Santa Fe,Provincia No Conocida
-2,Mencionado,Pablo Dal Lago,Córdoba,Provincia No Conocida
-2,Mencionado,Diego Gavinowich,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
-2,Mencionado,María Gabriela Guarino,Tucumán,Provincia No Conocida
-2,Mencionado,José Iriarte Muñoz,Salta,Provincia No Conocida
-2,Mencionado,Juan López Cristeche,Buenos Aires,Provincia No Conocida
-2,Mencionado,Franco Mangiarotti,Ciudad deBuenos Aires,Provincia No Conocida
-2,Mencionado,Daniel Mártin ,Buenos Aires,Provincia No Conocida
-2,Mencionado,Juan Morelli ,Santa Fe,Provincia No Conocida
-2,Mencionado,Pablo Pistoia,Formosa,Provincia No Conocida
-2,Mencionado,Marcos Ramírez ,Salta,Provincia No Conocida
-2,Mencionado,Lucas Rearte,Centro Educativo Cristo Rey,Córdoba
-2,Mencionado,Joaquín Rodríguez Nieva ,Ciudadde Buenos Aires,Ciudad Autónoma de Buenos Aires
-2,Mencionado,Mauro Subils,Santa Fe,Provincia No Conocida
-2,Mencionado,María Victoria Toso,Santa Fe,Provincia No Conocida
-2,Mencionado,Yue Yang,Buenos Aires,Provincia No Conocida
-2,Mencionado,Gabriel Weitz ,Santa Fe,Provincia No Conocida
-3,Campeón,Leandro Groisman ,Santa Fe,Escuela Superior de Comercio Carlos Pellegrini Ciudad de Buenos Aires
-3,Primer Subcampeón,José Gerez Cuevas,Santa Fe,Escuela Superior de Comercio Manuel Belgrano Cordoba
-3,Segundo Subcampeón,Melisa Halsband ,Santa Fe,Escuela Superior de Comercio Carlos Pellegrini Ciudad de Buenos Aires
-3,Mencionado,María Soledad Aronna -,Santa Fe,Provincia No Conocida
-3,Mencionado,Ivan Angiono ,Trenel,La Pampa
-3,Mencionado,Laura Bolognini,Buenos Aires,Provincia No Conocida
-3,Mencionado,Diego Lis,Cordoba,Provincia No Conocida
-3,Mencionado,Martín Miranda -,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
-3,Mencionado,Diego Pokorski -,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
-3,Mencionado,Francisco Roslan -,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires
+Nivel,Premio,Nombres,Localidad,Provincia,Género
+1,Campeón,Veronica Moyano,Localidad Desconocida,San Salvador de Jujuy,F
+1,Primer Subcampeón,Pedro Padilla ,Localidad Desconocida,Ciudad de Buenos Aires,M
+1,Segundo Subcampeón,Gabriel Carvajal ,Localidad Desconocida,Buenos Aires,M
+1,Mencionado,Mario Acosta,Formosa,Provincia No Conocida,M
+1,Mencionado,Lucas Andisco,Mar del Plata,Provincia No Conocida,M
+1,Mencionado,Marcelo Bolognini,La Plata,Provincia No Conocida,M
+1,Mencionado,Maximo Borrello,Vicente López,Provincia No Conocida,M
+1,Mencionado,Maximiliano Camporino,Buenos Aires,Provincia No Conocida,M
+1,Mencionado,Damián Copes,Santa Fe,Provincia No Conocida,M
+1,Mencionado,Cintia Corti,Santa Fe,Provincia No Conocida,F
+1,Mencionado,Maria Curetti,Escuela Provincial Nro. 2,Neuquén,F
+1,Mencionado,Ivanna de Benito,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
+1,Mencionado,Sebastián García,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+1,Mencionado,Julián Gargiulo,Buenos Aires,Provincia No Conocida,M
+1,Mencionado,Ramiro Lafuente,La Plata,Provincia No Conocida,M
+1,Mencionado,Lucila Ledesma,Buenos Aires,Provincia No Conocida,F
+1,Mencionado,Alejandro Nuñez,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+1,Mencionado,Esteban Pellegrino,Formosa,Provincia No Conocida,M
+1,Mencionado,Eriberto Roveri,Santa Fe,Provincia No Conocida,M
+1,Mencionado,Marcos Schifman,Buenos Aires,Provincia No Conocida,M
+2,Campeón,Carlos Di Fiore ,Buenos Aires,Buenos Aires,M
+2,Primer Subcampeón,Nicolás Gómez,Buenos Aires,Buenos Aires,M
+2,Segundo Subcampeón,Alejandro Deymonnaz,Buenos Aires,BuenosAires,M
+2,Mencionado,Luciana Alarcón,SantaFe,Provincia No Conocida,F
+2,Mencionado,Nicolás Álvarez,BuenosAires,Provincia No Conocida,M
+2,Mencionado,Marcelo Alvisio,Instituto Libre de Segunda Enseñanza,Ciudad deBuenos Aires,M
+2,Mencionado,Matías Butler,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,Javier Cabello,Santa Fe,Provincia No Conocida,M
+2,Mencionado,Pablo Dal Lago,Córdoba,Provincia No Conocida,M
+2,Mencionado,Diego Gavinowich,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,María Gabriela Guarino,Tucumán,Provincia No Conocida,F
+2,Mencionado,José Iriarte Muñoz,Salta,Provincia No Conocida,M
+2,Mencionado,Juan López Cristeche,Buenos Aires,Provincia No Conocida,M
+2,Mencionado,Franco Mangiarotti,Ciudad deBuenos Aires,Provincia No Conocida,M
+2,Mencionado,Daniel Mártin ,Buenos Aires,Provincia No Conocida,M
+2,Mencionado,Juan Morelli ,Santa Fe,Provincia No Conocida,M
+2,Mencionado,Pablo Pistoia,Formosa,Provincia No Conocida,M
+2,Mencionado,Marcos Ramírez ,Salta,Provincia No Conocida,M
+2,Mencionado,Lucas Rearte,Centro Educativo Cristo Rey,Córdoba,M
+2,Mencionado,Joaquín Rodríguez Nieva ,Ciudadde Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+2,Mencionado,Mauro Subils,Santa Fe,Provincia No Conocida,M
+2,Mencionado,María Victoria Toso,Santa Fe,Provincia No Conocida,F
+2,Mencionado,Yue Yang,Buenos Aires,Provincia No Conocida,2
+2,Mencionado,Gabriel Weitz ,Santa Fe,Provincia No Conocida,M
+3,Campeón,Leandro Groisman ,Santa Fe,Escuela Superior de Comercio Carlos Pellegrini Ciudad de Buenos Aires,M
+3,Primer Subcampeón,José Gerez Cuevas,Santa Fe,Escuela Superior de Comercio Manuel Belgrano Cordoba,M
+3,Segundo Subcampeón,Melisa Halsband ,Santa Fe,Escuela Superior de Comercio Carlos Pellegrini Ciudad de Buenos Aires,F
+3,Mencionado,María Soledad Aronna -,Santa Fe,Provincia No Conocida,F
+3,Mencionado,Ivan Angiono ,Trenel,La Pampa,M
+3,Mencionado,Laura Bolognini,Buenos Aires,Provincia No Conocida,F
+3,Mencionado,Diego Lis,Cordoba,Provincia No Conocida,M
+3,Mencionado,Martín Miranda -,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+3,Mencionado,Diego Pokorski -,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+3,Mencionado,Francisco Roslan -,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M

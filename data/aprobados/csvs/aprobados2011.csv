@@ -96,7 +96,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Sucunza,Lucía,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 1,Tanco,Santiago Andrés,La Plata,Buenos Aires,M
 1,Tosso,Iván Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Trad,Jeuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+1,Trad,Jeuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 1,Trujillo,Francisco Ruy,Mendoza,Mendoza,M
 1,Turrini,Ornella,Pérez Millán,Buenos Aires,F
 1,Ubeda,Ignacio,Rosario,Santa Fe,M
@@ -110,7 +110,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Angriman,Sofía,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 2,Antonelli,Juan Francisco,Bahía Blanca,Buenos Aires,M
 2,Argárate,Matías Federico,Olivos,Buenos Aires,M
-2,Arias,Yerimen,La Plata,Buenos Aires,UNKNOWN
+2,Arias,Yerimen,La Plata,Buenos Aires,2
 2,Ayala,Jonathan Emanuel,San Vicente,Misiones,M
 2,Aza,Darío Martín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Báez,Emanuel Nicolás,Paraná,Entre Ríos,M
@@ -147,7 +147,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Doll,Sebastián Martín,Monte Grande,Buenos Aires,M
 2,Encinas,Joaquín Nicolás,San Salvador de Jujuy,Jujuy,M
 2,Errázquin,Martín Ignacio,San Isidro,Buenos Aires,M
-2,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,UNKNOWN
+2,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,2
 2,Fenoglio,Sebastián Agustín,Rafaela,Santa Fe,M
 2,Fernández Casella,Lucía Inés,Rosario,Santa Fe,F
 2,Frizzo,Franco,Gualeguay,Entre Ríos,M
@@ -159,7 +159,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Jabloñski,Pablo,Libertador San Martín,Entre Ríos,M
 2,Keklikian,Nicolás Roberto,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Langenheim,Matías,Concordia,Entre Ríos,M
-2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 2,Lescano,Pedro Imanol,La Plata,Buenos Aires,M
 2,Lombardi,Agustín,Junín,Buenos Aires,M
 2,López,Nahuel,San Isidro,Buenos Aires,M
@@ -260,7 +260,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Lang,Carolina,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 3,Lapido,Bárbara,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 3,Larrea,Emanuel Alexis,Cañada de Gómez,Santa Fe,M
-3,Lee,Hong Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+3,Lee,Hong Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 3,Leiva,Livio,San Rafael,Mendoza,M
 3,Loggio,Facundo,Concordia,Entre Ríos,M
 3,López del Río,Carlos Ezequiel,San Miguel de Tucumán,Tucumán,M

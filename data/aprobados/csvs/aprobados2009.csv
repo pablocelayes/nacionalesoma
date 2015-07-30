@@ -4,7 +4,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Amaya,Baltasar Gastón,Mar del Plata,Buenos Aires,M
 1,Antonelli,Nicolás Alejandro,Mar del Plata,Buenos Aires,M
 1,Argárate,Matías Federico,Olivos,Buenos Aires,M
-1,Arias,Yerimen,La Plata,Buenos Aires,UNKNOWN
+1,Arias,Yerimen,La Plata,Buenos Aires,2
 1,Avellaneda,Andrés Nicolás,Río Gallegos,Santa Cruz,M
 1,Banchio Leone,Emiliano,San Martín de las Escobas,Santa Fe,M
 1,Barbero,Juan,Campana,Buenos Aires,M
@@ -42,7 +42,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Errázquin,Martín Ignacio,Villa Adelina,Buenos Aires,M
 1,Estienne,Lautaro Nicolás,Vicente López,Buenos Aires,M
 1,Estigarribia,Giselle Nancy,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,UNKNOWN
+1,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,2
 1,Fernández,Alejandro Gabriel,La Plata,Buenos Aires,M
 1,Fixman,Catalina Daniela,Olivos,Buenos Aires,F
 1,Fresia,Juan Manuel,Zárate,Buenos Aires,M
@@ -106,7 +106,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Alasia,Valeria Beatriz,Hersilia,Santa Fe,F
 2,Aller,Sebastián,Coronel Suárez,Buenos Aires,M
 2,Alustiza,Violeta,Gral. Villegas,Buenos Aires,F
-2,Antonelli,Lihuen Eugenia,Lobos,Buenos Aires,UNKNOWN
+2,Antonelli,Lihuen Eugenia,Lobos,Buenos Aires,2
 2,Assenza,Franco,Santa Fe,Santa Fe,M
 2,Beltrami,Annelise,Gualeguay,Entre Ríos,F
 2,Benencio,Paula,Temperley,Buenos Aires,F
@@ -208,7 +208,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Völker,Tomás,San Isidro,Buenos Aires,M
 2,Wilson,Pablo,Pacheco,Buenos Aires,M
 2,Yacob,Guillermo Ezequiel,Rafaela,Santa Fe,M
-2,Yeh,Hsiang Kai,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Yeh,Hsiang Kai,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 2,Zanón,Víctor Manuel,Escobar,Buenos Aires,M
 2,Zhang,Jonathan Kevin,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Zubieta Battista,Jaime,Pellegrini,Buenos Aires,M

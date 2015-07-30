@@ -35,7 +35,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,González,Gala María Josefina,Paraná,Entre Ríos,F
 1,Gonzalo Juarros,Felipe Lorenzo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Gorosito,Jeremías Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Gregoret,Italo Blas Martín,Córdoba,Córdoba,UNKNOWN
+1,Gregoret,Italo Blas Martín,Córdoba,Córdoba,2
 1,Herrero,Florencia,San Isidro,Buenos Aires,F
 1,Huberman,Martín Augusto,San Isidro,Buenos Aires,M
 1,Ibos,Facundo,Alta Gracia,Córdoba,M
@@ -127,7 +127,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Carro Correa,Luciano Hernán,Lanús Este,Buenos Aires,M
 2,Casadei,Manuel,Mar del Plata,Buenos Aires,M
 2,Chehebar,Mariano Andrés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Cheng,Yubo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Cheng,Yubo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 2,Cocca,Lisandro,Rosario,Santa Fe,M
 2,Cogorno,Nicolás Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Corral,Gonzalo Daniel,Wilde,Buenos Aires,M

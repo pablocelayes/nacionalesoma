@@ -60,7 +60,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Lambertucci,Melina Inés,Villa Constitución,Santa Fe,F
 1,Larrazabal,Agostina Juliana,Paraná,Entre Ríos,F
 1,Lee,Matías Po Chiang,San Miguel de Tucumán,Tucumán,M
-1,Liang,Yueh-Chei,Rosario,Santa Fe,UNKNOWN
+1,Liang,Yueh-Chei,Rosario,Santa Fe,2
 1,Litman,Yair,Avellaneda,Buenos Aires,M
 1,Lockhart,Alan Edward,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,López,Sebastián,Tres Arroyos,Buenos Aires,M
@@ -165,7 +165,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Figueroa,Gastón,Olavarría,Buenos Aires,M
 2,Finetti,Nicolás,Salta,Salta,M
 2,Finkelsteyn,Adrián Daniel Gabriel,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Flachet,Arne,Los Polvorines,Buenos Aires,UNKNOWN
+2,Flachet,Arne,Los Polvorines,Buenos Aires,2
 2,Galante,Damián Andrés,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Gallicchio,Guillermo,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,García,Esteban Guillermo,Pilar,Buenos Aires,M
@@ -196,7 +196,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Legris,Martina,Burzaco,Buenos Aires,F
 2,Lesnaberes,Darío,Venado Tuerto,Santa Fe,M
 2,Levis,Daniela,Lanús,Buenos Aires,F
-2,Lin,Miao Chan,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,UNKNOWN
+2,Lin,Miao Chan,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
 2,López,Pablo Guillermo,Florencio Varela,Buenos Aires,M
 2,López Fuente,Mariano Luis,Villa Sarmiento,Buenos Aires,M
 2,Lugones,Rodrigo,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
