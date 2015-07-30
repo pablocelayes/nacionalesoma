@@ -101,7 +101,7 @@ def gender_to_csvs(file_template):
 
 def gender_to_csvs_premiados(file_template): #pendiente refactoring ...
 	for i in range(1998,2015):
-		print(i)
+		# print(i)
 		if i != 2000:
 			file = "{0}{1}.csv".format(file_template,i)
 			df = pd.read_csv(file)
@@ -110,6 +110,6 @@ def gender_to_csvs_premiados(file_template): #pendiente refactoring ...
 			# unknown_genders()
 			df.to_csv("{0}{1}.csv".format(file_template,i),encoding='utf-8',index=False)	
 
-# gender_to_csvs(clasificados)
-# gender_to_csvs(aprobados)
+gender_to_csvs(clasificados)
+gender_to_csvs(aprobados)
 gender_to_csvs_premiados(premiados)
