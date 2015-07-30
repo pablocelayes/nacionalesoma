@@ -99,7 +99,8 @@ def gender_to_csvs(file_template):
 		# unknown_genders()
 		df.to_csv("{0}{1}.csv".format(file_template,i),encoding='utf-8',index=False)
 
-def gender_to_csvs_premiados(file_template): #pendiente refactoring ...
+def gender_to_csvs_premiados(file_template): 
+	#pendiente refactoring teniendo en cuenta similitud entre las últimas 2 funciones
 	for i in range(1998,2015):
 		# print(i)
 		if i != 2000:
