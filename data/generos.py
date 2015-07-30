@@ -8,7 +8,7 @@ import re
 
 clean = re.compile(r'"|,|\x96')
 
-united_words = re.compile(r'[A-Z][a-z|áéíóú]+') 			#p.e MarinaAguirre, MaríaArtola, JuanPablo, etc
+united_words = re.compile(r'[A-Z][a-z|áéíóúñ]+') 			#p.e MarinaAguirre, MaríaArtola, JuanPablo, etc
 
 gral_name_table = pd.read_table("generos.txt")
 
@@ -99,7 +99,7 @@ def gender_to_csvs(file_template):
 		# unknown_genders()
 		df.to_csv("{0}{1}.csv".format(file_template,i),encoding='utf-8',index=False)
 
-def gender_to_csvs_premiados(file_template):
+def gender_to_csvs_premiados(file_template): #pendiente refactoring ...
 	for i in range(1998,2015):
 		print(i)
 		if i != 2000:
