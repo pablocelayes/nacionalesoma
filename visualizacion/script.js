@@ -43,7 +43,7 @@ var input_node = d3.select("input");
 var div1 = d3.select("body")
     .attr("class","map")
     .append("div")   
-    .attr("class", "tooltip3");
+    .attr("class", "tooltip1");
 	
 var div2 = d3.select("#chart");
  
@@ -102,9 +102,7 @@ function tooltip(year,id,event)				//TODO: poner la cantidad de aprobados
 				});
 				
 				div1.html(html_str+	"<p>Progresión:"+
-								"<img align='left' height='100' src="+'./plots/'+prov+".svg></img></p>")
-					.style('top',  event.pageY + 'px')
-					.style('left', event.pageX + 'px')
+								"<img align='left' height='140' src="+'./plots/'+prov+".svg></img></p>")
 					.style('display', 'block');
 			});
 	}	

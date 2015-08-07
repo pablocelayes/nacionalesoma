@@ -14,7 +14,7 @@
 	  animation-name: slidein;
 	}
 
-/* 	@keyframes slidein {
+ 	@keyframes slidein {
 	  from {
 		margin-left: 100%;
 		width: 300%
@@ -24,7 +24,7 @@
 		margin-left: 0%;
 		width: 100%;
 	  }
-	} */
+	} 
 	
 	.title{
 	font-size: 18px;
@@ -66,18 +66,22 @@
     }  
 
     .tooltip1 {
-	background: #eee;
-	box-shadow: 0 0 5px #999999;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
 	color: #333;
 	display: none;
-	font-size: 12px;
-	left: 130px;
+	font-size: 14px;
+	top: 270px;
+	left: 730px;
 	padding: 10px;
 	position: absolute;
-	text-align: center;
-	top: 95px;
-	width: 80px;
+	text-align: left;
+	width: 225px;
+/*
+	height:325px;
+*/
+	border: 1px solid #CCC;
 	z-index: 10;
+	pointer-events: none;
     }
 
     .tooltip2 {   
@@ -96,6 +100,10 @@
 
     .tooltip3 {
 	position: absolute;
+/*
+	top:300;
+*/
+	left:300;
 	text-align: left;
 	width: 150px;
 	padding: 10px;
@@ -105,6 +113,7 @@
 	pointer-events: none;
 	display: none;
 	border: 1px solid #CCC;
+	z-index: 10;
     }
 	
 	.datamaps-legend {
