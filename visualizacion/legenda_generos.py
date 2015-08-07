@@ -3,8 +3,8 @@ Generando leyenda para la visualización de los géneros
 """
 
 gris = "rgb(220,220,220)" 	#valor central
-celeste = "rgb(100,150,255)" #todos masculinos
-rosa = "rgb(255,100,150)"	#todos femeninos
+celeste = "rgb(100,150,255)" #todos masculinos = "#6496ff"
+rosa = "rgb(255,100,150)"	#todos femeninos = "#ff6496"
 
 #ejes
 
