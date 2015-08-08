@@ -1,26 +1,40 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 """
-Generando leyenda para la visualización de los géneros
+Para la visualización de los géneros
 """
 
-gris = "rgb(220,220,220)" 	#valor central
+import pandas as pd
+from lxml import etree
+from math import floor
+
+
+gris = "#dcdcdc" 			 #valor neutro rgb(220,220,220)
 celeste = "rgb(100,150,255)" #todos masculinos = "#6496ff"
-rosa = "rgb(255,100,150)"	#todos femeninos = "#ff6496"
+rosa = "rgb(255,100,150)"	 #todos femeninos = "#ff6496"
 
-#ejes
+#colores desde el más rosa hasta el más celeste
+colores = ["#ff6496","#ff7da7","#ff96b8","#ffb0c9","#ffc9db",
+		   "#6496ff","#7da7ff","#96b8ff","#b0c9ff","#c9dbff"]
 
-red = 0
-green = 0
-blue = 0
 
-template = "rgb(%d,%d,%d)"
+def color_picker(f_count,m_count):
+	"""
+	f_count: cantidad del género femenino
+	m_count: cantidad del género masculino
+	
+	Devuelve un color de acuerdo al porciento
+	que representa el sexo femenino del total 
+	"""
+	if f_count == m_count:
+		return gris
+	like-percent = 10*(f_count//m_count+f_count)
+	return colores[like_percent]
+	
 
-#IDEA: deslizar el 'saturation' del Gimp y tomar los valores convenientes de la conversión
-#a RGB, estos son los colores que encontré por ahora
-colores_ rosa = [rosa,"#ff7da7","#ff96b8","#ffb0c9","#ffc9db"]
-colores_ celeste = [celeste,"#7da7ff","#96b8ff","#b0c9ff","#c9dbff"]
-
-#TODO: hacer una función dado un número en un intervalo devuelva
-#un color... y jugar con la cantidad de un género en el total... 
+	
+	
 
 
 
