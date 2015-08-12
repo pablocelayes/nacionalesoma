@@ -3,34 +3,22 @@ var svg_file1 = "clasificados/genero/mapa1998.svg";
 
 var n_paths = 44;
 
-var categories = {clasificados:[],aprobados:[],premiados:[]};
+var vpremiados = [];
+var vclasificados = d3.range(1998,2015);
+var vaprobados = vclasificados;
 
-categories.clasificados = d3.range(1998,2015);
-categories.aprobados = d3.range(1998,2015);
+var categories = 
+	{
+		Aprobados:vaprobados,
+		Premiados:vpremiados,
+		Clasificados:vclasificados
+	};
 
 for(var i = 1998; i<2015;i++){
     if(i!=2000)
-    {categories.premiados.push(i);}
+    {vpremiados.push(i);}
 };
 	
-
-var cat_list = d3.select("#cat-listbox");  
-var year_list = d3.select("#year-listbox");
-
-cat_list.on("change",function(){show_years_list(this.value,categories)});
-
-function show_years_list (cat,categories){
-    // alert(cat);
-    // alert(categories.premiados);
-    d3.selectAll("#year-listbox").data(categories.premiados)
-        .enter()
-        .append("option")
-        .text(function(d) { return d; });
-}
-
-// cat_list.style("display","none");
-// year_list.style("display","none");
-
 var path_to_provs = 
     {
 	path2413:"Buenos Aires",
@@ -58,6 +46,32 @@ var path_to_provs =
 	path2384:"Tierra del Fuego",
 	path3187:"Tucumán",
     };	
+	
+
+var cat_list = d3.select("#cat_listbox");  
+var year_list = d3.select("#year_listbox");
+var year_title = d3.select("#year-value");
+var cat_title = d3.select("#categoria");
+
+cat_list.on("change",function(){add_years(this.value)});
+year_list.on("change",function(){add_svg(cat_title.value,this.value)});
+
+function add_years(cat,years){
+	year_list.html("");
+	cat_title.text(cat);
+	for(var i=0;i<categories[cat].length;i++){
+		year_list.append("option")
+			.text(categories[cat][i])};
+}
+
+function add_svg(cat,year){
+	alert(cat);	 //ver porque no lo coge
+	alert(year);
+}
+
+
+// cat_list.style("display","none");
+// year_list.style("display","none");	
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
     
