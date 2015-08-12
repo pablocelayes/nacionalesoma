@@ -1,5 +1,6 @@
 ﻿//cargando el svg inicial
 var svg_file1 = "clasificados/mapa1998.svg";
+
 var n_paths = 44;
 
 var path_to_provs = 
@@ -31,127 +32,127 @@ var path_to_provs =
     };	
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
+    document.getElementById("main").appendChild(xml.documentElement);		  
+});
 
-	document.getElementById("main").appendChild(xml.documentElement);		  
-	// document.body.appendChild(xml.documentElement);		  
-	});
-	
-				  
+
+
+
 var input_node = d3.select("input"); 
-	input_node.property	("value",1998); 
+input_node.property("value",1998); 
 
 var div1 = d3.select("body")
     .attr("class","map")
     .append("div")   
     .attr("class", "tooltip1");
-	
+
 var div2 = d3.select("#chart");
- 
+
 var svg_array = [];
 
 function fill_svg_array(){
-	var svg = "clasificados/mapa"
-	for (var i = 1998; i < 2015; i++) 
-	{
-		d3.xml(svg+i+".svg","image/svg+xml", function(xml)
-		{
-			svg_array.push(xml);
-		})
-	}	
+    var svg = "clasificados/mapa"
+    for (var i = 1998; i < 2015; i++) 
+    {
+	d3.xml(svg+i+".svg","image/svg+xml", function(xml)
+	       {
+		   svg_array.push(xml);
+	       })
+    }	
 }
 
 fill_svg_array()		
-	
+
 //asociando el slider al mapa...
 d3.select("#year").on("input", function(){update_svg(+this.value,"input");});
 
-function tooltip(year,id,event)				//TODO: poner la cantidad de aprobados
+function tooltip(year,id,event)				
 {
     d3.select("#"+id).style('stroke-width', 2)
 	.style('stroke', 'steelblue');
+    
+    var html_str = "<p><b>Año:</b> "+year+"</p>"+
+	"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>";
+    
+    var prov = path_to_provs[id];
+    
+    if(prov != undefined){
+	prov = prov.replace(/\s/g, '_');
 	
-	var html_str = "<p><b>Año:</b> "+year+"</p>"+
-				   "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>";
+	div1.html("");				//para evitar que "crezca" el tooltip
 	
-	var prov = path_to_provs[id];
-	
-	if(prov != undefined){
-		prov = prov.replace(/\s/g, '_');
-		
-		div1.html("");				//para evitar que "crezca" el tooltip
-			
-		d3.csv("clasificados/provcounts.csv",function(rows)
-		   {
-			   rows.map(function(d)
-				{
-					if(d.Año == year && d.Provincia == path_to_provs[id]){
-						html_str += "<p>"+d.Cantidad+" clasificado(s)</p>";
-					}
-				});
-		   });
+	d3.csv("clasificados/provcounts.csv",function(rows)
+	       {
+		   rows.map(function(d)
+			    {
+				if(d.Año == year && d.Provincia == path_to_provs[id]){
+				    html_str += "<p>"+d.Cantidad+" clasificado(s)</p>";
+				}
+			    });
+	       });
 
-		
-		d3.csv("aprobados/provcounts.csv",function(rows)
-		   {
-			   rows.map(function(d)
-				{
-					if(d.Año == year && d.Provincia == path_to_provs[id]){
-						// alert(d.Provincia);
-						html_str+="<p>"+d.Cantidad+" aprobado(s)</p>";	
-					}
-				});
-				
-				div1.html(html_str+	"<p>Progresión:"+
-								"<img align='left' height='140' src="+'./plots/'+prov+".svg></img></p>")
-					.style('display', 'block');
-			});
-	}	
 	
-	
+	d3.csv("aprobados/provcounts.csv",function(rows)
+	       {
+		   rows.map(function(d)
+			    {
+				if(d.Año == year && d.Provincia == path_to_provs[id]){
+				    // alert(d.Provincia);
+				    html_str+="<p>"+d.Cantidad+" aprobado(s)</p>";	
+				}
+			    });
+		   
+		   div1.html(html_str+"<p>Progresión:"+
+			     "<img align='left' height='140' src="+'./plots/'+prov+".svg></img></p>")
+		       .style('display', 'block');
+	       });
+    }	
+    
+    
 }
 
 function update_svg(año,caller)
 {
 
-	//actualizando label
-	d3.select("#year-value").text(año);
+    //actualizando label
+    d3.select("#year-value").text(año);
     d3.select("#year").property("year", año);
     div1.style('display', 'none');
     
-	//leyendo archivo svg correspondiente al año desde svg_array
-	var paths = d3.selectAll("path");
-	// alert(paths);
+    //leyendo archivo svg correspondiente al año desde svg_array
+    var paths = d3.selectAll("path");
+    // alert(paths);
+    
+    for(var i = 0; i < n_paths; i++){
 	
-	for(var i = 0; i < n_paths; i++){
-		
-		var path = paths[0][i];
-		// alert(prov);
-		d3.select(path)
-		  .transition()
-		  .style('fill',svg_array[año - 1998].documentElement.getElementById(path.id).style.fill);
-		
-		if (caller == "input")
-		{
-		  // alert(provincia);
-		  d3.select(path).on('mouseenter',function(event)
-		  {
-		  tooltip(año,this.id,d3.event);
-		  }).on('mouseout',function(event)
-			{
-			d3.select("#"+this.id).style('stroke-width', 1)
-				.style('stroke', 'white')
-			})
-			.on('click',function(event)
-			{
+	var path = paths[0][i];
+	// alert(prov);
+	d3.select(path)
+	    .transition()
+	    .style('fill',svg_array[año - 1998].documentElement.getElementById(path.id).style.fill);
+	
+	if (caller == "input")
+	{
+	    // alert(provincia);
+	    d3.select(path).on('mouseenter',function(event)
+			       {
+				   tooltip(año,this.id,d3.event);
+			       }).on('mouseout',function(event)
+				     {
+					 d3.select("#"+this.id).style('stroke-width', 1)
+					     .style('stroke', 'white')
+				     })
+		.on('click',function(event)
+		    {
 			var provincia = path_to_provs[this.id];
 			if(provincia != undefined){
-				provincia = provincia.replace(/\s/g, '_');
-				window.open("plots/"+provincia+"-completo.svg");
+			    provincia = provincia.replace(/\s/g, '_');
+			    window.open("plots/"+provincia+"-completo.svg");
 			}
-				
-			});
-		}
-		
-
+			
+		    });
 	}
+	
+
+    }
 }

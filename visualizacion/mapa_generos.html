@@ -10,14 +10,16 @@
  </head>
  <body>
    <div class="container">
-     <H2>... por género en la OMA del año ...</H2>
-     <br>
+     <H2>
+     <span id="categoria">Clasificados</span> por género en la OMA del año
+     <span id="year-value">1998</span>
+     </H2>
      <div class="row">
        <div class="col-md-3">
 	 <form role="form">
 	   <div class="form-group">
 	     <label for="name">Seleccione categoría:</label>
-	     <select class="form-control">
+	     <select class="form-control" id="cat-listbox">
 	       <option>Clasificados</option>
 	       <option>Aprobados</option>
 	       <option>Premiados</option>
@@ -29,19 +31,17 @@
 	 <form role="form">
 	   <div class="form-group">
 	     <label for="name">Seleccione año:</label>
-	     <select class="form-control">
-	       <option>TODO:Js</option>
+	     <select class="form-control" id="year-listbox">
 	     </select>
 	   </div>
 	 </form>
        </div>
      </div>
      
-     <br><br>
      <div class="row">
-       <div class="col-md-4"><img src="Blank_Argentina_Map.svg"></img></div>
+       <div class="col-md-4" id="mapa"></div>
        <div class="col-md-4"><img src="leyenda-géneros.svg" heigth="350px" width="350px" ></img></div>
      </div>
- </body>
+     <script type="text/javascript" src="generos.js"></script>
+     </body>
 </html>
-
