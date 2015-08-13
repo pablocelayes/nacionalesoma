@@ -36,8 +36,6 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
 });
 
 
-
-
 var input_node = d3.select("input"); 
 input_node.property("value",1998); 
 

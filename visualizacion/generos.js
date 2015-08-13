@@ -1,7 +1,9 @@
-//cargando el svg inicial
 var svg_file1 = "clasificados/genero/mapa1998.svg";
 
 var n_paths = 44;
+
+var cat_selected = "Clasificados";
+var initial_year = 1998;
 
 var vpremiados = [];
 var vclasificados = d3.range(1998,2015);
@@ -50,28 +52,37 @@ var path_to_provs =
 
 var cat_list = d3.select("#cat_listbox");  
 var year_list = d3.select("#year_listbox");
-var year_title = d3.select("#year-value");
+var year_title = d3.select("#year");
 var cat_title = d3.select("#categoria");
 
-cat_list.on("change",function(){add_years(this.value)});
-year_list.on("change",function(){add_svg(cat_title.value,this.value)});
+cat_list.on("change",function(){add_years(this.value);});
+year_list.on("change",function(){add_svg(this.value)});
 
-function add_years(cat,years){
+function add_years(cat){
 	year_list.html("");
+	cat_selected = cat;
 	cat_title.text(cat);
+	year_title.text(initial_year);
 	for(var i=0;i<categories[cat].length;i++){
 		year_list.append("option")
-			.text(categories[cat][i])};
+			.text(categories[cat][i])
+	};
+	update_svg(cat_selected,initial_year);
 }
 
-function add_svg(cat,year){
-	alert(cat);	 //ver porque no lo coge
-	alert(year);
+function add_svg(year){
+	year_title.text(year);
+	update_svg(cat_selected,year);
 }
 
-
-// cat_list.style("display","none");
-// year_list.style("display","none");	
+function update_svg(cat,year){
+	var paths = d3.selectAll("path");
+	var route_to_svg = cat.toLowerCase()+"/genero/mapa"+year+".svg";
+	d3.xml(route_to_svg,"image/svg+xml", function(xml){
+		d3.select("#mapa").html("");
+		document.getElementById("mapa").appendChild(xml.documentElement);
+	});
+}
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
     
