@@ -71,17 +71,51 @@ function add_years(cat){
 }
 
 function add_svg(year){
-	year_title.text(year);
-	update_svg(cat_selected,year);
+    year_title.text(year);
+    update_svg(cat_selected,year);
 }
 
 function update_svg(cat,year){
+
+    var route_to_svg = cat.toLowerCase()+"/genero/mapa"+year+".svg";
+    d3.xml(route_to_svg,"image/svg+xml", function(xml){
+	d3.select("#mapa").html("");
+	document.getElementById("mapa").appendChild(xml.documentElement);
+	
+	//show_national_progression(cat,year);
+	//TODO: mostrar un svg al costado derecho del mapa con la progresión nacional anual de la 
+	//la categoría en ese año 
 	var paths = d3.selectAll("path");
-	var route_to_svg = cat.toLowerCase()+"/genero/mapa"+year+".svg";
-	d3.xml(route_to_svg,"image/svg+xml", function(xml){
-		d3.select("#mapa").html("");
-		document.getElementById("mapa").appendChild(xml.documentElement);
-	});
+	// adicionando tooltip a todas las provincias ...
+	for(var i = 0; i < n_paths; i++){
+	    
+	    var path = paths[0][i];
+	    if (path_to_provs[path.id] != undefined){
+	    d3.select(path)
+		.on('mouseenter',function(event)
+		    {
+			alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
+			// show_province_progression(cat,year,this.id,d3.event); 
+		    })
+		.on('mouseout',function(event)
+		    {
+			d3.select("#"+this.id).style('stroke-width', 1)
+			    .style('stroke', 'white')
+		    })
+		.on('click',function(event)
+		    {
+			// var provincia = path_to_provs[this.id];
+			// if(provincia != undefined){
+			// 	provincia = provincia.replace(/\s/g, '_');
+			// 	window.open("plots/"+provincia+"-completo.svg");
+			// }
+		    });
+
+	    }
+	}
+	
+    });
+    
 }
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
@@ -89,6 +123,6 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
     document.getElementById("mapa").appendChild(xml.documentElement);		  
 });
 
-
+add_years("Clasificados");
 
 
