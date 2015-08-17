@@ -54,6 +54,8 @@ var cat_list = d3.select("#cat_listbox");
 var year_list = d3.select("#year_listbox");
 var year_title = d3.select("#year");
 var cat_title = d3.select("#categoria");
+var prog_prov = d3.select("#prog_prov");
+var prog_nac = d3.select("#prog_nac");
 
 cat_list.on("change",function(){add_years(this.value);});
 year_list.on("change",function(){add_svg(this.value)});
@@ -82,7 +84,7 @@ function update_svg(cat,year){
 	d3.select("#mapa").html("");
 	document.getElementById("mapa").appendChild(xml.documentElement);
 	
-	//show_national_progression(cat,year);
+	show_national_progression(cat,year);
 	//TODO: mostrar un svg al costado derecho del mapa con la progresión nacional anual de la 
 	//la categoría en ese año 
 	var paths = d3.selectAll("path");
@@ -94,7 +96,7 @@ function update_svg(cat,year){
 	    d3.select(path)
 		.on('mouseenter',function(event)
 		    {
-			alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
+			// alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
 			// show_province_progression(cat,year,this.id,d3.event); 
 		    })
 		.on('mouseout',function(event)
@@ -117,6 +119,15 @@ function update_svg(cat,year){
     });
     
 }
+
+function show_national_progression(cat,year){
+    var svg_file = "plots/genero/F/progresion_anual_"+cat.toLowerCase()+".svg";
+	d3.xml(svg_file,"image/svg+xml", function(xml){
+	d3.select(prog_nac).html("");
+	document.getElementById("prog_nac").appendChild(xml.documentElement);
+	});
+}
+
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
     

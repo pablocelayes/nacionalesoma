@@ -32,9 +32,3 @@ for i in provincias:
 	plt.savefig("./plots/"+i+"-completo.svg")
 	# plt.show()
 	plt.close(fig)
-
-# Pendientes: 
-# 1- label con el nombre de la provincia
-# 2- Normalización eje y
-# 3- Ciclo para generar todas las imágenes
-# 4- Integrar con D3JS 
