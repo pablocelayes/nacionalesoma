@@ -121,9 +121,9 @@ function update_svg(cat,year){
 }
 
 function show_national_progression(cat,year){
+    prog_nac.html("");
     var svg_file = "plots/genero/F/progresion_anual_"+cat.toLowerCase()+".svg";
 	d3.xml(svg_file,"image/svg+xml", function(xml){
-	d3.select(prog_nac).html("");
 	document.getElementById("prog_nac").appendChild(xml.documentElement);
 	});
 }
