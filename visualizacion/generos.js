@@ -57,6 +57,8 @@ var cat_title = d3.select("#categoria");
 var prog_prov = d3.select("#prog_prov");
 var prog_nac = d3.select("#prog_nac");
 
+// prog_nac.attr("padding-rigth","100px"); //TODO el padding
+
 cat_list.on("change",function(){add_years(this.value);});
 year_list.on("change",function(){add_svg(this.value)});
 
@@ -123,9 +125,11 @@ function update_svg(cat,year){
 function show_national_progression(cat,year){
     prog_nac.html("");
     var svg_file = "plots/genero/F/progresion_anual_"+cat.toLowerCase()+".svg";
-	d3.xml(svg_file,"image/svg+xml", function(xml){
-	document.getElementById("prog_nac").appendChild(xml.documentElement);
-	});
+	// d3.xml(svg_file,"image/svg+xml", function(xml){
+	// document.getElementById("prog_nac").appendChild(xml.documentElement);
+	// });
+    prog_nac.append("img").attr("src",svg_file)
+	.attr("height","250px");
 }
 
 
