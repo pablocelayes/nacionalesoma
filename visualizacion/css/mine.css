@@ -73,10 +73,10 @@ to {
             top: 270px;
             left: 730px;
             padding: 10px;
-            position: relative;
+            position: absolute;
             text-align: left;
-            width: 100px;
-            height:100px;
+            width: 225px;
+            height:325px;
             border: 1px solid #CCC;
             z-index: 10;
             pointer-events: none;
