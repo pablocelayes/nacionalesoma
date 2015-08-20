@@ -163,11 +163,7 @@ function show_province_progression(cat,year,id){
 			  prog_prov.append("img").attr("src",svg_file)
 			      .attr("height","250px");
 		      },
-		      function(a,b){
-			  // prog_prov.html("<p>Provincia sin  "+cat.toLowerCase()+" femeninos en ningún año.</p>") 
-			  // alert(a);
-			  // alert(b);
-		      }
+		      null
 		     );
     // prog_prov.html("<p>Provincia sin  "+cat+" femeninos en ningún año.</p>")
 }
