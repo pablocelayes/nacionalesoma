@@ -87,8 +87,7 @@ function update_svg(cat,year){
 	document.getElementById("mapa").appendChild(xml.documentElement);
 	
 	show_national_progression(cat,year);
-	//TODO: mostrar un svg al costado derecho del mapa con la progresión nacional anual de la 
-	//la categoría en ese año 
+
 	var paths = d3.selectAll("path");
 	// adicionando tooltip a todas las provincias ...
 	for(var i = 0; i < n_paths; i++){
@@ -98,8 +97,10 @@ function update_svg(cat,year){
 	    d3.select(path)
 		.on('mouseenter',function(event)
 		    {
+			d3.select("#"+this.id).style('stroke-width', 2)
+			    .style('stroke', 'purple')
 			// alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
-			// show_province_progression(cat,year,this.id,d3.event); 
+			show_province_progression(cat,year,this.id); 
 		    })
 		.on('mouseout',function(event)
 		    {
@@ -122,19 +123,28 @@ function update_svg(cat,year){
     
 }
 
+function show_province_progression(cat,year,id){
+    prog_prov.html("");
+    var prov = path_to_provs[id];
+    var svg_file = "plots/genero/F/"+cat.toLowerCase()+"/progresion_anual_"+prov+".svg";
+    try{
+	prog_prov.append("img").attr("src",svg_file)
+	.attr("height","250px");
+    }
+    catch(error){
+	prog_prov.html("<p>Provincia sin  "+cat+" femeninos en ningún año.</p>")
+    }
+}
+
 function show_national_progression(cat,year){
     prog_nac.html("");
     var svg_file = "plots/genero/F/progresion_anual_"+cat.toLowerCase()+".svg";
-	// d3.xml(svg_file,"image/svg+xml", function(xml){
-	// document.getElementById("prog_nac").appendChild(xml.documentElement);
-	// });
     prog_nac.append("img").attr("src",svg_file)
 	.attr("height","250px");
 }
 
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
-    
     document.getElementById("mapa").appendChild(xml.documentElement);		  
 });
 
