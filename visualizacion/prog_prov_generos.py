@@ -15,9 +15,13 @@ for cat,file in zip(["aprobados","clasificados","premiados"],files):
 	for prov in set(file['Provincia']):
 		fig = plt.figure()
 		rows_prov = file[file['Provincia'] == prov]
-		plt.bar(rows_prov["Año"],rows_prov["F"],color='#ff6496',alpha=0.9)
-		plt.title('Progresión femenina anual '+cat+' de '+prov+'.')
-		plt.ylabel('Cantidad')
-		plt.savefig("./plots/genero/F/{0}/progresion_anual_{1}.svg".format(cat,prov))
-		# plt.show()
-		plt.close(fig)
+		if rows_prov[rows_prov['F'] > 0].empty != True:
+			plt.bar(rows_prov["Año"],rows_prov["F"],color='#ff6496',alpha=0.9)
+			plt.title('Progresión femenina anual '+cat+' de '+prov+'.')
+			plt.ylabel('Cantidad')
+			plt.savefig("./plots/genero/F/{0}/progresion_anual_{1}.svg".format(cat,prov))
+			# plt.show()
+			plt.close(fig)
+		else:
+			print(rows_prov)
+			print("-----")
