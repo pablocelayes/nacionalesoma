@@ -123,50 +123,24 @@ function update_svg(cat,year){
     
 }
 
-function requestObject() {
-    if (window.XMLHttpRequest)
-	return new XMLHttpRequest();
-    else if (window.ActiveXObject)
-	return new ActiveXObject("Msxml2.XMLHTTP");
-    else
-	throw new Error("Could not create HTTP request object.");
-}
-
-function simpleHttpRequest(url, success, failure) {
-    var request = requestObject();
-    request.open("GET", url, true);
-    request.onreadystatechange = function() {
-	if (request.readyState == 4) {
-	    if (request.status == 200 || !failure)
-		success(request.responseText);
-	    else if (failure)
-		failure(request.status, request.statusText);
-	}
-    };
-    request.send(null);
-}
-
-
 
 function show_province_progression(cat,year,id){
     prog_prov.html("");
     var prov = path_to_provs[id];
     var svg_file = "plots/genero/F/"+cat.toLowerCase()+"/progresion_anual_"+prov+".svg";
     
-    // prog_prov.append("img").attr("src",svg_file)
-    // .attr("height","250px");
-    // d3.xml(svg_file1,"image/svg+xml", function(error,xml){
-    // 	    document.getElementById("prog_prov").appendChild(xml.documentElement);
-    // });
-    simpleHttpRequest(svg_file,
-		      function(xml){
-			  prog_prov.append("img").attr("src",svg_file)
-			      .attr("height","250px");
-		      },
-		      null
-		     );
-    // prog_prov.html("<p>Provincia sin  "+cat+" femeninos en ningún año.</p>")
+    $.when($.ajax(svg_file))
+	.then(function(){
+	    prog_prov.append("img").attr("src",svg_file)
+    		.attr("height","250px");},
+	      function(){
+		  prog_prov.append("div")
+		      .attr("class","prog-prov")
+		      .html("<strong>"+prov+"</strong>: provincia sin "+
+			    cat.toLowerCase()+" femeninos en ningún año.");
+	      });
 }
+ 
 
 function show_national_progression(cat,year){
     prog_nac.html("");
