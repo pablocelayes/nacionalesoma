@@ -56,6 +56,8 @@ var year_title = d3.select("#year");
 var cat_title = d3.select("#categoria");
 var prog_prov = d3.select("#prog_prov");
 var prog_nac = d3.select("#prog_nac");
+var actual_prov = d3.select("#prov");
+var actual_prov_percent = d3.select("#percent");
 
 // prog_nac.attr("padding-rigth","100px"); //TODO el padding
 
@@ -100,7 +102,8 @@ function update_svg(cat,year){
 			d3.select("#"+this.id).style('stroke-width', 2)
 			    .style('stroke', 'purple')
 			// alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
-			show_province_progression(cat,year,this.id); 
+			show_province_progression(cat,year,this.id);
+			show_province_percent(cat,year,this.id);
 		    })
 		.on('mouseout',function(event)
 		    {
@@ -123,22 +126,46 @@ function update_svg(cat,year){
     
 }
 
+function show_province_percent(cat,year,id){
+    var true_cat = cat.toLowerCase();
+    var csv_file = "../data/"+true_cat+"/csvs/"+true_cat+"_por_provincia_y_genero.csv";
+    d3.csv(csv_file,
+	   function(rows)
+	   {
+	       rows.map(function(d)
+			{
+			    if(d.Año == year && d.Provincia == path_to_provs[id]){
+				var all = (+d.F) + (+d.M);
+				var percent;
+				if(all > 0)
+				    percent = (d.F/all)*100;
+				else
+				    percent = 0;
+				actual_prov_percent.text(percent+"%");
+				return;
+			    }
+			});
+	   });
+}
+
 
 function show_province_progression(cat,year,id){
     prog_prov.html("");
     var prov = path_to_provs[id];
     var svg_file = "plots/genero/F/"+cat.toLowerCase()+"/progresion_anual_"+prov+".svg";
+    actual_prov.text(prov);
     
     $.when($.ajax(svg_file))
-	.then(function(){
-	    prog_prov.append("img").attr("src",svg_file)
-    		.attr("height","250px");},
-	      function(){
-		  prog_prov.append("div")
-		      .attr("class","prog-prov")
-		      .html("<strong>"+prov+"</strong>: provincia sin "+
-			    cat.toLowerCase()+" femeninos en ningún año.");
-	      });
+	.then(
+	    function(){
+		prog_prov.append("img").attr("src",svg_file)
+    		    .attr("height","250px");},
+	    function(){
+		prog_prov.append("div")
+		    .attr("class","prog-prov")
+		    .html("<strong>"+prov+"</strong>: provincia sin "+
+			  cat.toLowerCase()+" femeninos en ningún año.");
+	    });
 }
  
 
