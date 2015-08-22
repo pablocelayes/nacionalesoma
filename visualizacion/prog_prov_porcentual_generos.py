@@ -17,6 +17,7 @@ for cat,file in zip(["aprobados","clasificados","premiados"],files):
 		rows_prov = file[file['Provincia'] == prov]
 		if rows_prov[rows_prov['F'] > 0].empty != True:
 			percent = rows_prov['F']*100/(rows_prov['F']+rows_prov['M'])
+			percent[percent == np.inf] = 0 # manejando las divisiones por cero como 0% 
 			plt.bar(rows_prov["Año"],percent,color='#ff6496',alpha=0.9)
 			plt.title('Progresión porcentual femenina '+cat+' de '+prov+'.')
 			plt.ylabel('Porciento')
