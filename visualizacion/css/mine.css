@@ -113,6 +113,9 @@ to {
             border: 1px solid #CCC;
             z-index: 10;
             }
+.any{ 
+      border: 1px solid #CCC;
+      } 
 
 .prog-prov{
             background: none repeat scroll 0% 0% rgb(255, 255, 255);

@@ -4,6 +4,7 @@
    <meta charset="utf-8">
    <title>Análisis del comportamiento del género</title>
    <script type="text/javascript" src="d3.v3.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
    <link href="css/bootstrap.min.css" rel="stylesheet">
    <link href="css/mine.css" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,10 +12,15 @@
  <body>
    <div class="container">
      <H2>
+     <center>
      <span id="categoria">Clasificados</span> por género en la OMA del año
      <span id="year">1998</span>
+     <br>
+     <H3><center>y valores porcentuales de participantes femeninos.</center></H3>
+     </center>
      </H2>
 	 <br>
+     	 <br>
      <div class="row">
        <div class="col-md-3">
 	 <form role="form">
@@ -30,27 +36,33 @@
        </div>
        <div class="col-md-3">
 	 <form role="form">
-	   <div class="form-group">
-	     <label for="name">Seleccione año:</label>
-	     <select class="form-control" id="year_listbox">
-	     </select>
-	   </div>
-	 </form>
+       <div class="form-grou1p">
+	 <label for="name">Seleccione año:</label>
+	 <select class="form-control" id="year_listbox">
+	 </select>
+       </div>
+       </form>
+       </div>
+       <div class="col-md-3">
+	 <h4>
+	 <span id="prov"></span>
+	 <span id="percent"></span>
+	 </h4>		       
        </div>
      </div>
      
      <div class="row">
-       <div class="col-md-4" id="mapa"></div>
+       <div class="col-md-5"><div class="svg-gen" id="mapa"></div></div>
        <div class="col-md-4">
-	 		<div class="row"><img src="leyenda-géneros.svg" height="100px" width="375px"></img></div>
-	 		<div class="row">
-	   		<div class="col-md-4"><div></div></div>
-	   		<div class="col-md-2" id="prog_nac"></div>
-	 		</div>
-	   	<div class="row">
-	   		<div class="col-md-4"><div></div></div>
-	   		<div class="col-md-2" id="prog_prov"></div>
-	 		</div>
+       <div class="row"><img src="leyenda-géneros.svg" height="100px" width="375px"></img></div>
+       <div class="row">
+       <div class="col-md-4"></div>
+       <div class="col-md-2" id="prog_nac"></div>
+       </div>
+       <div class="row">
+       <div class="col-md-4"><div></div></div>
+       <div class="col-md-2" id="prog_prov"></div>
+       </div>
        </div>
      </div>
      
