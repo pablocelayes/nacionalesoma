@@ -14,9 +14,10 @@ gris = "#dcdcdc" 			 #valor neutro rgb(220,220,220)
 celeste = "#6496ff"  		 #todos masculinos = "rgb(100,150,255)"
 rosa = "#ff6496"	 		 #todos femeninos =  "rgb(255,100,150)"
 
-#colores desde el más rosa hasta el más celeste
-colores = ["#ff6496","#ff7da7","#ff96b8","#ffb0c9","#ffc9db",
-		"#6496ff","#7da7ff","#96b8ff","#b0c9ff","#c9dbff"]
+#colores desde el más celeste hasta el más rosa]
+
+colores = ["#6496ff","#7da7ff","#96b8ff","#b0c9ff","#c9dbff",
+	    "#ffc9db","#ffb0c9","#ff96b8","#ff7da7","#ff6496"]
 
 input = "../data/%s/csvs/%s_por_provincia_y_genero.csv"
 output ="./%s/genero/mapa%d.svg"
@@ -40,7 +41,7 @@ def color_picker(f_count,m_count):
 		return celeste
 	if m_count == 0:
 		return rosa
-	index = floor((10*m_count)/(m_count+f_count))
+	index = floor((10*f_count)/(m_count+f_count))
 	# print(f_count,m_count,index)
 	return colores[index]
 

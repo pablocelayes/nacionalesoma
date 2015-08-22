@@ -134,7 +134,7 @@ function truncate(x,n){
 
 function show_province_percent(cat,year,id){
     var true_cat = cat.toLowerCase();
-    var csv_file = "../data/"+true_cat+"/csvs/"+true_cat+"_por_provincia_y_genero.csv";
+    var csv_file = true_cat+"/genero/"+true_cat+"_por_provincia_y_genero.csv";
     d3.csv(csv_file,
 	   function(rows)
 	   {
