@@ -58,6 +58,7 @@ var prog_prov = d3.select("#prog_prov");
 var prog_nac = d3.select("#prog_nac");
 var actual_prov = d3.select("#prov");
 var actual_prov_percent = d3.select("#percent");
+var prog_prov_percent = d3.select("#prog_prov_percent");
 
 // prog_nac.attr("padding-rigth","100px"); //TODO el padding
 
@@ -106,8 +107,8 @@ function update_svg(cat,year){
 			d3.select("#"+this.id).style('stroke-width', 2)
 			    .style('stroke', 'purple')
 			// alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
-			show_province_progression(cat,year,this.id);
-			show_province_percent(cat,year,this.id);
+			show_prov_prog(cat,year,this.id);
+			show_prov_percent(cat,year,this.id);
 		    })
 		.on('mouseout',function(event)
 		    {
@@ -132,7 +133,7 @@ function truncate(x,n){
     return +(Math.floor(x)+"."+(take_decimals(f_part(x),n)));
 }
 
-function show_province_percent(cat,year,id){
+function show_prov_percent(cat,year,id){
     var true_cat = cat.toLowerCase();
     var csv_file = true_cat+"/genero/"+true_cat+"_por_provincia_y_genero.csv";
     d3.csv(csv_file,
@@ -154,18 +155,21 @@ function show_province_percent(cat,year,id){
 	   });
 }
 
-
-function show_province_progression(cat,year,id){
+function show_prov_prog(cat,year,id){
     prog_prov.html("");
+	prog_prov_percent.html("");
     var prov = path_to_provs[id];
-    var svg_file = "plots/genero/F/"+cat.toLowerCase()+"/progresion_anual_"+prov+".svg";
+    var svg_file1 = "plots/genero/F/"+cat.toLowerCase()+"/progresion_anual_"+prov+".svg";
+    var svg_file2 = "plots/genero/F/"+cat.toLowerCase()+"/porcentual/progresion_anual_"+prov+".svg";
     actual_prov.text(prov);
     
-    $.when($.ajax(svg_file))
+    $.when($.ajax(svg_file1))
 	.then(
 	    function(){
-		prog_prov.append("img").attr("src",svg_file)
-    		    .attr("height","250px");},
+		prog_prov.append("img").attr("src",svg_file1)
+    		    .attr("height","250px");
+		prog_prov_percent.append("img").attr("src",svg_file2)
+				.attr("height","250px");},
 	    function(){
 		prog_prov.append("div")
 		    .attr("class","prog-prov")
