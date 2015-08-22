@@ -65,18 +65,22 @@ cat_list.on("change",function(){add_years(this.value);});
 year_list.on("change",function(){add_svg(this.value)});
 
 function add_years(cat){
-	year_list.html("");
-	cat_selected = cat;
-	cat_title.text(cat);
-	year_title.text(initial_year);
-	for(var i=0;i<categories[cat].length;i++){
-		year_list.append("option")
-			.text(categories[cat][i])
-	};
-	update_svg(cat_selected,initial_year);
+    actual_prov.html("");
+    actual_prov_percent.html("");
+    year_list.html("");
+    cat_selected = cat;
+    cat_title.text(cat);
+    year_title.text(initial_year);
+    for(var i=0;i<categories[cat].length;i++){
+	year_list.append("option")
+	    .text(categories[cat][i])
+    };
+    update_svg(cat_selected,initial_year);
 }
 
 function add_svg(year){
+    actual_prov.html("");
+    actual_prov_percent.html("");
     year_title.text(year);
     update_svg(cat_selected,year);
 }
@@ -109,21 +113,23 @@ function update_svg(cat,year){
 		    {
 			d3.select("#"+this.id).style('stroke-width', 1)
 			    .style('stroke', 'white')
-		    })
-		.on('click',function(event)
-		    {
-			// var provincia = path_to_provs[this.id];
-			// if(provincia != undefined){
-			// 	provincia = provincia.replace(/\s/g, '_');
-			// 	window.open("plots/"+provincia+"-completo.svg");
-			// }
 		    });
-
 	    }
 	}
-	
     });
     
+}
+
+function f_part(x){
+    return x - Math.floor(x);
+}
+
+function take_decimals(x,n){
+    return Math.floor(x*Math.pow(10,n));
+}
+
+function truncate(x,n){
+    return +(Math.floor(x)+"."+(take_decimals(f_part(x),n)));
 }
 
 function show_province_percent(cat,year,id){
@@ -141,7 +147,7 @@ function show_province_percent(cat,year,id){
 				    percent = (d.F/all)*100;
 				else
 				    percent = 0;
-				actual_prov_percent.text(percent+"%");
+				actual_prov_percent.text(truncate(percent,2)+"%");
 				return;
 			    }
 			});
