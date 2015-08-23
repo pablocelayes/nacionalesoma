@@ -26,7 +26,9 @@ def get_colegios_oma():
 	for i in range(2008,2015):
 		tmp = pd.read_csv(template_filename % i)
 		tmp['Año'] = i
-		res = res.append(pd.read_csv(template_filename % i),ignore_index = True)
+		res = res.append(tmp,ignore_index = True)
+	res.dropna(subset=['Colegio'],inplace=True)
+	res['Colegio'] = res['Colegio'].apply(lambda c: c.replace('"',''))
 	return res
 		
 def get_colegios_db():
@@ -41,23 +43,27 @@ def get_colegios_db():
 	sheet1_gestion = [i.value for i in sheet1.col_slice(3)[10:]]
 	sheet1_prov = [i.value for i in sheet1.col_slice(0)[10:]]
 	sheet1_loc	= [i.value for i in sheet1.col_slice(10)[10:]]
+	sheet1_dir	= [i.value for i in sheet1.col_slice(6)[10:]]
 	
 	sheet2_colegios = [i.value for i in sheet2.col_slice(2)[10:]]
 	sheet2_gestion  = [i.value for i in sheet2.col_slice(3)[10:]]
 	sheet2_prov  = [i.value for i in sheet2.col_slice(0)[10:]]
 	sheet2_loc  = [i.value for i in sheet2.col_slice(10)[10:]]
+	sheet2_dir  = [i.value for i in sheet2.col_slice(6)[10:]]
 	
 	#uniendo opciones las escuelas con ofertas activas e inactivas
 	colegios = sheet1_colegios + sheet2_colegios
 	gestion  = sheet1_gestion + sheet2_gestion
 	provincias = sheet1_prov + sheet2_prov
 	localidad = sheet1_loc + sheet2_loc
+	direccion = sheet1_dir + sheet2_dir
 	
 	
 	df = pd.DataFrame({'Colegio':np.array(colegios),
 					   'Sector':np.array(gestion),
 					   'Provincia':np.array(provincias),
-					   'Localidad':np.array(localidad)})
+					   'Localidad':np.array(localidad),
+					   'Dirección':np.array(direccion)})
 	return df
 
 def advanced_str_search(df,pattern,field):
@@ -77,7 +83,7 @@ def nans(df,field):
 	"""
 	df2 = pd.DataFrame(columns=df.columns)
 	for i,val in df[field].iteritems():
-		if type(val) != type(""):
+		if type(val) != type("") or val == "<empty>":
 			df2 = df2.append(df.ix[i])
 	return df2
 
@@ -94,16 +100,22 @@ def string_sim(hname1, hname2):
 	"""
 	seq = SequenceMatcher(a=normalize(hname1), b=normalize(hname2))
 	return seq.ratio()
+	
+def heuristica(coleg1,loc1,coleg2,loc2):
+	w_nom = 2
+	w_loc = 1
+	return w_nom*(string_sim(coleg1,coleg2)) + w_loc*(string_sim(loc1,loc2))
 
 if __name__ == '__main__':
 	colegios_oma = get_colegios_oma()	
-	colegios_db = get_colegios_db()	
-	
+	# oma_groupby = colegios_oma.groupby(['Colegio','Provincia'])
 	singles_oma = colegios_oma.drop_duplicates(subset=['Colegio','Provincia','Localidad'])
-	singles_oma = singles_oma.loc[:,['Colegio','Provincia','Localidad']]
+	singles_oma = singles_oma.loc[:,['Colegio','Provincia','Localidad','Año']]
+	# singles_oma_counts = oma_groupby.size()
 	
+	colegios_db = get_colegios_db()
 	singles_db = colegios_db.drop_duplicates(subset=['Colegio','Provincia','Localidad'])
-	singles_db = singles_db.loc[:,['Colegio','Provincia','Localidad','Sector']]
+	singles_db = singles_db.loc[:,['Colegio','Provincia','Localidad','Sector','Dirección']]
 	
 	# print(advanced_str_search(colegios_oma.fillna(value="<>"),r'Belgrano','Colegio'))
 	
@@ -120,10 +132,10 @@ if __name__ == '__main__':
 						   })
 	
 	dmatches = 0
-	for i,esc_i,prov_i,loc_i in singles_oma.itertuples():
+	for i,esc_i,prov_i,loc_i,year_i in singles_oma.itertuples():
 		provs_j = singles_db[singles_db['Provincia'] == prov_i]
 		# print(i)
-		for j,esc_j,prov_j,loc_j,sect_j in provs_j.itertuples():
+		for j,esc_j,prov_j,loc_j,sect_j,dir_j in provs_j.itertuples():
 			# print(i,j,dmatches)
 			try: 
 				if normalize(esc_i) == normalize(esc_j):
@@ -137,7 +149,7 @@ if __name__ == '__main__':
 					singles_oma.drop(i,inplace=True)
 					dmatches += 1
 					break
-			except TypeError:
+			except TypeError:	# for NaNs
 				pass
 				# print(esc_i,esc_j)
 	# print("%d direct matches found" % dmatches)
@@ -145,7 +157,12 @@ if __name__ == '__main__':
 	print("End for now...")	
 	
 	#----------------------------------------------------------------------------
+	# # 4. create pairwise similarities matrix for the remaining hotels
+	# print "%d Expedia left to match with %d Booking hotels" % (len(expediahotels), len(bookinghotels))
+	# print "combined geo-name similarity with user confirmation will be used"
 
+	# print "Building similarity matri
+	
 	# # 4. create pairwise similarities matrix for the remaining hotels
 	# print "%d Expedia left to match with %d Booking hotels" % (len(expediahotels), len(bookinghotels))
 	# print "combined geo-name similarity with user confirmation will be used"

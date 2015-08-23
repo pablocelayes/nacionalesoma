@@ -12,7 +12,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Balbi,Bruno,Martínez,Buenos Aires,M,Carmen Arriola de Marín
 1,Barbieri,Guido,Tigre,Buenos Aires,M,Santa Teresa
 1,Barbón,Nerina Aylén,Casilda,Santa Fe,F,"Nº 209 ""Dr. Dalmacio Vélez Sarsfield"""
-1,Barreto,Agustín Nicolás,Chilavert,Buenos Aires,M,Agustiniano
+1,Barreto,Agustín Nicolás,Chilavert,Buenos Aires,M,COLEGIO AGUSTINIANO
 1,Bellis,Pedro,Porteña,Córdoba,M,Nuestra Señora de Lourdes
 1,Bergadá,Francisco Gabriel,La Plata,Buenos Aires,M,Manantiales
 1,Bergerman,Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT
@@ -71,7 +71,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,De Vega,Luciano Andrés,Comodoro Rivadavia,Chubut,M,"Liceo Militar ""Gral Roca"""
 1,del Campo,Pedro Augusto,San Isidro,Buenos Aires,M,San Juan el Precursor
 1,Dell Elce,Sebastián Agustín,Venado Tuerto,Santa Fe,M,Cultura Inglesa
-1,Devesa,Rodrigo Ramón,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+1,Devesa,Rodrigo Ramón,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 1,di Giambattista,Franco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Cristóforo Colombo
 1,di Giambattista,Marco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Cristóforo Colombo
 1,Díaz,Catalina,San Martín de los Andes,Neuquén,F,EPET Nº 12
@@ -215,7 +215,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Sartorio,Casandra Belén,Quilmes,Buenos Aires,F,San Mauro
 1,Schenhals Podorosky,Ailén María,General Ramírez,Entre Ríos,F,"IPGP D-176 ""Madre de Jesús"""
 1,Schvartzman,Lara Daniela,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,ILSE
-1,Scotte,Martín Francisco,Chilavert,Buenos Aires,M,Agustiniano
+1,Scotte,Martín Francisco,Chilavert,Buenos Aires,M,COLEGIO AGUSTINIANO
 1,Seminara Cunto,Zoe Alicia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio Nacional de Buenos Aires
 1,Seré,María,Lincoln,Buenos Aires,F,Escuela del Alba
 1,Solari,Julieta,Río Gallegos,Santa Cruz,F,Poplars School
@@ -229,7 +229,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Trebino,Marcos,Olivos,Buenos Aires,M,San Andrés
 1,Turrini,Ornella,Pérez Millán,Buenos Aires,F,Instituto Secundario Pérez Millán
 1,Ubeda,Ignacio,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
-1,Vargas Alejandro,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+1,Vargas Alejandro,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 1,Vázquez,Antonela,Carmen,Santa Fe,F,E.E.M.P.I. Nº 8092
 1,Venturino,Mariana Berenice,Concordia,Entre Ríos,F,San José Adoratrices
 1,Verussa,Gastón Ezequiel,Neuquén,Neuquén,M,EPET 14
@@ -289,7 +289,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Catz,Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Jean Mermoz
 2,Chenna,Agustín,Merlo,Buenos Aires,M,Instituto Modelo Almafuerte
 2,Cherny,Sebastián,Vicente López,Buenos Aires,M,ORT II
-2,Colavecchia,Ailén Carolina,Bariloche,Río Negro,F,CEN 123
+2,Colavecchia,Ailén Carolina,Bariloche,Río Negro,F,CEM Nº 123
 2,Colella Pagella,Facundo Tomás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Thomas Jefferson College
 2,Costantino,Leandro Ezequiel,Villa Ballester,Buenos Aires,M,Instituto Ballester
 2,Crespo,Eugenia,Rosario,Santa Fe,F,Mirasoles
@@ -381,7 +381,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Nostrala Hatz,Nahuel Martín,Castelar,Buenos Aires,M,EET Nº 1 de Ituzaingó
 2,Oiberman,Nahuel Leandro,Concordia,Entre Ríos,M,"Nº 17 ""Martín Miguel de Güemes"""
 2,Ortega,Emanuel Nicolás,Paraná,Entre Ríos,M,Don Bosco
-2,Palazón,Facundo Cruz,Tigre,Buenos Aires,M,Newman
+2,Palazón,Facundo Cruz,Tigre,Buenos Aires,M,Cardenal Newman
 2,Pasquevich,Ian Luis,Alta Gracia,Córdoba,M,Colegio Anglo Americano
 2,Peirano,Valentina,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
 2,Pelegrin,Felipe,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Philips
@@ -453,7 +453,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 3,Borrovinsky,Lautaro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
 3,Candioti,Alejandro Marcelo,Posadas,Misiones,M,José Manuel Estrada
 3,Cantore Pasero,Iara María,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
-3,Casetta,Agustina,Ciudad Jardín,Buenos Aires,F,Alas
+3,Casetta,Agustina,Ciudad Jardín,Buenos Aires,F,ESCUELA ALAS
 3,Chehebar,Mariano,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
 3,Ciruelos Rodríguez,Gonzalo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
 3,Cocca,Lisandro,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
@@ -502,7 +502,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 3,Peré Schröder,Melchor Anael,Sáenz Peña,Buenos Aires,M,Escuelas Técnicas Raggio
 3,Pérez Tenorio,Javiera Martita,Río Grande,Tierra del Fuego,F,CPET
 3,Pirich,Lautaro Nahuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
-3,Prieto Galardo,Nahuel Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+3,Prieto Galardo,Nahuel Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 3,Ramírez,Santiago Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
 3,Rapoport,Alan,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Philips
 3,Rodríguez,Martín Ezequiel,San Clemente del Tuyú,Buenos Aires,M,EMEMOA Nº 1
@@ -518,5 +518,5 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 3,Testa,Matías Sebastián,Casilda,Santa Fe,M,Colegio Sagrada Familia Nº 8180
 3,Tissoni,Jonathan,Bolívar,Buenos Aires,M,EEM Nº 204
 3,Urdapilleta,Martín Ezequiel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Argentina Modelo
-3,Vandam,Agustín Gustavo,Comodoro Rivadavia,Chubut,M,Colegio Abraham Lincoln
+3,Vandam,Agustín Gustavo,Comodoro Rivadavia,Chubut,M,Abraham Lincoln School
 3,Virgillo,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Argentina Modelo

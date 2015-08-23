@@ -83,7 +83,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Fornero,Lara Victoria,Córdoba,Córdoba,F,Padre Claret
 1,Frachtenberg,Gal,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Martin Buber
 1,Fradín,Emiliano,Las Heras,Mendoza,M,DAD
-1,Fragale,Franco Sebastián,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+1,Fragale,Franco Sebastián,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 1,Gancedo,Leonel Damián,Villa Elisa,Buenos Aires,M,San Francisco de Asís
 1,García,Mauricio,Orán,Salta,M,María del Rosario
 1,García Vicente,Agostina,Salazar,,F,"Escuela Media Nº 1 ""Elsa Lorenzo"""
@@ -147,7 +147,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Navarro,Pedro,Bariloche,Río Negro,M,Instituto Don Emilio Frey
 1,Neumann,Andrés Jared,Vaqueros,Salta,M,EET Nº 3141
 1,Nieddu,Matías,Ayacucho,Buenos Aires,M,"Escuela de Educación Agropecuaria Nº 1 ""Perito Moreno"""
-1,Niro,María Belén,San Andrés,Buenos Aires,F,Agustiniano
+1,Niro,María Belén,San Andrés,Buenos Aires,F,COLEGIO AGUSTINIANO
 1,Nocetti,Tomás Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ET Nº 28
 1,Nostrala Hatz,Nahuel Martín,Castelar,Buenos Aires,M,EET Nº 1 de Ituzaingó
 1,Nucci,Manuel,Mar del Plata,Buenos Aires,M,Nuestra Señora del Carmen
@@ -159,7 +159,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Perassi,Sofía,Rafaela,Santa Fe,F,Escuela de la Plaza
 1,Pérez Bedoya,Ignacio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
 1,Pilo Lacuadra,Brenda Yazmín,Córdoba,Córdoba,F,"Escuela Superior de Comercio ""Manuel Belgrano"""
-1,Pires,Nicolás Santiago,Moreno,Buenos Aires,M,Bartolomé Mitre
+1,Pires,Nicolás Santiago,Moreno,Buenos Aires,M,Bartolomé Mitre Day School
 1,Pisano,Vanina,Hurlingham,Buenos Aires,F,Instituto Lincoln
 1,Polakiewicz,Martín Ariel,Vicente López,Buenos Aires,M,ORT II
 1,Pomarolo,Josefina,Pilar,Buenos Aires,F,Nuestra Señora del Pilar
@@ -183,8 +183,8 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Sardiña,Eduardo Mariano,Santa Rosa,La Pampa,M,María Auxiliadora
 1,Saumench,José Francisco,Castelar,Buenos Aires,M,"ITI ""San Judas Tadeo"""
 1,Schneider,Lucas,Villa Adelina,Buenos Aires,M,Alessandro Marzoni
-1,Scotte,Martín Francisco,Chilavert,Buenos Aires,M,Agustiniano
-1,Sergeichuk,Laura Paulina,Comodoro Rivadavia,Chubut,F,Abraham Lincoln
+1,Scotte,Martín Francisco,Chilavert,Buenos Aires,M,COLEGIO AGUSTINIANO
+1,Sergeichuk,Laura Paulina,Comodoro Rivadavia,Chubut,F,Abraham Lincoln School
 1,Sierra,Valentina,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Pestalozzi
 1,Skrauba,Axel Alfredo,San Vicente,Misiones,M,"Normal Superior Nº 13 ""Ismael Quiles"""
 1,Solari,Julieta,Río Gallegos,Santa Cruz,F,Poplars School
@@ -194,7 +194,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Sucunza,Lucía,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Escuelas Técnicas Raggio
 1,Tanco,Santiago Andrés,La Plata,Buenos Aires,M,"Colegio Nacional ""Rafael Hernández"""
 1,Tarela,Sofía,,,F,ECEA
-1,Tosso,Iván Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+1,Tosso,Iván Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 1,Trad,Jeuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
 1,Trujillo,Francisco Ruy,Mendoza,Mendoza,M,"Liceo Militar ""General Espejo"""
 1,Turrini,Ornella,Pérez Millán,Buenos Aires,F,Instituto Secundario Pérez Millán
@@ -221,7 +221,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Argárate,Matías Federico,Olivos,Buenos Aires,M,Instituto La Salle Florida
 2,Arias,Yerimen,La Plata,Buenos Aires,F,"Colegio Nacional ""Rafael Hernández"""
 2,Arioni,Tomás,Neuquén,Neuquén,M,Don Bosco
-2,Arroyo,Luciana,San Martín,Buenos Aires,F,Agustiniano
+2,Arroyo,Luciana,San Martín,Buenos Aires,F,COLEGIO AGUSTINIANO
 2,Ayala,Jonathan Emanuel,San Vicente,Misiones,M,ENS Nº 13
 2,Aza,Darío Martín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
 2,Báez,Emanuel Nicolás,Paraná,Entre Ríos,M,Don Bosco
@@ -251,7 +251,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Cantore Pasero,Iara María,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
 2,Caprile,Fernando,Avellaneda,Buenos Aires,M,Instituto Huergo
 2,Caramutti,Mathias,Neuquén,Neuquén,M,Confluencia
-2,Casetta,Agustina,Ciudad Jardín,Buenos Aires,F,Alas
+2,Casetta,Agustina,Ciudad Jardín,Buenos Aires,F,ESCUELA ALAS
 2,Catz,Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Jean Mermoz
 2,Chehebar,Mariano,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
 2,Cherny,Sebastián,Vicente López,Buenos Aires,M,ORT II
@@ -262,7 +262,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Cocca,Lisandro,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
 2,Colella Pagella,Facundo Tomás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Thomas Jefferson College
 2,Collante,Gerardo Alexis,Río Primero,Córdoba,M,Instituto Contardo Ferrini
-2,Concilio,Germán,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+2,Concilio,Germán,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 2,Coppes,Lucía,Mar del Plata,Buenos Aires,F,Nueva Pompeya
 2,Costantino,Leandro Ezequiel,Villa Ballester,Buenos Aires,M,Instituto Ballester
 2,Craig,Brian Eduardo,Lomas de Zamora,Buenos Aires,M,"Media Nº 14 ""Tomás Espora"""
@@ -324,7 +324,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,López Anido,Manuel,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
 2,Lorenz,Gabriel Matías,Santiago del Estero,Santiago del Estero,M,San José
 2,Loustaunau,Juan,Mar del Plata,Buenos Aires,M,Illia
-2,Lufrano,Mariano Nicolás,Palomar,Buenos Aires,M,Alas
+2,Lufrano,Mariano Nicolás,Palomar,Buenos Aires,M,ESCUELA ALAS
 2,Luo,Leandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Islands International School
 2,Lynch,Marcelo,San Isidro,Buenos Aires,M,Labardén
 2,Machuca Espin,Máximo,Rafaela,Santa Fe,M,"Nº 204 ""Domingo de Oro"""
@@ -369,10 +369,10 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Picco,Santiago,Tandil,Buenos Aires,M,Nuestra Tierra
 2,Pirich,Lautaro Nahuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
 2,Ponce,Ramiro Ariel,Claypole,Buenos Aires,M,Manuel Belgrano
-2,Pons,Lucas,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+2,Pons,Lucas,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 2,Porro Jordan,Lucas,Pilar,Buenos Aires,M,Santa María
 2,Preusche,Teo,Beccar,Buenos Aires,M,Pilgrims
-2,Prieto Galardo,Nahuel Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+2,Prieto Galardo,Nahuel Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 2,Punti,Eugenio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
 2,Puterman Colomer,Lucas Manuel,San Isidro,Buenos Aires,M,ORT II
 2,Racca,Dora María,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio El Buen Ayre
@@ -419,12 +419,12 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Toll Villagra,Agustín,Yerba Buena,Tucumán,M,FASTA Ángel María Boisdron
 2,Tralice,Franco,Yerba Buena,Tucumán,M,San Juan el Precursor
 2,Traverso,Lucas David,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
-2,Vázquez,Rodrigo,San Martín,Buenos Aires,M,Agustiniano
+2,Vázquez,Rodrigo,San Martín,Buenos Aires,M,COLEGIO AGUSTINIANO
 2,Viccini Silva,José Julián,Bella Vista,Corrientes,M,Normal Superior
 2,Vicens,Franco Emanuel,Hersilia,Santa Fe,M,ISPI Nº 9054 Colegio Santa Teresita del Niño Jesús
 2,Vigliarolo,Julián,Ciudadela,Buenos Aires,M,Juan XXIII
 2,Virgillo,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Argentina Modelo
-2,Vuoso,Juan Ignacio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+2,Vuoso,Juan Ignacio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 2,Wasserman,Lucio Martín,Grand Bourg,Buenos Aires,M,Tarbut
 2,Yang,Ricardo,Mar del Plata,Buenos Aires,M,Instituto San Alberto
 2,Yncio,Facundo Ramón,Comodoro Rivadavia,Chubut,M,Colegio Salesiano Deán Funes
@@ -525,7 +525,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 3,Rostagno,Pedro Ignacio,Rafaela,Santa Fe,M,San José
 3,Salas,Cristian Gustavo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
 3,Sapienza,Facundo Fabián,San Isidro,Buenos Aires,M,Nacional de San Isidro
-3,Scarini,Juan Diego,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+3,Scarini,Juan Diego,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 3,Sclar,Melanie,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Escuela Superior de Comercio Carlos Pellegrini
 3,Sella,Magdalena,Córdoba,Córdoba,F,Colegio Nacional de Monserrat
 3,Sietecase,Luciano,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín

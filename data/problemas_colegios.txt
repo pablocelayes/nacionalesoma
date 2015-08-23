@@ -4,15 +4,11 @@
 	clasificados -> 2008-2014
 	aprobados -> 2009-2014
 
-- Hay colegios de la oma que no aparecen en el listado
+- Hay colegios de la oma que no aparecen en el listado del MAE...
 	(p.e en un análisis preliminar) 
 		  * 'Alas y Raices' - de Buenos Aires
 		  * 'Villa Devoto School' - CABA(y tiene 11 clasificaciones)
 		  * 'ORT II'
 		  * Colegio Nacional Rafael Hernández(ni ninguna de sus sub-variantes)
-		  
-- También me topé con esto... la juridiscción choca con la provincia
-fila 3290
-  
-- Hay que eliminar algunos colegios que están como en blanco('xxx')	 
+		  * 'Casa Salesiana Pío IX' de CABA(¿se podría asumir que por la 'apariencia religiosa' es privado?)
 
