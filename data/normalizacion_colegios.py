@@ -24,12 +24,14 @@ def get_colegios_oma():
 						'Nombres':[],'Localidad':[],
 						'Provincia':[],'Género':[],'Colegio':[]})
 	for i in range(2008,2015):
+		tmp = pd.read_csv(template_filename % i)
+		tmp['Año'] = i
 		res = res.append(pd.read_csv(template_filename % i),ignore_index = True)
 	return res
 		
 def get_colegios_db():
 	"""
-	Devuelve un DataFrame con columnas [Nombre,Tipo-de-Gestión]
+	Devuelve un DataFrame con columnas [Nombre,Tipo-de-Gestión,Provincia,Localidad]
 	"""
 	
 	book = xlrd.open_workbook("Mae actualizado 2015-08-31_Envios.xls")
@@ -58,21 +60,29 @@ def get_colegios_db():
 					   'Localidad':np.array(localidad)})
 	return df
 
+def advanced_str_search(df,pattern,field):
+	"""
+	Para encontrar entradas similares por regexps
+	"""
+	re_str = re.compile(pattern,re.IGNORECASE)
+	df2 = pd.DataFrame(columns=df.columns)
+	for i,val in df[field].iteritems():
+		if re_str.search(val):
+			df2 = df2.append(df.ix[i],ignore_index=True)
+	return df2
 
+def nans(df,field):	
+	"""
+	Para encontrar todas las entradas de un campo con valos NaN
+	"""
+	df2 = pd.DataFrame(columns=df.columns)
+	for i,val in df[field].iteritems():
+		if type(val) != type(""):
+			df2 = df2.append(df.ix[i])
+	return df2
 
 def remove_accents(s):
 	return ''.join((c for c in ud.normalize('NFD', s) if ud.category(c) != 'Mn'))
-
-# def normalize(hname):
-	# """
-		# Split in words, turn to lowercase,
-		# remove accents, 
-	# """
-	# hname = remove_accents(hname).replace('-',' ')
-	# hname.replace('&', ' ')
-	# tokens = [word.strip(" ,.:;!|&-_()[]<>{}/\"'").lower()
-			# for word in hname.split()]
-	# return ' '.join(tokens)
 	
 def normalize(hname):
 	return remove_accents(hname).lower()
@@ -95,6 +105,14 @@ if __name__ == '__main__':
 	singles_db = colegios_db.drop_duplicates(subset=['Colegio','Provincia','Localidad'])
 	singles_db = singles_db.loc[:,['Colegio','Provincia','Localidad','Sector']]
 	
+	# print(advanced_str_search(colegios_oma.fillna(value="<>"),r'Belgrano','Colegio'))
+	
+	# print(nans(singles_oma,'Colegio'))
+	# print(nans(singles_oma,'Provincia'))
+	# print(nans(singles_oma,'Localidad'))
+	
+	##usar colegios_oma.ix(i) para ver los valores de las filas "originales" en colegios_oma
+	
 	result = pd.DataFrame({'Colegio':[],
 					  	   'Provincia':[],
 						   'Localidad':[],
@@ -109,12 +127,12 @@ if __name__ == '__main__':
 			# print(i,j,dmatches)
 			try: 
 				if normalize(esc_i) == normalize(esc_j):
-					result = result.append(pd.DataFrame({'Colegio':[esc_j],
-														 'Provincia':[prov_j],
-														 'Localidad':[loc_j],
-														 'Sector':[sect_j],
-														}),ignore_index=True)
-					# result.append(singles_db.iloc[j],ignore_index=True)
+					# result = result.append(pd.DataFrame({'Colegio':[esc_j],
+														 # 'Provincia':[prov_j],
+														 # 'Localidad':[loc_j],
+														 # 'Sector':[sect_j],
+														# }),ignore_index=True)
+					result = result.append(singles_db.ix[j],ignore_index=True)
 					singles_db.drop(j,inplace=True)
 					singles_oma.drop(i,inplace=True)
 					dmatches += 1
@@ -127,41 +145,6 @@ if __name__ == '__main__':
 	print("End for now...")	
 	
 	#----------------------------------------------------------------------------
-	# # 1. fetch all unmatched Expedia hotels
-	# with MySQLdb.connect(**DB_CONNECTION) as conn:
-		# conn.execute("""SELECT expediaID, lat, lon, hotelName
-						# FROM tbl_hotelsExpedia WHERE bookingID IS NULL""")
-		# expediahotels = {expediaID: {'location': (lat, lon), 'name': name}\
-							# for expediaID, lat, lon, name in conn.fetchall()}
-
-	# # 2. fetch all unmatched Booking.com hotels
-	# with MySQLdb.connect(**DB_CONNECTION) as conn:
-		# conn.execute("""SELECT hotelID, lat, lon, hotelName
-						# FROM tbl_hotelPrices""")
-		# bookinghotels = {hotelID: {'location': (lat, lon), 'name': name}\
-							# for hotelID, lat, lon, name in conn.fetchall()}
-
-		# conn.execute("""SELECT bookingID FROM tbl_hotelsExpedia""")
-		# matched_ids = [res[0] for res in conn.fetchall()]
-		# bookinghotels = {hid: v for hid, v in bookinghotels.items() if not hid in matched_ids}
-
-	# # 3. Direct match hotels with equal normalized names
-	# dmatches = 0
-	# exp_ids = expediahotels.keys()
-	# for exp_id in exp_ids:
-		# bkg_ids = bookinghotels.keys()
-		# for bkg_id in bkg_ids:
-			# expname = expediahotels[exp_id]['name']
-			# bkgname = bookinghotels[bkg_id]['name']
-			# if normalize(expname) == normalize(bkgname):
-				# with MySQLdb.connect(**DB_CONNECTION) as conn:
-					# conn.execute("""UPDATE tbl_hotelsExpedia SET bookingID=%s
-								# WHERE expediaID=%s""", (bkg_id, exp_id))
-					# del expediahotels[exp_id]
-					# del bookinghotels[bkg_id]
-					# dmatches += 1
-					# break
-	# print "%d direct matches found" % dmatches
 
 	# # 4. create pairwise similarities matrix for the remaining hotels
 	# print "%d Expedia left to match with %d Booking hotels" % (len(expediahotels), len(bookinghotels))
