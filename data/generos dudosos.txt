@@ -1,0 +1,23 @@
+1,Chen,Yu Sung,Rosario,Santa Fe,2
+1,Yang,Yue,Lomas De Zamora,Buenos Aires,2
+1,Cheng,Shih,Ho,Capital Federal,2
+1,Hnatiuk,Ala,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+1,Vivas,Quimey,Ituzaingó,Buenos Aires,2
+2,Chao,Tzu,Chi,Capital Federal,2
+2,Kliger,Rafi,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+1,Lin,Miao Chan,Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+3,Chao,Tzu-Chi,Buenos Aires,Ciudad Autónoma de Buenos Aires,2**
+1,Liang,Yueh-Chei,Rosario,Santa Fe,2
+2,Flachet,Arne,Los Polvorines,Buenos Aires,2
+1,Frances,Candice,Rosario,Santa Fé,2
+2,Lee,Po-chiang,San Miguel de Tucumán,Tucumán,2
+2,Liang,Yueh-Wei,Rosario,Santa Fé,2
+2,Tang,Shu Yong,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Yeh,Hsiang Kai,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Cheng,Yubo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+1,Trad,Jeuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+3,Lee,Hong Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+1,Sprejer,Eitán,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+1,Martínez,Eira,Santa Fe,Santa Fe,2
+1,Viñals Pierigé,Ícel,Bell Ville,Córdoba,2
