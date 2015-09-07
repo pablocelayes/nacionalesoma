@@ -349,8 +349,8 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Komañski,Nicolás,Bahía Blanca,Buenos Aires,M
 2,Lando,Nahuel,Vicente López,Buenos Aires,M
 2,Lavié,Julieta Leonor,La Plata,Buenos Aires,F
-2,Lee,Po-chiang,San Miguel de Tucumán,Tucumán,2
-2,Liang,Yueh-Wei,Rosario,Santa Fe,2
+2,Lee,Po-chiang,San Miguel de Tucumán,Tucumán,M
+2,Liang,Yueh-Wei,Rosario,Santa Fe,F
 2,Lipicar,Melisa Andrea,Rosario,Santa Fe,F
 2,Loglen,Juan Cruz,Bahía Blanca,Buenos Aires,M
 2,Lopez Valiente,Juan Cruz,Bariloche,Río Negro,M
@@ -437,7 +437,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Ruggiero,Franco,Junín,Buenos Aires,M
 2,Rumi,Federico,Moreno,Buenos Aires,M
 2,Salguero,Sabrina Alejandra,Caseros,Buenos Aires,F
-2,Sanagi,Tsutomu,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Sanagi,Tsutomu,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Sanchez Porja,Facundo,Córdoba,Córdoba,M
 2,Sanguinetti,Pedro Ezequiel,Tres de Febrero,Buenos Aires,M
 2,Scabini,Cintia Ariadna,Villa Ramallo,,F
@@ -458,7 +458,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Storni,Santiago Javier,Vicente López,Buenos Aires,M
 2,Subils,Lucía Ana,Funes,Santa Fe,F
 2,Sutich,David,Colón,Buenos Aires,M
-2,Tang,Shu Yong,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Tang,Shu Yong,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 2,Tassara,Federico Martín,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Terrén Alonso,Pablo Gastón,San Antonio de Areco,Buenos Aires,M
 2,Tomadoni,Barbara,Mar del Plata,Buenos Aires,F
@@ -522,7 +522,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Fallone,Marco,Quilmes,Buenos Aires,M
 3,Falzone,Mariano Leonel,Mar del Plata,Buenos Aires,M
 3,Finkelsteyn,Adrián Daniel Gabriel,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Flachet,Arne,Los Polvorines,Buenos Aires,2
+3,Flachet,Arne,Los Polvorines,Buenos Aires,M
 3,Frias,María Elisa,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 3,Gallicchio,Guillermo,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,García,Gonzalo,Coronel Suárez,Buenos Aires,M

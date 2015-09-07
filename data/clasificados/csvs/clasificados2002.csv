@@ -79,7 +79,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Lamarca,Carina Eliana,Campana,Buenos Aires,F
 1,Lesnaberes,Darío,Venado Tuerto,Santa Fe,M
 1,Levis,Daniela,Remedios de Escalada,Buenos Aires,F
-1,Lin,Miao Chan,Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+1,Lin,Miao Chan,Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 1,López Fuente,Mariano Luis,Villa Sarmiento,Buenos Aires,M
 1,López Malizia,Álvaro,Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Lospennato,Juan César,Martínez,Buenos Aires,M
@@ -308,10 +308,10 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Vallejos,Santiago,Derqui,Buenos Aires,M
 2,Vigo,Lucrecia,Casilda,Santa Fe,F
 2,Vittone,Agustín Alejandro,Rosario,Santa Fe,M
-2,Vivas,Quimey,Ituzaingó,Buenos Aires,2
+2,Vivas,Quimey,Ituzaingó,Buenos Aires,F
 2,Weisburd,Alexis Marcos,Córdoba,Córdoba,M
 2,Weitz,Gabriel Gerardo,Rosario,Santa Fe,M
-2,Yang,Yue,Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Yang,Yue,Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 2,Yu,Fernando,Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Zalduendo,Tomás Eduardo,Campana,Buenos Aires,M
 2,Zanenga,Heliana Paola,Formosa,Formosa,F
@@ -326,7 +326,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Bergerot,Gastón,Mercedes,Buenos Aires,M
 3,Butler,Matías,Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Cesar Ariet,Mario Estanislao,General Las Heras,Buenos Aires,M
-3,Chao,Tzu-Chi,Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+3,Chao,Tzu-Chi,Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Chasco,Daiana Paola,Rojas,Buenos Aires,F
 3,Chehem,Marianela,Rosario,Santa Fe,F
 3,Chiappori,Guido José,Neuquén,Neuquén,M

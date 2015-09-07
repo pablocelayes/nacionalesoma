@@ -19,7 +19,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Carlucci,Bruno Luciano,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Carluccio,José María,Bariloche,Río Negro,M
 1,Ceresola,Pablo Armando,Bariloche,Río Negro,M
-1,Chen,Yu Sung,Rosario,Santa Fe,2
+1,Chen,Yu Sung,Rosario,Santa Fe,F
 1,Cianci,Nicolás Emanuel,Bernal,Buenos Aires,M
 1,Colombo Berra,Juan José,Rosario,Santa Fe,M
 1,Cuezzo,Mario Gastón,San Miguel De Tucumán,Tucumán,M
@@ -61,7 +61,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Lores,Nicolás Homero,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Lynch,Benito Miguel,Cipolletti,Río Negro,M
 1,Mariscal,Lautaro Patricio,San Miguel De Tucumán,Tucumán,M
-1,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+1,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,F
 1,Migliavacca,Javier Isauro,San Miguel De Tucumán,Tucumán,M
 1,Miranda,Martín Santiago,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Montero,Leandro Pedro,Florida,Buenos Aires,M
@@ -247,7 +247,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Kler,Pablo Alejandro,Las Toscas,Santa Fe,M
 3,Lago,Adrián Gustavo,Remedios De Escalada,Buenos Aires,M
 3,Lanzillotti Kimura,Norberto Daniel,Isidro Casanova,Buenos Aires,M
-3,Lee,Ki Doo,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+3,Lee,Ki Doo,Capital Federal,Ciudad Autónoma de Buenos Aires,F
 3,Lempel,Ariel Abraham,Ezeiza,Buenos Aires,M
 3,Lenton,Antonio Andrés,Córdoba,Córdoba,M
 3,Levin,Gabriel Esteban,San Miguel De Tucumán,Tucumán,M

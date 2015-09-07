@@ -66,6 +66,7 @@ def normalize_str(string):
 def find_gender(string):
 	"""Para encontrar el género del participante usando la tabla de géneros.
 	"""
+	# print(string)
 	str_split = string.split()[0]
 	
 	record1 = gral_name_table[gral_name_table['nombre'] == normalize_str(string)].male
@@ -93,6 +94,7 @@ def unknown_genders():
 	
 def gender_to_csvs(file_template):
 	for i in range(1998,2015):
+		# print(i)
 		file = "{0}{1}.csv".format(file_template,i)
 		df = pd.read_csv(file)
 		df['Género'] = df['Nombres'].apply(find_gender)

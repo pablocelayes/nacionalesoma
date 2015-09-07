@@ -48,7 +48,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,González,Matías Ignacio,Caleta Olivia,Santa Cruz,M
 1,Grinóvero,Santiago Hernán,San Benito,Entre Ríos,M
 1,Hernández Maradona,Ramiro Andrés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Herrera Barra,Yeshua,Villa del Rosario,Córdoba,2
+1,Herrera Barra,Yeshua,Villa del Rosario,Córdoba,M
 1,Inchaurza,Fernán,Bariloche,Río Negro,M
 1,Kaial,Victoria,Rosario,Santa Fe,F
 1,Kaplan,Santiago,San Isidro,Buenos Aires,M
@@ -59,7 +59,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Lu,Jennifer,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 1,Ludueña,Uriel,Villa Allende,Córdoba,M
 1,Mac Donald,Martina,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Mansilla,Solana Estefanía,Juan N Fernández,Buenos Aires,2
+1,Mansilla,Solana Estefanía,Juan N Fernández,Buenos Aires,F
 1,Marchionna,Agustín Luis,Martínez,Buenos Aires,M
 1,Martínez,Gabriel Martín,Formosa,Formosa,M
 1,Mc Clymont,Duncan,Rosario,Santa Fe,M
@@ -68,7 +68,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Navarta Perassolo,Constanza,Juana Koslay,San Luis,F
 1,Posse,Agustín María,Necochea,Buenos Aires,M
 1,Quijada,Federico Nahuel,Paraná,Entre Ríos,M
-1,Radlovacki,Yhibo,La Rioja,La Rioja,2
+1,Radlovacki,Yhibo,La Rioja,La Rioja,M
 1,Reginato,Facundo Ezequiel,Guaymallén,Mendoza,M
 1,Rinaldo,Lautaro,C. A. de Buenos Aires,Buenos Aires,M
 1,Risso,Genaro,Olavarría,Buenos Aires,M
@@ -78,7 +78,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Scordamaglia,Stefano,Beccar,Buenos Aires,M
 1,Severino,José María,Rosario,Santa Fe,M
 1,Sobol Mark,Joel Max,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Sprejer,Eitán,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+1,Sprejer,Eitán,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Stancich,Sofía Belén,J M Gutiérrez,Buenos Aires,F
 1,Szerman,Nicholas,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Tawara,Enrique,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
@@ -176,7 +176,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Weinand,Gianni Georg,Rosario,Santa Fe,M
 2,Yazbek,Nahuel Agustín,Haedo,Buenos Aires,M
 2,Zitelli,Maximiliano Fabián,Avellaneda,Buenos Aires,M
-3,Aguilar,Gisell,Río Gallegos,Santa Cruz,2
+3,Aguilar,Gisell,Río Gallegos,Santa Cruz,F
 3,Aira,Alejandro,Colonia Margarita,Santa Fe,M
 3,Aráoz de Lamadrid,Camila,Pacheco,Buenos Aires,F
 3,Ayala,Jonathan Emanuel,San Vicente,Misiones,M
@@ -220,7 +220,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Kiszkiewicz,Iván,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Kloster,Agustín,Bahía Blanca,Buenos Aires,M
 3,Lang,Florencia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-3,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+3,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Lopapa,Andrés Ángel,General Villegas,Buenos Aires,M
 3,López,Enzo Matías,Guaymallén,Mendoza,M
 3,Marcantonio,Nicolás,Olivos,Buenos Aires,M

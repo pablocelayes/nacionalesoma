@@ -39,7 +39,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Ferraro,Alan Yamil,Adrogué,Buenos Aires,M
 1,Follonier,Marcos Andrés,Concordia,Entre Ríos,M
 1,Folmer,Guillermina,Crespo,Entre Ríos,F
-1,Frances,Candice,Rosario,Santa Fe,2
+1,Frances,Candice,Rosario,Santa Fe,F
 1,Gastaldi,Diego,V. Mackenna,Córdoba,M
 1,Givré,Alan Matías,C. A. De Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Gomez Taricco,Camila,C. A. De Buenos Aires,Ciudad Autónoma de Buenos Aires,F
@@ -180,9 +180,9 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Kirilovsky,Eva Ruth,Cañada de Gómez,Santa Fe,F
 2,Koifman,Joaquín,General Pacheco,Buenos Aires,M
 2,Laplume,Nicolás,San Carlos de Bariloche,Río Negro,M
-2,Lee,Po-Chiang,San Miguel de Tucumán,Tucumán,2
+2,Lee,Po-Chiang,San Miguel de Tucumán,Tucumán,M
 2,Leonetti,Matías Ezequiel,Olavarría,Buenos Aires,M
-2,Liang,Yueh-Wei,Rosario,Santa Fe,2
+2,Liang,Yueh-Wei,Rosario,Santa Fe,F
 2,Litman,Yair Ezequiel,Avellaneda,Buenos Aires,M
 2,López Irujo,Sebastián,Tres Arroyos,Buenos Aires,M
 2,Luque,Juan Ignacio,Rosario de la Frontera,Salta,M

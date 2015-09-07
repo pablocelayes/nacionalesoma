@@ -195,7 +195,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Tanco,Santiago Andrés,La Plata,Buenos Aires,M
 1,Tarela,Sofía,,,F
 1,Tosso,Iván Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Trad,Jeuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+1,Trad,Jeuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 1,Trujillo,Francisco Ruy,Mendoza,Mendoza,M
 1,Turrini,Ornella,Pérez Millán,Buenos Aires,F
 1,Ubeda,Ignacio,Rosario,Santa Fe,M
@@ -219,7 +219,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Antonelli,Juan Francisco,Bahía Blanca,Buenos Aires,M
 2,Arévalo,Juan Pablo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Argárate,Matías Federico,Olivos,Buenos Aires,M
-2,Arias,Yerimen,La Plata,Buenos Aires,2
+2,Arias,Yerimen,La Plata,Buenos Aires,F
 2,Arioni,Tomás,Neuquén,Neuquén,M
 2,Arroyo,Luciana,San Martín,Buenos Aires,F
 2,Ayala,Jonathan Emanuel,San Vicente,Misiones,M
@@ -286,7 +286,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Errázquin,Martín Ignacio,San Isidro,Buenos Aires,M
 2,Esquivel,Carlos,Merlo,Buenos Aires,M
 2,Far,Mónica,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,2
+2,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,F
 2,Femminella,Lucía Florencia,Boulogne,Buenos Aires,F
 2,Fenoglio,Sebastián Agustín,Rafaela,Santa Fe,M
 2,Fernández,Bruno Matías,Escobar,Buenos Aires,M
@@ -316,7 +316,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Kyburg,Félix,Martínez,Buenos Aires,M
 2,Lang,Florencia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 2,Langenheim,Matías,Concordia,Entre Ríos,M
-2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Lescano,Pedro Imanol,La Plata,Buenos Aires,M
 2,Lombardi,Agustín,Junín,Buenos Aires,M
 2,López,María Inés,Salta,Salta,F
@@ -483,7 +483,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Langhoff,Paula Sofía,Victorica,La Pampa,F
 3,Lapido,Bárbara,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 3,Larrea,Emanuel Alexis,Cañada de Gómez,Santa Fe,M
-3,Lee,Hong Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+3,Lee,Hong Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
 3,Leiva,Livio,San Rafael,Mendoza,M
 3,Loggio,Facundo,Concordia,Entre Ríos,M
 3,López del Río,Carlos Ezequiel,San Miguel de Tucumán,Tucumán,M

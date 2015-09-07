@@ -160,7 +160,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Kleiman,Ilán Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Kloster,Agustín,Bahía Blanca,Buenos Aires,M
 2,Lang,Florencia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,2
+2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Llanos,Alan Fabián,Malvinas Argentinas,Buenos Aires,M
 2,Luo,Leandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Margiottiello Navarro,Daniel Ramiro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
@@ -211,7 +211,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Alanís,Hipólito,La Plata,Buenos Aires,M
 3,Albertengo,Sofía,Cipoletti,Río Negro,F
 3,Arévalo Portillo,Juan Pablo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Arias,Yerimen,La Plata,Buenos Aires,2
+3,Arias,Yerimen,La Plata,Buenos Aires,F
 3,Astolfo,Julián,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Avellaneda,Andrés Nicolás,Río Gallegos,Santa Cruz,M
 3,Barboza,Gastón,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
@@ -238,7 +238,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Doll,Sebastián Martín,Monte Grande,Buenos Aires,M
 3,Döning,Matías Leandro,Alta Gracia,Córdoba,M
 3,Errázquin,Martín Ignacio,Villa Adelina,Buenos Aires,M
-3,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,2
+3,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,F
 3,Ferreyra,Claudio,Córdoba,Córdoba,M
 3,Firpo,Bruno Andrés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 3,Font,Federico Javier,Esperanza,Santa Fe,M

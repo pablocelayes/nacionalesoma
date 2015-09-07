@@ -7,7 +7,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Alonso,Esteban,Tres Arroyos,Buenos Aires,M
 1,Amondarain,Juan Tomás,Hudson,Buenos Aires,M
 1,Annoaro,Ignacio Javier,C. A. De Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Antonelli,Lihuen,Lobos,Buenos Aires,2
+1,Antonelli,Lihuen,Lobos,Buenos Aires,F
 1,Anzalaz,Gonzalo Uriel,Chilecito,La Rioja,M
 1,Argüello Román,Ezequiel Tomás,San Miguel de Tucumán,Tucumán,M
 1,Arolfo,Franco Augusto,Lomas de Zamora,Buenos Aires,M
@@ -77,7 +77,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Follonier,Marcos Andrés,Concordia,Entre Ríos,M
 1,Folmer,Guillermina,Crespo,Entre Ríos,F
 1,Fontana,Santiago,C. A. De Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Frances,Candice,Rosario,Santa Fe,2
+1,Frances,Candice,Rosario,Santa Fe,F
 1,Furesz,Santiago,Pilar,Buenos Aires,M
 1,Gastaldi,Diego,V. Mackenna,Córdoba,M
 1,Giuliani,Gabriela,Quilmes,Buenos Aires,F
@@ -212,7 +212,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Villagrán Dos Santos,Nicolás Andrés,Florida,Buenos Aires,M
 1,Viñuela,Eliana Beatriz,Trenel,La Pampa,F
 1,Vion,Gabriel,Puerto Esperanza,Misiones,M
-1,Wang,Pei-Jung (Angela),Avellaneda,Buenos Aires,2
+1,Wang,Pei-Jung (Angela),Avellaneda,Buenos Aires,F
 1,Wolfmann,Ariel,Córdoba,Córdoba,M
 1,Yañez,Facundo,Rojas,Buenos Aires,M
 1,Zaidman,María Florencia,Haedo - Villa Sarmiento,Buenos Aires,F
@@ -343,9 +343,9 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,La Rosa,Sebastián,C.A. De Buenos Aires,Ciudad Autónoma de Buenos Aires,M
 2,Lacuadra,Rubén Carlos,San Nicolás,Buenos Aires,M
 2,Laplume,Nicolás,San Carlos de Bariloche,Río Negro,M
-2,Lee,Po-Chiang,San Miguel de Tucumán,Tucumán,2
+2,Lee,Po-Chiang,San Miguel de Tucumán,Tucumán,M
 2,Leonetti,Matías Ezequiel,Olavarría,Buenos Aires,M
-2,Liang,Yueh-Wei,Rosario,Santa Fe,2
+2,Liang,Yueh-Wei,Rosario,Santa Fe,F
 2,Liberman,Eliana,Bahía Blanca,Buenos Aires,F
 2,Litman,Yair Ezequiel,Avellaneda,Buenos Aires,M
 2,López,María José,Río Gallegos,Santa Cruz,F

@@ -3,16 +3,16 @@ Buenos Aires,1998,2,5
 Buenos Aires,1999,2,10
 Buenos Aires,2001,0,3
 Buenos Aires,2002,1,17
-Buenos Aires,2003,0,19
+Buenos Aires,2003,2,19
 Buenos Aires,2004,1,27
 Buenos Aires,2005,2,17
 Buenos Aires,2006,4,32
 Buenos Aires,2007,5,31
 Buenos Aires,2008,8,32
-Buenos Aires,2009,5,26
+Buenos Aires,2009,6,26
 Buenos Aires,2010,3,23
-Buenos Aires,2011,6,20
-Buenos Aires,2012,2,33
+Buenos Aires,2011,7,20
+Buenos Aires,2012,3,33
 Buenos Aires,2013,5,27
 Buenos Aires,2014,4,43
 Catamarca,1998,0,0
@@ -64,7 +64,7 @@ Chubut,2012,0,1
 Chubut,2013,0,0
 Chubut,2014,0,0
 Ciudad Autónoma de Buenos Aires,1998,0,0
-Ciudad Autónoma de Buenos Aires,1999,2,17
+Ciudad Autónoma de Buenos Aires,1999,3,17
 Ciudad Autónoma de Buenos Aires,2001,1,8
 Ciudad Autónoma de Buenos Aires,2002,0,0
 Ciudad Autónoma de Buenos Aires,2003,1,7
@@ -75,8 +75,8 @@ Ciudad Autónoma de Buenos Aires,2007,1,12
 Ciudad Autónoma de Buenos Aires,2008,3,23
 Ciudad Autónoma de Buenos Aires,2009,4,16
 Ciudad Autónoma de Buenos Aires,2010,3,24
-Ciudad Autónoma de Buenos Aires,2011,3,19
-Ciudad Autónoma de Buenos Aires,2012,4,28
+Ciudad Autónoma de Buenos Aires,2011,3,20
+Ciudad Autónoma de Buenos Aires,2012,4,29
 Ciudad Autónoma de Buenos Aires,2013,3,17
 Ciudad Autónoma de Buenos Aires,2014,3,23
 Corrientes,1998,0,0
@@ -109,7 +109,7 @@ Córdoba,2009,0,5
 Córdoba,2010,1,5
 Córdoba,2011,0,4
 Córdoba,2012,0,4
-Córdoba,2013,2,4
+Córdoba,2013,2,5
 Córdoba,2014,0,4
 Entre Ríos,1998,0,0
 Entre Ríos,1999,0,0
@@ -189,7 +189,7 @@ La Rioja,2009,0,0
 La Rioja,2010,0,0
 La Rioja,2011,0,0
 La Rioja,2012,0,0
-La Rioja,2013,0,0
+La Rioja,2013,0,1
 La Rioja,2014,0,0
 Mendoza,1998,0,0
 Mendoza,1999,0,1
@@ -320,21 +320,21 @@ Santa Cruz,2012,0,1
 Santa Cruz,2013,0,0
 Santa Cruz,2014,0,1
 Santa Fe,1998,1,5
-Santa Fe,1999,2,5
+Santa Fe,1999,2,6
 Santa Fe,2001,0,0
 Santa Fe,2002,1,4
 Santa Fe,2003,3,5
 Santa Fe,2004,2,9
 Santa Fe,2005,0,5
-Santa Fe,2006,2,9
-Santa Fe,2007,5,7
+Santa Fe,2006,3,9
+Santa Fe,2007,6,7
 Santa Fe,2008,4,11
 Santa Fe,2009,5,7
 Santa Fe,2010,3,7
 Santa Fe,2011,1,9
 Santa Fe,2012,3,12
 Santa Fe,2013,3,13
-Santa Fe,2014,1,25
+Santa Fe,2014,2,25
 Santiago del Estero,1998,0,0
 Santiago del Estero,1999,0,0
 Santiago del Estero,2001,0,0
@@ -379,7 +379,7 @@ Tucumán,2007,0,0
 Tucumán,2008,0,0
 Tucumán,2009,0,4
 Tucumán,2010,1,3
-Tucumán,2011,1,3
-Tucumán,2012,1,0
+Tucumán,2011,2,3
+Tucumán,2012,2,0
 Tucumán,2013,1,0
 Tucumán,2014,1,3

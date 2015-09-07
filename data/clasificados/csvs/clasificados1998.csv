@@ -42,8 +42,8 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Ceresola,Pablo Armando,Bariloche,Río Negro,M
 1,Cervellini,María Liz,Santa Rosa,La Pampa,F
 1,Chasco,Mariano Ariel,Rufino,Santa Fe,M
-1,Chen,Yu Sung,Rosario,Santa Fe,2
-1,Chern,Kuo-Chao,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+1,Chen,Yu Sung,Rosario,Santa Fe,F
+1,Chern,Kuo-Chao,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 1,Chiaradía,Juan Martín,Necochea,Buenos Aires,M
 1,Chillo,Nicolás Agustín,Tigre,Buenos Aires,M
 1,Choi,Cristian Emmanuel,Capital Federal,Ciudad Autónoma de Buenos Aires,M
@@ -152,7 +152,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Mariscal,Lautaro Patricio,San Miguel de Tucumán,Tucumán,M
 1,Martelletti,Mariano Gabriel,Rosario,Santa Fe,M
 1,Martínez,Nancy Carolina,Lanús,Buenos Aires,F
-1,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+1,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,F
 1,Mazzola,Gerardo,Villa Ramallo,Buenos Aires,M
 1,Melero,Ricardo Javier,Santa Fe,Santa Fe,M
 1,Mereb,Juan Francisco,El Bolsón,Río Negro,M
@@ -451,7 +451,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 2,Tiberti,Fernando Daniel,Santiago del Estero,Santiago del Estero,M
 2,Tripicchio,Agustín Bernardo,Villa Cañás,Santa Fe,M
 2,Trivella,Pablo Gabriel,Guaymallén,Mendoza,M
-2,Tsai,Teng-Han,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+2,Tsai,Teng-Han,Capital Federal,Ciudad Autónoma de Buenos Aires,M
 2,Vázquez Novoa,Nadia Evangelina,Córdoba,Córdoba,F
 2,Vega,Carolina,Junín,Buenos Aires,F
 2,Villafañe,Gabriela Lorena,Capital Federal,Ciudad Autónoma de Buenos Aires,F
@@ -513,7 +513,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 3,Kler,Pablo Alejandro,Las Toscas,Santa Fe,M
 3,Lago,Adrián Gustavo,Remedios de Escalada,Buenos Aires,M
 3,Lanzillotti,Norberto Daniel,Isidro Casanova,Buenos Aires,M
-3,Lee,Ki Doo,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+3,Lee,Ki Doo,Capital Federal,Ciudad Autónoma de Buenos Aires,F
 3,Lempel,Ariel Abraham,Ezeiza,Buenos Aires,M
 3,Lenton,Antonio Andrés,Córdoba,Córdoba,M
 3,Luccas,Roberto Fabián,Plottier,Neuquén,M

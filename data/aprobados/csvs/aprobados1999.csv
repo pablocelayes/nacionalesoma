@@ -59,7 +59,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Mainero,Emiliano,Villa Trinidad,Santa Fe,M
 1,Mangiarotti,Franco Julio,San Justo,Buenos Aires,M
 1,Martínez,Walter Oscar,Pilar,Buenos Aires,M
-1,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,2
+1,Mattes,Addy,Capital Federal,Ciudad Autónoma de Buenos Aires,F
 1,Médica,Eric David,Salliqueló,Buenos Aires,M
 1,Medina,María Cecilia,Apóstoles,Misiones,F
 1,Mezza,Gabriela Natalia,Villa Caã±ás,Santa Fe,F
@@ -95,4 +95,4 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género
 1,Varela,Enzo Martín,Chacabuco,Buenos Aires,M
 1,Venturi,Gonzalo,Godeken,Santa Fe,M
 1,Weitz,Gabriel Gerardo,Rosario,Santa Fe,M
-1,Yang,Yue,Lomas De Zamora,Buenos Aires,2
+1,Yang,Yue,Lomas De Zamora,Buenos Aires,F
