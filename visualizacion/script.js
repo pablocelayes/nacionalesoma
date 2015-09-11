@@ -29,22 +29,16 @@ var path_to_provs =
 	path3193:"Santiago del Estero",
 	path2384:"Tierra del Fuego",
 	path3187:"Tucumán",
-    };	
-
-d3.xml(svg_file1, "image/svg+xml", function(xml){
-    document.getElementById("main").appendChild(xml.documentElement);		  
-});
-
-
+    };
+    
+var year_title = d3.select("#year");
+var tooltip_node = d3.select("#tooltip");
 var input_node = d3.select("input"); 
-input_node.property("value",1998); 
 
-var div1 = d3.select("body")
-    .attr("class","map")
-    .append("div")   
-    .attr("class", "tooltip1");
-
-var div2 = d3.select("#chart");
+input_node.property("value",1998);
+tooltip_node
+       .append("div")   
+       .attr("class", "tooltip1");
 
 var svg_array = [];
 
@@ -59,10 +53,10 @@ function fill_svg_array(){
     }	
 }
 
-fill_svg_array()		
+fill_svg_array();	              
 
 //asociando el slider al mapa...
-d3.select("#year").on("input", function(){update_svg(+this.value,"input");});
+input_node.on("input", function(){update_svg(+this.value);});
 
 function tooltip(year,id,event)				
 {
@@ -77,7 +71,7 @@ function tooltip(year,id,event)
     if(prov != undefined){
 	prov = prov.replace(/\s/g, '_');
 	
-	div1.html("");				//para evitar que "crezca" el tooltip
+	tooltip_node.html("");				//para evitar que "crezca" el tooltip
 	
 	d3.csv("clasificados/provcounts.csv",function(rows)
 	       {
@@ -100,7 +94,7 @@ function tooltip(year,id,event)
 				}
 			    });
 		   
-		   div1.html(html_str+"<p>Progresión:"+
+		   tooltip_node.html(html_str+"<p>Progresión:"+
 			     "<img align='left' height='140' src="+'./plots/'+prov+".svg></img></p>")
 		       .style('display', 'block');
 	       });
@@ -109,13 +103,12 @@ function tooltip(year,id,event)
     
 }
 
-function update_svg(año,caller)
+function update_svg(año)
 {
-
     //actualizando label
-    d3.select("#year-value").text(año);
+    d3.select("#year-title").text(año);
     d3.select("#year").property("year", año);
-    div1.style('display', 'none');
+    tooltip_node.style('display', 'none');
     
     //leyendo archivo svg correspondiente al año desde svg_array
     var paths = d3.selectAll("path");
@@ -129,8 +122,7 @@ function update_svg(año,caller)
 	    .transition()
 	    .style('fill',svg_array[año - 1998].documentElement.getElementById(path.id).style.fill);
 	
-	if (caller == "input")
-	{
+	
 	    // alert(provincia);
 	    d3.select(path).on('mouseenter',function(event)
 			       {
@@ -149,8 +141,13 @@ function update_svg(año,caller)
 			}
 			
 		    });
-	}
+	
 	
 
     }
 }
+
+d3.xml(svg_file1, "image/svg+xml", function(xml){
+    document.getElementById("mapa").appendChild(xml.documentElement);		  
+});
+
