@@ -91,8 +91,8 @@ function add_years(cat){
 //    year_list.html("");
     cat_selected = cat;
     cat_title.text(cat);
-    year_title.text(initial_year);
-    year_list.property("value",1998);
+    year_title.text(initial_year)
+    			  .property("value",1998);
  
     update_svg(cat_selected,initial_year);
 }
