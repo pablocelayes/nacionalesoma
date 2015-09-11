@@ -3,8 +3,10 @@
  <head>
    <meta charset="utf-8">
    <title>Análisis de clasificados y aprobados OMA.</title>
+   <script type="text/javascript" src="d3.v3.min.js"></script>
    <link href="css/bootstrap.min.css" rel="stylesheet">
    <link href="css/mine.css" rel="stylesheet">
+   <link href="css/vppal.css" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
  <body>
@@ -19,16 +21,17 @@
 		 </center>		
 		</div>
 		<div class="row">
-		 <div class="col-md-5">
-		 	<iframe src="mapa_clasificados.html" seamless height="1024" width="768"></iframe>
+		 <div class="col-md-6">
+		 	<div class="vis-cantidad"><iframe id="cantidad" src="mapa_clasificados.html" height="700px" width="900px"></iframe></div>
 		 </div>
-		 <br></br>
-		 <br></br>
-		 <div class="col-md-5">
-		 <iframe src="bokeh/gini.html" seamless height="800px" width="830px" ></iframe>
+<!--		 <br></br>
+		 <br></br>-->
+		 <div class="col-md-6">
+		 <div class="vis-gini"><iframe id="gini" src="bokeh/gini.html" height="700px" width="900px"></iframe></div>
 		 </div>
 		</div>
 	</div>
-	<!-- <img src="legend.svg" alt="Ajustar..."></img> -->
+	
+	<script type="text/javascript" src="js/vis-ppal.js"></script>
  </body>
 </html>
