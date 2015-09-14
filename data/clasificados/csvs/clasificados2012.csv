@@ -1,522 +1,522 @@
-Nivel,Apellido,Nombres,Localidad,Provincia,Género
-1,Acosta,Lisandro,Rafaela,Santa Fe,M
-1,Agote,Nicolás,Acassuso,Buenos Aires,M
-1,Almada Canosa,Agustín Nicolás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Álvarez,Juan Cruz,Capioví,Misiones,M
-1,Anastacio,María Sofía,San Miguel de Tucumán,Tucumán,F
-1,Antuña,Lucía,Rosario,Santa Fe,F
-1,Aroza Rodríguez,Bruno,Rosario,Santa Fe,M
-1,Arrieta Zuccalli,Francisco José,La Plata,Buenos Aires,M
-1,Back,Ramiro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Bahlke,Martina,Villa Constitución,Santa Fe,F
-1,Balbi,Bruno,Martínez,Buenos Aires,M
-1,Barbieri,Guido,Tigre,Buenos Aires,M
-1,Barbón,Nerina Aylén,Casilda,Santa Fe,F
-1,Barreto,Agustín Nicolás,Chilavert,Buenos Aires,M
-1,Bellis,Pedro,Porteña,Córdoba,M
-1,Bergadá,Francisco Gabriel,La Plata,Buenos Aires,M
-1,Bergerman,Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Bettiga,Lucila,Quilmes,Buenos Aires,F
-1,Bini,Valentina María,Rosario,Santa Fe,F
-1,Blufstein,Marcos,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Bonetto,Tomás,Jesús María,Córdoba,M
-1,Boragina,Nicolás Emanuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Boses,Matías Edgardo,Pehuajó,Buenos Aires,M
-1,Bouciguez,Antenor,Campana,Buenos Aires,M
-1,Bruno,Camila,Rafaela,Santa Fe,F
-1,Brusasca,Francisco Gabriel,Leones,Córdoba,M
-1,Bugallo,Santiago,,,M
-1,Busolini,Lucía,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Callalli,Nahuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Callegari,Ezequiel Adrián,La Reja,Buenos Aires,M
-1,Callegari,Luciano Ariel,Olivos,Buenos Aires,M
-1,Capano,Alan Nahuel,Mar del Plata,Buenos Aires,M
-1,Caramutti,Ian Richard,Neuquén,Neuquén,M
-1,Carcedo,Hernán Agustín,La Cumbre,Córdoba,M
-1,Cárdenas,Franco Gabriel,Comodoro Rivadavia,Chubut,M
-1,Cardoso,Juan Pablo,Mar del Plata,Buenos Aires,M
-1,Carossino Peirano,Francisco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Carreira,Tobías,Vicente López,Buenos Aires,M
-1,Carulli,Nicolás Leopoldo,Merlo,Buenos Aires,M
-1,Casiraghi,Tadeo,Olivos,Buenos Aires,M
-1,Castro González,Juan Cruz,San Pedro de Jujuy,Jujuy,M
-1,Chaves,Florencia,Quilmes,Buenos Aires,F
-1,Chehebar,Nicolás Gustavo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Cherny,Federico,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Chilano,Matías,Chacabuco,Buenos Aires,M
-1,Ciani,Laurina,Las Parejas,Santa Fe,F
-1,Cichanowski,Luis Yonatan,Apóstoles,Misiones,M
-1,Cocimano,Facundo,Quilmes,Buenos Aires,M
-1,Colavitte,Facundo Gastón,La Plata,Buenos Aires,M
-1,Collarte,Jorge Ramsés,Vicente López,Buenos Aires,M
-1,Conde,Alejo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Conde,Julia,Ramos Mejía,Buenos Aires,F
-1,Condemi,Julia,San Andrés de Giles,Buenos Aires,F
-1,Condori,Matías,San Salvador de Jujuy,Jujuy,M
-1,Condori,Fabricio Joaquín Omar,San Salvador de Jujuy,Jujuy,M
-1,Conti,Valentino,Resistencia,Chaco,M
-1,Correa,Carlos Agustín,Posadas,Misiones,M
-1,Cravietto,Martín,Los Polvorines,Buenos Aires,M
-1,Crucianelli,Carla Johanna,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Cuccioletta,Federico Gabriel,Villa Constitución,Santa Fe,M
-1,Cuevas,Santiago,Santa Rosa,La Pampa,M
-1,Cufré,Francisco José,San Andrés de Giles,Buenos Aires,M
-1,Curcho,Rodrigo,Concordia,Entre Ríos,M
-1,Curci,Ivana,Mendoza,Mendoza,F
-1,Curci,Vanesa,Mendoza,Mendoza,F
-1,D'Acunto,Juan Pablo,San Isidro,Buenos Aires,M
-1,Davicino,Lara Victoria,Rafaela,Santa Fe,F
-1,de Amorin,Lucas Gabriel,Avellaneda,Buenos Aires,M
-1,de Leo,Luca,San Cayetano,Buenos Aires,M
-1,De Vega,Luciano Andrés,Comodoro Rivadavia,Chubut,M
-1,del Campo,Pedro Augusto,San Isidro,Buenos Aires,M
-1,Dell Elce,Sebastián Agustín,Venado Tuerto,Santa Fe,M
-1,Devesa,Rodrigo Ramón,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,di Giambattista,Franco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,di Giambattista,Marco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Díaz,Catalina,San Martín de los Andes,Neuquén,F
-1,Díaz,Lucas,Rosario,Santa Fe,M
-1,Díaz Mac William,Rodrigo Tomás,Córdoba,Córdoba,M
-1,Didoné,Pedro José,La Plata,Buenos Aires,M
-1,Dirazar,Tomás,La Plata,Buenos Aires,M
-1,Domínguez,Matías Gabriel,Banfield,Buenos Aires,M
-1,Domínguez Dahl,María Sol,Vedia,Buenos Aires,F
-1,Duarte,Daniela,Muñiz,Buenos Aires,F
-1,Engler,Camila,Esperanza,Santa Fe,F
-1,Enríquez,Agustín,Concordia,Entre Ríos,M
-1,Epelde,Federico,Zárate,Buenos Aires,M
-1,Erranti Rival,Melanie Solange,Gral Las Heras,Buenos Aires,F
-1,Erviti,Dolores,Tandil,Buenos Aires,F
-1,Espinoza,Julián Uriel,Berazategui,Buenos Aires,M
-1,Falvino,Paula,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Fernández,Martina,Funes,Santa Fe,F
-1,Ferrés,Julián,Villa Ramallo,Buenos Aires,M
-1,Ferreyra,Laura,Córdoba,Córdoba,F
-1,Feyuk,Daniel Enrique,Ruiz de Montoya,Misiones,M
-1,Figueredo,Nahuel Ariel,Gobernador Virasoro,Corrientes,M
-1,Figueroa,Augusto,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Figueroa,Camila,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Figueroa,Daniel Eduardo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Figueroa Aragón,Sofía,San Miguel de Tucumán,Tucumán,F
-1,Filloy,Lisandro,Bernal,Buenos Aires,M
-1,Filloy,Ronán,Bernal,Buenos Aires,M
-1,Foglia,Juan Manuel,Daireaux,Buenos Aires,M
-1,Fortin Murga,Pablo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Fotinós,Jerónimo,Córdoba,Córdoba,M
-1,Francois,Matías Santiago,Santa Fe,Santa Fe,M
-1,Frutos,Joaquín,Paso de los Libres,Corrientes,M
-1,Fueyo,Fernando José,Casilda,Santa Fe,M
-1,Gaete,Francisco,San Miguel de Tucumán,Tucumán,M
-1,Galicia,Camila María,San Isidro,Buenos Aires,F
-1,García,Mauricio,Orán,Salta,M
-1,García Lucentini,Javier,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Gasparini,Santiago,La Plata,Buenos Aires,M
-1,Gastaldi,Débora Nicole,Los Molinos,Santa Fe,F
-1,Gaztelú,Facundo Julián,Crespo,Entre Ríos,M
-1,Giletta,Sebastián,Rafaela,Santa Fe,M
-1,Giménez Aranda,María Rocío,Mendoza,Mendoza,F
-1,Ginestet,Santiago,Daireaux,Buenos Aires,M
-1,Giorda,Cristian Matías,Merlo,Buenos Aires,M
-1,Giovanniello,Santiago,San Miguel de Tucumán,Tucumán,M
-1,Gómez,Maximiliano Agustín,San Miguel de Tucumán,Tucumán,M
-1,González,Bruno Alexis,Posadas,Misiones,M
-1,Greco,Nicolás Germán,Quilmes,Buenos Aires,M
-1,Grillo,Franco Salvador,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Gros,Mariquena,Mar del Plata,Buenos Aires,F
-1,Guastella,Juan Cruz,Olivos,Buenos Aires,M
-1,Guerrero Cerezo,Malena Sofía,La Rioja,La Rioja,F
-1,Huber,María Victoria,Rosario,Santa Fe,F
-1,Ierullo López,Eric Román,Wilde,Buenos Aires,M
-1,Inchaurza,Fernán,Bariloche,Río Negro,M
-1,Insaurralde,Fátima Belén,Capioví,Misiones,F
-1,Itzcovitz,Axel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Jávega,Matías,Córdoba,Córdoba,M
-1,Kaplan,Santiago,San Isidro,Buenos Aires,M
-1,Kéimel Álvarez,Ezequiel Martín,Paso del Rey,Buenos Aires,M
-1,Keklikian,Gregorio José,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Kremenchusky,Roni Daniel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Ladjet,Ramiro Martín,La Matanza (Ramos Mejía),Buenos Aires,M
-1,Laserna,Josefina,San Antonio de Areco,Buenos Aires,F
-1,Lattanzi,Serena,Sunchales,Santa Fe,F
-1,López,Juliana Laura,Hudson,Buenos Aires,F
-1,Macías,Nicolás,San Miguel de Tucumán,Tucumán,M
-1,Maleh,Federico,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Manca,Ángel Maximiliano,Tafí Viejo,Tucumán,M
-1,Manno,Cecilia Gisel,Rosario,Santa Fe,F
-1,Marchionna,Agustín Luis,Martínez,Buenos Aires,M
-1,Martínez,Gabriel Martín,Formosa,Formosa,M
-1,Medina,Tomás,Neuquén,Neuquén,M
-1,Mei,Bruno Enrique,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Meoli,Lucas,Florida,Buenos Aires,M
-1,Miguez,Ignacio,Ituzaingó,Buenos Aires,M
-1,Mihura,Iñaki,Gualeguay,Entre Ríos,M
-1,Milani,Ignacio,Río Cuarto,Córdoba,M
-1,Milanowski,Maia Sofía,San Isidro,Buenos Aires,F
-1,Mirande,Jorge,Salta,Salta,M
-1,Moletta,Tomás,Villa Ballester,Buenos Aires,M
-1,Molter,Eric,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Mones Ruiz,Juan,General Villegas,Buenos Aires,M
-1,Monte,Victoria,Río Segundo,Córdoba,F
-1,Monzón,Sofía Aillén,Avellaneda,Buenos Aires,F
-1,Morali,José de la Cruz,Villaguay,Entre Ríos,M
-1,Morayo,Gema Abigail,Monte Cristo,Córdoba,F
-1,Moreno,Maribel Agustina,Concordia,Entre Ríos,F
-1,Moreno Xammar,Tomás,Mar del Plata,Buenos Aires,M
-1,Mosquera,Agustín Pedro,San Isidro,Buenos Aires,M
-1,Moya,Tomás,Salta,Salta,M
-1,Moyano,José Marcelo,San Salvador de Jujuy,Jujuy,M
-1,Muro,Sara,Rosario,Santa Fe,F
-1,Navarro,Alejo,Martínez,Buenos Aires,M
-1,Navarro,Mateo,Martínez,Buenos Aires,M
-1,Navarta Perassolo,Constanza,Juana Koslay,San Luis,F
-1,Neri Artano,Juan Eduardo,Bragado,Buenos Aires,M
-1,Nieva,Facundo,Jesús María,Córdoba,M
-1,Nistico,Marco Antonio,San Isidro,Buenos Aires,M
-1,Oggero Hernández,Gino Valentino,Córdoba,Córdoba,M
-1,Olkies,Ilán,Lomas de Zamora,Buenos Aires,M
-1,Oses Oliveto,Alana Belén,Neuquén,Neuquén,F
-1,Palacio Fornero,Marina del Valle,Ceres,Santa Fe,F
-1,Palena,Sofía,Isla Verde,Córdoba,F
-1,Pallva,Patricio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Paparella,Guido,Santa Ana,Corrientes,M
-1,Pazzaglini,Franco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Pérez Bedoya,Ignacio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Pérez Guerra,Juan José Jesús,General Pueyrredón,Buenos Aires,M
-1,Petracci,María Florencia,Florida,Buenos Aires,F
-1,Piana,Juan Pablo,General Pico,La Pampa,M
-1,Pierucci,Valentina,Cipoletti,Río Negro,F
-1,Pioli,Virginia María,Rosario,Santa Fe,F
-1,Politano,Pablo Agustín,Bahía Blanca,Buenos Aires,M
-1,Pomato,María Belén,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Porporato,Santiago,Sunchales,Santa Fe,M
-1,Posse,Agustín María,Necochea,Buenos Aires,M
-1,Price,Gonzalo,San Martín de los Andes,Neuquén,M
-1,Ramírez Juncos,Lautaro Esteban de Jesús,Córdoba,Córdoba,M
-1,Ramos,Roberto Manuel,Comodoro Rivadavia,Chubut,M
-1,Reschini,Oriana,Rosario,Santa Fe,F
-1,Ripoll,Ludmila,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Rivero Jamín,Agustín,Rosario,Santa Fe,M
-1,Rodríguez,Jeanette,Tornquist,Buenos Aires,F
-1,Rojas,Joaquín,Mar del Plata,Buenos Aires,M
-1,Rojas,Tomás Ian,Morón,Buenos Aires,M
-1,Ronchi Rivara,Sofía,Lincoln,Buenos Aires,F
-1,Rossi Bolcato,Juan Agustín,Maipú,Mendoza,M
-1,Ruggeri,Federico,Mar del Plata,Buenos Aires,M
-1,Ruggeri,Paula Daniela,Río Gallegos,Santa Cruz,F
-1,Sac-Himelfarb,Gabriel,Neuquén,Neuquén,M
-1,Salamanca,Carlos Emanuel,Las Varillas,Córdoba,M
-1,Salgado,Lucas Andrés,Resistencia,Chaco,M
-1,Salorio Martínez,Paula,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Salvador,Lucas Fernán,Mar del Plata,Buenos Aires,M
-1,Sandoval,Fernando Nicolás,Virrey del Pino,Buenos Aires,M
-1,Sandrini,Bruno,Rosario,Santa Fe,M
-1,Sansone,Agustín,Villa Ballester,Buenos Aires,M
-1,Santana,Leandro Matías,José C Paz,Buenos Aires,M
-1,Sartorio,Casandra Belén,Quilmes,Buenos Aires,F
-1,Schenhals Podorosky,Ailén María,General Ramírez,Entre Ríos,F
-1,Schvartzman,Lara Daniela,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Scotte,Martín Francisco,Chilavert,Buenos Aires,M
-1,Seminara Cunto,Zoe Alicia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Seré,María,Lincoln,Buenos Aires,F
-1,Solari,Julieta,Río Gallegos,Santa Cruz,F
-1,Szerman-Ottaviano,Nicholas,Vicente López,Buenos Aires,M
-1,Tadini,Santiago,Beccar,Buenos Aires,M
-1,Teran Carballo,Jonathan,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Testani,Vanina,Necochea,Buenos Aires,F
-1,Theaux,Facundo,Jesús María,Córdoba,M
-1,Torchiaro,Santiago,Ranelagh,Buenos Aires,M
-1,Trama,Francisco,Mar del Plata,Buenos Aires,M
-1,Trebino,Marcos,Olivos,Buenos Aires,M
-1,Turrini,Ornella,Pérez Millán,Buenos Aires,F
-1,Ubeda,Ignacio,Rosario,Santa Fe,M
-1,Vargas Alejandro,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-1,Vázquez,Antonela,Carmen,Santa Fe,F
-1,Venturino,Mariana Berenice,Concordia,Entre Ríos,F
-1,Verussa,Gastón Ezequiel,Neuquén,Neuquén,M
-1,Vidret,Martina,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Villegas,Maximiliano Matías,Mar del Plata,Buenos Aires,M
-1,Villegas,Valentina,Daireaux,Buenos Aires,F
-1,Vinograd,Melisa,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,von Brevern,Camila,Boulogne,Buenos Aires,F
-1,Yapur,Nicolás Alejandro,Tigre,Buenos Aires,M
-1,Yuziuchuk,Daniela Alejandra,Lanús,Buenos Aires,F
-1,Zylber,Julián Ariel,Martínez,Buenos Aires,M
-1,Zylber,Natalí Micaela,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-1,Zysler,Paula Débora,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Acosta,Evaristo,Rafaela,Santa Fe,M
-2,Adrover,Yamila Paola,Esperanza,Santa Fe,F
-2,Aguirre,Ignacio,Carlos Pellegrini,Santa Fe,M
-2,Ainchil,Manuela,Mar del Plata,Buenos Aires,F
-2,Alá,Facundo,Concordia,Entre Ríos,M
-2,Alberti,Melanie Aylén,Don Torcuato,Buenos Aires,F
-2,Alix,Ezequiel Pablo,Mar del Plata,Buenos Aires,M
-2,Alonso Álvarez,David Ezequiel,Devoto,Córdoba,M
-2,Annacondia,Federico Agustín,Monte Grande,Buenos Aires,M
-2,Aráoz de Lamadrid,Camila,Pacheco,Buenos Aires,F
-2,Arena,Lourdes Ailén,San Miguel de Tucumán,Tucumán,F
-2,Arévalo,Juan Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Badía,Andrés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Ballejos,Julián Ezequiel,Goya,Corrientes,M
-2,Barrionuevo,Mariana del Valle,Monteros,Tucumán,F
-2,Barta,Matías Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Basílico,Simón,Venado Tuerto,Santa Fe,M
-2,Basteiro,Pablo Víctor Antonio,San Martín,Buenos Aires,M
-2,Bava,Melina Ailén,General Rodríguez,Buenos Aires,F
-2,Begue,Agustín,Bariloche,Río Negro,M
-2,Bellmann,Fernando Emilio,Córdoba,Córdoba,M
-2,Benavides,Micaela Belén,Rosario,Santa Fe,F
-2,Bergandi,Cedric David,Río Segundo,Córdoba,M
-2,Bertenasco,Julieta,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Bitchik,Danel Alex Joel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Blas,Alexis Ezequiel,San Martín de los Andes,Neuquén,M
-2,Blázquez Olivera,Sebastián Alejandro,Loma Hermosa,Buenos Aires,M
-2,Bokser,Brian Ariel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Bombau,Ignacio Javier,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Bonak,Pedro Nicolás,Villa Allende,Córdoba,M
-2,Bonetto,Matías,Jesús María,Córdoba,M
-2,Bortolatto,Bruno Nicolás,Río Cuarto,Córdoba,M
-2,Botinelli,Melisa Denise,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Bracalenti,María Cecilia,Santa Fe,Santa Fe,F
-2,Burigotto,Renzo Tobías,La Plata,Buenos Aires,M
-2,Cabaña,Agustín Daniel,Esperanza,Santa Fe,M
-2,Cannata,Franco Ezequiel,Villa Ballester,Buenos Aires,M
-2,Caprile,Fernando,Avellaneda,Buenos Aires,M
-2,Caramutti,Mathias,Neuquén,Neuquén,M
-2,Cardozo,Agustín Eugenio,Salta,Salta,M
-2,Carini,Abril,Los Toldos,Buenos Aires,F
-2,Castellarin,Román Agustín,Funes,Santa Fe,M
-2,Cattaneo,María Florentina,Monte,Buenos Aires,F
-2,Catz,Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Chenna,Agustín,Merlo,Buenos Aires,M
-2,Cherny,Sebastián,Vicente López,Buenos Aires,M
-2,Colavecchia,Ailén Carolina,Bariloche,Río Negro,F
-2,Colella Pagella,Facundo Tomás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Costantino,Leandro Ezequiel,Villa Ballester,Buenos Aires,M
-2,Crespo,Eugenia,Rosario,Santa Fe,F
-2,Daguerre,Lucas,La Plata,Buenos Aires,M
-2,de Frankenberg,María Josefina,San Fernando,Buenos Aires,F
-2,Decara,Lautaro,Lanús,Buenos Aires,M
-2,Del Gobbo,Julián,Vicente López,Buenos Aires,M
-2,del Río,Fernando,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Del Valle,Francisco,La Lucila,Buenos Aires,M
-2,Delmastro,Dino Nicolás,Bariloche,Río Negro,M
-2,Demartino,Santiago,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Diale,Mauro,Rosario,Santa Fe,M
-2,Eberle,Yamila Rocío,María Grande,Entre Ríos,F
-2,Ertola Uttubey,Gala,Villa Elisa,Buenos Aires,F
-2,Farías,Alejo,Unquillo,Córdoba,M
-2,Fernández,Bruno Matías,Escobar,Buenos Aires,M
-2,Fernández,Sofía,Villa Domínico,Buenos Aires,F
-2,Fernández Casella,Lucía Inés,Rosario,Santa Fe,F
-2,Ferraro,Mariano,Coronel Dorrego,Buenos Aires,M
-2,Ferreyra,Franco Iván,Paso del Rey,Buenos Aires,M
-2,Flores,Fernando Exequiel,Salta,Salta,M
-2,Fonseca,Rocío Guadalupe,Córdoba,Córdoba,F
-2,Frías Silva,Agustín Hipólito,Salta,Salta,M
-2,Fritz,Carolina Inés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Galluccio,Francisco,Santa Fe,Santa Fe,M
-2,García Ramello,Agustina Aldana,Monte Cristo,Córdoba,F
-2,Gaviglio,María Gracia,Zenón Pereyra,Santa Fe,F
-2,Gazzano,Gabriel Darío,Santa Rosa,La Pampa,M
-2,Gearglot,Nahuel Ignacio,Rosario,Santa Fe,M
-2,Geninatti,Martín,Sunchales,Santa Fe,M
-2,Giuliano,Franco,Santa Rosa,La Pampa,M
-2,Gómez,Maximiliano,Ing Maschwitz,Buenos Aires,M
-2,González,Juan Francisco,Bahía Blanca,Buenos Aires,M
-2,González,Lucía Belén,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,González,Patricio,Mar del Plata,Buenos Aires,M
-2,Gonzalo Juarros,Felipe,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Gorkic,María Belén,Pablo Podestá,Buenos Aires,F
-2,Gregorat,Aime Selene,Rafael Castillo,Buenos Aires,F
-2,Grosso,Tomás,Victoria,Buenos Aires,M
-2,Guaraz,Agustín Daniel,Lanús,Buenos Aires,M
-2,Haslbeck,Thomas Alan,Villa Ballester,Buenos Aires,M
-2,Huang,Santiago,Castelar,Buenos Aires,M
-2,Huberman,Martín Augusto,San Isidro,Buenos Aires,M
-2,Huhn,Victoria,Rosario,Santa Fe,F
-2,Huid,Mariano,Mar del Plata,Buenos Aires,M
-2,Ibos,Facundo,Alta Gracia,Córdoba,M
-2,Jacob Tonutti,Matías Ezequiel,Crespo,Entre Ríos,M
-2,Jiménez,Martín Daniel,Villa Carlos Paz,Córdoba,M
-2,Junge,Stephanie,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Kipen,Javier,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Kiszkiewicz,Iván,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Kleiman,Ilán Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Kloster,Agustín,Bahía Blanca,Buenos Aires,M
-2,Koziner,Santiago Elías,Mercedes,Buenos Aires,M
-2,Lalli,María Micaela,Santa Fe,Santa Fe,F
-2,Lang,Florencia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Lascioli,Gerónimo,Olavarría,Buenos Aires,M
-2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Leone,Pedro,Pilar,Buenos Aires,M
-2,Lescano,Alba Victoria,San Miguel,Buenos Aires,F
-2,Lescano,Pedro Imanol,La Plata,Buenos Aires,M
-2,Llanos,Alan Fabián,Malvinas Argentinas,Buenos Aires,M
-2,Loiácono,Antonella,Córdoba,Córdoba,F
-2,Luo,Leandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Luxen,Sergio Sebastián,Bella Vista,Corrientes,M
-2,Mantiñan,Matías,Bernal,Buenos Aires,M
-2,Margiottiello Navarro,Daniel Ramiro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Martin,Belén,Olavarría,Buenos Aires,F
-2,Martínez,Eduardo Tomás,Rosario,Santa Fe,M
-2,Martínez,Nicolás Jesús,Arroyo Seco,Santa Fe,M
-2,Martínez Roig,Esteban,Merlo,Buenos Aires,M
-2,Mattenet Riva,Pedro,Del Viso,Buenos Aires,M
-2,Maylin,Cinthya,Luis Guillón,Buenos Aires,F
-2,Mazzocato,Agustín,La Plata,Buenos Aires,M
-2,Miglietta,Marco,Rosario,Santa Fe,M
-2,Miguel Peñaranda,Florencia,Daireaux,Buenos Aires,F
-2,Miller,Magdalena,Villa Allende,Córdoba,F
-2,Monardo,Iván,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Montero,Agustina,Bahía Blanca,Buenos Aires,F
-2,Morales,Lucas Manuel,Cerrito,Entre Ríos,M
-2,Morcillo Rosso,Ezequiel,Garín,Buenos Aires,M
-2,Morero,Franco Marcelo,Ingeniero Luiggi,La Pampa,M
-2,Morris Esquivel,Brian Pablo,Rosario,Santa Fe,M
-2,Moviglia,Javier Hernán,Mar del Plata,Buenos Aires,M
-2,Muñoz,Facundo Rodolfo,Pico Truncado,Santa Cruz,M
-2,Muñoz Soerersen,Enrique Augusto,Plottier,Neuquén,M
-2,Narváez Arrúa,Jonás Sebastián,Resistencia,Chaco,M
-2,Natalini,Mauro Ezequiel,Lobos,Buenos Aires,M
-2,Nostrala Hatz,Nahuel Martín,Castelar,Buenos Aires,M
-2,Oiberman,Nahuel Leandro,Concordia,Entre Ríos,M
-2,Ortega,Emanuel Nicolás,Paraná,Entre Ríos,M
-2,Palazón,Facundo Cruz,Tigre,Buenos Aires,M
-2,Pasquevich,Ian Luis,Alta Gracia,Córdoba,M
-2,Peirano,Valentina,Rosario,Santa Fe,F
-2,Pelegrin,Felipe,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Perino,Nicolás,Rosario,Santa Fe,M
-2,Perrotat,Carlos,Cañuelas,Buenos Aires,M
-2,Pinotti,Santiago,General Cabrera,Córdoba,M
-2,Pistol,Juan Cruz,San Nicolás,Buenos Aires,M
-2,Polakiewicz,Martín Ariel,Vicente López,Buenos Aires,M
-2,Polinesi,Gianfranco,Arroyo Seco,Santa Fe,M
-2,Preusche,Teo,Beccar,Buenos Aires,M
-2,Prieto Alemandi,Nicolás Hernán,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Punti,Eugenio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Ravel,Nicolás Joaquín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Ré,Luis Santiago,Paraná,Entre Ríos,M
-2,Requejo,Manuel Tomás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Rodríguez Goren,Facundo,Resistencia,Chaco,M
-2,Romano,Rocío Micaela,Wilde,Buenos Aires,F
-2,Romero,Elías Ezequiel,Gualeguaychú,Entre Ríos,M
-2,Rosales,Oscar,Comodoro Rivadavia,Chubut,M
-2,Rossi,Joaquín,San Andrés de Giles,Buenos Aires,M
-2,Rost,Facundo Emanuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Rotondo,Martina Belén,Godoy Cruz,Mendoza,F
-2,Rumiche Viera,Carlos Fernando,Córdoba,Córdoba,M
-2,Saavedra,Nahuel,"San José, Guaymallén",Mendoza,M
-2,Salgado,Gastón,Beccar,Buenos Aires,M
-2,Salgado,Joaquín Daniel,Resistencia,Chaco,M
-2,Salvador,Alejo Antonio,Mar del Plata,Buenos Aires,M
-2,Salvatore,Alejo Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-2,Salviani,Gianfranco Severino,Zárate,Buenos Aires,M
-2,Santillán,Federico,Cañuelas,Buenos Aires,M
-2,Sarti,Marina,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Sbrolla,Marco Gabriel,San Luis,San Luis,M
-2,Scazzola,Luciano Gabriel,La Plata,Buenos Aires,M
-2,Segura,Juan Ignacio,Rosario,Santa Fe,M
-2,Sola,Francisco,Rosario,Santa Fe,M
-2,Sola Clérici,Francisco,Sunchales,Santa Fe,M
-2,Soria García,Luciano Andrés,Alta Gracia,Córdoba,M
-2,Spak,Joel Alexander,Rosario,Santa Fe,M
-2,Sturla,Gastón Germán,José C Paz,Buenos Aires,M
-2,Sucunza,Lucía,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-2,Tagliani,Franco Luis,Olavarría,Buenos Aires,M
-2,Tanco,Santiago Andrés,La Plata,Buenos Aires,M
-2,Tettamanzi,Santiago,Coronel Granada,Buenos Aires,M
-2,Torralva Ayerza,Lucas,Tigre,Buenos Aires,M
-2,Tralice,Franco,Yerba Buena,Tucumán,M
-2,Trujillo,Francisco Ruy,Mendoza,Mendoza,M
-2,Tseng,Ezequiel,San Juan,San Juan,M
-2,Velázquez Wilson,Matías Julián,Paraná,Entre Ríos,M
-2,Veselka,Santiago Agustín,Bariloche,Río Negro,M
-2,Vieiro,Alexis,Hurlingham,Buenos Aires,M
-2,Vigliarolo,Julián,Ciudadela,Buenos Aires,M
-2,Villagra Toscomian,Lucas,Córdoba,Córdoba,M
-2,Weinand,Gianni Georg,Rosario,Santa Fe,M
-2,Zitelli,Maximiliano Fabián,Lanús,Buenos Aires,M
-3,Alanís,Hipólito,La Plata,Buenos Aires,M
-3,Albertengo,Sofía,Cipoletti,Río Negro,F
-3,Antonelli,Juan Francisco,Bahía Blanca,Buenos Aires,M
-3,Arévalo Portillo,Juan Pablo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Arias,Yerimen,La Plata,Buenos Aires,F
-3,Astolfo,Julián,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Avellaneda,Andrés Nicolás,Río Gallegos,Santa Cruz,M
-3,Barboza,Gastón,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Barni,Carlos Santiago,San Salvador de Jujuy,Jujuy,M
-3,Batastini,Nicolás Alejandro,,,M
-3,Belfiore,Rocío Milagros,Paso del Rey,Buenos Aires,F
-3,Biagetti,Lucas,Rosario,Santa Fe,M
-3,Blufstein,Martín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Bonifacio,Mariano Carlos,Leones,Córdoba,M
-3,Borrovinsky,Lautaro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Candioti,Alejandro Marcelo,Posadas,Misiones,M
-3,Cantore Pasero,Iara María,Rosario,Santa Fe,F
-3,Casetta,Agustina,Ciudad Jardín,Buenos Aires,F
-3,Chehebar,Mariano,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Ciruelos Rodríguez,Gonzalo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Cocca,Lisandro,Rosario,Santa Fe,M
-3,Costa,Cecilia Daniela,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
-3,Courreges,Fernando,General Villegas,Buenos Aires,M
-3,Damonte,Agustín Ignacio,Paraná,Entre Ríos,M
-3,Darago,Ignacio Martín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,D'Ascanio,Franco Enrique,Las Parejas,Santa Fe,M
-3,de Diego Saadia,Sheila Irina,Lima,Buenos Aires,F
-3,Del Grosso,Nicolás Francisco,Munro,Buenos Aires,M
-3,del Río,Alexis Joel,Monte Grande,Buenos Aires,M
-3,Demartino,Francisco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Diab,Jacinto,Venado Tuerto,Santa Fe,M
-3,Doll,Sebastián Martín,Monte Grande,Buenos Aires,M
-3,Döning,Matías Leandro,Alta Gracia,Córdoba,M
-3,Errázquin,Martín Ignacio,Villa Adelina,Buenos Aires,M
-3,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,F
-3,Fernández,Alejandro Gabriel,La Plata,Buenos Aires,M
-3,Ferreyra,Claudio,Córdoba,Córdoba,M
-3,Firpo,Bruno Andrés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Font,Federico Javier,Esperanza,Santa Fe,M
-3,Fresia,Juan Manuel,Zárate,Buenos Aires,M
-3,Frizzo,Franco,Gualeguay,Entre Ríos,M
-3,García,Sebastián Gabriel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,González,Felipe,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Guevara Banegas,Ailén Yasmín,Córdoba,Córdoba,F
-3,Gutiérrez,Facundo Martín,Munro,Buenos Aires,M
-3,Holzmann,Bruno Nicolás,Pigüé,Buenos Aires,M
-3,Jabloñski,Pablo,Libertador San Martín,Entre Ríos,M
-3,Keklikian,Nicolás Roberto,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Litwiller,Andrés Eduardo,Quilmes,Buenos Aires,M
-3,Maldonado,Kevin Michel,Isidro Casanova,Buenos Aires,M
-3,Martín,Nahuel,Rosario,Santa Fe,M
-3,Mata,María Agustina,Sarandi,Buenos Aires,F
-3,Mazzoni,Federico Gustavo,Boulogne,Buenos Aires,M
-3,Medina Villamayor,Pablo Alexis,Resistencia,Chaco,M
-3,Micucci,Matías Nicolás,General Villegas,Buenos Aires,M
-3,Mir Vera,Francisco José,San Miguel de Tucumán,Tucumán,M
-3,Molina Ferrer,Cinthya Valeria,Córdoba,Córdoba,F
-3,Nieva,Sofía,Yerba Buena,Tucumán,F
-3,Olsson,Franco Joel,San Vicente,Misiones,M
-3,Ortiz,Daniel Alberto,Río Gallegos,Santa Cruz,M
-3,Pannunzio,Emiliano,San Martín,Buenos Aires,M
-3,Paredes,Fernando Ezequiel,Córdoba,Córdoba,M
-3,Pedraza,Marcelo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Peré Schröder,Melchor Anael,Sáenz Peña,Buenos Aires,M
-3,Pérez Tenorio,Javiera Martita,Río Grande,Tierra del Fuego,F
-3,Pirich,Lautaro Nahuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Prieto Galardo,Nahuel Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Ramírez,Santiago Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Rapoport,Alan,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Rodríguez,Martín Ezequiel,San Clemente del Tuyú,Buenos Aires,M
-3,Romero,Julián,Comodoro Rivadavia,Chubut,M
-3,Rossi,Lucía,Mar del Plata,Buenos Aires,F
-3,Salvador,Maximiliano Martín,Bariloche,Río Negro,M
-3,Sengolini,Diego José,Cañada de Gómez,Santa Fe,M
-3,Sidabra,Leonel Antonio,Avellaneda,Buenos Aires,M
-3,Sidor Díaz,Jerónimo,La Plata,Buenos Aires,M
-3,Soto,Gabriel Rodrigo,Salta,Salta,M
-3,Staffa,Bruno,Bahía Blanca,Buenos Aires,M
-3,Talcachier,Alejandro,Córdoba,Córdoba,M
-3,Testa,Matías Sebastián,Casilda,Santa Fe,M
-3,Tissoni,Jonathan,Bolívar,Buenos Aires,M
-3,Urdapilleta,Martín Ezequiel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
-3,Vandam,Agustín Gustavo,Comodoro Rivadavia,Chubut,M
-3,Virgillo,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
+1,Acosta,Lisandro,Rafaela,Santa Fe,M,"EET Nº 460 ""Guillermo Lehmann"""
+1,Agote,Nicolás,Acassuso,Buenos Aires,M,Santa Cruz
+1,Almada Canosa,Agustín Nicolás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Politécnico Modelo
+1,Álvarez,Juan Cruz,Capioví,Misiones,M,INSI
+1,Anastacio,María Sofía,San Miguel de Tucumán,Tucumán,F,Nueva Concepción
+1,Antuña,Lucía,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+1,Aroza Rodríguez,Bruno,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+1,Arrieta Zuccalli,Francisco José,La Plata,Buenos Aires,M,María Auxiliadora
+1,Back,Ramiro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Argentina Modelo
+1,Bahlke,Martina,Villa Constitución,Santa Fe,F,Dante Alighieri
+1,Balbi,Bruno,Martínez,Buenos Aires,M,Carmen Arriola de Marín
+1,Barbieri,Guido,Tigre,Buenos Aires,M,Santa Teresa
+1,Barbón,Nerina Aylén,Casilda,Santa Fe,F,"Nº 209 ""Dr. Dalmacio Vélez Sarsfield"""
+1,Barreto,Agustín Nicolás,Chilavert,Buenos Aires,M,Agustiniano
+1,Bellis,Pedro,Porteña,Córdoba,M,Nuestra Señora de Lourdes
+1,Bergadá,Francisco Gabriel,La Plata,Buenos Aires,M,Manantiales
+1,Bergerman,Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT
+1,Bettiga,Lucila,Quilmes,Buenos Aires,F,Eduardo L. Holmberg
+1,Bini,Valentina María,Rosario,Santa Fe,F,Dante Alighieri
+1,Blufstein,Marcos,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+1,Bonetto,Tomás,Jesús María,Córdoba,M,Nuestra Señora del Rosario del Milagro
+1,Boragina,Nicolás Emanuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Técnica Nº 23 DE 13
+1,Boses,Matías Edgardo,Pehuajó,Buenos Aires,M,Agropecuaria Nº 1
+1,Bouciguez,Antenor,Campana,Buenos Aires,M,Padre Aníbal María Di Francia
+1,Bruno,Camila,Rafaela,Santa Fe,F,ORT II
+1,Brusasca,Francisco Gabriel,Leones,Córdoba,M,ESCBA
+1,Bugallo,Santiago,,,M,San Andrés
+1,Busolini,Lucía,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Espíritu Santo
+1,Callalli,Nahuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+1,Callegari,Ezequiel Adrián,La Reja,Buenos Aires,M,Colegio Parroquial Sagrada Familia
+1,Callegari,Luciano Ariel,Olivos,Buenos Aires,M,St. Gregory's College
+1,Capano,Alan Nahuel,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
+1,Caramutti,Ian Richard,Neuquén,Neuquén,M,Confluencia
+1,Carcedo,Hernán Agustín,La Cumbre,Córdoba,M,San Pablo
+1,Cárdenas,Franco Gabriel,Comodoro Rivadavia,Chubut,M,"Liceo Militar ""General Roca"""
+1,Cardoso,Juan Pablo,Mar del Plata,Buenos Aires,M,Colinas de Peralta Ramos
+1,Carossino Peirano,Francisco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,St. Brendan's
+1,Carreira,Tobías,Vicente López,Buenos Aires,M,ORT II
+1,Carulli,Nicolás Leopoldo,Merlo,Buenos Aires,M,Thomas Jefferson College
+1,Casiraghi,Tadeo,Olivos,Buenos Aires,M,San Andrés
+1,Castro González,Juan Cruz,San Pedro de Jujuy,Jujuy,M,Colegio Católico Jesús Maestro
+1,Chaves,Florencia,Quilmes,Buenos Aires,F,NES
+1,Chehebar,Nicolás Gustavo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
+1,Cherny,Federico,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT II
+1,Chilano,Matías,Chacabuco,Buenos Aires,M,EEST Nº 1
+1,Ciani,Laurina,Las Parejas,Santa Fe,F,EEM Nº 424
+1,Cichanowski,Luis Yonatan,Apóstoles,Misiones,M,Cristo Rey
+1,Cocimano,Facundo,Quilmes,Buenos Aires,M,Sagrado Corazón de Jesús
+1,Colavitte,Facundo Gastón,La Plata,Buenos Aires,M,Astillero Río Santiago
+1,Collarte,Jorge Ramsés,Vicente López,Buenos Aires,M,Escuelas Técnicas Raggio
+1,Conde,Alejo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT
+1,Conde,Julia,Ramos Mejía,Buenos Aires,F,Colegio Ward
+1,Condemi,Julia,San Andrés de Giles,Buenos Aires,F,Los Robles
+1,Condori,Matías,San Salvador de Jujuy,Jujuy,M,"Escuela de Minas ""Dr. Horacio Carrillo"""
+1,Condori,Fabricio Joaquín Omar,San Salvador de Jujuy,Jujuy,M,"Escuela de Minas ""Dr. Horacio Carrillo"""
+1,Conti,Valentino,Resistencia,Chaco,M,ENS Nº 76
+1,Correa,Carlos Agustín,Posadas,Misiones,M,José Manuel Estrada
+1,Cravietto,Martín,Los Polvorines,Buenos Aires,M,San Jorge Norte
+1,Crucianelli,Carla Johanna,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Escuela Superior de Comercio Carlos Pellegrini
+1,Cuccioletta,Federico Gabriel,Villa Constitución,Santa Fe,M,EET San Pablo Nº 2073
+1,Cuevas,Santiago,Santa Rosa,La Pampa,M,Santo Tomás
+1,Cufré,Francisco José,San Andrés de Giles,Buenos Aires,M,San Antonio
+1,Curcho,Rodrigo,Concordia,Entre Ríos,M,San José Adoratrices
+1,Curci,Ivana,Mendoza,Mendoza,F,CUC
+1,Curci,Vanesa,Mendoza,Mendoza,F,CUC
+1,D'Acunto,Juan Pablo,San Isidro,Buenos Aires,M,San Juan el Precursor
+1,Davicino,Lara Victoria,Rafaela,Santa Fe,F,San José
+1,de Amorin,Lucas Gabriel,Avellaneda,Buenos Aires,M,Centro Educativo Loreto
+1,de Leo,Luca,San Cayetano,Buenos Aires,M,Domingo Faustino Sarmiento
+1,De Vega,Luciano Andrés,Comodoro Rivadavia,Chubut,M,"Liceo Militar ""Gral Roca"""
+1,del Campo,Pedro Augusto,San Isidro,Buenos Aires,M,San Juan el Precursor
+1,Dell Elce,Sebastián Agustín,Venado Tuerto,Santa Fe,M,Cultura Inglesa
+1,Devesa,Rodrigo Ramón,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+1,di Giambattista,Franco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Cristóforo Colombo
+1,di Giambattista,Marco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Cristóforo Colombo
+1,Díaz,Catalina,San Martín de los Andes,Neuquén,F,EPET Nº 12
+1,Díaz,Lucas,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+1,Díaz Mac William,Rodrigo Tomás,Córdoba,Córdoba,M,San Francisco de Asís
+1,Didoné,Pedro José,La Plata,Buenos Aires,M,Leonardo da Vinci
+1,Dirazar,Tomás,La Plata,Buenos Aires,M,"Colegio Nacional ""Rafael Hernández"""
+1,Domínguez,Matías Gabriel,Banfield,Buenos Aires,M,Colinas Verdes
+1,Domínguez Dahl,María Sol,Vedia,Buenos Aires,F,ICEA
+1,Duarte,Daniela,Muñiz,Buenos Aires,F,Don José de San Martín
+1,Engler,Camila,Esperanza,Santa Fe,F,EEMPI 8006 San José\
+1,Enríquez,Agustín,Concordia,Entre Ríos,M,San José Adoratrices
+1,Epelde,Federico,Zárate,Buenos Aires,M,José Manuel Estrada
+1,Erranti Rival,Melanie Solange,Gral Las Heras,Buenos Aires,F,San Luis Gonzaga
+1,Erviti,Dolores,Tandil,Buenos Aires,F,Sagrada Familia
+1,Espinoza,Julián Uriel,Berazategui,Buenos Aires,M,Florentino Ameghino
+1,Falvino,Paula,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Escuela Argentina Modelo
+1,Fernández,Martina,Funes,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+1,Ferrés,Julián,Villa Ramallo,Buenos Aires,M,EEST Nº 1
+1,Ferreyra,Laura,Córdoba,Córdoba,F,Corazón de María
+1,Feyuk,Daniel Enrique,Ruiz de Montoya,Misiones,M,Línea Cuchilla
+1,Figueredo,Nahuel Ariel,Gobernador Virasoro,Corrientes,M,"Técnica ""Nuevo Milenio"""
+1,Figueroa,Augusto,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+1,Figueroa,Camila,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,ILSE
+1,Figueroa,Daniel Eduardo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Belgrano Day School
+1,Figueroa Aragón,Sofía,San Miguel de Tucumán,Tucumán,F,Pablo Apóstol
+1,Filloy,Lisandro,Bernal,Buenos Aires,M,Sagrado Corazón de Jesús
+1,Filloy,Ronán,Bernal,Buenos Aires,M,Sagrado Corazón de Jesús
+1,Foglia,Juan Manuel,Daireaux,Buenos Aires,M,Sagrada Familia
+1,Fortin Murga,Pablo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Cardenal Newman
+1,Fotinós,Jerónimo,Córdoba,Córdoba,M,Colegio Nacional de Monserrat
+1,Francois,Matías Santiago,Santa Fe,Santa Fe,M,Industrial Superior
+1,Frutos,Joaquín,Paso de los Libres,Corrientes,M,Instituto Niño Jesús
+1,Fueyo,Fernando José,Casilda,Santa Fe,M,Sagrada Familia
+1,Gaete,Francisco,San Miguel de Tucumán,Tucumán,M,Nueva Concepción
+1,Galicia,Camila María,San Isidro,Buenos Aires,F,San Marcos
+1,García,Mauricio,Orán,Salta,M,María del Rosario
+1,García Lucentini,Javier,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT
+1,Gasparini,Santiago,La Plata,Buenos Aires,M,Raíces de Gonnet
+1,Gastaldi,Débora Nicole,Los Molinos,Santa Fe,F,"Nº 319 ""Padre Francisco Komic"""
+1,Gaztelú,Facundo Julián,Crespo,Entre Ríos,M,Instituto Comercial Crespo D-33
+1,Giletta,Sebastián,Rafaela,Santa Fe,M,Escuela Secundaria Orientada
+1,Giménez Aranda,María Rocío,Mendoza,Mendoza,F,DAD
+1,Ginestet,Santiago,Daireaux,Buenos Aires,M,EES Nº 2
+1,Giorda,Cristian Matías,Merlo,Buenos Aires,M,Francisco de Asís
+1,Giovanniello,Santiago,San Miguel de Tucumán,Tucumán,M,Sagrado Corazón de Jesús
+1,Gómez,Maximiliano Agustín,San Miguel de Tucumán,Tucumán,M,Sagrado Corazón
+1,González,Bruno Alexis,Posadas,Misiones,M,José Manuel Estrada
+1,Greco,Nicolás Germán,Quilmes,Buenos Aires,M,"ESET Nº 2 ""Paula Albarracín de Sarmiento"""
+1,Grillo,Franco Salvador,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT
+1,Gros,Mariquena,Mar del Plata,Buenos Aires,F,Nuestra Señora del Carmen
+1,Guastella,Juan Cruz,Olivos,Buenos Aires,M,Asunción de la Virgen
+1,Guerrero Cerezo,Malena Sofía,La Rioja,La Rioja,F,Pío XII
+1,Huber,María Victoria,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+1,Ierullo López,Eric Román,Wilde,Buenos Aires,M,San Diego
+1,Inchaurza,Fernán,Bariloche,Río Negro,M,Escuela Cooperativa Los Andes
+1,Insaurralde,Fátima Belén,Capioví,Misiones,F,INSI
+1,Itzcovitz,Axel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT II
+1,Jávega,Matías,Córdoba,Córdoba,M,Superior de Comercio Manuel Belgrano
+1,Kaplan,Santiago,San Isidro,Buenos Aires,M,San Juan el Precursor
+1,Kéimel Álvarez,Ezequiel Martín,Paso del Rey,Buenos Aires,M,Inmaculada Concepción
+1,Keklikian,Gregorio José,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+1,Kremenchusky,Roni Daniel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Tarbut
+1,Ladjet,Ramiro Martín,La Matanza (Ramos Mejía),Buenos Aires,M,Colegio Ward
+1,Laserna,Josefina,San Antonio de Areco,Buenos Aires,F,Santa María de la Asunción
+1,Lattanzi,Serena,Sunchales,Santa Fe,F,EEMPI 8107 San José
+1,López,Juliana Laura,Hudson,Buenos Aires,F,Eduardo L. Holmberg
+1,Macías,Nicolás,San Miguel de Tucumán,Tucumán,M,Escuela Integral Argentina Hebreo Independencia
+1,Maleh,Federico,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT II
+1,Manca,Ángel Maximiliano,Tafí Viejo,Tucumán,M,Instituto Técnico
+1,Manno,Cecilia Gisel,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+1,Marchionna,Agustín Luis,Martínez,Buenos Aires,M,St. John's
+1,Martínez,Gabriel Martín,Formosa,Formosa,M,EPES Nº 54
+1,Medina,Tomás,Neuquén,Neuquén,M,Confluencia
+1,Mei,Bruno Enrique,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Philips
+1,Meoli,Lucas,Florida,Buenos Aires,M,La Salle
+1,Miguez,Ignacio,Ituzaingó,Buenos Aires,M,Instituto Inmaculada
+1,Mihura,Iñaki,Gualeguay,Entre Ríos,M,Nº 34 Manuel Belgrano
+1,Milani,Ignacio,Río Cuarto,Córdoba,M,Escuelas Pías
+1,Milanowski,Maia Sofía,San Isidro,Buenos Aires,F,Santa Cruz
+1,Mirande,Jorge,Salta,Salta,M,San Pablo
+1,Moletta,Tomás,Villa Ballester,Buenos Aires,M,Instituto Ballester
+1,Molter,Eric,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pestalozzi
+1,Mones Ruiz,Juan,General Villegas,Buenos Aires,M,María Inmaculada
+1,Monte,Victoria,Río Segundo,Córdoba,F,Instituto Secundario Carlos Pellegrini
+1,Monzón,Sofía Aillén,Avellaneda,Buenos Aires,F,Instituto Victoria Ocampo
+1,Morali,José de la Cruz,Villaguay,Entre Ríos,M,Escuela Secundaria Nº 8
+1,Morayo,Gema Abigail,Monte Cristo,Córdoba,F,Instituto Parroquial Monte Cristo
+1,Moreno,Maribel Agustina,Concordia,Entre Ríos,F,San José Adoratrices
+1,Moreno Xammar,Tomás,Mar del Plata,Buenos Aires,M,Sagrada Familia
+1,Mosquera,Agustín Pedro,San Isidro,Buenos Aires,M,San Juan el Precursor
+1,Moya,Tomás,Salta,Salta,M,San Pablo
+1,Moyano,José Marcelo,San Salvador de Jujuy,Jujuy,M,Colegio del Salvador
+1,Muro,Sara,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+1,Navarro,Alejo,Martínez,Buenos Aires,M,San Andrés
+1,Navarro,Mateo,Martínez,Buenos Aires,M,San Andrés
+1,Navarta Perassolo,Constanza,Juana Koslay,San Luis,F,"Normal ""Juan Pascual Pringles"""
+1,Neri Artano,Juan Eduardo,Bragado,Buenos Aires,M,San José
+1,Nieva,Facundo,Jesús María,Córdoba,M,Nuestra Señora del Huerto
+1,Nistico,Marco Antonio,San Isidro,Buenos Aires,M,Labardén
+1,Oggero Hernández,Gino Valentino,Córdoba,Córdoba,M,Colegio Nacional de Monserrat
+1,Olkies,Ilán,Lomas de Zamora,Buenos Aires,M,ORT
+1,Oses Oliveto,Alana Belén,Neuquén,Neuquén,F,Confluencia
+1,Palacio Fornero,Marina del Valle,Ceres,Santa Fe,F,Instituto Belén Nº 8132
+1,Palena,Sofía,Isla Verde,Córdoba,F,IPMLK
+1,Pallva,Patricio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+1,Paparella,Guido,Santa Ana,Corrientes,M,Informático
+1,Pazzaglini,Franco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Cristóforo Colombo
+1,Pérez Bedoya,Ignacio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
+1,Pérez Guerra,Juan José Jesús,General Pueyrredón,Buenos Aires,M,FASTA San Vicente de Paul
+1,Petracci,María Florencia,Florida,Buenos Aires,F,La Salle Florida
+1,Piana,Juan Pablo,General Pico,La Pampa,M,Las Calderas
+1,Pierucci,Valentina,Cipoletti,Río Negro,F,Nuestra Señora de Fátima
+1,Pioli,Virginia María,Rosario,Santa Fe,F,Colegio Mirasoles
+1,Politano,Pablo Agustín,Bahía Blanca,Buenos Aires,M,San Francisco de Asís
+1,Pomato,María Belén,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Escuela Argentina Modelo
+1,Porporato,Santiago,Sunchales,Santa Fe,M,EEMPI 8107 San José
+1,Posse,Agustín María,Necochea,Buenos Aires,M,Instituto Humboldt
+1,Price,Gonzalo,San Martín de los Andes,Neuquén,M,EPET 21
+1,Ramírez Juncos,Lautaro Esteban de Jesús,Córdoba,Córdoba,M,San Francisco de Asís
+1,Ramos,Roberto Manuel,Comodoro Rivadavia,Chubut,M,CPT Nº 749
+1,Reschini,Oriana,Rosario,Santa Fe,F,Mirasoles
+1,Ripoll,Ludmila,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio Nacional de Buenos Aires
+1,Rivero Jamín,Agustín,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+1,Rodríguez,Jeanette,Tornquist,Buenos Aires,F,EES Nº 1
+1,Rojas,Joaquín,Mar del Plata,Buenos Aires,M,Pablo Tavelli
+1,Rojas,Tomás Ian,Morón,Buenos Aires,M,CIATA
+1,Ronchi Rivara,Sofía,Lincoln,Buenos Aires,F,Escuela del Alba
+1,Rossi Bolcato,Juan Agustín,Maipú,Mendoza,M,Emilio Civit
+1,Ruggeri,Federico,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
+1,Ruggeri,Paula Daniela,Río Gallegos,Santa Cruz,F,IPEI
+1,Sac-Himelfarb,Gabriel,Neuquén,Neuquén,M,ITC
+1,Salamanca,Carlos Emanuel,Las Varillas,Córdoba,M,Instituto Parroquial Gustavo Martínez Zuviría
+1,Salgado,Lucas Andrés,Resistencia,Chaco,M,"Colegio Integral ""Dr. C. P. López Pracentini"""
+1,Salorio Martínez,Paula,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,ILSE
+1,Salvador,Lucas Fernán,Mar del Plata,Buenos Aires,M,Instituto Albert Einstein
+1,Sandoval,Fernando Nicolás,Virrey del Pino,Buenos Aires,M,Escuela de Educación Técnica Fundación Fangio
+1,Sandrini,Bruno,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+1,Sansone,Agustín,Villa Ballester,Buenos Aires,M,Instituto Ballester
+1,Santana,Leandro Matías,José C Paz,Buenos Aires,M,ESB Nº 331
+1,Sartorio,Casandra Belén,Quilmes,Buenos Aires,F,San Mauro
+1,Schenhals Podorosky,Ailén María,General Ramírez,Entre Ríos,F,"IPGP D-176 ""Madre de Jesús"""
+1,Schvartzman,Lara Daniela,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,ILSE
+1,Scotte,Martín Francisco,Chilavert,Buenos Aires,M,Agustiniano
+1,Seminara Cunto,Zoe Alicia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio Nacional de Buenos Aires
+1,Seré,María,Lincoln,Buenos Aires,F,Escuela del Alba
+1,Solari,Julieta,Río Gallegos,Santa Cruz,F,Poplars School
+1,Szerman-Ottaviano,Nicholas,Vicente López,Buenos Aires,M,ORT II
+1,Tadini,Santiago,Beccar,Buenos Aires,M,Santa Cruz
+1,Teran Carballo,Jonathan,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+1,Testani,Vanina,Necochea,Buenos Aires,F,ISADAM
+1,Theaux,Facundo,Jesús María,Córdoba,M,"IPETyM Nº 69 ""Juana Manso de Noronha"""
+1,Torchiaro,Santiago,Ranelagh,Buenos Aires,M,Ranelagh
+1,Trama,Francisco,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
+1,Trebino,Marcos,Olivos,Buenos Aires,M,San Andrés
+1,Turrini,Ornella,Pérez Millán,Buenos Aires,F,Instituto Secundario Pérez Millán
+1,Ubeda,Ignacio,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+1,Vargas Alejandro,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+1,Vázquez,Antonela,Carmen,Santa Fe,F,E.E.M.P.I. Nº 8092
+1,Venturino,Mariana Berenice,Concordia,Entre Ríos,F,San José Adoratrices
+1,Verussa,Gastón Ezequiel,Neuquén,Neuquén,M,EPET 14
+1,Vidret,Martina,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio Nacional de Buenos Aires
+1,Villegas,Maximiliano Matías,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
+1,Villegas,Valentina,Daireaux,Buenos Aires,F,La Sagrada Familia
+1,Vinograd,Melisa,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Ecos
+1,von Brevern,Camila,Boulogne,Buenos Aires,F,Juan XXIII
+1,Yapur,Nicolás Alejandro,Tigre,Buenos Aires,M,San Ramón
+1,Yuziuchuk,Daniela Alejandra,Lanús,Buenos Aires,F,Eccleston
+1,Zylber,Julián Ariel,Martínez,Buenos Aires,M,Florida Day School
+1,Zylber,Natalí Micaela,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,ORT
+1,Zysler,Paula Débora,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio Nacional de Buenos Aires
+2,Acosta,Evaristo,Rafaela,Santa Fe,M,"EET Nº 460 ""Guillermo Lehmann"""
+2,Adrover,Yamila Paola,Esperanza,Santa Fe,F,"EET Nº 455 ""Gral Don José de San Martín"""
+2,Aguirre,Ignacio,Carlos Pellegrini,Santa Fe,M,EEMPI 8090 San Agustín
+2,Ainchil,Manuela,Mar del Plata,Buenos Aires,F,"Colegio Nacional ""Dr. Arturo Illia"""
+2,Alá,Facundo,Concordia,Entre Ríos,M,"Esc. Nº 17 ""Gral. Martín Miguel de Güemes"""
+2,Alberti,Melanie Aylén,Don Torcuato,Buenos Aires,F,Instituto Hölters
+2,Alix,Ezequiel Pablo,Mar del Plata,Buenos Aires,M,Santísima Trinidad
+2,Alonso Álvarez,David Ezequiel,Devoto,Córdoba,M,"IPCM 89 ""Paula Albarracín"""
+2,Annacondia,Federico Agustín,Monte Grande,Buenos Aires,M,Senderos Azules
+2,Aráoz de Lamadrid,Camila,Pacheco,Buenos Aires,F,Santa Inés
+2,Arena,Lourdes Ailén,San Miguel de Tucumán,Tucumán,F,Santa Catalina
+2,Arévalo,Juan Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+2,Badía,Andrés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+2,Ballejos,Julián Ezequiel,Goya,Corrientes,M,Instituto San Martín
+2,Barrionuevo,Mariana del Valle,Monteros,Tucumán,F,Santísimo Rosario
+2,Barta,Matías Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Tecnológico Philips Argentina
+2,Basílico,Simón,Venado Tuerto,Santa Fe,M,Sagrado Corazón
+2,Basteiro,Pablo Víctor Antonio,San Martín,Buenos Aires,M,Instituto Ballester
+2,Bava,Melina Ailén,General Rodríguez,Buenos Aires,F,San Patricio de Luján
+2,Begue,Agustín,Bariloche,Río Negro,M,Woodville
+2,Bellmann,Fernando Emilio,Córdoba,Córdoba,M,La Salle Argüello
+2,Benavides,Micaela Belén,Rosario,Santa Fe,F,Nuestra Señora de los Ángeles
+2,Bergandi,Cedric David,Río Segundo,Córdoba,M,"IPEM 156 ""José Manuel Estrada"""
+2,Bertenasco,Julieta,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,ORT II
+2,Bitchik,Danel Alex Joel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,EET Nº 24 DE 17
+2,Blas,Alexis Ezequiel,San Martín de los Andes,Neuquén,M,San Pablo Apóstol
+2,Blázquez Olivera,Sebastián Alejandro,Loma Hermosa,Buenos Aires,M,Instituto Ballester
+2,Bokser,Brian Ariel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT II
+2,Bombau,Ignacio Javier,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Palermo Chico
+2,Bonak,Pedro Nicolás,Villa Allende,Córdoba,M,León XIII
+2,Bonetto,Matías,Jesús María,Córdoba,M,Nuestra Señora del Rosario del Milagro
+2,Bortolatto,Bruno Nicolás,Río Cuarto,Córdoba,M,San Francisco de Asís
+2,Botinelli,Melisa Denise,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,San Rafael
+2,Bracalenti,María Cecilia,Santa Fe,Santa Fe,F,Industrial Superior
+2,Burigotto,Renzo Tobías,La Plata,Buenos Aires,M,Lincoln
+2,Cabaña,Agustín Daniel,Esperanza,Santa Fe,M,EET Nº 455
+2,Cannata,Franco Ezequiel,Villa Ballester,Buenos Aires,M,Instituto Ballester
+2,Caprile,Fernando,Avellaneda,Buenos Aires,M,Instituto Huergo
+2,Caramutti,Mathias,Neuquén,Neuquén,M,Confluencia
+2,Cardozo,Agustín Eugenio,Salta,Salta,M,José Manuel Estrada
+2,Carini,Abril,Los Toldos,Buenos Aires,F,Secundaria Normal Nº 1
+2,Castellarin,Román Agustín,Funes,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Cattaneo,María Florentina,Monte,Buenos Aires,F,"IAM ""Elvira Lainez de Soldati"""
+2,Catz,Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Jean Mermoz
+2,Chenna,Agustín,Merlo,Buenos Aires,M,Instituto Modelo Almafuerte
+2,Cherny,Sebastián,Vicente López,Buenos Aires,M,ORT II
+2,Colavecchia,Ailén Carolina,Bariloche,Río Negro,F,CEN 123
+2,Colella Pagella,Facundo Tomás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Thomas Jefferson College
+2,Costantino,Leandro Ezequiel,Villa Ballester,Buenos Aires,M,Instituto Ballester
+2,Crespo,Eugenia,Rosario,Santa Fe,F,Mirasoles
+2,Daguerre,Lucas,La Plata,Buenos Aires,M,Instituto de Cultura Itálica
+2,de Frankenberg,María Josefina,San Fernando,Buenos Aires,F,Cruz del Sur
+2,Decara,Lautaro,Lanús,Buenos Aires,M,Norland
+2,Del Gobbo,Julián,Vicente López,Buenos Aires,M,ORT II
+2,del Río,Fernando,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+2,Del Valle,Francisco,La Lucila,Buenos Aires,M,Pierre Fermat
+2,Delmastro,Dino Nicolás,Bariloche,Río Negro,M,San Patricio
+2,Demartino,Santiago,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+2,Diale,Mauro,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Eberle,Yamila Rocío,María Grande,Entre Ríos,F,"EET Nº 34 ""Gral. Enrique Mosconi"""
+2,Ertola Uttubey,Gala,Villa Elisa,Buenos Aires,F,Colegio Secundario Club Estudiantes de la Plata
+2,Farías,Alejo,Unquillo,Córdoba,M,Nuevo Milenio
+2,Fernández,Bruno Matías,Escobar,Buenos Aires,M,Dover High School
+2,Fernández,Sofía,Villa Domínico,Buenos Aires,F,Centro Educativo Loreto
+2,Fernández Casella,Lucía Inés,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+2,Ferraro,Mariano,Coronel Dorrego,Buenos Aires,M,Escuela Secundaria Nº 2
+2,Ferreyra,Franco Iván,Paso del Rey,Buenos Aires,M,Colegio Dalmacio Vélez Sarsfield
+2,Flores,Fernando Exequiel,Salta,Salta,M,Instituto Padre Gabriel Tommasini
+2,Fonseca,Rocío Guadalupe,Córdoba,Córdoba,F,Instituto Parroquial San José
+2,Frías Silva,Agustín Hipólito,Salta,Salta,M,San Pablo
+2,Fritz,Carolina Inés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Schiller Schule
+2,Galluccio,Francisco,Santa Fe,Santa Fe,M,La Salle Jobson
+2,García Ramello,Agustina Aldana,Monte Cristo,Córdoba,F,Instituto Parroquial Monte Cristo
+2,Gaviglio,María Gracia,Zenón Pereyra,Santa Fe,F,EEMPI Nº 3002 Fray Justo Santa María de Oro
+2,Gazzano,Gabriel Darío,Santa Rosa,La Pampa,M,Normal Nº 256
+2,Gearglot,Nahuel Ignacio,Rosario,Santa Fe,M,Superior de Comercio
+2,Geninatti,Martín,Sunchales,Santa Fe,M,San José Obrero
+2,Giuliano,Franco,Santa Rosa,La Pampa,M,Colegio Normal
+2,Gómez,Maximiliano,Ing Maschwitz,Buenos Aires,M,Dover High School
+2,González,Juan Francisco,Bahía Blanca,Buenos Aires,M,Colegio Don Bosco
+2,González,Lucía Belén,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Escuela Agropecuaria
+2,González,Patricio,Mar del Plata,Buenos Aires,M,Instituto Juan Gutenberg
+2,Gonzalo Juarros,Felipe,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+2,Gorkic,María Belén,Pablo Podestá,Buenos Aires,F,Preciosísima Sangre
+2,Gregorat,Aime Selene,Rafael Castillo,Buenos Aires,F,Monseñor Tomás Juan Solari
+2,Grosso,Tomás,Victoria,Buenos Aires,M,Labardén
+2,Guaraz,Agustín Daniel,Lanús,Buenos Aires,M,Jacarandá
+2,Haslbeck,Thomas Alan,Villa Ballester,Buenos Aires,M,Instituto Ballester
+2,Huang,Santiago,Castelar,Buenos Aires,M,Ward
+2,Huberman,Martín Augusto,San Isidro,Buenos Aires,M,Northlands
+2,Huhn,Victoria,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+2,Huid,Mariano,Mar del Plata,Buenos Aires,M,Mar del Plata Day School
+2,Ibos,Facundo,Alta Gracia,Córdoba,M,Instituto Privado El Obraje
+2,Jacob Tonutti,Matías Ezequiel,Crespo,Entre Ríos,M,EPNMYS Nº 35 Téc. Gral. Don José de San Martín
+2,Jiménez,Martín Daniel,Villa Carlos Paz,Córdoba,M,IESS
+2,Junge,Stephanie,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Norbridge
+2,Kipen,Javier,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT
+2,Kiszkiewicz,Iván,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Normal Superior Nº 1
+2,Kleiman,Ilán Matías,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT
+2,Kloster,Agustín,Bahía Blanca,Buenos Aires,M,"Escuela Superior de Comercio ""Prudencio Cornejo"""
+2,Koziner,Santiago Elías,Mercedes,Buenos Aires,M,"Escuela Normal Superior ""Justo José de Urquiza"""
+2,Lalli,María Micaela,Santa Fe,Santa Fe,F,"IPEI ""Leonardo da Vinci"""
+2,Lang,Florencia,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio Nacional de Buenos Aires
+2,Lascioli,Gerónimo,Olavarría,Buenos Aires,M,Libertas
+2,Lee,Hee Jung,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Belgrano Day School
+2,Leone,Pedro,Pilar,Buenos Aires,M,Brick Towers College
+2,Lescano,Alba Victoria,San Miguel,Buenos Aires,F,"Escuela Normal Superior ""Domingo F. Sarmiento"""
+2,Lescano,Pedro Imanol,La Plata,Buenos Aires,M,San Luis
+2,Llanos,Alan Fabián,Malvinas Argentinas,Buenos Aires,M,José Mármol
+2,Loiácono,Antonella,Córdoba,Córdoba,F,San José
+2,Luo,Leandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Islands International School
+2,Luxen,Sergio Sebastián,Bella Vista,Corrientes,M,"Instituto ""Nuestra Señora del Carmen"""
+2,Mantiñan,Matías,Bernal,Buenos Aires,M,EET Nº 2
+2,Margiottiello Navarro,Daniel Ramiro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+2,Martin,Belén,Olavarría,Buenos Aires,F,Instituto Monseñor César Cáneva
+2,Martínez,Eduardo Tomás,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Martínez,Nicolás Jesús,Arroyo Seco,Santa Fe,M,EEM Nº 415
+2,Martínez Roig,Esteban,Merlo,Buenos Aires,M,Bartolomé Mitre Day School
+2,Mattenet Riva,Pedro,Del Viso,Buenos Aires,M,St. Matthew's College North
+2,Maylin,Cinthya,Luis Guillón,Buenos Aires,F,Euskal-Echea
+2,Mazzocato,Agustín,La Plata,Buenos Aires,M,Padre Castañeda
+2,Miglietta,Marco,Rosario,Santa Fe,M,Los Arroyos
+2,Miguel Peñaranda,Florencia,Daireaux,Buenos Aires,F,EES Nº 2
+2,Miller,Magdalena,Villa Allende,Córdoba,F,León XIII
+2,Monardo,Iván,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+2,Montero,Agustina,Bahía Blanca,Buenos Aires,F,La Inmaculada
+2,Morales,Lucas Manuel,Cerrito,Entre Ríos,M,Escuela Secundaria Nº 41
+2,Morcillo Rosso,Ezequiel,Garín,Buenos Aires,M,Moorlands
+2,Morero,Franco Marcelo,Ingeniero Luiggi,La Pampa,M,Mariano Moreno
+2,Morris Esquivel,Brian Pablo,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Moviglia,Javier Hernán,Mar del Plata,Buenos Aires,M,Instituto Industrial Pablo Tavelli
+2,Muñoz,Facundo Rodolfo,Pico Truncado,Santa Cruz,M,Industrial Nº 2
+2,Muñoz Soerersen,Enrique Augusto,Plottier,Neuquén,M,Instituto Tecnológico del Comahue
+2,Narváez Arrúa,Jonás Sebastián,Resistencia,Chaco,M,EES Nº 76 Colegio Nacional José María Paz
+2,Natalini,Mauro Ezequiel,Lobos,Buenos Aires,M,Pbro. José Albertini
+2,Nostrala Hatz,Nahuel Martín,Castelar,Buenos Aires,M,EET Nº 1 de Ituzaingó
+2,Oiberman,Nahuel Leandro,Concordia,Entre Ríos,M,"Nº 17 ""Martín Miguel de Güemes"""
+2,Ortega,Emanuel Nicolás,Paraná,Entre Ríos,M,Don Bosco
+2,Palazón,Facundo Cruz,Tigre,Buenos Aires,M,Newman
+2,Pasquevich,Ian Luis,Alta Gracia,Córdoba,M,Colegio Anglo Americano
+2,Peirano,Valentina,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+2,Pelegrin,Felipe,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Philips
+2,Perino,Nicolás,Rosario,Santa Fe,M,San Bartolomé
+2,Perrotat,Carlos,Cañuelas,Buenos Aires,M,Escuela de Educación Técnica Fundación Fangio
+2,Pinotti,Santiago,General Cabrera,Córdoba,M,"Instituto Superior ""Jerónimo Luis de Cabrera"""
+2,Pistol,Juan Cruz,San Nicolás,Buenos Aires,M,EEST Nº 6
+2,Polakiewicz,Martín Ariel,Vicente López,Buenos Aires,M,ORT II
+2,Polinesi,Gianfranco,Arroyo Seco,Santa Fe,M,"EEM 415 ""J. B. Alberdi"""
+2,Preusche,Teo,Beccar,Buenos Aires,M,Pilgrims
+2,Prieto Alemandi,Nicolás Hernán,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,St. Brendan's
+2,Punti,Eugenio,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+2,Ravel,Nicolás Joaquín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT II
+2,Ré,Luis Santiago,Paraná,Entre Ríos,M,Instituto D-170 del CAE
+2,Requejo,Manuel Tomás,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,St. Matthew's College
+2,Rodríguez Goren,Facundo,Resistencia,Chaco,M,"Colegio Integral ""Dr. C. P. López Piacentini"""
+2,Romano,Rocío Micaela,Wilde,Buenos Aires,F,Centro Educativo Loreto
+2,Romero,Elías Ezequiel,Gualeguaychú,Entre Ríos,M,Malvina Seguí de Clavarino
+2,Rosales,Oscar,Comodoro Rivadavia,Chubut,M,Colegio Salesiano Deán Funes
+2,Rossi,Joaquín,San Andrés de Giles,Buenos Aires,M,Colegio Secundario Nuestra Señora de Luján
+2,Rost,Facundo Emanuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+2,Rotondo,Martina Belén,Godoy Cruz,Mendoza,F,Martín Zapata
+2,Rumiche Viera,Carlos Fernando,Córdoba,Córdoba,M,"Escuela Normal Superior ""Dr. Alejandro Corbo"""
+2,Saavedra,Nahuel,"San José, Guaymallén",Mendoza,M,CUC
+2,Salgado,Gastón,Beccar,Buenos Aires,M,ORT II
+2,Salgado,Joaquín Daniel,Resistencia,Chaco,M,"Colegio Integral ""Dr. C. P. López Piacentini"""
+2,Salvador,Alejo Antonio,Mar del Plata,Buenos Aires,M,Albert Einstein
+2,Salvatore,Alejo Manuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
+2,Salviani,Gianfranco Severino,Zárate,Buenos Aires,M,José Manuel Estrada
+2,Santillán,Federico,Cañuelas,Buenos Aires,M,Don Bosco
+2,Sarti,Marina,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Colegio Nacional de Buenos Aires
+2,Sbrolla,Marco Gabriel,San Luis,San Luis,M,Normal Juan Pascual Pringles
+2,Scazzola,Luciano Gabriel,La Plata,Buenos Aires,M,Padre Castañeda
+2,Segura,Juan Ignacio,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Sola,Francisco,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Sola Clérici,Francisco,Sunchales,Santa Fe,M,EEMPI Nº 8107 San José
+2,Soria García,Luciano Andrés,Alta Gracia,Córdoba,M,Colegio Anglo Americano
+2,Spak,Joel Alexander,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Sturla,Gastón Germán,José C Paz,Buenos Aires,M,Niño Jesús
+2,Sucunza,Lucía,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Escuelas Técnicas Raggio
+2,Tagliani,Franco Luis,Olavarría,Buenos Aires,M,"Escuela Nacional ""Adolfo Pérez Esquivel"""
+2,Tanco,Santiago Andrés,La Plata,Buenos Aires,M,"Colegio Nacional ""Rafael Hernández"""
+2,Tettamanzi,Santiago,Coronel Granada,Buenos Aires,M,EEM Nº 2
+2,Torralva Ayerza,Lucas,Tigre,Buenos Aires,M,Los Molinos
+2,Tralice,Franco,Yerba Buena,Tucumán,M,San Patricio
+2,Trujillo,Francisco Ruy,Mendoza,Mendoza,M,"Liceo Militar ""General Espejo"""
+2,Tseng,Ezequiel,San Juan,San Juan,M,Colegio Central Universitario Mariano Moreno
+2,Velázquez Wilson,Matías Julián,Paraná,Entre Ríos,M,Nuestra Señora del Huerto
+2,Veselka,Santiago Agustín,Bariloche,Río Negro,M,Jorge Newbery
+2,Vieiro,Alexis,Hurlingham,Buenos Aires,M,Chacabuco Nº 6 Morón
+2,Vigliarolo,Julián,Ciudadela,Buenos Aires,M,Juan XXIII
+2,Villagra Toscomian,Lucas,Córdoba,Córdoba,M,Instituto General Manuel Belgrano Armenia
+2,Weinand,Gianni Georg,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+2,Zitelli,Maximiliano Fabián,Lanús,Buenos Aires,M,Eccleston
+3,Alanís,Hipólito,La Plata,Buenos Aires,M,"Colegio Nacional ""Rafael Hernández"""
+3,Albertengo,Sofía,Cipoletti,Río Negro,F,AMSE Estación Limay
+3,Antonelli,Juan Francisco,Bahía Blanca,Buenos Aires,M,Don Bosco
+3,Arévalo Portillo,Juan Pablo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+3,Arias,Yerimen,La Plata,Buenos Aires,F,"Colegio Nacional ""Rafael Hernández"""
+3,Astolfo,Julián,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+3,Avellaneda,Andrés Nicolás,Río Gallegos,Santa Cruz,M,Nuestra Señora de Fátima
+3,Barboza,Gastón,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+3,Barni,Carlos Santiago,San Salvador de Jujuy,Jujuy,M,Colegio del Salvador
+3,Batastini,Nicolás Alejandro,,,M,La Salle
+3,Belfiore,Rocío Milagros,Paso del Rey,Buenos Aires,F,"ITI ""San Judas Tadeo"""
+3,Biagetti,Lucas,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+3,Blufstein,Martín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+3,Bonifacio,Mariano Carlos,Leones,Córdoba,M,ESCBA
+3,Borrovinsky,Lautaro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+3,Candioti,Alejandro Marcelo,Posadas,Misiones,M,José Manuel Estrada
+3,Cantore Pasero,Iara María,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
+3,Casetta,Agustina,Ciudad Jardín,Buenos Aires,F,Alas
+3,Chehebar,Mariano,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
+3,Ciruelos Rodríguez,Gonzalo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+3,Cocca,Lisandro,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+3,Costa,Cecilia Daniela,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,F,Instituto Huergo
+3,Courreges,Fernando,General Villegas,Buenos Aires,M,Instituto María Inmaculada
+3,Damonte,Agustín Ignacio,Paraná,Entre Ríos,M,Nuestra Señora del Huerto
+3,Darago,Ignacio Martín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
+3,D'Ascanio,Franco Enrique,Las Parejas,Santa Fe,M,EET Nº 290
+3,de Diego Saadia,Sheila Irina,Lima,Buenos Aires,F,Instituto de Vanguardia
+3,Del Grosso,Nicolás Francisco,Munro,Buenos Aires,M,Escuelas Técnicas Raggio
+3,del Río,Alexis Joel,Monte Grande,Buenos Aires,M,Senderos Azules
+3,Demartino,Francisco,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+3,Diab,Jacinto,Venado Tuerto,Santa Fe,M,Cultura Inglesa
+3,Doll,Sebastián Martín,Monte Grande,Buenos Aires,M,Senderos Azules
+3,Döning,Matías Leandro,Alta Gracia,Córdoba,M,Instituto El Obraje
+3,Errázquin,Martín Ignacio,Villa Adelina,Buenos Aires,M,Instituto La Salle Florida
+3,Fatalini,Azul Lihuén,San Miguel de Tucumán,Tucumán,F,Normal Juan Bautista Alberdi
+3,Fernández,Alejandro Gabriel,La Plata,Buenos Aires,M,Benito Lynch
+3,Ferreyra,Claudio,Córdoba,Córdoba,M,Liceo Militar General Paz
+3,Firpo,Bruno Andrés,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+3,Font,Federico Javier,Esperanza,Santa Fe,M,EET Nº 455
+3,Fresia,Juan Manuel,Zárate,Buenos Aires,M,"Instituto ""José Manuel Estrada"""
+3,Frizzo,Franco,Gualeguay,Entre Ríos,M,Instituto San José D-48
+3,García,Sebastián Gabriel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Huergo
+3,González,Felipe,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Sworn Junior College
+3,Guevara Banegas,Ailén Yasmín,Córdoba,Córdoba,F,ISEAM Domingo Zipoli
+3,Gutiérrez,Facundo Martín,Munro,Buenos Aires,M,Instituto de Educación Integral de Munro
+3,Holzmann,Bruno Nicolás,Pigüé,Buenos Aires,M,La Salle
+3,Jabloñski,Pablo,Libertador San Martín,Entre Ríos,M,Instituto Adventista del Plata
+3,Keklikian,Nicolás Roberto,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+3,Litwiller,Andrés Eduardo,Quilmes,Buenos Aires,M,"EEST Nº 2 ""Paula Albarracín de Sarmiento"""
+3,Maldonado,Kevin Michel,Isidro Casanova,Buenos Aires,M,Isidro Casanova
+3,Martín,Nahuel,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
+3,Mata,María Agustina,Sarandi,Buenos Aires,F,Centro Educativo Loreto
+3,Mazzoni,Federico Gustavo,Boulogne,Buenos Aires,M,Leonardo da Vinci
+3,Medina Villamayor,Pablo Alexis,Resistencia,Chaco,M,EET Nº 33
+3,Micucci,Matías Nicolás,General Villegas,Buenos Aires,M,Instituto María Inmaculada
+3,Mir Vera,Francisco José,San Miguel de Tucumán,Tucumán,M,Instituto Técnico
+3,Molina Ferrer,Cinthya Valeria,Córdoba,Córdoba,F,ISEAM Domingo Zipoli
+3,Nieva,Sofía,Yerba Buena,Tucumán,F,San Patricio
+3,Olsson,Franco Joel,San Vicente,Misiones,M,Normal Superior Nº 13
+3,Ortiz,Daniel Alberto,Río Gallegos,Santa Cruz,M,Escuela Industrial Nº 4
+3,Pannunzio,Emiliano,San Martín,Buenos Aires,M,San José
+3,Paredes,Fernando Ezequiel,Córdoba,Córdoba,M,San Francisco de Asís
+3,Pedraza,Marcelo,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Superior de Comercio Carlos Pellegrini
+3,Peré Schröder,Melchor Anael,Sáenz Peña,Buenos Aires,M,Escuelas Técnicas Raggio
+3,Pérez Tenorio,Javiera Martita,Río Grande,Tierra del Fuego,F,CPET
+3,Pirich,Lautaro Nahuel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ILSE
+3,Prieto Galardo,Nahuel Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pío IX
+3,Ramírez,Santiago Agustín,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
+3,Rapoport,Alan,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Philips
+3,Rodríguez,Martín Ezequiel,San Clemente del Tuyú,Buenos Aires,M,EMEMOA Nº 1
+3,Romero,Julián,Comodoro Rivadavia,Chubut,M,Deán Funes
+3,Rossi,Lucía,Mar del Plata,Buenos Aires,F,Colegio Nacional Arturo Illia
+3,Salvador,Maximiliano Martín,Bariloche,Río Negro,M,Castex
+3,Sengolini,Diego José,Cañada de Gómez,Santa Fe,M,EEMPI Nº 8129 José Razzetto
+3,Sidabra,Leonel Antonio,Avellaneda,Buenos Aires,M,Centro Educativo Loreto
+3,Sidor Díaz,Jerónimo,La Plata,Buenos Aires,M,"Técnica Nº 8 ""J. B. Alberdi"""
+3,Soto,Gabriel Rodrigo,Salta,Salta,M,Colegio Belgrano
+3,Staffa,Bruno,Bahía Blanca,Buenos Aires,M,"Escuela Superior de Comercio ""Prudencio Cornejo"""
+3,Talcachier,Alejandro,Córdoba,Córdoba,M,Instituto General Manuel Belgrano Armenia
+3,Testa,Matías Sebastián,Casilda,Santa Fe,M,Colegio Sagrada Familia Nº 8180
+3,Tissoni,Jonathan,Bolívar,Buenos Aires,M,EEM Nº 204
+3,Urdapilleta,Martín Ezequiel,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Argentina Modelo
+3,Vandam,Agustín Gustavo,Comodoro Rivadavia,Chubut,M,Colegio Abraham Lincoln
+3,Virgillo,Alejandro,C. A. de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuela Argentina Modelo
