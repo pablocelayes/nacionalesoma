@@ -17,17 +17,23 @@ def get_colegios_oma():
 	"""
 	Devuelve los colegios de todos 
 	los clasificados 2008-2014
-	(pues los colegios de aprobados y premiados salen de ahi ;))
+	(pues los colegios de aprobados y premiados salen de ahi)
 	"""
 	template_filename = "./clasificados/csvs/clasificados%d.csv"
-	res = []
+	res = pd.DataFrame({'Nivel':[],'Apellido':[],
+						'Nombres':[],'Localidad':[],
+						'Provincia':[],'Género':[],'Colegio':[]})
 	for i in range(2008,2015):
-		df = pd.read_csv(template_filename % i)
-		res = res + df['Colegio'].tolist()
-	# return pd.DataFrame({'Colegio':set(res)})
-	distinct_colleges = pd.groupby(pd.DataFrame({'Colegio':res}),'Colegio')
+		res = res.append(pd.read_csv(template_filename % i),ignore_index = True)
+	distinct_colleges = pd.groupby(res,'Colegio')
 	colegios_oma = distinct_colleges.Colegio.all().tolist()
-	return pd.DataFrame({'Colegio':colegios_oma})
+	provincias = distinct_colleges.Provincia.all().tolist()
+	nclasificados = distinct_colleges.size().values
+	
+	result = pd.DataFrame({'Colegio':colegios_oma,
+						   'Provincia':provincias,
+						   'Clasificados':nclasificados})
+	return result
 		
 def get_colegios_db():
 	"""
@@ -39,24 +45,35 @@ def get_colegios_db():
 	
 	sheet1_colegios = [i.value for i in sheet1.col_slice(2)[10:]]
 	sheet1_gestion = [i.value for i in sheet1.col_slice(3)[10:]]
+	sheet1_prov = [i.value for i in sheet1.col_slice(0)[10:]]
 	
 	sheet2_colegios = [i.value for i in sheet2.col_slice(2)[10:]]
 	sheet2_gestion  = [i.value for i in sheet2.col_slice(3)[10:]]
+	sheet2_prov  = [i.value for i in sheet2.col_slice(0)[10:]]
 	
 	#uniendo opciones las escuelas con ofertas activas e inactivas
 	colegios = sheet1_colegios + sheet2_colegios
-	gestion  = sheet1_gestion + sheet2_gestion 
+	gestion  = sheet1_gestion + sheet2_gestion
+	provincias = sheet1_prov + sheet2_prov	
 	
 	df = pd.DataFrame({'Colegio':np.array(colegios),
-					'Sector':np.array(gestion)})
+					   'Sector':np.array(gestion),
+					   'Provincia':np.array(provincias)})
+	
+	# hasta aqui len(df) = 23695
 	
 	df_distinct_colleges = pd.groupby(df,'Colegio')
 
 	colegios_df = df_distinct_colleges.Colegio.all().tolist()		 	
 	sectores_df = df_distinct_colleges.Sector.all().tolist() 		
+	provs_df = df_distinct_colleges.Provincia.all().tolist() 		
 	
-	return pd.DataFrame({'Colegio':np.array(colegios_df),
-					'Sector':np.array(sectores_df)})
+	result = pd.DataFrame({'Colegio':np.array(colegios_df),
+						   'Sector':np.array(sectores_df),
+						   'Provincia':np.array(provs_df)})
+	# hasta aqui len(result) = 19198
+	# 4497 colegios repetidos???	
+	return result
 
 # def dist_to_sim(d):
 	# """
@@ -123,7 +140,8 @@ def get_colegios_db():
 	# return name_similarity * location_similarity
 
 if __name__ == '__main__':
-	print(get_colegios_oma())	
+	# print(get_colegios_oma())	
+	print(get_colegios_db())	
 	
 	#----------------------------------------------------------------------------
 	# # 1. fetch all unmatched Expedia hotels
