@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
 
-import math
+import re
 import xlrd
 import numpy as np
 import pandas as pd
@@ -25,15 +25,7 @@ def get_colegios_oma():
 						'Provincia':[],'Género':[],'Colegio':[]})
 	for i in range(2008,2015):
 		res = res.append(pd.read_csv(template_filename % i),ignore_index = True)
-	distinct_colleges = pd.groupby(res,'Colegio')
-	colegios_oma = distinct_colleges.Colegio.all().tolist()
-	provincias = distinct_colleges.Provincia.all().tolist()
-	nclasificados = distinct_colleges.size().values
-	
-	result = pd.DataFrame({'Colegio':colegios_oma,
-						   'Provincia':provincias,
-						   'Clasificados':nclasificados})
-	return result
+	return res
 		
 def get_colegios_db():
 	"""
@@ -46,102 +38,93 @@ def get_colegios_db():
 	sheet1_colegios = [i.value for i in sheet1.col_slice(2)[10:]]
 	sheet1_gestion = [i.value for i in sheet1.col_slice(3)[10:]]
 	sheet1_prov = [i.value for i in sheet1.col_slice(0)[10:]]
+	sheet1_loc	= [i.value for i in sheet1.col_slice(10)[10:]]
 	
 	sheet2_colegios = [i.value for i in sheet2.col_slice(2)[10:]]
 	sheet2_gestion  = [i.value for i in sheet2.col_slice(3)[10:]]
 	sheet2_prov  = [i.value for i in sheet2.col_slice(0)[10:]]
+	sheet2_loc  = [i.value for i in sheet2.col_slice(10)[10:]]
 	
 	#uniendo opciones las escuelas con ofertas activas e inactivas
 	colegios = sheet1_colegios + sheet2_colegios
 	gestion  = sheet1_gestion + sheet2_gestion
-	provincias = sheet1_prov + sheet2_prov	
+	provincias = sheet1_prov + sheet2_prov
+	localidad = sheet1_loc + sheet2_loc
+	
 	
 	df = pd.DataFrame({'Colegio':np.array(colegios),
 					   'Sector':np.array(gestion),
-					   'Provincia':np.array(provincias)})
-	
-	# hasta aqui len(df) = 23695
-	
-	df_distinct_colleges = pd.groupby(df,'Colegio')
+					   'Provincia':np.array(provincias),
+					   'Localidad':np.array(localidad)})
+	return df
 
-	colegios_df = df_distinct_colleges.Colegio.all().tolist()		 	
-	sectores_df = df_distinct_colleges.Sector.all().tolist() 		
-	provs_df = df_distinct_colleges.Provincia.all().tolist() 		
-	
-	result = pd.DataFrame({'Colegio':np.array(colegios_df),
-						   'Sector':np.array(sectores_df),
-						   'Provincia':np.array(provs_df)})
-	# hasta aqui len(result) = 19198
-	# 4497 colegios repetidos???	
-	return result
 
-# def dist_to_sim(d):
-	# """
-		# Maps a distance in [0, ∞) interval
-		# to a similarity score in (0, 1]
 
-		# We use an exponential with base b such that
-		
-		# d = 0 mts -> sim = 1
-		# d = 50 mts -> sim = 0.5
-	# """
-	# b = 0.5 ** (1.0/50)
-	# return b ** d
-
-# def get_geo_dist(p1, p2):
-	# """
-		# Geographic distance using Haversine formula
-	# """
-	# lat1, lng1 = p1
-	# lat2, lng2 = p2
-	# r = 6371000  # Earth radius in meters
-	# phi1 = math.radians(lat1)
-	# phi2 = math.radians(lat2)
-	# lambda1 = math.radians(lng1)
-	# lambda2 = math.radians(lng2)
-	# haversin = lambda theta: (1 - math.cos(theta)) / 2.0
-	# h = haversin(phi2 - phi1) + math.cos(phi1) * math.cos(phi2) * \
-		# haversin(lambda2 - lambda1)
-	# c = 2 * math.atan2(math.sqrt(h), math.sqrt(1 - h))
-	# return r * c
-
-# def remove_accents(s):
-	# return ''.join((c for c in ud.normalize('NFD', s) if ud.category(c) != 'Mn'))
+def remove_accents(s):
+	return ''.join((c for c in ud.normalize('NFD', s) if ud.category(c) != 'Mn'))
 
 # def normalize(hname):
 	# """
 		# Split in words, turn to lowercase,
-		# remove accents, remove word "hotel",
-		# remove city
-		# return word list
+		# remove accents, 
 	# """
 	# hname = remove_accents(hname).replace('-',' ')
 	# hname.replace('&', ' ')
 	# tokens = [word.strip(" ,.:;!|&-_()[]<>{}/\"'").lower()
 			# for word in hname.split()]
-	# tokens = [t for t in tokens if not t in ['hotel', 'hotels', 'hostel']]
-	# return ''.join(tokens)
-
-# def get_name_sim(hname1, hname2):
-	# """
-		# Normalize both names
-		# and obtain string similarity
-	# """
-	# seq = SequenceMatcher(a=normalize(hname1), b=normalize(hname2))
-	# return seq.ratio()
-
-
-# def get_geoname_sim(hotel1, hotel2):
-	# """
-		# Combined location and name similarity
-	# """
-	# name_similarity = get_name_sim(normalize(hotel1['name']), normalize(hotel2['name']))
-	# location_similarity = dist_to_sim(get_geo_dist(hotel1['location'], hotel2['location']))
-	# return name_similarity * location_similarity
+	# return ' '.join(tokens)
+	
+def normalize(hname):
+	return remove_accents(hname).lower()
+	
+def string_sim(hname1, hname2):
+	"""
+		Normalize both names
+		and obtain string similarity
+	"""
+	seq = SequenceMatcher(a=normalize(hname1), b=normalize(hname2))
+	return seq.ratio()
 
 if __name__ == '__main__':
 	colegios_oma = get_colegios_oma()	
 	colegios_db = get_colegios_db()	
+	
+	singles_oma = colegios_oma.drop_duplicates(subset=['Colegio','Provincia','Localidad'])
+	singles_oma = singles_oma.loc[:,['Colegio','Provincia','Localidad']]
+	
+	singles_db = colegios_db.drop_duplicates(subset=['Colegio','Provincia','Localidad'])
+	singles_db = singles_db.loc[:,['Colegio','Provincia','Localidad','Sector']]
+	
+	result = pd.DataFrame({'Colegio':[],
+					  	   'Provincia':[],
+						   'Localidad':[],
+						   'Sector':[],
+						   })
+	
+	dmatches = 0
+	for i,esc_i,prov_i,loc_i in singles_oma.itertuples():
+		provs_j = singles_db[singles_db['Provincia'] == prov_i]
+		# print(i)
+		for j,esc_j,prov_j,loc_j,sect_j in provs_j.itertuples():
+			# print(i,j,dmatches)
+			try: 
+				if normalize(esc_i) == normalize(esc_j):
+					result = result.append(pd.DataFrame({'Colegio':[esc_j],
+														 'Provincia':[prov_j],
+														 'Localidad':[loc_j],
+														 'Sector':[sect_j],
+														}),ignore_index=True)
+					# result.append(singles_db.iloc[j],ignore_index=True)
+					singles_db.drop(j,inplace=True)
+					singles_oma.drop(i,inplace=True)
+					dmatches += 1
+					break
+			except TypeError:
+				pass
+				# print(esc_i,esc_j)
+	# print("%d direct matches found" % dmatches)
+	print(result)		
+	print("End for now...")	
 	
 	#----------------------------------------------------------------------------
 	# # 1. fetch all unmatched Expedia hotels
