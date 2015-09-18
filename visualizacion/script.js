@@ -150,4 +150,3 @@ function update_svg(año)
 d3.xml(svg_file1, "image/svg+xml", function(xml){
     document.getElementById("mapa").appendChild(xml.documentElement);		  
 });
-

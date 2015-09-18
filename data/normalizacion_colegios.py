@@ -140,8 +140,8 @@ def get_colegios_db():
 	# return name_similarity * location_similarity
 
 if __name__ == '__main__':
-	# print(get_colegios_oma())	
-	print(get_colegios_db())	
+	colegios_oma = get_colegios_oma()	
+	colegios_db = get_colegios_db()	
 	
 	#----------------------------------------------------------------------------
 	# # 1. fetch all unmatched Expedia hotels

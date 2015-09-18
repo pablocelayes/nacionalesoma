@@ -13,5 +13,5 @@
 - También me topé con esto... la juridiscción choca con la provincia
 fila 3290
   
-- Hay que eliminar algunos colegios que están como en blanco('xxx')		 
+- Hay que eliminar algunos colegios que están como en blanco('xxx')	 
 

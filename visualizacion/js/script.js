@@ -1,6 +1,10 @@
 ﻿//cargando el svg inicial
 var svg_file1 = "clasificados/mapa1998.svg";
 
+d3.xml(svg_file1, "image/svg+xml", function(xml){
+    document.getElementById("mapa").appendChild(xml.documentElement);		  
+});
+
 var n_paths = 44;
 
 var path_to_provs = 
@@ -141,7 +145,4 @@ function update_svg(año)
     }
 }
 
-d3.xml(svg_file1, "image/svg+xml", function(xml){
-    document.getElementById("mapa").appendChild(xml.documentElement);		  
-});
-
+update_svg(1998);
