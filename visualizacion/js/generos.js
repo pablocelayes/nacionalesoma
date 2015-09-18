@@ -53,6 +53,7 @@ var path_to_provs =
 	
 
 var cat_list = d3.select("#cat_listbox");  
+var year_label = d3.select("#year_label");  
 var year_list = d3.select("#year_range");
 var year_title = d3.select("#year");
 var cat_title = d3.select("#categoria");
@@ -73,7 +74,12 @@ function compute_year(year){
 	}
 	else{
 		if(cat_selected == "Premiados" && year == 2000){
-			previous_year = previous_year + 2*(2000 - previous_year);			
+			if (previous_year == null){
+				previous_year = 1999;
+			}
+			else{
+				previous_year = previous_year + 2*(2000 - previous_year);
+			}			
 			return previous_year; 
 		}	
 	}
@@ -93,7 +99,7 @@ function add_years(cat){
     cat_title.text(cat);
     year_title.text(initial_year);
     year_list.property("value",1998);
- 
+	year_label.text(" "+initial_year);
     update_svg(cat_selected,initial_year);
 }
 
@@ -101,6 +107,7 @@ function add_svg(year){
     actual_prov.html("");
     actual_prov_percent.html("");
     year_title.text(year);
+    year_label.text(" "+year);
     update_svg(cat_selected,year);
 }
 

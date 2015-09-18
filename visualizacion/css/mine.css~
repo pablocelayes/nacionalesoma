@@ -33,7 +33,6 @@ input{
           font-size: 10px;
           font-family: Helvetica,sans-serif;
           }
-
 .map{
       top: 400px;
       left: 400px;
@@ -51,12 +50,13 @@ input{
 .tooltip1 {
             background: none repeat scroll 0% 0% rgb(255, 255, 255);
             color: #333;
-            display: block;
+            display: none;
             font-size: 14px;
-            top: 270px;
-            left: 730px;
+/*            top: 270px;
+            left: 730px;*/
             padding: 10px;
-            position: absolute;
+            margin-top: 100px;
+            position: relative;
             text-align: left;
             width: 225px;
             height:325px;
@@ -116,7 +116,7 @@ input{
             } 
 
 .datamaps-legend {
-                   padding-bottom: 20px;
+                   padding-bottom: 15px;
                    z-index: 1001; 
                    position: relative;
                    left: 4px;

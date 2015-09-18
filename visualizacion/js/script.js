@@ -34,6 +34,7 @@ var path_to_provs =
 var year_title = d3.select("#year");
 var tooltip_node = d3.select("#tooltip");
 var input_node = d3.select("input"); 
+var gini = d3.select("#gini"); 
 
 input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
@@ -53,8 +54,11 @@ function fill_svg_array(){
 
 fill_svg_array();	              
 
-//asociando el slider al mapa...
+//asociaciones....
 input_node.on("input", function(){update_svg(+this.value);});
+gini.on("mouseenter",function(){gini.attr("class","any");});
+gini.on("mouseout",function(){gini.attr("class","nany");});
+gini.on("click",function(){window.open("bokeh/gini.html");});
 
 function tooltip(year,id,event)				
 {
