@@ -3,6 +3,7 @@
 
 import re
 import xlrd
+from scipy.sparse import coo_matrix
 import numpy as np
 import pandas as pd
 import unicodedata as ud
@@ -102,8 +103,8 @@ def string_sim(hname1, hname2):
 	return seq.ratio()
 	
 def heuristica(coleg1,loc1,coleg2,loc2):
-	w_nom = 2
-	w_loc = 1
+	w_nom = 3
+	w_loc = 2
 	return w_nom*(string_sim(coleg1,coleg2)) + w_loc*(string_sim(loc1,loc2))
 
 if __name__ == '__main__':
@@ -117,74 +118,85 @@ if __name__ == '__main__':
 	singles_db = colegios_db.drop_duplicates(subset=['Colegio','Provincia','Localidad'])
 	singles_db = singles_db.loc[:,['Colegio','Provincia','Localidad','Sector','Dirección']]
 	
-	# print(advanced_str_search(colegios_oma.fillna(value="<>"),r'Belgrano','Colegio'))
+	# print(advanced_str_search(colegios_oma,r'Belgrano','Colegio'))
 	
 	# print(nans(singles_oma,'Colegio'))
-	# print(nans(singles_oma,'Provincia'))
-	# print(nans(singles_oma,'Localidad'))
 	
-	##usar colegios_oma.ix(i) para ver los valores de las filas "originales" en colegios_oma
-	
-	result = pd.DataFrame({'Colegio':[],
+	result = pd.DataFrame({'Colegio_oma':[],
+						   'Colegio_db':[],
 					  	   'Provincia':[],
 						   'Localidad':[],
 						   'Sector':[],
 						   })
 	
+	provs = set(singles_oma['Provincia'].dropna(how='Any'))	
+	
 	dmatches = 0
-	for i,esc_i,prov_i,loc_i,year_i in singles_oma.itertuples():
-		provs_j = singles_db[singles_db['Provincia'] == prov_i]
-		# print(i)
-		for j,esc_j,prov_j,loc_j,sect_j,dir_j in provs_j.itertuples():
-			# print(i,j,dmatches)
-			try: 
+	for prov in provs:
+		provs_i = singles_oma[singles_oma['Provincia'] == prov]
+		provs_j = singles_db[singles_db['Provincia'] == prov]	
+		for i,esc_i,prov_i,loc_i,year_i in provs_i.itertuples():
+			# print(i)
+			for j,esc_j,prov_j,loc_j,sect_j,dir_j in provs_j.itertuples():
+				# print(i,j,dmatches)
 				if normalize(esc_i) == normalize(esc_j):
-					# result = result.append(pd.DataFrame({'Colegio':[esc_j],
-														 # 'Provincia':[prov_j],
-														 # 'Localidad':[loc_j],
-														 # 'Sector':[sect_j],
-														# }),ignore_index=True)
-					result = result.append(singles_db.ix[j],ignore_index=True)
-					singles_db.drop(j,inplace=True)
-					singles_oma.drop(i,inplace=True)
+					result = result.append(pd.DataFrame({'Colegio_oma':[esc_i],
+														 'Colegio_db':[esc_j],
+														 'Provincia':[prov_j],
+														 'Localidad':[loc_j],
+														 'Sector':[sect_j],
+														}),ignore_index=True)
+					#marcando colegios con NaN para despues eliminarlos
+					singles_db.at[j,'Colegio'] = np.nan
+					singles_oma.at[i,'Colegio'] = np.nan
 					dmatches += 1
 					break
-			except TypeError:	# for NaNs
-				pass
-				# print(esc_i,esc_j)
-	# print("%d direct matches found" % dmatches)
-	print(result)		
-	print("End for now...")	
+		print(prov,dmatches)
 	
-	#----------------------------------------------------------------------------
-	# # 4. create pairwise similarities matrix for the remaining hotels
-	# print "%d Expedia left to match with %d Booking hotels" % (len(expediahotels), len(bookinghotels))
-	# print "combined geo-name similarity with user confirmation will be used"
-
-	# print "Building similarity matri
+	#eliminando colegios marcados con NaN
+	singles_oma.dropna(subset=['Colegio'],inplace=True)
+	singles_db.dropna(subset=['Colegio'],inplace=True)
+		
+	print("%d direct matches found" % dmatches)
+	# # print(result)		
 	
-	# # 4. create pairwise similarities matrix for the remaining hotels
-	# print "%d Expedia left to match with %d Booking hotels" % (len(expediahotels), len(bookinghotels))
-	# print "combined geo-name similarity with user confirmation will be used"
+	# # 4. create pairwise similarities matrix for colleges (oma<->db)
+	print("%d OMA-colleges left to match with %d MAE DB" % (len(singles_oma), len(singles_db)))
 
-	# print "Building similarity matrix..."
-	# sims = np.zeros((len(expediahotels), len(bookinghotels)))
-	# exp_hotelitems = expediahotels.items()
-	# bkg_hotelitems = bookinghotels.items()
-	# progress = 0
-	# for i, (exp_id, exp_data) in enumerate(exp_hotelitems):
-		# for j, (bkg_id, bkg_data) in enumerate(bkg_hotelitems):
-			# sims[i, j] = get_geoname_sim(exp_data, bkg_data)
-		# new_progress = i * 100.0 / len(expediahotels)
-		# if new_progress > progress + 5:
-			# print "%02.1f %%" % progress
-			# progress = new_progress
-
+	print("Building similarity matrix...")
+	
+	row = []
+	col = []
+	data = []
+	for prov in provs:
+		print(prov)
+		provs_i = singles_oma[singles_oma['Provincia'] == prov]
+		provs_j = singles_db[singles_db['Provincia'] == prov]	
+		for i,esc_i,prov_i,loc_i,year_i in provs_i.itertuples():
+			for j,esc_j,prov_j,loc_j,sect_j,dir_j in provs_j.itertuples():
+				row += [i]
+				# row.append(i)	
+				col += [j]
+				# col.append(j)
+				data += [heuristica(esc_i,loc_i,esc_j,loc_j)]	
+				# data.append(heuristica(esc_i,loc_i,esc_j,loc_j))				
+				# sims[i, j] = heuristica(esc_i,loc_i,esc_j,loc_j) #probar con coo_matrix ...
+	
+	row  = np.array(row)
+	col  = np.array(col)
+	data = np.array(data)
+	len_oma = len(colegios_oma)
+	len_db = len(colegios_db)
+	
+	sims = coo_matrix((data,(row,col)),shape=(len_oma,len_db))
+	
+	print(sims)	
+	
 	# # 5. Match the remaning by geoname similarity in a greedy fashion
 	# #    asking the user for confirmation
 	# matches = 0
 	# while matches <= min(sims.shape):
-		# i, j = np.unravel_index(sims.argmax(axis=None), sims.shape)
+		# i, j = np.unravel_index(sims.argmax(axis=None), sims.shape) #probar con coo_matrix ... por el tema eficiencia
 		# exp_id, exp_data = exp_hotelitems[i]
 		# bkg_id, bkg_data = bkg_hotelitems[j]
 		# expname = exp_data['name'].encode(ENCODING)

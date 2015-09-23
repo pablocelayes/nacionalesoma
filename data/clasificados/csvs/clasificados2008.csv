@@ -79,7 +79,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Flores,Jimena,Avellaneda,Buenos Aires,F,Manuel Belgrano
 1,Font,Federico Javier,Esperanza,Santa Fe,M,E.E.T. Nº 455
 1,Frizzo,Franco,Gualeguay,Entre Ríos,M,Instituto San José D-48
-1,Fushimi,Emilia,Pacheco,Buenos Aires,F,Sworn Junior College
+1,Fushimi,Emilia,Pacheco,Buenos Aires,F,Sworn
 1,Galimberti,Clara Lucía,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
 1,Gammino Gianotti,Orlando Mateo,Orán,Salta,M,Ntra. Sra. Del Huerto
 1,García,Luciana Micaela,Cañuelas,Buenos Aires,F,IMEI
@@ -522,5 +522,5 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 3,Tonzar,Victoria,Resistencia,Chaco,F,Colegio Integral Dr. Carlos P. López Piacentini
 3,Tonutti,Lucas Gabriel,Paraná,Entre Ríos,M,E.E.T. Nº 3 Teniente Don Luis Cenobro Candelaria
 3,Urbina,Elvio Rafael,Orán,Salta,M,Colegio María del Rosario Nº 8064
-3,Varetti Piñeiro,Matías Nicolás,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Pio IX
+3,Varetti Piñeiro,Matías Nicolás,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Casa Salesiana Pío IX
 3,Videla,Agustín,Casilda,Santa Fe,M,Sagrada Familia
