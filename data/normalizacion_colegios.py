@@ -102,10 +102,25 @@ def string_sim(hname1, hname2):
 	seq = SequenceMatcher(a=normalize(hname1), b=normalize(hname2))
 	return seq.ratio()
 	
-def heuristica(coleg1,loc1,coleg2,loc2):
-	w_nom = 3
+def heuristica(coleg1,loc1,coleg2,loc2,select_val):
+	"""
+	Usamos una suma pesada teniendo como prioridad la semejanza en el
+	nombre del colegio.	
+	'select_val' es una funcion para filtrar los valores probablemente menos semejantes.
+	"""
+	w_nom = 3	#quiza se podrian probar otros valores para los pesos
 	w_loc = 2
-	return w_nom*(string_sim(coleg1,coleg2)) + w_loc*(string_sim(loc1,loc2))
+	return select_val(w_nom*(string_sim(coleg1,coleg2)) + w_loc*(string_sim(loc1,loc2)))
+
+def f(x):
+	"""
+	Para usar como parametro en 'select_val', como un SequenceMatcher.ratio() > 0.6 
+	se supone(segun la documentacion oficial) es indicador de aceptable similaridad entre los dos valores 
+	(a > 0.6)^(b > 0.6) => 3*a + 2*b > 3 y podemos refinar un poco más la heuristica. 
+	"""
+	if x < 3:
+		return 0
+	return x	
 
 if __name__ == '__main__':
 	colegios_oma = get_colegios_oma()	
@@ -174,13 +189,14 @@ if __name__ == '__main__':
 		provs_j = singles_db[singles_db['Provincia'] == prov]	
 		for i,esc_i,prov_i,loc_i,year_i in provs_i.itertuples():
 			for j,esc_j,prov_j,loc_j,sect_j,dir_j in provs_j.itertuples():
-				row += [i]
-				# row.append(i)	
-				col += [j]
-				# col.append(j)
-				data += [heuristica(esc_i,loc_i,esc_j,loc_j)]	
-				# data.append(heuristica(esc_i,loc_i,esc_j,loc_j))				
-				# sims[i, j] = heuristica(esc_i,loc_i,esc_j,loc_j) #probar con coo_matrix ...
+				heur_val = heuristica(esc_i,loc_i,esc_j,loc_j,f) 
+				if heur_val:
+					# row += [i]
+					row.append(i)	
+					# col += [j]
+					col.append(j)
+					# data += [heuristica(esc_i,loc_i,esc_j,loc_j,f)]	
+					data.append(heur_val)
 	
 	row  = np.array(row)
 	col  = np.array(col)
@@ -188,32 +204,33 @@ if __name__ == '__main__':
 	len_oma = len(colegios_oma)
 	len_db = len(colegios_db)
 	
-	sims = coo_matrix((data,(row,col)),shape=(len_oma,len_db))
+	#usando coo_matrix para hacer un poco más eficientes los próximos pasos
+	sims = coo_matrix((data,(row,col)),shape=(len_oma,len_db)) 
 	
-	print(sims)	
+	# print(sims)	
 	
-	# # 5. Match the remaning by geoname similarity in a greedy fashion
-	# #    asking the user for confirmation
-	# matches = 0
-	# while matches <= min(sims.shape):
-		# i, j = np.unravel_index(sims.argmax(axis=None), sims.shape) #probar con coo_matrix ... por el tema eficiencia
-		# exp_id, exp_data = exp_hotelitems[i]
-		# bkg_id, bkg_data = bkg_hotelitems[j]
-		# expname = exp_data['name'].encode(ENCODING)
-		# bkgname = bkg_data['name'].encode(ENCODING)
+	# 5. Match the remaning by similarity in a greedy fashion
+	#    asking the user for confirmation
+	
+	print("Asking part...")
+	matches = 0
+	
+	hit_indexes_i = {}
+	hit_indexes_j = {}
+	
+	while matches <= len(singles_oma):
+		for i, j,val in zip(sims.row,sims.col,sims.data): 
+			if not hit_indexes_i.get(i,False) or not hit_indexes_j.get(j,False):
+				answer = None
+				while not answer in ["y", "n"]:
+					answer = raw_input("Match %s (OMA) to %s (MAE)? [y/n]" %
+						(singles_oma.ix[i]['Colegio'], singles_db.ix[j]['Colegio']))
 
-		# answer = None
-		# while not answer in ["y", "n"]:
-			# answer = raw_input("Match %s (Expedia) to %s (Booking)? [y/n]" %
-				# (expname, bkgname))
+				if answer == "y":
+					print("%d unmatched colleges left" % (singles_oma - matches))
+					matches += 1
 
-		# if answer == "y":
-			# print "%d unmatched hotels left" % (min(sims.shape) - matches)
-			# with MySQLdb.connect(**DB_CONNECTION) as conn:
-				# conn.execute("""UPDATE tbl_hotelsExpedia SET bookingID=%s
-								# WHERE expediaID=%s""", (bkg_id, exp_id))
-			# matches += 1
-
-		# # clear i row and j column
-		# sims[i,:] = 0.0
-		# sims[:,j] = 0.0
+					# # clear i row and j column
+					hit_indexes_i[i] = True
+					hit_indexes_j[j] = True
+	print("%d matches" %matches)
