@@ -21,7 +21,7 @@ for cat,file in zip(["aprobados","clasificados","premiados"],files):
 			plt.bar(rows_prov["Año"],percent,color='#ff6496',alpha=0.9)
 			plt.title('Progresión porcentual femenina '+cat+' de '+prov+'.')
 			plt.ylabel('Porciento')
-			plt.savefig("./plots/genero/F/{0}/porcentual/progresion_anual_{1}.svg".format(cat,prov))
+			plt.savefig(".app/static/img/plots/genero/F/{0}/porcentual/progresion_anual_{1}.svg".format(cat,prov))
 			# plt.show()
 			plt.close(fig)
 		else:

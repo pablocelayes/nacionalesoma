@@ -21,7 +21,7 @@ files = ["../data/aprobados/gini_aprobados.csv",
 aprobados,clasificados = map(pd.read_csv,files)
 
 title_val = "Análisis de los resultados de la OMA en los años {0}-{1}".format(init_year,end_year).decode('utf-8')
-output_file("gini.html", title=title_val)
+output_file(".app/static/img/gini.html", title=title_val)
 
 
 TOOLS="pan,wheel_zoom,box_zoom,reset,hover"

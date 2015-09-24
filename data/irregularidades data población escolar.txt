@@ -1,0 +1,9 @@
+Irregularidades datos población escolar:
+-----------------------------------------
+
+1- Vacía la carpeta para el año 2009
+2- Varios tipos de formatos de data en las carpetas, se aprecian varios tipos de estructuras,
+	de ellas uniformidad en dos:
+	* de 1999 a 2007
+	* de 2007 a 2014
+

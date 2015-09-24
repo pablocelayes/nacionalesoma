@@ -15,6 +15,6 @@ for cat,file in zip(["aprobados","clasificados","premiados"],files):
 	plt.bar(file.groupby('Año').size(),file['F'],color='#ff6496')
 	plt.title('Progresión femenina nacional de '+cat+'.')
 	plt.ylabel('Cantidad')
-	plt.savefig("./plots/genero/F/progresion_anual_"+cat+".svg")
+	plt.savefig(".app/static/img/plots/genero/F/progresion_anual_"+cat+".svg")
 	# plt.show()
 	plt.close(fig)

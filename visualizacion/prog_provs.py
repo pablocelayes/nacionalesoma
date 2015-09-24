@@ -29,6 +29,6 @@ for i in provincias:
 	plt.title('Progresión provincia de '+i)
 	plt.ylabel('Cantidad')
 	plt.legend(handles=[aprobados_patch, graph2])
-	plt.savefig("./plots/"+i+"-completo.svg")
+	plt.savefig("./app/static/img/plots/"+i.replace(" ","_")+"-completo.svg")
 	# plt.show()
 	plt.close(fig)
