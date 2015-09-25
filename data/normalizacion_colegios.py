@@ -166,17 +166,19 @@ if __name__ == '__main__':
 					singles_oma.at[i,'Colegio'] = np.nan
 					dmatches += 1
 					break
-		print(prov,dmatches)
+		print(prov)
 	
 	#eliminando colegios marcados con NaN
 	singles_oma.dropna(subset=['Colegio'],inplace=True)
 	singles_db.dropna(subset=['Colegio'],inplace=True)
 		
+	print("----------------------------------------------------")
 	print("%d direct matches found" % dmatches)
 	# # print(result)		
 	
 	# # 4. create pairwise similarities matrix for colleges (oma<->db)
 	print("%d OMA-colleges left to match with %d MAE DB" % (len(singles_oma), len(singles_db)))
+	print("----------------------------------------------------\n")
 
 	print("Building similarity matrix...")
 	
@@ -211,26 +213,44 @@ if __name__ == '__main__':
 	
 	# 5. Match the remaning by similarity in a greedy fashion
 	#    asking the user for confirmation
-	
+	print("----------------------------------------------------")
 	print("Asking part...")
+	print("----------------------------------------------------\n")
 	matches = 0
-	
+	aut_matches = 0
 	hit_indexes_i = {}
 	hit_indexes_j = {}
+	
+	def add_to_result(i,j):
+		result = result.append(pd.DataFrame(
+			{'Colegio_oma':singles_oma.ix[i]['Colegio'],
+			 'Colegio_db':singles_db.ix[j]['Colegio'],
+			 'Provincia':singles_db.ix[j]['Provincia'],
+			 'Localidad':singles_db.ix[j]['Localidad'],
+			 'Sector':singles_db.ix[j]['Sector'],
+			}),ignore_index=True)
 	
 	while matches <= len(singles_oma):
 		for i, j,val in zip(sims.row,sims.col,sims.data): 
 			if not hit_indexes_i.get(i,False) or not hit_indexes_j.get(j,False):
-				answer = None
-				while not answer in ["y", "n"]:
-					answer = raw_input("Match %s (OMA) to %s (MAE)? [y/n]" %
-						(singles_oma.ix[i]['Colegio'], singles_db.ix[j]['Colegio']))
+				if val > 4.5:	#automaticante lo ponemos en 'result'
+					add_to_result(i,j)
+					aut_matches += 1
+					matches +=1
+					print("Match automatico encontrado!")	
+				else:
+					answer = None
+					while not answer in ["y", "n"]:
+						answer = input("Match %s (OMA) to %s (MAE)? [y/n]" %
+							(singles_oma.ix[i]['Colegio'], singles_db.ix[j]['Colegio']))
 
-				if answer == "y":
-					print("%d unmatched colleges left" % (singles_oma - matches))
-					matches += 1
-
-					# # clear i row and j column
-					hit_indexes_i[i] = True
-					hit_indexes_j[j] = True
-	print("%d matches" %matches)
+					if answer == "y":
+						print("----------------------------------------------------")
+						print("%d unmatched colleges left" % (singles_oma - matches))
+						print("----------------------------------------------------\n")
+						matches += 1
+						add_to_result(i,j)
+						# # clear i row and j column
+						hit_indexes_i[i] = True
+						hit_indexes_j[j] = True
+	print("%d matches de ellos %d automaticos" %(matches, aut_matches))
