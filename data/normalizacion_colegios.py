@@ -2,6 +2,7 @@
 #-*-coding:utf-8-*-
 
 import re
+import pickle
 import xlrd
 from scipy.sparse import coo_matrix
 import numpy as np
@@ -14,6 +15,22 @@ import codecs
 # ENCODING = sys.stdin.encoding
 ENCODING = "utf-8"
 
+#intentando evitar tiempo de corrida si no hay cambio de data
+USE_PICKLES = False			
+
+def load_pickle(file):
+	F = open(file,'rb')
+	val = pickle.load(F)
+	return val
+
+def save_pickle(val):
+	F = open(file,'wb')
+	pickle.dump(val,F)
+
+def with_pickle(file,var):
+	pass
+	
+	
 def get_colegios_oma():
 	"""
 	Devuelve los colegios de todos 
@@ -123,7 +140,8 @@ def f(x):
 	return x	
 
 if __name__ == '__main__':
-	colegios_oma = get_colegios_oma()	
+	colegios_oma = get_colegios_oma()
+		
 	# oma_groupby = colegios_oma.groupby(['Colegio','Provincia'])
 	singles_oma = colegios_oma.drop_duplicates(subset=['Colegio','Provincia','Localidad'])
 	singles_oma = singles_oma.loc[:,['Colegio','Provincia','Localidad','Año']]
