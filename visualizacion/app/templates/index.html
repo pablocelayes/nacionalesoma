@@ -11,11 +11,13 @@
 		<link rel="shortcut icon" href="../static/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="static/css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/mine.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body onload="update_svg(1998)">
 		<div class="container">
 			<header class="clearfix">
 				<span>{{ user.nickname }} <span class="bp-icon bp-icon-about" data-content="El presente estudio se basa en la información publicada en la web sobre clasificad@s, aprobad@s y premiad@s de los certámenes nacionales de la Olimpíada Matemática Argentina."></span></span>
@@ -37,10 +39,98 @@
 				</nav>
 				<div class="content">
 					<section id="section-1">
-					<img src="static/img/mapa2010.svg"></img>
+					    <div class="container" onload="update_svg(1998)">
+<!-- 	<H2>
+     <center>
+	 <strong>Análisis clasificados y aprobados OMA.</strong> 
+     <h3>Años 1998-2014.</h3>
+     <br>
+     </center>
+    </H2> -->    
+     <div class="row">
+       <div class="col-md-3">
+         <div class="nany">
+          <label>Leyenda</label>
+          <div class="datamaps-legend">
+			  <ul class="list-inline">
+			  <li class="key" style="border-top-color:#edf8e9">10</li><li class="key" style="border-top-color:#c7e9c0">25</li><li class="key" style="border-top-color:#a1d99b">50</li><li class="key" style="border-top-color:#41ab5d">75</li><li class="key" style="border-top-color:#005a32">100</li></ul>
+		    </div>
+		   </div>
+       </div>
+       <div class="col-md-3">
+       <label>Seleccione año:</label><span id="year-title"> 1998</span>
+		  <div class="nany"><input type="range" class="form-control" min="1998" max="2014" id="year"></input></div>
+       </div>
+     </div>
+     
+     <div class="row">
+       <div class="col-md-6"><div class="nany" id="mapa"></div></div>
+       <div class="col-md-3">
+         <div class="row">
+         	<div id="gini"><img src="static/img/gini_thumbnail.png" height="200px" width="300px" alt="Click para ver la imagen en una nueva p?na."></img></div>
+         </div> 
+         <div class="row"><div id="tooltip"></div></div>
+       </div>
+     </div>
+     </div>     
 					</section>
 					<section id="section-2">
-					<img src="static/img/mapa2011.svg"></img>
+					<div class="container">
+     <H2>
+     <center>
+	 <strong>
+     <span id="categoria_gen">Clasificados</span> por género en la OMA del año
+     <span id="year_gen">1998</span>
+     </strong>
+     </center>
+     <H3><center>y valores porcentuales de participantes femeninos.</center></H3>
+     </H2>
+	 <br>
+     	 <br>
+     <div class="row">
+       <div class="col-md-3">
+	 <form role="form">
+	   <div class="form-group">
+	     <label for="name">Seleccione categoría:</label>
+	     <select class="form-control" id="cat_listbox_gen">
+	       <option>Clasificados</option>
+	       <option>Aprobados</option>
+	       <option>Premiados</option>
+	     </select>
+	   </div>
+	 </form>
+       </div>
+       <div class="col-md-3">
+	 <form role="form">
+       <div class="form-group">
+	 <label for="name">Seleccione año:</label><span id="year_label_gen"></span>
+	 <input type="range" class="form-control" min="1998" max="2014" id="year_range_gen"></input>
+       </div>
+       </form>
+       </div>
+       <div class="col-md-3">
+	 <h4>
+	 <span id="prov_gen"></span>
+	 <span id="percent_gen"></span>
+	 </h4>		       
+       </div>
+     </div>
+     
+     <div class="row">
+       <div class="col-md-5"><div class="svg-gen" id="mapa_gen"></div></div>
+       <div class="col-md-4">
+       <div class="row"><img src="static/img/leyenda-géneros.svg" height="100px" width="375px"></img></div>
+       <div class="row">
+       <div class="col-md-2" id="prog_nac_gen"></div>
+       </div>
+       <div class="row">
+       <div class="col-md-2" id="prog_prov_gen"></div>
+       </div>
+	   <div class="row">
+       <div class="col-md-2" id="prog_prov_percent_gen"></div>
+       </div>
+       </div>
+     </div>
 					</section>
 					<section id="section-3">
 						<div class="mediabox">
@@ -52,11 +142,6 @@
 							<img src="static/img/06.png" alt="img06" />
 							<h3>Leek Wasabi</h3>
 							<p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-						</div>
-						<div class="mediabox">
-							<img src="static/img/01.png" alt="img01" />
-							<h3>Green Tofu Wrap</h3>
-							<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
 						</div>
 					</section>
 					<section id="section-4">
@@ -77,9 +162,7 @@
 						</div>
 					</section>
 					<section id="section-5">
-						<!-- <div class="mediabox"> -->
 						<div>
-							<!-- <img src="static/img/02.png" alt="img02" /> -->
 							<h3>El proyecto...</h3>
 							<p align="justify">El presente estudio se basa en la información publicada en la web sobre clasificad@s, aprobad@s y premiad@s de los certámenes nacionales de la Olimpíada Matemática Argentina.
 							</p>	
@@ -107,6 +190,9 @@ Este es un trabajo en desarrollo, somos conscientes de lo mucho que hay por mejo
 			</div><!-- /tabs -->
 			<p class="info"><a href="https://github.com/pablocelayes/nacionalesoma/">Te esperamos también en GitHub!</a></p>
 		</div>
+		<script src="static/js/d3.v3.min.js"></script>
+		<script src="static/js/script.js"></script>
+		<script src="static/js/generos.js"></script>
 		<script src="static/js/cbpFWTabs.js"></script>
 		<script>
 			new CBPFWTabs( document.getElementById( 'tabs' ) );
