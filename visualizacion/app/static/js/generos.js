@@ -58,10 +58,11 @@ var year_list_gen = d3.select("#year_range_gen");
 var year_title_gen = d3.select("#year_gen");
 var cat_title_gen = d3.select("#categoria_gen");
 var prog_prov_gen = d3.select("#prog_prov_gen");
-var prog_nac = d3.select("#prog_nac_gen");
-var actual_prov = d3.select("#prov_gen");
-var actual_prov_percent = d3.select("#percent_gen");
-var prog_prov_percent = d3.select("#prog_prov_percent_gen");
+var prog_nac_gen = d3.select("#prog_nac_gen");
+var actual_prov_gen = d3.select("#prov_gen");
+var actual_prov_percent_gen = d3.select("#percent_gen");
+var prog_prov_percent_gen = d3.select("#prog_prov_percent_gen");
+var mapa_gen = d3.select("#mapa_gen");
 
 // prog_nac.attr("padding-rigth","100px"); //TODO el padding
 
@@ -70,7 +71,7 @@ function compute_year(year_val){
 	//para 'saltarse' el año 2000 en los premiados, pues no tiene data	
 	if(cat_selected == "Premiados" && (year_val == 1999 || year_val == 2001)){
 		previous_year = year_val;
-		return year
+		return year_val
 	}
 	else{
 		if(cat_selected == "Premiados" && year_val == 2000){
@@ -88,12 +89,12 @@ function compute_year(year_val){
 }
 
 cat_list_gen.on("change",function(){add_years(this.value);});
-year_list_gen.on("change",function(){add_svg(compute_year(+this.value))});
+year_list_gen.on("input",function(){add_svg(compute_year(+this.value))});
 
 
 function add_years(cat){
-    actual_prov.html("");
-    actual_prov_percent.html("");
+    actual_prov_gen.html("");
+    actual_prov_percent_gen.html("");
 //    year_list_gen.html("");
     cat_selected = cat;
     cat_title_gen.text(cat);
@@ -104,8 +105,8 @@ function add_years(cat){
 }
 
 function add_svg(year){
-    actual_prov.html("");
-    actual_prov_percent.html("");
+    actual_prov_gen.html("");
+    actual_prov_percent_gen.html("");
     year_title_gen.text(year);
     year_label_gen.text(" "+year);
     update_svg_gen(cat_selected,year);
@@ -116,30 +117,32 @@ function update_svg_gen(cat,year){
 	// alert(cat);
     var route_to_svg = "static/img/"+cat.toLowerCase()+"/genero/mapa"+year+".svg";
     d3.xml(route_to_svg,"image/svg+xml", function(xml){
-	d3.select("#mapa_gen").html("");
+	mapa_gen.html("");
 	document.getElementById("mapa_gen").appendChild(xml.documentElement);
 	
 	show_national_progression(cat,year);
 
-	var paths = d3.selectAll("path");
+	var paths = mapa_gen.selectAll("path");
+	// alert(paths);
 	// adicionando tooltip a todas las provincias ...
 	for(var i = 0; i < n_paths; i++){
 	    
 	    var path = paths[0][i];
+		// alert(path);
 	    if (path_to_provs[path.id] != undefined){
 	    d3.select(path)
 		.on('mouseenter',function(event)
 		    {
-			d3.select("#"+this.id).style('stroke-width', 2)
+			mapa_gen.select("#"+this.id).style('stroke-width', 2)
 			    .style('stroke', 'purple')
-			alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
+			// alert(cat+"|"+year+"|"+this.id+"|"+d3.event); 
 			// alert(this);
 			show_prov_prog(cat,year,this.id);
 			show_prov_percent(cat,year,this.id);
 		    })
 		.on('mouseout',function(event)
 		    {
-			d3.select("#"+this.id).style('stroke-width', 1)
+			mapa_gen.select("#"+this.id).style('stroke-width', 1)
 			    .style('stroke', 'white')
 		    });
 	    }
@@ -161,7 +164,7 @@ function truncate(x,n){
 }
 
 function show_prov_percent(cat,year,id){
-    alert(cat);
+    // alert(cat);
 	var true_cat = cat.toLowerCase();
     var csv_file = "static/img/"+true_cat+"/genero/"+true_cat+"_por_provincia_y_genero.csv";
     d3.csv(csv_file,
@@ -176,7 +179,7 @@ function show_prov_percent(cat,year,id){
 				    percent = (d.F/all)*100;
 				else
 				    percent = 0;
-				actual_prov_percent.text(truncate(percent,2)+"%");
+				actual_prov_percent_gen.text(truncate(percent,2)+"%");
 				return;
 			    }
 			});
@@ -184,20 +187,20 @@ function show_prov_percent(cat,year,id){
 }
 
 function show_prov_prog(cat,year,id){
-    alert(cat);
+    // alert(cat);
 	prog_prov_gen.html("");
-	prog_prov_percent.html("");
+	prog_prov_percent_gen.html("");
     var prov = path_to_provs[id];
     var svg_file1 = "static/img/plots/genero/F/"+cat.toLowerCase()+"/progresion_anual_"+prov+".svg";
     var svg_file2 = "static/img/plots/genero/F/"+cat.toLowerCase()+"/porcentual/progresion_anual_"+prov+".svg";
-    actual_prov.text(prov);
+    actual_prov_gen.text(prov);
     
     $.when($.ajax(svg_file1))
 	.then(
 	    function(){
 		prog_prov_gen.append("img").attr("src",svg_file1)
     		    .attr("height","250px");
-		prog_prov_percent.append("img").attr("src",svg_file2)
+		prog_prov_percent_gen.append("img").attr("src",svg_file2)
 				.attr("height","250px");},
 	    function(){
 		prog_prov_gen.append("div")
@@ -209,9 +212,9 @@ function show_prov_prog(cat,year,id){
  
 
 function show_national_progression(cat,year){
-    prog_nac.html("");
+    prog_nac_gen.html("");
     var svg_file = "static/img/plots/genero/F/progresion_anual_"+cat.toLowerCase()+".svg";
-    prog_nac.append("img").attr("src",svg_file)
+    prog_nac_gen.append("img").attr("src",svg_file)
 	.attr("height","250px");
 }
 
