@@ -7,8 +7,27 @@ input{
        border-left: #a9a9a9 1px solid;
        padding-top: 5px;
        border-bottom: #a9a9a9 1px solid;
-       }
+       }	   
+	   
+.the_title{
+	font-family: 'Lato',Calibri,Arial,sans-serif;
+	color: rgb(71, 163, 218);
+	font-size: 1.525em;
+	line-height: 1.2;
+	margin: 0px 0px 0.6em;
+	float: left;
+	font-weight: 400;
+}	   
 
+.the_mini_title{
+	font-family: 'Lato',Calibri,Arial,sans-serif;
+	color: rgb(71, 163, 218);
+	font-size: 1.1em;
+	line-height: 1.2;
+	/* font-weight: 400; */
+}	   
+	  
+	   
 .title{
         font-size: 18px;
         font-family: Helvetica,sans-serif;
