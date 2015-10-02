@@ -1,44 +1,51 @@
-// var actual_tab = 1;
-// var format_tab = "#section-";
+ntabs = 5
 
-// var ntabs = 5;
+function next_tab(n){
+	if(n<ntabs-1)
+		return n+1;
+	return 0;
+}
 
-// function next_tab(n){
-	// return n%ntabs + 1; 
-// }
+function prev_tab(n){
+	if(n>0)
+		return n-1;
+	return ntabs-1;
+}
 
-// function prev_tab(n){
-	// if(n>1)
-		// return n-1;
-	// return ntabs;
-// }
+prev = d3.select("#prev_tab");
+next = d3.select("#next_tab");
 
-// function section(i){
-	// return format_tab+i;
-// }
+the_tabs = d3.select("#tabs").select("nav")
+							 .select("ul")
+							 .selectAll("li");
+							 
+the_contents = d3.select(".content").selectAll("section");							 
 
-// var prev = d3.select("#prev_tab");
-// var next = d3.select("#next_tab");
+prev.on("click",function(){update_tabs(prev_tab(current_tab()))});
+next.on("click",function(){update_tabs(next_tab(current_tab()))});
+							 
+function current_tab(){
+	for(i=0;i<the_tabs[0].length;i++){
+		if (the_tabs[0][i].className != "")
+			return i;
+	}
+}
 
-// prev.attr("href",section(prev_tab(actual_tab)))
-// next.attr("href",section(next_tab(actual_tab)))
+function update_tabs(j){
+	// alert(j);
+	for(i=0;i<the_tabs[0].length;i++){
+		if (i!=j){
+			the_tabs[0][i].className = "";
+			the_contents[0][i].className = "";
+		}	
+		else{
+			the_tabs[0][i].className = "tab-current"; 	
+			the_contents[0][i].className = "content-current";
+		}		
+	}
+}							 
 
-// prev.on("click",function()
-				// {
-					// actual_tab = prev_tab(actual_tab);
-					// prev.attr("href",section(prev_tab(actual_tab)));
-					// next.attr("href",section(next_tab(actual_tab)))
-					// // alert(actual_tab);	
-				// });
 
-// next.on("click",function()
-				// {
-					// actual_tab = next_tab(actual_tab);
-					// prev.attr("href",section(prev_tab(actual_tab)));
-					// next.attr("href",section(next_tab(actual_tab)));
-					// // window.open(section(actual_tab));
-					// // alert(actual_tab);
-				// });				
 
 function load_all_vis(){
 	update_svg(1998);
