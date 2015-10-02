@@ -60,8 +60,10 @@
 	};
 
 	CBPFWTabs.prototype._show = function( idx ) {
-		alert("window.current_tab() = "+window.current_tab());
+		// alert("window.current_tab() = "+window.current_tab());
 		// alert("current="+this.current);
+		this.current = window.current_tab();
+		
 		if( this.current >= 0) {
 			this.tabs[ this.current ].className = '';
 			this.items[ this.current ].className = '';
