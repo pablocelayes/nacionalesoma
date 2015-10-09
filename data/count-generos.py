@@ -19,11 +19,10 @@ def conteo_genero(file_template):
 	"""
 	result = pd.DataFrame(columns = ["Año","F","M"])
 	for i,val in enumerate(range(1998,2015)):
-		if val != 2000 or file_template != premiados:
-			csv_year = pd.read_csv("{0}{1}.csv".format(file_template,val))
-			f_count = str(csv_year[csv_year['Género'] == "F"].count()[0])	
-			m_count = str(csv_year[csv_year['Género'] == "M"].count()[0])	
-			result.loc[i] = [str(val),f_count,m_count]
+		csv_year = pd.read_csv("{0}{1}.csv".format(file_template,val))
+		f_count = str(csv_year[csv_year['Género'] == "F"].count()[0])	
+		m_count = str(csv_year[csv_year['Género'] == "M"].count()[0])	
+		result.loc[i] = [str(val),f_count,m_count]
 	result.to_csv("{0}_por_género.csv".format(file_template),encoding='utf-8',index=False)
 
 conteo_genero(clasificados)

@@ -66,30 +66,8 @@ var mapa_gen = d3.select("#mapa_gen");
 
 // prog_nac.attr("padding-rigth","100px"); //TODO el padding
 
-
-function compute_year(year_val){        
-	//para 'saltarse' el año 2000 en los premiados, pues no tiene data	
-	if(cat_selected == "Premiados" && (year_val == 1999 || year_val == 2001)){
-		previous_year = year_val;
-		return year_val
-	}
-	else{
-		if(cat_selected == "Premiados" && year_val == 2000){
-			if (previous_year == null){
-				previous_year = 1999;
-			}
-			else{
-				previous_year = previous_year + 2*(2000 - previous_year);
-			}			
-			return previous_year; 
-		}	
-	}
-	previous_year = null;
-	return year_val;
-}
-
 cat_list_gen.on("change",function(){add_years(this.value);});
-year_list_gen.on("input",function(){add_svg(compute_year(+this.value))});
+year_list_gen.on("input",function(){add_svg(+this.value);});
 
 
 function add_years(cat){
@@ -167,20 +145,24 @@ function show_prov_percent(cat,year,id){
     // alert(cat);
 	var true_cat = cat.toLowerCase();
     var csv_file = "static/img/"+true_cat+"/genero/"+true_cat+"_por_provincia_y_genero.csv";
-    d3.csv(csv_file,
+    // alert(csv_file);
+	d3.csv(csv_file,
 	   function(rows)
 	   {
-	       rows.map(function(d)
+		   rows.map(function(d)
 			{
-			    if(d.Año == year && d.Provincia == path_to_provs[id]){
-				var all = (+d.F) + (+d.M);
-				var percent;
-				if(all > 0)
-				    percent = (d.F/all)*100;
-				else
-				    percent = 0;
-				actual_prov_percent_gen.text(truncate(percent,2)+"%");
-				return;
+			    // alert(d.Año+d.Provincia);
+				// alert(d.Provincia+" "+path_to_provs[id]);
+				if(d.Año == year && d.Provincia == path_to_provs[id]){
+					// alert("entering");
+					var all = (+d.F) + (+d.M);
+					var percent;
+					if(all > 0)
+						percent = (d.F/all)*100;
+					else
+						percent = 0;
+					actual_prov_percent_gen.text(truncate(percent,2)+"%");
+					return;
 			    }
 			});
 	   });

@@ -20,12 +20,12 @@ colores = ["#6496ff","#7da7ff","#96b8ff","#b0c9ff","#c9dbff",
 	    "#ffc9db","#ffb0c9","#ff96b8","#ff7da7","#ff6496"]
 
 input = "../data/%s/csvs/%s_por_provincia_y_genero.csv"
-output ="./%s/genero/mapa%d.svg"
+output ="./app/static/img/%s/genero/mapa%d.svg"
 
 PROV_CODES = {}
 
 PATH_STYLE = ";fill-opacity:1;stroke:#ffffff;stroke-width:1.40563393;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-MAPA_BASE = "Blank_Argentina_Map.svg"
+MAPA_BASE = "app/static/img/Blank_Argentina_Map.svg"
 
 def color_picker(f_count,m_count):
 	"""
@@ -72,8 +72,8 @@ def generar_mapas(file_type):
 			outfile.write(content)
 
 if __name__ == '__main__':
-	generar_mapas("clasificados")
-	generar_mapas("aprobados")
+	# generar_mapas("clasificados")
+	# generar_mapas("aprobados")
 	generar_mapas("premiados")
 	
 	

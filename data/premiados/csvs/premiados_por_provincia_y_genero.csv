@@ -1,6 +1,7 @@
 Provincia,Año,F,M
 Buenos Aires,1998,2,5
 Buenos Aires,1999,2,10
+Buenos Aires,2000,8,14
 Buenos Aires,2001,0,3
 Buenos Aires,2002,1,17
 Buenos Aires,2003,2,19
@@ -17,6 +18,7 @@ Buenos Aires,2013,5,27
 Buenos Aires,2014,4,43
 Catamarca,1998,0,0
 Catamarca,1999,0,0
+Catamarca,2000,0,0
 Catamarca,2001,0,0
 Catamarca,2002,0,0
 Catamarca,2003,0,0
@@ -33,6 +35,7 @@ Catamarca,2013,0,0
 Catamarca,2014,0,0
 Chaco,1998,0,0
 Chaco,1999,0,0
+Chaco,2000,0,0
 Chaco,2001,0,0
 Chaco,2002,0,0
 Chaco,2003,0,0
@@ -49,6 +52,7 @@ Chaco,2013,0,0
 Chaco,2014,0,0
 Chubut,1998,0,0
 Chubut,1999,0,0
+Chubut,2000,0,1
 Chubut,2001,0,0
 Chubut,2002,0,0
 Chubut,2003,0,0
@@ -65,6 +69,7 @@ Chubut,2013,0,0
 Chubut,2014,0,0
 Ciudad Autónoma de Buenos Aires,1998,0,0
 Ciudad Autónoma de Buenos Aires,1999,3,17
+Ciudad Autónoma de Buenos Aires,2000,3,10
 Ciudad Autónoma de Buenos Aires,2001,1,8
 Ciudad Autónoma de Buenos Aires,2002,0,0
 Ciudad Autónoma de Buenos Aires,2003,1,7
@@ -81,6 +86,7 @@ Ciudad Autónoma de Buenos Aires,2013,3,17
 Ciudad Autónoma de Buenos Aires,2014,3,23
 Corrientes,1998,0,0
 Corrientes,1999,0,0
+Corrientes,2000,0,0
 Corrientes,2001,0,0
 Corrientes,2002,0,0
 Corrientes,2003,0,0
@@ -97,6 +103,7 @@ Corrientes,2013,0,0
 Corrientes,2014,0,1
 Córdoba,1998,0,5
 Córdoba,1999,0,7
+Córdoba,2000,1,3
 Córdoba,2001,0,1
 Córdoba,2002,1,1
 Córdoba,2003,0,1
@@ -113,6 +120,7 @@ Córdoba,2013,2,5
 Córdoba,2014,0,4
 Entre Ríos,1998,0,0
 Entre Ríos,1999,0,0
+Entre Ríos,2000,0,0
 Entre Ríos,2001,0,0
 Entre Ríos,2002,0,1
 Entre Ríos,2003,0,1
@@ -129,6 +137,7 @@ Entre Ríos,2013,0,0
 Entre Ríos,2014,1,3
 Formosa,1998,0,0
 Formosa,1999,0,1
+Formosa,2000,0,1
 Formosa,2001,0,0
 Formosa,2002,0,0
 Formosa,2003,0,0
@@ -145,6 +154,7 @@ Formosa,2013,0,1
 Formosa,2014,0,1
 Jujuy,1998,0,0
 Jujuy,1999,0,0
+Jujuy,2000,0,0
 Jujuy,2001,0,0
 Jujuy,2002,0,0
 Jujuy,2003,0,1
@@ -161,6 +171,7 @@ Jujuy,2013,0,0
 Jujuy,2014,0,0
 La Pampa,1998,0,1
 La Pampa,1999,0,1
+La Pampa,2000,0,2
 La Pampa,2001,0,1
 La Pampa,2002,0,0
 La Pampa,2003,0,0
@@ -177,6 +188,7 @@ La Pampa,2013,0,1
 La Pampa,2014,1,0
 La Rioja,1998,0,0
 La Rioja,1999,0,0
+La Rioja,2000,0,0
 La Rioja,2001,0,0
 La Rioja,2002,0,0
 La Rioja,2003,0,0
@@ -193,6 +205,7 @@ La Rioja,2013,0,1
 La Rioja,2014,0,0
 Mendoza,1998,0,0
 Mendoza,1999,0,1
+Mendoza,2000,0,1
 Mendoza,2001,0,0
 Mendoza,2002,0,3
 Mendoza,2003,0,1
@@ -209,6 +222,7 @@ Mendoza,2013,3,1
 Mendoza,2014,0,0
 Misiones,1998,0,0
 Misiones,1999,0,0
+Misiones,2000,0,0
 Misiones,2001,0,0
 Misiones,2002,0,0
 Misiones,2003,0,0
@@ -225,6 +239,7 @@ Misiones,2013,0,0
 Misiones,2014,0,1
 Neuquén,1998,0,0
 Neuquén,1999,0,1
+Neuquén,2000,1,0
 Neuquén,2001,1,0
 Neuquén,2002,0,0
 Neuquén,2003,0,0
@@ -241,6 +256,7 @@ Neuquén,2013,0,2
 Neuquén,2014,1,0
 Río Negro,1998,0,1
 Río Negro,1999,0,0
+Río Negro,2000,0,2
 Río Negro,2001,0,0
 Río Negro,2002,0,1
 Río Negro,2003,1,3
@@ -257,6 +273,7 @@ Río Negro,2013,0,0
 Río Negro,2014,0,0
 Salta,1998,0,0
 Salta,1999,0,2
+Salta,2000,0,0
 Salta,2001,0,0
 Salta,2002,0,0
 Salta,2003,0,0
@@ -273,6 +290,7 @@ Salta,2013,0,0
 Salta,2014,0,0
 San Juan,1998,0,0
 San Juan,1999,0,0
+San Juan,2000,0,1
 San Juan,2001,0,0
 San Juan,2002,0,0
 San Juan,2003,0,0
@@ -289,6 +307,7 @@ San Juan,2013,0,1
 San Juan,2014,0,0
 San Luis,1998,0,1
 San Luis,1999,0,0
+San Luis,2000,0,1
 San Luis,2001,0,0
 San Luis,2002,0,0
 San Luis,2003,0,0
@@ -305,6 +324,7 @@ San Luis,2013,0,0
 San Luis,2014,0,0
 Santa Cruz,1998,0,1
 Santa Cruz,1999,0,0
+Santa Cruz,2000,0,0
 Santa Cruz,2001,0,0
 Santa Cruz,2002,0,0
 Santa Cruz,2003,0,0
@@ -321,12 +341,13 @@ Santa Cruz,2013,0,0
 Santa Cruz,2014,0,1
 Santa Fe,1998,1,5
 Santa Fe,1999,2,6
+Santa Fe,2000,3,3
 Santa Fe,2001,0,0
 Santa Fe,2002,1,4
 Santa Fe,2003,3,5
 Santa Fe,2004,2,9
 Santa Fe,2005,0,5
-Santa Fe,2006,3,9
+Santa Fe,2006,3,10
 Santa Fe,2007,6,7
 Santa Fe,2008,4,11
 Santa Fe,2009,5,7
@@ -337,6 +358,7 @@ Santa Fe,2013,3,13
 Santa Fe,2014,2,25
 Santiago del Estero,1998,0,0
 Santiago del Estero,1999,0,0
+Santiago del Estero,2000,0,0
 Santiago del Estero,2001,0,0
 Santiago del Estero,2002,0,0
 Santiago del Estero,2003,0,0
@@ -353,6 +375,7 @@ Santiago del Estero,2013,0,0
 Santiago del Estero,2014,0,0
 Tierra del Fuego,1998,0,0
 Tierra del Fuego,1999,0,0
+Tierra del Fuego,2000,0,0
 Tierra del Fuego,2001,0,0
 Tierra del Fuego,2002,0,0
 Tierra del Fuego,2003,0,0
@@ -369,6 +392,7 @@ Tierra del Fuego,2013,0,0
 Tierra del Fuego,2014,0,0
 Tucumán,1998,0,0
 Tucumán,1999,0,0
+Tucumán,2000,0,1
 Tucumán,2001,0,0
 Tucumán,2002,0,0
 Tucumán,2003,0,0

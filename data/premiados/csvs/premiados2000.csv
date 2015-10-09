@@ -1,1 +1,60 @@
-Nivel,Premio,Nombres,Localidad,Provincia
+Premio,Nivel,Nombres,Colegio,Localidad,Provincia,Género
+Campeón,1,Lucas Rearte,Centro Educativo Cristo Rey,Córdoba,Córdoba,M
+1er Subcampeón,1,Alejandro Deymonnaz,Colegio Nacional San Isidro,San Isidro,Buenos Aires,M
+2do Subcampeón,1,Daniel Martin,Colegio Nacional Arturo Illia,Mar del Plata,Buenos Aires,M
+Mención,1,José Daniel Baulíes,Escuela Gral Ing. Baldrich,Comodoro Rivadavia,Chubut,M
+Mención,1,Javier Cabello,Instituto Politécnico Superior,Rosario,Santa Fe,M
+Mención,1,Ignacio Canosa Fano,Escuela San Ignacio,Río IV,Córdoba,M
+Mención,1,Cintia Corti,Escuela Normal Superior Nro. 37,Alcorta,Santa Fe,F
+Mención,1,Marina D'Angelo,Islands International School,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
+Mención,1,Carlos Di Fiore,Instituto Parroquial Ntra. Sra.de Pilar,Pilar,Buenos Aires,M
+Mención,1,Ximena Fernández,Escuela San Francisco Javier,Caseros,Buenos Aires,F
+Mención,1,Nicolás Gómez,Escuela de Educación Técnica Nro.2,Tandil,Buenos Aires,M
+Mención,1,María Lucrecia López,Instituto José Manuel Estrada,Zarate,Buenos Aires,F
+Mención,1,Juan López Cristeche,Escuela Nro.3,Benito Juarez,Buenos Aires,M
+Mención,1,Adriano Mandolesi,Instituto Politécnico Superior,Rosario,Santa Fe,M
+Mención,1,Franco Mangiarotti,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,1,Ignacio Marolla,Instituto French,Avellaneda,Buenos Aires,M
+Mención,1,Lucas Perrone,Colegio del Pilar,Pilar,Buenos Aires,M
+Mención,1,Pablo Pistoia,Colegio Juan José Silva,Formosa,Formosa,M
+Mención,1,Emiliano Ritiro,Escuela Sendas Verdes,Glew,Buenos Aires,M
+Mención,1,Ana Belén Sainz,Instituto Diosesano "Dr. Alexis Carrel",Río Tercero,Córdoba,F
+Mención,1,Nahuel Soprano Loto,EGB Nro.37,La Plata,Buenos Aires,M
+Mención,1,María Victoria Toso,Escuela Ntra. Sra. de la Misericordia,Rafaela,Santa Fe,F
+Mención,1,Ivonne Van Avermaete,Escuela Santísima Trinidad,Batan,Buenos Aires,F
+Mención,1,Carlos Verrecchia,Escuela Argentino Danesa,Necochea,Buenos Aires,M
+Mención,1,Yue Yang,Colegio Barker,Lomas de Zamora,Buenos Aires,F
+Mención,1,Fernando Yu,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Campeón,2,Ivan Angiono,Instituto Privado 25 de Mayo,Trenel,La Pampa,M
+1er Subcampeón,2,Laura Bolognini,Escuela Garicoits,La Plata,Buenos Aires,F
+2do Subcampeón,2,Leandro Groisman,Escuela Superior de Comercio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,2,Cristian Archilla,Escuela de Educación Técnica Nro.1,Pergamino,Buenos Aires,M
+Mención,2,María Soledad Aronna,Instituto Politécnico Superior,Rosario,Santa Fe,F
+Mención,2,Juan José Colombo Berra,Escuela Superior de Comercio,Rosario,Santa Fe,M
+Mención,2,Yann Cristal,Escuela Superior de Comercio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,F
+Mención,2,José Curetti,Escuela Don Bosco,Neuquén,Neuquén,F
+Mención,2,Pablo Dal Lago,Escuela de Comercio Manuel Belgrano,Córdoba,Córdoba,M
+Mención,2,Lorena De Cañas,Colegio San José,Quilmes,Buenos Aires,F
+Mención,2,Jeremías De la Cruz Thea,Colegio Nro.15 Ing.A. Mercau,Villa Mercedes,San Luis,M
+Mención,2,Christian Espíndola,Instituto Técnico UNT,Tafí Viejo,Tucumán,M
+Mención,2,Guillermina Frojan,Escuela Normal Superior Prospero Alemandri,Avellaneda,Buenos Aires,F
+Mención,2,Fernando Galano,Colegio San Lucas,Olivos,Buenos Aires,M
+Mención,2,Federico García,Escuela Nro.4-117 "Ejercito de los Andes",Rama Caída,Mendoza,M
+Mención,2,Benito Lynch,Instituto Ntra. Sra. de Fátima,Cipolletti,Río Negro,M
+Mención,2,Diego Ariel Materyn,Escuela Técnica ORT,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,2,Martín Miranda,Instituto Luis A. Huergo,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,2,Ignacio Montes,Colegio Central Universitario Mariano Moreno,San Juan,San Juan,M
+Mención,2,Santiago Pérez González,Colegio Nacional de Buenos Aires,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,2,Martín Szyld,Escuela Técnica ORT,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Campeón,3,Pablo Gabriel Celayes,Instituto Corazón de María,Córdoba,Córdoba, M
+Campeón,3,Matías Del Hoyo,Escuela Normal Superior "José Manuel Estrada",Necochea,Buenos Aires,M
+1er Subcampeón,3,Diego Liz,Escuela Superior de Comercio "Manuel Belgrano",Cordoba,Cordoba,M
+2do Subcampeón,3,Camilo Horovitz,Escuela Técnica ORT I,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,3,Pablo Ballesteros,Escuela Superior de Comercio,Bahía Blanca,Buenos Aires,M
+Mención,3,Ignacio Bello,Escuela Cangallo,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,3,Andrés Estrin,Escuela Ort II,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,M
+Mención,3,María Soledad Feal Zubimendi,EEM Nro. 13,Bahía Blanca,Buenos Aires,F
+Mención,3,Juan Pablo Folco,EPET Nro 1,Santa Rosa,La Pampa,M
+Mención,3,José Gerez Cuevas,Escuela Superior de Comercio Manuel Belgrano,Cordoba,Cordoba,M
+Mención,3,Andrés Lantschner,CEM Nro. 51,San Carlos de Bariloche,Río Negro,M
+Mención,3,Laura Lowenthal Quastler,Escuela Superior de Comercio Carlos Pellegrini,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma de Buenos Aires,F

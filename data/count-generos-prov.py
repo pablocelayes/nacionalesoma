@@ -46,23 +46,22 @@ def conteo_genero_provs(file_template):
 	"""
 	result = pd.DataFrame(columns = ["Provincia","Año","F","M"])
 	for i,val in enumerate(range(1998,2015)):
-		if val != 2000 or file_template != premiados:
-			csv_year = pd.read_csv("{0}{1}.csv".format(file_template,val))
-			stats = csv_year.groupby(["Provincia","Género"]).size()
-			for prov in provincias:
-				try:
-					f_prov = stats[prov]['F']
-				except KeyError:
-					f_prov = 0
-				try:
-					m_prov = stats[prov]['M']
-				except KeyError:
-					m_prov = 0
-				result = result.append({"Año":str(val),"Provincia":prov,"F":str(f_prov),"M":str(m_prov)},ignore_index=True)
+		csv_year = pd.read_csv("{0}{1}.csv".format(file_template,val))
+		stats = csv_year.groupby(["Provincia","Género"]).size()
+		for prov in provincias:
+			try:
+				f_prov = stats[prov]['F']
+			except KeyError:
+				f_prov = 0
+			try:
+				m_prov = stats[prov]['M']
+			except KeyError:
+				m_prov = 0
+			result = result.append({"Año":str(val),"Provincia":prov,"F":str(f_prov),"M":str(m_prov)},ignore_index=True)
 	result = result.sort(["Provincia","Año"])				
 	result.to_csv("{0}_por_provincia_y_genero.csv".format(file_template),encoding='utf-8',index=False)
 
-conteo_genero_provs(clasificados)
-conteo_genero_provs(aprobados)
+# conteo_genero_provs(clasificados)
+# conteo_genero_provs(aprobados)
 conteo_genero_provs(premiados)
 
