@@ -93,7 +93,7 @@ function colores(filtro){			//para la leyenda
 			"#41ab5d",
 			"#005a32"];}
 
-var ajax_result;		//aquí están los datos :D !!
+var ajax_result;		//aquí están los datos :D !!	
 
 function filtrar_poblacion_esc(year){
 			  $.post("/update",{year: year},

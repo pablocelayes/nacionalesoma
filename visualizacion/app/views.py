@@ -5,6 +5,7 @@ from app import app
 import math
 from pandas import DataFrame,read_csv,merge
 from numpy import inf
+from pprint import pprint
 import numpy as np
 import xlrd
 import re
@@ -115,7 +116,7 @@ def df_to_response(df,colores):
 		n = tmp['Población'][i]
 		m = tmp['Clasificados'][i]
 		index = save_div(m,n)	
-		res[tmp['Provincia'][i]] = {'Población':n,
+		res[tmp['Provincia'][i].strip()] = {'Población':n,
 									'Clasificados':m,
 									'Índice':index,
 									'Color':color(index)}
@@ -146,9 +147,9 @@ def update():
 				"#7e4747","#410e0e"]
 	year = int(request.form['year'])
 	df = poblacion_escolar(year)
-	print(df)
+	# print(df)
 	val = df_to_response(df,colores)
-	# print(val)
+	pprint(val)
 	resp = Response(response=json.dumps(val),
 					status=200,
 					mimetype="application/json")
