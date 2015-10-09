@@ -15,7 +15,7 @@ import codecs
 # ENCODING = sys.stdin.encoding
 ENCODING = "utf-8"
 
-#intentando evitar tiempo de corrida si no hay cambio de data
+#intentando evitar tiempo de corrida si no hay cambio de data, no listo aun
 USE_PICKLES = False			
 
 def load_pickle(file):

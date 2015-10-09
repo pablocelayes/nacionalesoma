@@ -39,142 +39,19 @@
 	</nav>
 	<div class="content">
 	  <section id="section-1">
-	    <div class="container">
-	      	<H2>
-			<center>
-			  <strong>Análisis clasificados y aprobados OMA.</strong> 
-			  <h3>Años 1998-2014.</h3>
-			  <br>
-			</center>
-	      </H2>    
-	    <div class="row">
-			<div class="col-md-3">
-			<div class="nany">
-				<label>Leyenda</label>
-				<div class="datamaps-legend">
-				  <ul class="list-inline">
-				<li class="key" style="border-top-color:#edf8e9">10</li><li class="key" style="border-top-color:#c7e9c0">25</li><li class="key" style="border-top-color:#a1d99b">50</li><li class="key" style="border-top-color:#41ab5d">75</li><li class="key" style="border-top-color:#005a32">100</li></ul>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-3">
-			  <label>Seleccione año:</label><span id="year-title"> 1998</span>
-			  <div class="nany"><input type="range" class="form-control" min="1998" max="2014" id="year"></input></div>
-			</div>
-	    </div>
-	      
-	    <div class="row">
-		<div class="col-md-6"><div class="nany" id="mapa"></div></div>
-		<div class="col-md-3">
-		  <div class="row">
-         	    <div id="gini">
-				<a href=""><img src="static/img/gini_thumbnail.png" height="200px" width="300px" class="img-thumbnail"></img></a>
-				</div>
-		  </div>
-		  <br>			
-		  <div class="row">
-			<div><label>Filtrar por:</label>
-					<div class="radio">
-					<label><input type="radio" name="optionsRadios" value="cantidad" checked></input> Cantidad por provincia</label>
-					</div>
-					<div class="radio">
-					<label><input type="radio" name="optionsRadios" value="poblacion"></input> Participación según población escolar por provincia</label>
-					</div>
-					<div class="radio">
-					<label><input type="radio" name="optionsRadios" value="niveles"></input> Niveles</label>
-					</div>
-			</div> 
-		  </div>
-		  <div class="row"><div id="tooltip"></div></div>
-		</div>
-	    </div>
-	    </div>     
+		{{ a1 }}
 	  </section>
 	  <section id="section-2">
-		<div class="container">
-     <H2>
-     <center>
-	 <strong>
-     <span id="categoria_gen">Clasificados</span> por género en la OMA del año
-     <span id="year_gen">1998</span>
-     </strong>
-     </center>
-     <H3><center>y valores porcentuales de participantes femeninos.</center></H3>
-     </H2>
-	 <br>
-	 <br>
-     <div class="row">
-       <div class="col-md-3">
-	 <form role="form">
-	   <div class="form-group">
-	     <label for="name">Seleccione categoría:</label>
-	     <select class="form-control" id="cat_listbox_gen">
-	       <option>Clasificados</option>
-	       <option>Aprobados</option>
-	       <option>Premiados</option>
-	     </select>
-	   </div>
-	 </form>
-       </div>
-       <div class="col-md-3">
-	 <form role="form">
-       <div class="form-group">
-	 <label for="name">Seleccione año:</label><span id="year_label_gen"></span>
-	 <input type="range" class="form-control" min="1998" max="2014" id="year_range_gen"></input>
-       </div>
-       </form>
-       </div>
-       <div class="col-md-3">
-	 <h4>
-	 <span id="prov_gen"></span>
-	 <span id="percent_gen"></span>
-	 </h4>		       
-       </div>
-     </div>
-     
-     <div class="row">
-       <div class="col-md-5"><div class="svg-gen" id="mapa_gen"></div></div>
-       <div class="col-md-4">
-       <div class="row"><img src="static/img/leyenda-géneros.svg" height="100px" width="375px"></img></div>
-       <div class="row">
-       <div class="col-md-2" id="prog_nac_gen"></div>
-       </div>
-       <div class="row">
-       <div class="col-md-2" id="prog_prov_gen"></div>
-       </div>
-	   <div class="row">
-       <div class="col-md-2" id="prog_prov_percent_gen"></div>
-       </div>
-       </div>
-     </div>
-	 </div>
+		{{ a2 }}
 	  </section>
 	  <section id="section-3">
+		{{ a3 }}
 	  </section>
 	  <section id="section-4">
+		{{ a4 }}
 	  </section>
 	  <section id="section-5">
-	    <div>
-	      <h3>El proyecto...</h3>
-	      <p align="justify">El presente estudio se basa en la información publicada en la web sobre clasificad@s, aprobad@s y premiad@s de los certámenes nacionales de la Olimpíada Matemática Argentina.
-	      </p>	
-	      <p align="justify">Los datos publicados abarcan los años entre 1997 y 2014 y han sido descargados de la página y convertidos a un formato más accesible (.csv).
-
-		La intención de este estudio es entender la evolución de la distribución geográfica, de género y social entre l@s participantes de los nacionales OMA a lo largo de los últimos 18 años, para así poder generar un debate informado sobre diferentes ideas que nos ayuden a tener una olimpíada más federal, diversa e inclusiva, haciendo llegar los enormes beneficios de esta actividad a sectores cada vez más amplios de la sociedad.
-
-		Esto es de vital importancia en el momento actual de necesidad estratégica de fomentar vocaciones en Matemática, Computación y ciencias duras en general.
-
-		Este es un trabajo en desarrollo, somos conscientes de lo mucho que hay por mejorar y l@s invitamos a colaborar con sus ideas y sugerencias.</p>
-
-	      <p>¡Muchas gracias por su interés!</p>
-
-	      <p>Origen de la idea y discusión del proyecto:</p>
-
-	      <p><a href="https://www.facebook.com/groups/laacademiamateclub/permalink/726305050788921/" >https://www.facebook.com/groups/laacademiamateclub/permalink/726305050788921/ </a></p>
-
-	      <p><a href="https://www.facebook.com/groups/laacademiamateclub/permalink/728525267233566/" >https://www.facebook.com/groups/laacademiamateclub/permalink/728525267233566/ </a></p>
-
-	    </div>
+		{{ a5 }}
 	  </section>
 	  </div><!-- /content -->
 	</div><!-- /tabs -->

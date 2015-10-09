@@ -1,0 +1,50 @@
+<div class="container">
+	<H2>
+	<center>
+	  <strong>Análisis clasificados y aprobados OMA.</strong> 
+	  <h3>Años 1998-2014.</h3>
+	  <br>
+	</center>
+	</H2>    
+	<div class="row">
+		<div class="col-md-3">
+			<div class="nany">
+			<label>Leyenda</label>
+			<div class="datamaps-legend">
+				<ul class="list-inline">
+				<li class="key" style="border-top-color:#edf8e9">10</li><li class="key" style="border-top-color:#c7e9c0">25</li><li class="key" style="border-top-color:#a1d99b">50</li><li class="key" style="border-top-color:#41ab5d">75</li><li class="key" style="border-top-color:#005a32">100</li></ul>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<label>Seleccione año:</label><span id="year-title"> 1998</span>
+			<div class="nany"><input type="range" class="form-control" min="1998" max="2014" id="year"></input></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6"><div class="nany" id="mapa"></div></div>
+		<div class="col-md-3">
+		<div class="row">
+			<div id="gini">
+			<a href=""><img src="static/img/gini_thumbnail.png" height="200px" width="300px" class="img-thumbnail"></img></a>
+			</div>
+		</div>
+		<br>			
+		<div class="row">
+		<div><label>Filtrar por:</label>
+				<div class="radio">
+				<label><input type="radio" name="optionsRadios" value="cantidad" checked></input> Cantidad por provincia</label>
+				</div>
+				<div class="radio">
+				<label><input type="radio" name="optionsRadios" value="poblacion"></input> Participación según población escolar por provincia</label>
+				</div>
+				<div class="radio">
+				<label><input type="radio" name="optionsRadios" value="niveles"></input> Niveles</label>
+				</div>
+		</div> 
+		</div>
+		<div class="row"><div id="tooltip"></div></div>
+		</div>
+	</div>
+</div>	
