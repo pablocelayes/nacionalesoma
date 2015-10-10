@@ -67,32 +67,47 @@ def get_pob_esc2(year):
 					'Cantidad':np.array(book_counts_1)+np.array(book_counts_2)})
 	
 	return df
+
+
 	
-@app.route('/')
-@app.route('/index')
+@app.route('/',methods=['GET','POST'])
+@app.route('/index',methods=['GET','POST'])
 def index():
 	user = {'nickname': "Nacionales OMA"}
 	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
 	generos_html = open('./app/templates/generos.html','r').read()
 	about_html = open('./app/templates/about.html','r').read()
+	val1 = poblacion_escolar(2001).to_json()
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
 						a1 = Markup(clasif_html),
 						a2 = Markup(generos_html),
-						# a3 = poblacion_escolar(2003).to_json(),
-						# a4 = poblacion_escolar(2010).to_json(),
-						a3 = 'Not yet implemented',
-						a4 = 'Not yet implemented',
+						a3 = 'En construcción',
+						a4 = 'En construcción',
 						a5 = Markup(about_html),
-						data = 123,
+						val = val1
 						)
 	
 @app.route('/update',methods=['POST'])
 def update():
-	val = poblacion_escolar(int(request.form['year']))
-	print(request.form['year'])
+	user = {'nickname': "Nacionales OMA"}
+	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
+	generos_html = open('./app/templates/generos.html','r').read()
+	about_html = open('./app/templates/about.html','r').read()
+	year = int(request.form['year'])
+	val = poblacion_escolar(year).to_json()
+	print(year)
 	print(val)
-	return redirect(url_for('index'))
+	return render_template('poblacion_escolar.html',
+						title='Análisis y Visualización sobre datos del evento',
+						user=user,	
+						a1 = Markup(clasif_html),
+						a2 = Markup(generos_html),
+						a3 = 'En construcción',
+						a4 = 'En construcción',
+						a5 = Markup(about_html),
+						data = val
+						)
 	
 

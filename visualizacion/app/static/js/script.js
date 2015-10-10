@@ -1,8 +1,6 @@
 //cargando el svg inicial
 var svg_file1 = "static/img/clasificados/mapa1998.svg";
 
-var input_form_selected = "cantidad";
-
 d3.xml(svg_file1, "image/svg+xml", function(xml){
     document.getElementById("mapa").appendChild(xml.documentElement);		  
 });
@@ -48,6 +46,22 @@ var input_pob_esc = d3.select("#pob_esc");
 input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
 
+function year_to_server(){
+		$.post("/update",{year: year_title.property("year")},
+				function(data,status){alert(status);});
+}
+input_pob_esc.on("click",function(){year_to_server()});
+// input_cantidad.on("click",function()
+						// {
+							// function (){
+								// if(input_form_selected != "cantidad")
+								// {
+									// input_form_selected = "cantidad";
+									// update_svg(year_title.property("year"))
+								// }
+							// }
+						// });
+
 var svg_array = [];
 
 function fill_svg_array(){
@@ -68,15 +82,7 @@ fill_svg_array();
 input_node.on("input", function(){update_svg(+this.value);});
 gini.on("mouseenter",function(){gini.attr("class","any");});
 gini.on("mouseout",function(){gini.attr("class","nany");});
-gini.on("click",function(){window.open("static/img/bokeh/gini.html");});
-
-input_cantidad.on("click",function()
-						{
-							if(input_form_selected != "cantidad"){
-								input_form_selected = "cantidad";
-								update_svg(year_title.property("year"),input_form_selected)
-							}
-						});					
+gini.on("click",function(){window.open("static/img/bokeh/gini.html");});					
 	
 function tooltip(year,id,event)				
 {
@@ -160,8 +166,8 @@ function update_svg(año)
     }
 }
 
-function update_svg_dynamic(year,data,input_form_selected){
-	alert(data);
+function update_svg_dynamic(year,dat,input_form_selected){
+	alert(dat);
 }
 
 update_svg(1998);

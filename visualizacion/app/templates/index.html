@@ -65,14 +65,9 @@
 	  <script src="static/js/cbpFWTabs.js"></script>
       <script>
 	new CBPFWTabs( document.getElementById( 'tabs' ) );
+	  var value = {{ val|safe }};	
       </script>
+	  {% block content %}
+      {% endblock %}
   </body>
-  	  <script>
-		$.post("/update",{ year: year_title.property("year")},
-			   function(data,status){alert(status);});
-		//input_pob_esc.on("input",function(){
-			//						$.post("/update",year_title.property("year"),
-				//							function(data,status){alert(status);});
-		var data = {{ data|safe }};									
-	  </script>
 </html>
