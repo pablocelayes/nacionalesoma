@@ -1,6 +1,8 @@
 //cargando el svg inicial
 var svg_file1 = "static/img/clasificados/mapa1998.svg";
 
+var input_form_selected = "cantidad";
+
 d3.xml(svg_file1, "image/svg+xml", function(xml){
     document.getElementById("mapa").appendChild(xml.documentElement);		  
 });
@@ -39,6 +41,9 @@ var year_title = d3.select("#year");
 var tooltip_node = d3.select("#tooltip");
 var input_node = d3.select("input"); 
 var gini = d3.select("#gini"); 
+var form = d3.select("#sender");
+var input_cantidad = d3.select("#cant");
+var input_pob_esc = d3.select("#pob_esc");
 
 input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
@@ -65,6 +70,14 @@ gini.on("mouseenter",function(){gini.attr("class","any");});
 gini.on("mouseout",function(){gini.attr("class","nany");});
 gini.on("click",function(){window.open("static/img/bokeh/gini.html");});
 
+input_cantidad.on("click",function()
+						{
+							if(input_form_selected != "cantidad"){
+								input_form_selected = "cantidad";
+								update_svg(year_title.property("year"),input_form_selected)
+							}
+						});					
+	
 function tooltip(year,id,event)				
 {
     d3.select("#"+id).style('stroke-width', 2)
@@ -145,6 +158,10 @@ function update_svg(año)
 			}
 		  });
     }
+}
+
+function update_svg_dynamic(year,data,input_form_selected){
+	alert(data);
 }
 
 update_svg(1998);

@@ -67,4 +67,10 @@
 	new CBPFWTabs( document.getElementById( 'tabs' ) );
       </script>
   </body>
+  	  <script>
+		var data2000 = {{ data|safe }}; //por ahí va la cosa, después vendrá el jquery para 
+		function test(){ 				//el tema de los años
+			alert(data2000);
+		}
+	  </script>
 </html>

@@ -30,8 +30,8 @@ def poblacion_escolar(year):
 	
 def get_pob_esc1(year):
 	
-	file1 = '../data/selected_pob_escolar/%s/COMUN.xls'
-	file1 = '../data/selected_pob_escolar/%s/POLIMODAL.xls'
+	file1 = '../data/selected_pob_escolar/%s/EGB3.xls'
+	file2 = '../data/selected_pob_escolar/%s/POLIMODAL.xls'
 	
 	book1 = xlrd.open_workbook(file1 % year)
 	book2 = xlrd.open_workbook(file2 % year)
@@ -72,18 +72,21 @@ def get_pob_esc2(year):
 @app.route('/index')
 def index():
 	user = {'nickname': "Nacionales OMA"}
-	a = range(5)
-	sections = '?'	
-	pwd  = getcwd()
+	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
+	val = poblacion_escolar(2000).to_json()
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
-						a1 = Markup(open('./app/templates/clasificados.html','r').read()),
-						# a1 = 243,
+						a1 = Markup(clasif_html),
 						a2 = Markup(open('./app/templates/generos.html','r').read()),
-						a3 = poblacion_escolar(2007)['Provincia'].values.tolist(),
-						a4 = poblacion_escolar(2010)['Cantidad'].values.tolist(),
-						a5 = Markup(open('./app/templates/about.html','r').read())	
+						a3 = poblacion_escolar(2003).to_json(),
+						a4 = poblacion_escolar(2010).to_json(),
+						a5 = Markup(open('./app/templates/about.html','r').read()),
+						data = val,
 						)
-						
+	
+# @app.route('/filtro')
+# def filtro():
+	# return render_template('index.html',a3 = request)
+	
 
