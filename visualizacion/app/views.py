@@ -73,20 +73,26 @@ def get_pob_esc2(year):
 def index():
 	user = {'nickname': "Nacionales OMA"}
 	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
-	val = poblacion_escolar(2000).to_json()
+	generos_html = open('./app/templates/generos.html','r').read()
+	about_html = open('./app/templates/about.html','r').read()
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
 						a1 = Markup(clasif_html),
-						a2 = Markup(open('./app/templates/generos.html','r').read()),
-						a3 = poblacion_escolar(2003).to_json(),
-						a4 = poblacion_escolar(2010).to_json(),
-						a5 = Markup(open('./app/templates/about.html','r').read()),
-						data = val,
+						a2 = Markup(generos_html),
+						# a3 = poblacion_escolar(2003).to_json(),
+						# a4 = poblacion_escolar(2010).to_json(),
+						a3 = 'Not yet implemented',
+						a4 = 'Not yet implemented',
+						a5 = Markup(about_html),
+						data = 123,
 						)
 	
-# @app.route('/filtro')
-# def filtro():
-	# return render_template('index.html',a3 = request)
+@app.route('/update',methods=['POST'])
+def update():
+	val = poblacion_escolar(int(request.form['year']))
+	print(request.form['year'])
+	print(val)
+	return redirect(url_for('index'))
 	
 

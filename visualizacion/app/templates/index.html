@@ -68,9 +68,11 @@
       </script>
   </body>
   	  <script>
-		var data2000 = {{ data|safe }}; //por ahí va la cosa, después vendrá el jquery para 
-		function test(){ 				//el tema de los años
-			alert(data2000);
-		}
+		$.post("/update",{ year: year_title.property("year")},
+			   function(data,status){alert(status);});
+		//input_pob_esc.on("input",function(){
+			//						$.post("/update",year_title.property("year"),
+				//							function(data,status){alert(status);});
+		var data = {{ data|safe }};									
 	  </script>
 </html>
