@@ -79,17 +79,6 @@ def index():
 	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
 	generos_html = open('./app/templates/generos.html','r').read()
 	about_html = open('./app/templates/about.html','r').read()
-	val1 = 123
-	# if request.method == 'POST':
-		# year = int(request.form['year'])
-		# val1 = poblacion_escolar(year).to_json()
-		# print(val1)
-		# return render_template('test.html',
-							   # var1 = json.dumps(year),
-							   # var2 = val1)
-	# else:
-		# val1 = json.dumps(random())
-		# print(val1)
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
@@ -97,19 +86,13 @@ def index():
 						a2 = Markup(generos_html),
 						a3 = 'En construcción',
 						a4 = 'En construcción',
-						a5 = Markup(about_html),
-						val = val1
+						a5 = Markup(about_html)
 						)
 						
 @app.route('/update',methods=['POST'])
 def update():
-	if request.method == 'POST':
-		year = int(request.form['year'])
-	else:
-		year = int(request.args['year'])
+	year = int(request.form['year'])
 	val1 = poblacion_escolar(year).to_json()
-	# print(year,val1)
-	print("Here Response!")
 	resp = Response(response=val1,
 					status=200,
 					mimetype="application/json")
