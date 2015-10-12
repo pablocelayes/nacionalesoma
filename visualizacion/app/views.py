@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, Markup, render_template,make_response, request, redirect, url_for, abort, session
-from flask import app as app1
+from flask import Flask, Markup, render_template,make_response, request, redirect, url_for, abort, session, Response
 from app import app
 
 from pandas import DataFrame
@@ -102,12 +101,16 @@ def index():
 						val = val1
 						)
 						
-@app.route('/update',methods=['GET','POST'])
+@app.route('/update',methods=['POST'])
 def update():
 	if request.method == 'POST':
 		year = int(request.form['year'])
 	else:
 		year = int(request.args['year'])
 	val1 = poblacion_escolar(year).to_json()
-	print(year,val1)
-	return render_template('test.html',var1=year,var2=val1)					
+	# print(year,val1)
+	print("Here Response!")
+	resp = Response(response=val1,
+					status=200,
+					mimetype="application/json")
+	return(resp)				
