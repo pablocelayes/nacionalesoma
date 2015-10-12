@@ -65,9 +65,9 @@
 	  <script src="static/js/cbpFWTabs.js"></script>
       <script>
 	new CBPFWTabs( document.getElementById( 'tabs' ) );
-	  var value = {{ val|safe }};	
-      </script>
+      var value = {{ val|safe }};
 	  {% block content %}
       {% endblock %}
+	  </script>
   </body>
 </html>

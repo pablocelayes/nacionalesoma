@@ -47,7 +47,9 @@ input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
 
 function year_to_server(){
-		$.post("/update",{year: year_title.property("year")},
+		// $.post("/update",{year: year_title.property("year")},
+				// function(data,status){alert(status);});
+		$.post("/index",{year: year_title.property("year")},
 				function(data,status){alert(status);});
 }
 input_pob_esc.on("click",function(){year_to_server()});

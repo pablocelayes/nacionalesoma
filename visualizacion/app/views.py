@@ -6,7 +6,9 @@ from pandas import DataFrame
 import numpy as np
 import xlrd
 import re
-from os import getcwd
+# from os import getcwd
+from random import random
+import json
 
 caba = re.compile(r'Capital Federal|^.+Buenos Aires$')
 
@@ -68,7 +70,6 @@ def get_pob_esc2(year):
 	
 	return df
 
-
 	
 @app.route('/',methods=['GET','POST'])
 @app.route('/index',methods=['GET','POST'])
@@ -77,7 +78,13 @@ def index():
 	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
 	generos_html = open('./app/templates/generos.html','r').read()
 	about_html = open('./app/templates/about.html','r').read()
-	val1 = poblacion_escolar(2001).to_json()
+	if request.method == 'POST':
+		year = int(request.form['year'])
+		val1 = poblacion_escolar(year).to_json()
+		print(val1)
+	else:
+		val1 = json.dumps(random())
+		print(val1)
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
@@ -87,27 +94,4 @@ def index():
 						a4 = 'En construcción',
 						a5 = Markup(about_html),
 						val = val1
-						)
-	
-@app.route('/update',methods=['POST'])
-def update():
-	user = {'nickname': "Nacionales OMA"}
-	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
-	generos_html = open('./app/templates/generos.html','r').read()
-	about_html = open('./app/templates/about.html','r').read()
-	year = int(request.form['year'])
-	val = poblacion_escolar(year).to_json()
-	print(year)
-	print(val)
-	return render_template('poblacion_escolar.html',
-						title='Análisis y Visualización sobre datos del evento',
-						user=user,	
-						a1 = Markup(clasif_html),
-						a2 = Markup(generos_html),
-						a3 = 'En construcción',
-						a4 = 'En construcción',
-						a5 = Markup(about_html),
-						data = val
-						)
-	
-
+						)	

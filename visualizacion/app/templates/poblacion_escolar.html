@@ -1,6 +1,4 @@
 {% extends "index.html" %}
 {% block content %}
-<script>
-	var data = {{ data }};									
-</script>
+	value = {{ data|safe }};
 {% endblock %}
