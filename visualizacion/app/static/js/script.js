@@ -48,9 +48,13 @@ tooltip_node.attr("class", "tooltip1");
 
 function year_to_server(){
 		// $.post("/update",{year: year_title.property("year")},
-				// function(data,status){alert(status);});
-		$.post("/index",{year: year_title.property("year")},
-				function(data,status){alert(status);});
+				// function(data,status){alert(status);});		
+		$.get("/update",{year: year_title.property("year")},
+				function(data,status){
+					alert(status);
+					document.location.href = "/update?year="+year_title.property("year");	
+				});
+			
 }
 input_pob_esc.on("click",function(){year_to_server()});
 // input_cantidad.on("click",function()

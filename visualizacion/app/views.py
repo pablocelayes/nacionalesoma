@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, Markup, render_template, request, redirect, url_for, abort, session
+from flask import Flask, Markup, render_template,make_response, request, redirect, url_for, abort, session
+from flask import app as app1
 from app import app
+
 from pandas import DataFrame
 import numpy as np
 import xlrd
@@ -71,20 +73,24 @@ def get_pob_esc2(year):
 	return df
 
 	
-@app.route('/',methods=['GET','POST'])
-@app.route('/index',methods=['GET','POST'])
+@app.route('/',methods=['GET'])
+@app.route('/index',methods=['GET'])
 def index():
 	user = {'nickname': "Nacionales OMA"}
 	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
 	generos_html = open('./app/templates/generos.html','r').read()
 	about_html = open('./app/templates/about.html','r').read()
-	if request.method == 'POST':
-		year = int(request.form['year'])
-		val1 = poblacion_escolar(year).to_json()
-		print(val1)
-	else:
-		val1 = json.dumps(random())
-		print(val1)
+	val1 = 123
+	# if request.method == 'POST':
+		# year = int(request.form['year'])
+		# val1 = poblacion_escolar(year).to_json()
+		# print(val1)
+		# return render_template('test.html',
+							   # var1 = json.dumps(year),
+							   # var2 = val1)
+	# else:
+		# val1 = json.dumps(random())
+		# print(val1)
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
@@ -94,4 +100,14 @@ def index():
 						a4 = 'En construcción',
 						a5 = Markup(about_html),
 						val = val1
-						)	
+						)
+						
+@app.route('/update',methods=['GET','POST'])
+def update():
+	if request.method == 'POST':
+		year = int(request.form['year'])
+	else:
+		year = int(request.args['year'])
+	val1 = poblacion_escolar(year).to_json()
+	print(year,val1)
+	return render_template('test.html',var1=year,var2=val1)					
