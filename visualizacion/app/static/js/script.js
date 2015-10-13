@@ -72,14 +72,14 @@ var input_cantidad = d3.select("#cant");
 var input_pob_esc = d3.select("#pob_esc");
 var legend_node = d3.select(".list-inline");
 var subtitle = d3.select("#subtitle");
+var mapa_node = d3.select("#mapa");
 
 input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
 
 function colores(filtro){			//para la leyenda
 	if(filtro == "pob_esc")
-		return [
-				"#ecd1d1",
+		return ["#ffe9e9",
 				"#e0b6b6",
 				"#db9696",
 				"#7e4747",
@@ -196,7 +196,7 @@ function update_svg(año)
  tooltip_node.style('display', 'none');
  
  //leyendo archivo svg correspondiente al año desde svg_array
- var paths = d3.selectAll("path");
+ var paths = mapa_node.selectAll("path");
  // alert(paths);
  
  for(var i = 0; i < n_paths; i++){
@@ -228,15 +228,18 @@ function update_svg(año)
 
 
 function update_svg_dynamic(year,data,input_form_selected){
-	var paths = d3.selectAll("path");
+	var paths = mapa_node.selectAll("path");
+	// alert(paths[0].length);
+	// alert(n_paths);
 	 for(var i = 0; i < n_paths; i++){
 		var path = paths[0][i];
-		// alert(path);
+		// alert(i);
 		var prov = path_to_provs[path.id];
-		// alert(prov);
-		d3.select(path).transition()
-				  .style('fill','brown');
-	 }						  
+		if(prov != undefined){
+			d3.select(path).transition()
+						.style('fill',data[prov]['Color']);
+		}
+	}
 }
 
 update_svg(1998);

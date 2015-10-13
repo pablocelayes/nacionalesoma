@@ -101,11 +101,8 @@ def save_div(m,n):
 def df_to_response(df,colores):
 	tmp = df.to_dict()
 	cantidades = df['Clasificados']/df['Población']
-	print(cantidades)
 	cantidades = list(map(lambda c: c if c != inf else 0.0,
 						[math.log(c + 1) for c in cantidades]))
-	print("after lambda:")
-	print(cantidades)	
 	max_value = max(cantidades)
 	min_value = min(cantidades)
 
@@ -125,9 +122,7 @@ def df_to_response(df,colores):
 									#agregar después(quizá en otra parte)
 									#los datos por niveles
 	return res
-		
-# def color_picker(type,""):	
-	
+			
 @app.route('/',methods=['GET'])
 @app.route('/index',methods=['GET'])
 def index():
@@ -147,12 +142,12 @@ def index():
 						
 @app.route('/update',methods=['POST'])
 def update():
-	colores = ["#ecd1d1","#e0b6b6","#db9696",
+	colores = ["#ffe9e9","#e0b6b6","#db9696",
 				"#7e4747","#410e0e"]
 	year = int(request.form['year'])
 	df = poblacion_escolar(year)
 	val = df_to_response(df,colores)
-	# print(val)
+	print(val)
 	resp = Response(response=json.dumps(val),
 					status=200,
 					mimetype="application/json")
