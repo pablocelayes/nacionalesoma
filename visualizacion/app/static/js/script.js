@@ -71,6 +71,7 @@ var form = d3.select("#sender");
 var input_cantidad = d3.select("#cant");
 var input_pob_esc = d3.select("#pob_esc");
 var legend_node = d3.select(".list-inline");
+var subtitle = d3.select("#subtitle");
 
 input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
@@ -100,14 +101,14 @@ function filtrar_poblacion_esc(year){
 					 {
 					   ajax_result = data;
 					   //Cambiar subtítulo
-					   
+					   subtitle.text("Análisis clasificados según población escolar");
 					   //esconder el tooltip(si estuviera activo)
 					   tooltip_node.style("display","none");
 					   //cambiar colores de la leyenda
 					   update_legend(colores("pob_esc"));
 					   //rellenar svg con colores de acuerdo a la data,
 					   //actualizar hoovering,links y tooltip	
-					   // update_svg_dynamic(year,data,"pob_esc");	
+					   update_svg_dynamic(year,data,"pob_esc");	
 					 });
 			 }
 function update_legend(list){
@@ -225,8 +226,17 @@ function update_svg(año)
 				 }
 }
 
-// function update_svg_dynamic(year,data,input_form_selected){
-	// for(i in data)						  
-// }
+
+function update_svg_dynamic(year,data,input_form_selected){
+	var paths = d3.selectAll("path");
+	 for(var i = 0; i < n_paths; i++){
+		var path = paths[0][i];
+		// alert(path);
+		var prov = path_to_provs[path.id];
+		// alert(prov);
+		d3.select(path).transition()
+				  .style('fill','brown');
+	 }						  
+}
 
 update_svg(1998);
