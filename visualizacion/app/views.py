@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, Markup, render_template,make_response, request, redirect, url_for, abort, session, Response
+from flask import Flask, Markup, json, render_template,make_response, request, redirect, url_for, abort, session, Response
 from app import app
 
 from pandas import DataFrame
@@ -9,7 +9,6 @@ import xlrd
 import re
 # from os import getcwd
 from random import random
-import json
 
 caba = re.compile(r'Capital Federal|^.+Buenos Aires$')
 
@@ -70,7 +69,6 @@ def get_pob_esc2(year):
 					'Cantidad':np.array(book_counts_1)+np.array(book_counts_2)})
 	
 	return df
-
 	
 @app.route('/',methods=['GET'])
 @app.route('/index',methods=['GET'])
@@ -92,7 +90,10 @@ def index():
 @app.route('/update',methods=['POST'])
 def update():
 	year = int(request.form['year'])
+	# colors = colores(request.form['type']) 
 	val1 = poblacion_escolar(year).to_json()
+	# print(val1)
+	# val = {'colores':colors,'datos':val1}
 	resp = Response(response=val1,
 					status=200,
 					mimetype="application/json")
