@@ -108,7 +108,7 @@ function filtrar_poblacion_esc(year){
 					   update_legend(colores("pob_esc"));
 					   //rellenar svg con colores de acuerdo a la data,
 					   //actualizar hoovering,links y tooltip	
-					   update_svg_dynamic(year,data,"pob_esc");	
+					   update_svg(year,data,"pob_esc");	
 					 });
 			 }
 function update_legend(list){
@@ -139,12 +139,12 @@ fill_svg_array();
 
 
 //asociaciones....
-input_node.on("input", function(){update_svg(+this.value);});
+input_node.on("input", function(){update_svg(+this.value,null,"cantidad");});
 gini.on("mouseenter",function(){gini.attr("class","any");});
 gini.on("mouseout",function(){gini.attr("class","nany");});
 gini.on("click",function(){window.open("static/img/bokeh/gini.html");});					
 
-function tooltip(year,id,event)				
+function tooltip(year,id,event,input_form_selected,data)				
 {
  d3.select("#"+id).style('stroke-width', 2)
  .style('stroke', 'steelblue');
@@ -179,15 +179,20 @@ function tooltip(year,id,event)
 											       html_str+="<p>"+d.Cantidad+" aprobado(s)</p>";	
 											      }
 					});
-			       
-			       tooltip_node.html(html_str+"<p>Progresión:"+
-						 "<img align='left' height='140' src="+'static/img/plots/'+prov+".svg></img></p>")
+			       	var content;
+				   if (input_form_selected == "pob_esc")
+					content = "<p><b>Poblabión escolar: <b>"+data[prov]['Población']+"</p>";
+				   else
+					content = "<p>Progresión:"+
+							  "<img align='left' height='140' src="+
+							  'static/img/plots/'+prov+".svg></img></p>";
+			       tooltip_node.html(html_str+content)
 			       .style('display', 'block');
 			      });
 		      }  
 }
 
-function update_svg(año)
+function update_svg(año,data,input_form_selected)
 {
  // alert(año);
  //actualizando label
@@ -203,13 +208,26 @@ function update_svg(año)
 				  
 				  var path = paths[0][i];
 				  // alert(svg_array.length);
+				  var fill;
+				  if (input_form_selected == "cantidad")
+					fill = svg_array[año - 1998].documentElement.getElementById(path.id).style.fill; 
+				  else{
+					var prov = path_to_provs[path.id];
+					if(prov != undefined){
+						// prov = prov.replace(/\s/g, '_');
+						alert(prov);
+						fill = data[prov]['Color'];
+					}
+				  }
+
 				  d3.select(path)
 				  .transition()
-				  .style('fill',svg_array[año - 1998].documentElement.getElementById(path.id).style.fill);
+				  .style('fill',fill);
 				  // alert(provincia);
 				  d3.select(path).on('mouseenter',function(event)
 						     {
-						      tooltip(año,this.id,d3.event);
+						      tooltip(año,this.id,
+									  d3.event,input_form_selected,data);
 						     }).on('mouseout',function(event)
 							   {
 							    d3.select("#"+this.id).style('stroke-width', 1)
@@ -242,4 +260,4 @@ function update_svg_dynamic(year,data,input_form_selected){
 	}
 }
 
-update_svg(1998);
+update_svg(1998,null,"cantidad",null);

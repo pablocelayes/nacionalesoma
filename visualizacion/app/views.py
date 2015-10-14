@@ -90,7 +90,7 @@ def get_pob_esc2(year):
 					'Población':np.array(book_counts_1)+np.array(book_counts_2)})
 	
 	df = merge(df_pob_esc,df_clasif,on='Provincia',how='outer')
-	
+		
 	return df.fillna(value=0)
 
 def save_div(m,n):
@@ -146,8 +146,9 @@ def update():
 				"#7e4747","#410e0e"]
 	year = int(request.form['year'])
 	df = poblacion_escolar(year)
+	print(df)
 	val = df_to_response(df,colores)
-	print(val)
+	# print(val)
 	resp = Response(response=json.dumps(val),
 					status=200,
 					mimetype="application/json")

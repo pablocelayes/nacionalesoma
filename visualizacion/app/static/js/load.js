@@ -48,7 +48,7 @@ function update_tabs(j){
 
 
 function load_all_vis(){
-	update_svg(1998);
+	update_svg(1998,null,"cantidad");
 	add_years("Clasificados");
 	cat_list_gen.property("value","Clasificados");
 }
