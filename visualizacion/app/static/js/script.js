@@ -99,7 +99,7 @@ function filtrar_poblacion_esc(year){
 			  $.post("/update",{year: year},
 					 function(data,status)
 					 {
-					   ajax_result = data;
+					   ajax_result = data;	//debug-only
 					   //Cambiar subtítulo
 					   subtitle.text("Análisis clasificados según población escolar");
 					   //esconder el tooltip(si estuviera activo)
@@ -152,10 +152,10 @@ function tooltip(year,id,event,input_form_selected,data)
  var html_str = "<p><b>Año:</b> "+year+"</p>"+
  "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>";
  
- var prov = path_to_provs[id];
+ var prov_name = path_to_provs[id];
  
- if(prov != undefined){
-		       prov = prov.replace(/\s/g, '_');
+ if(prov_name != undefined){
+		       prov = prov_name.replace(/\s/g, '_');
 		       
 		       tooltip_node.html("");				//para evitar que "crezca" el tooltip
 		       
@@ -181,7 +181,7 @@ function tooltip(year,id,event,input_form_selected,data)
 					});
 			       	var content;
 				   if (input_form_selected == "pob_esc")
-					content = "<p><b>Poblabión escolar: <b>"+data[prov]['Población']+"</p>";
+					content = "<p><b>Poblabión escolar: </b>"+data[prov_name]['Población']+"</p>";
 				   else
 					content = "<p>Progresión:"+
 							  "<img align='left' height='140' src="+
@@ -215,7 +215,7 @@ function update_svg(año,data,input_form_selected)
 					var prov = path_to_provs[path.id];
 					if(prov != undefined){
 						// prov = prov.replace(/\s/g, '_');
-						alert(prov);
+						// alert(prov);
 						fill = data[prov]['Color'];
 					}
 				  }
@@ -235,29 +235,15 @@ function update_svg(año,data,input_form_selected)
 							   })
 				  .on('click',function(event)
 				      {
-				       var provincia = path_to_provs[this.id];
-				       if(provincia != undefined){
-								  provincia = provincia.replace(/\s/g, '_');
-								  window.open("./static/img/plots/"+provincia+"-completo.svg");
-								 }
+				       if(input_form_selected == "cantidad"){
+						   var provincia = path_to_provs[this.id];	
+						   if(provincia != undefined){
+									  provincia = provincia.replace(/\s/g, '_');
+									  window.open("./static/img/plots/"+provincia+"-completo.svg");
+							}
+						}
 				      });
 				 }
-}
-
-
-function update_svg_dynamic(year,data,input_form_selected){
-	var paths = mapa_node.selectAll("path");
-	// alert(paths[0].length);
-	// alert(n_paths);
-	 for(var i = 0; i < n_paths; i++){
-		var path = paths[0][i];
-		// alert(i);
-		var prov = path_to_provs[path.id];
-		if(prov != undefined){
-			d3.select(path).transition()
-						.style('fill',data[prov]['Color']);
-		}
-	}
 }
 
 update_svg(1998,null,"cantidad",null);

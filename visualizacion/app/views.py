@@ -62,8 +62,8 @@ def get_pob_esc1(year):
 					'Población':np.array(book1_counts)+np.array(book2_counts),
 					})
 	
-	df = merge(df_pob_esc,df_clasif,on='Provincia',how='outer')
-	
+	df = merge(df_pob_esc,df_clasif,on='Provincia',how='left')
+		
 	return df.fillna(value=0)
 
 def get_pob_esc2(year):					
@@ -89,7 +89,7 @@ def get_pob_esc2(year):
 	df_pob_esc = DataFrame({'Provincia':book_provs,
 					'Población':np.array(book_counts_1)+np.array(book_counts_2)})
 	
-	df = merge(df_pob_esc,df_clasif,on='Provincia',how='outer')
+	df = merge(df_pob_esc,df_clasif,on='Provincia',how='left')
 		
 	return df.fillna(value=0)
 

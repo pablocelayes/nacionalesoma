@@ -97,7 +97,7 @@ def advanced_str_search(df,pattern,field):
 
 def nans(df,field):	
 	"""
-	Para encontrar todas las entradas de un campo con valos NaN
+	Para encontrar todas las entradas de un campo con valores NaN
 	"""
 	df2 = pd.DataFrame(columns=df.columns)
 	for i,val in df[field].iteritems():
