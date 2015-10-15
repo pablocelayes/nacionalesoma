@@ -5,6 +5,7 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
 						 document.getElementById("mapa").appendChild(xml.documentElement);		  
 						});
 
+//valores globales						
 var n_paths = 44;
 
 var path_to_provs = 
@@ -73,10 +74,22 @@ var input_pob_esc = d3.select("#pob_esc");
 var legend_node = d3.select(".list-inline");
 var subtitle = d3.select("#subtitle");
 var mapa_node = d3.select("#mapa");
+var svg_array = [];
+var ajax_result;		//debug-only
 
+//asociaciones....
 input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
 
+input_pob_esc.on("click",function(){
+							filtrar_poblacion_esc(year_title.property("year"))
+						});
+
+input_node.on("input", function(){update_svg(+this.value,null,"cantidad");});
+gini.on("mouseenter",function(){gini.attr("class","any");});
+gini.on("mouseout",function(){gini.attr("class","nany");});
+gini.on("click",function(){window.open("static/img/bokeh/gini.html");});						
+//funciones
 function colores(filtro){			//para la leyenda
 	if(filtro == "pob_esc")
 		return ["#ffe9e9",
@@ -92,8 +105,6 @@ function colores(filtro){			//para la leyenda
 			"#a1d99b",
 			"#41ab5d",
 			"#005a32"];}
-
-var ajax_result;		//aquí están los datos :D !!	
 
 function filtrar_poblacion_esc(year){
 			  $.post("/update",{year: year},
@@ -117,12 +128,6 @@ function update_legend(list){
 		legend_node.selectAll("li")[0][i].style = "border-top-color:"+list[i]
 	}
 }
-			 
-input_pob_esc.on("click",function(){
-							filtrar_poblacion_esc(year_title.property("year"))
-						});
-
-var svg_array = [];
 
 function fill_svg_array(){
 			  var svg = "static/img/clasificados/mapa";
@@ -135,14 +140,7 @@ function fill_svg_array(){
 			  }	
 			 }
 
-fill_svg_array();	
-
-
-//asociaciones....
-input_node.on("input", function(){update_svg(+this.value,null,"cantidad");});
-gini.on("mouseenter",function(){gini.attr("class","any");});
-gini.on("mouseout",function(){gini.attr("class","nany");});
-gini.on("click",function(){window.open("static/img/bokeh/gini.html");});					
+fill_svg_array();					
 
 function tooltip(year,id,event,input_form_selected,data)				
 {
