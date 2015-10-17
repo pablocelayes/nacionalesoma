@@ -81,11 +81,16 @@ var ajax_result;		//debug-only
 input_node.property("value",1998);
 tooltip_node.attr("class", "tooltip1");
 
+input_node.on("input", function(){update_svg(+this.value,null,"cantidad");});
+
 input_pob_esc.on("click",function(){
 							filtrar_poblacion_esc(year_title.property("year"))
 						});
 
-input_node.on("input", function(){update_svg(+this.value,null,"cantidad");});
+input_cantidad.on("click",function(){
+							filtrar_cantidad(year_title.property("year"))
+						});
+
 gini.on("mouseenter",function(){gini.attr("class","any");});
 gini.on("mouseout",function(){gini.attr("class","nany");});
 gini.on("click",function(){window.open("static/img/bokeh/gini.html");});						
@@ -106,22 +111,47 @@ function colores(filtro){			//para la leyenda
 			"#41ab5d",
 			"#005a32"];}
 
-function filtrar_poblacion_esc(year){
-			  $.post("/update",{year: year},
-					 function(data,status)
-					 {
-					   ajax_result = data;	//debug-only
-					   //Cambiar subtítulo
-					   subtitle.text("Análisis clasificados según población escolar");
-					   //esconder el tooltip(si estuviera activo)
-					   tooltip_node.style("display","none");
-					   //cambiar colores de la leyenda
-					   update_legend(colores("pob_esc"));
-					   //rellenar svg con colores de acuerdo a la data,
-					   //actualizar hoovering,links y tooltip	
-					   update_svg(year,data,"pob_esc");	
-					 });
-			 }
+function filtrar_cantidad(year){
+	input_node.on("input", function(){update_svg(+this.value,null,"cantidad");});
+	f_click_cantidad();
+	update_svg(year,null,"cantidad");
+} 			
+			
+function on_click_radio(subtitle_val,input_form_selected){
+	//Cambiar subtítulo
+	subtitle.text(subtitle_val);
+	//esconder el tooltip(si estuviera activo)
+	tooltip_node.style("display","none");
+   //cambiar colores de la leyenda
+	update_legend(colores(input_form_selected));
+}
+
+function the_post(year,f){
+	$.post("/update",{year: year},
+		 function(data,status)
+		 {	
+		   ajax_result = data;	//debug-only
+		   f();
+		   update_svg(year,data,"pob_esc");	
+		 });
+}			
+
+function f_click_pob_esc(){
+	subtitle_val = "Análisis clasificados según población escolar";
+	on_click_radio(subtitle_val,"pob_esc");
+}
+
+function f_click_cantidad(){
+	subtitle_val = "Análisis clasificados y aprobados OMA.";
+	on_click_radio(subtitle_val,"cantidad");
+}
+
+function nothing(){};	
+	
+function filtrar_poblacion_esc(year,f){
+	input_node.on("input", function(){the_post(+this.value,nothing)});
+	the_post(year,f_click_pob_esc);
+}
 function update_legend(list){
 	// alert(list);
 	for(i=0;i<5;i++){
@@ -179,7 +209,10 @@ function tooltip(year,id,event,input_form_selected,data)
 					});
 			       	var content;
 				   if (input_form_selected == "pob_esc")
-					content = "<p><b>Poblabión escolar: </b>"+data[prov_name]['Población']+"</p>";
+					content = "<p><b>Poblabión escolar: </b>"+
+							   data[prov_name]['Población']+"</p>";
+							   // "<p><b>Índice: </b>"+
+							   // data[prov_name]['Índice']+"</p>";
 				   else
 					content = "<p>Progresión:"+
 							  "<img align='left' height='140' src="+
