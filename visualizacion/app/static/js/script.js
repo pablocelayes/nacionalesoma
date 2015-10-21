@@ -67,7 +67,6 @@ var prov_to_paths =
 var year_title = d3.select("#year");
 var tooltip_node = d3.select("#tooltip");
 var input_node = d3.select("input"); 
-var gini = d3.select("#gini"); 
 var form = d3.select("#sender");
 var input_cantidad = d3.select("#cant");
 var input_pob_esc = d3.select("#pob_esc");
@@ -91,9 +90,6 @@ input_cantidad.on("click",function(){
 							filtrar_cantidad(year_title.property("year"))
 						});
 
-gini.on("mouseenter",function(){gini.attr("class","any");});
-gini.on("mouseout",function(){gini.attr("class","nany");});
-gini.on("click",function(){window.open("static/img/bokeh/gini.html");});						
 //funciones
 function colores(filtro){			//para la leyenda
 	if(filtro == "pob_esc")
