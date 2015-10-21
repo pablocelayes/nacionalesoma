@@ -142,7 +142,7 @@ function f_click_pob_esc(){
 }
 
 function f_click_cantidad(){
-	subtitle_val = "Análisis clasificados y aprobados OMA.";
+	subtitle_val = "Análisis clasificados según cantidad.";
 	on_click_radio(subtitle_val,"cantidad");
 }
 
@@ -238,6 +238,7 @@ function update_svg(año,data,input_form_selected)
  for(var i = 0; i < n_paths; i++){
 				  
 				  var path = paths[0][i];
+				  if (path_to_provs[path.id] != undefined){
 				  // alert(svg_array.length);
 				  var fill;
 				  if (input_form_selected == "cantidad")
@@ -275,6 +276,7 @@ function update_svg(año,data,input_form_selected)
 						}
 				      });
 				 }
+	}			 
 }
 
 update_svg(1998,null,"cantidad",null);
