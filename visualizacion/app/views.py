@@ -24,7 +24,7 @@ def check(string):
 
 def poblacion_escolar(year):
 	"""
-	Para obtener la cantidad de alumnos elegibles para
+	Para obtener la cantidad de alumnos elegibles y por niveles para
 	participar en la OMA(secundaria) de los datos oficiales
 	del ministerio.
 	"""
@@ -45,7 +45,6 @@ def get_pob_esc1(year):
 	sheet_book2 = book2.sheets()[0]
 	
 	book1_provs = list(map(check,sheet_book1.col_values(0)[4:28]))
-	
 	book1_counts = sheet_book1.col_values(1)[4:28]
 		
 	book2_provs = list(map(check,sheet_book2.col_values(0)[4:28]))

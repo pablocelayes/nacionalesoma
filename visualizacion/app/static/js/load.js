@@ -1,4 +1,4 @@
-ntabs = 5
+ntabs = 3
 
 function next_tab(n){
 	if(n<ntabs-1)
