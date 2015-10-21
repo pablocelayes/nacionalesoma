@@ -130,12 +130,13 @@ def index():
 	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
 	generos_html = open('./app/templates/generos.html','r',  encoding="iso-8859-1").read()
 	about_html = open('./app/templates/about.html','r',  encoding="iso-8859-1").read()
+	gini_html = open('./app/templates/gini.html','r',encoding="utf-8").read()
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
 						a1 = Markup(clasif_html),
 						a2 = Markup(generos_html),
-						a3 = 'En construcción',
+						a3 = Markup(gini_html),
 						a4 = 'En construcción',
 						a5 = Markup(about_html)
 						)
