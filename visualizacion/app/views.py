@@ -129,8 +129,8 @@ def df_to_response(df,colores):
 def index():
 	user = {'nickname': "Nacionales OMA"}
 	clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
-	generos_html = open('./app/templates/generos.html','r').read()
-	about_html = open('./app/templates/about.html','r').read()
+	generos_html = open('./app/templates/generos.html','r',  encoding="iso-8859-1").read()
+	about_html = open('./app/templates/about.html','r',  encoding="iso-8859-1").read()
 	return render_template('index.html',
 						title='Análisis y Visualización sobre datos del evento',
 						user=user,
