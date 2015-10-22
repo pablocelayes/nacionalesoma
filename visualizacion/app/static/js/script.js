@@ -211,7 +211,7 @@ function tooltip(year,id,event,input_form_selected,data)
 							   // data[prov_name]['Índice']+"</p>";
 				   else
 					content = "<p>Progresión:"+
-							  "<img align='left' height='140' src="+
+							  "<img align='left' height='200' src="+
 							  'static/img/plots/'+prov+".svg></img></p>";
 			       tooltip_node.html(html_str+content)
 			       .style('display', 'block');
