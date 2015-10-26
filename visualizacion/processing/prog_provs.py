@@ -2,8 +2,7 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib.patches as mpatches
-import matplotlib.pyplot as plt
+
 
 aprobados_patch = mpatches.Patch(color='#3F7F7F', label='Aprobados')
 
