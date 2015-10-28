@@ -21,7 +21,7 @@ def is_CABA(string):
 def check(string):
 	if is_CABA(string):
 		return "Ciudad Autónoma de Buenos Aires"
-	return string
+	return string.strip()
 
 def poblacion_escolar(year):
 	"""

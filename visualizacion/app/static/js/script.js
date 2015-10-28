@@ -204,17 +204,25 @@ function tooltip(year,id,event,input_form_selected,data)
 											      }
 					});
 			       	var content;
-				   if (input_form_selected == "pob_esc")
+				   if (input_form_selected == "pob_esc"){
 					content = "<p><b>Poblabión escolar: </b>"+
-							   data[prov_name]['Población']+"</p>";
-							   // "<p><b>Índice: </b>"+
-							   // data[prov_name]['Índice']+"</p>";
-				   else
+							   data[prov_name]['Población']+"</p>"+
+							  "<p>Progresión respecto a población escolar:"+
+							  "<img align='left' height='300' width='400' src="+
+							  'static/img/plots/poblacion_escolar/'+prov+".svg></img></p>";
+					tooltip_node.style("height","520px")
+								.style("width","420px");			
+					}				
+				   else{
 					content = "<p>Progresión:"+
-							  "<img align='left' height='200' src="+
-							  'static/img/plots/'+prov+".svg></img></p>";
-			       tooltip_node.html(html_str+content)
-			       .style('display', 'block');
+							  "<img align='left' height='300' width='390' src="+
+							  'static/img/plots/'+prov+".svg></img></p>"
+					
+					tooltip_node.style("height","510px")
+								.style("width","410px");
+					}
+					tooltip_node.html(html_str+content)
+								.style('display', 'block');
 			      });
 		      }  
 }
@@ -263,12 +271,13 @@ function update_svg(año,data,input_form_selected)
 							   })
 				  .on('click',function(event)
 				      {
-				       if(input_form_selected == "cantidad"){
-						   var provincia = path_to_provs[this.id];	
-						   if(provincia != undefined){
-									  provincia = provincia.replace(/\s/g, '_');
-									  window.open("./static/img/plots/"+provincia+"-completo.svg");
-							}
+					   var provincia = path_to_provs[this.id];	
+					   if(provincia != undefined){
+						  provincia = provincia.replace(/\s/g, '_');
+						  if(input_form_selected == "cantidad")
+							window.open("./static/img/plots/"+provincia+"-completo.svg");
+						  else
+							window.open("./static/img/plots/poblacion_escolar/"+provincia+"-completo.svg");
 						}
 				      });
 				 }
