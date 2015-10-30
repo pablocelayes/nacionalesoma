@@ -48,7 +48,9 @@ function update_tabs(j){
 
 
 function load_all_vis(){
-	update_svg(1998,null,"cantidad");
+	// update_svg(1998,null,"cantidad");
+	filtrar_poblacion_esc(1998,f_click_pob_esc);
+	mapa_node.style("display","block");	
 	add_years("Clasificados");
 	cat_list_gen.property("value","Clasificados");
 }

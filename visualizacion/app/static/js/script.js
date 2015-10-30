@@ -1,9 +1,12 @@
+var mapa_node = d3.select("#mapa");
+mapa_node.style("display","none");
 //cargando el svg inicial
-var svg_file1 = "static/img/clasificados/mapa1998.svg";
+var svg_file1 = "static/img/Blank_Argentina_Map.svg";
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
 						 document.getElementById("mapa").appendChild(xml.documentElement);		  
 						});
+											
 
 //valores globales						
 var n_paths = 44;
@@ -72,7 +75,6 @@ var input_cantidad = d3.select("#cant");
 var input_pob_esc = d3.select("#pob_esc");
 var legend_node = d3.select(".list-inline");
 var subtitle = d3.select("#subtitle");
-var mapa_node = d3.select("#mapa");
 var svg_array = [];
 var ajax_result;		//debug-only
 
@@ -284,4 +286,4 @@ function update_svg(año,data,input_form_selected)
 	}			 
 }
 
-update_svg(1998,null,"cantidad",null);
+// update_svg(1998,null,"cantidad",null);
