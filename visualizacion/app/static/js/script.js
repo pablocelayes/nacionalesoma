@@ -39,33 +39,32 @@ var path_to_provs =
  path3187:"Tucumán",
 };
 
-var prov_to_paths = 
-{
- "Buenos Aires":"path2413",
- "Catamarca":"path3180",
- "Chaco":"path3189",
- "Chubut":"path3194",
- "Ciudad Autónoma de Buenos Aires":"path2265",
- "Corrientes": "path3195",
- "Córdoba":"path3166",
- "Entre Ríos":"path3201",
- "Formosa":"FO",
- "Jujuy":"path3185",
- "La Pampa":"path3164",
- "La Rioja":"path3178",
- "Mendoza":"path3174",
- "Misiones":"path3228",
- "Neuquén":"path3172",
- "Río Negro":"path2388",
- "Salta":"path3182",
- "San Juan":"path3176",
- "San Luis":"path3170",
- "Santa Cruz":"path3192",
- "Santa Fe":"path3224",
- "Santiago del Estero":"path3193",
- "Tierra del Fuego":"path2384",
- "Tucumán": "path3187",
-};
+var provinces = 
+["Buenos Aires",
+ "Catamarca",
+ "Chaco",
+ "Chubut",
+ "Ciudad Autónoma de Buenos Aires",
+ "Corrientes",
+ "Córdoba",
+ "Entre Ríos",
+ "Formosa",
+ "Jujuy",
+ "La Pampa",
+ "La Rioja",
+ "Mendoza",
+ "Misiones",
+ "Neuquén",
+ "Río Negro",
+ "Salta",
+ "San Juan",
+ "San Luis",
+ "Santa Cruz",
+ "Santa Fe",
+ "Santiago del Estero",
+ "Tierra del Fuego",
+ "Tucumán"
+];
 
 var year_title = d3.select("#year");
 var tooltip_node = d3.select("#tooltip");
@@ -75,7 +74,7 @@ var input_cantidad = d3.select("#cant");
 var input_pob_esc = d3.select("#pob_esc");
 var legend_node = d3.select(".list-inline");
 var subtitle = d3.select("#subtitle");
-var svg_array = [];
+var svg_objects = {'mini':[],'completo':[]};
 var ajax_result;		//debug-only
 
 //asociaciones....
@@ -157,76 +156,63 @@ function update_legend(list){
 	}
 }
 
-function fill_svg_array(){
-			  var svg = "static/img/clasificados/mapa";
-			  for (var i = 1998; i < 2015; i++) 
+function fill_svg_objects(){
+			  var svg = "/static/img/plots/poblacion_escolar/";
+			  for (var i = 0; i < provinces.length; i++) 
 			  {
-			   d3.xml(svg+i+".svg","image/svg+xml", function(xml)
-				  {
-				   svg_array.push(xml);
-				  })
-			  }	
-			 }
+			   d3.xml(svg+provinces[i].replace(/\s/g, '_')+".svg","image/svg+xml", 
+						function(xml)
+						  {
+						   svg_objects['mini'].push(xml);
+						  });
+			  } 
+			  for (var i = 0; i < provinces.length; i++)
+			  {
+			   d3.xml(svg+provinces[i].replace(/\s/g, '_')+"-completo.svg","image/svg+xml", 
+						function(xml)
+						  {
+						   svg_objects['completo'].push(xml);
+						  });
+			  }
+	}	
+			 
 
-fill_svg_array();					
+fill_svg_objects();					
 
 function tooltip(year,id,event,input_form_selected,data)				
 {
  d3.select("#"+id).style('stroke-width', 2)
- .style('stroke', 'steelblue');
- 
- var html_str = "<p><b>Año:</b> "+year+"</p>"+
- "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>";
+				  .style('stroke', 'steelblue');
  
  var prov_name = path_to_provs[id];
  
  if(prov_name != undefined){
 		       prov = prov_name.replace(/\s/g, '_');
 		       
-		       tooltip_node.html("");				//para evitar que "crezca" el tooltip
+		       tooltip_node.html(""); //para evitar que "crezca" el tooltip
 		       
-		       d3.csv("static/img/clasificados/provcounts.csv",function(rows)
-			      {
-			       rows.map(function(d)
-					{
-					 if(d.Año == year && d.Provincia == path_to_provs[id]){
-											       html_str += "<p>"+d.Cantidad+" clasificado(s)</p>";
-											      }
-					});
-			      });
-		       
-		       
-		       d3.csv("static/img/aprobados/provcounts.csv",function(rows)
-			      {
-			       rows.map(function(d)
-					{
-					 if(d.Año == year && d.Provincia == path_to_provs[id]){
-											       // alert(d.Provincia);
-											       html_str+="<p>"+d.Cantidad+" aprobado(s)</p>";	
-											      }
-					});
-			       	var content;
-				   if (input_form_selected == "pob_esc"){
-					content = "<p><b>Poblabión escolar: </b>"+
-							   data[prov_name]['Población']+"</p>"+
-							  "<p>Progresión respecto a población escolar:"+
-							  "<img align='left' height='300' width='400' src="+
-							  'static/img/plots/poblacion_escolar/'+prov+".svg></img></p>";
-					tooltip_node.style("height","520px")
-								.style("width","420px");			
-					}				
-				   else{
-					content = "<p>Progresión:"+
-							  "<img align='left' height='300' width='390' src="+
-							  'static/img/plots/'+prov+".svg></img></p>"
-					
-					tooltip_node.style("height","510px")
-								.style("width","410px");
-					}
-					tooltip_node.html(html_str+content)
-								.style('display', 'block');
-			      });
+			   var content;
+			   if (input_form_selected == "pob_esc"){
+			   content = "<p><b>Año:</b> "+year+"</p>"+
+						 "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
+						 "<p><b>Poblabión escolar: </b>"+
+						 data[prov_name]['Población']+"</p>"+
+						  "<p>"+data[prov_name]['Clasificados']+" clasificados(s)</p>"+
+						  "<p>"+data[prov_name]['Aprobados']+" aprobado(s)</p>"+
+						  "<p>Progresión respecto a población escolar:";
+			   
+			   // alert(svg_objects['mini'][0].documentElement);
+			   
+			   // tooltip_node.html(content);
+			   // tooltip_node.append("div",svg_objects['mini'][0].documentElement);.
+			   document.getElementById("tooltip").appendChild(svg_objects['mini'][0].documentElement);
+			   
+			   tooltip_node.style("height","520px")
+						   .style("width","420px");
+						   
+			   tooltip_node.style("display","block");
 		      }  
+			}
 }
 
 function update_svg(año,data,input_form_selected)
@@ -247,11 +233,8 @@ function update_svg(año,data,input_form_selected)
 				  if (path_to_provs[path.id] != undefined){
 				  // alert(svg_array.length);
 				  var fill;
-				  if (input_form_selected == "cantidad")
-					fill = svg_array[año - 1998].documentElement.getElementById(path.id).style.fill; 
-				  else{
-					var prov = path_to_provs[path.id];
-					if(prov != undefined){
+				  var prov = path_to_provs[path.id];
+				  if(prov != undefined){
 						// prov = prov.replace(/\s/g, '_');
 						// alert(prov);
 						fill = data[prov]['Color'];
@@ -259,8 +242,8 @@ function update_svg(año,data,input_form_selected)
 				  }
 
 				  d3.select(path)
-				  .transition()
-				  .style('fill',fill);
+					.transition()
+					.style('fill',fill);
 				  // alert(provincia);
 				  d3.select(path).on('mouseenter',function(event)
 						     {
@@ -282,7 +265,6 @@ function update_svg(año,data,input_form_selected)
 							window.open("./static/img/plots/poblacion_escolar/"+provincia+"-completo.svg");
 						}
 				      });
-				 }
 	}			 
 }
 

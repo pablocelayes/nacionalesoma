@@ -4,24 +4,23 @@ var n_paths = 44;
 
 var cat_selected = "Clasificados";
 var initial_year = 1998;
-var previous_year = null;		//para usar en compute_year
 
 
-var vpremiados = [];
-var vclasificados = d3.range(1998,2015);
-var vaprobados = vclasificados;
+// var vpremiados = [];
+// var vclasificados = d3.range(1998,2015);
+// var vaprobados = vclasificados;
 
-var categories = 
-	{
-		Aprobados:vaprobados,
-		Premiados:vpremiados,
-		Clasificados:vclasificados
-	};
+// var categories = 
+	// {
+		// Aprobados:vaprobados,
+		// Premiados:vpremiados,
+		// Clasificados:vclasificados
+	// };
 
-for(var i = 1998; i<2015;i++){
-    if(i!=2000)
-    {vpremiados.push(i);}
-};
+// for(var i = 1998; i<2015;i++){
+    // if(i!=2000)
+    // {vpremiados.push(i);}
+// };
 	
 var path_to_provs = 
     {
