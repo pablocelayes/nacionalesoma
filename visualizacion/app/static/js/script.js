@@ -140,25 +140,20 @@ function init_participacion(mini_svgs,completos_svgs){
 	    prov = prov_name.replace(/\s/g, '_');
 	    
 	    tooltip_node.html(""); //para evitar que "crezca" el tooltip
-	    
+		var svg_val;
 	    var content;
+		
 	    if (input_form_selected == "pob_esc"){
+		svg_val = "<svg width='600' height='600'>"+ mini_svgs[prov_name].documentElement.innerHTML+"</svg>";
 		content = "<p><b>Año:</b> "+year+"</p>"+
 		    "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
 		    "<p><b>Poblabión escolar: </b>"+
 		    data[prov_name]['Población']+"</p>"+
 		    "<p>"+data[prov_name]['Clasificados']+" clasificados(s)</p>"+
 		    "<p>"+data[prov_name]['Aprobados']+" aprobado(s)</p>"+
-		    "<p>Progresión respecto a población escolar:";
-		
-		// alert(svg_objects['mini'][0].documentElement);
-		
+		    "<p>Progresión respecto a población escolar:</p>"+svg_val;
+
 		tooltip_node.html(content);
-		// tooltip_node.append("div",svg_objects['mini'][0].documentElement);.
-		document.getElementById("tooltip").appendChild(mini_svgs[prov_name].documentElement);
-		
-		tooltip_node.style("height","520px")
-		    .style("width","420px");
 		
 		tooltip_node.style("display","block");
 	    }  
@@ -203,13 +198,14 @@ function init_participacion(mini_svgs,completos_svgs){
 				     {
 					 d3.select("#"+this.id).style('stroke-width', 1)
 					     .style('stroke', 'white')
+					  
 				     })
 		.on('click',function(event)
 		    {
 			var provincia = path_to_provs[this.id];	
 			if(provincia != undefined){
 				var provincia_clean = provincia.replace(/\s/g, '_');
-				window.open("./static/img/plots/poblacion_escolar/"+provincia+"-completo.svg");
+				window.open("./static/img/plots/poblacion_escolar/"+provincia_clean+"-completo.svg");
 				// window.open(completos_svgs[provincia]);
 			}
 		    });
