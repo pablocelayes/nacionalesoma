@@ -36,7 +36,7 @@ def update():
 	df = data[year]
 	# print(df)
 	val = df_to_response(df,colores)
-	pprint(val)
+	# pprint(val)
 	resp = Response(response=json.dumps(val),
 					status=200,
 					mimetype="application/json")

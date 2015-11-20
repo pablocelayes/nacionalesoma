@@ -48,7 +48,7 @@
     } 
     for (var j = 0; j < provinces.length; j++)
     {
-    		d3.xml(svg+provinces[j].replace(/\s/g, '_')+"-completo.svg"
+      d3.xml(svg+provinces[j].replace(/\s/g, '_')+"-completo.svg"
 	   ,"image/svg+xml", 
 	   function(xml)
 	   {

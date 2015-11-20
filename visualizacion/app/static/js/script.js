@@ -8,7 +8,7 @@ document.getElementById("mapa").appendChild(xml.documentElement);
 });
 
 function init_participacion(mini_svgs,completos_svgs){
-    console.log(mini_svgs,completos_svgs);
+    // console.log(mini_svgs,completos_svgs);
 	//valores globales						
     var n_paths = 44;
 
