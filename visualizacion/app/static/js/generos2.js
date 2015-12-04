@@ -1,4 +1,4 @@
-var svgs_genero = {'progresiones_grales':[],
+var svgs_genero_init = {'progresiones_grales':[],
 				   'años':[],
 				   'progresiones_provincias':{'clasificados':[],
 											  'aprobados':[],
@@ -6,6 +6,10 @@ var svgs_genero = {'progresiones_grales':[],
 				   'progresiones_porcentuales_provincias':{'clasificados':[],
 											  'aprobados':[],
 											  'premiados':[]}};
+
+var svgs_genero_end = {'progresiones_nacionales':{},
+					   'años':{}};
+
 var cats = ["clasificados","aprobados","premiados"];
 
 var provinces = 
@@ -34,6 +38,31 @@ var provinces =
      "Tierra del Fuego",
      "Tucumán"
     ];
+    
+   
+function transform_svgs(){
+	svgs_genero_end['progresiones_nacionales'] = 
+	{
+		'clasificados':svgs_genero_init['progresiones_grales'][0],
+		'aprobados':svgs_genero_init['progresiones_grales'][1],
+		'premiados':svgs_genero_init['progresiones_grales'][2]
+	};
+	
+	svgs_genero_end['años'] = {
+		'clasificados':{},
+		'aprobados':{},
+		'premiados':{}
+	};
+	for(var i=0,j=1998;j<2015;i++,j++){	//clasificados
+		svgs_genero_end['años']['clasificados'][j] = svgs_genero_init['años'][i];
+	} 
+	for(var i=17,j=1998;j<2015;i++,j++){	//aprobados
+		svgs_genero_end['años']['aprobados'][j] = svgs_genero_init['años'][i];
+	} 
+	for(var i=34,j=1998;j<2015;i++,j++){	//premiados
+		svgs_genero_end['años']['premiados'][j] = svgs_genero_init['años'][i];
+	}
+}
 				   
 function load_svgs_genero(){
 	//cargando progresiones generales
@@ -42,19 +71,24 @@ function load_svgs_genero(){
 			   "image/svg+xml",
 			   function(xml)
 			   {
-				svgs_genero['progresiones_grales'].push(xml);
+				svgs_genero_init['progresiones_grales'].push(xml);
 			   });
 		load_progress_svgs(cats[i],provinces);	   
-		for(var j = 1999;j < 2015;j++){
+		for(var j = 1998;j < 2015;j++){
 			d3.xml("/static/img/"+cats[i]+"/genero/mapa"+j+".svg",
 				   "image/svg+xml",
 				   function(xml)
 				   {
-					svgs_genero['años'].push(xml);
+					svgs_genero_init['años'].push(xml);
+					if(svgs_genero_init['años'].length == 48 &&
+					   svgs_genero_init['progresiones_grales'].length == 3)
+					   {transform_svgs();}
+
 				   });
 		}
 	}
-	console.log(svgs_genero);
+	console.log(svgs_genero_init);
+	console.log(svgs_genero_end);
 }
 
 function load_progress_svgs(cat){
@@ -64,13 +98,13 @@ function load_progress_svgs(cat){
 			   "image/svg+xml",
 			   function(xml)
 			   {
-				svgs_genero['progresiones_provincias'][cat].push(xml);
+				svgs_genero_init['progresiones_provincias'][cat].push(xml);
 			   });
 		d3.xml("/static/img/plots/genero/F/"+cat+"/porcentual/progresion_anual_"+provinces[i]+".svg",
 			   "image/svg+xml",
 			   function(xml)
 			   {
-				svgs_genero['progresiones_porcentuales_provincias'][cat].push(xml);
+				svgs_genero_init['progresiones_porcentuales_provincias'][cat].push(xml);
 			   });	
 	}
 }	
