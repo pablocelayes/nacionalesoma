@@ -80,9 +80,10 @@ function load_svgs_genero(){
 				   function(xml)
 				   {
 					svgs_genero_init['años'].push(xml);
-					if(svgs_genero_init['años'].length == 48 &&
+					if(svgs_genero_init['años'].length == 51 &&
 					   svgs_genero_init['progresiones_grales'].length == 3)
-					   {transform_svgs();}
+					   {transform_svgs();
+					   }
 
 				   });
 		}
