@@ -82,14 +82,16 @@ function load_svgs_genero(){
 					svgs_genero_init['años'].push(xml);
 					if(svgs_genero_init['años'].length == 51 &&
 					   svgs_genero_init['progresiones_grales'].length == 3)
-					   {transform_svgs();
+					   {
+						   transform_svgs();
+						   init_generos(svgs_genero_end);
 					   }
 
 				   });
 		}
 	}
-	console.log(svgs_genero_init);
-	console.log(svgs_genero_end);
+	//~ console.log(svgs_genero_init);
+	//~ console.log(svgs_genero_end);
 }
 
 function load_progress_svgs(cat){

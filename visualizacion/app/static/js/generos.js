@@ -1,5 +1,12 @@
 var svg_file1 = "static/img/clasificados/genero/mapa1998.svg";
 
+d3.xml(svg_file1, "image/svg+xml", function(xml){
+    document.getElementById("mapa_gen").appendChild(xml.documentElement);		  
+});
+
+function init_generos(svgs_genero_end){
+	
+
 var n_paths = 44;
 
 var cat_selected = "Clasificados";
@@ -75,10 +82,17 @@ function add_svg(year){
 function update_svg_gen(cat,year){
 
 	// alert(cat);
-    var route_to_svg = "static/img/"+cat.toLowerCase()+"/genero/mapa"+year+".svg";
-    d3.xml(route_to_svg,"image/svg+xml", function(xml){
+	//~ console.log(svgs_genero_end['años'][cat.toLowerCase()][year]);
+	
+    //~ var route_to_svg = "static/img/"+cat.toLowerCase()+"/genero/mapa"+year+".svg";
+    
+    //~ d3.xml(route_to_svg,"image/svg+xml", function(xml){
 	mapa_gen.html("");
-	document.getElementById("mapa_gen").appendChild(xml.documentElement);
+	//~ document.getElementById("mapa_gen").appendChild(xml.documentElement);
+	
+	var svg_cat_year = svgs_genero_end['años'][cat.toLowerCase()][year];
+	var svg_val = "<svg width='600' height='1300' viewBox='0 0 1200 1200'>"+svg_cat_year.documentElement.innerHTML+"</svg>";
+	mapa_gen.html(svg_val);
 	
 	show_national_progression(cat,year);
 
@@ -107,7 +121,6 @@ function update_svg_gen(cat,year){
 		    });
 	    }
 	}
-    });
     
 }
 
@@ -182,11 +195,10 @@ function show_national_progression(cat,year){
 	.attr("height","250px");
 }
 
-
-d3.xml(svg_file1, "image/svg+xml", function(xml){
-    document.getElementById("mapa_gen").appendChild(xml.documentElement);		  
-});
-
 add_years("Clasificados");
+cat_list_gen.property("value","Clasificados");
+}
+
+
 
 
