@@ -39,13 +39,24 @@ var provinces =
      "Tucumán"
     ];
     
+
+function detect_category(svg_list_cats,cat){
+	//~ugliest patch because of unpredictable d3.xml calls results and disctincts orders of svgs lists
+	var res = {};
+	for(var i = 0;i<3;i++){
+		if(svg_list_cats[i].URL.search(cat) != -1)
+			return svg_list_cats[i]
+	}  
+}    
+
    
 function transform_svgs(){
+	
 	svgs_genero_end['progresiones_nacionales'] = 
 	{
-		'clasificados':svgs_genero_init['progresiones_grales'][0],
-		'aprobados':svgs_genero_init['progresiones_grales'][1],
-		'premiados':svgs_genero_init['progresiones_grales'][2]
+		'clasificados':detect_category(svgs_genero_init['progresiones_grales'],'clasificados'), 
+		'aprobados':detect_category(svgs_genero_init['progresiones_grales'],'aprobados'),
+		'premiados':detect_category(svgs_genero_init['progresiones_grales'],'premiados')
 	};
 	
 	svgs_genero_end['años'] = {

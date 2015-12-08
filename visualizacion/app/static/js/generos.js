@@ -190,9 +190,9 @@ function show_prov_prog(cat,year,id){
 
 function show_national_progression(cat,year){
     prog_nac_gen.html("");
-    var svg_file = "static/img/plots/genero/F/progresion_anual_"+cat.toLowerCase()+".svg";
-    prog_nac_gen.append("img").attr("src",svg_file)
-	.attr("height","250px");
+    var svg_prog = svgs_genero_end['progresiones_nacionales'][cat.toLowerCase()].documentElement.innerHTML;
+    var svg_val = "<svg height='310' width='350' viewBox='-10 -10 500 500'>"+svg_prog+"</svg>";
+    prog_nac_gen.html(svg_val);
 }
 
 add_years("Clasificados");
