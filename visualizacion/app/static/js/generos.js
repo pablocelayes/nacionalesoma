@@ -84,12 +84,7 @@ function update_svg_gen(cat,year){
 	// alert(cat);
 	//~ console.log(svgs_genero_end['años'][cat.toLowerCase()][year]);
 	
-    //~ var route_to_svg = "static/img/"+cat.toLowerCase()+"/genero/mapa"+year+".svg";
-    
-    //~ d3.xml(route_to_svg,"image/svg+xml", function(xml){
-	mapa_gen.html("");
-	//~ document.getElementById("mapa_gen").appendChild(xml.documentElement);
-	
+	mapa_gen.html("");	
 	var svg_cat_year = svgs_genero_end['años'][cat.toLowerCase()][year];
 	var svg_val = "<svg width='600' height='1300' viewBox='0 0 1200 1200'>"+svg_cat_year.documentElement.innerHTML+"</svg>";
 	mapa_gen.html(svg_val);
@@ -166,32 +161,36 @@ function show_prov_percent(cat,year,id){
 function show_prov_prog(cat,year,id){
     // alert(cat);
 	prog_prov_gen.html("");
+	
 	prog_prov_percent_gen.html("");
-    var prov = path_to_provs[id];
-    var svg_file1 = "static/img/plots/genero/F/"+cat.toLowerCase()+"/progresion_anual_"+prov+".svg";
-    var svg_file2 = "static/img/plots/genero/F/"+cat.toLowerCase()+"/porcentual/progresion_anual_"+prov+".svg";
-    actual_prov_gen.text(prov);
-    
-    $.when($.ajax(svg_file1))
-	.then(
-	    function(){
-		prog_prov_gen.append("img").attr("src",svg_file1)
-    		    .attr("height","250px");
-		prog_prov_percent_gen.append("img").attr("src",svg_file2)
-				.attr("height","250px");},
-	    function(){
+	
+	var prov = path_to_provs[id];
+	
+	var svg_xml_1 = svgs_genero_end['progresiones_porcentuales_provincias'][cat.toLowerCase()][prov];
+	var svg_xml_2 = svgs_genero_end['progresiones_provincias'][cat.toLowerCase()][prov];
+	
+	if(svg_xml_1){
+	
+	var svg_val_1 = "<svg height='310' width='350' viewBox='0 0 500 500'>"+svg_xml_1.documentElement.innerHTML+"</svg>";
+	var svg_val_2 = "<svg height='310' width='350' viewBox='0 0 500 500'>"+svg_xml_2.documentElement.innerHTML+"</svg>";
+	
+	prog_prov_gen.html(svg_val_1);
+	prog_prov_percent_gen.html(svg_val_2);
+	
+	}
+	else{
 		prog_prov_gen.append("div")
-		    .attr("class","prog-prov")
-		    .html("<strong>"+prov+"</strong>: provincia sin "+
-			  cat.toLowerCase()+" femeninos en ningún año.");
-	    });
+					 .attr("class","prog-prov")
+					 .html("<strong>"+prov+"</strong>: provincia sin "+
+						    cat.toLowerCase()+" femeninos en ningún año.");
+	}
 }
  
 
 function show_national_progression(cat,year){
     prog_nac_gen.html("");
     var svg_prog = svgs_genero_end['progresiones_nacionales'][cat.toLowerCase()].documentElement.innerHTML;
-    var svg_val = "<svg height='310' width='350' viewBox='-10 -10 500 500'>"+svg_prog+"</svg>";
+    var svg_val = "<svg height='310' width='350' viewBox='0 0 500 500'>"+svg_prog+"</svg>";
     prog_nac_gen.html(svg_val);
 }
 
