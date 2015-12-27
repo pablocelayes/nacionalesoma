@@ -47,13 +47,16 @@ var year_list_gen = d3.select("#year_range_gen");
 var year_title_gen = d3.select("#year_gen");
 var cat_title_gen = d3.select("#categoria_gen");
 var prog_prov_gen = d3.select("#prog_prov_gen");
+
 var prog_nac_gen = d3.select("#prog_nac_gen");
+prog_nac_gen.attr("border-spacing","20px"); //TODO el padding
+
 var actual_prov_gen = d3.select("#prov_gen");
 var actual_prov_percent_gen = d3.select("#percent_gen");
 var prog_prov_percent_gen = d3.select("#prog_prov_percent_gen");
 var mapa_gen = d3.select("#mapa_gen");
 
-// prog_nac.attr("padding-rigth","100px"); //TODO el padding
+
 
 cat_list_gen.on("change",function(){add_years(this.value);});
 year_list_gen.on("input",function(){add_svg(+this.value);});
@@ -151,7 +154,7 @@ function show_prov_percent(cat,year,id){
 						percent = (d.F/all)*100;
 					else
 						percent = 0;
-					actual_prov_percent_gen.text(truncate(percent,2)+"%");
+					actual_prov_percent_gen.text(d.Provincia + " " + truncate(percent,2)+"%");
 					return;
 			    }
 			});
@@ -171,8 +174,8 @@ function show_prov_prog(cat,year,id){
 	
 	if(svg_xml_1){
 	
-	var svg_val_1 = "<svg height='310' width='350' viewBox='0 0 500 500'>"+svg_xml_1.documentElement.innerHTML+"</svg>";
-	var svg_val_2 = "<svg height='310' width='350' viewBox='0 0 500 500'>"+svg_xml_2.documentElement.innerHTML+"</svg>";
+	var svg_val_1 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_1.documentElement.innerHTML+"</svg>";
+	var svg_val_2 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_2.documentElement.innerHTML+"</svg>";
 	
 	prog_prov_gen.html(svg_val_1);
 	prog_prov_percent_gen.html(svg_val_2);
@@ -190,7 +193,7 @@ function show_prov_prog(cat,year,id){
 function show_national_progression(cat,year){
     prog_nac_gen.html("");
     var svg_prog = svgs_genero_end['progresiones_nacionales'][cat.toLowerCase()].documentElement.innerHTML;
-    var svg_val = "<svg height='310' width='350' viewBox='0 0 500 500'>"+svg_prog+"</svg>";
+    var svg_val = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_prog+"</svg>";
     prog_nac_gen.html(svg_val);
 }
 
