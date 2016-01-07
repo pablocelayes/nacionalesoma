@@ -82,6 +82,14 @@ function add_svg(year){
     update_svg_gen(cat_selected,year);
 }
 
+//~ function load_svg_mapa(cat,year){
+	//~ $.post("/update_generos_map",{cat: cat, year: year},
+	       //~ function(data,status)
+	       //~ {	
+			   //~ update_svg(year,data,"pob_esc");	
+	       //~ });
+//~ }
+
 function update_svg_gen(cat,year){
 
 	// alert(cat);
@@ -91,6 +99,7 @@ function update_svg_gen(cat,year){
 	var svg_cat_year = svgs_genero_end['años'][cat.toLowerCase()][year];
 	var svg_val = "<svg width='600' height='1300' viewBox='0 0 1200 1200'>"+svg_cat_year.documentElement.innerHTML+"</svg>";
 	mapa_gen.html(svg_val);
+	//~ load_svg_mapa(cat,year);
 	
 	show_national_progression(cat,year);
 

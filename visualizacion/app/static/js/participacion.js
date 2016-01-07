@@ -100,9 +100,9 @@ function init_participacion(mini_svgs,completos_svgs){
 	$.post("/update",{year: year},
 	       function(data,status)
 	       {	
-		   ajax_result = data;	//debug-only
-		   f();
-		   update_svg(year,data,"pob_esc");	
+			   ajax_result = data;	//debug-only
+			   f();
+			   update_svg(year,data,"pob_esc");	
 	       });
     }			
 
