@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 from lxml import etree
 import csv
 import sys
@@ -48,9 +49,9 @@ def procesar_html(filename):
         header = 'Nivel Apellido Nombres Localidad Provincia'.split()
         writer.writerow(header)
 
-        año = int(basefilename[-4:])
+        year = int(basefilename[-4:])
 
-        if año == 1998:
+        if year == 1998:
             dataniveles = rootnode.xpath('//pre')
             for i, data in enumerate(dataniveles):
                 filas = data.text.split('\n')
@@ -65,7 +66,7 @@ def procesar_html(filename):
                     else:
                         fila = [str(i + 1)] + [s.strip() for s in [f[:20], f[20:39], f[39:65], f[65:]]]
                     writer.writerow(arreglar_fila(fila))
-        elif año < 2002:
+        elif year < 2002:
             dataniveles = rootnode.xpath('//ul')
             if not dataniveles:
                 dataniveles = rootnode.xpath('//ol')
@@ -81,12 +82,12 @@ def procesar_html(filename):
                     apellido, nombres = [p.strip() for p in ayn.split(",")]
                     fila = (str(i+1), apellido, nombres, localidad, provincia)
                     writer.writerow(arreglar_fila(fila))
-        elif año != 2004:
+        elif year != 2004:
             content = open(filename, 'r', encoding='iso-8859-1').read()
             tree = lh.fromstring(content)
             rootnode = tree.getroottree()
             tables = rootnode.xpath('//table')
-            if año >= 2005:
+            if year >= 2005:
                 dataniveles = [tables[i] for i in [1, 3, 5]]
             else:
                 dataniveles = tables[:3]
@@ -104,7 +105,7 @@ def procesar_html(filename):
                         f[3] = 'Ciudad Autónoma de Buenos Aires'
                     fila = [str(i+1)] + f
                     if len(fila) > 5: # Borrar escuela
-                        if año < 2009:
+                        if year < 2009:
                             del fila[-3] 
                         else:
                             fila = fila[:-1]
@@ -125,11 +126,34 @@ def procesar_html(filename):
                     f[3] = 'Ciudad Autónoma de Buenos Aires'
                 writer.writerow(arreglar_fila(f))
 
+def process_html(year,category,tables_scheme,encoding,f):
+    filename_input = '%s%d.html' % (category,year)
+    filename_output = 'csvs/%s%d.csv'%(category,year)
+    with open(filename_output, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        header = tables_scheme.split()
+        writer.writerow(header)
+        content = open(filename_input, 'r', encoding=encoding).read()
+        tree = lh.fromstring(content)
+        rootnode = tree.getroottree()
+        f(writer,rootnode)
 
+def f_2015(writer,rootnode):
+    xpath_tables = '//table[%d]'
+    xpath_rows = './/tr'
+    tables = [rootnode.xpath(xpath_tables % i) for i in [2,4,6]]
+    rows_per_table = [[n for n in f[0].xpath(xpath_rows)] for f in tables]
+    final_rows = [[[k.text_content() for k in j.xpath('.//td')] for j in i] for i in rows_per_table]
+    for i in range(3):
+        for j in final_rows[i][1:]:
+            row = [i+1]+j
+            writer.writerow(row)
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        procesar_html(sys.argv[1])
-    else:
-        for año in range(1998, 2015):
-            procesar_html('clasificados%d.html' % año)
+    #~ if len(sys.argv) > 1:
+        #~ procesar_html(sys.argv[1])
+    #~ else:
+        #~ for year in range(1998, 2015):
+            #~ procesar_html('clasificados%d.html' % year)
+    #~ print(process_html(2015,'clasificados','Nivel Apellido Nombre Localidad Provincia Colegio','iso-8859-1',f_2015))
+    process_html(2015,'clasificados','Nivel Apellido Nombre Localidad Provincia Colegio','iso-8859-1',f_2015)
