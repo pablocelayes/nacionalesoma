@@ -15,6 +15,10 @@ import re
 range_init = 2006
 range_end = 2014
 
+def replacer(field,*args):
+	for i in args:
+		field = field.replace(i,'-')
+	return field
 
 def process_html(filename):
 	"""
@@ -78,11 +82,6 @@ def process_html(filename):
 	def clean(field,*args):
 		for i in args:
 			field = field.replace(i,'')
-		return field
-	
-	def replacer(field,*args):
-		for i in args:
-			field = field.replace(i,'-')
 		return field
 
 	def format_data(string):
@@ -183,9 +182,28 @@ def process_html(filename):
 	# save_reports(year,bigger_rows_report,'big')
 	# save_reports(year,short_rows_report,'short')
 
-if __name__ == '__main__':
-	if len(sys.argv) > 1:
-		process_html(sys.argv[1])
-	else:
-		for year in range(range_init, range_end+1):
-			process_html('premiados%d.html' % year)	
+def process_html(year,category,tables_scheme,encoding,f):
+    filename_input = '%s%d.html' % (category,year)
+    filename_output = 'csvs/%s%d.csv'%(category,year)
+    with open(filename_output, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        header = tables_scheme.split()
+        writer.writerow(header)
+        content = open(filename_input, 'r', encoding=encoding).read()
+        tree = lh.fromstring(content)
+        rootnode = tree.getroottree()
+        f(writer,rootnode)
+
+def f_2015(writer,rootnode):
+    xpath_tables = '//ul[%d]'
+    xpath_rows = './/li'
+    tables = [rootnode.xpath(xpath_tables % i) for i in [4,5,6]]
+    rows_per_table = [[n for n in f[0].xpath(xpath_rows)] for f in tables]
+    final_rows = [[replacer(j.text_content(),',','–','\x96').split('-') for j in i] for i in rows_per_table]
+    for i in range(3):
+        for j in final_rows[i][1:]:
+            row = [i+1,'Mención']+j
+            writer.writerow(row)
+
+if __name__ == '__main__':		
+	process_html(2015,'premiados','Nivel Premio Nombre Colegio Localidad Provincia','iso-8859-1',f_2015)
