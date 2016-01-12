@@ -18,7 +18,7 @@ def conteo_genero(file_template):
 	2014,8,8
 	"""
 	result = pd.DataFrame(columns = ["Año","F","M"])
-	for i,val in enumerate(range(1998,2015)):
+	for i,val in enumerate(range(1998,2016)):
 		csv_year = pd.read_csv("{0}{1}.csv".format(file_template,val))
 		f_count = str(csv_year[csv_year['Género'] == "F"].count()[0])	
 		m_count = str(csv_year[csv_year['Género'] == "M"].count()[0])	

@@ -16,7 +16,7 @@ def gini(values):
     return (uneven - even) / even
 
 
-años = range(1998, 2015)
+años = range(1998, 2016)
 csvfile = 'csvs/clasificados%d.csv'
 
 ginis = []

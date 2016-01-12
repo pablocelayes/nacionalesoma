@@ -93,8 +93,8 @@ def unknown_genders():
 	 print(df.iloc[gender_df[gender_df > 1].index])
 	
 def gender_to_csvs(file_template):
-	for i in range(1998,2015):
-		# print(i)
+	for i in range(2015,2016):
+		print(i)
 		file = "{0}{1}.csv".format(file_template,i)
 		df = pd.read_csv(file)
 		df['Género'] = df['Nombres'].apply(find_gender)
@@ -103,7 +103,7 @@ def gender_to_csvs(file_template):
 
 def gender_to_csvs_premiados(file_template): 
 	#pendiente refactoring teniendo en cuenta similitud entre las últimas 2 funciones
-	for i in range(1998,2015):
+	for i in range(2015,2016):
 		# print(i)
 		if i != 2000:
 			file = "{0}{1}.csv".format(file_template,i)
@@ -115,4 +115,5 @@ def gender_to_csvs_premiados(file_template):
 
 gender_to_csvs(clasificados)
 gender_to_csvs(aprobados)
+#~ gender_to_csvs(premiados)
 gender_to_csvs_premiados(premiados)

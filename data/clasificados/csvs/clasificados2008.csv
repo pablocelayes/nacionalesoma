@@ -8,7 +8,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Alvarez,José Ignacio,Pilar,Buenos Aires,M,Instituto Madre del Divino Pastor
 1,Alvarez,Julieta,Escobar,Buenos Aires,F,La Asunción de la Virgen
 1,Alvarez Gerbert,Federico,Paso del Rey - Moreno,Buenos Aires,M,San Juan Bautista
-1,Amaya,Baltazar Gastón,Mar del Plata,Buenos Aires,M,Colegio Nacional "Dr. Arturo Illia"
+1,Amaya,Baltazar Gastón,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
 1,Ambricca,Nicolás,Adrogué,Buenos Aires,M,Establecimiento Educativo Argentino
 1,Angel,Ignacio Martín,Quilmes,Buenos Aires,M,Instituto Manuel Belgrano
 1,Angonoa,Vanesa Lucía,Hersilia,Santa Fe,F,"I.S.P.I. Nº 9054 ""Santa Teresita del Niño Jesús"""
@@ -44,7 +44,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Carro Correa,Luciano,Lanús Este,Buenos Aires,M,ESB Nº 1
 1,Casadei,Manuel,Mar del Plata,Buenos Aires,M,Santísima Trinidad
 1,Cattaneo,Santiago Germán,Isidro Casanova,Buenos Aires,M,Instituto Incorporado Isidro Casanova
-1,Centonze,Carolina Cynthia,Mar del Plata,Buenos Aires,F,Colegio Nacional "Dr. Arturo Illia"
+1,Centonze,Carolina Cynthia,Mar del Plata,Buenos Aires,F,"Colegio Nacional ""Dr. Arturo Illia"""
 1,Cepeda,Juliana,Rosario,Santa Fe,F,Instituto Politécnico Superior Gral. San Martín
 1,Ciccarelli,Sofía Lucrecia,Almafuerte,Córdoba,F,IPEM Nº 299
 1,Cocca,Lisandro,Rosario,Santa Fe,M,Instituto Politécnico Superior Gral. San Martín
@@ -65,7 +65,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 1,Del Grosso,Nicolás Francisco,Munro,Buenos Aires,M,Escuelas Técnicas Raggio
 1,Del Río,Alexis Joel,Monte Grande,Buenos Aires,M,Senderos Azules
 1,Demichelis,Aimé,La Plata,Buenos Aires,F,Colegio Nacional Rafael Hernández
-1,di Napoli,María Antonella,Mar del Plata,Buenos Aires,F,Colegio Nacional "Dr. Arturo Illia"
+1,di Napoli,María Antonella,Mar del Plata,Buenos Aires,F,"Colegio Nacional ""Dr. Arturo Illia"""
 1,Di Tomaso,Valeria Solange,CABA,Ciudad Autónoma de Buenos Aires,F,Comercial Nº 15 D.E. 15 Dra Cecilia Grierson
 1,Demartino,Francisco,CABA,Ciudad Autónoma de Buenos Aires,M,Instituto Luis A. Huergo
 1,Doll,Sebastián Martín,Monte Grande,Buenos Aires,M,Senderos Azules
@@ -341,7 +341,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Marrazzo,Miranda Lucía,Cipolletti,Río Negro,F,Colegio Bilingüe Neuquén
 2,Massanés Betelu,María del Pilar,San Isidro,Buenos Aires,F,Colegio el Buen Aire
 2,Maurizio,Miguel Sebastián,Morón,Buenos Aires,M,EET Nro 8
-2,Melon Fuksman,Julio David,Mar del Plata,Buenos Aires,M,Colegio Nacional "Dr. Arturo Illia"
+2,Melon Fuksman,Julio David,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
 2,Mendoza,Guadalupe del Rosario,San Miguel de Tucumán,Tucumán,F,Escuela Normal Juan B. Alberdi
 2,Mongi Badía,Martín,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Instituto Industrial Luis A. Huergo
 2,Montero,Joaquín Alejandro,Bahía Blanca,Buenos Aires,M,La Inmaculada
@@ -373,7 +373,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Pistacchio,Franco,Santa Fe,Santa Fe,M,E.I.S.
 2,Porto,Jorge Antonio,Paso del Rey,Buenos Aires,M,Inmaculada Concepción
 2,Prillo,Sebastián,San Isidro,Buenos Aires,M,San Juan
-2,Rabinovich,Ignacio,Mar del Plata,Buenos Aires,M,Colegio Nacional "Dr. Arturo Illia"
+2,Rabinovich,Ignacio,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
 2,Rabsiun Aramburu,Ignacio Esteban,Pilar,Buenos Aires,M,
 2,Racca,Rodrigo Ariel,San Cristóbal,Santa Fe,M,Escuela Normal Superior Nro 40 Mariano Moreno
 2,Ré,Gabriel Horacio,Villa Elisa,Buenos Aires,M,Escuela Privada Ranelagh
@@ -386,7 +386,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Roig,Nicolás Agustín,Bahía Blanca,Buenos Aires,M,Escuela Superior de Comercio UNS
 2,Roldán,Tomás,San Isidro,Buenos Aires,M,Colegio Labardén
 2,Rosas,Tifany Aylen,Abramo,La Pampa,F,Instituto Mariano Moreno P.21
-2,Ruau,Ian Ignacio,Mar del Plata,Buenos Aires,M,Colegio Nacional "Dr. Arturo Illia"
+2,Ruau,Ian Ignacio,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
 2,Rudolf,Agustín,Tres Arroyos,Buenos Aires,M,Instituto Jesús Adolescente
 2,Sadofschi Costa,Iván,Ciudad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Colegio Nacional de Buenos Aires
 2,Saladí,Agustín,Concordia,Entre Ríos,M,EET Nro 1 Brig. Gral Pascual Echagüe
@@ -419,7 +419,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 2,Zabaleta,Federico,M.B. Gonnet,Buenos Aires,M,Colegio San José
 2,Zanón,Víctor Manuel,Escobar,Buenos Aires,M,San Luis
 2,Zigarán,Gonzalo Javier,Córdoba,Córdoba,M,Zorrilla
-3,Ainchil,Paula,Mar del Plata,Buenos Aires,F,Colegio Nacional "Dr. Arturo Illia"
+3,Ainchil,Paula,Mar del Plata,Buenos Aires,F,"Colegio Nacional ""Dr. Arturo Illia"""
 3,Alcoleas,Juan,9 de julio,Buenos Aires,M,E.M.Nro 7. Nueve de Julio
 3,Amerise,Constanza del Rosario,San Salvador de Jujuy,Jujuy,F,"Escuela de Minas ""Dr. Horacio Carrillo"""
 3,Antivero,Eduardo Francisco,Gral. Galarza,Entre Ríos,M,Instituto San Martín
@@ -480,7 +480,7 @@ Nivel,Apellido,Nombres,Localidad,Provincia,Género,Colegio
 3,Laplume,Nicolás,San Carlos de Bariloche,Río Negro,M,Colegio Don Bosco
 3,Litman,Yair Ezequiel,Avellaneda,Buenos Aires,M,Técnica ORT
 3,Maccaroni,Federico Andrés,Rojas,Buenos Aires,M,Técnica Nº 1
-3,Macri,Luis Gabriel,Mar del Plata,Buenos Aires,M,Colegio Nacional "Dr. Arturo Illia"
+3,Macri,Luis Gabriel,Mar del Plata,Buenos Aires,M,"Colegio Nacional ""Dr. Arturo Illia"""
 3,Marino,Alejandro Fabián,Cdad de Buenos Aires,Ciudad Autónoma de Buenos Aires,M,Escuelas Técnicas Raggio
 3,Martinez,Emilio Manuel,C.A. De Buenos Aires,Ciudad Autónoma de Buenos Aires,M,ORT II
 3,Martinez,Ignacio Andrés,Santa Fe,Santa Fe,M,Escuela Industrial Superior

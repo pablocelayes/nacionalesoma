@@ -1,4 +1,3 @@
-Provincia,Año,Cantidad
 Buenos Aires,1998,111
 Buenos Aires,1999,43
 Buenos Aires,2000,144
@@ -16,6 +15,11 @@ Buenos Aires,2011,110
 Buenos Aires,2012,112
 Buenos Aires,2013,99
 Buenos Aires,2014,146
+Buenos Aires,2015,101
+CHUBUT,2014,1
+Capital,2014,1
+Capital Federal,2000,1
+Capital Federal,2001,1
 Catamarca,1998,1
 Catamarca,2000,1
 Chaco,2000,1
@@ -30,6 +34,7 @@ Chaco,2011,5
 Chaco,2012,3
 Chaco,2013,2
 Chaco,2014,2
+Chaco,2015,2
 Chubut,1998,3
 Chubut,2000,1
 Chubut,2003,1
@@ -41,11 +46,12 @@ Chubut,2010,1
 Chubut,2011,4
 Chubut,2012,4
 Chubut,2013,2
-Chubut,2014,4
+Chubut,2014,3
+Chubut,2015,2
 Ciudad Autónoma de Buenos Aires,1998,55
 Ciudad Autónoma de Buenos Aires,1999,13
-Ciudad Autónoma de Buenos Aires,2000,70
-Ciudad Autónoma de Buenos Aires,2001,59
+Ciudad Autónoma de Buenos Aires,2000,69
+Ciudad Autónoma de Buenos Aires,2001,58
 Ciudad Autónoma de Buenos Aires,2002,50
 Ciudad Autónoma de Buenos Aires,2003,70
 Ciudad Autónoma de Buenos Aires,2004,57
@@ -54,11 +60,12 @@ Ciudad Autónoma de Buenos Aires,2006,47
 Ciudad Autónoma de Buenos Aires,2007,43
 Ciudad Autónoma de Buenos Aires,2008,44
 Ciudad Autónoma de Buenos Aires,2009,51
-Ciudad Autónoma de Buenos Aires,2010,46
+Ciudad Autónoma de Buenos Aires,2010,45
 Ciudad Autónoma de Buenos Aires,2011,68
 Ciudad Autónoma de Buenos Aires,2012,61
 Ciudad Autónoma de Buenos Aires,2013,57
-Ciudad Autónoma de Buenos Aires,2014,49
+Ciudad Autónoma de Buenos Aires,2014,48
+Ciudad Autónoma de Buenos Aires,2015,49
 Corrientes,1998,5
 Corrientes,2001,2
 Corrientes,2002,1
@@ -74,8 +81,9 @@ Corrientes,2011,2
 Corrientes,2012,1
 Corrientes,2013,1
 Corrientes,2014,3
-Córdoba,1999,10
+Corrientes,2015,5
 Córdoba,1998,25
+Córdoba,1999,10
 Córdoba,2000,18
 Córdoba,2001,22
 Córdoba,2002,13
@@ -91,8 +99,9 @@ Córdoba,2011,24
 Córdoba,2012,19
 Córdoba,2013,22
 Córdoba,2014,26
-Entre Ríos,1999,1
+Córdoba,2015,17
 Entre Ríos,1998,3
+Entre Ríos,1999,1
 Entre Ríos,2000,6
 Entre Ríos,2001,10
 Entre Ríos,2002,5
@@ -108,6 +117,7 @@ Entre Ríos,2011,16
 Entre Ríos,2012,10
 Entre Ríos,2013,5
 Entre Ríos,2014,10
+Entre Ríos,2015,6
 Formosa,1998,1
 Formosa,1999,1
 Formosa,2000,6
@@ -124,6 +134,7 @@ Formosa,2011,3
 Formosa,2012,1
 Formosa,2013,2
 Formosa,2014,4
+Formosa,2015,1
 Jujuy,1998,1
 Jujuy,2000,3
 Jujuy,2001,3
@@ -154,6 +165,7 @@ La Pampa,2011,3
 La Pampa,2012,2
 La Pampa,2013,2
 La Pampa,2014,4
+La Pampa,2015,2
 La Rioja,2001,1
 La Rioja,2004,2
 La Rioja,2005,2
@@ -179,6 +191,7 @@ Mendoza,2011,7
 Mendoza,2012,6
 Mendoza,2013,8
 Mendoza,2014,8
+Mendoza,2015,4
 Misiones,1998,4
 Misiones,1999,1
 Misiones,2001,2
@@ -195,8 +208,9 @@ Misiones,2011,5
 Misiones,2012,4
 Misiones,2013,3
 Misiones,2014,5
-Neuquén,1999,1
+Misiones,2015,3
 Neuquén,1998,4
+Neuquén,1999,1
 Neuquén,2000,5
 Neuquén,2001,4
 Neuquén,2002,7
@@ -212,6 +226,7 @@ Neuquén,2011,3
 Neuquén,2012,4
 Neuquén,2013,3
 Neuquén,2014,5
+Neuquén,2015,4
 Río Negro,1998,8
 Río Negro,2000,4
 Río Negro,2001,2
@@ -228,6 +243,7 @@ Río Negro,2011,5
 Río Negro,2012,5
 Río Negro,2013,2
 Río Negro,2014,4
+Río Negro,2015,3
 Salta,1998,5
 Salta,1999,2
 Salta,2000,2
@@ -244,6 +260,7 @@ Salta,2010,2
 Salta,2012,3
 Salta,2013,2
 Salta,2014,2
+Salta,2015,4
 San Juan,1998,1
 San Juan,1999,1
 San Juan,2000,2
@@ -258,6 +275,7 @@ San Juan,2008,1
 San Juan,2011,1
 San Juan,2013,2
 San Juan,2014,2
+San Juan,2015,1
 San Luis,1998,3
 San Luis,1999,1
 San Luis,2000,2
@@ -275,6 +293,7 @@ San Luis,2011,1
 San Luis,2012,1
 San Luis,2013,2
 San Luis,2014,2
+San Luis,2015,1
 Santa Cruz,1998,3
 Santa Cruz,2000,3
 Santa Cruz,2001,4
@@ -289,6 +308,7 @@ Santa Cruz,2011,4
 Santa Cruz,2012,2
 Santa Cruz,2013,3
 Santa Cruz,2014,3
+Santa Cruz,2015,2
 Santa Fe,1998,46
 Santa Fe,1999,16
 Santa Fe,2000,40
@@ -305,18 +325,21 @@ Santa Fe,2011,37
 Santa Fe,2012,35
 Santa Fe,2013,38
 Santa Fe,2014,63
-Santa Fe,2005,46
+Santa Fe,2015,43
+Santa Fé,2005,46
 Santiago del Estero,2013,1
 Santiago del Estero,2014,2
-Santiago del Estero,1998,1
-Santiago del Estero,2010,1
-Tierra del Fuego,1998,1
+Santiago del Estero,2015,1
+Sgo Del Estero,1998,1
+Sgo del Estero,2010,1
+Tierra Del Fuego,1998,1
 Tierra del Fuego,2001,1
 Tierra del Fuego,2002,1
 Tierra del Fuego,2003,1
 Tierra del Fuego,2004,1
 Tierra del Fuego,2012,1
 Tucumán,1998,7
+Tucumán,1999,3
 Tucumán,2000,6
 Tucumán,2001,4
 Tucumán,2002,5
@@ -332,4 +355,4 @@ Tucumán,2011,11
 Tucumán,2012,8
 Tucumán,2013,4
 Tucumán,2014,8
-Tucumán,1999,3
+Tucumán,2015,9
