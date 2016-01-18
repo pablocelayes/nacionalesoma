@@ -1,7 +1,8 @@
+Provincia,Año,Cantidad
 Buenos Aires,1998,111
 Buenos Aires,1999,43
-Buenos Aires,2000,144
-Buenos Aires,2001,120
+Buenos Aires,2000,145
+Buenos Aires,2001,121
 Buenos Aires,2002,121
 Buenos Aires,2003,150
 Buenos Aires,2004,165
@@ -14,12 +15,8 @@ Buenos Aires,2010,108
 Buenos Aires,2011,110
 Buenos Aires,2012,112
 Buenos Aires,2013,99
-Buenos Aires,2014,146
+Buenos Aires,2014,148
 Buenos Aires,2015,101
-CHUBUT,2014,1
-Capital,2014,1
-Capital Federal,2000,1
-Capital Federal,2001,1
 Catamarca,1998,1
 Catamarca,2000,1
 Chaco,2000,1
@@ -46,7 +43,7 @@ Chubut,2010,1
 Chubut,2011,4
 Chubut,2012,4
 Chubut,2013,2
-Chubut,2014,3
+Chubut,2014,4
 Chubut,2015,2
 Ciudad Autónoma de Buenos Aires,1998,55
 Ciudad Autónoma de Buenos Aires,1999,13
