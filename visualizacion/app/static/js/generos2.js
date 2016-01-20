@@ -57,7 +57,7 @@ function detect_category(svg_list_cats,cat){
 
    
 function transform_svgs(cats){
-	console.log(cats);
+	//~ console.log(cats);
 	
 	svgs_genero_end['progresiones_nacionales'] = 
 	{

@@ -32,7 +32,7 @@ function get_years(init,end){
     }
 } 
 
-function participacion(years_partic){
+function participacion(data){
     //valores globales						
     var n_paths = 44;
 
@@ -77,7 +77,7 @@ function participacion(years_partic){
     input_node.property("value",1998);
     tooltip_node.attr("class", "tooltip1");
 
-    input_node.on("input", function(){update_svg(+this.value);});
+    input_node.on("input", function(){update_svg(+this.value,data[year-1998],"cantidad");});
 
     //~ input_pob_esc.on("click",function(){
     //~ filtrar_poblacion_esc(year_title.property("year"))
@@ -103,7 +103,48 @@ function participacion(years_partic){
 		"#a1d99b",
 		"#41ab5d",
 		"#005a32"];}
-		
+
+    //~ function filtrar_cantidad(year){
+    //~ input_node.on("input", function(){update_svg(+this.value,null,"cantidad");});
+    //~ f_click_cantidad();
+    //~ update_svg(year,null,"cantidad");
+    //~ } 			
+    //~ 
+    //~ function on_click_radio(subtitle_val,input_form_selected){
+    //~ //Cambiar subtítulo
+    //~ subtitle.text(subtitle_val);
+    //~ //esconder el tooltip(si estuviera activo)
+    //~ tooltip_node.style("display","none");
+    //~ //cambiar colores de la leyenda
+    //~ update_legend(colores(input_form_selected));
+    //~ }
+    //~ 
+    //~ function the_post(year,f){
+    //~ $.post("/update",{year: year},
+    //~ function(data,status)
+    //~ {	
+    //~ ajax_result = data;	//debug-only
+    //~ f();
+    //~ update_svg(year,data,"pob_esc");	
+    //~ });
+    //~ }			
+    //~ 
+    //~ function f_click_pob_esc(){
+    //~ subtitle_val = "Análisis clasificados según población escolar";
+    //~ on_click_radio(subtitle_val,"pob_esc");
+    //~ }
+    //~ 
+    //~ function f_click_cantidad(){
+    //~ subtitle_val = "Análisis clasificados según cantidad.";
+    //~ on_click_radio(subtitle_val,"cantidad");
+    //~ }
+    //~ 
+    //~ function nothing(){};	
+    //~ 
+    //~ function filtrar_poblacion_esc(year,f){
+    //~ input_node.on("input", function(){the_post(+this.value,nothing)});
+    //~ the_post(year,f_click_pob_esc);
+    //~ }
     function update_legend(list){
 	// alert(list);
 	for(i=0;i<5;i++){
@@ -113,34 +154,34 @@ function participacion(years_partic){
 
     function tooltip(year,id,event,data)				
     {
-		//~ d3.select("#"+id).style('stroke-width', 2)
-			//~ .style('stroke', 'steelblue');
-		//~ 
-		//~ var prov_name = path_to_provs[id];
-		//~ 
-		//~ if(prov_name != undefined){
-			//~ prov = prov_name.replace(/\s/g, '_');
-			//~ 
-			//~ tooltip_node.html(""); //para evitar que "crezca" el tooltip
-			//~ var svg_val;
-			//~ var content;
-			//~ 
-			//~ svg_val = "<svg width='600' height='600'>"+ mini_svgs[prov_name].documentElement.innerHTML+"</svg>";
-			//~ 
-			//~ content = "<p><b>Año:</b> "+year+"</p>"+
-			//~ "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
-			//~ "<p><b>Poblabión escolar: </b>"+
-			//~ data[prov_name]['Población']+"</p>"+
-			//~ "<p>"+data[prov_name]['Clasificados']+" clasificados(s)</p>"+
-			//~ "<p>"+data[prov_name]['Aprobados']+" aprobado(s)</p>"+
-			//~ "<p>Progresión respecto a población escolar:</p>"+svg_val;
-	//~ 
-			//~ tooltip_node.html(content);
-			//~ 
-			//~ tooltip_node.style("display","block");
-	}
+	d3.select("#"+id).style('stroke-width', 2)
+	    .style('stroke', 'steelblue');
+	
+	var prov_name = path_to_provs[id];
+	
+	if(prov_name != undefined){
+	    prov = prov_name.replace(/\s/g, '_');
+	    
+	    tooltip_node.html(""); //para evitar que "crezca" el tooltip
+	    var svg_val;
+	    var content;
+	    
+	    svg_val = "<svg width='600' height='600'>"+ mini_svgs[prov_name].documentElement.innerHTML+"</svg>";
+	    
+	    content = "<p><b>Año:</b> "+year+"</p>"+
+		"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
+		"<p><b>Poblabión escolar: </b>"+
+		data[prov_name]['Población']+"</p>"+
+		"<p>"+data[prov_name]['Clasificados']+" clasificados(s)</p>"+
+		"<p>"+data[prov_name]['Aprobados']+" aprobado(s)</p>"+
+		"<p>Progresión respecto a población escolar:</p>"+svg_val;
 
-    function update_svg(año)
+	    tooltip_node.html(content);
+	    
+	    tooltip_node.style("display","block");
+	}}
+
+    function update_svg(año,data)
     {
 	// alert(año);
 	//actualizando label
@@ -148,21 +189,21 @@ function participacion(years_partic){
 	d3.select("#year").property("year", año);
 	tooltip_node.style('display', 'none');
 	
+	//leyendo archivo svg correspondiente al año desde svg_array
 	var paths = mapa_node.selectAll("path");
-	//~ alert(paths);
+	// alert(paths);
 	
 	for(var i = 0; i < n_paths; i++){
 	    
 	    var path = paths[0][i];
 	    if (path_to_provs[path.id] != undefined){
+		// alert(svg_array.length);
 		var fill;
-		var data_json = JSON.parse(years_partic[año-1998]);
 		var prov = path_to_provs[path.id];
 		if(prov != undefined){
 		    // prov = prov.replace(/\s/g, '_');
 		    // alert(prov);
-		    fill = data_json['Color'];
-		    //~ alert("Filling...");
+		    fill = data[año-1998][prov]['Color'];
 		}
 	    }
 
@@ -173,7 +214,7 @@ function participacion(years_partic){
 	    d3.select(path).on('mouseenter',function(event)
 			       {
 				   tooltip(año,this.id,
-					   d3.event,years_partic);
+					   d3.event,input_form_selected,data);
 			       }).on('mouseout',function(event)
 				     {
 					 d3.select("#"+this.id).style('stroke-width', 1)
@@ -191,8 +232,6 @@ function participacion(years_partic){
 		    });
 	}			 
     }
-    
-    update_svg(1998);
 }
 
 get_years(1998,2015);
