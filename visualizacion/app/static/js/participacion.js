@@ -1,15 +1,11 @@
-var mapa_node = d3.select("#mapa");
-mapa_node.style("display","none");
-//cargando el svg inicial
-var svg_file1 = "static/img/Blank_Argentina_Map.svg";
+function initialize_values(){
 
-d3.xml(svg_file1,"image/svg+xml", function(xml){
-    document.getElementById("mapa").appendChild(xml.documentElement);		  
+	//cargando el svg inicial
+	var svg_file1 = "static/img/Blank_Argentina_Map.svg";
+	d3.xml(svg_file1,"image/svg+xml", function(xml){
+	document.getElementById("mapa").appendChild(xml.documentElement);		  
 });
-
-
-//cargando data provincias 
-//1) para mapas por años
+}
 
 years_partic = [];
 
@@ -33,7 +29,9 @@ function get_years(init,end){
 } 
 
 function participacion(years_partic){
-    //valores globales						
+ 	initialize_values();
+    //valores globales
+
     var n_paths = 44;
 
     var path_to_provs = 
@@ -68,8 +66,6 @@ function participacion(years_partic){
     var tooltip_node = d3.select("#tooltip");
     var input_node = d3.select("input"); 
     var form = d3.select("#sender");
-    //~ var input_cantidad = d3.select("#cant");
-    //~ var input_pob_esc = d3.select("#pob_esc");
     var legend_node = d3.select(".list-inline");
     var subtitle = d3.select("#subtitle");
 
@@ -78,14 +74,6 @@ function participacion(years_partic){
     tooltip_node.attr("class", "tooltip1");
 
     input_node.on("input", function(){update_svg(+this.value);});
-
-    //~ input_pob_esc.on("click",function(){
-    //~ filtrar_poblacion_esc(year_title.property("year"))
-    //~ });
-    //~ 
-    //~ input_cantidad.on("click",function(){
-    //~ filtrar_cantidad(year_title.property("year"))
-    //~ });
 
     //funciones
     function colores(filtro){			//para la leyenda
@@ -113,41 +101,44 @@ function participacion(years_partic){
 
     function tooltip(year,id,event,data)				
     {
-		//~ d3.select("#"+id).style('stroke-width', 2)
-			//~ .style('stroke', 'steelblue');
-		//~ 
-		//~ var prov_name = path_to_provs[id];
-		//~ 
-		//~ if(prov_name != undefined){
-			//~ prov = prov_name.replace(/\s/g, '_');
-			//~ 
-			//~ tooltip_node.html(""); //para evitar que "crezca" el tooltip
-			//~ var svg_val;
-			//~ var content;
-			//~ 
-			//~ svg_val = "<svg width='600' height='600'>"+ mini_svgs[prov_name].documentElement.innerHTML+"</svg>";
-			//~ 
-			//~ content = "<p><b>Año:</b> "+year+"</p>"+
-			//~ "<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
-			//~ "<p><b>Poblabión escolar: </b>"+
-			//~ data[prov_name]['Población']+"</p>"+
-			//~ "<p>"+data[prov_name]['Clasificados']+" clasificados(s)</p>"+
-			//~ "<p>"+data[prov_name]['Aprobados']+" aprobado(s)</p>"+
-			//~ "<p>Progresión respecto a población escolar:</p>"+svg_val;
-	//~ 
-			//~ tooltip_node.html(content);
-			//~ 
-			//~ tooltip_node.style("display","block");
-	}
+		d3.select("#"+id).style('stroke-width', 2)
+			.style('stroke', 'steelblue');
+		
+		var prov_name = path_to_provs[id];
+		
+		if(prov_name != undefined){
+			prov = prov_name.replace(/\s/g, '_');
+			
+			tooltip_node.html(""); //para evitar que "crezca" el tooltip
+			var svg_val;
+			var content;
+			
+			svg_val = "<svg width='600' height='600'>"+ mini_svgs[prov_name].documentElement.innerHTML+"</svg>";
+			
+			content = "<p><b>Año:</b> "+year+"</p>"+
+			"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
+			"<p><b>Poblabión escolar: </b>"+
+			data[prov_name]['Población']+"</p>"+
+			"<p>"+data[prov_name]['Clasificados']+" clasificados(s)</p>"+
+			"<p>"+data[prov_name]['Aprobados']+" aprobado(s)</p>"+
+			"<p>Progresión respecto a población escolar:</p>"+svg_val;
+	
+			tooltip_node.html(content);
+			
+			tooltip_node.style("display","block");
+	}}
 
     function update_svg(año)
     {
 	// alert(año);
 	//actualizando label
+	//cargando data provincias 
+	//1) para mapas por años
+	var mapa_node = d3.select("#mapa");
+	mapa_node.style("display","none");
 	d3.select("#year-title").text(" "+año);
 	d3.select("#year").property("year", año);
 	tooltip_node.style('display', 'none');
-	
 	var paths = mapa_node.selectAll("path");
 	//~ alert(paths);
 	
@@ -156,13 +147,15 @@ function participacion(years_partic){
 	    var path = paths[0][i];
 	    if (path_to_provs[path.id] != undefined){
 		var fill;
-		var data_json = JSON.parse(years_partic[año-1998]);
+		//~ alert("pro"prov);
+		//~ alert(years_partic[año-1998]);
 		var prov = path_to_provs[path.id];
+		var data_json = JSON.parse(years_partic[año-1998])[prov];
 		if(prov != undefined){
 		    // prov = prov.replace(/\s/g, '_');
 		    // alert(prov);
 		    fill = data_json['Color'];
-		    //~ alert("Filling...");
+		    //~ alert("Filling..."+data_json);
 		}
 	    }
 
@@ -189,10 +182,11 @@ function participacion(years_partic){
 			    // window.open(completos_svgs[provincia]);
 			}
 		    });
-	}			 
+	}
+	mapa_node.style("display","block");			 
     }
     
-    update_svg(1998);
+    //~ update_svg(1998);
 }
 
 get_years(1998,2015);
