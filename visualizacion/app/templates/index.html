@@ -17,7 +17,7 @@
 	<![endif]-->
   </head>
   <body onload="load_all_vis()">
-  <!-- <body> -->
+    <!-- <body> -->
     <div class="container1">
       <header class="clearfix">
 	<span class="the_mini_title">{{ user.nickname }} <span class="bp-icon bp-icon-about" data-content="El presente estudio se basa en la información publicada en la web sobre clasificad@s, aprobad@s y premiad@s de los certámenes nacionales de la Olimpíada Matemática Argentina."></span></span>
@@ -33,43 +33,43 @@
 	    <li><a href="#section-1" class="icon-shop"><span>Participación</span></a></li>
 	    <li><a href="#section-2" class="icon-cup"><span>Género</span></a></li>
  	    <li><a href="#section-3" class="icon-food"><span>Índice Gini</span></a></li>
-<!--
-	    <li><a href="#section-4" class="icon-lab"><span>Población Escolar</span></a></li> 
--->
+	    <!--
+		<li><a href="#section-4" class="icon-lab"><span>Población Escolar</span></a></li> 
+		-->
 	    <li><a href="#section-5" class="icon-truck"><span>Objetivo</span></a></li>
 	  </ul>
 	</nav>
 	<div class="content">
 	  <section id="section-1">
-		{{ a1 }}
+	    {{ a1 }}
 	  </section>
 	  <section id="section-2">
-		{{ a2 }}
+	    {{ a2 }}
 	  </section>
  	  <section id="section-3">
-		{{ a3 }}
+	    {{ a3 }}
 	  </section>
-<!--
-	  <section id="section-4">
+	  <!--
+	      <section id="section-4">
 		{{ a4 }}
-	  </section> 
--->
+	      </section> 
+	      -->
 	  <section id="section-5">
-		{{ a5 }}
+	    {{ a5 }}
 	  </section>
-	  </div><!-- /content -->
-	</div><!-- /tabs -->
-	<p class="info"><a href="https://github.com/pablocelayes/nacionalesoma/">Te esperamos también en GitHub!</a></p>
-      </div>
-      <script src="static/js/d3.v3.min.js"></script>
-	  <script type="text/javascript" src="static/js/jquery.min.js"></script>
-      <script src="static/js/participacion.js"></script>
-      <script src="static/js/generos2.js"></script>
-      <script src="static/js/generos.js"></script>
-      <script src="static/js/patch_cbpFWTabs.js"></script>
-	  <script src="static/js/cbpFWTabs.js"></script>
-      <script>
-	new CBPFWTabs( document.getElementById( 'tabs' ) );
-	  </script>
+	</div><!-- /content -->
+      </div><!-- /tabs -->
+      <p class="info"><a href="https://github.com/pablocelayes/nacionalesoma/">Te esperamos también en GitHub!</a></p>
+    </div>
+    <script src="static/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script src="static/js/participacion.js"></script>
+    <script src="static/js/generos2.js"></script>
+    <script src="static/js/generos.js"></script>
+    <script src="static/js/patch_cbpFWTabs.js"></script>
+    <script src="static/js/cbpFWTabs.js"></script>
+    <script>
+      new CBPFWTabs( document.getElementById( 'tabs' ) );
+    </script>
   </body>
 </html>

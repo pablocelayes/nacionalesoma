@@ -46,9 +46,5 @@ function update_tabs(j){
 }							 
 
 function load_all_vis(){
-	//~ mapa_node.style("display","block");	
-	//~ add_years("Clasificados");
-	//~ cat_list_gen.property("value","Clasificados");
-	//~ begin_participacion();
-	// f.filtrar_poblacion_esc(1998,f_click_pob_esc);
+    get_years(1998,2015);
 }
