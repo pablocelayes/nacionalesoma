@@ -108,6 +108,15 @@ function participacion(years_partic,paths){
 	}
     }
 
+    function get_province_prog(prov,data){
+	// alert("in get_province_prog");
+	var res = [];
+	for(var i=0;i<data.length;i++){
+	    res.push(JSON.parse(data[i])[prov]);
+	}
+	return res;
+    }
+
     function tooltip(year,id,event,data)				
     {
 	d3.select("#"+id).style('stroke-width', 2)
@@ -121,6 +130,8 @@ function participacion(years_partic,paths){
 	    tooltip_node.html(""); //para evitar que "crezca" el tooltip
 	    var svg_val;
 	    var content;
+	    var prog_prov = get_province_prog(prov_name,data);
+	    console.log(prog_prov);
 	    
 	    //~ svg_val = "<svg width='600' height='600'>"+ mini_svgs[prov_name].documentElement.innerHTML+"</svg>";
 	    
