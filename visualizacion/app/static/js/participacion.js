@@ -118,32 +118,47 @@ function participacion(years_partic,paths){
     }
 
     function paint_svg(tooltip_node,prog_prov){
-	var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-		11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
-	
+		
 	var w = 500;
-	var h = 100;
-	var barPadding = 1;
+	var h = 200;
+	var barPadding = 5;
+	var width = 500,
+		margin = 25,
+		offset = 50,
+		axisWidth = width - 2 * margin;
+	
+	var padding = 20;
+		
+	var scale = d3.scale.linear();
+	
+	scale.domain([0,d3.max(prog_prov['data'],
+						   function(d){
+							   return d['Índice']; 
+						   })]);
+	scale.range([0,h]);
+	
+	scale.clamp();
 	
 	var svg = tooltip_node.append("svg")
 	    .attr("width", w)
 	    .attr("height", h);
 
 	svg.selectAll("rect")
+		.attr("transform", "translate(20,20)")
 	    .data(prog_prov['data'])
 	    .enter()
 	    .append("rect")
 	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length); //Bar width of 20 plus 1 for padding
+		return i * (w / prog_prov['data'].length); 
 	    })
 	    .attr("y", function(d) {
-		return h - d['Índice']*100000;
+		return h - scale(d['Índice']);
 	    })
 	    .attr("width", w / prog_prov['data'].length - barPadding)
 	    .attr("height", function(d) {
-		return d['Índice']*100000 ; //Just the data value
+		return scale(d['Índice']) ; 
 	    })
-	    .attr("fill","#410e0e");	
+	    .attr("fill","#410e0e");
 	
     }
 
