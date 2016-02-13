@@ -166,8 +166,8 @@ def get_province_particip(prov):
 		clasificados_partic = (row_prov['Clasificados']/row_prov['Población'])*100
 		aprobados_partic = (row_prov['Aprobados']/row_prov['Población'])*100
 		res = res.append({'Año':i,
-						  'Índice_Clasificados':clasificados_partic,
-						  'Índice_Aprobados':aprobados_partic},ignore_index=True)
+                                  'Índice_Clasificados':clasificados_partic,
+                                  'Índice_Aprobados':aprobados_partic},ignore_index=True)
 	return res
 
 # print(type(get_province_partic("Chubut")))	

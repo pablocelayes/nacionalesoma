@@ -144,10 +144,11 @@ function participacion(years_partic,paths){
 	    .attr("height", h);
 
 	svg.selectAll("rect")
-		.attr("transform", "translate(20,20)")
+	    .attr("transform", "translate(20,20)")
 	    .data(prog_prov['data'])
 	    .enter()
 	    .append("rect")
+	    .attr("fill-opacity", 0.5)
 	    .attr("x", function(d, i) {
 		return i * (w / prog_prov['data'].length); 
 	    })
@@ -159,6 +160,23 @@ function participacion(years_partic,paths){
 		return scale(d['Índice']) ; 
 	    })
 	    .attr("fill","#410e0e");
+
+	svg.append("g").selectAll("rect")
+	    .attr("transform", "translate(20,20)")
+	    .data(prog_prov['data'])
+	    .enter()
+	    .append("rect")
+	    .attr("x", function(d, i) {
+		return i * (w / prog_prov['data'].length); 
+	    })
+	    .attr("y", function(d) {
+		return h - scale(d['Aprobados']/d['Población']);
+	    })
+	    .attr("width", w / prog_prov['data'].length - barPadding)
+	    .attr("height", function(d) {
+		return scale(d['Aprobados']/d['Población']) ; 
+	    })
+	    .attr("fill","#brown");
 	
     }
 
