@@ -8,13 +8,21 @@ import xlrd
 from pprint import pprint
 import matplotlib.pyplot as plt
 import re
+import os
+
+# import ipdb;ipdb.set_trace()
+
+def norm_file_route(route):
+        return os.path.join(os.pardir,route) 
 
 caba = re.compile(r'Capital Federal|^.+Buenos Aires$')
-file_cat_counts = '../data/%s/provcounts.csv'
 
-df_tmp = read_csv(file_cat_counts % "aprobados")
+file_cat_counts = 'data/%s/provcounts.csv'
+
+df_tmp = read_csv(norm_file_route(file_cat_counts % "aprobados"))
 provincias = list(set(df_tmp['Provincia']))
-
+   
+    
 def is_CABA(string):
 	return caba.search(string)
 
@@ -35,12 +43,12 @@ def poblacion_escolar(year):
 	
 def get_pob_esc1(year):
 	
-	file1 = '../data/selected_pob_escolar/%s/EGB3.xls'
-	file2 = '../data/selected_pob_escolar/%s/POLIMODAL.xls'
+	file1 = 'data/selected_pob_escolar/%s/EGB3.xls'
+	file2 = 'data/selected_pob_escolar/%s/POLIMODAL.xls'
 	
 	
-	book1 = xlrd.open_workbook(file1 % year)
-	book2 = xlrd.open_workbook(file2 % year)
+	book1 = xlrd.open_workbook(norm_file_route(file1 % year))
+	book2 = xlrd.open_workbook(norm_file_route(file2 % year))
 	
 	sheet_book1 = book1.sheets()[0]
 	sheet_book2 = book2.sheets()[0]
@@ -53,16 +61,16 @@ def get_pob_esc1(year):
 					
 	
 	df_pob_esc = DataFrame({'Provincia':book1_provs,
-							'Población':np.array(book1_counts)+np.array(book2_counts),
-						   })
+                                'Población':np.array(book1_counts)+np.array(book2_counts),
+                               })
 	
 	return df_pob_esc
 
 def get_pob_esc2(year):					
 	
-	file = '../data/selected_pob_escolar/%s/COMUN.xls'
+	file = 'data/selected_pob_escolar/%s/COMUN.xls'
 	
-	book = xlrd.open_workbook(file % year)
+	book = xlrd.open_workbook(norm_file_route(file % year))
 	sheet_book = book.sheets()[0]
 	
 	book_provs = list(map(check,sheet_book.col_values(0)[11:35]))
@@ -72,12 +80,12 @@ def get_pob_esc2(year):
 	
 	
 	df_pob_esc = DataFrame({'Provincia':book_provs,
-							'Población':np.array(book_counts_1)+np.array(book_counts_2)})
+                                'Población':np.array(book_counts_1)+np.array(book_counts_2)})
 	
 	return df_pob_esc
 
 def get_cat(cat,year):
-	df_cat = read_csv(file_cat_counts % cat)
+	df_cat = read_csv(norm_file_route(file_cat_counts % cat))
 	
 	df_cat = df_cat[df_cat['Año'] == year]
 	
@@ -145,7 +153,7 @@ def df_to_response(df,colores):
 	return res
 
 def get_province_data(prov,cat):
-	cat_rows = read_csv(file_cat_counts % cat)
+	cat_rows = read_csv(norm_route(file_cat_counts % cat))
 	res = cat_rows[cat_rows['Provincia'] == prov]
 	return res
 
@@ -164,4 +172,4 @@ def get_province_particip(prov):
 
 # print(type(get_province_partic("Chubut")))	
 # print(get_province_particip("Mendoza"))	
-get_province_particip("Mendoza")
+# get_province_particip("Mendoza")
