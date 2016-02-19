@@ -9,6 +9,8 @@ mapa_node.style("display","none");
 
 function initialize_values(years_partic){
 
+    var svg_map = d3.select('#svg2');
+    svg_map.attr("transform","scale(0.75)");
     var paths = mapa_node.selectAll("path");
     // alert("in initialize_values: "+paths);
     participacion(years_partic,paths);
@@ -118,23 +120,23 @@ function participacion(years_partic,paths){
     }
 
     function paint_svg(tooltip_node,prog_prov){
-		
+	
 	var w = 500;
 	var h = 200;
 	var barPadding = 5;
 	var width = 500,
-		margin = 25,
-		offset = 50,
-		axisWidth = width - 2 * margin;
+	margin = 25,
+	offset = 50,
+	axisWidth = width - 2 * margin;
 	
 	var padding = 20;
-		
+	
 	var scale = d3.scale.linear();
 	
 	scale.domain([0,d3.max(prog_prov['data'],
-						   function(d){
-							   return d['Índice']; 
-						   })]);
+			       function(d){
+				   return d['Índice']; 
+			       })]);
 	scale.range([0,h]);
 	
 	scale.clamp();
@@ -143,7 +145,28 @@ function participacion(years_partic,paths){
 	    .attr("width", w)
 	    .attr("height", h);
 
-	svg.selectAll("rect")
+	svg.append("g").attr("transform","translate(10,10) scale(0.8)")
+	    .append("line")
+	    .attr({
+		x1: 0,
+		y1: 0,
+		x2: 0,
+		y2: h,
+		stroke: "#CCC"
+	    });
+
+	svg.append("g").attr("transform","translate(10,10) scale(0.8)")
+	    .append("line")
+	    .attr({
+		x1: 0,
+		y1: h,
+		x2: w,
+		y2: h,
+		stroke: "#CCC"
+	    });
+
+	svg.append("g").attr("transform","translate(20,20) scale(0.7)")
+	    .selectAll("rect")
 	    .attr("transform", "translate(20,20)")
 	    .data(prog_prov['data'])
 	    .enter()
@@ -157,11 +180,12 @@ function participacion(years_partic,paths){
 	    })
 	    .attr("width", w / prog_prov['data'].length - barPadding)
 	    .attr("height", function(d) {
-		return scale(d['Índice']) ; 
+		return scale(d['Índice'])
 	    })
 	    .attr("fill","#410e0e");
 
-	svg.append("g").selectAll("rect")
+	svg.append("g").attr("transform","translate(20,20) scale(0.7)")
+	    .selectAll("rect")
 	    .attr("transform", "translate(20,20)")
 	    .data(prog_prov['data'])
 	    .enter()
@@ -174,7 +198,7 @@ function participacion(years_partic,paths){
 	    })
 	    .attr("width", w / prog_prov['data'].length - barPadding)
 	    .attr("height", function(d) {
-		return scale(d['Aprobados']/d['Población']) ; 
+		return scale(d['Aprobados']/d['Población'])
 	    })
 	    .attr("fill","#brown");
 	
