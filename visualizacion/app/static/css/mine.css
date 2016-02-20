@@ -120,6 +120,21 @@ input{
       border: 1px solid #CCC;
       } 
 
+
+.min-square-clasif{
+    border: 1px solid #CCC;
+    background:#e0b6b6;
+    width:20px;
+    height:20px;
+}
+
+.min-square-aprob{
+    border: 1px solid #CCC;
+    background:#b79191;
+    width:20px;
+    height:20px;
+}
+
 .prog-prov{
             background: none repeat scroll 0% 0% rgb(255, 255, 255);
             color: #333;
