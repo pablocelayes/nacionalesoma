@@ -135,6 +135,7 @@ function participacion(years_partic,paths){
 	var scale = d3.scale.linear();
 
 	var svg = tooltip_node.append("svg")
+	    .attr("id","svg_tooltip")
 	    .attr("width", w_init)
 	    .attr("height", h_init);	
 
@@ -224,7 +225,6 @@ function participacion(years_partic,paths){
 	    var svg_val;
 	    var content;
 	    var prog_prov = get_province_prog(prov_name,data);
-	    console.log(prog_prov);
 	    content = "<p><b>Año:</b> "+year+"</p>"+
 	    	"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
 	    	"<p><b>Poblabión escolar: </b>"+
@@ -286,8 +286,10 @@ function participacion(years_partic,paths){
 			var provincia = path_to_provs[this.id];	
 			if(provincia != undefined){
 			    var provincia_clean = provincia.replace(/\s/g, '_');
-			    window.open("./static/img/plots/poblacion_escolar/"+provincia_clean+"-completo.svg");
-			    // window.open(completos_svgs[provincia]);
+			    var svg_node = d3.select("#svg_tooltip")[0][0];
+			    console.log(svg_node);
+			    var w = window.open();
+			    w.document.body.appendChild(svg_node)
 			}
 		    });
 	}
