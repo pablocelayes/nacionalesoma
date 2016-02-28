@@ -24,12 +24,10 @@ GEN_ANUAL = "data/%s/csvs/%s_por_género.csv"
 GEN_PROV_ANUAL = "data/%s/csvs/%s_por_provincia_y_género.csv"
 
 def get_gen_anual(cat):
-        import ipdb;ipdb.set_trace()
         df = read_csv(norm_file_route(GEN_ANUAL % (cat,cat)))
         return df
 
 def get_gen_prov_anual(cat):
-        import ipdb;ipdb.set_trace()
         df = read_csv(norm_file_route(GEN_PROV_ANUAL % (cat,cat)))
         return df
 
@@ -124,13 +122,16 @@ def combine_cat_with_pob_esc(cat,year):
         
 def all_years():
         res = {'pob_esc':{},
-               'genero':{'aprobados':{},
-                         'clasificados':{},
-                         'premiados':{}}}
-        import ipdb;ipdb.set_trace()
+               'genero':{'Aprobados':{},
+                         'Clasificados':{},
+                         'Premiados':{}}}
+        # import ipdb;ipdb.set_trace()
         df_gen_clasif = get_gen_anual("clasificados")
         df_gen_aprob = get_gen_anual("aprobados")
         df_gen_prem = get_gen_anual("premiados")
+        df_gen_prov_clasif = get_gen_prov_anual("clasificados")
+        df_gen_prov_aprob = get_gen_prov_anual("aprobados")
+        df_gen_prov_prem = get_gen_prov_anual("premiados")
         for year in range(1998,2015):
                 # población escolar
                 df_clasif = combine_cat_with_pob_esc("clasificados",year)
@@ -138,14 +139,13 @@ def all_years():
                 df_tmp = merge(df_clasif,df_aprob,on=['Provincia','Población'],how='outer')
                 res['pob_esc'][year] = df_tmp
                 # géneros
-                gen_clasif = df_gen_clasif[df_gen_clasif['Año'] == year]
-                gen_aprob = df_gen_aprob[df_gen_aprob['Año'] == year]
-                gen_prem = df_gen_prem[df_gen_prem['Año'] == year]
-                res['genero']['aprobados'][year] = gen_aprob
-                res['genero']['clasificados'][year] = gen_clasif
-                res['genero']['premiados'][year] = gen_prem
-
-
+                gen_clasif = df_gen_prov_clasif[df_gen_prov_clasif['Año'] == year]
+                gen_aprob = df_gen_prov_aprob[df_gen_prov_aprob['Año'] == year]
+                gen_prem = df_gen_prov_prem[df_gen_prov_prem['Año'] == year]
+                # import ipdb;ipdb.set_trace()
+                res['genero']['Aprobados'][year] = gen_aprob
+                res['genero']['Clasificados'][year] = gen_clasif
+                res['genero']['Premiados'][year] = gen_prem
         return res
 
 def save_div(m,n):
@@ -154,8 +154,14 @@ def save_div(m,n):
         return 0
         
 def df_to_response(df,colores):
-        tmp = df.to_dict()
-        cantidades = df['Clasificados']/df['Población']
+        tmp = df['pob_esc'].to_dict()
+        tmp_gen = df['genero']
+
+        gen_clasif = tmp_gen['Clasificados']
+        gen_aprob = tmp_gen['Aprobados']
+        gen_prem = tmp_gen['Premiados']
+
+        cantidades = df['pob_esc']['Clasificados']/df['pob_esc']['Población']
         cantidades = list(map(lambda c: c if c != inf else 0.0,
                                                 [math.log(c + 1) for c in cantidades]))
         max_value = max(cantidades)
@@ -167,6 +173,9 @@ def df_to_response(df,colores):
                 
         res = {'pob_esc':{},
                'genero':{}}
+        
+        
+        # rellenando datos para población escolar
         for i in range(24):
                 m = tmp['Clasificados'][i]
                 n = tmp['Población'][i]
@@ -177,6 +186,17 @@ def df_to_response(df,colores):
                                                     'Aprobados':o,
                                                     'Índice':index,
                                                     'Color':color(index)}
+
+        # rellenando datos para generos
+        res['genero']['Aprobados'] = [{prov:{'F':f,'M':m}}
+                                      for prov,year,f,m in gen_aprob.values.tolist()] 
+
+        res['genero']['Clasificados'] = [{prov:{'F':f,'M':m}}
+                                      for prov,year,f,m in gen_clasif.values.tolist()] 
+        
+        res['genero']['Premiados'] = [{prov:{'F':f,'M':m}}
+                                      for prov,year,f,m in gen_prem.values.tolist()] 
+                                                        
         #agregar después los datos por niveles
         return res
 
