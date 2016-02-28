@@ -9,6 +9,7 @@ mapa_node.style("display","none");
 
 function initialize_values(years_partic){
 
+    console.log(years_partic);
     var svg_map = d3.select('#svg2');
     svg_map.attr("transform","scale(0.75)");
     var paths = mapa_node.selectAll("path");
@@ -111,10 +112,9 @@ function participacion(years_partic,paths){
     }
 
     function get_province_prog(prov,data){
-	// alert("in get_province_prog");
 	var res = {'prog':prov,'data':[]};
 	for(var i=0;i<data.length;i++){
-	    res['data'].push(JSON.parse(data[i])[prov]);
+	    res['data'].push(JSON.parse(data[i])['pob_esc'][prov]);
 	}
 	return res;
     }
@@ -217,7 +217,7 @@ function participacion(years_partic,paths){
 	    .style('stroke', 'steelblue');
 	
 	var prov_name = path_to_provs[id];
-	var data_json = JSON.parse(data[year-1998])
+	var data_json = JSON.parse(data[year-1998])['pob_esc']
 	if(prov_name != undefined){
 	    prov = prov_name.replace(/\s/g, '_');
 	    
@@ -258,7 +258,9 @@ function participacion(years_partic,paths){
 		//~ alert("pro"prov);
 		//~ alert(years_partic[año-1998]);
 		var prov = path_to_provs[path.id];
-		var data_json = JSON.parse(years_partic[año-1998])[prov];
+		// console.log(years_partic);
+		var data_json = JSON.parse(years_partic[año-1998])['pob_esc'][prov];
+		// console.log(data_json);
 		if(prov != undefined){
 		    // prov = prov.replace(/\s/g, '_');
 		    // alert(prov);

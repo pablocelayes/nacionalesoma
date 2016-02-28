@@ -33,7 +33,7 @@ def update():
 	colores = ["#ffe9e9","#e0b6b6","#db9696",
 				"#7e4747","#410e0e"]
 	year = int(request.form['year'])
-	df = data[year]
+	df = data['pob_esc'][year]
 	# print(df)
 	val = df_to_response(df,colores)
 	# pprint(val)
