@@ -16,7 +16,6 @@ function initialize_values(years_partic){
     participacion(years_partic,paths);
 }
 
-
 years_partic = [];
 
 function get_year(year,last){
@@ -286,10 +285,15 @@ function participacion(years_partic,paths){
 			var provincia = path_to_provs[this.id];	
 			if(provincia != undefined){
 			    var provincia_clean = provincia.replace(/\s/g, '_');
-			    var svg_node = d3.select("#svg_tooltip")[0][0];
-			    console.log(svg_node);
-			    var w = window.open();
-			    w.document.body.appendChild(svg_node)
+			    var svg_node = d3.select("#svg_tooltip");
+			    // var svg_res = svg_node[0][0];
+			    // console.log(svg_res);
+			    var w = d3.select(window.open().document.body);
+			    console.log(w);
+			    w.append('svg')
+				.attr("width", 400)
+				.attr("height", 400)
+				.html(svg_node.html());
 			}
 		    });
 	}
