@@ -1,7 +1,7 @@
 //cargando el svg inicial
 var svg_file1 = "static/img/Blank_Argentina_Map.svg";
 d3.xml(svg_file1,"image/svg+xml", function(xml){
-    document.getElementById("mapa").appendChild(xml.documentElement);		  
+    document.getElementById("mapa").appendChild(xml.documentElement);
 });
 
 var mapa_node = d3.select("#mapa");
@@ -9,12 +9,13 @@ mapa_node.style("display","none");
 
 function initialize_values(years_partic){
 
-    console.log(years_partic);
+    // console.log(years_partic);
     var svg_map = d3.select('#svg2');
     svg_map.attr("transform","scale(0.75)");
     var paths = mapa_node.selectAll("path");
     // alert("in initialize_values: "+paths);
     participacion(years_partic,paths);
+    init_generos(years_partic);
 }
 
 
@@ -38,13 +39,13 @@ function get_years(init,end){
     for(var i=init;i<end;i++){
 	get_year(i,end-1);
     }
-} 
+}
 
 function participacion(years_partic,paths){
     //initialize_values();
     var n_paths = 44;
 
-    var path_to_provs = 
+    var path_to_provs =
 	{
 	    path2413:"Buenos Aires",
 	    path3180:"Catamarca",
@@ -74,7 +75,7 @@ function participacion(years_partic,paths){
 
     var year_title = d3.select("#year");
     var tooltip_node = d3.select("#tooltip");
-    var input_node = d3.select("input"); 
+    var input_node = d3.select("input");
     var form = d3.select("#sender");
     var legend_node = d3.select(".list-inline");
     var subtitle = d3.select("#subtitle");
@@ -103,7 +104,7 @@ function participacion(years_partic,paths){
 		"#a1d99b",
 		"#41ab5d",
 		"#005a32"];}
-    
+
     function update_legend(list){
 	// alert(list);
 	for(i=0;i<5;i++){
@@ -120,7 +121,7 @@ function participacion(years_partic,paths){
     }
 
     function paint_svg(tooltip_node,prog_prov){
-	
+
 	var w_init = 500;
 	var h_init = 200;
 	var barPadding = 5;
@@ -128,27 +129,27 @@ function participacion(years_partic,paths){
 	margin = 25,
 	offset = 50,
 	axisWidth = width - 2 * margin;
-	
+
 	var padding = 20;
 	var shrink_factor = 100;
-	
+
 	var scale = d3.scale.linear();
 
 	var svg = tooltip_node.append("svg")
 	    .attr("id","svg_tooltip")
 	    .attr("width", w_init)
-	    .attr("height", h_init);	
+	    .attr("height", h_init);
 
 	scale.domain([0,d3.max(prog_prov['data'],
 			       function(d){
-				   return d['Índice']; 
+				   return d['Índice'];
 			       })]);
-	
+
 	h = h_init - shrink_factor;
 	w = w_init - shrink_factor;
 
 	scale.range([0,h]);
-	
+
 	scale.clamp();
 
 	svg.append("g").attr("transform","translate(30,30)")
@@ -158,7 +159,7 @@ function participacion(years_partic,paths){
 	    .enter()
 	    .append("rect")
 	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length); 
+		return i * (w / prog_prov['data'].length);
 	    })
 	    .attr("y", function(d) {
 		return h - scale(d['Aprobados']/d['Población']);
@@ -177,7 +178,7 @@ function participacion(years_partic,paths){
 	    .append("rect")
 	    .attr("fill-opacity", 0.5)
 	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length); 
+		return i * (w / prog_prov['data'].length);
 	    })
 	    .attr("y", function(d) {
 		return h - scale(d['Índice']);
@@ -208,25 +209,25 @@ function participacion(years_partic,paths){
 		stroke: "#CCC"
 	    });
 
-	
+
     }
 
-    function tooltip(year,id,event,data)				
+    function tooltip(year,id,event,data)
     {
 	d3.select("#"+id).style('stroke-width', 2)
 	    .style('stroke', 'steelblue');
-	
+
 	var prov_name = path_to_provs[id];
 	var data_json = JSON.parse(data[year-1998])['pob_esc']
 	if(prov_name != undefined){
 	    prov = prov_name.replace(/\s/g, '_');
-	    
+
 	    tooltip_node.html(""); //para evitar que "crezca" el tooltip
 	    var svg_val;
 	    var content;
 	    var prog_prov = get_province_prog(prov_name,data);
 	    content = "<p><b>Año:</b> "+year+"</p>"+
-	    	"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+ 
+	    	"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+
 	    	"<p><b>Poblabión escolar: </b>"+
 	    	data_json[prov_name]['Población']+"</p>"+
 	    	"<p>"+data_json[prov_name]['Clasificados']+" clasificados(s) <div class='min-square-clasif'></div></p>"+
@@ -235,44 +236,32 @@ function participacion(years_partic,paths){
 
 	    tooltip_node.html(content);
 
-	    paint_svg(tooltip_node,prog_prov)	    
+	    paint_svg(tooltip_node,prog_prov)
 	    tooltip_node.style("display","block");
 	}}
 
     function update_svg(año)
     {
-	// alert(año);
-	//actualizando label
-	//cargando data provincias 
-	//1) para mapas por años
 	d3.select("#year-title").text(" "+año);
 	d3.select("#year").property("year", año);
 	tooltip_node.style('display', 'none');
-	// alert("parts in update_svg = "+paths);
-	
+	var data_prov = JSON.parse(years_partic[año-1998]);
+
 	for(var i = 0; i < n_paths; i++){
-	    
+
 	    var path = paths[0][i];
 	    if (path_to_provs[path.id] != undefined){
 		var fill;
-		//~ alert("pro"prov);
-		//~ alert(years_partic[año-1998]);
 		var prov = path_to_provs[path.id];
-		// console.log(years_partic);
-		var data_json = JSON.parse(years_partic[año-1998])['pob_esc'][prov];
-		// console.log(data_json);
+		var data_json = data_prov['pob_esc'][prov];
 		if(prov != undefined){
-		    // prov = prov.replace(/\s/g, '_');
-		    // alert(prov);
 		    fill = data_json['Color'];
-		    //~ alert("Filling..."+data_json);
 		}
-	    }
+
 
 	    d3.select(path)
 		.transition()
 		.style('fill',fill);
-	    // alert(provincia);
 	    d3.select(path).on('mouseenter',function(event)
 			       {
 				   tooltip(año,this.id,
@@ -281,11 +270,11 @@ function participacion(years_partic,paths){
 				     {
 					 d3.select("#"+this.id).style('stroke-width', 1)
 					     .style('stroke', 'white')
-					 
+
 				     })
 		.on('click',function(event)
 		    {
-			var provincia = path_to_provs[this.id];	
+			var provincia = path_to_provs[this.id];
 			if(provincia != undefined){
 			    var provincia_clean = provincia.replace(/\s/g, '_');
 			    var svg_node = d3.select("#svg_tooltip")[0][0];
@@ -294,11 +283,9 @@ function participacion(years_partic,paths){
 			    w.document.body.appendChild(svg_node)
 			}
 		    });
-	}
-	mapa_node.style("display","block");			 
+	    }}
+	mapa_node.style("display","block");
     }
-    
+
     update_svg(1998);
 }
-
-// get_years(1998,2015);

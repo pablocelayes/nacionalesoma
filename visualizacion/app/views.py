@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, Markup, json, render_template,make_response, request, redirect, url_for, abort, session, Response
+from flask import (Flask, Markup, json, render_template,
+                   make_response, request, redirect, url_for,
+                   abort, session, Response)
 from app import app
 # from os import getcwd
 # print(getcwd())
@@ -27,11 +29,11 @@ def index():
                                                 a4 = 'En construcción',
                                                 a5 = Markup(about_html)
                                                 )
-                                                
+
 @app.route('/update',methods=['POST'])
 def update():
         colores = ["#ffe9e9","#e0b6b6","#db9696",
-                                "#7e4747","#410e0e"]
+                                "#7e4747","#410A0e"]
         year = int(request.form['year'])
         gen_df = data['genero']
         df = {'pob_esc':data['pob_esc'][year],
@@ -44,4 +46,4 @@ def update():
         resp = Response(response=json.dumps(val),
                                         status=200,
                                         mimetype="application/json")
-        return(resp)                            
+        return(resp)
