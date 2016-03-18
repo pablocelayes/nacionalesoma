@@ -70,7 +70,7 @@ def get_pob_esc1(year):
 
         df_pob_esc = DataFrame({'Provincia':book1_provs,
                                 'Población':np.array(book1_counts)+np.array(book2_counts),
-                               })
+        })
 
         return df_pob_esc
 
@@ -100,7 +100,7 @@ def get_cat(cat,year):
         cap_cat = cat.capitalize()
 
         df_cat = DataFrame({'Provincia':df_cat['Provincia'],
-                                                cap_cat:df_cat['Cantidad']})
+                            cap_cat:df_cat['Cantidad']})
 
         return df_cat
 
@@ -163,7 +163,7 @@ def df_to_response(df,colores):
 
         cantidades = df['pob_esc']['Clasificados']/df['pob_esc']['Población']
         cantidades = list(map(lambda c: c if c != inf else 0.0,
-                                                [math.log(c + 1) for c in cantidades]))
+                              [math.log(c + 1) for c in cantidades]))
         max_value = max(cantidades)
         min_value = min(cantidades)
 
@@ -182,10 +182,10 @@ def df_to_response(df,colores):
                 o = tmp['Aprobados'][i]
                 index = save_div(m,n)
                 res['pob_esc'][tmp['Provincia'][i].strip()] = {'Población':n,
-                                                    'Clasificados':m,
-                                                    'Aprobados':o,
-                                                    'Índice':index,
-                                                    'Color':color(index)}
+                                                               'Clasificados':m,
+                                                               'Aprobados':o,
+                                                               'Índice':index,
+                                                               'Color':color(index)}
 
         # rellenando datos para generos
         res['genero']['Aprobados'] = {}
@@ -197,7 +197,7 @@ def df_to_response(df,colores):
                 res['genero']['Clasificados'][prov] = {'F':f,'M':m}
 
         res['genero']['Premiados'] = {}
-        for prov,year,f,m in gen_clasif.values.tolist():
+        for prov,year,f,m in gen_prem.values.tolist():
                 res['genero']['Premiados'][prov] = {'F':f,'M':m}
 
         #agregar después los datos por niveles

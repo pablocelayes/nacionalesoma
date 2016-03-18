@@ -77,7 +77,8 @@ function init_generos(years_partic){
 	year_title_gen.text(initial_year);
 	year_list_gen.property("value",1998);
 	year_label_gen.text(" "+initial_year);
-	update_svg_gen(cat_selected,initial_year);
+	update_svg_gen(cat,initial_year);
+	cat_selected = cat;
     }
 
     function add_svg(year){
@@ -103,7 +104,7 @@ function init_generos(years_partic){
 
     function update_svg_gen(cat,year){
 
-	// alert(cat);
+	console.log(cat);
 	//~ console.log(years_partic['años'][cat.toLowerCase()][year]);
 
 	show_national_progression(cat,year);
@@ -189,30 +190,30 @@ function init_generos(years_partic){
 
     function show_prov_prog(cat,year,id){
 	// alert(cat);
-	prog_prov_gen.html("");
+	// prog_prov_gen.html("");
 
-	prog_prov_percent_gen.html("");
+	// prog_prov_percent_gen.html("");
 
-	var prov = path_to_provs[id];
+	// var prov = path_to_provs[id];
 
-	var svg_xml_1 = years_partic['progresiones_porcentuales_provincias'][cat.toLowerCase()][prov];
-	var svg_xml_2 = years_partic['progresiones_provincias'][cat.toLowerCase()][prov];
+	// // var svg_xml_1 = years_partic['progresiones_porcentuales_provincias'][cat.toLowerCase()][prov];
+	// // var svg_xml_2 = years_partic['progresiones_provincias'][cat.toLowerCase()][prov];
 
-	if(svg_xml_1){
+	// if(svg_xml_1){
 
-	    var svg_val_1 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_1.documentElement.innerHTML+"</svg>";
-	    var svg_val_2 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_2.documentElement.innerHTML+"</svg>";
+	//     var svg_val_1 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_1.documentElement.innerHTML+"</svg>";
+	//     var svg_val_2 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_2.documentElement.innerHTML+"</svg>";
 
-	    prog_prov_gen.html(svg_val_1);
-	    prog_prov_percent_gen.html(svg_val_2);
+	//     prog_prov_gen.html(svg_val_1);
+	//     prog_prov_percent_gen.html(svg_val_2);
 
-	}
-	else{
-	    prog_prov_gen.append("div")
-		.attr("class","prog-prov")
-		.html("<strong>"+prov+"</strong>: provincia sin "+
-		      cat.toLowerCase()+" femeninos en ningún año.");
-	}
+	// }
+	// else{
+	//     prog_prov_gen.append("div")
+	// 	.attr("class","prog-prov")
+	// 	.html("<strong>"+prov+"</strong>: provincia sin "+
+	// 	      cat.toLowerCase()+" femeninos en ningún año.");
+	// }
     }
 
 
