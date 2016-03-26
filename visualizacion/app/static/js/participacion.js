@@ -8,8 +8,6 @@ var mapa_node = d3.select("#mapa");
 mapa_node.style("display","none");
 
 function initialize_values(years_partic){
-
-    // console.log(years_partic);
     var svg_map = d3.select('#svg2');
     svg_map.attr("transform","scale(0.75)");
     var paths = mapa_node.selectAll("path");
@@ -17,7 +15,6 @@ function initialize_values(years_partic){
     participacion(years_partic,paths);
     init_generos(years_partic);
 }
-
 
 years_partic = [];
 
@@ -28,9 +25,7 @@ function get_year(year,last){
 	    // callback
 	    years_partic.push(data.response);
 	    if(year == last){
-		//~ console.log(years_partic);
 		initialize_values(years_partic);
-		//participacion(years_partic);
 	    }
 	});
 }
@@ -42,7 +37,6 @@ function get_years(init,end){
 }
 
 function participacion(years_partic,paths){
-    //initialize_values();
     var n_paths = 44;
 
     var path_to_provs =
@@ -80,8 +74,6 @@ function participacion(years_partic,paths){
     var legend_node = d3.select(".list-inline");
     var subtitle = d3.select("#subtitle");
 
-    // alert("paths in part = "+paths);
-
     //asociaciones....
     input_node.property("value",1998);
     tooltip_node.attr("class", "tooltip1");
@@ -97,8 +89,6 @@ function participacion(years_partic,paths){
 		    "#7e4747",
 		    "#410e0e",
 		   ];
-	// if (filtro == "niveles")
-	// return colores_niveles();
 	return ["#edf8e9",
 		"#c7e9c0",
 		"#a1d99b",
@@ -106,7 +96,6 @@ function participacion(years_partic,paths){
 		"#005a32"];}
 
     function update_legend(list){
-	// alert(list);
 	for(i=0;i<5;i++){
 	    legend_node.selectAll("li")[0][i].style = "border-top-color:"+list[i]
 	}
@@ -121,7 +110,6 @@ function participacion(years_partic,paths){
     }
 
     function paint_svg(tooltip_node,prog_prov){
-
 	var w_init = 500;
 	var h_init = 200;
 	var barPadding = 5;
@@ -270,7 +258,6 @@ function participacion(years_partic,paths){
 				     {
 					 d3.select("#"+this.id).style('stroke-width', 1)
 					     .style('stroke', 'white')
-
 				     })
 		.on('click',function(event)
 		    {
@@ -278,7 +265,6 @@ function participacion(years_partic,paths){
 			if(provincia != undefined){
 			    var provincia_clean = provincia.replace(/\s/g, '_');
 			    var svg_node = d3.select("#svg_tooltip")[0][0];
-			    console.log(svg_node);
 			    var w = window.open();
 			    w.document.body.appendChild(svg_node)
 			}
