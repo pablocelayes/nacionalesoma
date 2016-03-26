@@ -98,23 +98,15 @@ function init_generos(years_partic){
 	if(m_count == 0)
 	    return rosa;
 	var index = Math.floor((10*f_count)/(m_count+f_count));
-	//console.log(f_count,m_count,index);
 	return colores[index];
     }
 
     function update_svg_gen(cat,year){
-
-	console.log(cat);
-	//~ console.log(years_partic['años'][cat.toLowerCase()][year]);
-
 	show_national_progression(cat,year);
 	var data_json = JSON.parse(years_partic[year-1998])['genero'];
-	console.log("generos",data_json);
 	var paths = mapa_gen.selectAll("path");
-	// alert(paths);
 	// adicionando tooltip a todas las provincias ...
 	for(var i = 0; i < n_paths; i++){
-
 	    var path = paths[0][i];
 	    // alert(path);
 	    if (path_to_provs[path.id] != undefined){
@@ -134,8 +126,6 @@ function init_generos(years_partic){
 			{
 			    mapa_gen.select("#"+this.id).style('stroke-width', 2)
 				.style('stroke', 'purple')
-			    // alert(cat+"|"+year+"|"+this.id+"|"+d3.event);
-			    // alert(this);
 			    show_prov_prog(cat,year,this.id);
 			    show_prov_percent(cat,year,this.id);
 			})
@@ -146,7 +136,6 @@ function init_generos(years_partic){
 			});
 	    }
 	}
-
     }
 
     function f_part(x){
@@ -162,66 +151,26 @@ function init_generos(years_partic){
     }
 
     function show_prov_percent(cat,year,id){
-	// alert(cat);
-	var true_cat = cat.toLowerCase();
-	var csv_file = "static/img/"+true_cat+"/genero/"+true_cat+"_por_provincia_y_genero.csv";
-	// alert(csv_file);
-	d3.csv(csv_file,
-	       function(rows)
-	       {
-		   rows.map(function(d)
-			    {
-				// alert(d.Año+d.Provincia);
-				// alert(d.Provincia+" "+path_to_provs[id]);
-				if(d.Año == year && d.Provincia == path_to_provs[id]){
-				    // alert("entering");
-				    var all = (+d.F) + (+d.M);
-				    var percent;
-				    if(all > 0)
-					percent = (d.F/all)*100;
-				    else
-					percent = 0;
-				    actual_prov_percent_gen.text(d.Provincia + " " + truncate(percent,2)+"%");
-				    return;
-				}
-			    });
-	       });
+	var prov = path_to_provs[id];
+	var data_json = JSON.parse(years_partic[year-1998])['genero'];
+	var data_prov = data_json[cat][prov];
+	console.log(data_json);
+	var f = data_prov['F'];
+	var m = data_prov['M'];
+	var percent;
+	var all = f + m;
+	if(all > 0)
+	    percent = (f/all)*100;
+	else
+	    percent = 0;
+	actual_prov_percent_gen.text(prov + " " +truncate(percent,2)+"%");
     }
 
     function show_prov_prog(cat,year,id){
-	// alert(cat);
-	// prog_prov_gen.html("");
-
-	// prog_prov_percent_gen.html("");
-
-	// var prov = path_to_provs[id];
-
-	// // var svg_xml_1 = years_partic['progresiones_porcentuales_provincias'][cat.toLowerCase()][prov];
-	// // var svg_xml_2 = years_partic['progresiones_provincias'][cat.toLowerCase()][prov];
-
-	// if(svg_xml_1){
-
-	//     var svg_val_1 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_1.documentElement.innerHTML+"</svg>";
-	//     var svg_val_2 = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_xml_2.documentElement.innerHTML+"</svg>";
-
-	//     prog_prov_gen.html(svg_val_1);
-	//     prog_prov_percent_gen.html(svg_val_2);
-
-	// }
-	// else{
-	//     prog_prov_gen.append("div")
-	// 	.attr("class","prog-prov")
-	// 	.html("<strong>"+prov+"</strong>: provincia sin "+
-	// 	      cat.toLowerCase()+" femeninos en ningún año.");
-	// }
     }
 
 
     function show_national_progression(cat,year){
-	// prog_nac_gen.html("");
-	// var svg_prog = years_partic['progresiones_nacionales'][cat.toLowerCase()].documentElement.innerHTML;
-	// var svg_val = "<svg height='290' width='330' viewBox='0 0 500 500'>"+svg_prog+"</svg>";
-	// prog_nac_gen.html(svg_val);
     }
 
     add_years("Clasificados");
