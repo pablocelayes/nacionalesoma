@@ -164,6 +164,12 @@ function init_generos(years_partic){
 	else
 	    percent = 0;
 	actual_prov_percent_gen.text(prov + " " +truncate(percent,2)+"%");
+	//making the pie
+	prog_prov_percent_gen.html("");
+	var new_svg = prog_prov_percent_gen.append('svg');
+	var new_data =  [{'gender':'M','population':m},{'gender':'F','population':f}];
+	piechart(new_svg, new_data);
+
     }
 
     function show_prov_prog(cat,year,id){
