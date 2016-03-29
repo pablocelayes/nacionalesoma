@@ -1,0 +1,433 @@
+Provincia,Año,F,M
+Buenos Aires,1998,21,90
+Buenos Aires,1999,8,35
+Buenos Aires,2000,39,105
+Buenos Aires,2001,36,84
+Buenos Aires,2002,31,90
+Buenos Aires,2003,40,110
+Buenos Aires,2004,32,133
+Buenos Aires,2005,27,118
+Buenos Aires,2006,28,115
+Buenos Aires,2007,30,108
+Buenos Aires,2008,30,104
+Buenos Aires,2009,29,105
+Buenos Aires,2010,25,83
+Buenos Aires,2011,23,87
+Buenos Aires,2012,20,92
+Buenos Aires,2013,17,82
+Buenos Aires,2014,27,119
+Buenos Aires,2015,22,79
+Catamarca,1998,0,1
+Catamarca,1999,0,0
+Catamarca,2000,0,1
+Catamarca,2001,0,0
+Catamarca,2002,0,0
+Catamarca,2003,0,0
+Catamarca,2004,0,0
+Catamarca,2005,0,0
+Catamarca,2006,0,0
+Catamarca,2007,0,0
+Catamarca,2008,0,0
+Catamarca,2009,0,0
+Catamarca,2010,0,0
+Catamarca,2011,0,0
+Catamarca,2012,0,0
+Catamarca,2013,0,0
+Catamarca,2014,0,0
+Catamarca,2015,0,0
+Chaco,1998,0,0
+Chaco,1999,0,0
+Chaco,2000,0,1
+Chaco,2001,0,0
+Chaco,2002,0,0
+Chaco,2003,1,1
+Chaco,2004,0,2
+Chaco,2005,0,1
+Chaco,2006,0,2
+Chaco,2007,0,0
+Chaco,2008,1,1
+Chaco,2009,0,1
+Chaco,2010,0,3
+Chaco,2011,0,5
+Chaco,2012,0,3
+Chaco,2013,0,2
+Chaco,2014,1,1
+Chaco,2015,0,2
+Chubut,1998,0,3
+Chubut,1999,0,0
+Chubut,2000,0,1
+Chubut,2001,0,0
+Chubut,2002,0,0
+Chubut,2003,0,1
+Chubut,2004,0,1
+Chubut,2005,0,0
+Chubut,2006,1,2
+Chubut,2007,0,0
+Chubut,2008,0,1
+Chubut,2009,0,1
+Chubut,2010,1,0
+Chubut,2011,0,4
+Chubut,2012,0,4
+Chubut,2013,0,2
+Chubut,2014,0,3
+Chubut,2015,0,2
+Ciudad Autónoma de Buenos Aires,1998,9,46
+Ciudad Autónoma de Buenos Aires,1999,3,10
+Ciudad Autónoma de Buenos Aires,2000,11,58
+Ciudad Autónoma de Buenos Aires,2001,8,50
+Ciudad Autónoma de Buenos Aires,2002,4,46
+Ciudad Autónoma de Buenos Aires,2003,6,64
+Ciudad Autónoma de Buenos Aires,2004,8,49
+Ciudad Autónoma de Buenos Aires,2005,6,48
+Ciudad Autónoma de Buenos Aires,2006,7,40
+Ciudad Autónoma de Buenos Aires,2007,4,39
+Ciudad Autónoma de Buenos Aires,2008,7,37
+Ciudad Autónoma de Buenos Aires,2009,8,43
+Ciudad Autónoma de Buenos Aires,2010,7,38
+Ciudad Autónoma de Buenos Aires,2011,18,50
+Ciudad Autónoma de Buenos Aires,2012,12,49
+Ciudad Autónoma de Buenos Aires,2013,10,47
+Ciudad Autónoma de Buenos Aires,2014,9,39
+Ciudad Autónoma de Buenos Aires,2015,12,38
+Corrientes,1998,0,5
+Corrientes,1999,0,0
+Corrientes,2000,0,0
+Corrientes,2001,0,2
+Corrientes,2002,0,1
+Corrientes,2003,0,2
+Corrientes,2004,1,3
+Corrientes,2005,1,2
+Corrientes,2006,2,4
+Corrientes,2007,0,3
+Corrientes,2008,0,2
+Corrientes,2009,0,1
+Corrientes,2010,1,1
+Corrientes,2011,0,2
+Corrientes,2012,0,1
+Corrientes,2013,0,1
+Corrientes,2014,1,2
+Corrientes,2015,0,5
+Córdoba,1998,7,18
+Córdoba,1999,4,6
+Córdoba,2000,2,16
+Córdoba,2001,4,18
+Córdoba,2002,5,8
+Córdoba,2003,9,30
+Córdoba,2004,6,19
+Córdoba,2005,3,12
+Córdoba,2006,4,18
+Córdoba,2007,4,18
+Córdoba,2008,6,18
+Córdoba,2009,2,12
+Córdoba,2010,8,17
+Córdoba,2011,11,13
+Córdoba,2012,4,15
+Córdoba,2013,3,19
+Córdoba,2014,6,20
+Córdoba,2015,3,14
+Entre Ríos,1998,0,3
+Entre Ríos,1999,0,1
+Entre Ríos,2000,2,4
+Entre Ríos,2001,1,9
+Entre Ríos,2002,1,4
+Entre Ríos,2003,2,6
+Entre Ríos,2004,1,2
+Entre Ríos,2005,3,3
+Entre Ríos,2006,3,5
+Entre Ríos,2007,3,9
+Entre Ríos,2008,2,9
+Entre Ríos,2009,3,6
+Entre Ríos,2010,2,9
+Entre Ríos,2011,1,15
+Entre Ríos,2012,2,8
+Entre Ríos,2013,1,4
+Entre Ríos,2014,3,7
+Entre Ríos,2015,2,4
+Formosa,1998,0,1
+Formosa,1999,0,1
+Formosa,2000,1,5
+Formosa,2001,2,5
+Formosa,2002,0,5
+Formosa,2003,1,7
+Formosa,2004,1,6
+Formosa,2005,1,1
+Formosa,2006,0,1
+Formosa,2007,0,1
+Formosa,2008,2,1
+Formosa,2009,0,0
+Formosa,2010,1,1
+Formosa,2011,2,1
+Formosa,2012,0,1
+Formosa,2013,0,2
+Formosa,2014,1,3
+Formosa,2015,0,1
+Jujuy,1998,0,1
+Jujuy,1999,0,0
+Jujuy,2000,1,2
+Jujuy,2001,1,2
+Jujuy,2002,1,4
+Jujuy,2003,1,6
+Jujuy,2004,1,3
+Jujuy,2005,0,1
+Jujuy,2006,0,0
+Jujuy,2007,0,1
+Jujuy,2008,1,0
+Jujuy,2009,0,2
+Jujuy,2010,1,1
+Jujuy,2011,1,3
+Jujuy,2012,0,3
+Jujuy,2013,1,1
+Jujuy,2014,1,2
+Jujuy,2015,0,0
+La Pampa,1998,0,2
+La Pampa,1999,0,0
+La Pampa,2000,0,2
+La Pampa,2001,1,3
+La Pampa,2002,1,3
+La Pampa,2003,1,1
+La Pampa,2004,1,1
+La Pampa,2005,0,2
+La Pampa,2006,0,3
+La Pampa,2007,0,1
+La Pampa,2008,0,0
+La Pampa,2009,0,2
+La Pampa,2010,0,2
+La Pampa,2011,0,3
+La Pampa,2012,0,2
+La Pampa,2013,0,2
+La Pampa,2014,2,2
+La Pampa,2015,1,1
+La Rioja,1998,0,0
+La Rioja,1999,0,0
+La Rioja,2000,0,0
+La Rioja,2001,0,1
+La Rioja,2002,0,0
+La Rioja,2003,0,0
+La Rioja,2004,0,2
+La Rioja,2005,0,2
+La Rioja,2006,0,1
+La Rioja,2007,0,1
+La Rioja,2008,0,0
+La Rioja,2009,0,0
+La Rioja,2010,0,1
+La Rioja,2011,0,1
+La Rioja,2012,0,0
+La Rioja,2013,0,1
+La Rioja,2014,0,0
+La Rioja,2015,0,0
+Mendoza,1998,2,3
+Mendoza,1999,1,3
+Mendoza,2000,1,2
+Mendoza,2001,0,2
+Mendoza,2002,0,6
+Mendoza,2003,0,5
+Mendoza,2004,0,6
+Mendoza,2005,1,7
+Mendoza,2006,1,6
+Mendoza,2007,0,3
+Mendoza,2008,0,3
+Mendoza,2009,1,4
+Mendoza,2010,1,8
+Mendoza,2011,1,6
+Mendoza,2012,4,2
+Mendoza,2013,4,4
+Mendoza,2014,2,6
+Mendoza,2015,1,3
+Misiones,1998,0,4
+Misiones,1999,1,0
+Misiones,2000,0,0
+Misiones,2001,1,1
+Misiones,2002,1,2
+Misiones,2003,0,1
+Misiones,2004,1,4
+Misiones,2005,1,4
+Misiones,2006,0,5
+Misiones,2007,0,4
+Misiones,2008,1,7
+Misiones,2009,0,5
+Misiones,2010,1,4
+Misiones,2011,0,5
+Misiones,2012,0,4
+Misiones,2013,0,3
+Misiones,2014,0,5
+Misiones,2015,1,2
+Neuquén,1998,1,3
+Neuquén,1999,0,1
+Neuquén,2000,2,3
+Neuquén,2001,1,3
+Neuquén,2002,1,6
+Neuquén,2003,3,4
+Neuquén,2004,1,2
+Neuquén,2005,3,2
+Neuquén,2006,1,2
+Neuquén,2007,1,2
+Neuquén,2008,0,2
+Neuquén,2009,0,2
+Neuquén,2010,0,1
+Neuquén,2011,2,1
+Neuquén,2012,0,4
+Neuquén,2013,0,3
+Neuquén,2014,1,4
+Neuquén,2015,0,4
+Río Negro,1998,2,6
+Río Negro,1999,0,0
+Río Negro,2000,0,4
+Río Negro,2001,0,2
+Río Negro,2002,0,3
+Río Negro,2003,3,6
+Río Negro,2004,0,4
+Río Negro,2005,0,4
+Río Negro,2006,0,8
+Río Negro,2007,3,8
+Río Negro,2008,2,9
+Río Negro,2009,0,3
+Río Negro,2010,0,3
+Río Negro,2011,1,4
+Río Negro,2012,1,4
+Río Negro,2013,0,2
+Río Negro,2014,1,3
+Río Negro,2015,1,2
+Salta,1998,1,4
+Salta,1999,0,2
+Salta,2000,0,2
+Salta,2001,0,4
+Salta,2002,0,5
+Salta,2003,2,3
+Salta,2004,0,5
+Salta,2005,1,3
+Salta,2006,0,1
+Salta,2007,1,4
+Salta,2008,2,4
+Salta,2009,1,2
+Salta,2010,0,2
+Salta,2011,0,0
+Salta,2012,0,3
+Salta,2013,0,2
+Salta,2014,0,2
+Salta,2015,0,4
+San Juan,1998,0,1
+San Juan,1999,0,1
+San Juan,2000,0,2
+San Juan,2001,0,2
+San Juan,2002,0,2
+San Juan,2003,0,1
+San Juan,2004,0,1
+San Juan,2005,0,1
+San Juan,2006,0,1
+San Juan,2007,0,2
+San Juan,2008,0,1
+San Juan,2009,0,0
+San Juan,2010,0,0
+San Juan,2011,0,1
+San Juan,2012,0,0
+San Juan,2013,0,2
+San Juan,2014,0,2
+San Juan,2015,0,1
+San Luis,1998,1,2
+San Luis,1999,0,1
+San Luis,2000,0,2
+San Luis,2001,0,3
+San Luis,2002,0,2
+San Luis,2003,1,1
+San Luis,2004,0,1
+San Luis,2005,0,1
+San Luis,2006,0,2
+San Luis,2007,0,1
+San Luis,2008,0,2
+San Luis,2009,0,2
+San Luis,2010,0,1
+San Luis,2011,0,1
+San Luis,2012,1,0
+San Luis,2013,1,1
+San Luis,2014,0,2
+San Luis,2015,1,0
+Santa Cruz,1998,0,3
+Santa Cruz,1999,0,0
+Santa Cruz,2000,1,2
+Santa Cruz,2001,3,1
+Santa Cruz,2002,0,0
+Santa Cruz,2003,0,0
+Santa Cruz,2004,2,2
+Santa Cruz,2005,0,2
+Santa Cruz,2006,1,2
+Santa Cruz,2007,3,1
+Santa Cruz,2008,0,3
+Santa Cruz,2009,0,3
+Santa Cruz,2010,0,2
+Santa Cruz,2011,1,3
+Santa Cruz,2012,0,2
+Santa Cruz,2013,1,2
+Santa Cruz,2014,0,3
+Santa Cruz,2015,0,2
+Santa Fe,1998,6,40
+Santa Fe,1999,5,11
+Santa Fe,2000,9,31
+Santa Fe,2001,10,34
+Santa Fe,2002,10,30
+Santa Fe,2003,13,43
+Santa Fe,2004,14,33
+Santa Fe,2005,0,0
+Santa Fe,2006,15,36
+Santa Fe,2007,15,34
+Santa Fe,2008,10,38
+Santa Fe,2009,14,35
+Santa Fe,2010,15,23
+Santa Fe,2011,7,30
+Santa Fe,2012,8,27
+Santa Fe,2013,7,31
+Santa Fe,2014,10,53
+Santa Fe,2015,11,31
+Santiago del Estero,1998,0,0
+Santiago del Estero,1999,0,0
+Santiago del Estero,2000,0,0
+Santiago del Estero,2001,0,0
+Santiago del Estero,2002,0,0
+Santiago del Estero,2003,0,0
+Santiago del Estero,2004,0,0
+Santiago del Estero,2005,0,0
+Santiago del Estero,2006,0,0
+Santiago del Estero,2007,0,0
+Santiago del Estero,2008,0,0
+Santiago del Estero,2009,0,0
+Santiago del Estero,2010,0,0
+Santiago del Estero,2011,0,0
+Santiago del Estero,2012,0,0
+Santiago del Estero,2013,1,0
+Santiago del Estero,2014,0,2
+Santiago del Estero,2015,0,1
+Tierra del Fuego,1998,0,0
+Tierra del Fuego,1999,0,0
+Tierra del Fuego,2000,0,0
+Tierra del Fuego,2001,0,1
+Tierra del Fuego,2002,0,1
+Tierra del Fuego,2003,0,1
+Tierra del Fuego,2004,1,0
+Tierra del Fuego,2005,0,0
+Tierra del Fuego,2006,0,0
+Tierra del Fuego,2007,0,0
+Tierra del Fuego,2008,0,0
+Tierra del Fuego,2009,0,0
+Tierra del Fuego,2010,0,0
+Tierra del Fuego,2011,0,0
+Tierra del Fuego,2012,1,0
+Tierra del Fuego,2013,0,0
+Tierra del Fuego,2014,0,0
+Tierra del Fuego,2015,0,0
+Tucumán,1998,0,7
+Tucumán,1999,2,1
+Tucumán,2000,2,4
+Tucumán,2001,1,3
+Tucumán,2002,1,4
+Tucumán,2003,3,4
+Tucumán,2004,0,11
+Tucumán,2005,0,7
+Tucumán,2006,0,8
+Tucumán,2007,2,4
+Tucumán,2008,2,7
+Tucumán,2009,4,8
+Tucumán,2010,3,5
+Tucumán,2011,4,7
+Tucumán,2012,2,6
+Tucumán,2013,2,2
+Tucumán,2014,1,7
+Tucumán,2015,4,5
