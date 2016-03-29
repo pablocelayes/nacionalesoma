@@ -264,9 +264,12 @@ function participacion(years_partic,paths){
 			var provincia = path_to_provs[this.id];
 			if(provincia != undefined){
 			    var provincia_clean = provincia.replace(/\s/g, '_');
-			    var svg_node = d3.select("#svg_tooltip")[0][0];
-			    var w = window.open();
-			    w.document.body.appendChild(svg_node)
+			    var svg_node = d3.select("#svg_tooltip");
+			    var w = d3.select(window.open().document.body);
+			    w.append('svg')
+				.attr("width", 400)
+				.attr("height", 400)
+				.html(svg_node.html());
 			}
 		    });
 	    }}
