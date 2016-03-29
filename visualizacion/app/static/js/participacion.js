@@ -267,7 +267,7 @@ function participacion(years_partic,paths){
 			    var svg_node = d3.select("#svg_tooltip");
 			    var w = d3.select(window.open().document.body);
 			    w.append('svg')
-				.attr("width", 400)
+				.attr("width", 500)
 				.attr("height", 400)
 				.html(svg_node.html());
 			}
