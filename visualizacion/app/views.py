@@ -14,6 +14,7 @@ from retrieve import data,df_to_response
 
 @app.route('/',methods=['GET'])
 @app.route('/index',methods=['GET'])
+@app.route('/nacionalesoma',methods=['GET'])
 def index():
         user = {'nickname': "Nacionales OMA"}
         clasif_html = open('./app/templates/clasificados.html','r',encoding="utf-8").read()
