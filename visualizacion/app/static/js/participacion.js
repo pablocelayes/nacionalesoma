@@ -105,99 +105,44 @@ function participacion(years_partic,paths){
 	var res = {'prog':prov,'data':[]};
 	for(var i=0;i<data.length;i++){
 	    res['data'].push(JSON.parse(data[i])['pob_esc'][prov]);
+            res['data'][i]['Año'] = i+1998;
 	}
 	return res;
     }
 
     function paint_svg(tooltip_node,prog_prov){
-	var w_init = 500;
-	var h_init = 200;
-	var barPadding = 5;
-	var width = 500,
-	margin = 25,
-	offset = 50,
-	axisWidth = width - 2 * margin;
+        debugger;
+        var svg = dimple.newSvg("#tooltip", "100%", "100%");
+        var chart = new dimple.chart(svg, prog_prov['data']);
+        chart.setBounds(60,20,300,330);
+        var x = chart.addCategoryAxis("x", "Año");
+        var y1 = chart.addMeasureAxis("y", "Clasificados");
+        var y2 = chart.addMeasureAxis("y", "Aprobados");
+        var bars = chart.addSeries("Aprobados", dimple.plot.bar, [x,y2]);
+        var lines = chart.addSeries("Clasificados", dimple.plot.bar, [x,y1]);
 
-	var padding = 20;
-	var shrink_factor = 100;
+        // Do a bit of styling to make it look nicer
+        // lines.lineMarkers = true;
+        // bars.barGap = 0.5;
+        // // Colour the bars manually so they don't overwhelm the lines
+        chart.assignColor("Unit Sales", "black", "black", 0.15);
+        // chart.assignColor("Clasificados", "blue", "blue", 0.15);
 
-	var scale = d3.scale.linear();
-
-	var svg = tooltip_node.append("svg")
-	    .attr("id","svg_tooltip")
-	    .attr("width", w_init)
-	    .attr("height", h_init);
-
-	scale.domain([0,d3.max(prog_prov['data'],
-			       function(d){
-				   return d['Índice'];
-			       })]);
-
-	h = h_init - shrink_factor;
-	w = w_init - shrink_factor;
-
-	scale.range([0,h]);
-
-	scale.clamp();
-
-	svg.append("g").attr("transform","translate(30,30)")
-	    .selectAll("rect")
-	    .attr("transform", "translate(20,20)")
-	    .data(prog_prov['data'])
-	    .enter()
-	    .append("rect")
-	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length);
-	    })
-	    .attr("y", function(d) {
-		return h - scale(d['Aprobados']/d['Población']);
-	    })
-	    .attr("width", w / prog_prov['data'].length - barPadding)
-	    .attr("height", function(d) {
-		return scale(d['Aprobados']/d['Población'])
-	    })
-	    .attr("fill","#b79191");
-
-	svg.append("g").attr("transform","translate(30,30)")
-	    .selectAll("rect")
-	    .attr("transform", "translate(20,20)")
-	    .data(prog_prov['data'])
-	    .enter()
-	    .append("rect")
-	    .attr("fill-opacity", 0.5)
-	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length);
-	    })
-	    .attr("y", function(d) {
-		return h - scale(d['Índice']);
-	    })
-	    .attr("width", w / prog_prov['data'].length - barPadding)
-	    .attr("height", function(d) {
-		return scale(d['Índice'])
-	    })
-	    .attr("fill","#e0b6b6");
-
-	svg.append("g").attr("transform","translate(20,30)")
-	    .append("line")
-	    .attr({
-		x1: 0,
-		y1: 0,
-		x2: 0,
-		y2: h+10,
-		stroke: "#CCC"
-	    });
-
-	svg.append("g").attr("transform","translate(20,30)")
-	    .append("line")
-	    .attr({
-		x1: 0,
-		y1: h+10,
-		x2: w+20,
-		y2: h+10,
-		stroke: "#CCC"
-	    });
+        // x.dateParseFormat = "%m/%Y";
+        // x.addOrderRule("Date");
 
 
+        // Here's how you add a legend for just one series.  Excluding the last parameter
+        // will include every series or an array of series can be passed to select more than
+        // one
+        // chart.addLegend(60, 5, 300, 10, "right", lines);
+        chart.setBounds(75, 30, 330, 330);
+        chart.draw();
+
+        // Once Draw is called, this just changes the number format in the tooltips which for these particular
+        // numbers is a little too heavily rounded.  I assume your real data isn't like this
+        // so you probably won't want this line, but it's a useful tip anyway!
+        //y1.tickFormat = ",d";
     }
 
     function tooltip(year,id,event,data)

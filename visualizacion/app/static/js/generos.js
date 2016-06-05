@@ -6,8 +6,6 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
 
 function init_generos(years_partic){
 
-    console.log(years_partic);
-
     var n_paths = 44;
 
     var cat_selected = "Clasificados";
@@ -154,7 +152,6 @@ function init_generos(years_partic){
 	var prov = path_to_provs[id];
 	var data_json = JSON.parse(years_partic[year-1998])['genero'];
 	var data_prov = data_json[cat][prov];
-	console.log(data_json);
 	var f = data_prov['F'];
 	var m = data_prov['M'];
 	var percent;
@@ -167,6 +164,18 @@ function init_generos(years_partic){
     }
 
     function show_prov_prog(cat,year,id){
+        var svg_provs = dimple.newSvg("#prog_prov_gen", 590, 400);
+        var data_json = JSON.parse(years_partic[year-1998])['genero'];
+        // debugger;
+	var data_prov = data_json[cat][prov];
+        var myChart = new dimple.chart(svg_provs, data_prov);
+        myChart.setBounds(60, 30, 510, 305)
+        var x = myChart.addCategoryAxis("x", "Year");
+        // x.addOrderRule("Date");
+        // myChart.addMeasureAxis("y", "Unit Sales");
+        // myChart.addSeries("Channel", dimple.plot.bar);
+        // myChart.addLegend(60, 10, 510, 20, "right");
+        // myChart.draw();
     }
 
 
