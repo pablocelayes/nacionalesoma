@@ -105,7 +105,10 @@ function participacion(years_partic,paths){
 	var res = {'prog':prov,'data':[]};
 	for(var i=0;i<data.length;i++){
 	    res['data'].push(JSON.parse(data[i])['pob_esc'][prov]);
-            res['data'][i]['Año'] = i+1998;
+            year = i+1998;
+            res['data'][i]['Año'] = ''+year;
+            // res['data'][i]['Aprobados'] = res['data'][i]['Aprobados'] + '';
+            // res['data'][i]['Clasificados'] = res['data'][i]['Clasificados'] + '';
 	}
 	return res;
     }
@@ -113,30 +116,39 @@ function participacion(years_partic,paths){
     function paint_svg(tooltip_node,prog_prov){
         debugger;
         var svg = dimple.newSvg("#tooltip", "100%", "100%");
-        var chart = new dimple.chart(svg, prog_prov['data']);
-        chart.setBounds(60,20,300,330);
-        var x = chart.addCategoryAxis("x", "Año");
-        var y1 = chart.addMeasureAxis("y", "Clasificados");
-        var y2 = chart.addMeasureAxis("y", "Aprobados");
-        var bars = chart.addSeries("Aprobados", dimple.plot.bar, [x,y2]);
-        var lines = chart.addSeries("Clasificados", dimple.plot.bar, [x,y1]);
+        var data = [
+            { h: 1, "Letter": "a", "Value": 1 },
+            { h: 1, "Letter": "b", "Value": 2 },
+            { h: 1, "Letter": "c", "Value": 3 },
+            { h: 2, "Letter": "a", "Value": 10 },
+            { h: 2, "Letter": "b", "Value": 10 },
+            { h: 2, "Letter": "c", "Value": 30 },
+        ]
+        var chart = new dimple.chart(svg, data);
+        debugger;
+        var x = chart.addCategoryAxis("x", "Letter");
+        var y1 = chart.addMeasureAxis("y", "Value");
+        // var y2 = chart.addMeasureAxis("y", "Aprobados");
+        var bars1 = chart.addSeries("h", dimple.plot.bar)
+        // var bars2 = chart.addSeries(null, dimple.plot.bar, [x,y2]);
 
         // Do a bit of styling to make it look nicer
-        // lines.lineMarkers = true;
-        // bars.barGap = 0.5;
+        // bars1.barGap = 0.5;
+        // bars2.barGap = 0.5;
         // // Colour the bars manually so they don't overwhelm the lines
-        chart.assignColor("Unit Sales", "black", "black", 0.15);
-        // chart.assignColor("Clasificados", "blue", "blue", 0.15);
+        // chart.assignColor(null, "red", "red", 0.40);
+        // chart.assignColor("B", "blue", "blue", 0.40);
 
-        // x.dateParseFormat = "%m/%Y";
+        // x.dateParseFormat = "%Y";
         // x.addOrderRule("Date");
 
 
         // Here's how you add a legend for just one series.  Excluding the last parameter
         // will include every series or an array of series can be passed to select more than
         // one
-        // chart.addLegend(60, 5, 300, 10, "right", lines);
-        chart.setBounds(75, 30, 330, 330);
+        // chart.addLegend(60, 5, 300, 10, "right", bars1);
+        // chart.addLegend(60, 5, 300, 10, "right", bars2);
+        chart.setBounds(45, 30, 300, 150);
         chart.draw();
 
         // Once Draw is called, this just changes the number format in the tooltips which for these particular
