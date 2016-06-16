@@ -110,93 +110,104 @@ function participacion(years_partic,paths){
     }
 
     function paint_svg(tooltip_node,prog_prov){
-	var w_init = 500;
-	var h_init = 200;
-	var barPadding = 5;
-	var width = 500,
-	margin = 25,
-	offset = 50,
-	axisWidth = width - 2 * margin;
 
-	var padding = 20;
-	var shrink_factor = 100;
+        var margin = {top: 20, right: 20, bottom: 30, left: 40},
+            width = 460 - margin.left - margin.right,
+            height = 200 - margin.top - margin.bottom;
 
-	var scale = d3.scale.linear();
+        var x = d3.scale.ordinal()
+            .rangeRoundBands([0, width], .1);
 
-	var svg = tooltip_node.append("svg")
-	    .attr("id","svg_tooltip")
-	    .attr("width", w_init)
-	    .attr("height", h_init);
+        var y = d3.scale.linear()
+            .range([height, 0]);
 
-	scale.domain([0,d3.max(prog_prov['data'],
-			       function(d){
-				   return d['Índice'];
-			       })]);
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
 
-	h = h_init - shrink_factor;
-	w = w_init - shrink_factor;
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left")
+            .ticks(10, "%");
 
-	scale.range([0,h]);
+        var data = [
+            {'letter': 'A', 'frecuency': 0.08167},
+            {'letter':'B', 'frequency':0.01492},
+            {'letter':'C', 'frequency':0.02782},
+            {'letter':'D', 'frequency':0.04253},
+            {'letter':'E', 'frequency':0.12702},
+            {'letter':'F', 'frequency':0.02288},
+            {'letter':'G', 'frequency':0.02015},
+            {'letter':'H', 'frequency':0.06094},
+            {'letter':'I', 'frequency':0.06966},
+            {'letter':'J', 'frequency':0.00153},
+            {'letter':'K', 'frequency':0.00772},
+            {'letter':'L', 'frequency':0.04025},
+            {'letter':'M', 'frequency':0.02406},
+            {'letter':'N', 'frequency':0.06749},
+            {'letter':'O', 'frequency':0.07507},
+            {'letter':'P', 'frequency':0.01929},
+            {'letter':'Q', 'frequency':0.00095},
+            {'letter':'R', 'frequency':0.05987},
+            {'letter':'S', 'frequency':0.06327},
+            {'letter':'T', 'frequency':0.09056},
+            {'letter':'U', 'frequency':0.02758},
+            {'letter':'V', 'frequency':0.00978},
+            {'letter':'W', 'frequency':0.02360},
+            {'letter':'X', 'frequency':0.00150},
+            {'letter':'Y', 'frequency':0.01974},
+            {'letter':'Z', 'frequency':0.00074},
+        ];
+        var svg = d3.select("#tooltip").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	scale.clamp();
+        x.domain(data.map(function(d) { return d.letter; }));
+        y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
 
-	svg.append("g").attr("transform","translate(30,30)")
-	    .selectAll("rect")
-	    .attr("transform", "translate(20,20)")
-	    .data(prog_prov['data'])
-	    .enter()
-	    .append("rect")
-	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length);
-	    })
-	    .attr("y", function(d) {
-		return h - scale(d['Aprobados']/d['Población']);
-	    })
-	    .attr("width", w / prog_prov['data'].length - barPadding)
-	    .attr("height", function(d) {
-		return scale(d['Aprobados']/d['Población'])
-	    })
-	    .attr("fill","#b79191");
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
 
-	svg.append("g").attr("transform","translate(30,30)")
-	    .selectAll("rect")
-	    .attr("transform", "translate(20,20)")
-	    .data(prog_prov['data'])
-	    .enter()
-	    .append("rect")
-	    .attr("fill-opacity", 0.5)
-	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length);
-	    })
-	    .attr("y", function(d) {
-		return h - scale(d['Índice']);
-	    })
-	    .attr("width", w / prog_prov['data'].length - barPadding)
-	    .attr("height", function(d) {
-		return scale(d['Índice'])
-	    })
-	    .attr("fill","#e0b6b6");
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Frequency");
 
-	svg.append("g").attr("transform","translate(20,30)")
-	    .append("line")
-	    .attr({
-		x1: 0,
-		y1: 0,
-		x2: 0,
-		y2: h+10,
-		stroke: "#CCC"
-	    });
+        svg.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) { return x(d.letter); })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) { return y(d.frequency); })
+            .attr("height", function(d) { return height - y(d.frequency); });
 
-	svg.append("g").attr("transform","translate(20,30)")
-	    .append("line")
-	    .attr({
-		x1: 0,
-		y1: h+10,
-		x2: w+20,
-		y2: h+10,
-		stroke: "#CCC"
-	    });
+        svg.selectAll(".bar2")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar2")
+            .attr("x", function(d) { return x(d.letter); })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) { return y(d.frequency); })
+            .attr("height", function(d,i) {
+                debugger;
+                return height - y(d.frequency-0.03);
+            })
+            .attr("fill-opacity",0.3);
 
+        function type(d) {
+            d.frequency = +d.frequency;
+            return d;
+        }
 
     }
 
