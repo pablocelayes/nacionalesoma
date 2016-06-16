@@ -111,101 +111,101 @@ function participacion(years_partic,paths){
 
     function paint_svg(tooltip_node,prog_prov){
 
-        var margin = {top: 20, right: 20, bottom: 30, left: 40},
-            width = 460 - margin.left - margin.right,
-            height = 200 - margin.top - margin.bottom;
+
+        var causes = ["wounds", "other", "disease"];
+
+        var parseDate = d3.time.format("%m/%Y").parse;
+
+        var margin = {top: 20, right: 50, bottom: 30, left: 20},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
 
         var x = d3.scale.ordinal()
-            .rangeRoundBands([0, width], .1);
+            .rangeRoundBands([0, width]);
 
         var y = d3.scale.linear()
-            .range([height, 0]);
+            .rangeRound([height, 0]);
+
+        var z = d3.scale.category10();
 
         var xAxis = d3.svg.axis()
             .scale(x)
-            .orient("bottom");
+            .orient("bottom")
+            .tickFormat(d3.time.format("%b"));
 
         var yAxis = d3.svg.axis()
             .scale(y)
-            .orient("left")
-            .ticks(10, "%");
+            .orient("right");
 
-        var data = [
-            {'letter': 'A', 'frecuency': 0.08167},
-            {'letter':'B', 'frequency':0.01492},
-            {'letter':'C', 'frequency':0.02782},
-            {'letter':'D', 'frequency':0.04253},
-            {'letter':'E', 'frequency':0.12702},
-            {'letter':'F', 'frequency':0.02288},
-            {'letter':'G', 'frequency':0.02015},
-            {'letter':'H', 'frequency':0.06094},
-            {'letter':'I', 'frequency':0.06966},
-            {'letter':'J', 'frequency':0.00153},
-            {'letter':'K', 'frequency':0.00772},
-            {'letter':'L', 'frequency':0.04025},
-            {'letter':'M', 'frequency':0.02406},
-            {'letter':'N', 'frequency':0.06749},
-            {'letter':'O', 'frequency':0.07507},
-            {'letter':'P', 'frequency':0.01929},
-            {'letter':'Q', 'frequency':0.00095},
-            {'letter':'R', 'frequency':0.05987},
-            {'letter':'S', 'frequency':0.06327},
-            {'letter':'T', 'frequency':0.09056},
-            {'letter':'U', 'frequency':0.02758},
-            {'letter':'V', 'frequency':0.00978},
-            {'letter':'W', 'frequency':0.02360},
-            {'letter':'X', 'frequency':0.00150},
-            {'letter':'Y', 'frequency':0.01974},
-            {'letter':'Z', 'frequency':0.00074},
-        ];
         var svg = d3.select("#tooltip").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        x.domain(data.map(function(d) { return d.letter; }));
-        y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+        var crimea = [
+            {'date':parseDate('4/1854'), 'total':	8571,'disease':	1,'wounds':	0,'other':	5},
+            {'date':parseDate('5/1854'),'total':	23333,'disease':	12,'wounds':	0,'other':	9},
+            {'date':parseDate('6/1854'),'total':	28333,'disease':	11,'wounds':	0,'other':	6},
+            {'date':parseDate('7/1854'),'total':	28772,'disease':	359,'wounds':	0,'other':	23},
+            {'date':parseDate('8/1854'),'total':	30246,'disease':	828,'wounds':	1,'other':	30},
+            {'date':parseDate('9/1854'),'total':	30290,'disease':	788,'wounds':	81,'other':	70},
+            {'date':parseDate('10/1854'),'total':	30643,'disease':	503,'wounds':	132,'other':	128},
+            {'date':parseDate('11/1854'),'total':	29736,'disease':	844,'wounds':	287,'other':	106},
+            {'date':parseDate('12/1854'),'total':	32779,'disease':	1725,'wounds':	114,'other':	131},
+            {'date':parseDate('1/1855'),'total':	32393,'disease':	2761,'wounds':	83,'other':	324},
+            {'date':parseDate('2/1855'),'total':	30919,'disease':	2120,'wounds':	42,'other':	361},
+            {'date':parseDate('3/1855'),'total':	30107,'disease':	1205,'wounds':	32,'other':	172},
+            {'date':parseDate('4/1855'),'total':	32252,'disease':	477,'wounds':	48,'other':	57},
+            {'date':parseDate('5/1855'),'total':	35473,'disease':	508,'wounds':	49,'other':	37},
+            {'date':parseDate('6/1855'),'total':	38863,'disease':	802,'wounds':	209,'other':	31},
+            {'date':parseDate('7/1855'),'total':	42647,'disease':	382,'wounds':	134,'other':	33},
+            {'date':parseDate('8/1855'),'total':	44614,'disease':	483,'wounds':	164,'other':	25},
+            {'date':parseDate('9/1855'),'total':	47751,'disease':	189,'wounds':	276,'other':	20},
+            {'date':parseDate('10/1855'),'total':	46852,'disease':	128,'wounds':	53,'other':	18},
+            {'date':parseDate('11/1855'),'total':	37853,'disease':	178,'wounds':	33,'other':	32},
+            {'date':parseDate('12/1855'),'total':	43217,'disease':	91,'wounds':	18,'other':	28},
+            {'date':parseDate('1/1856'),'total':	44212,'disease':	42,'wounds':	2,'other':	48},
+            {'date':parseDate('2/1856'),'total':	43485,'disease':	24,'wounds':	0,'other':	19},
+            {'date':parseDate('3/1856'),'total':	46140,'disease':	15,'wounds':	0,'other':	35},
+        ]
+
+        var layers = d3.layout.stack()(causes.map(function(c) {
+            return crimea.map(function(d) {
+                return {x: d.date, y: d[c]};
+            });
+        }));
+
+        x.domain(layers[0].map(function(d) { return d.x; }));
+        y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]).nice();
+
+        var layer = svg.selectAll(".layer")
+            .data(layers)
+            .enter().append("g")
+            .attr("class", "layer")
+            .style("fill", function(d, i) { return z(i); });
+
+        layer.selectAll("rect")
+            .data(function(d) { return d; })
+            .enter().append("rect")
+            .attr("x", function(d) { return x(d.x); })
+            .attr("y", function(d) { return y(d.y + d.y0); })
+            .attr("height", function(d) { return y(d.y0) - y(d.y + d.y0); })
+            .attr("width", x.rangeBand() - 1);
 
         svg.append("g")
-            .attr("class", "x axis")
+            .attr("class", "axis axis--x")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis);
 
         svg.append("g")
-            .attr("class", "y axis")
-            .call(yAxis)
-            .append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", ".71em")
-            .style("text-anchor", "end")
-            .text("Frequency");
-
-        svg.selectAll(".bar")
-            .data(data)
-            .enter().append("rect")
-            .attr("class", "bar")
-            .attr("x", function(d) { return x(d.letter); })
-            .attr("width", x.rangeBand())
-            .attr("y", function(d) { return y(d.frequency); })
-            .attr("height", function(d) { return height - y(d.frequency); });
-
-        svg.selectAll(".bar2")
-            .data(data)
-            .enter().append("rect")
-            .attr("class", "bar2")
-            .attr("x", function(d) { return x(d.letter); })
-            .attr("width", x.rangeBand())
-            .attr("y", function(d) { return y(d.frequency); })
-            .attr("height", function(d,i) {
-                debugger;
-                return height - y(d.frequency-0.03);
-            })
-            .attr("fill-opacity",0.3);
+            .attr("class", "axis axis--y")
+            .attr("transform", "translate(" + width + ",0)")
+            .call(yAxis);
 
         function type(d) {
-            d.frequency = +d.frequency;
+            d.date = parseDate(d.date);
+            causes.forEach(function(c) { d[c] = +d[c]; });
             return d;
         }
 

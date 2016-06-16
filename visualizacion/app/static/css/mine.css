@@ -246,3 +246,7 @@ li.key {
 .x.axis path {
   display: none;
 }
+
+.axis--x path {
+  display: none;
+}
