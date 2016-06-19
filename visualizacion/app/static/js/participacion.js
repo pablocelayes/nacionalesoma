@@ -114,10 +114,10 @@ function participacion(years_partic,paths){
 
         var causes = ["wounds", "other", "disease"];
 
-        var parseDate = d3.time.format("%m/%Y").parse;
+        var parseDate = d3.time.format("%Y").parse;
 
         var margin = {top: 30, right: 150, bottom: 30, left: 20},
-            width = 500 - margin.left - margin.right,
+            width = 600 - margin.left - margin.right,
             height = 225 - margin.top - margin.bottom;
 
         var x = d3.scale.ordinal()
@@ -131,7 +131,7 @@ function participacion(years_partic,paths){
         var xAxis = d3.svg.axis()
             .scale(x)
             .orient("bottom")
-            .tickFormat(d3.time.format("%b"));
+            .tickFormat(d3.time.format('%Y'));
 
         var yAxis = d3.svg.axis()
             .scale(y)
@@ -144,20 +144,23 @@ function participacion(years_partic,paths){
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         var crimea = [
-            {'date':parseDate('5/1854'),'total':23333,'disease':12,'wounds':0,'other':9},
-            {'date':parseDate('6/1854'),'total':28333,'disease':11,'wounds':0,'other':6},
-            {'date':parseDate('7/1854'),'total':28772,'disease':359,'wounds':0,'other':23},
-            {'date':parseDate('8/1854'),'total':30246,'disease':828,'wounds':1,'other':30},
-            {'date':parseDate('9/1854'),'total':30290,'disease':788,'wounds':81,'other':70},
-            {'date':parseDate('10/1854'),'total':30643,'disease':503,'wounds':132,'other':128},
-            {'date':parseDate('11/1854'),'total':29736,'disease':844,'wounds':287,'other':106},
-            {'date':parseDate('12/1854'),'total':32779,'disease':1725,'wounds':114,'other':131},
-            {'date':parseDate('1/1855'),'total':32393,'disease':2761,'wounds':83,'other':324},
-            {'date':parseDate('2/1855'),'total':30919,'disease':2120,'wounds':42,'other':361},
-            {'date':parseDate('3/1855'),'total':30107,'disease':1205,'wounds':32,'other':172},
-            {'date':parseDate('4/1855'),'total':32252,'disease':477,'wounds':48,'other':57},
-            {'date':parseDate('5/1855'),'total':35473,'disease':508,'wounds':49,'other':37},
-            {'date':parseDate('6/1855'),'total':38863,'disease':802,'wounds':209,'other':31},
+            {'date':parseDate('1998'),'total':23333,'disease':12,'wounds':20,'other':9},
+            {'date':parseDate('1999'),'total':28333,'disease':11,'wounds':10,'other':6},
+            {'date':parseDate('2000'),'total':28772,'disease':359,'wounds':0,'other':23},
+            {'date':parseDate('2001'),'total':30246,'disease':828,'wounds':1,'other':30},
+            {'date':parseDate('2002'),'total':30290,'disease':788,'wounds':81,'other':70},
+            {'date':parseDate('2003'),'total':30643,'disease':503,'wounds':132,'other':128},
+            {'date':parseDate('2004'),'total':29736,'disease':844,'wounds':287,'other':106},
+            {'date':parseDate('2005'),'total':32779,'disease':1725,'wounds':114,'other':131},
+            {'date':parseDate('2006'),'total':29736,'disease':844,'wounds':287,'other':106},
+            {'date':parseDate('2007'),'total':32393,'disease':2761,'wounds':83,'other':324},
+            {'date':parseDate('2008'),'total':30919,'disease':2120,'wounds':42,'other':361},
+            {'date':parseDate('2009'),'total':30107,'disease':1205,'wounds':32,'other':172},
+            {'date':parseDate('2010'),'total':30919,'disease':2120,'wounds':42,'other':361},
+            {'date':parseDate('2011'),'total':35473,'disease':508,'wounds':49,'other':37},
+            {'date':parseDate('2012'),'total':32252,'disease':477,'wounds':48,'other':57},
+            {'date':parseDate('2013'),'total':38863,'disease':802,'wounds':209,'other':31},
+            {'date':parseDate('2014'),'total':35473,'disease':508,'wounds':49,'other':37},
         ]
 
         var layers = d3.layout.stack()(causes.map(function(c) {
@@ -168,6 +171,8 @@ function participacion(years_partic,paths){
 
         x.domain(layers[0].map(function(d) { return d.x; }));
         y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]).nice();
+
+        debugger;
 
         var layer = svg.selectAll(".layer")
             .data(layers)
