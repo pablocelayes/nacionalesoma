@@ -116,9 +116,9 @@ function participacion(years_partic,paths){
 
         var parseDate = d3.time.format("%m/%Y").parse;
 
-        var margin = {top: 20, right: 50, bottom: 30, left: 20},
-            width = 960 - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
+        var margin = {top: 30, right: 150, bottom: 30, left: 20},
+            width = 500 - margin.left - margin.right,
+            height = 225 - margin.top - margin.bottom;
 
         var x = d3.scale.ordinal()
             .rangeRoundBands([0, width]);
@@ -135,7 +135,7 @@ function participacion(years_partic,paths){
 
         var yAxis = d3.svg.axis()
             .scale(y)
-            .orient("right");
+            .orient("left");
 
         var svg = d3.select("#tooltip").append("svg")
             .attr("width", width + margin.left + margin.right)
@@ -144,30 +144,20 @@ function participacion(years_partic,paths){
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         var crimea = [
-            {'date':parseDate('4/1854'), 'total':	8571,'disease':	1,'wounds':	0,'other':	5},
-            {'date':parseDate('5/1854'),'total':	23333,'disease':	12,'wounds':	0,'other':	9},
-            {'date':parseDate('6/1854'),'total':	28333,'disease':	11,'wounds':	0,'other':	6},
-            {'date':parseDate('7/1854'),'total':	28772,'disease':	359,'wounds':	0,'other':	23},
-            {'date':parseDate('8/1854'),'total':	30246,'disease':	828,'wounds':	1,'other':	30},
-            {'date':parseDate('9/1854'),'total':	30290,'disease':	788,'wounds':	81,'other':	70},
-            {'date':parseDate('10/1854'),'total':	30643,'disease':	503,'wounds':	132,'other':	128},
-            {'date':parseDate('11/1854'),'total':	29736,'disease':	844,'wounds':	287,'other':	106},
-            {'date':parseDate('12/1854'),'total':	32779,'disease':	1725,'wounds':	114,'other':	131},
-            {'date':parseDate('1/1855'),'total':	32393,'disease':	2761,'wounds':	83,'other':	324},
-            {'date':parseDate('2/1855'),'total':	30919,'disease':	2120,'wounds':	42,'other':	361},
-            {'date':parseDate('3/1855'),'total':	30107,'disease':	1205,'wounds':	32,'other':	172},
-            {'date':parseDate('4/1855'),'total':	32252,'disease':	477,'wounds':	48,'other':	57},
-            {'date':parseDate('5/1855'),'total':	35473,'disease':	508,'wounds':	49,'other':	37},
-            {'date':parseDate('6/1855'),'total':	38863,'disease':	802,'wounds':	209,'other':	31},
-            {'date':parseDate('7/1855'),'total':	42647,'disease':	382,'wounds':	134,'other':	33},
-            {'date':parseDate('8/1855'),'total':	44614,'disease':	483,'wounds':	164,'other':	25},
-            {'date':parseDate('9/1855'),'total':	47751,'disease':	189,'wounds':	276,'other':	20},
-            {'date':parseDate('10/1855'),'total':	46852,'disease':	128,'wounds':	53,'other':	18},
-            {'date':parseDate('11/1855'),'total':	37853,'disease':	178,'wounds':	33,'other':	32},
-            {'date':parseDate('12/1855'),'total':	43217,'disease':	91,'wounds':	18,'other':	28},
-            {'date':parseDate('1/1856'),'total':	44212,'disease':	42,'wounds':	2,'other':	48},
-            {'date':parseDate('2/1856'),'total':	43485,'disease':	24,'wounds':	0,'other':	19},
-            {'date':parseDate('3/1856'),'total':	46140,'disease':	15,'wounds':	0,'other':	35},
+            {'date':parseDate('5/1854'),'total':23333,'disease':12,'wounds':0,'other':9},
+            {'date':parseDate('6/1854'),'total':28333,'disease':11,'wounds':0,'other':6},
+            {'date':parseDate('7/1854'),'total':28772,'disease':359,'wounds':0,'other':23},
+            {'date':parseDate('8/1854'),'total':30246,'disease':828,'wounds':1,'other':30},
+            {'date':parseDate('9/1854'),'total':30290,'disease':788,'wounds':81,'other':70},
+            {'date':parseDate('10/1854'),'total':30643,'disease':503,'wounds':132,'other':128},
+            {'date':parseDate('11/1854'),'total':29736,'disease':844,'wounds':287,'other':106},
+            {'date':parseDate('12/1854'),'total':32779,'disease':1725,'wounds':114,'other':131},
+            {'date':parseDate('1/1855'),'total':32393,'disease':2761,'wounds':83,'other':324},
+            {'date':parseDate('2/1855'),'total':30919,'disease':2120,'wounds':42,'other':361},
+            {'date':parseDate('3/1855'),'total':30107,'disease':1205,'wounds':32,'other':172},
+            {'date':parseDate('4/1855'),'total':32252,'disease':477,'wounds':48,'other':57},
+            {'date':parseDate('5/1855'),'total':35473,'disease':508,'wounds':49,'other':37},
+            {'date':parseDate('6/1855'),'total':38863,'disease':802,'wounds':209,'other':31},
         ]
 
         var layers = d3.layout.stack()(causes.map(function(c) {
@@ -188,19 +178,19 @@ function participacion(years_partic,paths){
         layer.selectAll("rect")
             .data(function(d) { return d; })
             .enter().append("rect")
-            .attr("x", function(d) { return x(d.x); })
+            .attr("x", function(d) { return x(d.x) + 12; })
             .attr("y", function(d) { return y(d.y + d.y0); })
             .attr("height", function(d) { return y(d.y0) - y(d.y + d.y0); })
             .attr("width", x.rangeBand() - 1);
 
         svg.append("g")
             .attr("class", "axis axis--x")
-            .attr("transform", "translate(0," + height + ")")
+            .attr("transform", "translate(10," + height + ")")
             .call(xAxis);
 
         svg.append("g")
             .attr("class", "axis axis--y")
-            .attr("transform", "translate(" + width + ",0)")
+            .attr("transform", "translate(" + 15 + ",0)")
             .call(yAxis);
 
         function type(d) {
@@ -258,31 +248,31 @@ function participacion(years_partic,paths){
 		}
 
 
-	    d3.select(path)
-		.transition()
-		.style('fill',fill);
-	    d3.select(path).on('mouseenter',function(event)
-			       {
-				   tooltip(año,this.id,
-					   d3.event,years_partic);
-			       }).on('mouseout',function(event)
-				     {
-					 d3.select("#"+this.id).style('stroke-width', 1)
-					     .style('stroke', 'white')
-				     })
-		.on('click',function(event)
-		    {
-			var provincia = path_to_provs[this.id];
-			if(provincia != undefined){
-			    var provincia_clean = provincia.replace(/\s/g, '_');
-			    var svg_node = d3.select("#svg_tooltip");
-			    var w = d3.select(window.open().document.body);
-			    w.append('svg')
-				.attr("width", 500)
-				.attr("height", 400)
-				.html(svg_node.html());
-			}
-		    });
+	        d3.select(path)
+		    .transition()
+		    .style('fill',fill);
+	        d3.select(path).on('mouseenter',function(event)
+			           {
+				       tooltip(año,this.id,
+					       d3.event,years_partic);
+			           }).on('mouseout',function(event)
+				         {
+					     d3.select("#"+this.id).style('stroke-width', 1)
+					         .style('stroke', 'white')
+				         })
+		    .on('click',function(event)
+		        {
+			    var provincia = path_to_provs[this.id];
+			    if(provincia != undefined){
+			        var provincia_clean = provincia.replace(/\s/g, '_');
+			        var svg_node = d3.select("#svg_tooltip");
+			        var w = d3.select(window.open().document.body);
+			        w.append('svg')
+				    .attr("width", 500)
+				    .attr("height", 400)
+				    .html(svg_node.html());
+			    }
+		        });
 	    }}
 	mapa_node.style("display","block");
     }
