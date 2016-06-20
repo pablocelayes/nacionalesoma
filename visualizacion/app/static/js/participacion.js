@@ -101,18 +101,23 @@ function participacion(years_partic,paths){
 	}
     }
 
-    function get_province_prog(prov,data){
+    function get_province_prog(prov, data){
 	var res = {'prog':prov,'data':[]};
+        var axis_factor = 1000; // Sería inverso en el eje...
 	for(var i=0;i<data.length;i++){
 	    res['data'].push(JSON.parse(data[i])['pob_esc'][prov]);
+            res['data'][i]['date'] = i+1998;
+            var pob_esc = res['data'][i]['Población'];
+            res['data'][i]['Aprobados/Población'] = (res['data'][i]['Aprobados']/pob_esc) * axis_factor;
+            res['data'][i]['Clasificados/Población'] = (res['data'][i]['Clasificados']/pob_esc)* axis_factor;
 	}
 	return res;
     }
 
     function paint_svg(tooltip_node,prog_prov){
 
-
-        var causes = ["wounds", "other", "disease"];
+        var causes = ["Clasificados/Población", "Aprobados/Población"];
+        var data = prog_prov['data'];
 
         var parseDate = d3.time.format("%Y").parse;
 
@@ -143,29 +148,10 @@ function participacion(years_partic,paths){
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        var crimea = [
-            {'date':parseDate('1998'),'total':23333,'disease':12,'wounds':20,'other':9},
-            {'date':parseDate('1999'),'total':28333,'disease':11,'wounds':10,'other':6},
-            {'date':parseDate('2000'),'total':28772,'disease':359,'wounds':0,'other':23},
-            {'date':parseDate('2001'),'total':30246,'disease':828,'wounds':1,'other':30},
-            {'date':parseDate('2002'),'total':30290,'disease':788,'wounds':81,'other':70},
-            {'date':parseDate('2003'),'total':30643,'disease':503,'wounds':132,'other':128},
-            {'date':parseDate('2004'),'total':29736,'disease':844,'wounds':287,'other':106},
-            {'date':parseDate('2005'),'total':32779,'disease':1725,'wounds':114,'other':131},
-            {'date':parseDate('2006'),'total':29736,'disease':844,'wounds':287,'other':106},
-            {'date':parseDate('2007'),'total':32393,'disease':2761,'wounds':83,'other':324},
-            {'date':parseDate('2008'),'total':30919,'disease':2120,'wounds':42,'other':361},
-            {'date':parseDate('2009'),'total':30107,'disease':1205,'wounds':32,'other':172},
-            {'date':parseDate('2010'),'total':30919,'disease':2120,'wounds':42,'other':361},
-            {'date':parseDate('2011'),'total':35473,'disease':508,'wounds':49,'other':37},
-            {'date':parseDate('2012'),'total':32252,'disease':477,'wounds':48,'other':57},
-            {'date':parseDate('2013'),'total':38863,'disease':802,'wounds':209,'other':31},
-            {'date':parseDate('2014'),'total':35473,'disease':508,'wounds':49,'other':37},
-        ]
-
         var layers = d3.layout.stack()(causes.map(function(c) {
-            return crimea.map(function(d) {
-                return {x: d.date, y: d[c]};
+            return data.map(function(d) {
+                return {x: parseDate('' + d.date),
+                        y: d[c]};
             });
         }));
 

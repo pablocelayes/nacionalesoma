@@ -6,7 +6,6 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
 
 function init_generos(years_partic){
 
-    console.log(years_partic);
 
     var n_paths = 44;
 
@@ -154,7 +153,6 @@ function init_generos(years_partic){
 	var prov = path_to_provs[id];
 	var data_json = JSON.parse(years_partic[year-1998])['genero'];
 	var data_prov = data_json[cat][prov];
-	console.log(data_json);
 	var f = data_prov['F'];
 	var m = data_prov['M'];
 	var percent;
