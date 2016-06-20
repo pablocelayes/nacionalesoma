@@ -158,8 +158,6 @@ function participacion(years_partic,paths){
         x.domain(layers[0].map(function(d) { return d.x; }));
         y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]).nice();
 
-        debugger;
-
         var layer = svg.selectAll(".layer")
             .data(layers)
             .enter().append("g")
@@ -256,10 +254,11 @@ function participacion(years_partic,paths){
 			    var provincia = path_to_provs[this.id];
 			    if(provincia != undefined){
 			        var provincia_clean = provincia.replace(/\s/g, '_');
-			        var svg_node = d3.select("#svg_tooltip");
+			        var svg_node = d3.select("#tooltip");
 			        var w = d3.select(window.open().document.body);
-			        w.append('svg')
-				    .attr("width", 500)
+                                w.append('svg') // TODO: ver como pasarle los estilos como el svg "padre"
+                                    .attr("transform", "translate(30,30)")
+				    .attr("width", 600)
 				    .attr("height", 400)
 				    .html(svg_node.html());
 			    }
