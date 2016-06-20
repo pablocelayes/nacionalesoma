@@ -114,9 +114,8 @@ function participacion(years_partic,paths){
 	return res;
     }
 
-    function paint_svg(tooltip_node,prog_prov){
+    function paint_svg(tooltip_node,prog_prov, categories){
 
-        var causes = ["Clasificados/Población", "Aprobados/Población"];
         var data = prog_prov['data'];
 
         var parseDate = d3.time.format("%Y").parse;
@@ -142,13 +141,13 @@ function participacion(years_partic,paths){
             .scale(y)
             .orient("left");
 
-        var svg = d3.select("#tooltip").append("svg")
+        var svg = tooltip_node.append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        var layers = d3.layout.stack()(causes.map(function(c) {
+        var layers = d3.layout.stack()(categories.map(function(c) {
             return data.map(function(d) {
                 return {x: parseDate('' + d.date),
                         y: d[c]};
@@ -184,7 +183,7 @@ function participacion(years_partic,paths){
 
         function type(d) {
             d.date = parseDate(d.date);
-            causes.forEach(function(c) { d[c] = +d[c]; });
+            categories.forEach(function(c) { d[c] = +d[c]; });
             return d;
         }
 
@@ -213,8 +212,8 @@ function participacion(years_partic,paths){
 	    	"<p>Progresión respecto a población escolar:</p>";
 
 	    tooltip_node.html(content);
-
-	    paint_svg(tooltip_node,prog_prov)
+            var categories = ["Clasificados/Población", "Aprobados/Población"];
+	    paint_svg(tooltip_node,prog_prov,categories);
 	    tooltip_node.style("display","block");
 	}}
 
