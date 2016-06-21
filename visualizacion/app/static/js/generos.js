@@ -87,7 +87,7 @@ function init_generos(years_partic){
 	year_label_gen.text(" "+year);
 	update_svg_gen(cat_selected,year);
     }
-    function color_picker(f_count,m_count){
+    function color_picker(f_count,m_count) {
 	if((f_count == m_count) && (f_count > 0))
 	    return purpura;
 	if((f_count == m_count) && (f_count == 0))
@@ -100,9 +100,29 @@ function init_generos(years_partic){
 	return colores[index];
     }
 
+    function process_data_gen(years_partic) {
+	var res = [];
+	for(var i=0;i<years_partic.length;i++){
+	    res.push(JSON.parse(years_partic[i])['genero']);
+	}
+	return res;
+    }
+
+    var global_data = process_data_gen(years_partic);
+
+    function get_data_prov_gen(global_data,prov,cat) {
+	var res = {'prog':prov,'data':[]};
+	for(var i=0;i<global_data.length;i++){
+	    res['data'].push(global_data[i][cat][prov]);
+            res['data'][i]['date'] = i+1998;
+	}
+	return res;
+    }
+
+
     function update_svg_gen(cat,year){
-	show_national_progression(cat,year);
-	var data_json = JSON.parse(years_partic[year-1998])['genero'];
+        var data_json = JSON.parse(years_partic[year-1998])['genero'];
+        show_national_progression(cat,year,global_data);
 	var paths = mapa_gen.selectAll("path");
 	// adicionando tooltip a todas las provincias ...
 	for(var i = 0; i < n_paths; i++){
@@ -125,7 +145,8 @@ function init_generos(years_partic){
 			{
 			    mapa_gen.select("#"+this.id).style('stroke-width', 2)
 				.style('stroke', 'purple')
-			    show_prov_prog(cat,year,this.id);
+                            var prov_cat_data = get_data_prov_gen(global_data,prov,cat);
+			    show_prov_prog(cat,year,this.id,prov_cat_data);
 			    show_prov_percent(cat,year,this.id);
 			})
 		    .on('mouseout',function(event)
@@ -164,11 +185,11 @@ function init_generos(years_partic){
 	actual_prov_percent_gen.text(prov + " " +truncate(percent,2)+"%");
     }
 
-    function show_prov_prog(cat,year,id){
+    function show_prov_prog(cat,year,id,prov_cat_data){
     }
 
 
-    function show_national_progression(cat,year){
+    function show_national_progression(cat,year,global_data){
     }
 
     add_years("Clasificados");
