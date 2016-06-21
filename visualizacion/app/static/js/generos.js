@@ -111,6 +111,7 @@ function init_generos(years_partic){
     var global_data = process_data_gen(years_partic);
 
     function get_data_prov_gen(global_data,prov,cat) {
+
 	var res = {'prog':prov,'data':[]};
 	for(var i=0;i<global_data.length;i++){
 	    res['data'].push(global_data[i][cat][prov]);
@@ -137,16 +138,16 @@ function init_generos(years_partic){
 		    var m_count = data_prov['M'];
 		    fill = color_picker(f_count,m_count);
 		}
-		d3.select(path)
+
+                d3.select(path)
 		    .transition()
 		    .style('fill',fill);
 		d3.select(path)
 		    .on('mouseenter',function(event)
 			{
 			    mapa_gen.select("#"+this.id).style('stroke-width', 2)
-				.style('stroke', 'purple')
-                            var prov_cat_data = get_data_prov_gen(global_data,prov,cat);
-			    show_prov_prog(cat,year,this.id,prov_cat_data);
+				.style('stroke', 'purple');
+			    show_prov_prog(cat,year,this.id);
 			    show_prov_percent(cat,year,this.id);
 			})
 		    .on('mouseout',function(event)
@@ -185,7 +186,12 @@ function init_generos(years_partic){
 	actual_prov_percent_gen.text(prov + " " +truncate(percent,2)+"%");
     }
 
-    function show_prov_prog(cat,year,id,prov_cat_data){
+    function show_prov_prog(cat,year,id){
+        prog_prov_gen.html("");
+        var prov = path_to_provs[id];
+        var prov_cat_data = get_data_prov_gen(global_data,prov,cat);
+        var categories = ["F","M"];
+        paint_svg(prog_prov_gen,prov_cat_data,categories);
     }
 
 

@@ -7,6 +7,82 @@ d3.xml(svg_file1,"image/svg+xml", function(xml){
 var mapa_node = d3.select("#mapa");
 mapa_node.style("display","none");
 
+function paint_svg(tooltip_node,prog_prov, categories){
+
+        var data = prog_prov['data'];
+
+        var parseDate = d3.time.format("%Y").parse;
+
+        var margin = {top: 30, right: 150, bottom: 30, left: 20},
+            width = 600 - margin.left - margin.right,
+            height = 225 - margin.top - margin.bottom;
+
+        var x = d3.scale.ordinal()
+            .rangeRoundBands([0, width]);
+
+        var y = d3.scale.linear()
+            .rangeRound([height, 0]);
+
+        var z = d3.scale.category10();
+
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom")
+            .tickFormat(d3.time.format('%Y'));
+
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+
+        var svg = tooltip_node.append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var layers = d3.layout.stack()(categories.map(function(c) {
+            return data.map(function(d) {
+                return {x: parseDate('' + d.date),
+                        y: d[c]};
+            });
+        }));
+
+        x.domain(layers[0].map(function(d) { return d.x; }));
+        y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]).nice();
+
+        var layer = svg.selectAll(".layer")
+            .data(layers)
+            .enter().append("g")
+            .attr("class", "layer")
+            .style("fill", function(d, i) { return z(i); });
+
+        layer.selectAll("rect")
+            .data(function(d) { return d; })
+            .enter().append("rect")
+            .attr("x", function(d) { return x(d.x) + 12; })
+            .attr("y", function(d) { return y(d.y + d.y0); })
+            .attr("height", function(d) { return y(d.y0) - y(d.y + d.y0); })
+            .attr("width", x.rangeBand() - 1);
+
+        svg.append("g")
+            .attr("class", "axis axis--x")
+            .attr("transform", "translate(10," + height + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "axis axis--y")
+            .attr("transform", "translate(" + 15 + ",0)")
+            .call(yAxis);
+
+        function type(d) {
+            d.date = parseDate(d.date);
+            categories.forEach(function(c) { d[c] = +d[c]; });
+            return d;
+        }
+
+    }
+
+
 function initialize_values(years_partic){
     var svg_map = d3.select('#svg2');
     svg_map.attr("transform","scale(0.75)");
@@ -112,81 +188,6 @@ function participacion(years_partic,paths){
             res['data'][i]['Clasificados/Población'] = (res['data'][i]['Clasificados']/pob_esc)* axis_factor;
 	}
 	return res;
-    }
-
-    function paint_svg(tooltip_node,prog_prov, categories){
-
-        var data = prog_prov['data'];
-
-        var parseDate = d3.time.format("%Y").parse;
-
-        var margin = {top: 30, right: 150, bottom: 30, left: 20},
-            width = 600 - margin.left - margin.right,
-            height = 225 - margin.top - margin.bottom;
-
-        var x = d3.scale.ordinal()
-            .rangeRoundBands([0, width]);
-
-        var y = d3.scale.linear()
-            .rangeRound([height, 0]);
-
-        var z = d3.scale.category10();
-
-        var xAxis = d3.svg.axis()
-            .scale(x)
-            .orient("bottom")
-            .tickFormat(d3.time.format('%Y'));
-
-        var yAxis = d3.svg.axis()
-            .scale(y)
-            .orient("left");
-
-        var svg = tooltip_node.append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-        var layers = d3.layout.stack()(categories.map(function(c) {
-            return data.map(function(d) {
-                return {x: parseDate('' + d.date),
-                        y: d[c]};
-            });
-        }));
-
-        x.domain(layers[0].map(function(d) { return d.x; }));
-        y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]).nice();
-
-        var layer = svg.selectAll(".layer")
-            .data(layers)
-            .enter().append("g")
-            .attr("class", "layer")
-            .style("fill", function(d, i) { return z(i); });
-
-        layer.selectAll("rect")
-            .data(function(d) { return d; })
-            .enter().append("rect")
-            .attr("x", function(d) { return x(d.x) + 12; })
-            .attr("y", function(d) { return y(d.y + d.y0); })
-            .attr("height", function(d) { return y(d.y0) - y(d.y + d.y0); })
-            .attr("width", x.rangeBand() - 1);
-
-        svg.append("g")
-            .attr("class", "axis axis--x")
-            .attr("transform", "translate(10," + height + ")")
-            .call(xAxis);
-
-        svg.append("g")
-            .attr("class", "axis axis--y")
-            .attr("transform", "translate(" + 15 + ",0)")
-            .call(yAxis);
-
-        function type(d) {
-            d.date = parseDate(d.date);
-            categories.forEach(function(c) { d[c] = +d[c]; });
-            return d;
-        }
-
     }
 
     function tooltip(year,id,event,data)
