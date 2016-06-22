@@ -120,10 +120,27 @@ function init_generos(years_partic){
 	return res;
     }
 
+    function get_data_nacional_gen(cat,global_data){
+        var res = {'country':'AR','data':[]};
+        for(var i=0;i<global_data.length;i++){
+            var year_data = global_data[i][cat];
+            var f = 0;
+            var m = 0;
+            for(var prov in year_data){
+                f += year_data[prov]['F'];
+                m += year_data[prov]['M'];
+            }
+            res['data'].push({'date':i+1998,
+                              'F':f,
+                              'M':m});
+        }
+        return res;
+    }
+
 
     function update_svg_gen(cat,year){
         var data_json = JSON.parse(years_partic[year-1998])['genero'];
-        show_national_progression(cat,year,global_data);
+        show_national_progression(cat);
 	var paths = mapa_gen.selectAll("path");
 	// adicionando tooltip a todas las provincias ...
 	for(var i = 0; i < n_paths; i++){
@@ -195,7 +212,12 @@ function init_generos(years_partic){
     }
 
 
-    function show_national_progression(cat,year,global_data){
+    function show_national_progression(cat){
+        prog_nac_gen.html("");
+        debugger;
+        var prog_nac_data = get_data_nacional_gen(cat,global_data);
+        var categories = ["F","M"];
+        paint_svg(prog_nac_gen,prog_nac_data,categories);
     }
 
     add_years("Clasificados");
