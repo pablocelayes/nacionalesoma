@@ -208,9 +208,14 @@ function participacion(years_partic,paths){
 	    	"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+
 	    	"<p><b>Poblabión escolar: </b>"+
 	    	data_json[prov_name]['Población']+"</p>"+
-	    	"<p>"+data_json[prov_name]['Clasificados']+" clasificados(s) <div class='min-square-clasif'></div></p>"+
-	    	"<p>"+data_json[prov_name]['Aprobados']+" aprobado(s) <div class='min-square-aprob'></div></p>"+
-	    	"<p>Progresión respecto a población escolar:</p>";
+                "<div class='my-legend row' style='margin-left:10px;'><div class='legend-title'></div>"+
+                "<div class='legend-scale'>"+
+                "<ul class='legend-labels'>"+
+                "<li><span style='background:#E0B6B6;'></span>"+
+                data_json[prov_name]['Clasificados']+" clasificados(s)</li>"+
+                "<li><span style='background:#B79191;'></span>"+
+                data_json[prov_name]['Aprobados']+" aprobado(s)</li>"+
+                "</ul></div></div></br><div style='text-align:center'>Progresión respecto a población escolar (*10<sup>-3</sup>)</div>";
 
 	    tooltip_node.html(content);
             var categories = ["Clasificados/Población", "Aprobados/Población"];
