@@ -211,9 +211,9 @@ function participacion(years_partic,paths){
                 "<div class='my-legend row' style='margin-left:10px;'><div class='legend-title'></div>"+
                 "<div class='legend-scale'>"+
                 "<ul class='legend-labels'>"+
-                "<li><span style='background:#E0B6B6;'></span>"+
+                "<li><span style='background:#ff7f0e;'></span>"+
                 data_json[prov_name]['Clasificados']+" clasificados(s)</li>"+
-                "<li><span style='background:#B79191;'></span>"+
+                "<li><span style='background:#1f77b4;'></span>"+
                 data_json[prov_name]['Aprobados']+" aprobado(s)</li>"+
                 "</ul></div></div></br><div style='text-align:center'>Progresión respecto a población escolar (*10<sup>-3</sup>)</div>";
 
