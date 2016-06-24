@@ -6,7 +6,7 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
 
 function colores_generos(n) {
     var colores = ["#ff6496", "#6496ff"];
-  return colores[n % colores.length];
+    return colores[n % colores.length];
 }
 
 function init_generos(years_partic){
@@ -75,6 +75,7 @@ function init_generos(years_partic){
     year_list_gen.on("input",function(){add_svg(+this.value);});
 
     function add_years(cat){
+        prog_prov_gen.html("");
 	actual_prov_gen.html("");
 	actual_prov_percent_gen.html("");
 	cat_title_gen.text(cat);
@@ -209,20 +210,21 @@ function init_generos(years_partic){
     }
 
     function show_prov_prog(cat,year,id){
-        prog_prov_gen.html("");
         var prov = path_to_provs[id];
+        var title = "Progresión anual de "+cat+" por género de "+prov;
+        prog_prov_gen.html("");
         var prov_cat_data = get_data_prov_gen(global_data,prov,cat);
         var categories = ["F","M"];
-        paint_svg(prog_prov_gen,prov_cat_data,categories,colores_generos);
+        paint_svg(prog_prov_gen,prov_cat_data,categories,colores_generos,title);
     }
 
 
     function show_national_progression(cat){
+        var title = "Progresión nacional anual de "+cat;
         prog_nac_gen.html("");
-        debugger;
         var prog_nac_data = get_data_nacional_gen(cat,global_data);
         var categories = ["F","M"];
-        paint_svg(prog_nac_gen,prog_nac_data,categories,colores_generos);
+        paint_svg(prog_nac_gen,prog_nac_data,categories,colores_generos,title);
     }
 
     add_years("Clasificados");
