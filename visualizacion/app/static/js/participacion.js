@@ -7,7 +7,12 @@ d3.xml(svg_file1,"image/svg+xml", function(xml){
 var mapa_node = d3.select("#mapa");
 mapa_node.style("display","none");
 
-function paint_svg(tooltip_node,prog_prov, categories){
+function colores_participacion(n) {
+    var colores = ["#B79191", "#E0B6B6"];
+  return colores[n % colores.length];
+}
+
+function paint_svg(tooltip_node,prog_prov, categories, f_colors){
 
         var data = prog_prov['data'];
 
@@ -22,8 +27,6 @@ function paint_svg(tooltip_node,prog_prov, categories){
 
         var y = d3.scale.linear()
             .rangeRound([height, 0]);
-
-        var z = d3.scale.category10();
 
         var xAxis = d3.svg.axis()
             .scale(x)
@@ -54,7 +57,7 @@ function paint_svg(tooltip_node,prog_prov, categories){
             .data(layers)
             .enter().append("g")
             .attr("class", "layer")
-            .style("fill", function(d, i) { return z(i); });
+            .style("fill", function(d, i) { return f_colors(i); });
 
         layer.selectAll("rect")
             .data(function(d) { return d; })
@@ -211,15 +214,15 @@ function participacion(years_partic,paths){
                 "<div class='my-legend row' style='margin-left:10px;'><div class='legend-title'></div>"+
                 "<div class='legend-scale'>"+
                 "<ul class='legend-labels'>"+
-                "<li><span style='background:#ff7f0e;'></span>"+
+                "<li><span style='background:#B79191;'></span>"+
                 data_json[prov_name]['Clasificados']+" clasificados(s)</li>"+
-                "<li><span style='background:#1f77b4;'></span>"+
+                "<li><span style='background:#E0B6B6;'></span>"+
                 data_json[prov_name]['Aprobados']+" aprobado(s)</li>"+
                 "</ul></div></div></br><div style='text-align:center'>Progresión respecto a población escolar (*10<sup>-3</sup>)</div>";
 
 	    tooltip_node.html(content);
             var categories = ["Clasificados/Población", "Aprobados/Población"];
-	    paint_svg(tooltip_node,prog_prov,categories);
+	    paint_svg(tooltip_node,prog_prov,categories,colores_participacion);
 	    tooltip_node.style("display","block");
 	}}
 
