@@ -81,7 +81,7 @@ function paint_svg(tooltip_node,prog_prov, categories, colors, title){
             .attr("x", (width / 2))
             .attr("y", 0)
             .attr("text-anchor", "middle")
-            .style("font-size", "16px")
+            .style("font-size", "13px")
             .style("text-decoration", "underline")
             .text(title);
     }
