@@ -4,11 +4,6 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
     document.getElementById("mapa_gen").appendChild(xml.documentElement);
 });
 
-function colores_generos(n) {
-    var colores = ["#ff6496", "#6496ff"];
-    return colores[n % colores.length];
-}
-
 function init_generos(years_partic){
 
 
@@ -215,7 +210,8 @@ function init_generos(years_partic){
         prog_prov_gen.html("");
         var prov_cat_data = get_data_prov_gen(global_data,prov,cat);
         var categories = ["F","M"];
-        paint_svg(prog_prov_gen,prov_cat_data,categories,colores_generos,title);
+        var colores = ["#ff6496", "#6496ff"];
+        paint_svg(prog_prov_gen,prov_cat_data,categories,colores,title);
     }
 
 
@@ -224,7 +220,8 @@ function init_generos(years_partic){
         prog_nac_gen.html("");
         var prog_nac_data = get_data_nacional_gen(cat,global_data);
         var categories = ["F","M"];
-        paint_svg(prog_nac_gen,prog_nac_data,categories,colores_generos,title);
+        var colores = ["#ff6496", "#6496ff"];
+        paint_svg(prog_nac_gen,prog_nac_data,categories,colores,title);
     }
 
     add_years("Clasificados");

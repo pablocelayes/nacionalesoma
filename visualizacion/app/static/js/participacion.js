@@ -7,31 +7,28 @@ d3.xml(svg_file1,"image/svg+xml", function(xml){
 var mapa_node = d3.select("#mapa");
 mapa_node.style("display","none");
 
-function colores_participacion(n) {
-    var colores = ["#B79191", "#E0B6B6"];
-    return colores[n % colores.length];
-}
-
-function paint_svg(tooltip_node,prog_prov, categories, f_colors, title){
+function paint_svg(tooltip_node,prog_prov, categories, colors, title){
 
     var data = prog_prov['data'];
 
-    var parseDate = d3.time.format("%Y").parse;
-
-    var margin = {top: 30, right: 150, bottom: 30, left: 20},
+    var margin = {top: 10, right: 150, bottom: 30, left: 35},
         width = 600 - margin.left - margin.right,
         height = 225 - margin.top - margin.bottom;
 
-    var x = d3.scale.ordinal()
-        .rangeRoundBands([0, width]);
+    var x0 = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1);
+
+    var x1 = d3.scale.ordinal();
 
     var y = d3.scale.linear()
-        .rangeRound([height, 0]);
+        .range([height, 0]);
+
+    var color = d3.scale.ordinal()
+        .range(colors);
 
     var xAxis = d3.svg.axis()
-        .scale(x)
-        .orient("bottom")
-        .tickFormat(d3.time.format('%Y'));
+        .scale(x0)
+        .orient("bottom");
 
     var yAxis = d3.svg.axis()
         .scale(y)
@@ -43,54 +40,50 @@ function paint_svg(tooltip_node,prog_prov, categories, f_colors, title){
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+
+    var cats = categories;
+
+    data.forEach(function(d) {
+        d.ages = cats.map(function(name) { return {name: name, value: +d[name]}; });
+    });
+
+    x0.domain(data.map(function(d) { return d.date; }));
+    x1.domain(cats).rangeRoundBands([0, x0.rangeBand()]);
+    y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(" + 5 + ",0)")
+        .call(yAxis);
+
+    var state = svg.selectAll(".state")
+        .data(data)
+        .enter().append("g")
+        .attr("class", "state")
+        .attr("transform", function(d) { return "translate(" + x0(d.date) + ",0)"; });
+
+    state.selectAll("rect")
+        .data(function(d) { return d.ages; })
+        .enter().append("rect")
+        .attr("width", x1.rangeBand())
+        .attr("x", function(d) { return x1(d.name)+5; })
+        .attr("y", function(d) { return y(d.value); })
+        .attr("height", function(d) { return height - y(d.value); })
+        .style("fill", function(d) { return color(d.name); });
+
     if (title) {
         svg.append("text")
             .attr("x", (width / 2))
-            .attr("y", 0 - (margin.top / 2))
+            .attr("y", 0)
             .attr("text-anchor", "middle")
             .style("font-size", "16px")
             .style("text-decoration", "underline")
             .text(title);
-    }
-
-    var layers = d3.layout.stack()(categories.map(function(c) {
-        return data.map(function(d) {
-            return {x: parseDate('' + d.date),
-                    y: d[c]};
-        });
-    }));
-
-    x.domain(layers[0].map(function(d) { return d.x; }));
-    y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]).nice();
-
-    var layer = svg.selectAll(".layer")
-        .data(layers)
-        .enter().append("g")
-        .attr("class", "layer")
-        .style("fill", function(d, i) { return f_colors(i); });
-
-    layer.selectAll("rect")
-        .data(function(d) { return d; })
-        .enter().append("rect")
-        .attr("x", function(d) { return x(d.x) + 12; })
-        .attr("y", function(d) { return y(d.y + d.y0); })
-        .attr("height", function(d) { return y(d.y0) - y(d.y + d.y0); })
-        .attr("width", x.rangeBand() - 1);
-
-    svg.append("g")
-        .attr("class", "axis axis--x")
-        .attr("transform", "translate(10," + height + ")")
-        .call(xAxis);
-
-    svg.append("g")
-        .attr("class", "axis axis--y")
-        .attr("transform", "translate(" + 15 + ",0)")
-        .call(yAxis);
-
-    function type(d) {
-        d.date = parseDate(d.date);
-        categories.forEach(function(c) { d[c] = +d[c]; });
-        return d;
     }
 
 }
@@ -224,15 +217,16 @@ function participacion(years_partic,paths){
                 "<div class='my-legend row' style='margin-left:10px;'><div class='legend-title'></div>"+
                 "<div class='legend-scale'>"+
                 "<ul class='legend-labels'>"+
-                "<li><span style='background:#B79191;'></span>"+
-                data_json[prov_name]['Clasificados']+" clasificados(s)</li>"+
                 "<li><span style='background:#E0B6B6;'></span>"+
+                data_json[prov_name]['Clasificados']+" clasificados(s)</li>"+
+                "<li><span style='background:#B79191;'></span>"+
                 data_json[prov_name]['Aprobados']+" aprobado(s)</li>"+
                 "</ul></div></div></br><div style='text-align:center'>Progresión respecto a población escolar (*10<sup>-3</sup>)</div>";
 
 	    tooltip_node.html(content);
             var categories = ["Clasificados/Población", "Aprobados/Población"];
-	    paint_svg(tooltip_node,prog_prov,categories,colores_participacion,[]);
+            var colores = ["#E0B6B6", "#B79191"];
+	    paint_svg(tooltip_node,prog_prov,categories,colores,[]);
 	    tooltip_node.style("display","block");
 	}}
 
