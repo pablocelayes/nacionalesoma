@@ -6,7 +6,6 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
 
 function init_generos(years_partic){
 
-    console.log(years_partic);
 
     var n_paths = 44;
 
@@ -71,6 +70,7 @@ function init_generos(years_partic){
     year_list_gen.on("input",function(){add_svg(+this.value);});
 
     function add_years(cat){
+        prog_prov_gen.html("");
 	actual_prov_gen.html("");
 	actual_prov_percent_gen.html("");
 	cat_title_gen.text(cat);
@@ -88,7 +88,7 @@ function init_generos(years_partic){
 	year_label_gen.text(" "+year);
 	update_svg_gen(cat_selected,year);
     }
-    function color_picker(f_count,m_count){
+    function color_picker(f_count,m_count) {
 	if((f_count == m_count) && (f_count > 0))
 	    return purpura;
 	if((f_count == m_count) && (f_count == 0))
@@ -101,9 +101,47 @@ function init_generos(years_partic){
 	return colores[index];
     }
 
+    function process_data_gen(years_partic) {
+	var res = [];
+	for(var i=0;i<years_partic.length;i++){
+	    res.push(JSON.parse(years_partic[i])['genero']);
+	}
+	return res;
+    }
+
+    var global_data = process_data_gen(years_partic);
+
+    function get_data_prov_gen(global_data,prov,cat) {
+
+	var res = {'prog':prov,'data':[]};
+	for(var i=0;i<global_data.length;i++){
+	    res['data'].push(global_data[i][cat][prov]);
+            res['data'][i]['date'] = i+1998;
+	}
+	return res;
+    }
+
+    function get_data_nacional_gen(cat,global_data){
+        var res = {'country':'AR','data':[]};
+        for(var i=0;i<global_data.length;i++){
+            var year_data = global_data[i][cat];
+            var f = 0;
+            var m = 0;
+            for(var prov in year_data){
+                f += year_data[prov]['F'];
+                m += year_data[prov]['M'];
+            }
+            res['data'].push({'date':i+1998,
+                              'F':f,
+                              'M':m});
+        }
+        return res;
+    }
+
+
     function update_svg_gen(cat,year){
-	show_national_progression(cat,year);
-	var data_json = JSON.parse(years_partic[year-1998])['genero'];
+        var data_json = JSON.parse(years_partic[year-1998])['genero'];
+        show_national_progression(cat);
 	var paths = mapa_gen.selectAll("path");
 	// adicionando tooltip a todas las provincias ...
 	for(var i = 0; i < n_paths; i++){
@@ -118,14 +156,15 @@ function init_generos(years_partic){
 		    var m_count = data_prov['M'];
 		    fill = color_picker(f_count,m_count);
 		}
-		d3.select(path)
+
+                d3.select(path)
 		    .transition()
 		    .style('fill',fill);
 		d3.select(path)
 		    .on('mouseenter',function(event)
 			{
 			    mapa_gen.select("#"+this.id).style('stroke-width', 2)
-				.style('stroke', 'purple')
+				.style('stroke', 'purple');
 			    show_prov_prog(cat,year,this.id);
 			    show_prov_percent(cat,year,this.id);
 			})
@@ -154,7 +193,6 @@ function init_generos(years_partic){
 	var prov = path_to_provs[id];
 	var data_json = JSON.parse(years_partic[year-1998])['genero'];
 	var data_prov = data_json[cat][prov];
-	console.log(data_json);
 	var f = data_prov['F'];
 	var m = data_prov['M'];
 	var percent;
@@ -167,10 +205,23 @@ function init_generos(years_partic){
     }
 
     function show_prov_prog(cat,year,id){
+        var prov = path_to_provs[id];
+        var title = "Progresión anual de "+cat+" por género de "+prov;
+        prog_prov_gen.html("");
+        var prov_cat_data = get_data_prov_gen(global_data,prov,cat);
+        var categories = ["F","M"];
+        var colores = ["#ff6496", "#6496ff"];
+        paint_svg(prog_prov_gen,prov_cat_data,categories,colores,title);
     }
 
 
-    function show_national_progression(cat,year){
+    function show_national_progression(cat){
+        var title = "Progresión nacional anual de "+cat;
+        prog_nac_gen.html("");
+        var prog_nac_data = get_data_nacional_gen(cat,global_data);
+        var categories = ["F","M"];
+        var colores = ["#ff6496", "#6496ff"];
+        paint_svg(prog_nac_gen,prog_nac_data,categories,colores,title);
     }
 
     add_years("Clasificados");

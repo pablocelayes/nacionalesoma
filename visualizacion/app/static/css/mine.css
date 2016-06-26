@@ -218,3 +218,39 @@ li.key {
 .my-legend a {
     color: #777;
 }
+
+
+.bar {
+  fill: steelblue;
+}
+
+.bar2 {
+  fill: red;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.axis--x path {
+  display: none;
+}
+
+/* .axis--y path { */
+/*   display: none; */
+/* } */

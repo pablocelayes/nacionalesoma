@@ -7,6 +7,88 @@ d3.xml(svg_file1,"image/svg+xml", function(xml){
 var mapa_node = d3.select("#mapa");
 mapa_node.style("display","none");
 
+function paint_svg(tooltip_node,prog_prov, categories, colors, title){
+
+    var data = prog_prov['data'];
+
+    var margin = {top: 10, right: 150, bottom: 30, left: 35},
+        width = 600 - margin.left - margin.right,
+        height = 225 - margin.top - margin.bottom;
+
+    var x0 = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1);
+
+    var x1 = d3.scale.ordinal();
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var color = d3.scale.ordinal()
+        .range(colors);
+
+    var xAxis = d3.svg.axis()
+        .scale(x0)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    var svg = tooltip_node.append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    var cats = categories;
+
+    data.forEach(function(d) {
+        d.ages = cats.map(function(name) { return {name: name, value: +d[name]}; });
+    });
+
+    x0.domain(data.map(function(d) { return d.date; }));
+    x1.domain(cats).rangeRoundBands([0, x0.rangeBand()]);
+    y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(" + 5 + ",0)")
+        .call(yAxis);
+
+    var state = svg.selectAll(".state")
+        .data(data)
+        .enter().append("g")
+        .attr("class", "state")
+        .attr("transform", function(d) { return "translate(" + x0(d.date) + ",0)"; });
+
+    state.selectAll("rect")
+        .data(function(d) { return d.ages; })
+        .enter().append("rect")
+        .attr("width", x1.rangeBand())
+        .attr("x", function(d) { return x1(d.name)+5; })
+        .attr("y", function(d) { return y(d.value); })
+        .attr("height", function(d) { return height - y(d.value); })
+        .style("fill", function(d) { return color(d.name); });
+
+    if (title) {
+        svg.append("text")
+            .attr("x", (width / 2))
+            .attr("y", 0)
+            .attr("text-anchor", "middle")
+            .style("font-size", "13px")
+            .style("text-decoration", "underline")
+            .text(title);
+    }
+
+}
+
+
 function initialize_values(years_partic){
     var svg_map = d3.select('#svg2');
     svg_map.attr("transform","scale(0.75)");
@@ -101,103 +183,17 @@ function participacion(years_partic,paths){
 	}
     }
 
-    function get_province_prog(prov,data){
+    function get_province_prog(prov, data){
 	var res = {'prog':prov,'data':[]};
+        var axis_factor = 1000; // Sería inverso en el eje...
 	for(var i=0;i<data.length;i++){
 	    res['data'].push(JSON.parse(data[i])['pob_esc'][prov]);
+            res['data'][i]['date'] = i+1998;
+            var pob_esc = res['data'][i]['Población'];
+            res['data'][i]['Aprobados/Población'] = (res['data'][i]['Aprobados']/pob_esc) * axis_factor;
+            res['data'][i]['Clasificados/Población'] = (res['data'][i]['Clasificados']/pob_esc)* axis_factor;
 	}
 	return res;
-    }
-
-    function paint_svg(tooltip_node,prog_prov){
-	var w_init = 500;
-	var h_init = 200;
-	var barPadding = 5;
-	var width = 500,
-	margin = 25,
-	offset = 50,
-	axisWidth = width - 2 * margin;
-
-	var padding = 20;
-	var shrink_factor = 100;
-
-	var scale = d3.scale.linear();
-
-	var svg = tooltip_node.append("svg")
-	    .attr("id","svg_tooltip")
-	    .attr("width", w_init)
-	    .attr("height", h_init);
-
-	scale.domain([0,d3.max(prog_prov['data'],
-			       function(d){
-				   return d['Índice'];
-			       })]);
-
-	h = h_init - shrink_factor;
-	w = w_init - shrink_factor;
-
-	scale.range([0,h]);
-
-	scale.clamp();
-
-	svg.append("g").attr("transform","translate(30,30)")
-	    .selectAll("rect")
-	    .attr("transform", "translate(20,20)")
-	    .data(prog_prov['data'])
-	    .enter()
-	    .append("rect")
-	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length);
-	    })
-	    .attr("y", function(d) {
-		return h - scale(d['Aprobados']/d['Población']);
-	    })
-	    .attr("width", w / prog_prov['data'].length - barPadding)
-	    .attr("height", function(d) {
-		return scale(d['Aprobados']/d['Población'])
-	    })
-	    .attr("fill","#b79191");
-
-	svg.append("g").attr("transform","translate(30,30)")
-	    .selectAll("rect")
-	    .attr("transform", "translate(20,20)")
-	    .data(prog_prov['data'])
-	    .enter()
-	    .append("rect")
-	    .attr("fill-opacity", 0.5)
-	    .attr("x", function(d, i) {
-		return i * (w / prog_prov['data'].length);
-	    })
-	    .attr("y", function(d) {
-		return h - scale(d['Índice']);
-	    })
-	    .attr("width", w / prog_prov['data'].length - barPadding)
-	    .attr("height", function(d) {
-		return scale(d['Índice'])
-	    })
-	    .attr("fill","#e0b6b6");
-
-	svg.append("g").attr("transform","translate(20,30)")
-	    .append("line")
-	    .attr({
-		x1: 0,
-		y1: 0,
-		x2: 0,
-		y2: h+10,
-		stroke: "#CCC"
-	    });
-
-	svg.append("g").attr("transform","translate(20,30)")
-	    .append("line")
-	    .attr({
-		x1: 0,
-		y1: h+10,
-		x2: w+20,
-		y2: h+10,
-		stroke: "#CCC"
-	    });
-
-
     }
 
     function tooltip(year,id,event,data)
@@ -218,13 +214,19 @@ function participacion(years_partic,paths){
 	    	"<p><b>Provincia:</b> "+path_to_provs[id]+"</p>"+
 	    	"<p><b>Poblabión escolar: </b>"+
 	    	data_json[prov_name]['Población']+"</p>"+
-	    	"<p>"+data_json[prov_name]['Clasificados']+" clasificados(s) <div class='min-square-clasif'></div></p>"+
-	    	"<p>"+data_json[prov_name]['Aprobados']+" aprobado(s) <div class='min-square-aprob'></div></p>"+
-	    	"<p>Progresión respecto a población escolar:</p>";
+                "<div class='my-legend row' style='margin-left:10px;'><div class='legend-title'></div>"+
+                "<div class='legend-scale'>"+
+                "<ul class='legend-labels'>"+
+                "<li><span style='background:#E0B6B6;'></span>"+
+                data_json[prov_name]['Clasificados']+" clasificados(s)</li>"+
+                "<li><span style='background:#B79191;'></span>"+
+                data_json[prov_name]['Aprobados']+" aprobado(s)</li>"+
+                "</ul></div></div></br><div style='text-align:center'>Progresión respecto a población escolar (*10<sup>-3</sup>)</div>";
 
 	    tooltip_node.html(content);
-
-	    paint_svg(tooltip_node,prog_prov)
+            var categories = ["Clasificados/Población", "Aprobados/Población"];
+            var colores = ["#E0B6B6", "#B79191"];
+	    paint_svg(tooltip_node,prog_prov,categories,colores,[]);
 	    tooltip_node.style("display","block");
 	}}
 
@@ -247,31 +249,32 @@ function participacion(years_partic,paths){
 		}
 
 
-	    d3.select(path)
-		.transition()
-		.style('fill',fill);
-	    d3.select(path).on('mouseenter',function(event)
-			       {
-				   tooltip(año,this.id,
-					   d3.event,years_partic);
-			       }).on('mouseout',function(event)
-				     {
-					 d3.select("#"+this.id).style('stroke-width', 1)
-					     .style('stroke', 'white')
-				     })
-		.on('click',function(event)
-		    {
-			var provincia = path_to_provs[this.id];
-			if(provincia != undefined){
-			    var provincia_clean = provincia.replace(/\s/g, '_');
-			    var svg_node = d3.select("#svg_tooltip");
-			    var w = d3.select(window.open().document.body);
-			    w.append('svg')
-				.attr("width", 500)
-				.attr("height", 400)
-				.html(svg_node.html());
-			}
-		    });
+	        d3.select(path)
+		    .transition()
+		    .style('fill',fill);
+	        d3.select(path).on('mouseenter',function(event)
+			           {
+				       tooltip(año,this.id,
+					       d3.event,years_partic);
+			           }).on('mouseout',function(event)
+				         {
+					     d3.select("#"+this.id).style('stroke-width', 1)
+					         .style('stroke', 'white')
+				         })
+		    .on('click',function(event)
+		        {
+			    var provincia = path_to_provs[this.id];
+			    if(provincia != undefined){
+			        var provincia_clean = provincia.replace(/\s/g, '_');
+			        var svg_node = d3.select("#tooltip");
+			        var w = d3.select(window.open().document.body);
+                                w.append('svg') // TODO: ver como pasarle los estilos como el svg "padre"
+                                    .attr("transform", "translate(30,30)")
+				    .attr("width", 600)
+				    .attr("height", 400)
+				    .html(svg_node.html());
+			    }
+		        });
 	    }}
 	mapa_node.style("display","block");
     }
