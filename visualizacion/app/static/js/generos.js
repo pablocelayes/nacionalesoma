@@ -114,11 +114,21 @@ function init_generos(years_partic){
     function get_data_prov_gen(global_data,prov,cat) {
 
 	var res = {'prog':prov,'data':[]};
+        var empty_data = true;
 	for(var i=0;i<global_data.length;i++){
-	    res['data'].push(global_data[i][cat][prov]);
+            var entry = global_data[i][cat][prov];
+	    res['data'].push(entry);
             res['data'][i]['date'] = i+1998;
+            if (entry.F + entry.M > 0) {
+                empty_data = false;
+            }
 	}
-	return res;
+        if (empty_data) {
+            return undefined;
+        }
+        else {
+            return res;
+        }
     }
 
     function get_data_nacional_gen(cat,global_data){
@@ -207,16 +217,30 @@ function init_generos(years_partic){
     function show_prov_prog(cat,year,id){
         var prov = path_to_provs[id];
         var title = "Progresión anual de "+cat+" por género de "+prov;
+        debugger;
+        prog_prov_gen.append("div")
+	    .attr("class","prog-prov")
+	    .html("<strong>"+prov+"</strong>: provincia sin "+
+		  cat.toLowerCase()+" femeninos en ningún año.");
         prog_prov_gen.html("");
         var prov_cat_data = get_data_prov_gen(global_data,prov,cat);
         var categories = ["F","M"];
         var colores = ["#ff6496", "#6496ff"];
-        paint_svg(prog_prov_gen,prov_cat_data,categories,colores,title);
+        if (prov_cat_data) {
+            paint_svg(prog_prov_gen,prov_cat_data,categories,colores,title);
+        }
+        else {
+	    prog_prov_gen.append("div")
+		.attr("class","prog-prov")
+		.html("<strong>"+prov+"</strong>: <p>provincia sin "+
+		      cat.toLowerCase()+" en ningún año.</p>");;
+        }
     }
 
 
     function show_national_progression(cat){
         var title = "Progresión nacional anual de "+cat;
+        debugger;
         prog_nac_gen.html("");
         var prog_nac_data = get_data_nacional_gen(cat,global_data);
         var categories = ["F","M"];
