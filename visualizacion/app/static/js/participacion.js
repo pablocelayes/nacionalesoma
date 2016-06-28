@@ -7,7 +7,7 @@ d3.xml(svg_file1,"image/svg+xml", function(xml){
 var mapa_node = d3.select("#mapa");
 mapa_node.style("display","none");
 
-function paint_svg(tooltip_node,prog_prov, categories, colors, title){
+function paint_svg(tooltip_node,prog_prov, categories, colors, title, y_max){
 
     var data = prog_prov['data'];
 
@@ -49,7 +49,7 @@ function paint_svg(tooltip_node,prog_prov, categories, colors, title){
 
     x0.domain(data.map(function(d) { return d.date; }));
     x1.domain(cats).rangeRoundBands([0, x0.rangeBand()]);
-    y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
+    y.domain([0, y_max]);
 
     svg.append("g")
         .attr("class", "x axis")
@@ -205,7 +205,6 @@ function participacion(years_partic,paths){
 	var data_json = JSON.parse(data[year-1998])['pob_esc']
 	if(prov_name != undefined){
 	    prov = prov_name.replace(/\s/g, '_');
-
 	    tooltip_node.html(""); //para evitar que "crezca" el tooltip
 	    var svg_val;
 	    var content;
@@ -221,12 +220,14 @@ function participacion(years_partic,paths){
                 data_json[prov_name]['Clasificados']+" clasificados(s)</li>"+
                 "<li><span style='background:#B79191;'></span>"+
                 data_json[prov_name]['Aprobados']+" aprobado(s)</li>"+
-                "</ul></div></div></br><div style='text-align:center'>Progresión respecto a población escolar (*10<sup>-3</sup>)</div>";
+                "</ul></div></div></br><div style='text-align:center;'><p>"+
+                "Progresión respecto a población escolar</p>"+
+                "<p style='font-size:14px;'>(por cada 10<sup>3</sup> alumnos)</p></div>";
 
 	    tooltip_node.html(content);
             var categories = ["Clasificados/Población", "Aprobados/Población"];
             var colores = ["#E0B6B6", "#B79191"];
-	    paint_svg(tooltip_node,prog_prov,categories,colores,[]);
+	    paint_svg(tooltip_node,prog_prov,categories,colores,[],0.6);
 	    tooltip_node.style("display","block");
 	}}
 

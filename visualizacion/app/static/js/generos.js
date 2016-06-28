@@ -217,7 +217,6 @@ function init_generos(years_partic){
     function show_prov_prog(cat,year,id){
         var prov = path_to_provs[id];
         var title = "Progresión anual de "+cat+" por género de "+prov;
-        debugger;
         prog_prov_gen.append("div")
 	    .attr("class","prog-prov")
 	    .html("<strong>"+prov+"</strong>: provincia sin "+
@@ -227,7 +226,7 @@ function init_generos(years_partic){
         var categories = ["F","M"];
         var colores = ["#ff6496", "#6496ff"];
         if (prov_cat_data) {
-            paint_svg(prog_prov_gen,prov_cat_data,categories,colores,title);
+            paint_svg(prog_prov_gen,prov_cat_data,categories,colores,title,250);
         }
         else {
 	    prog_prov_gen.append("div")
@@ -240,12 +239,11 @@ function init_generos(years_partic){
 
     function show_national_progression(cat){
         var title = "Progresión nacional anual de "+cat;
-        debugger;
         prog_nac_gen.html("");
         var prog_nac_data = get_data_nacional_gen(cat,global_data);
         var categories = ["F","M"];
         var colores = ["#ff6496", "#6496ff"];
-        paint_svg(prog_nac_gen,prog_nac_data,categories,colores,title);
+        paint_svg(prog_nac_gen,prog_nac_data,categories,colores,title,500);
     }
 
     add_years("Clasificados");
