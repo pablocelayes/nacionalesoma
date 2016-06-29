@@ -1,4 +1,4 @@
-ntabs = 4
+ntabs = 4;
 
 function next_tab(n){
     if(n<ntabs-1)
@@ -21,12 +21,12 @@ the_tabs = d3.select("#tabs").select("nav")
 
 the_contents = d3.select(".content").selectAll("section");
 
-prev.on("click",function(){update_tabs(prev_tab(current_tab()))});
-next.on("click",function(){update_tabs(next_tab(current_tab()))});
+prev.on("click",function(){update_tabs(prev_tab(current_tab()));});
+next.on("click",function(){update_tabs(next_tab(current_tab()));});
 
 function current_tab(){
     for(i=0;i<the_tabs[0].length;i++){
-	if (the_tabs[0][i].className != "")
+	if (the_tabs[0][i].className !== "")
 	    return i;
     }
 }
