@@ -28,7 +28,7 @@ function init_generos(years_partic){
 
     var gris = "#dcdcdc"; 		 //valor neutro rgb(220,220,220)
     var celeste = "#6496ff";  		 //todos masculinos = "rgb(100,150,255)"
-    var rosa = "#ff6496"	 	 //todos femeninos =  "rgb(255,100,150)"
+    var rosa = "#ff6496";	 	 //todos femeninos =  "rgb(255,100,150)"
     var purpura = "#800080";
 
     //colores desde el más celeste hasta el más rosa
@@ -61,11 +61,11 @@ function init_generos(years_partic){
     function color_picker(f_count,m_count) {
 	if((f_count == m_count) && (f_count > 0))
 	    return purpura;
-	if((f_count == m_count) && (f_count == 0))
+	if((f_count == m_count) && (f_count === 0))
 	    return gris;
-	if(f_count == 0)
+	if(f_count === 0)
 	    return celeste;
-	if(m_count == 0)
+	if(m_count === 0)
 	    return rosa;
 	var index = Math.floor((10*f_count)/(m_count+f_count));
 	return colores[index];
@@ -74,7 +74,7 @@ function init_generos(years_partic){
     function process_data_gen(years_partic) {
 	var res = [];
 	for(var i=0;i<years_partic.length;i++){
-	    res.push(JSON.parse(years_partic[i])['genero']);
+	    res.push(JSON.parse(years_partic[i]).genero);
 	}
 	return res;
     }
@@ -87,8 +87,8 @@ function init_generos(years_partic){
         var empty_data = true;
 	for(var i=0;i<global_data.length;i++){
             var entry = global_data[i][cat][prov];
-	    res['data'].push(entry);
-            res['data'][i]['date'] = i+1998;
+	    res.data.push(entry);
+            res.data[i]['date'] = i+1998;
             if (entry.F + entry.M > 0) {
                 empty_data = false;
             }
@@ -111,7 +111,7 @@ function init_generos(years_partic){
                 f += year_data[prov]['F'];
                 m += year_data[prov]['M'];
             }
-            res['data'].push({'date':i+1998,
+            res.data.push({'date':i+1998,
                               'F':f,
                               'M':m});
         }
@@ -120,20 +120,20 @@ function init_generos(years_partic){
 
 
     function update_svg_gen(cat,year){
-        var data_json = JSON.parse(years_partic[year-1998])['genero'];
+        var data_json = JSON.parse(years_partic[year-1998]).genero;
         show_national_progression(cat);
 	var paths = mapa_gen.selectAll("path");
 	// adicionando tooltip a todas las provincias ...
 	for(var i = 0; i < n_paths; i++){
 	    var path = paths[0][i];
 	    // alert(path);
-	    if (path_to_provs[path.id] != undefined){
+	    if (path_to_provs[path.id] !== undefined){
 		var fill;
 		var prov = path_to_provs[path.id];
 		var data_prov = data_json[cat][prov];
-		if(prov != undefined){
-		    var f_count = data_prov['F'];
-		    var m_count = data_prov['M'];
+		if(prov !== undefined){
+		    var f_count = data_prov.F;
+		    var m_count = data_prov.M;
 		    fill = color_picker(f_count,m_count);
 		}
 
@@ -151,7 +151,7 @@ function init_generos(years_partic){
 		    .on('mouseout',function(event)
 			{
 			    mapa_gen.select("#"+this.id).style('stroke-width', 1)
-				.style('stroke', 'white')
+				.style('stroke', 'white');
 			});
 	    }
 	}
@@ -171,10 +171,10 @@ function init_generos(years_partic){
 
     function show_prov_percent(cat,year,id){
 	var prov = path_to_provs[id];
-	var data_json = JSON.parse(years_partic[year-1998])['genero'];
+	var data_json = JSON.parse(years_partic[year-1998]).genero;
 	var data_prov = data_json[cat][prov];
-	var f = data_prov['F'];
-	var m = data_prov['M'];
+	var f = data_prov.F;
+	var m = data_prov.M;
 	var percent;
 	var all = f + m;
 	if(all > 0)
@@ -202,7 +202,7 @@ function init_generos(years_partic){
 	    prog_prov_gen.append("div")
 		.attr("class","prog-prov")
 		.html("<strong>"+prov+"</strong>: <p>provincia sin "+
-		      cat.toLowerCase()+" en ningún año.</p>");;
+		      cat.toLowerCase()+" en ningún año.</p>");
         }
     }
 

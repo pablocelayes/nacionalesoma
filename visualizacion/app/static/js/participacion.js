@@ -37,14 +37,14 @@ var path_to_provs =
 
 function paint_svg(tooltip_node,prog_prov, categories, colors, title, y_max){
 
-    var data = prog_prov['data'];
+    var data = prog_prov.data;
 
     var margin = {top: 10, right: 150, bottom: 30, left: 35},
         width = 600 - margin.left - margin.right,
         height = 225 - margin.top - margin.bottom;
 
     var x0 = d3.scale.ordinal()
-        .rangeRoundBands([0, width], .1);
+        .rangeRoundBands([0, width], 0.1);
 
     var x1 = d3.scale.ordinal();
 
@@ -116,7 +116,6 @@ function paint_svg(tooltip_node,prog_prov, categories, colors, title, y_max){
 
 }
 
-
 function initialize_values(years_partic){
     var svg_map = d3.select('#svg2');
     svg_map.attr("transform","scale(0.75)");
@@ -163,35 +162,16 @@ function participacion(years_partic,paths){
     input_node.on("input", function(){update_svg(+this.value);});
 
     //funciones
-    function colores(filtro){			//para la leyenda
-	if(filtro == "pob_esc")
-	    return ["#ffe9e9",
-		    "#e0b6b6",
-		    "#db9696",
-		    "#7e4747",
-		    "#410e0e",
-		   ];
-	return ["#edf8e9",
-		"#c7e9c0",
-		"#a1d99b",
-		"#41ab5d",
-		"#005a32"];}
-
-    function update_legend(list){
-	for(i=0;i<5;i++){
-	    legend_node.selectAll("li")[0][i].style = "border-top-color:"+list[i]
-	}
-    }
 
     function get_province_prog(prov, data){
 	var res = {'prog':prov,'data':[]};
         var axis_factor = 1000; // Sería inverso en el eje...
 	for(var i=0;i<data.length;i++){
-	    res['data'].push(JSON.parse(data[i])['pob_esc'][prov]);
-            res['data'][i]['date'] = i+1998;
-            var pob_esc = res['data'][i]['Población'];
-            res['data'][i]['Aprobados/Población'] = (res['data'][i]['Aprobados']/pob_esc) * axis_factor;
-            res['data'][i]['Clasificados/Población'] = (res['data'][i]['Clasificados']/pob_esc)* axis_factor;
+	    res.data.push(JSON.parse(data[i]).pob_esc[prov]);
+            res.data[i].date = i+1998;
+            var pob_esc = res.data[i]['Población'];
+            res.data[i]['Aprobados/Población'] = (res.data[i].Aprobados/pob_esc) * axis_factor;
+            res.data[i]['Clasificados/Población'] = (res.data[i].Clasificados/pob_esc)* axis_factor;
 	}
 	return res;
     }
@@ -202,8 +182,8 @@ function participacion(years_partic,paths){
 	    .style('stroke', 'steelblue');
 
 	var prov_name = path_to_provs[id];
-	var data_json = JSON.parse(data[year-1998])['pob_esc']
-	if(prov_name != undefined){
+	var data_json = JSON.parse(data[year-1998]).pob_esc;
+	if(prov_name !== undefined){
 	    prov = prov_name.replace(/\s/g, '_');
 	    tooltip_node.html(""); //para evitar que "crezca" el tooltip
 	    var svg_val;
@@ -241,12 +221,12 @@ function participacion(years_partic,paths){
 	for(var i = 0; i < n_paths; i++){
 
 	    var path = paths[0][i];
-	    if (path_to_provs[path.id] != undefined){
+	    if (path_to_provs[path.id] !== undefined){
 		var fill;
 		var prov = path_to_provs[path.id];
-		var data_json = data_prov['pob_esc'][prov];
-		if(prov != undefined){
-		    fill = data_json['Color'];
+		var data_json = data_prov.pob_esc[prov];
+		if(prov !== undefined){
+		    fill = data_json.Color;
 		}
 
 
@@ -260,12 +240,12 @@ function participacion(years_partic,paths){
 			           }).on('mouseout',function(event)
 				         {
 					     d3.select("#"+this.id).style('stroke-width', 1)
-					         .style('stroke', 'white')
+					         .style('stroke', 'white');
 				         })
 		    .on('click',function(event)
 		        {
 			    var provincia = path_to_provs[this.id];
-			    if(provincia != undefined){
+			    if(provincia !== undefined){
 			        var provincia_clean = provincia.replace(/\s/g, '_');
 			        var svg_node = d3.select("#tooltip");
 			        var w = d3.select(window.open().document.body);
