@@ -6,39 +6,9 @@ d3.xml(svg_file1, "image/svg+xml", function(xml){
 
 function init_generos(years_partic){
 
-
     var n_paths = 44;
-
     var cat_selected = "Clasificados";
     var initial_year = 1998;
-
-    var path_to_provs =
-	{
-	    path2413:"Buenos Aires",
-	    path3180:"Catamarca",
-	    path3189:"Chaco",
-	    path3194:"Chubut",
-	    path2265:"Ciudad Autónoma de Buenos Aires",
-	    path3195:"Corrientes",
-	    path3166:"Córdoba",
-	    path3201:"Entre Ríos",
-	    FO:"Formosa",
-	    path3185:"Jujuy",
-	    path3164:"La Pampa",
-	    path3178:"La Rioja",
-	    path3174:"Mendoza",
-	    path3228:"Misiones",
-	    path3172:"Neuquén",
-	    path2388:"Río Negro",
-	    path3182:"Salta",
-	    path3176:"San Juan",
-	    path3170:"San Luis",
-	    path3192:"Santa Cruz",
-	    path3224:"Santa Fe",
-	    path3193:"Santiago del Estero",
-	    path2384:"Tierra del Fuego",
-	    path3187:"Tucumán",
-	};
 
     var cat_list_gen = d3.select("#cat_listbox_gen");
     var year_label_gen = d3.select("#year_label_gen");

@@ -7,6 +7,34 @@ d3.xml(svg_file1,"image/svg+xml", function(xml){
 var mapa_node = d3.select("#mapa");
 mapa_node.style("display","none");
 
+var path_to_provs =
+    {
+	path2413:"Buenos Aires",
+	path3180:"Catamarca",
+	path3189:"Chaco",
+	path3194:"Chubut",
+	path2265:"Ciudad Autónoma de Buenos Aires",
+	path3195:"Corrientes",
+	path3166:"Córdoba",
+	path3201:"Entre Ríos",
+	FO:"Formosa",
+	path3185:"Jujuy",
+	path3164:"La Pampa",
+	path3178:"La Rioja",
+	path3174:"Mendoza",
+	path3228:"Misiones",
+	path3172:"Neuquén",
+	path2388:"Río Negro",
+	path3182:"Salta",
+	path3176:"San Juan",
+	path3170:"San Luis",
+	path3192:"Santa Cruz",
+	path3224:"Santa Fe",
+	path3193:"Santiago del Estero",
+	path2384:"Tierra del Fuego",
+	path3187:"Tucumán",
+    };
+
 function paint_svg(tooltip_node,prog_prov, categories, colors, title, y_max){
 
     var data = prog_prov['data'];
@@ -119,36 +147,8 @@ function get_years(init,end){
 }
 
 function participacion(years_partic,paths){
+
     var n_paths = 44;
-
-    var path_to_provs =
-	{
-	    path2413:"Buenos Aires",
-	    path3180:"Catamarca",
-	    path3189:"Chaco",
-	    path3194:"Chubut",
-	    path2265:"Ciudad Autónoma de Buenos Aires",
-	    path3195:"Corrientes",
-	    path3166:"Córdoba",
-	    path3201:"Entre Ríos",
-	    FO:"Formosa",
-	    path3185:"Jujuy",
-	    path3164:"La Pampa",
-	    path3178:"La Rioja",
-	    path3174:"Mendoza",
-	    path3228:"Misiones",
-	    path3172:"Neuquén",
-	    path2388:"Río Negro",
-	    path3182:"Salta",
-	    path3176:"San Juan",
-	    path3170:"San Luis",
-	    path3192:"Santa Cruz",
-	    path3224:"Santa Fe",
-	    path3193:"Santiago del Estero",
-	    path2384:"Tierra del Fuego",
-	    path3187:"Tucumán",
-	};
-
     var year_title = d3.select("#year");
     var tooltip_node = d3.select("#tooltip");
     var input_node = d3.select("input");
