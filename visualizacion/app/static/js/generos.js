@@ -1,11 +1,15 @@
+// Cargando inicialmente el mapa del año 1998, generado previamente con matplotlib
 var svg_file1 = "static/img/clasificados/genero/mapa1998.svg";
 
 d3.xml(svg_file1, "image/svg+xml", function(xml){
     document.getElementById("mapa_gen").appendChild(xml.documentElement);
 });
 
+// función principal
 function init_generos(years_partic){
 
+    // guardando selecciones en D3 de nodos necesarios
+    // y otras variables a usar
     var n_paths = 44;
     var cat_selected = "Clasificados";
     var initial_year = 1998;
@@ -39,6 +43,8 @@ function init_generos(years_partic){
     cat_list_gen.on("change",function(){add_years(this.value);});
     year_list_gen.on("input",function(){add_svg(+this.value);});
 
+    // funcion que actualiza los valores del mapa, año y mapa
+    // de acuerdo a la categoría elegida
     function add_years(cat){
         prog_prov_gen.html("");
 	actual_prov_gen.html("");
@@ -51,6 +57,8 @@ function init_generos(years_partic){
 	cat_selected = cat;
     }
 
+    // funcion que actualiza los valores del mapa, año y mapa
+    // de acuerdo a la año elegido
     function add_svg(year){
 	actual_prov_gen.html("");
 	actual_prov_percent_gen.html("");
@@ -58,6 +66,10 @@ function init_generos(years_partic){
 	year_label_gen.text(" "+year);
 	update_svg_gen(cat_selected,year);
     }
+
+    // función que determina el color a mostrar
+    // de acuerdo a la cantidad de ambos sexos pasadas
+    // por parámetro
     function color_picker(f_count,m_count) {
 	if((f_count == m_count) && (f_count > 0))
 	    return purpura;
@@ -71,6 +83,8 @@ function init_generos(years_partic){
 	return colores[index];
     }
 
+    // devuelve la data global necesaria para visualizar
+    // en esta vista a partir de la data recibida desde el server
     function process_data_gen(years_partic) {
 	var res = [];
 	for(var i=0;i<years_partic.length;i++){
@@ -81,6 +95,9 @@ function init_generos(years_partic){
 
     var global_data = process_data_gen(years_partic);
 
+    // Extracción de la data relativa a la progresión de una provincia
+    // por géneros de la categoría seleccionada
+    // para mostrar en el gráfico del tooltip
     function get_data_prov_gen(global_data,prov,cat) {
 
 	var res = {'prog':prov,'data':[]};
@@ -88,7 +105,7 @@ function init_generos(years_partic){
 	for(var i=0;i<global_data.length;i++){
             var entry = global_data[i][cat][prov];
 	    res.data.push(entry);
-            res.data[i]['date'] = i+1998;
+            res.data[i].date = i+1998;
             if (entry.F + entry.M > 0) {
                 empty_data = false;
             }
@@ -101,6 +118,8 @@ function init_generos(years_partic){
         }
     }
 
+    // Extracción de la data relativa a la progresión nacional por géneros
+    // de la categoría seleccionada para mostrar en el gráfico del tooltip
     function get_data_nacional_gen(cat,global_data){
         var res = {'country':'AR','data':[]};
         for(var i=0;i<global_data.length;i++){
@@ -108,8 +127,8 @@ function init_generos(years_partic){
             var f = 0;
             var m = 0;
             for(var prov in year_data){
-                f += year_data[prov]['F'];
-                m += year_data[prov]['M'];
+                f += year_data[prov].F;
+                m += year_data[prov].M;
             }
             res.data.push({'date':i+1998,
                               'F':f,
@@ -118,7 +137,7 @@ function init_generos(years_partic){
         return res;
     }
 
-
+    // actualización del mapa de acuerdo al año escogido en el slider
     function update_svg_gen(cat,year){
         var data_json = JSON.parse(years_partic[year-1998]).genero;
         show_national_progression(cat);
@@ -141,22 +160,22 @@ function init_generos(years_partic){
 		    .transition()
 		    .style('fill',fill);
 		d3.select(path)
-		    .on('mouseenter',function(event)
-			{
-			    mapa_gen.select("#"+this.id).style('stroke-width', 2)
-				.style('stroke', 'purple');
-			    show_prov_prog(cat,year,this.id);
-			    show_prov_percent(cat,year,this.id);
-			})
-		    .on('mouseout',function(event)
-			{
-			    mapa_gen.select("#"+this.id).style('stroke-width', 1)
-				.style('stroke', 'white');
-			});
+		    .on('mouseenter',function(event) {
+			mapa_gen.select("#"+this.id).style('stroke-width', 2)
+			    .style('stroke', 'purple');
+			show_prov_prog(cat,year,this.id);
+			show_prov_percent(cat,year,this.id);
+		    })
+		    .on('mouseout',function(event) {
+			mapa_gen.select("#"+this.id).style('stroke-width', 1)
+			    .style('stroke', 'white');
+		    });
 	    }
 	}
     }
 
+    // funciones para mostrar los valores porcentuales en la forma más adecuada
+    // Nota: probablemente haya una forma mejor y más corta de hacer esto
     function f_part(x){
 	return x - Math.floor(x);
     }
@@ -169,6 +188,7 @@ function init_generos(years_partic){
 	return +(Math.floor(x)+"."+(take_decimals(f_part(x),n)));
     }
 
+    // función que calcula y muestra el porcentaje
     function show_prov_percent(cat,year,id){
 	var prov = path_to_provs[id];
 	var data_json = JSON.parse(years_partic[year-1998]).genero;
@@ -184,6 +204,7 @@ function init_generos(years_partic){
 	actual_prov_percent_gen.text(prov + " " +truncate(percent,2)+"%");
     }
 
+    // función para crear  el tooltip de progresión provincial de géneros
     function show_prov_prog(cat,year,id){
         var prov = path_to_provs[id];
         var title = "Progresión anual de "+cat+" por género de "+prov;
@@ -206,7 +227,7 @@ function init_generos(years_partic){
         }
     }
 
-
+    // función para crear  el tooltip de progresión nacional de géneros
     function show_national_progression(cat){
         var title = "Progresión nacional anual de "+cat;
         prog_nac_gen.html("");
