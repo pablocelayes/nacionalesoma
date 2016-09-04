@@ -3,7 +3,7 @@
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 
-from retrieve import get_province_particip,provincias
+from retrieve import get_province_particip, provincias
 
 def paint_overlapp_graphics(title,iter1,iter2,output_file,
 							color1,color2,

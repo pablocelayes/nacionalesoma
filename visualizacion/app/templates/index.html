@@ -17,50 +17,35 @@
 	<![endif]-->
   </head>
   <body onload="load_all_vis()">
-    <!-- <body> -->
-    <div class="container1">
-      <header class="clearfix">
-	<span class="the_mini_title">{{ user.nickname }} <span class="bp-icon bp-icon-about" data-content="El presente estudio se basa en la información publicada en la web sobre clasificad@s, aprobad@s y premiad@s de los certámenes nacionales de la Olimpíada Matemática Argentina."></span></span>
-	<h1><span class="the_title">{{ title }}</span></h1>
-	<nav>
-	  <a id="prev_tab" href="#section-5" class="bp-icon bp-icon-prev" data-info="Anterior"></a>
-	  <a id="next_tab" href="#section-2" class="bp-icon bp-icon-next" data-info="Siguiente"></a>
-	</nav>
-      </header>
-      <div id="tabs" class="tabs">
-	<nav>
-	  <ul>
-	    <li><a href="#section-1" class="icon-shop"><span>Participación</span></a></li>
-	    <li><a href="#section-2" class="icon-cup"><span>Género</span></a></li>
- 	    <li><a href="#section-3" class="icon-food"><span>Índice Gini</span></a></li>
-	    <!--
-		<li><a href="#section-4" class="icon-lab"><span>Población Escolar</span></a></li>
-		-->
-	    <li><a href="#section-5" class="icon-truck"><span>Objetivo</span></a></li>
-	  </ul>
-	</nav>
-	<div class="content">
-	  <section id="section-1">
-	    {{ a1 }}
-	  </section>
-	  <section id="section-2">
-	    {{ a2 }}
-	  </section>
- 	  <section id="section-3">
-	    {{ a3 }}
-	  </section>
-	  <!--
-	      <section id="section-4">
-		{{ a4 }}
-	      </section>
-	      -->
-	  <section id="section-5">
-	    {{ a5 }}
-	  </section>
-	</div><!-- /content -->
-      </div><!-- /tabs -->
-      <p class="info"><a href="https://github.com/pablocelayes/nacionalesoma/">Te esperamos también en GitHub!</a></p>
-    </div>
+  	<div class="row">
+	    <div class="col-md-4">
+	      <div class="nany" id="mapa"></div>
+	    </div>
+			<div class="col-md-4 container1">
+	      <div id="tabs" class="tabs">
+					<nav>
+					  <ul>
+					    <li><a href="#section-1" class="icon-shop"><span>Participación</span></a></li>
+					    <li><a href="#section-2" class="icon-cup"><span>Género</span></a></li>
+					    <li><a href="#section-3" class="icon-truck"><span>Objetivo</span></a></li>
+					  </ul>
+					</nav>
+					<div class="content">
+					  <section id="section-1">
+					    {{ a1 }}
+					  </section>
+					  <section id="section-2">
+					    {{ a2 }}
+					  </section>
+ 						<section id="section-3">
+					    {{ a3 }}
+					  </section>
+					</div><!-- /content -->
+	      </div><!-- /tabs -->
+	      <p class="info"><a href="https://github.com/pablocelayes/nacionalesoma/">Te esperamos también en GitHub!</a></p>			
+			</div>  		
+  	</div>
+
     <script src="static/js/d3.v3.min.js"></script>
     <script type="text/javascript" src="static/js/jquery.min.js"></script>
     <script src="static/js/participacion.js"></script>

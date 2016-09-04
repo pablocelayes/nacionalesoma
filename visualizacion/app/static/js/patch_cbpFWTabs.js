@@ -34,17 +34,17 @@ function current_tab(){
 function update_tabs(j){
     // alert(j);
     for(i=0;i<the_tabs[0].length;i++){
-	if (i!=j){
-	    the_tabs[0][i].className = "";
-	    the_contents[0][i].className = "";
-	}
-	else{
-	    the_tabs[0][i].className = "tab-current";
-	    the_contents[0][i].className = "content-current";
-	}
+		if (i!=j){
+		    the_tabs[0][i].className = "";
+		    the_contents[0][i].className = "";
+		}
+		else{
+		    the_tabs[0][i].className = "tab-current";
+		    the_contents[0][i].className = "content-current";
+		}
     }
 }
 
 function load_all_vis(){
-    get_years(1998,2015);
+    get_years(1998, 2015);
 }
