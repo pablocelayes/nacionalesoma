@@ -16,11 +16,3 @@ En esta versión inicial del estudio nos limitamos a analizar la distribución p
 Este es un trabajo en desarrollo, somos conscientes de lo mucho que hay por mejorar y l@s invitamos a colaborar con sus ideas y sugerencias.
 
 ¡Muchas gracias por su interés!
-
-=======
-
-Origen de la idea y discusión del proyecto:
-
-(https://www.facebook.com/groups/laacademiamateclub/permalink/726305050788921/)
-
-(https://www.facebook.com/groups/laacademiamateclub/permalink/728525267233566/)
